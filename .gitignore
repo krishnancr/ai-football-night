@@ -23,6 +23,9 @@ _site/
 .gstack/
 .pytest_cache/
 
+# Local planning docs — not for the public repo
+docs/
+
 # Editor
 .DS_Store
 .idea/
