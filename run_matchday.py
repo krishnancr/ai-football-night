@@ -29,6 +29,19 @@ def slugify(text: str) -> str:
     return text.lower().replace(" ", "-").replace("'", "").replace(".", "")
 
 
+def should_skip_run(run_path: Path, force: bool = False) -> bool:
+    """True if this match already has a complete run (valid decision, no parse error).
+    Skipping a complete run costs nothing; --force regenerates after prompt changes."""
+    if force or not Path(run_path).exists():
+        return False
+    try:
+        run = json.loads(Path(run_path).read_text())
+    except Exception:
+        return False
+    decision = run.get("decision") or {}
+    return bool(decision) and not decision.get("parse_error")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Run a World Cup match day prediction")
     parser.add_argument("match", help='Match string e.g. "Brazil vs Croatia", or date YYYY-MM-DD to run all matches that day')
@@ -42,6 +55,10 @@ def main():
                         help="Skip research (use existing context file if present)")
     parser.add_argument("--persona", default="world_cup",
                         help="Persona set from personas.json (default: world_cup, use smoke_test for local Ollama)")
+    parser.add_argument("--date", dest="match_date",
+                        help="Match date YYYY-MM-DD — stamps run files (default: today UTC)")
+    parser.add_argument("--force", action="store_true",
+                        help="Re-run even if this match's run is already complete")
     args = parser.parse_args()
 
     # ── Date mode: run all matches for a given date ──────────────────
@@ -67,6 +84,9 @@ def main():
             extra.append("--no-tweet")
         if args.persona != "world_cup":
             extra += ["--persona", args.persona]
+        if args.force:
+            extra.append("--force")
+        extra += ["--date", args.match]
         failed = []
         for m in day_matches:
             cmd = [sys.executable, __file__, m["match_string"]] + extra
@@ -84,7 +104,7 @@ def main():
 
     home, away = [t.strip() for t in args.match.split(" vs ")]
     slug = f"{slugify(home)}-{slugify(away)}"
-    date_str = datetime.utcnow().strftime("%Y%m%d")
+    date_str = (args.match_date or datetime.utcnow().strftime("%Y-%m-%d")).replace("-", "")
 
     runs_dir = Path("runs")
     runs_dir.mkdir(exist_ok=True)
@@ -93,6 +113,11 @@ def main():
     context_path = runs_dir / f"wc_{slug}_{date_str}_context.json"
     draft_path = runs_dir / f"wc_{slug}_{date_str}_substack.md"
     thread_path = runs_dir / f"wc_{slug}_{date_str}_thread.json"
+
+    if should_skip_run(run_path, args.force):
+        print(f"\n✓ Already complete: {run_path}")
+        print("  Skipping — no API spend. Use --force to regenerate after prompt changes.")
+        return
 
     print(f"\n{'='*60}")
     print(f"AI FOOTBALL NIGHT — {args.match}")

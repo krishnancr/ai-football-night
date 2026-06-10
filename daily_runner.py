@@ -54,14 +54,18 @@ def detect_stage(matches: list) -> str:
     return "group"
 
 
-def run_match(match_string: str, persona: str | None = None) -> tuple:
+def run_match(match_string: str, persona: str | None = None,
+              match_date: str | None = None, force: bool = False) -> tuple:
     """Run a single match without tweeting. Returns (success, run_file, thread_file)."""
     home, away = [t.strip() for t in match_string.split(" vs ")]
     slug = f"{slugify(home)}-{slugify(away)}"
-    date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
-    run_file = str(RUNS_DIR / f"wc_{slug}_{date_str}.json")
-    thread_file = str(RUNS_DIR / f"wc_{slug}_{date_str}_thread.json")
-    cmd = [sys.executable, "run_matchday.py", match_string, "--no-tweet"]
+    match_date = match_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    date_compact = match_date.replace("-", "")
+    run_file = str(RUNS_DIR / f"wc_{slug}_{date_compact}.json")
+    thread_file = str(RUNS_DIR / f"wc_{slug}_{date_compact}_thread.json")
+    cmd = [sys.executable, "run_matchday.py", match_string, "--no-tweet", "--date", match_date]
+    if force:
+        cmd.append("--force")
     if persona:
         cmd += ["--persona", persona]
     result = subprocess.run(cmd, capture_output=False)
@@ -249,6 +253,8 @@ def main():
                         help="Post threads from today's summary without re-running matches")
     parser.add_argument("--persona", default=None,
                         help="Persona set from personas.json (e.g. ollama_test; default: world_cup)")
+    parser.add_argument("--force", action="store_true",
+                        help="Re-run matches even if already completed")
     args = parser.parse_args()
 
     date_str = args.date or os.getenv("MATCH_DATE") or datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -279,7 +285,8 @@ def main():
     for match in matches:
         match_string = match["match_string"]
         print(f"\nRunning: {match_string}")
-        success, run_file, thread_file = run_match(match_string, persona=args.persona)
+        success, run_file, thread_file = run_match(
+            match_string, persona=args.persona, match_date=date_str, force=args.force)
         results.append({
             "match_string": match_string,
             "run_file": run_file,

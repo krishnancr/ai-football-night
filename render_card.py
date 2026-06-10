@@ -157,7 +157,7 @@ def build_card_html(run: dict, records: dict) -> str:
   <div class="header">
     <div>
       <div class="show">AI FOOTBALL NIGHT</div>
-      <div class="score"{score_style}>{escape(home.upper())} {home_g}–{away_g} {escape(away.upper())}</div>
+      <div class="score"{score_style}>{escape(home.upper())} {escape(str(home_g))}–{escape(str(away_g))} {escape(away.upper())}</div>
     </div>
     <div class="verdict">THE PANEL'S VERDICT</div>
   </div>

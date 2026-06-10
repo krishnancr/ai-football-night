@@ -12,6 +12,10 @@ on:
         description: 'Skip tweet distribution (true/false)'
         required: false
         default: 'false'
+      force_rerun:
+        description: 'Re-run matches even if already completed (true/false)'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -41,7 +45,7 @@ jobs:
           COUNCIL_BASE_URL: ${{ secrets.COUNCIL_BASE_URL }}
           RESEARCH_MODEL: ${{ secrets.RESEARCH_MODEL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python daily_runner.py
+        run: python daily_runner.py ${{ inputs.force_rerun == 'true' && '--force' || '' }}
 
       - name: Render share cards
         continue-on-error: true

@@ -76,9 +76,11 @@ def test_bubble_selection_is_deterministic(card_run):
 def test_card_html_escapes_llm_text(card_run):
     from render_card import build_card_html
     card_run["group_chat"][0]["text"] = '</div><script>alert(1)</script> xG says no'
+    card_run["decision"]["home_goals"] = "<b>9</b>"
     html = build_card_html(card_run, _records())
     assert "<script>" not in html
     assert "&lt;script&gt;" in html
+    assert "<b>9</b>" not in html
 
 
 def test_card_html_truncates_long_messages(card_run):
