@@ -374,7 +374,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     tomorrow_str = (datetime.strptime(today_str, "%Y%m%d") + timedelta(days=1)).strftime("%Y%m%d")
     future_pairs = [p for p in run_pairs if p["date_str"] > today_str]
     future_sections = ""
-    for date_str, group_iter in groupby(future_pairs, key=lambda p: p["date_str"]):
+    for date_str, group_iter in groupby(sorted(future_pairs, key=lambda p: p["date_str"]), key=lambda p: p["date_str"]):
         cards = "\n".join(_match_card_html(p) for p in group_iter)
         heading = f"Tomorrow · {_fmt_date(date_str)}" if date_str == tomorrow_str else _fmt_date(date_str)
         future_sections += f"""<section>
@@ -383,7 +383,8 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
 </section>
 """
 
-    past_pairs = [p for p in reversed(run_pairs) if p["date_str"] < today_str]
+    past_pairs = sorted((p for p in run_pairs if p["date_str"] < today_str),
+                        key=lambda p: p["date_str"], reverse=True)
     archive_html = ""
     for date_str, group_iter in groupby(past_pairs, key=lambda p: p["date_str"]):
         rows = ""
@@ -410,7 +411,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     # Upcoming: start from tomorrow so it doesn't duplicate "Today" grid,
     # and exclude fixtures that already have a published prediction.
     predicted = {
-        (f'{p["date_str"][:4]}-{p["date_str"][4:6]}-{p["date_str"][6:]}', p["run"]["match_string"])
+        (f'{p["date_str"][:4]}-{p["date_str"][4:6]}-{p["date_str"][6:]}', p["run"].get("match_string", ""))
         for p in run_pairs
     }
     upcoming_section = _upcoming_html(schedule, tomorrow_str, exclude=predicted) if schedule else ""
