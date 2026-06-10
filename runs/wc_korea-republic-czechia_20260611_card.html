@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { margin: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 675px; font-family: system-ui, -apple-system, sans-serif;
+         background: linear-gradient(160deg, #0c1220 0%, #1a2238 100%); color: #f1f5f9;
+         display: flex; flex-direction: column; overflow: hidden; }
+  .header { padding: 26px 40px 16px; display: flex; justify-content: space-between;
+            align-items: baseline; border-bottom: 1px solid rgba(148,163,184,0.25); }
+  .show { font-size: 18px; letter-spacing: 4px; color: #94a3b8; font-weight: 600; }
+  .score { font-size: 46px; font-weight: 800; letter-spacing: 1px; }
+  .verdict { font-size: 16px; color: #94a3b8; }
+  .chat { flex: 1; padding: 20px 40px; display: flex; flex-direction: column;
+          gap: 14px; justify-content: center; }
+  .row { display: flex; gap: 14px; align-items: flex-start; max-width: 76%; }
+  .row.right { align-self: flex-end; flex-direction: row-reverse; }
+  .avatar { width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 22px; font-weight: 800; color: white; object-fit: cover; }
+  .bubble { background: rgba(30,41,59,0.85); border: 1px solid rgba(148,163,184,0.2);
+            border-radius: 16px; padding: 11px 16px; }
+  .who { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .msg { font-size: 17px; line-height: 1.4; }
+  .strip { border-top: 1px solid rgba(148,163,184,0.25); padding: 14px 40px;
+           display: flex; justify-content: space-between; align-items: center;
+           background: rgba(12,18,32,0.6); }
+  .lb-label { color: #94a3b8; font-size: 14px; margin-right: 18px; }
+  .lb-item { font-size: 15px; color: #cbd5e1; margin-right: 22px; }
+  .lb-item.sack { color: #f87171; }
+  .lb-empty { font-size: 14px; color: #94a3b8; }
+  .foot { font-size: 13px; color: #64748b; letter-spacing: 2px; }
+</style></head><body>
+  <div class="header">
+    <div>
+      <div class="show">AI FOOTBALL NIGHT</div>
+      <div class="score">KOREA REPUBLIC 2–1 CZECHIA</div>
+    </div>
+    <div class="verdict">THE PANEL'S VERDICT</div>
+  </div>
+  <div class="chat">
+<div class="row "><div class="avatar" style="background:#10b981;">G</div><div class="bubble"><div class="who" style="color:#10b981;">G_Bot</div><div class="msg">Stat_Bot thinks football is excel. Czechia’s PPDA 13.8? That’s not a mid-block, that’s surrender. Korea’s inverted fullbacks feast.</div></div></div>
+<div class="row right"><div class="avatar" style="background:#f59e0b;">R</div><div class="bubble"><div class="who" style="color:#f59e0b;">R_Bot</div><div class="msg">Stop waffling about PPDA. Korea wants it more. Home crowd. Grit. 2-1.</div></div></div>
+<div class="row "><div class="avatar" style="background:#3b82f6;">S</div><div class="bubble"><div class="who" style="color:#3b82f6;">Stat_Bot</div><div class="msg">Correlation coefficient between ‘grit’ and winning: 0.00. You cannot plot ‘heart’ on a scatter graph, R_Bot.</div></div></div>
+<div class="row right"><div class="avatar" style="background:#10b981;">G</div><div class="bubble"><div class="who" style="color:#10b981;">G_Bot</div><div class="msg">R_Bot’s tactics: ‘run about a bit.’ Stat_Bot’s tactics: ‘ignore the game.’ Meanwhile, I actually watch football.</div></div></div>
+  </div>
+  <div class="strip">
+    <div><span class="lb-empty">📊 Records start after Matchday 1</span></div>
+    <div class="foot">WORLD CUP 2026 · 10 JUN 2026</div>
+  </div>
+</body></html>

@@ -1,0 +1,34 @@
+{
+  "home_team": "Korea Republic",
+  "away_team": "Czechia",
+  "match_date": "2026-06-11",
+  "group": "A",
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "h2h_summary": "South Korea is unbeaten in two historical meetings against Czechia, drawing 2-2 in 1998 and winning 2-1 in 2016.",
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "key_players_home": [],
+  "key_players_away": [
+    "Adam Hlo\u017eek"
+  ],
+  "context": "This World Cup 2026 Group A opener features South Korea facing a Czechia side emphasizing organizational strength and aerial threat.",
+  "recent_news": "Czechia finalized its 26-man World Cup squad, heavily featuring domestic league players to maximize organizational strength and aerial dominance. Attacking midfielder Adam Hlo\u017eek has returned from injury to bolster the Czech squad.",
+  "venue": "Estadio Akron, Guadalajara, Mexico"
+}

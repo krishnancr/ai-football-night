@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-11",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Mexico vs South Africa",
+      "run_file": "runs/wc_mexico-south-africa_20260611.json",
+      "thread_file": "runs/wc_mexico-south-africa_20260611_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Korea Republic vs Czechia",
+      "run_file": "runs/wc_korea-republic-czechia_20260611.json",
+      "thread_file": "runs/wc_korea-republic-czechia_20260611_thread.json",
+      "success": true
+    }
+  ]
+}
