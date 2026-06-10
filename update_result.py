@@ -5,6 +5,7 @@ Usage: python update_result.py runs/wc_brazil-croatia_20260611.json 2 1
 """
 import json
 import sys
+import traceback
 from pathlib import Path
 
 
@@ -52,7 +53,8 @@ def update_result(run_path: Path, home_goals: int, away_goals: int) -> dict:
         receipts_path.write_text(format_receipts(run), encoding="utf-8")
         print(f"   Receipts reply: {receipts_path}")
     except Exception as e:
-        print(f"   ⚠️  Receipts emission failed (result still recorded): {e}")
+        print(f"   ⚠️  Receipts emission failed (result still recorded): {type(e).__name__}: {e}")
+        traceback.print_exc()
 
     match_str = run.get("match_string", run_path.stem)
     score_emoji = "✅" if correct_scoreline else ("🟡" if correct_result else "❌")

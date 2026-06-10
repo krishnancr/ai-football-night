@@ -88,3 +88,25 @@ def test_update_result_emits_receipts_file(tmp_path):
     assert "FULL TIME: Brazil 2–1 Croatia" in text
     assert "✅ Stat_Bot" in text
     assert "❌ R_Bot" in text
+
+
+def test_update_result_records_result_even_if_receipts_fail(tmp_path, capsys):
+    """Receipts emission must never block result recording."""
+    import json
+    from update_result import update_result
+
+    run = {
+        "match_string": "Brazil vs Croatia",
+        "match_slug": "brazil-croatia",
+        "decision": {"home_goals": 2, "away_goals": 1, "result": "home_win"},
+        "pundit_predictions": {"Stat_Bot": {"oops": 1}},  # malformed — breaks format_receipts
+    }
+    run_path = tmp_path / "wc_brazil-croatia_20260613.json"
+    run_path.write_text(json.dumps(run))
+
+    update_result(run_path, 2, 1)  # must not raise
+
+    saved = json.loads(run_path.read_text())
+    assert saved["actual"]["home_goals"] == 2  # result still recorded
+    assert not (tmp_path / "wc_brazil-croatia_20260613_receipts.md").exists()
+    assert "Receipts emission failed" in capsys.readouterr().out
