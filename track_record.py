@@ -100,6 +100,20 @@ def format_track_record_block(role: str, records: dict) -> str:
     standings = sorted(records.items(), key=lambda kv: (-kv[1]["correct_result"], -kv[1]["correct_scoreline"]))
     table = ", ".join(f"{r} {v['correct_result']}/{v['matches']}" for r, v in standings)
     lines.append(f"PANEL STANDINGS: {table}.")
+    if len(standings) >= 2:
+        pos = [r for r, _ in standings].index(role) + 1
+        # Anti-conformity framing: the stakes must push pundits to double down on
+        # their own style, not herd toward consensus/favorites. "Bland gets sacked
+        # first" points the incentive gradient away from agreement.
+        stakes = (f"SACK RACE: the pundit at the bottom of the panel standings after the "
+                  f"group stage will be SACKED and replaced on air. You are currently {pos} of {len(standings)}. "
+                  f"Know how the sacking really gets decided: the table matters, but the producers protect "
+                  f"pundits the audience loves. Hedging, copying the panel consensus, or sounding like the "
+                  f"others is the fastest way out — bland pundits get sacked first.")
+        if pos == len(standings):
+            stakes += (" You are in the SACK ZONE. Do not play it safe — double down on your way of "
+                       "seeing football and make this debate unmissable.")
+        lines.append(stakes)
     lines.append("Learn from your misses and sharpen this prediction — but never break character.")
     return "\n".join(lines)
 

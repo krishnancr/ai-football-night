@@ -109,3 +109,32 @@ def test_inject_noop_without_records():
     persona_set = {"Stat_Bot": {"model": "m", "system": "You are Stat_Bot."}}
     out = inject_track_records(persona_set, {})
     assert out["Stat_Bot"]["system"] == "You are Stat_Bot."
+
+
+def _records_two_pundits():
+    return {
+        "Stat_Bot": {"matches": 3, "correct_result": 3, "correct_scoreline": 1,
+                     "last": {"match": "A vs B", "predicted": "2-1", "actual": "2-1", "correct_result": True}},
+        "R_Bot": {"matches": 3, "correct_result": 0, "correct_scoreline": 0,
+                  "last": {"match": "A vs B", "predicted": "0-2", "actual": "2-1", "correct_result": False}},
+    }
+
+
+def test_track_record_block_includes_sack_race_stakes():
+    from track_record import format_track_record_block
+    block = format_track_record_block("Stat_Bot", _records_two_pundits())
+    assert "SACK" in block
+    assert "currently 1 of 2" in block
+
+
+def test_bottom_pundit_gets_sack_zone_warning():
+    from track_record import format_track_record_block
+    block = format_track_record_block("R_Bot", _records_two_pundits())
+    assert "SACK ZONE" in block
+    assert "currently 2 of 2" in block
+
+
+def test_leader_does_not_get_sack_zone_warning():
+    from track_record import format_track_record_block
+    block = format_track_record_block("Stat_Bot", _records_two_pundits())
+    assert "SACK ZONE" not in block
