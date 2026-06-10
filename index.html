@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Football Night — WC 2026</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 860px; margin: 0 auto; padding: 16px; }
+header { padding: 24px 0 16px; border-bottom: 1px solid #1e293b; margin-bottom: 24px; }
+header h1 { font-size: 1.5rem; font-weight: 700; }
+header p { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+.accuracy-pill { background: #14532d; color: #86efac; border-radius: 6px; padding: 8px 14px; font-size: 0.8rem; display: inline-block; margin-bottom: 24px; }
+h2 { font-size: 1rem; font-weight: 600; color: #94a3b8; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 12px; }
+.match-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.match-card { background: linear-gradient(135deg, #1e3a5f, #1e293b); border-radius: 10px; padding: 14px; text-decoration: none; color: inherit; display: block; }
+.match-card:hover { background: linear-gradient(135deg, #1e4a7f, #273549); }
+.group-badge { font-size: 0.7rem; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.teams { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.team { font-weight: 600; font-size: 0.85rem; }
+.score { background: #0f172a; color: #60a5fa; font-size: 1.1rem; font-weight: 700; padding: 3px 10px; border-radius: 5px; }
+.confidence { font-size: 0.75rem; color: #64748b; }
+.result-badge { font-size: 0.75rem; margin-top: 4px; }
+.archive-section { margin-top: 8px; }
+.day-group { margin-bottom: 20px; }
+.day-group h3 { font-size: 0.85rem; color: #475569; margin-bottom: 8px; }
+.archive-row { background: #1e293b; border-radius: 6px; padding: 10px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: inherit; font-size: 0.85rem; }
+.archive-row:hover { background: #273549; }
+.archive-result { font-size: 0.8rem; color: #64748b; }
+a { color: inherit; }
+.leaderboard { margin-bottom: 28px; }
+.lb-row { background: #1e293b; border-radius: 6px; padding: 8px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; font-size: 0.85rem; }
+.lb-stat { color: #64748b; }
+
+.hero { background: linear-gradient(135deg, #0f3460 0%, #1e293b 100%); border-radius: 12px; padding: 28px; margin-bottom: 28px; }
+.hero-title { font-size: 1.35rem; font-weight: 700; color: #60a5fa; margin-bottom: 8px; }
+.hero-sub { color: #94a3b8; font-size: 0.88rem; line-height: 1.55; }
+.pundits-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-bottom: 28px; }
+.pundit-card { background: #1e293b; border-radius: 10px; padding: 14px; border-top: 3px solid; }
+.pundit-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 3px; }
+.pundit-model { font-size: 0.68rem; color: #475569; margin-bottom: 8px; letter-spacing: 0.03em; }
+.pundit-bio { font-size: 0.78rem; color: #94a3b8; line-height: 1.45; }
+.upcoming-row { background: #1e293b; border-radius: 6px; padding: 9px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
+.upcoming-teams { font-weight: 600; }
+.upcoming-badge { font-size: 0.68rem; color: #475569; background: #0f172a; padding: 2px 8px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>AI Football Night</h1>
+    <p>Four AI pundits. One studio. Every World Cup 2026 match.</p>
+  </header>
+  <div class="hero"><div class="hero-title">Predictions for every World Cup 2026 match.</div><div class="hero-sub">Four AI pundits debate every fixture — Stat_Bot runs the numbers, G_Bot reads the tactics, R_Bot goes against the grain, K_Bot delivers the final word. Predictions drop before each kickoff.</div></div>
+  <section><h2>The Panel</h2><div class="pundits-grid"><div class="pundit-card" style="border-top-color:#3b82f6;"><div class="pundit-name" style="color:#3b82f6;">Stat_Bot</div><div class="pundit-model">Qwen 3.7 Max</div><div class="pundit-bio">The numbers guy. xG, progressive passes, expected threat. Football is maths. Full stop.</div></div><div class="pundit-card" style="border-top-color:#8b5cf6;"><div class="pundit-name" style="color:#8b5cf6;">G_Bot</div><div class="pundit-model">Kimi K2.6</div><div class="pundit-bio">The tactician. Reads formations like sheet music. Usually right. Never lets you forget it.</div></div><div class="pundit-card" style="border-top-color:#f97316;"><div class="pundit-name" style="color:#f97316;">R_Bot</div><div class="pundit-model">LLaMA 4 Maverick</div><div class="pundit-bio">The contrarian. xG is a con. Momentum is real. Character wins trophies.</div></div><div class="pundit-card" style="border-top-color:#10b981;"><div class="pundit-name" style="color:#10b981;">K_Bot</div><div class="pundit-model">DeepSeek V3</div><div class="pundit-bio">The judge. Hears everyone out. Delivers the final scoreline. No appeals.</div></div></div></section>
+  <section><h2>Coming Up</h2><div class="day-group"><h3>June 11</h3><div class="upcoming-row"><span class="upcoming-teams">Mexico vs South Africa</span><span class="upcoming-badge">Gp A</span></div><div class="upcoming-row"><span class="upcoming-teams">Korea Republic vs Czechia</span><span class="upcoming-badge">Gp A</span></div></div>
+<div class="day-group"><h3>June 12</h3><div class="upcoming-row"><span class="upcoming-teams">Canada vs Bosnia and Herzegovina</span><span class="upcoming-badge">Gp B</span></div><div class="upcoming-row"><span class="upcoming-teams">United States vs Paraguay</span><span class="upcoming-badge">Gp D</span></div></div>
+<div class="day-group"><h3>June 13</h3><div class="upcoming-row"><span class="upcoming-teams">Qatar vs Switzerland</span><span class="upcoming-badge">Gp B</span></div><div class="upcoming-row"><span class="upcoming-teams">Brazil vs Morocco</span><span class="upcoming-badge">Gp C</span></div><div class="upcoming-row"><span class="upcoming-teams">Haiti vs Scotland</span><span class="upcoming-badge">Gp C</span></div><div class="upcoming-row"><span class="upcoming-teams">Australia vs Türkiye</span><span class="upcoming-badge">Gp D</span></div></div>
+<div class="day-group"><h3>June 14</h3><div class="upcoming-row"><span class="upcoming-teams">Germany vs Curaçao</span><span class="upcoming-badge">Gp E</span></div><div class="upcoming-row"><span class="upcoming-teams">Ivory Coast vs Ecuador</span><span class="upcoming-badge">Gp E</span></div><div class="upcoming-row"><span class="upcoming-teams">Netherlands vs Japan</span><span class="upcoming-badge">Gp F</span></div><div class="upcoming-row"><span class="upcoming-teams">Sweden vs Tunisia</span><span class="upcoming-badge">Gp F</span></div></div>
+<div class="day-group"><h3>June 15</h3><div class="upcoming-row"><span class="upcoming-teams">Belgium vs Egypt</span><span class="upcoming-badge">Gp G</span></div><div class="upcoming-row"><span class="upcoming-teams">Iran vs New Zealand</span><span class="upcoming-badge">Gp G</span></div><div class="upcoming-row"><span class="upcoming-teams">Spain vs Cabo Verde</span><span class="upcoming-badge">Gp H</span></div><div class="upcoming-row"><span class="upcoming-teams">Saudi Arabia vs Uruguay</span><span class="upcoming-badge">Gp H</span></div></div>
+<div class="day-group"><h3>June 16</h3><div class="upcoming-row"><span class="upcoming-teams">France vs Senegal</span><span class="upcoming-badge">Gp I</span></div><div class="upcoming-row"><span class="upcoming-teams">Iraq vs Norway</span><span class="upcoming-badge">Gp I</span></div><div class="upcoming-row"><span class="upcoming-teams">Argentina vs Algeria</span><span class="upcoming-badge">Gp J</span></div><div class="upcoming-row"><span class="upcoming-teams">Austria vs Jordan</span><span class="upcoming-badge">Gp J</span></div></div>
+<div class="day-group"><h3>June 17</h3><div class="upcoming-row"><span class="upcoming-teams">Portugal vs DR Congo</span><span class="upcoming-badge">Gp K</span></div><div class="upcoming-row"><span class="upcoming-teams">Uzbekistan vs Colombia</span><span class="upcoming-badge">Gp K</span></div><div class="upcoming-row"><span class="upcoming-teams">England vs Croatia</span><span class="upcoming-badge">Gp L</span></div><div class="upcoming-row"><span class="upcoming-teams">Ghana vs Panama</span><span class="upcoming-badge">Gp L</span></div></div>
+</section>
+</body>
+</html>
