@@ -68,6 +68,36 @@ def research_daily(match_string: str) -> dict:
     return {"search_results": search_results, "home": home, "away": away}
 
 
+def _degraded_context(home: str, away: str, search_results: list) -> dict:
+    """Minimal valid context when synthesis fails — the show must go on."""
+    titles = [r["title"] for sr in search_results for r in sr.get("results", [])][:6]
+    return {
+        "home_team": home, "away_team": away, "match_date": None, "group": None,
+        "form_home": [], "form_away": [], "h2h_summary": None,
+        "injuries_home": [], "injuries_away": [],
+        "odds": {"home_win": None, "draw": None, "away_win": None},
+        "key_players_home": [], "key_players_away": [],
+        "context": "Research synthesis unavailable — the panel debates on limited context.",
+        "recent_news": "; ".join(titles)[:400] or None,
+        "research_quality": "degraded",
+    }
+
+
+def _parse_synthesis(raw, home: str, away: str, search_results: list) -> dict:
+    """Parse the synthesis LLM output; degrade gracefully instead of raising."""
+    raw = raw or ""
+    json_match = re.search(r"\{.*\}", raw, re.DOTALL)
+    candidate = json_match.group() if json_match else raw
+    try:
+        parsed = json.loads(candidate)
+        if isinstance(parsed, dict):
+            return parsed
+    except json.JSONDecodeError:
+        pass
+    print(f"  ⚠️  Synthesis output unusable ({len(raw)} chars) — using degraded context")
+    return _degraded_context(home, away, search_results)
+
+
 def research_match(match_string: str) -> dict:
     """Full research: merge base context + daily Tavily search, synthesize to JSON."""
     parts = match_string.split(" vs ")
@@ -149,20 +179,24 @@ Rules:
     extra = {}
     if research_fallback:
         extra["extra_body"] = {"models": [research_model, research_fallback]}
-    response = client.chat.completions.create(
-        model=research_model,
-        max_tokens=2048,
-        messages=[{"role": "user", "content": synthesis_prompt}],
-        **extra,
-    )
-
-    raw = response.choices[0].message.content
-    json_match = re.search(r"\{.*\}", raw, re.DOTALL)
-    candidate = json_match.group() if json_match else raw
-    try:
-        return json.loads(candidate)
-    except json.JSONDecodeError as exc:
-        raise ValueError(f"Synthesis model response was not valid JSON:\n{raw}") from exc
+    raw = None
+    for attempt in (1, 2):
+        try:
+            response = client.chat.completions.create(
+                model=research_model,
+                max_tokens=2048,
+                messages=[{"role": "user", "content": synthesis_prompt}],
+                **extra,
+            )
+            raw = response.choices[0].message.content
+        except Exception as e:
+            print(f"  ⚠️  Synthesis call failed (attempt {attempt}): {type(e).__name__}: {e}")
+            raw = None
+        if raw and re.search(r"\{.*\}", raw, re.DOTALL):
+            break
+        if attempt == 1:
+            print("  Retrying synthesis once...")
+    return _parse_synthesis(raw, home, away, search_results)
 
 
 def main():

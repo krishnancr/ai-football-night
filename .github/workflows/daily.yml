@@ -48,6 +48,7 @@ jobs:
         run: python daily_runner.py ${{ inputs.force_rerun == 'true' && '--force' || '' }}
 
       - name: Render share cards
+        if: always()
         continue-on-error: true
         env:
           MATCH_DATE: ${{ inputs.match_date }}
@@ -55,7 +56,9 @@ jobs:
           playwright install chromium --with-deps
           python render_card.py --date "${MATCH_DATE:-$(date -u +%Y-%m-%d)}"
 
+      # always(): a failed match must not discard the successful ones' artifacts
       - name: Commit runs to main
+        if: always()
         run: |
           git config user.name "ai-football-night-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -64,6 +67,7 @@ jobs:
           git push
 
       - name: Upload runs artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: runs-${{ github.run_id }}
@@ -72,7 +76,7 @@ jobs:
 
   update-site:
     needs: run-matches
-    if: needs.run-matches.outputs.stage != 'none'
+    if: ${{ !cancelled() && needs.run-matches.outputs.stage != 'none' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
