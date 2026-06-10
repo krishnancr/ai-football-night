@@ -88,3 +88,11 @@ jobs:
           publish_dir: ./_site
           commit_message: "site: ${{ github.run_id }}"
 
+      - name: Upload tweet threads
+        uses: actions/upload-artifact@v4
+        with:
+          name: tweet-threads-${{ github.run_id }}
+          path: runs/*_thread.json
+          if-no-files-found: warn
+          retention-days: 7
+

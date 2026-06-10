@@ -25,6 +25,7 @@ _PUNDITS = [
 ]
 
 _LANDING_CSS = """
+.studio-img { width: 100%; border-radius: 12px; display: block; margin-bottom: 24px; max-height: 340px; object-fit: cover; object-position: center top; }
 .hero { background: linear-gradient(135deg, #0f3460 0%, #1e293b 100%); border-radius: 12px; padding: 28px; margin-bottom: 28px; }
 .hero-title { font-size: 1.35rem; font-weight: 700; color: #60a5fa; margin-bottom: 8px; }
 .hero-sub { color: #94a3b8; font-size: 0.88rem; line-height: 1.55; }
@@ -36,7 +37,29 @@ _LANDING_CSS = """
 .upcoming-row { background: #1e293b; border-radius: 6px; padding: 9px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
 .upcoming-teams { font-weight: 600; }
 .upcoming-badge { font-size: 0.68rem; color: #475569; background: #0f172a; padding: 2px 8px; border-radius: 4px; }
+.banter-label { font-size: 0.7rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
+.banter-chat { background: #0f172a; border-radius: 10px; padding: 16px; margin-bottom: 28px; border: 1px solid #1e293b; }
+.banter-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.banter-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 88%; }
+.banter-name { font-size: 0.68rem; font-weight: 700; margin-bottom: 3px; }
+.banter-text { font-size: 0.85rem; line-height: 1.45; color: #e2e8f0; }
+.banter-row.judge .banter-bubble { background: #0d2618; border: 1px solid #166534; }
 """
+
+_SAMPLE_BANTER = [
+    {"role": "Stat_Bot",
+     "text": "UCL Final. Arsenal's xG this campaign: 2.6 per game. PSG's: 2.2. Havertz has scored in four consecutive European knockout games. The data says Arsenal end their 36-year wait tonight. This is not sentiment. This is arithmetic."},
+    {"role": "R_Bot",
+     "text": "I have heard 'this is Arsenal's year' every year since 2006. Dembélé is unplayable in a final, PSG held the cup last year, and Havertz will spend the second half explaining a yellow card to a referee who does not care."},
+    {"role": "G_Bot",
+     "text": "Both of you are missing the tactical key. Arsenal press in a 4-3-3 but PSG's double pivot sits deep and funnels everything wide. This is entirely about whether Saka can beat their left back one-on-one for ninety minutes. If yes, Arsenal. If PSG adjust at half-time, we go to extra time."},
+    {"role": "Stat_Bot",
+     "text": "G_Bot said 'if yes' as his entire analysis. That is not a number. That is a coin flip with a blazer on."},
+    {"role": "R_Bot",
+     "text": "PSG 2-0. Dembélé first half, something scrambled late. Arsenal will hit the post at least once and somebody will write a very long article about it."},
+    {"role": "K_Bot",
+     "text": "Arsenal score early, PSG equalise from a penalty, it goes to extra time. Someone misses in the shootout and PSG retain. Stat_Bot's model will be technically correct and completely useless. R_Bot will insist he was basically right. Prediction locked. — Actual result: PSG 1–1 Arsenal AET, PSG win 4–3 on pens. Gabriel Magalhães misses the fifth. Called it."},
+]
 
 ROLE_COLORS = {
     "Stat_Bot": "#3b82f6",
@@ -92,6 +115,40 @@ def _upcoming_html(schedule: list, from_date_str: str, days: int = 7) -> str:
         )
         rows_by_date += f'<div class="day-group"><h3>{date.strftime("%B %-d")}</h3>{day_rows}</div>\n'
     return f'<section><h2>Coming Up</h2>{rows_by_date}</section>'
+
+
+def _sample_banter_html(collapsed: bool = False) -> str:
+    rows = ""
+    for msg in _SAMPLE_BANTER:
+        role = msg["role"]
+        color = ROLE_COLORS.get(role, "#64748b")
+        name = role
+        judge_class = " judge" if role == "K_Bot" else ""
+        rows += (
+            f'<div class="banter-row{judge_class}">'
+            f'<div class="avatar" style="background:{color};width:28px;height:28px;border-radius:50%;'
+            f'display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;'
+            f'color:white;flex-shrink:0;">{name[0]}</div>'
+            f'<div class="banter-bubble">'
+            f'<div class="banter-name" style="color:{color};">{name}</div>'
+            f'<div class="banter-text">{msg["text"]}</div>'
+            f'</div></div>\n'
+        )
+    chat = f'<div class="banter-chat">{rows}</div>'
+    label = "From the studio — UCL Final, PSG vs Arsenal, May 2026"
+    if collapsed:
+        return (
+            f'<details style="margin-bottom:28px;">'
+            f'<summary style="cursor:pointer;font-size:0.75rem;color:#475569;letter-spacing:0.08em;'
+            f'text-transform:uppercase;padding:8px 0;list-style:none;">'
+            f'▸ What the studio sounds like — UCL Final preview</summary>'
+            f'<div style="margin-top:12px;">{chat}</div>'
+            f'</details>'
+        )
+    return (
+        f'<div class="banter-label">{label}</div>'
+        f'{chat}'
+    )
 
 
 def _display(role: str) -> str:
@@ -256,6 +313,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     if not run_pairs:
         upcoming_section = _upcoming_html(schedule, today_str) if schedule else ""
         pundits_section = _pundits_html()
+        banter_section = _sample_banter_html()
         hero = (
             '<div class="hero">'
             '<div class="hero-title">Predictions for every World Cup 2026 match.</div>'
@@ -277,7 +335,9 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     <h1>AI Football Night</h1>
     <p>Four AI pundits. One studio. Every World Cup 2026 match.</p>
   </header>
+  <img class="studio-img" src="assets/studio.png" alt="AI Football Night studio">
   {hero}
+  {banter_section}
   {pundits_section}
   {upcoming_section}
 </body>
@@ -349,6 +409,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
   {archive_section}
   {upcoming_section}
   {pundits_section}
+  {_sample_banter_html(collapsed=True)}
 </body>
 </html>"""
 
@@ -640,6 +701,13 @@ def build_site(output_dir: Path, runs_dir: Path = RUNS_DIR) -> None:
     if not sched_path.exists():
         sched_path = Path("schedule.json")
     schedule = json.loads(sched_path.read_text()) if sched_path.exists() else []
+
+    # Copy static assets (images etc.) if present
+    import shutil
+    for assets_src in [runs_dir.parent / "assets", Path("assets")]:
+        if assets_src.exists():
+            shutil.copytree(assets_src, output_dir / "assets", dirs_exist_ok=True)
+            break
 
     index_html = generate_index_html(run_pairs, today_str, schedule=schedule)
     (output_dir / "index.html").write_text(index_html, encoding="utf-8")
