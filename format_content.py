@@ -147,7 +147,7 @@ def format_twitter_thread(run: dict, context: dict) -> list:
     substack_url = os.getenv("SUBSTACK_URL", "link in bio")
 
     proposals = run.get("full_debate", {}).get("proposals", {})
-    statman_text = proposals.get("Statman", "")
+    statman_text = proposals.get("Stat_Bot") or proposals.get("Statman", "")
 
     def truncate(text: str, max_len: int) -> str:
         if len(text) <= max_len:

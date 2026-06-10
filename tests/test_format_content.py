@@ -69,3 +69,14 @@ def test_format_twitter_thread_last_tweet_has_link(run_data, context_data):
     last = thread[-1]
     # Last tweet should reference where to find more
     assert "substack" in last.lower() or "http" in last.lower() or "full" in last.lower()
+
+
+def test_format_twitter_thread_statbot_tweet_not_empty_with_live_roles(run_data, context_data):
+    """Live runs key proposals by Stat_Bot (not legacy Statman) — tweet 3 must not be empty."""
+    from format_content import format_twitter_thread
+    proposals = run_data["full_debate"]["proposals"]
+    proposals["Stat_Bot"] = proposals.pop("Statman")
+    thread = format_twitter_thread(run_data, context_data)
+    statbot_tweet = thread[2]
+    body = statbot_tweet.replace("📊 Stat_Bot:", "").replace("[3/5]", "").strip()
+    assert len(body) > 20, f"Stat_Bot tweet body is empty/near-empty: {statbot_tweet!r}"
