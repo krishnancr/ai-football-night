@@ -226,7 +226,11 @@ def update_yesterday_results(date_str: str) -> int:
     print(f"Checking results for {prev_date}: {len(prev_files)} match(es)")
     updated = 0
     for run_file in prev_files:
-        run = json.loads(run_file.read_text())
+        try:
+            run = json.loads(run_file.read_text())
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"  ⚠️  Skipping unreadable run file {run_file.name}: {e}")
+            continue
         if "actual" in run:
             print(f"  Already recorded: {run_file.name}")
             continue

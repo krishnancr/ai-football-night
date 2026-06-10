@@ -56,9 +56,10 @@ jobs:
           playwright install chromium --with-deps
           python render_card.py --date "${MATCH_DATE:-$(date -u +%Y-%m-%d)}"
 
-      # always(): a failed match must not discard the successful ones' artifacts
+      # !cancelled(): a failed match must not discard the successful ones' artifacts,
+      # but a cancelled run must not commit possibly-truncated files
       - name: Commit runs to main
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "ai-football-night-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
