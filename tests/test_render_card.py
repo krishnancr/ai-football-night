@@ -71,3 +71,26 @@ def test_bubble_selection_is_deterministic(card_run):
     quote = card_run["decision"]["studio_banter_quote"]["exchange"]
     assert select_bubbles(chat, quote) == select_bubbles(chat, quote)
     assert len(select_bubbles(chat, quote)) == 4
+
+
+def test_card_html_escapes_llm_text(card_run):
+    from render_card import build_card_html
+    card_run["group_chat"][0]["text"] = '</div><script>alert(1)</script> xG says no'
+    html = build_card_html(card_run, _records())
+    assert "<script>" not in html
+    assert "&lt;script&gt;" in html
+
+
+def test_card_html_truncates_long_messages(card_run):
+    from render_card import build_card_html, CARD_MSG_LIMIT
+    card_run["group_chat"][0]["text"] = "A" * 220
+    html = build_card_html(card_run, _records())
+    assert "A" * 220 not in html
+    assert "A" * CARD_MSG_LIMIT + "…" in html
+
+
+def test_card_html_shrinks_score_for_long_team_names(card_run):
+    from render_card import build_card_html
+    card_run["match_string"] = "Bosnia and Herzegovina vs Korea Republic"
+    html = build_card_html(card_run, _records())
+    assert "font-size: 34px" in html

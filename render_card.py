@@ -17,11 +17,13 @@ import base64
 import json
 import sys
 from datetime import datetime, timezone
+from html import escape
 from pathlib import Path
 
 ROLES = ("Stat_Bot", "G_Bot", "R_Bot", "K_Bot")
 ROLE_COLORS = {"Stat_Bot": "#3b82f6", "G_Bot": "#10b981", "R_Bot": "#f59e0b", "K_Bot": "#a855f7"}
 AVATAR_DIR = Path("assets/avatars")
+CARD_MSG_LIMIT = 140  # max chars per chat bubble before truncation
 
 
 def _teams(run: dict) -> tuple:
@@ -62,8 +64,8 @@ def _avatar_html(role: str) -> str:
     if portrait.exists():
         b64 = base64.b64encode(portrait.read_bytes()).decode()
         return (f'<img class="avatar" src="data:image/png;base64,{b64}" '
-                f'style="border:2px solid {color};" alt="{role}">')
-    return (f'<div class="avatar" style="background:{color};">{role[0]}</div>')
+                f'style="border:2px solid {color};" alt="{escape(role)}">')
+    return (f'<div class="avatar" style="background:{color};">{escape(role[0])}</div>')
 
 
 def _leaderboard_html(records: dict) -> str:
@@ -75,9 +77,9 @@ def _leaderboard_html(records: dict) -> str:
     for i, (role, rec) in enumerate(standings):
         score = f"{rec['correct_result']}/{rec['matches']}"
         if i == len(standings) - 1:
-            parts.append(f'<span class="lb-item sack"><b>{role}</b> {score} — SACK ZONE</span>')
+            parts.append(f'<span class="lb-item sack"><b>{escape(role)}</b> {score} — SACK ZONE</span>')
         else:
-            parts.append(f'<span class="lb-item"><b>{role}</b> {score}</span>')
+            parts.append(f'<span class="lb-item"><b>{escape(role)}</b> {score}</span>')
     return "".join(parts)
 
 
@@ -110,13 +112,17 @@ def build_card_html(run: dict, records: dict) -> str:
         color = ROLE_COLORS.get(role, "#64748b")
         side = "right" if i % 2 else ""
         judge = " judge" if role == "K_Bot" else ""
+        text = msg["text"]
+        if len(text) > CARD_MSG_LIMIT:
+            text = text[:CARD_MSG_LIMIT] + "…"
         rows += (
             f'<div class="row {side}">{_avatar_html(role)}'
-            f'<div class="bubble"><div class="who{judge}" style="color:{color};">{role}</div>'
-            f'<div class="msg">{msg["text"]}</div></div></div>\n'
+            f'<div class="bubble"><div class="who{judge}" style="color:{color};">{escape(role)}</div>'
+            f'<div class="msg">{escape(text)}</div></div></div>\n'
         )
 
     matchday = datetime.now(timezone.utc).strftime("%d %b %Y").upper()
+    score_style = ' style="font-size: 34px;"' if len(home) + len(away) > 22 else ""
     return f"""<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
   * {{ margin: 0; box-sizing: border-box; }}
@@ -151,7 +157,7 @@ def build_card_html(run: dict, records: dict) -> str:
   <div class="header">
     <div>
       <div class="show">AI FOOTBALL NIGHT</div>
-      <div class="score">{home.upper()} {home_g}–{away_g} {away.upper()}</div>
+      <div class="score"{score_style}>{escape(home.upper())} {home_g}–{away_g} {escape(away.upper())}</div>
     </div>
     <div class="verdict">THE PANEL'S VERDICT</div>
   </div>
@@ -162,3 +168,65 @@ def build_card_html(run: dict, records: dict) -> str:
     <div class="foot">WORLD CUP 2026 · {matchday}</div>
   </div>
 </body></html>"""
+
+
+def screenshot_card(html: str, out_path: Path) -> bool:
+    """HTML string -> 1200x675 PNG. Returns False (never raises) on failure."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  playwright not installed — skipping card render (text-only day)")
+        return False
+    try:
+        html_path = out_path.with_suffix(".html")
+        html_path.write_text(html, encoding="utf-8")
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(viewport={"width": 1200, "height": 675})
+            page.goto(html_path.resolve().as_uri())
+            page.screenshot(path=str(out_path))
+            browser.close()
+        print(f"  Card: {out_path}")
+        return True
+    except Exception as e:
+        print(f"  ⚠️  Card render failed ({e}) — text-only day, run not blocked")
+        return False
+
+
+def render_for_run(run_path: Path) -> bool:
+    from track_record import build_track_records
+    run = json.loads(Path(run_path).read_text())
+    records = build_track_records(Path(run_path).parent)
+    html = build_card_html(run, records)
+    out_path = Path(run_path).parent / f"{Path(run_path).stem}_card.png"
+    return screenshot_card(html, out_path)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Render share card PNG(s) from run JSON")
+    parser.add_argument("run_file", nargs="?", help="Path to a wc_*.json run file")
+    parser.add_argument("--date", help="Render all successful matches from that day's summary (YYYY-MM-DD)")
+    args = parser.parse_args()
+
+    if args.date:
+        compact = args.date.replace("-", "")
+        summary_path = Path("runs") / f"daily_{compact}_summary.json"
+        if not summary_path.exists():
+            print(f"No summary for {args.date}: {summary_path}")
+            sys.exit(0)
+        summary = json.loads(summary_path.read_text())
+        ok = 0
+        for match in summary.get("matches", []):
+            if match.get("success") and Path(match["run_file"]).exists():
+                ok += render_for_run(Path(match["run_file"]))
+        print(f"Rendered {ok} card(s)")
+    elif args.run_file:
+        success = render_for_run(Path(args.run_file))
+        sys.exit(0 if success else 1)
+    else:
+        parser.print_help()
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
