@@ -1,0 +1,47 @@
+{
+  "home_team": "Panama",
+  "away_team": "England",
+  "group": "L",
+  "match_date": "2026-06-27",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "England lead the only previous head-to-head meeting, a 6-1 demolition in the 2018 World Cup group stage, though Panama's Felipe Baloy did score his country's first-ever World Cup goal in that match.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "6-1 England win - FIFA World Cup Group Stage - 2018"
+    ]
+  },
+  "form_home": ["W", "D", "L", "W", "D"],
+  "form_away": ["W", "W", "W", "L", "W"],
+  "key_players_home": [
+    "Adalberto Carrasquilla (central midfielder / creative engine)",
+    "Anibal Godoy (defensive midfielder / captain)",
+    "Amir Murillo (right back)",
+    "Ismael Diaz (striker)",
+    "Cecilio Waterman (forward)"
+  ],
+  "key_players_away": [
+    "Harry Kane (striker / captain)",
+    "Jude Bellingham (attacking midfielder)",
+    "Bukayo Saka (right winger)",
+    "Declan Rice (defensive midfielder)",
+    "Marcus Rashford (left winger)"
+  ],
+  "team_style_home": "Panama set up in a compact 4-2-3-1 or 5-4-1 defensive shape out of possession, relying on collective organisation, hard running, and quick vertical counter-attacks when chances arise, with Carrasquilla as the creative link and set-pieces as a key weapon.",
+  "team_style_away": "Under Thomas Tuchel, England play a possession-dominant 4-2-3-1 that morphs into a 3-2-5 in build-up, with high-intensity pressing, inverted wingers, and over 70% average possession recorded throughout qualifying.",
+  "wc_history_home": "Panama made their World Cup debut at Russia 2018, losing all three group games to Belgium, England, and Tunisia but earning a place in history when Felipe Baloy scored the country's first-ever World Cup goal; 2026 is only their second appearance.",
+  "wc_history_away": "England won the 1966 World Cup on home soil — their only major international title — and have since reached the semi-finals in 1990 and 2018, arriving at 2026 ranked 4th in the world seeking a second world title.",
+  "group_context": "Group L features England, Croatia, Ghana, and Panama; England and Croatia are the heavy favourites to advance, making the Panama vs England match — the final group game — potentially decisive for England's qualification path and essentially Panama's last chance to avoid a group-stage exit.",
+  "strengths_home": [
+    "Disciplined defensive organisation capable of frustrating higher-ranked opponents",
+    "Dangerous set-piece threat and physical presence in both penalty areas",
+    "Counter-attacking pace and directness with Waterman and Diaz able to punish high defensive lines"
+  ],
+  "strengths_away": [
+    "World-class attacking trio in Kane, Bellingham, and Saka capable of dismantling organised defences",
+    "High-press system that suffocates teams with limited technical quality in build-up",
+    "Dominant possession game with structural flexibility under Tuchel that can adapt to any opponent"
+  ]
+}

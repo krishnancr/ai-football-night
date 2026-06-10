@@ -1,0 +1,45 @@
+{
+  "home_team": "DR Congo",
+  "away_team": "Uzbekistan",
+  "group": "K",
+  "match_date": "2026-06-27",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "DR Congo and Uzbekistan have never previously met in any official international fixture, making this their first-ever competitive encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "D", "W", "W", "D"],
+  "form_away": ["L", "L", "D", "W", "W"],
+  "key_players_home": [
+    "Chancel Mbemba (captain, centre-back, Lille)",
+    "Yoane Wissa (forward/winger, Newcastle United)",
+    "Cedric Bakambu (striker, Real Betis)",
+    "Noah Sadiki (box-to-box midfielder)",
+    "Nathanael Mbuku (winger)"
+  ],
+  "key_players_away": [
+    "Eldor Shomurodov (captain, striker, Istanbul Basaksehir — 44 international goals)",
+    "Abdukodir Khusanov (centre-back, Manchester City)",
+    "Abbosbek Fayzullaev (attacking midfielder)",
+    "Jaloliddin Masharipov (playmaker)",
+    "Otabek Shukurov (midfielder)"
+  ],
+  "team_style_home": "DR Congo deploy a compact 4-3-3 or 4-2-3-1, emphasising defensive organisation and explosive counter-attacks through wide forwards with exceptional pace.",
+  "team_style_away": "Under Fabio Cannavaro, Uzbekistan use a disciplined 3-4-2-1 built on Italian-style defensive compactness and sharp counter-attacking bursts through Shomurodov and Fayzullaev.",
+  "wc_history_home": "DR Congo (then Zaire) made their sole World Cup appearance in 1974, becoming the first Sub-Saharan African side at the tournament but losing all three group games and conceding 14 goals; 2026 marks their dramatic return after 52 years.",
+  "wc_history_away": "Uzbekistan are making their first-ever FIFA World Cup appearance in 2026, qualifying as AFC runners-up in a historic achievement as the first Central Asian nation to reach the tournament.",
+  "group_context": "Group K is headlined by Portugal and Colombia, widely expected to take the top two spots, leaving DR Congo and Uzbekistan competing fiercely for a third-place berth that could still advance under the expanded 48-team format; a win here would be decisive for either side's knockout-round hopes.",
+  "strengths_home": [
+    "Explosive counter-attacking pace through Wissa and Mbuku on the wings",
+    "Defensive leadership and experience through captain Mbemba (107 caps)",
+    "Strong physical presence and aggressive pressing in midfield"
+  ],
+  "strengths_away": [
+    "Prolific and experienced captain in Shomurodov, all-time top scorer with 44 goals",
+    "Premier League defensive quality via Manchester City's Khusanov",
+    "Disciplined defensive structure and dangerous from set pieces"
+  ]
+}

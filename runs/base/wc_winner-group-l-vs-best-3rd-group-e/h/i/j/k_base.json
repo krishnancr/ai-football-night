@@ -1,0 +1,49 @@
+{
+  "home_team": "Winner Group L",
+  "away_team": "Best 3rd Group E/H/I/J/K",
+  "group": "R32",
+  "match_date": "2026-07-01",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "England (most likely Winner Group L) hold a slight edge over Uruguay (most likely 3rd-place qualifier from Group H) in friendlies, but Uruguay leads the all-time competitive record 5-3-4, having never lost a competitive game to England.",
+  "h2h_record": {
+    "home_wins": 3,
+    "draws": 4,
+    "away_wins": 5,
+    "notable_results": [
+      "2-1 Uruguay - World Cup - 2014 (Luis Suarez double)",
+      "4-2 Uruguay - World Cup - 1954",
+      "1-1 Draw - Friendly - 2026 (Wembley)"
+    ]
+  },
+  "form_home": ["W", "W", "W", "L", "D"],
+  "form_away": ["D", "D", "L", "W", "L"],
+  "key_players_home": [
+    "Harry Kane (centre-forward, captain, record 78 England goals)",
+    "Jude Bellingham (attacking midfielder, Real Madrid)",
+    "Bukayo Saka (right winger, Arsenal Premier League winner)",
+    "Declan Rice (defensive midfielder, Arsenal)",
+    "Jordan Pickford (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Federico Valverde (box-to-box midfielder, Real Madrid)",
+    "Darwin Nunez (centre-forward, 13 goals in 36 caps)",
+    "Manuel Ugarte (defensive midfielder, Manchester United)",
+    "Facundo Pellistri (winger)",
+    "Jose Maria Gimenez (centre-back, captain)"
+  ],
+  "team_style_home": "England under Thomas Tuchel deploy a flexible 4-3-3 or 3-4-3 with high possession (70%+ in qualifying), aggressive high press, disciplined defensive shape, and rapid transitions exploiting Saka and Bellingham in advanced positions.",
+  "team_style_away": "Uruguay under Marcelo Bielsa play high-intensity pressing 4-3-3 or 4-4-2 with vertical, fast-circulation attacking football, blending traditional Uruguayan physicality with modern gegenpressing principles and dynamic wing play.",
+  "wc_history_home": "England won their only World Cup on home soil in 1966 defeating West Germany 4-2 AET, and have reached the semi-finals on multiple occasions including 1990 and 2018 (losing on penalties and to Croatia respectively).",
+  "wc_history_away": "Uruguay are two-time World Cup champions (1930, 1950) and the most decorated South American nation historically, with 15 Copa America titles; they reached the semi-finals in 2010 and have qualified for 14 World Cups.",
+  "group_context": "Group L (England, Croatia, Ghana, Panama) features England as heavy favourites to top the group and advance to face the best third-place team from Groups E/H/I/J/K; the most probable third-place qualifier from this pool is Uruguay (Group H: Spain, Uruguay, Saudi Arabia, Cape Verde), who must finish third behind Spain to come through this route.",
+  "strengths_home": [
+    "Elite attacking trio in Kane, Bellingham, and Saka capable of breaking down any defence",
+    "Dominant possession and pressing system under Tuchel with exceptional defensive record (9 clean sheets in 10 matches in 2025)",
+    "Deep squad depth with world-class Premier League and Champions League experience"
+  ],
+  "strengths_away": [
+    "Bielsa's relentless high-press system creates chaos for structured teams and wins ball high up the pitch",
+    "Valverde and Ugarte provide elite midfield engine combining creativity and defensive solidity",
+    "Strong collective defensive organisation with experienced captain Gimenez marshalling the backline"
+  ]
+}

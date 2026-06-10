@@ -1,0 +1,48 @@
+{
+  "home_team": "Australia",
+  "away_team": "Türkiye",
+  "group": "D",
+  "match_date": "2026-06-13",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "Türkiye have won both previous meetings, both 2004 friendlies, with Australia yet to score a win over them.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 2,
+    "notable_results": [
+      "Turkey 3-1 Australia - Friendly - 2004",
+      "Turkey 1-0 Australia - Friendly - 2004"
+    ]
+  },
+  "form_home": ["W", "W", "W", "L", "D"],
+  "form_away": ["W", "W", "W", "D", "W"],
+  "key_players_home": [
+    "Mathew Ryan (goalkeeper, captain)",
+    "Harry Souttar (centre-back)",
+    "Martin Boyle (winger)",
+    "Nestory Irankunda (forward)",
+    "Aiden O'Neill (midfielder)"
+  ],
+  "key_players_away": [
+    "Hakan Çalhanoğlu (defensive midfielder, captain)",
+    "Arda Güler (attacking midfielder, Real Madrid)",
+    "Kenan Yıldız (winger, Juventus)",
+    "Kerem Aktürkoğlu (winger)",
+    "Merih Demiral (centre-back)"
+  ],
+  "team_style_home": "Australia under Tony Popovic deploy a back-three/back-five system with compact defensive blocks, high work rate, and quick counter-attacking transitions rather than dominant possession play.",
+  "team_style_away": "Türkiye under Vincenzo Montella use a 4-2-3-1 with high pressing, possession-oriented build-up, and creative central midfield play to unlock defences through Güler and Yıldız.",
+  "wc_history_home": "Australia have appeared at six consecutive World Cups (1974, 2006–2026), with their best performance reaching the Round of 16 twice — in 2006 against Italy and in 2022 against Argentina.",
+  "wc_history_away": "Türkiye's finest World Cup moment came in 2002 when they finished third, featuring Hakan Şükür's fastest-ever World Cup goal (11 seconds); this 2026 tournament is their first appearance since 2002.",
+  "group_context": "Group D features co-hosts USA (favourites), an exciting Türkiye side, defensively-solid Paraguay, and Australia; all three non-host teams are competing for two automatic qualification spots plus a potential third-place berth, making each match crucial.",
+  "strengths_home": [
+    "Disciplined defensive organisation and high work rate",
+    "Set-piece threat through Harry Souttar",
+    "Dangerous on the counter-attack with pace in wide areas"
+  ],
+  "strengths_away": [
+    "World-class creative talent in Güler and Yıldız",
+    "Hakan Çalhanoğlu's experience, leadership and set-piece quality",
+    "Strong qualifying form — won group with victories over Bulgaria and Georgia"
+  ]
+}

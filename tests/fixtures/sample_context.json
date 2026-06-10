@@ -1,0 +1,16 @@
+{
+  "home_team": "Brazil",
+  "away_team": "Croatia",
+  "match_date": "2026-06-11",
+  "group": "D",
+  "form_home": ["W", "W", "D", "W", "L"],
+  "form_away": ["D", "W", "W", "L", "W"],
+  "h2h_summary": "Brazil won 3 of last 5 meetings. Croatia won the 2022 QF on penalties.",
+  "injuries_home": ["Neymar (knee, ruled out)"],
+  "injuries_away": [],
+  "odds": {"home_win": 1.65, "draw": 3.40, "away_win": 5.50},
+  "key_players_home": ["Vinicius Jr", "Rodrygo"],
+  "key_players_away": ["Luka Modric", "Josko Gvardiol"],
+  "context": "Group D opener. Croatia eliminated Brazil in 2022 QF. Both teams under pressure.",
+  "recent_news": "Brazil without Neymar. Croatia unchanged. Modric confirmed starting despite age concerns."
+}

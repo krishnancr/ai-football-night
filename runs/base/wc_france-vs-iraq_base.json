@@ -1,0 +1,45 @@
+{
+  "home_team": "France",
+  "away_team": "Iraq",
+  "group": "I",
+  "match_date": "2026-06-22",
+  "venue": "Lincoln Financial Field, Philadelphia, USA",
+  "h2h_summary": "France and Iraq have no documented competitive head-to-head history before the 2026 World Cup; this is the first official match between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "L", "W", "W"],
+  "form_away": ["D", "W", "W", "L", "L"],
+  "key_players_home": [
+    "Kylian Mbappe (captain, striker/forward)",
+    "Ousmane Dembele (winger, 2025 Ballon d'Or winner)",
+    "Michael Olise (winger, Bayern Munich)",
+    "William Saliba (centre-back, Arsenal)",
+    "Aurelien Tchouameni (defensive midfielder, Real Madrid)"
+  ],
+  "key_players_away": [
+    "Aymen Hussein (striker, all-time leading scorer, 32 goals in 90 caps)",
+    "Ali Al-Hamadi (striker, first Iraqi in Premier League, Luton Town)",
+    "Zidane Iqbal (midfielder, FC Utrecht, ex-Manchester United academy)",
+    "Amir Al-Ammari (midfielder, Cracovia, scored decisive playoff penalty)",
+    "Jalal Hassan (goalkeeper, 100+ caps, captain)"
+  ],
+  "team_style_home": "France operate in a pragmatic 4-2-3-1 shape under Deschamps, with Tchouameni and Rabiot anchoring the midfield and a rotating cast of world-class forwards given freedom to interchange in the final third around a freely-roaming Mbappe.",
+  "team_style_away": "Iraq employ a compact 4-5-1 or 4-4-2 defensive block focused on keeping the shape narrow and hard to penetrate, then transitioning quickly through direct balls to their physical strikers; they also rely heavily on set pieces and aerial duels.",
+  "wc_history_home": "France are two-time World Cup champions (1998 as hosts, 2018 in Russia) and have reached the final four times in the last seven editions, making them among the most successful nations in tournament history.",
+  "wc_history_away": "Iraq made their only previous World Cup appearance at Mexico 1986, losing all three group matches (to Paraguay, Belgium, and Mexico) by a single goal each and earning respect for their discipline before exiting in the group stage.",
+  "group_context": "Group I features France (ranked 1st globally), Norway (Haaland and Odegaard), Senegal (Mane and Koulibaly), and Iraq (ranked 57th); France are heavy favorites to top the group while Norway and Senegal battle for second, leaving Iraq needing an upset to advance.",
+  "strengths_home": [
+    "Deepest attacking squad at the tournament with Mbappe, Dembele, Olise, Doue, Barcola, and Thuram",
+    "World-class defensive solidity anchored by Saliba, with high FIFA ranking and tournament pedigree",
+    "Midfield control and positional discipline through Tchouameni and Camavinga"
+  ],
+  "strengths_away": [
+    "Compact defensive organization makes them difficult to break down quickly",
+    "Physical strikers (Hussein, Al-Hamadi) dangerous from set pieces and direct play",
+    "Qualification momentum and underdog hunger — ended a 40-year World Cup absence with play-off heroics"
+  ]
+}

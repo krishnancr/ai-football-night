@@ -1,0 +1,51 @@
+{
+  "home_team": "Netherlands",
+  "away_team": "Sweden",
+  "group": "F",
+  "match_date": "2026-06-20",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Netherlands lead the all-time head-to-head with 11 wins to Sweden's 8, though in the modern era (post-1974) the Dutch have the upper hand with 3 wins and 1 draw in competitive matches.",
+  "h2h_record": {
+    "home_wins": 11,
+    "draws": 6,
+    "away_wins": 8,
+    "notable_results": [
+      "2-0 Netherlands win - FIFA World Cup Qualifier - 2017",
+      "4-1 Netherlands win - UEFA Euro Qualifier - 2010",
+      "0-0 draw (Sweden win on penalties 5-4) - UEFA Euro 2004 Quarter-Final - 2004",
+      "1-1 draw - FIFA World Cup Qualifier - 2016",
+      "0-0 draw - FIFA World Cup Group Stage - 1974"
+    ]
+  },
+  "form_home": ["W", "L", "W", "D", "W"],
+  "form_away": ["L", "W", "L", "D", "W"],
+  "key_players_home": [
+    "Virgil van Dijk (central defender / captain)",
+    "Frenkie de Jong (central midfielder)",
+    "Cody Gakpo (forward / winger)",
+    "Xavi Simons (attacking midfielder)",
+    "Ryan Gravenberch (central midfielder)"
+  ],
+  "key_players_away": [
+    "Viktor Gyokeres (striker)",
+    "Alexander Isak (forward)",
+    "Anthony Elanga (winger)",
+    "Victor Lindelof (central defender / captain)",
+    "Lucas Bergvall (central midfielder)"
+  ],
+  "team_style_home": "Netherlands under Koeman deploy a possession-based 4-3-3 that shifts to 4-2-3-1, building from the back with technically gifted defenders, using a high defensive line, line-breaking passes, and wide full-backs to stretch opponents.",
+  "team_style_away": "Sweden under Graham Potter use a pragmatic, counter-attacking 3-4-3 that sacrifices possession for rapid transitions, relying on the explosive pace of Gyokeres and Elanga to punish defensive lines in behind.",
+  "wc_history_home": "Netherlands are three-time World Cup runners-up (1974, 1978, 2010) and have reached the semi-finals or better in five tournaments, making them one of football's most decorated nations never to have won the trophy.",
+  "wc_history_away": "Sweden's best World Cup finish was runners-up at home in 1958, and they claimed third place in 1994; their 13th World Cup appearance in 2026 comes after missing the 2022 tournament entirely.",
+  "group_context": "Group F features Netherlands (FIFA rank 7th), Japan (18th), Sweden (38th), and Tunisia (45th), with Netherlands as clear favourites to top the group; the Netherlands vs Sweden match on Matchday 2 is effectively a pivotal battle for first place, as both teams are expected to beat Tunisia and the winner will likely secure top spot.",
+  "strengths_home": [
+    "Elite technical midfield with de Jong, Gravenberch, and Simons controlling tempo",
+    "Settled, experienced defensive unit led by Van Dijk with Premier League-quality depth",
+    "Clinical attacking options in Gakpo, Depay, and Kluivert capable of unlocking deep blocks"
+  ],
+  "strengths_away": [
+    "Devastating counter-attacking pace with Gyokeres and Elanga among Europe's most dangerous transition threats",
+    "Gyokeres in lethal form after 21+ goals in 2025-26 and match-winning playoff performances",
+    "Compact defensive structure under Potter that concedes few chances and is hard to break down"
+  ]
+}

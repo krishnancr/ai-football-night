@@ -1,0 +1,49 @@
+{
+  "home_team": "South Africa",
+  "away_team": "Korea Republic",
+  "group": "A",
+  "match_date": "2026-06-24",
+  "venue": "Estadio BBVA, Monterrey, Mexico",
+  "h2h_summary": "South Africa and Korea Republic have met only a handful of times, with Korea Republic holding the edge; their most famous encounter was a 2–2 draw at the 2010 FIFA World Cup group stage (played as South Africa vs Mexico/Korea context — notably their 2010 WC opener was vs Mexico not Korea), and Korea Republic won a 2016 friendly 2–1.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 2,
+    "notable_results": [
+      "2-1 Korea Republic win - International Friendly - 2016",
+      "1-1 Draw - 2010 FIFA World Cup Group A - 2010",
+      "Korea Republic lead overall head-to-head record with 2 wins, 1 draw, 0 South Africa wins"
+    ]
+  },
+  "form_home": ["W", "D", "L", "D", "W"],
+  "form_away": ["W", "W", "L", "W", "L"],
+  "key_players_home": [
+    "Ronwen Williams (goalkeeper, captain)",
+    "Lyle Foster (striker, Burnley)",
+    "Teboho Mokoena (central midfielder, 50+ caps)",
+    "Oswin Appollis (winger)",
+    "Relebohile Mofokeng (attacking midfielder, Orlando Pirates)"
+  ],
+  "key_players_away": [
+    "Son Heung-min (winger/forward, captain, Tottenham Hotspur)",
+    "Kim Min-jae (centre-back, Bayern Munich)",
+    "Lee Kang-in (attacking midfielder, Paris Saint-Germain)",
+    "Hwang Hee-chan (forward, Wolverhampton Wanderers)",
+    "Hwang In-beom (central midfielder, Feyenoord)"
+  ],
+  "team_style_home": "South Africa under Hugo Broos play with a fluid 3-4-3 or 4-3-3, emphasising direct, fearless attacking football with energetic wingers and a high-pressing mentality instilled over his tenure.",
+  "team_style_away": "Korea Republic under Hong Myung-bo deploy a 4-2-3-1 built on high-intensity pressing, vertical direct play and lightning-fast transitions, using Son Heung-min and Lee Kang-in to unlock defences wide and centrally.",
+  "wc_history_home": "South Africa appeared at three World Cups (1998, 2002, 2010) but never advanced past the group stage, most memorably hosting 2010 where they beat France yet were eliminated on goal difference as the first host nation to exit at the group stage.",
+  "wc_history_away": "Korea Republic have appeared in 11 World Cups, achieving their best-ever result in 2002 on home soil where they eliminated Italy and Spain en route to a historic fourth-place finish, the best by any Asian nation.",
+  "group_context": "Group A contains co-hosts Mexico, South Africa, Korea Republic, and Czech Republic; the South Africa vs Korea Republic finale on June 24 is likely to be decisive for second place, with both teams needing a result to guarantee advancement to the round of 32.",
+  "strengths_home": [
+    "Experienced goalkeeper in Ronwen Williams, a penalty shootout hero",
+    "Dangerous wide attackers (Appollis, Mofokeng) capable of causing upsets",
+    "Well-organised defensive shape under Broos with a compact back three"
+  ],
+  "strengths_away": [
+    "World-class attacking threat through Son Heung-min, one of the tournament's elite forwards",
+    "Elite centre-back Kim Min-jae providing defensive solidity",
+    "Strong European-based squad with depth and experience at the highest level"
+  ]
+}

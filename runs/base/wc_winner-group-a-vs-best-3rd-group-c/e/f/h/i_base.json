@@ -1,0 +1,47 @@
+{
+  "home_team": "Winner Group A",
+  "away_team": "Best 3rd Group C/E/F/H/I",
+  "group": "R32",
+  "match_date": "2026-06-30",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": "Mexico (most likely Winner Group A) hold a narrow all-time edge over Scotland (most likely 3rd-place qualifier from Group C) with only one confirmed international meeting — a 1-0 Mexico win in a 2018 friendly at Azteca — making this a historically thin rivalry with limited data.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "1-0 Mexico - International Friendly - 2018 (Giovani dos Santos, Azteca)"
+    ]
+  },
+  "form_home": ["W", "W", "W", "D", "D"],
+  "form_away": ["W", "W", "L", "L", "D"],
+  "key_players_home": [
+    "Santiago Gimenez (centre-forward, AC Milan, Mexico's sharpest scorer at 24)",
+    "Edson Alvarez (defensive midfielder, captain, Fenerbahce)",
+    "Raul Jimenez (centre-forward, Fulham, experienced striker)",
+    "Guillermo Ochoa (goalkeeper, record sixth World Cup appearance)",
+    "Cesar Huerta (winger, Anderlecht, pace and directness on the flanks)"
+  ],
+  "key_players_away": [
+    "Scott McTominay (attacking midfielder, Napoli, Scotland's talisman and top scorer in qualifying)",
+    "Andy Robertson (left back, captain, 92 caps, Liverpool)",
+    "John McGinn (central midfielder, Aston Villa, 85 caps, Europa League winner)",
+    "Che Adams (centre-forward, main striker leading the line)",
+    "Lawrence Shankland (striker, Hearts, clinical finisher and alternative to Adams)"
+  ],
+  "team_style_home": "Mexico under Javier Aguirre deploy a compact 4-3-3 with Edson Alvarez as single pivot, emphasising quick passing through midfield, wing speed via Huerta and Alvarado, and tactical flexibility to shift into a 5-3-2 or 4-3-2 when defending.",
+  "team_style_away": "Scotland under Steve Clarke set up in a pragmatic 4-3-3 or 3-5-2 built on defensive organisation and a compact mid-block, looking to win the ball quickly and transition via McTominay's late runs into the box and Robertson's overlapping from left back.",
+  "wc_history_home": "Mexico have appeared at 18 World Cups, are co-hosting the 2026 edition for a record third time (previously 1970 and 1986), and have twice reached the quarter-finals as hosts but are historically plagued by seven consecutive last-16 exits from 1994 to 2018.",
+  "wc_history_away": "Scotland qualified for their first World Cup since 1998, having appeared eight times in total but never advancing beyond the group stage — their most famous moment remains a 3-2 win over the Netherlands in the 1978 tournament in Argentina.",
+  "group_context": "Group A (Mexico, South Korea, Czechia, South Africa) has Mexico as heavy co-host favourites to top the group and advance to play the best 3rd-place team from Groups C/E/F/H/I at Azteca; Scotland (Group C: Brazil, Morocco, Haiti) is the most widely predicted best-3rd qualifier from this pool, finishing third behind Brazil and Morocco.",
+  "strengths_home": [
+    "Massive co-host home advantage at Estadio Azteca with 87,000-capacity crowd support",
+    "Dual striking threat with Santiago Gimenez's finishing and Raul Jimenez's physical presence",
+    "CONCACAF Nations League and Gold Cup titles in 2024-25 reflect strong recent tournament form under Aguirre"
+  ],
+  "strengths_away": [
+    "McTominay's ability to arrive late into the box from deep midfield creates unpredictable goal threat",
+    "Defensively disciplined and hard to break down — Steve Clarke's system concedes very few goals",
+    "Experienced core (Robertson 92 caps, McGinn 85 caps) battle-hardened in European club football"
+  ]
+}

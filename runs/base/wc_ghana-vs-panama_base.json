@@ -1,0 +1,45 @@
+{
+  "home_team": "Ghana",
+  "away_team": "Panama",
+  "group": "L",
+  "match_date": "2026-06-17",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Ghana and Panama have no prior head-to-head competitive history; their 2026 World Cup Group L match on June 17 will be the first-ever meeting between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["D", "L", "L", "L", "W"],
+  "form_away": ["D", "W", "D", "L", "D"],
+  "key_players_home": [
+    "Antoine Semenyo (winger, Manchester City)",
+    "Inaki Williams (striker, Athletic Club)",
+    "Jordan Ayew (captain, forward)",
+    "Thomas Partey (defensive midfielder, Villarreal)",
+    "Abdul Fatawu Issahaku (winger, Leicester City)"
+  ],
+  "key_players_away": [
+    "Anibal Godoy (captain, defensive midfielder, San Diego FC)",
+    "Adalberto Carrasquilla (creative midfielder, Pumas UNAM)",
+    "Jose Fajardo (striker, 17 international goals)",
+    "Ismael Diaz (striker, Leon)",
+    "Luis Mejia (goalkeeper)"
+  ],
+  "team_style_home": "Ghana under Carlos Queiroz deploy a defensive-minded 4-2-3-1 with Thomas Partey anchoring a double pivot, prioritizing compact organisation and rapid counter-attacks through the pace of Semenyo and Inaki Williams on the flanks.",
+  "team_style_away": "Panama under Thomas Christiansen set up in a disciplined 4-2-3-1 or 5-4-1, pressing high with intensity (leading CONCACAF qualifiers in high turnovers and pressed sequences), maintaining a compact defensive block and relying on quick transitions rather than possession-based play.",
+  "wc_history_home": "Ghana have appeared at four World Cups (2006, 2010, 2014, 2022), with their finest hour coming in 2010 when they reached the quarter-finals in South Africa before losing to Uruguay on penalties, becoming only the third African nation to achieve that feat.",
+  "wc_history_away": "Panama made their World Cup debut in 2018 in Russia but were eliminated in the group stage with three defeats (including a 6-1 loss to England), scoring only once through Felipe Baloy's historic first goal for the nation; they did not qualify for 2022.",
+  "group_context": "Group L features England (heavy favourites), Croatia (2018 finalists), Ghana, and Panama — with Ghana and Panama facing each other in the opening round on June 17, making this match a virtual must-win for both sides to remain in contention for a top-two finish and progression to the Round of 32.",
+  "strengths_home": [
+    "Explosive wide attackers with Premier League pedigree (Semenyo, Issahaku) capable of beating defenders in 1v1 situations",
+    "Experienced, disciplined midfield anchor in Thomas Partey providing defensive cover and ball distribution",
+    "Strong squad depth at forward positions and proven big-game captain in Jordan Ayew with 119 international caps"
+  ],
+  "strengths_away": [
+    "League-leading defensive organisation and pressing intensity from CONCACAF qualifying — Panama went unbeaten in their final 12 competitive qualifiers",
+    "Physicality and combative style well-suited to the pressures of a World Cup group-stage battle against fellow underdogs",
+    "Experienced leadership through record appearance-holder Anibal Godoy (157 caps) and proven goal-scorer Jose Fajardo (17 international goals)"
+  ]
+}

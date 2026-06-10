@@ -1,0 +1,48 @@
+{
+  "home_team": "Jordan",
+  "away_team": "Argentina",
+  "group": "J",
+  "match_date": "2026-06-27",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "Jordan and Argentina have met only a handful of times in friendlies with no competitive meeting prior to this World Cup; the most recent encounter was a 1-1 draw in 1990.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - Friendly - 1990"
+    ]
+  },
+  "form_home": ["W", "L", "D", "L", "L"],
+  "form_away": ["W", "W", "W", "W", "W"],
+  "key_players_home": [
+    "Mousa Al-Tamari (winger/captain, Rennes)",
+    "Ali Olwan (striker)",
+    "Noor Al-Rawabdeh (midfielder)",
+    "Yazan Al-Arab (defender)",
+    "Odeh Al-Fakhouri (forward)"
+  ],
+  "key_players_away": [
+    "Lionel Messi (attacking midfielder/forward)",
+    "Julian Alvarez (striker)",
+    "Lautaro Martinez (striker)",
+    "Alexis Mac Allister (midfielder)",
+    "Rodrigo De Paul (midfielder)",
+    "Emiliano Martinez (goalkeeper)"
+  ],
+  "team_style_home": "Jordan play a compact, disciplined mid-block and rely on quick counter-attacks and transitions, using pace on the flanks — particularly via Mousa Al-Tamari — to threaten on the break.",
+  "team_style_away": "Argentina deploy a fluid 4-3-3 that morphs into a 3-2-5 in build-up, using patient possession through a high-quality midfield trio and Messi as a deep-lying 'Quarterback 10' to unlock defences.",
+  "wc_history_home": "Jordan are making their first-ever FIFA World Cup appearance in 2026, having qualified by defeating Oman 3-0 in June 2025 after reaching the 2023 AFC Asian Cup final and the 2025 Arab Cup final.",
+  "wc_history_away": "Argentina are three-time World Cup champions (1978, 1986, 2022), entering 2026 as defending champions with Messi making a record sixth World Cup appearance across 19 tournament appearances.",
+  "group_context": "Group J contains Argentina (defending champions, FIFA #2), Austria, Algeria, and debutants Jordan; Argentina are heavy favorites to top the group while Jordan, Algeria, and Austria compete fiercely for second place and potential third-place progression.",
+  "strengths_home": [
+    "Disciplined defensive organization — conceded only 4 goals across all AFC qualifying matches",
+    "Dangerous counter-attacking threat through Mousa Al-Tamari's pace and creativity",
+    "Tournament resilience — runners-up at 2023 AFC Asian Cup and 2025 Arab Cup"
+  ],
+  "strengths_away": [
+    "World-class individual quality throughout the squad — Messi, Alvarez, Lautaro, Romero, Martínez",
+    "Exceptional defensive record — conceded just 10 goals across 18 CONMEBOL qualifying matches",
+    "Tactical flexibility under Scaloni with a fluid system adaptable to any opponent"
+  ]
+}

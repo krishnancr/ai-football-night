@@ -1,0 +1,45 @@
+{
+  "home_team": "New Zealand",
+  "away_team": "Belgium",
+  "group": "G",
+  "match_date": "2026-06-26",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "New Zealand and Belgium have no recorded competitive meetings prior to this 2026 World Cup match, making it effectively a first-ever major encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["L", "W", "L", "L", "L"],
+  "form_away": ["W", "W", "W", "D", "W"],
+  "key_players_home": [
+    "Chris Wood (striker / captain)",
+    "Liberato Cacace (left back)",
+    "Tyler Bindon (centre back)",
+    "Marko Stamenic (central midfielder)",
+    "Sarpreet Singh (attacking midfielder)"
+  ],
+  "key_players_away": [
+    "Kevin De Bruyne (attacking midfielder / playmaker)",
+    "Romelu Lukaku (striker)",
+    "Thibaut Courtois (goalkeeper)",
+    "Jeremy Doku (winger)",
+    "Youri Tielemans (central midfielder / captain)"
+  ],
+  "team_style_home": "New Zealand deploy a pragmatic 4-3-3 or 4-2-3-1 built on defensive solidity, aerial duels, and set-piece threat through Chris Wood, relying on organisation and resilience rather than possession-based attacking play.",
+  "team_style_away": "Belgium under Rudi Garcia use a 4-2-3-1 emphasising possession, quick transitions after winning the ball, with Kevin De Bruyne as the creative engine and pacey wide attackers like Jeremy Doku exploiting space on the flanks.",
+  "wc_history_home": "New Zealand (the All Whites) have appeared at the World Cup in 1982 and 2010, most memorably going unbeaten in 2010 with draws against Slovakia, Italy, and Paraguay — the only unbeaten team at that tournament.",
+  "wc_history_away": "Belgium have participated in 15 World Cups and achieved their best-ever finish of third place at Russia 2018, where their Golden Generation featuring De Bruyne, Hazard, and Lukaku defeated England 2-0 in the third-place play-off.",
+  "group_context": "Group G consists of Belgium, Egypt, Iran, and New Zealand, with Belgium heavily favoured to top the group; New Zealand face an uphill task against stronger opposition but a positive result against Belgium could give them a fighting chance of advancing as a third-place team.",
+  "strengths_home": [
+    "Defensive organisation and resilience — capable of frustrating top-ranked opponents",
+    "Set-piece and aerial threat through Chris Wood, New Zealand's all-time leading scorer",
+    "Experience of World Cup pressure, with the 2010 squad's unbeaten run embedded in team culture"
+  ],
+  "strengths_away": [
+    "World-class attacking quality with De Bruyne, Doku, Lukaku, and Trossard",
+    "Excellent goalkeeper in Thibaut Courtois (two-time UEFA Champions League winner with Real Madrid)",
+    "Strong squad depth and form — on a 13-match unbeaten run heading into the tournament"
+  ]
+}

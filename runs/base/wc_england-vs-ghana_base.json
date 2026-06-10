@@ -1,0 +1,47 @@
+{
+  "home_team": "England",
+  "away_team": "Ghana",
+  "group": "L",
+  "match_date": "2026-06-23",
+  "venue": "Gillette Stadium, Foxborough, USA",
+  "h2h_summary": "England and Ghana have met just once, a 1-1 friendly draw at Wembley in March 2011 with Andy Carroll equalised by Asamoah Gyan's late strike.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - International Friendly - 2011"
+    ]
+  },
+  "form_home": ["W", "W", "W", "D", "L"],
+  "form_away": ["L", "L", "L", "L", "D"],
+  "key_players_home": [
+    "Harry Kane (striker / captain)",
+    "Jude Bellingham (attacking midfielder)",
+    "Bukayo Saka (right winger)",
+    "Declan Rice (box-to-box midfielder)",
+    "Jordan Pickford (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Thomas Partey (defensive midfielder)",
+    "Iñaki Williams (striker / forward)",
+    "Antoine Semenyo (wide forward)",
+    "Jordan Ayew (captain / forward)",
+    "Abdul Fatawu Issahaku (winger)"
+  ],
+  "team_style_home": "Under Thomas Tuchel, England play a fluid 4-2-3-1 / 4-3-3 that morphs into a 3-2-5 in possession, with inverted full-backs, an aggressive high press, and direct attacking intent through Saka, Bellingham, and Kane.",
+  "team_style_away": "Under Carlos Queiroz, Ghana set up in a defensive 4-2-3-1 or 3-4-2-1, prioritising a compact low block and counter-attacking through the pace and skill of Williams and Semenyo on the wings.",
+  "wc_history_home": "England won the World Cup on home soil in 1966, have appeared 17 times total, and reached the fourth place in 1990 and 2018, with Harry Kane winning the Golden Boot in Russia.",
+  "wc_history_away": "Ghana have qualified for four of the last five World Cups, reaching the quarter-finals in 2010 (South Africa) where they were eliminated by Uruguay on penalties in one of the tournament's most dramatic moments.",
+  "group_context": "Group L features England, Croatia, Ghana, and Panama, with England the clear favourites (67.5% probability of topping the group per Opta); Ghana and Croatia are competing for the second knockout spot, making England vs Ghana on matchday 2 pivotal for the Black Stars' advancement hopes.",
+  "strengths_home": [
+    "World-class attacking talent across the pitch — Kane, Bellingham, Saka",
+    "Tactical flexibility and structural discipline under Tuchel's 3-2-5 possession system",
+    "Premier League and Champions League pedigree throughout the squad"
+  ],
+  "strengths_away": [
+    "Pacey, direct wide forwards in Williams and Semenyo capable of exploiting space on the counter",
+    "Experienced leadership through captain Jordan Ayew and deep-lying anchor Thomas Partey",
+    "Queiroz's proven ability to organise defensively compact units against superior opponents"
+  ]
+}

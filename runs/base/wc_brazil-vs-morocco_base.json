@@ -1,0 +1,48 @@
+{
+  "home_team": "Brazil",
+  "away_team": "Morocco",
+  "group": "C",
+  "match_date": "2026-06-13",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "Brazil and Morocco have met twice in history, splitting one win each: Brazil won 3-0 at the 1998 World Cup, while Morocco won 2-1 in a 2023 friendly.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "Brazil 3-0 Morocco - FIFA World Cup Group Stage - 1998",
+      "Morocco 2-1 Brazil - International Friendly - 2023"
+    ]
+  },
+  "form_home": ["W", "W", "W", "L", "D"],
+  "form_away": ["D", "W", "W", "D", "W"],
+  "key_players_home": [
+    "Vinicius Junior (left winger)",
+    "Raphinha (right winger)",
+    "Bruno Guimaraes (central midfielder)",
+    "Endrick (striker)",
+    "Marquinhos (centre-back)"
+  ],
+  "key_players_away": [
+    "Achraf Hakimi (right back / captain)",
+    "Brahim Diaz (attacking midfielder)",
+    "Sofyan Amrabat (defensive midfielder)",
+    "Youssef En-Nesyri (striker)",
+    "Bilal El Khannouss (attacking midfielder)"
+  ],
+  "team_style_home": "Brazil under Carlo Ancelotti deploy a 4-2-3-1 or 4-3-3 with patient possession-based buildup, counter-attacking pace on the wings through Vinicius and Raphinha, and defensive solidity anchored by Casemiro and Bruno Guimaraes.",
+  "team_style_away": "Morocco under Mohamed Ouahbi use a compact 4-2-3-1 or 4-1-4-1, defending in tight synchronized blocks then transitioning rapidly, with Hakimi's aggressive right-side overlaps and Brahim Diaz creating in the half-spaces as primary attacking weapons.",
+  "wc_history_home": "Brazil are the most successful World Cup nation with five titles (1958, 1962, 1970, 1994, 2002) and have never missed a tournament, boasting a record 76 wins in 114 World Cup matches.",
+  "wc_history_away": "Morocco made history at Qatar 2022 by becoming the first African and Arab nation to reach a World Cup semifinal, eliminating Spain and Portugal en route before finishing fourth.",
+  "group_context": "Group C features five-time champions Brazil, 2022 semi-finalists Morocco, Scotland, and Haiti; Brazil vs Morocco on June 13 is effectively the group's defining match, with the winner strongly placed to top the group while the loser faces pressure in subsequent games against Scotland and Haiti.",
+  "strengths_home": [
+    "Elite individual attacking quality — Vinicius, Raphinha and Endrick among the tournament's most dangerous forwards",
+    "Experienced defensive spine with Marquinhos, Casemiro and Bruno Guimaraes providing structural discipline",
+    "Tactical flexibility under Ancelotti allowing fluid 4-2-3-1 / 4-3-3 transitions and strong set-piece execution"
+  ],
+  "strengths_away": [
+    "World-record 19-game winning streak and AFCON 2025 champions with proven tournament pedigree",
+    "Achraf Hakimi's dynamic right-flank threat combined with Brahim Diaz's creative brilliance in tight spaces",
+    "Compact defensive shape with synchronized midfield pressing that makes them hard to break down even against elite opposition"
+  ]
+}

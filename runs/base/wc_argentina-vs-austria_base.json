@@ -1,0 +1,49 @@
+{
+  "home_team": "Argentina",
+  "away_team": "Austria",
+  "group": "J",
+  "match_date": "2026-06-22",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "Argentina have historically dominated this fixture, winning the only two previous meetings (both friendlies): 5-1 in Vienna in 1980 (Maradona hat-trick) and 1-1 in Vienna in 1990; the teams have never met at a World Cup before 2026.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "Austria 1-5 Argentina - International Friendly - 1980",
+      "Austria 1-1 Argentina - International Friendly - 1990"
+    ]
+  },
+  "form_home": ["W", "W", "W", "W", "W"],
+  "form_away": ["W", "W", "W", "D", "W"],
+  "key_players_home": [
+    "Lionel Messi (free-roaming attacking midfielder/forward)",
+    "Lautaro Martinez (striker)",
+    "Julian Alvarez (forward)",
+    "Alexis Mac Allister (central midfielder)",
+    "Enzo Fernandez (central midfielder)",
+    "Emiliano Martinez (goalkeeper)"
+  ],
+  "key_players_away": [
+    "David Alaba (centre-back / captain)",
+    "Marcel Sabitzer (attacking midfielder)",
+    "Christoph Baumgartner (attacking midfielder)",
+    "Marko Arnautovic (striker / record goalscorer)",
+    "Michael Gregoritsch (forward)"
+  ],
+  "team_style_home": "Argentina play a fluid 4-3-3 under Lionel Scaloni built on collective gegenpressing, rapid transitions, and Messi's free-roaming role between the lines, combining defensive solidity with devastating attacking interplay.",
+  "team_style_away": "Under Ralf Rangnick, Austria deploy an intense gegenpressing 4-2-3-1 system that prioritises winning the ball high up the pitch, quick vertical transitions, and high-energy pressing across all 90 minutes.",
+  "wc_history_home": "Argentina are three-time World Cup champions (1978, 1986, 2022) and arrive as defending champions, having also been runners-up in 1930, 1990, and 2014.",
+  "wc_history_away": "Austria are making their 8th World Cup appearance; their best finish remains third place in 1954 in Switzerland, where they also featured in the highest-scoring match in World Cup history (7-5 vs Switzerland).",
+  "group_context": "Group J comprises defending champions Argentina, Austria (UEFA), Algeria (CAF), and debutants Jordan (AFC); Argentina are overwhelming favourites to top the group, while Austria and Algeria are likely to contest the second automatic qualification spot, making the Argentina-Austria match pivotal for Austria's knockout stage ambitions.",
+  "strengths_home": [
+    "World-class individual talent led by Messi and Lautaro Martinez",
+    "Battle-hardened squad with World Cup winning experience from 2022",
+    "Disciplined defensive structure combined with lethal counter-attacking speed"
+  ],
+  "strengths_away": [
+    "Cohesive gegenpressing system under the tactically elite Ralf Rangnick",
+    "Experienced senior players (Alaba, Sabitzer, Arnautovic) supplemented by in-form Bundesliga talents",
+    "Excellent recent form with five wins and one draw from last six matches including strong pre-tournament friendlies"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "home_team": "Belgium",
+  "away_team": "Iran",
+  "group": "G",
+  "match_date": "2026-06-21",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "Belgium and Iran have no confirmed prior meetings in any official or major friendly international fixture, making this their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "D", "W", "W"],
+  "form_away": ["W", "W", "W", "L", "D"],
+  "key_players_home": [
+    "Kevin De Bruyne (attacking midfielder)",
+    "Romelu Lukaku (striker)",
+    "Thibaut Courtois (goalkeeper)",
+    "Jeremy Doku (winger)",
+    "Youri Tielemans (central midfielder, captain)"
+  ],
+  "key_players_away": [
+    "Mehdi Taremi (striker, captain)",
+    "Alireza Jahanbakhsh (winger)",
+    "Alireza Beiranvand (goalkeeper)",
+    "Saman Ghoddos (midfielder)",
+    "Ehsan Hajsafi (left-back, most capped)"
+  ],
+  "team_style_home": "Belgium under Rudi Garcia play an aggressive 4-2-3-1 with high-intensity pressing, immediate vertical transitions and wide threat through Doku and Trossard, with De Bruyne as the creative fulcrum.",
+  "team_style_away": "Iran under Amir Ghalenoei deploy a disciplined 4-2-3-1 built on defensive compactness and a mid-to-low block, looking to stifle opponents and exploit space on the counter-attack through Taremi.",
+  "wc_history_home": "Belgium have appeared in 14 World Cups and achieved their best-ever result in 2018, finishing third after defeating Brazil in the quarter-finals before losing to France in the semis.",
+  "wc_history_away": "Iran are appearing at their sixth consecutive World Cup (seventh overall), but have never advanced beyond the group stage despite notable wins over the USA in 1998, Morocco in 2018, and Wales in 2022.",
+  "group_context": "Group G features Belgium, Egypt, Iran and New Zealand; Belgium are strong favourites to top the group, and this match is pivotal for Iran as a win or draw could keep them in contention for one of the two knockout-round spots alongside or ahead of Egypt.",
+  "strengths_home": [
+    "Elite creative quality through De Bruyne with lethal pace on the wings from Doku and Trossard",
+    "World-class goalkeeper Thibaut Courtois providing a commanding last line of defence",
+    "Prolific attack with Lukaku as proven finisher and squad depth drawn from Europe's top five leagues"
+  ],
+  "strengths_away": [
+    "Defensive solidity and organised low-block structure that is difficult to break down in tight games",
+    "Dangerous counter-attacking threat through Taremi, who has 59 international goals in 103 caps",
+    "Experienced core — led by 142-cap Hajsafi — with the resolve and tactical discipline to grind out results"
+  ]
+}

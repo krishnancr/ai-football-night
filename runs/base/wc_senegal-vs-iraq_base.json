@@ -1,0 +1,45 @@
+{
+  "home_team": "Senegal",
+  "away_team": "Iraq",
+  "group": "I",
+  "match_date": "2026-06-26",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Senegal and Iraq have no verified competitive head-to-head history; this 2026 World Cup group stage match is believed to be their first major tournament meeting.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["L", "W", "W", "W", "W"],
+  "form_away": ["D", "W", "W", "L", "L"],
+  "key_players_home": [
+    "Sadio Mane (captain / forward, Al-Nassr)",
+    "Nicolas Jackson (striker, Bayern Munich loan from Chelsea)",
+    "Ismaila Sarr (winger, Crystal Palace)",
+    "Iliman Ndiaye (winger / attacking mid, Everton)",
+    "Kalidou Koulibaly (centre-back, Al Hilal)"
+  ],
+  "key_players_away": [
+    "Aymen Hussein (striker, national all-time top scorer)",
+    "Ali Al-Hamadi (striker, Luton Town)",
+    "Zidane Iqbal (central midfielder, FC Utrecht)",
+    "Amir Al-Ammari (midfielder, Cracovia)",
+    "Jalal Hassan (goalkeeper / captain, Al-Zawraa)"
+  ],
+  "team_style_home": "Senegal play an energetic 4-3-3 built on high pressing, rapid wing transitions, and Sadio Mane's ability to drop deep and link play, combining physical intensity with technical flair from their European-based attackers.",
+  "team_style_away": "Iraq under Graham Arnold employ a compact 4-5-1 / 4-4-2 defensive block, prioritizing disciplined low-medium lines, set-piece threat, and fast direct transitions through Aymen Hussein and Ali Al-Hamadi on the counter.",
+  "wc_history_home": "Senegal have appeared at three World Cups (2002, 2018, 2022), with their finest hour a stunning 2002 debut that knocked out defending champions France and reached the quarter-finals — their best-ever finish.",
+  "wc_history_away": "Iraq appeared at the World Cup just once before, at Mexico 1986, where they lost all three group games and scored a single goal, making their 2026 participation a historic second appearance after a 40-year absence.",
+  "group_context": "Group I features France, Norway, Senegal, and Iraq; France and Norway are heavy favourites for the top two spots, meaning this Senegal vs Iraq clash is effectively a must-win for Senegal to stay in contention for second place and knockout qualification.",
+  "strengths_home": [
+    "Star-studded attack with pace and physicality across the front three",
+    "Solid defensive record — conceded only three goals in African qualifying",
+    "AFCON 2021 and 2026 champions with tournament winning experience"
+  ],
+  "strengths_away": [
+    "Disciplined defensive organisation under Graham Arnold's structured system",
+    "Dangerous from set pieces with physical aerial presence",
+    "Strong team spirit and counter-attacking threat through Aymen Hussein and Al-Hamadi"
+  ]
+}

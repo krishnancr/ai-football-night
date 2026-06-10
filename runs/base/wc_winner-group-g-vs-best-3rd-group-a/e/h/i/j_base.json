@@ -1,0 +1,49 @@
+{
+  "home_team": "Winner Group G",
+  "away_team": "Best 3rd Group A/E/H/I/J",
+  "group": "R32",
+  "match_date": "2026-07-01",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Belgium (most likely Winner Group G, FIFA rank 8) have a narrow all-time edge over Norway (most likely best 3rd-place qualifier from Group I), winning 1 and drawing 1 of their 2 documented senior international meetings, with Belgium never having lost to Norway in available records.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "3-2 Belgium - Friendly - 2016 (Brussels)",
+      "2-2 Draw - Friendly - 2004",
+      "4-0 Belgium - 1920 Olympics (Antwerp)"
+    ]
+  },
+  "form_home": ["W", "W", "D", "W", "W"],
+  "form_away": ["D", "W", "D", "L", "W"],
+  "key_players_home": [
+    "Kevin De Bruyne (attacking midfielder, creative engine, 34, exceptional range of passing)",
+    "Romelu Lukaku (centre-forward, Belgium all-time top scorer with 89 goals)",
+    "Thibaut Courtois (goalkeeper, Real Madrid, two-time Champions League winner)",
+    "Jeremy Doku (left winger, explosive dribbler, Manchester City)",
+    "Amadou Onana (defensive midfielder, Aston Villa, physical and combative)"
+  ],
+  "key_players_away": [
+    "Erling Haaland (centre-forward, Man City, 55 goals in 48 Norway caps, 16 goals in qualifying)",
+    "Martin Odegaard (attacking midfielder, Arsenal captain, creative playmaker)",
+    "Antonio Nusa (right winger, RB Leipzig, 21 years old, pace and dribbling)",
+    "Sander Berge (defensive midfielder, Fulham, shields the backline)",
+    "Alexander Sorloth (centre-forward, Atletico Madrid, physically imposing backup striker)"
+  ],
+  "team_style_home": "Belgium under Rudi Garcia deploy a 4-2-3-1 possession-based system with quick counter-attacks, De Bruyne dictating from central areas, Doku providing pace and width on the left, and an emphasis on collective spirit over data-driven tactics.",
+  "team_style_away": "Norway under Stale Solbakken use a 4-3-3 built around aggressive high pressing, fast vertical transitions, and Haaland as the central reference point for diagonal runs and aerial duels, with Odegaard finding pockets between lines and full-backs pushing wide to create space.",
+  "wc_history_home": "Belgium reached their best World Cup finish in 2018 with third place in Russia, defeating England 2-0 in the third-place playoff, and have appeared at 15 World Cups in total including fourth place at Mexico 1986.",
+  "wc_history_away": "Norway return to the World Cup for the first time since 1998, when they famously defeated reigning champions Brazil 2-1 in the group stage before losing to Italy in the Round of 16; they qualified for 2026 with a perfect 8W-0D-0L record scoring 37 goals.",
+  "group_context": "Group G (Belgium, Egypt, Iran, New Zealand) is one of the more straightforward groups with Belgium as heavy favourites to top it; the best 3rd-place team from Groups A/E/H/I/J is most likely Norway from Group I (France, Norway, Senegal, Iraq), who face a tough group but possess a golden generation capable of finishing third ahead of Iraq and then ranking as the best 3rd among their pool.",
+  "strengths_home": [
+    "World-class creative midfield anchored by De Bruyne capable of unlocking any defence with incisive passing",
+    "Dynamic attacking combination of Doku's pace on the wing and Lukaku's aerial and physical presence",
+    "Experienced squad with Champions League and top European league pedigree and third-place World Cup finish in 2018"
+  ],
+  "strengths_away": [
+    "Erling Haaland is the most feared striker in the tournament, averaging a goal every 44 minutes in qualifying with elite movement and finishing",
+    "Norway recorded the highest-ever European World Cup qualifying goal tally (37 goals in 8 games) with a cohesive high-press system",
+    "Odegaard and Nusa provide creative and pace-based attacking threats alongside Haaland that can expose defensive lines on the counter"
+  ]
+}

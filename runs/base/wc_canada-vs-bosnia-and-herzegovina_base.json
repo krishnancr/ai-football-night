@@ -1,0 +1,45 @@
+{
+  "home_team": "Canada",
+  "away_team": "Bosnia and Herzegovina",
+  "group": "B",
+  "match_date": "2026-06-12",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Canada and Bosnia and Herzegovina have never met before; this World Cup group stage match will be the first official encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["D", "W", "D", "D", "W"],
+  "form_away": ["D", "D", "W", "W", "L"],
+  "key_players_home": [
+    "Jonathan David (striker, all-time top scorer with 39 international goals)",
+    "Alphonso Davies (left back/captain, recovering from hamstring injury, doubtful for opener)",
+    "Stephen Eustaquio (central midfielder, vice-captain)",
+    "Cyle Larin (striker, second all-time scorer)",
+    "Tajon Buchanan (winger)"
+  ],
+  "key_players_away": [
+    "Edin Dzeko (striker/captain, 73 international goals, all-time top scorer)",
+    "Ermedin Demirovic (forward/attacking midfielder, Stuttgart)",
+    "Esmir Bajraktarevic (winger, PSV Eindhoven, scored winning WC qualifier penalty vs Italy)",
+    "Benjamin Tahirovic (central midfielder, engine room)",
+    "Amar Dedic (right back/defender)"
+  ],
+  "team_style_home": "Canada play an intense high-press 4-4-2 / 4-2-3-1 system known as 'Maplepressing' under Jesse Marsch, winning the ball high up the pitch and launching rapid vertical attacks with a high defensive line.",
+  "team_style_away": "Bosnia and Herzegovina deploy a physical and direct 4-2-3-1 under Sergej Barbarez, defending compactly and hitting quickly on the counter, with direct service into Dzeko and wide play through the flanks.",
+  "wc_history_home": "Canada have appeared at only two World Cups before 2026: in 1986 (exited in the group stage without scoring) and 2022 (group stage exit, but scored their historic first World Cup goal via Alphonso Davies against Croatia).",
+  "wc_history_away": "Bosnia and Herzegovina's only previous World Cup appearance was in 2014, where they were eliminated in the group stage despite a memorable 3-1 win over Iran in a group that also included Argentina and Nigeria.",
+  "group_context": "Group B features Canada (co-host, ranked 27th), Switzerland (ranked 17th and group favourites), Bosnia and Herzegovina, and Qatar; Canada desperately need points in front of their home crowd while Bosnia, having qualified dramatically by beating Italy on penalties, are targeting a surprise run to the knockout rounds.",
+  "strengths_home": [
+    "Home crowd advantage at BMO Field in Toronto",
+    "High-intensity pressing system that unsettles opponents in their own half",
+    "Potent attacking duo of Jonathan David and Cyle Larin"
+  ],
+  "strengths_away": [
+    "Veteran leadership of Edin Dzeko providing a reliable target and clinical finishing",
+    "Battle-hardened squad tempered by dramatic penalty shootout wins over Wales and Italy in qualifying",
+    "Disciplined counter-attacking style that can exploit space left by pressing teams"
+  ]
+}

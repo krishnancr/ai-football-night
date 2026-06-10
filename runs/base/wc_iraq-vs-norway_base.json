@@ -1,0 +1,45 @@
+{
+  "home_team": "Iraq",
+  "away_team": "Norway",
+  "group": "I",
+  "match_date": "2026-06-16",
+  "venue": "Gillette Stadium, Foxborough, USA",
+  "h2h_summary": "Iraq and Norway have never previously met in international football, making their World Cup 2026 Group I clash a historic first encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["L", "L", "W", "W", "D"],
+  "form_away": ["W", "L", "D", "L", "D"],
+  "key_players_home": [
+    "Aymen Hussein (striker, all-time leading scorer with 33 international goals)",
+    "Ali Al-Hamadi (forward, former Luton Town / Ipswich Town, first Iraqi in the Premier League)",
+    "Zidane Iqbal (central midfielder, FC Utrecht)",
+    "Amir Al-Ammari (midfielder, Cracovia, scored decisive playoff penalty vs Bolivia)",
+    "Jalal Hassan (goalkeeper, captain with 100+ caps)"
+  ],
+  "key_players_away": [
+    "Erling Haaland (striker, Manchester City, 16 qualifying goals)",
+    "Martin Odegaard (attacking midfielder / captain, Arsenal)",
+    "Alexander Sorloth (striker, Atletico Madrid, 26 international goals)",
+    "Antonio Nusa (right winger, RB Leipzig)",
+    "Sander Berge (defensive midfielder, Fulham)"
+  ],
+  "team_style_home": "Iraq under Graham Arnold deploy a compact 4-5-1 or 4-4-2 block, prioritising defensive organisation and disciplined pressing before transitioning quickly and directly through Aymen Hussein and Ali Al-Hamadi on the counter, with crosses and set pieces as primary attacking weapons.",
+  "team_style_away": "Norway under Stale Solbakken play an aggressive high-pressing 4-3-3, using explosive wide play to stretch defences and create space for Haaland centrally, with captain Odegaard operating as a creative No. 10 who links midfield to attack.",
+  "wc_history_home": "Iraq made their only previous World Cup appearance in 1986 in Mexico, finishing bottom of their group with three losses and a single goal to their name — then qualified again 40 years later for 2026.",
+  "wc_history_away": "Norway are appearing at the World Cup for the first time since France 1998, where they reached the Round of 16 after beating Brazil 2-1 in the group stage, and qualified for 2026 by topping their UEFA group with a perfect record of eight wins from eight.",
+  "group_context": "Group I is headlined by defending-champion-calibre France and African champions Senegal, with Norway widely tipped for second place thanks to Haaland's firepower; Iraq, the heavy underdogs returning to the World Cup after a 40-year absence, open against Norway in a match that could define their tournament hopes.",
+  "strengths_home": [
+    "Disciplined defensive organisation and hard to break down",
+    "Dangerous on counter-attack through direct play to physical strikers",
+    "Strong collective unity and tournament experience under Graham Arnold"
+  ],
+  "strengths_away": [
+    "Erling Haaland — elite finishing and physical dominance in the penalty area",
+    "Perfect qualifying record (8W from 8) with 37 goals and just 5 conceded",
+    "High-pressing system suffocates opposition build-up and creates turnovers in dangerous areas"
+  ]
+}

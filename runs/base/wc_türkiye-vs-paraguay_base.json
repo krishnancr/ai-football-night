@@ -1,0 +1,47 @@
+{
+  "home_team": "Türkiye",
+  "away_team": "Paraguay",
+  "group": "D",
+  "match_date": "2026-06-19",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "Türkiye and Paraguay have met only once in recorded history, a goalless friendly draw in June 1995, making this World Cup encounter their first competitive meeting.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "0-0 - International Friendly - 1995"
+    ]
+  },
+  "form_home": ["W", "W", "W", "W", "W"],
+  "form_away": ["W", "L", "W", "L", "W"],
+  "key_players_home": [
+    "Hakan Çalhanoğlu (captain, deep-lying playmaker)",
+    "Arda Güler (attacking midfielder, Real Madrid)",
+    "Kenan Yıldız (winger, Juventus)",
+    "Merih Demiral (centre-back)",
+    "Ferdi Kadıoğlu (left-back / midfielder)"
+  ],
+  "key_players_away": [
+    "Miguel Almirón (attacking midfielder / second striker)",
+    "Julio Enciso (winger / attacking midfielder, Brighton)",
+    "Gustavo Gómez (captain, centre-back, Palmeiras)",
+    "Antonio Sanabria (striker)",
+    "Diego Gómez (central midfielder, Brighton)"
+  ],
+  "team_style_home": "Türkiye line up in a fluid 4-2-3-1 under Vincenzo Montella, blending possession-based build-up with high pressing and relying on the creativity of Güler and Yıldız to unlock defences in the final third.",
+  "team_style_away": "Paraguay under Gustavo Alfaro deploy a compact 4-4-2 rooted in defensive intensity and collective pressing, building patiently from the back before releasing Almirón and Enciso on the counter-attack.",
+  "wc_history_home": "Türkiye's finest World Cup moment came in 2002, when they finished third — their only other appearance before 2026 being the 1954 group stage — with Hakan Şükür scoring the fastest goal in World Cup history (10.8 seconds) in the third-place match against South Korea.",
+  "wc_history_away": "Paraguay have appeared in ten World Cups, with their best run coming in 2010 when they reached the quarter-finals before losing 1-0 to eventual champions Spain, while their 1998 campaign also featured a memorable unbeaten group stage run before a golden-goal defeat to France.",
+  "group_context": "Group D — the USA, Türkiye, Paraguay, and Australia — is one of the most evenly matched groups of the tournament; the Turkey vs Paraguay clash on matchday 2 is likely a decisive game for second place, with both sides needing points after their respective openers against the USA and Australia.",
+  "strengths_home": [
+    "Elite creative talent in Güler and Yıldız capable of unlocking any defence",
+    "Çalhanoğlu's leadership, set-piece delivery and deep-lying playmaking",
+    "Strong qualification form — only one loss (to Spain) in final 10 matches"
+  ],
+  "strengths_away": [
+    "Defensively disciplined 4-4-2 system that concedes very few goals",
+    "Almirón and Enciso provide dangerous counter-attacking pace and invention",
+    "Gustavo Alfaro's battle-hardened squad psychologically prepared for tournament football"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "home_team": "Winner Group F",
+  "away_team": "Runner-up Group C",
+  "group": "R32",
+  "match_date": "2026-06-29",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "Netherlands (expected Winner Group F) hold a perfect record in their two documented meetings with Morocco (expected Runner-up Group C), winning both, including a 2-1 friendly in 2017 in Agadir.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "Netherlands 2-1 Morocco - International Friendly - 2017",
+      "Netherlands 2-0 Morocco - International Friendly - 1994"
+    ]
+  },
+  "form_home": ["W", "W", "D", "L", "W"],
+  "form_away": ["W", "W", "D", "W", "D"],
+  "key_players_home": [
+    "Virgil van Dijk (centre-back / captain)",
+    "Frenkie de Jong (central midfielder)",
+    "Cody Gakpo (forward)",
+    "Ryan Gravenberch (central midfielder)",
+    "Memphis Depay (striker)"
+  ],
+  "key_players_away": [
+    "Achraf Hakimi (right-back / captain)",
+    "Brahim Diaz (attacking midfielder)",
+    "Youssef En-Nesyri (striker)",
+    "Sofyan Amrabat (defensive midfielder)",
+    "Bilal El Khannouss (central midfielder)"
+  ],
+  "team_style_home": "Netherlands under Ronald Koeman deploy a possession-based 4-2-3-1 with a recognisable midfield square, the right winger cutting inside to allow Dumfries to overlap, with progressive ball-carrying through De Jong and Gravenberch and a focus on creating central overloads before switching play.",
+  "team_style_away": "Morocco under Mohamed Ouahbi favour a disciplined 4-2-3-1 that morphs into a 4-2-2-2, defending with a compact narrow shape before transitioning rapidly into direct attacks, exploiting Hakimi's aggressive overlapping runs on the right and Brahim Diaz's creativity in the half-spaces.",
+  "wc_history_home": "The Netherlands are one of football's most storied underachievers, having reached three World Cup finals (1974, 1978, 2010) without winning, and were eliminated by Argentina in the 2022 quarterfinals on penalties.",
+  "wc_history_away": "Morocco made history at the 2022 Qatar World Cup by becoming the first African and Arab nation to reach the semi-finals, defeating Belgium, Spain, and Portugal before falling to France, finishing in fourth place.",
+  "group_context": "This Round of 32 match on June 29 at Estadio Akron, Guadalajara pits the winner of Group F (Netherlands heavily favored) against the runner-up of Group C (Morocco expected to finish second behind Brazil), with the winner advancing to the Round of 16 to keep their World Cup hopes alive.",
+  "strengths_home": [
+    "World-class defensive leadership from Virgil van Dijk, providing commanding aerial presence and organisational authority at the back",
+    "Creative and dynamic midfield partnership of Frenkie de Jong and Ryan Gravenberch capable of controlling tempo and progressing the ball through tight spaces",
+    "Attacking versatility with Gakpo, Depay, and Malen offering different profiles in the final third, with Dumfries a constant threat from right-back"
+  ],
+  "strengths_away": [
+    "Achraf Hakimi's explosive pace and technical quality at right-back makes him one of the most dangerous wide players in the tournament",
+    "Proven tournament pedigree and mental resilience from their 2022 World Cup semifinal run, with a core of experienced players still in the squad",
+    "Tactically disciplined defensive organisation that is extremely difficult to break down, combined with lethal transitions through Brahim Diaz and En-Nesyri"
+  ]
+}

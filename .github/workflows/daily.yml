@@ -1,0 +1,90 @@
+name: Daily Match Day
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 7am UTC daily
+  workflow_dispatch:
+    inputs:
+      match_date:
+        description: 'Match date YYYY-MM-DD (default: today UTC)'
+        required: false
+      dry_run:
+        description: 'Skip tweet distribution (true/false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  run-matches:
+    runs-on: ubuntu-latest
+    outputs:
+      stage: ${{ steps.run_daily.outputs.stage }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run today's matches
+        id: run_daily
+        env:
+          MATCH_DATE: ${{ inputs.match_date }}
+          COUNCIL_API_KEY: ${{ secrets.COUNCIL_API_KEY }}
+          COUNCIL_BASE_URL: ${{ secrets.COUNCIL_BASE_URL }}
+          RESEARCH_MODEL: ${{ secrets.RESEARCH_MODEL }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: python daily_runner.py
+
+      - name: Commit runs to main
+        run: |
+          git config user.name "ai-football-night-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs/
+          git diff --staged --quiet || git commit -m "runs: $(date -u +%Y-%m-%d) match results"
+          git push
+
+      - name: Upload runs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: runs-${{ github.run_id }}
+          path: runs/
+          if-no-files-found: warn
+
+  update-site:
+    needs: run-matches
+    if: needs.run-matches.outputs.stage != 'none'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download runs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: runs-${{ github.run_id }}
+          path: runs/
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: python generate_site.py --output-dir _site
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          commit_message: "site: ${{ github.run_id }}"
+

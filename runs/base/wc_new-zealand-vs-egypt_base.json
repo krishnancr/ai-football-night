@@ -1,0 +1,47 @@
+{
+  "home_team": "New Zealand",
+  "away_team": "Egypt",
+  "group": "G",
+  "match_date": "2026-06-21",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "The teams have met only once, with Egypt winning 1-0 in a friendly in March 2024.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "Egypt 1-0 New Zealand - International Friendly - 2024"
+    ]
+  },
+  "form_home": ["L", "L", "W", "L", "L"],
+  "form_away": ["L", "W", "D", "W", "W"],
+  "key_players_home": [
+    "Chris Wood (striker, captain, Nottingham Forest)",
+    "Liberato Cacace (left-back/winger, Wrexham)",
+    "Tyler Bindon (centre-back, Sheffield United)",
+    "Matthew Garbett (midfielder)",
+    "Max Crocombe (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Mohamed Salah (forward/winger, captain, Liverpool)",
+    "Omar Marmoush (forward, Manchester City)",
+    "Mohamed El Shenawy (goalkeeper, Al Ahly)",
+    "Mahmoud Hassan Trezeguet (winger, Al Ahly)",
+    "Hamdy Fathy (midfielder)"
+  ],
+  "team_style_home": "New Zealand set up in a compact 4-4-2 or 4-2-3-1 focused on physical organisation, defensive solidity and direct service to Chris Wood, with Cacace providing width and aerial threat from set pieces.",
+  "team_style_away": "Egypt operate a disciplined 4-2-3-1 that prioritizes defensive compactness — conceding only two goals in ten World Cup qualifying matches — before using quick transitions to release Salah and Marmoush into space.",
+  "wc_history_home": "New Zealand have appeared at two World Cups (1982 and 2010) and were famously the only unbeaten team at the 2010 tournament in South Africa, drawing all three group games against Italy, Slovakia and Paraguay.",
+  "wc_history_away": "Egypt have appeared at three previous World Cups (1934, 1990, 2018) and have never won a match or advanced beyond the group stage, making 2026 their fourth — and most starry — attempt to break that record.",
+  "group_context": "Group G features Belgium (heavy favourites), Egypt, Iran and New Zealand; Egypt need a result here to stay in contention for second place behind Belgium, while New Zealand — back at the World Cup for the first time since 2010 — are fighting for any points they can claim across all three group games.",
+  "strengths_home": [
+    "Chris Wood's prolific Premier League form (20 goals for Nottingham Forest in 2024/25) gives New Zealand a genuine world-class finisher",
+    "Extremely well-organised defensive block that can frustrate higher-ranked opponents through discipline and physicality",
+    "Historic resilience — went unbeaten at the 2010 World Cup — and the squad has recent positive results including a 4-1 win over Chile"
+  ],
+  "strengths_away": [
+    "Mohamed Salah and Omar Marmoush form one of the tournament's most dangerous attacking partnerships, capable of deciding tight matches individually",
+    "Exceptional defensive record in qualifying — only two goals conceded across ten CAF World Cup qualifying matches",
+    "Egypt were unbeaten through the entire CAF qualifying campaign, demonstrating consistency and tactical solidity under coach Hossam Hassan"
+  ]
+}

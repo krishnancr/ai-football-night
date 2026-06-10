@@ -1,0 +1,45 @@
+{
+  "home_team": "Colombia",
+  "away_team": "DR Congo",
+  "group": "K",
+  "match_date": "2026-06-23",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "Colombia and DR Congo have never previously met in any competitive or friendly international fixture, making their 2026 World Cup clash a historic first encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "W", "L", "L"],
+  "form_away": ["D", "L", "W", "D", "W"],
+  "key_players_home": [
+    "Luis Diaz (left winger / Bayern Munich)",
+    "James Rodriguez (attacking midfielder / captain)",
+    "Richard Rios (central midfielder / Palmeiras)",
+    "Jhon Arias (right winger / Palmeiras)",
+    "Daniel Munoz (right back)"
+  ],
+  "key_players_away": [
+    "Yoane Wissa (striker / Newcastle United)",
+    "Chancel Mbemba (centre-back / captain / Lille)",
+    "Cedric Bakambu (striker / Real Betis)",
+    "Aaron Wan-Bissaka (right back / West Ham United)",
+    "Noah Sadiki (central midfielder)"
+  ],
+  "team_style_home": "Colombia play a 4-2-3-1 with a double pivot shielding the defence, James Rodriguez as a free creative No.10, and Luis Diaz leading the press and attack from the left, emphasising technical possession and quick transitions.",
+  "team_style_away": "DR Congo deploy a disciplined 4-2-3-1 / 4-3-3 under Sebastien Desabre that prioritises a compact defensive mid-block, selective high pressing, and rapid counter-attacking transitions through the pace of Yoane Wissa.",
+  "wc_history_home": "Colombia have appeared at six World Cups, with their best result being a quarter-final run in 2014 where James Rodriguez won the Golden Boot, and they missed out entirely in 2022.",
+  "wc_history_away": "DR Congo (competing as Zaire) made their only previous World Cup appearance in 1974, losing all three group games including a 9-0 thrashing by Yugoslavia, and are back for the first time in 52 years.",
+  "group_context": "Group K features Portugal as clear favourites, with Colombia widely expected to claim second place ahead of debutants Uzbekistan and DR Congo; Colombia need a win here to secure progression, while DR Congo are targeting an upset to keep their knockout hopes alive.",
+  "strengths_home": [
+    "World-class attacking duo in Luis Diaz and James Rodriguez capable of unlocking any defence",
+    "Defensive solidity under Nestor Lorenzo — conceded only 15 goals in 18 CONMEBOL qualifiers",
+    "Strong recent form including 4-0 vs Mexico, 3-0 vs Australia, and 3-1 vs Costa Rica"
+  ],
+  "strengths_away": [
+    "Highly organised and compact defensively — conceded only 7 goals in 10 qualifying matches",
+    "Dangerous on the counter through Wissa's pace and Bakambu's experience and aerial presence",
+    "Fresh motivation and team unity as a historic second World Cup appearance after a 52-year absence"
+  ]
+}

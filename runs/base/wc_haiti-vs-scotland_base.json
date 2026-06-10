@@ -1,0 +1,45 @@
+{
+  "home_team": "Haiti",
+  "away_team": "Scotland",
+  "group": "C",
+  "match_date": "2026-06-13",
+  "venue": "Gillette Stadium, Foxborough, USA",
+  "h2h_summary": "Haiti and Scotland have never previously met in any official or friendly international fixture, making this 2026 World Cup group stage match their inaugural encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "L", "W", "D"],
+  "form_away": ["W", "L", "L", "L", "W"],
+  "key_players_home": [
+    "Duckens Nazon (striker / all-time leading scorer)",
+    "Jean-Ricner Bellegarde (central midfielder, Wolverhampton Wanderers)",
+    "Wilson Isidor (striker, Sunderland)",
+    "Hannes Delcroix (centre-back, Burnley)",
+    "Derrick Etienne Jr. (winger)"
+  ],
+  "key_players_away": [
+    "Scott McTominay (central midfielder, Napoli)",
+    "Andy Robertson (left-back / captain, Liverpool)",
+    "John McGinn (midfielder, Aston Villa)",
+    "Lawrence Shankland (striker, Hearts)",
+    "Ben Doak (winger, Liverpool)"
+  ],
+  "team_style_home": "Haiti deploy a compact 4-2-3-1 in possession that transitions to a deep 4-4-2 block out of possession, relying on disciplined defensive organization and rapid counter-attacks through the pace of Isidor and Nazon.",
+  "team_style_away": "Scotland operate primarily in a 4-2-3-1 (sometimes 4-3-3) under Steve Clarke, emphasizing a high-energy engine room in central midfield, flexible pressing, and threats down both flanks and from set pieces.",
+  "wc_history_home": "Haiti made their only previous World Cup appearance in 1974 in West Germany, where they did not advance past the group stage — the 2026 tournament is their historic second-ever qualification.",
+  "wc_history_away": "Scotland are returning to the World Cup for the first time since 1998, their ninth overall appearance, with a record of never having advanced beyond the group stage despite coming agonizingly close on goal difference in 1974, 1978, and 1982.",
+  "group_context": "Group C features five-time champions Brazil and 2022 semi-finalists Morocco alongside Scotland and Haiti, making it one of the tournament's toughest groups; for Haiti the Scotland game is likely their best chance of a positive result, while Scotland must avoid defeat to keep realistic hopes of reaching the round of 32 for the first time in their history.",
+  "strengths_home": [
+    "Dangerous on quick counter-attacks with pace up front in Nazon and Isidor",
+    "Organized defensive structure that was unbeaten in CONCACAF qualifying",
+    "Experienced diaspora-based squad with top-flight European club experience"
+  ],
+  "strengths_away": [
+    "Midfield quality and energy with McTominay and McGinn as driving forces",
+    "Strong set-piece threat and defensive solidity under Clarke",
+    "Tournament experience and momentum from high-scoring warm-up matches"
+  ]
+}

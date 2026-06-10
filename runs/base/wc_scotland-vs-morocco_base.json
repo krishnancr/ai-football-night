@@ -1,0 +1,48 @@
+{
+  "home_team": "Scotland",
+  "away_team": "Morocco",
+  "group": "C",
+  "match_date": "2026-06-19",
+  "venue": "Gillette Stadium, Foxborough, USA",
+  "h2h_summary": "Morocco lead the head-to-head with 1 win and 1 draw in 2 meetings, most notably thrashing Scotland 3-0 in the 1998 World Cup group stage.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "0-3 Morocco win - World Cup Group Stage - 1998",
+      "Scotland 0-0 Morocco - Friendly - 2023"
+    ]
+  },
+  "form_home": ["L", "L", "W", "W", "W"],
+  "form_away": ["D", "W", "W", "W", "D"],
+  "key_players_home": [
+    "Scott McTominay (central midfielder / talisman)",
+    "Andy Robertson (left back / captain)",
+    "John McGinn (attacking midfielder)",
+    "Che Adams (striker)",
+    "Billy Gilmour (defensive midfielder)"
+  ],
+  "key_players_away": [
+    "Achraf Hakimi (right back / captain)",
+    "Brahim Diaz (attacking midfielder)",
+    "Yassine Bounou (goalkeeper)",
+    "Sofyan Amrabat (defensive midfielder)",
+    "Ayyoub Bouaddi (central midfielder)"
+  ],
+  "team_style_home": "Scotland play a pragmatic, defensively organized 4-3-3 or 3-4-3 under Steve Clarke, relying on hard work, set-piece threat, and the creativity of McTominay and McGinn to create chances in transition.",
+  "team_style_away": "Morocco deploy a disciplined 4-2-3-1 that defends from a compact mid-block, then transitions quickly through Hakimi's overlapping runs and Brahim Diaz's creativity in the final third.",
+  "wc_history_home": "Scotland have appeared at eight previous World Cups (1954-1998) but never progressed beyond the group stage, famously going out on goal difference three times including a memorable 3-2 win over the Netherlands in 1978 featuring Archie Gemmill's iconic goal.",
+  "wc_history_away": "Morocco became the first African and Arab nation to reach a World Cup semi-final at Qatar 2022, defeating Spain, Portugal, and Belgium en route before losing to eventual champions France.",
+  "group_context": "Group C features four-time champions Brazil as heavy favourites alongside AFCON champions Morocco, a resurgent Scotland returning to the World Cup for the first time since 1998, and Haiti; Scotland must finish in the top two to advance and face Morocco in a pivotal second-round fixture that could decide who accompanies Brazil into the knockout stage.",
+  "strengths_home": [
+    "Tournament pedigree in attack: McTominay (Serie A Player of the Year) and Adams in excellent pre-tournament form",
+    "Set-piece danger: strong aerial threats and rehearsed routines from corners and free-kicks",
+    "Tactical discipline and hard-to-beat shape under Steve Clarke's experienced management"
+  ],
+  "strengths_away": [
+    "Achraf Hakimi as a world-class attacking threat and defensive anchor at right back",
+    "Proven big-game mentality from 2022 World Cup semi-final run",
+    "Strong collective defensive structure with Amrabat shielding a compact backline and Bounou's elite penalty-saving record"
+  ]
+}

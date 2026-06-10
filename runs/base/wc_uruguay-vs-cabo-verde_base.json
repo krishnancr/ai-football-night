@@ -1,0 +1,45 @@
+{
+  "home_team": "Uruguay",
+  "away_team": "Cabo Verde",
+  "group": "H",
+  "match_date": "2026-06-21",
+  "venue": "Hard Rock Stadium, Miami Gardens, USA",
+  "h2h_summary": "Uruguay and Cabo Verde have never previously met in international football at any level; June 21, 2026 marks their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["D", "D", "L", "D", "W"],
+  "form_away": ["W", "D", "L", "D", "D"],
+  "key_players_home": [
+    "Federico Valverde (central midfielder, Real Madrid)",
+    "Darwin Núñez (centre-forward, Al-Hilal)",
+    "José María Giménez (centre-back, Atlético Madrid)",
+    "Ronald Araújo (centre-back, FC Barcelona)",
+    "Manuel Ugarte (defensive midfielder, Manchester United)"
+  ],
+  "key_players_away": [
+    "Ryan Mendes (captain / forward, all-time leading scorer with 22 goals)",
+    "Dailon Livramento (forward, Hellas Verona)",
+    "Logan Costa (centre-back, Villarreal)",
+    "Vozinha (goalkeeper, experienced squad leader)",
+    "Monteiro (defensive midfielder, provides defensive platform)"
+  ],
+  "team_style_home": "Under Marcelo Bielsa, Uruguay press high in a 4-3-3, emphasising intense pressing, quick vertical transitions, and defensive solidarity rooted in their traditional 'Garra Charrúa' fighting spirit.",
+  "team_style_away": "Under Bubista, Cabo Verde deploy a disciplined 4-2-3-1, sitting in a mid-to-low defensive block and exploiting wide channels and pace on the counter-attack, prioritising compactness and collective organisation over possession.",
+  "wc_history_home": "Uruguay are two-time World Cup champions (1930 as hosts, 1950 with the legendary Maracanazo over Brazil) and reached the semi-finals in 2010, making them one of international football's most decorated nations.",
+  "wc_history_away": "Cabo Verde are making their historic maiden World Cup appearance in 2026, having qualified for the first time after topping their CAF qualifying group with a 7W-2D-1L record, becoming one of the smallest nations ever to reach the tournament.",
+  "group_context": "Group H consists of Spain (2nd in FIFA rankings, Euro 2024 champions), Uruguay (17th), Cabo Verde (69th), and Saudi Arabia; with Spain expected to top the group, the Uruguay vs Cabo Verde clash is effectively a pivotal battle for second place, as three points here would dramatically boost either team's knockout qualification prospects.",
+  "strengths_home": [
+    "World-class midfield engine in Federico Valverde capable of goals, assists and defensive cover",
+    "Experienced, battle-hardened defensive unit anchored by Giménez and Araújo with Champions League and La Liga pedigree",
+    "Rich World Cup pedigree and mental resilience under the tactically rigorous Marcelo Bielsa"
+  ],
+  "strengths_away": [
+    "Disciplined defensive compactness and tactical organisation earned under Bubista — unbeaten at home throughout qualifying",
+    "Dangerous counter-attacking pace through wide areas with Mendes and Livramento capable of catching higher-ranked sides off guard",
+    "Historic debut motivation and strong collective spirit built from a 7-win qualifying campaign that included victories over Cameroon and Angola"
+  ]
+}

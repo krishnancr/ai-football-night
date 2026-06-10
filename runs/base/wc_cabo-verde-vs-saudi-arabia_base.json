@@ -1,0 +1,45 @@
+{
+  "home_team": "Cabo Verde",
+  "away_team": "Saudi Arabia",
+  "group": "H",
+  "match_date": "2026-06-26",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Cabo Verde and Saudi Arabia have never previously met in international football, making this their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "D", "L", "D"],
+  "form_away": ["W", "L", "D", "W", "D"],
+  "key_players_home": [
+    "Dailon Livramento (forward/striker)",
+    "Ryan Mendes (captain, winger)",
+    "Logan Costa (centre-back)",
+    "Jovane Cabral (attacking winger)",
+    "Vozinha (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Salem Al-Dawsari (captain, attacking midfielder/winger)",
+    "Saud Abdulhamid (right-back)",
+    "Firas Al-Buraikan (striker)",
+    "Musab Al-Juwayr (midfielder)",
+    "Hassan Al-Tambakti (centre-back)"
+  ],
+  "team_style_home": "Cabo Verde play a disciplined 4-2-3-1 with a compact defensive block, high-intensity pressing in key moments, and quick wide transitions on the counter-attack rather than prolonged possession.",
+  "team_style_away": "Saudi Arabia deploy a 4-3-3 (or 4-2-3-1) built on strong defensive organization, coordinated pressing, and rapid wing transitions, relying heavily on Salem Al-Dawsari's creativity and the pace of wide attackers.",
+  "wc_history_home": "Cabo Verde are making their historic first-ever FIFA World Cup appearance in 2026, having qualified by topping CAF Group D with eight wins from ten games, beating out Cameroon and Angola.",
+  "wc_history_away": "Saudi Arabia have appeared at six World Cups, with their best run in 1994 (Round of 16), and are famous for their stunning 2-1 upset of Argentina at the 2022 Qatar World Cup.",
+  "group_context": "Group H features Spain (heavy favorites), Uruguay, Saudi Arabia, and debutants Cabo Verde; Cabo Verde and Saudi Arabia both face long odds to advance but this match-day 3 clash is effectively a must-win decider for the runner-up spot behind Spain, with both teams likely needing points to have any chance of progressing.",
+  "strengths_home": [
+    "Exceptional team cohesion and tactical discipline built over a strong qualifying campaign",
+    "Pace and directness on the wings through Livramento and Jovane Cabral",
+    "Set-piece threat via Ryan Mendes combined with mental resilience as underdog debutants"
+  ],
+  "strengths_away": [
+    "Experienced international players with World Cup pedigree, led by the clinical Salem Al-Dawsari",
+    "Organised defensive structure and disciplined shape that is hard to break down",
+    "Wide threat through overlapping full-back Saud Abdulhamid and fast wingers on the counter"
+  ]
+}

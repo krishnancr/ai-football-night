@@ -1,0 +1,47 @@
+{
+  "home_team": "Runner-up Group K",
+  "away_team": "Runner-up Group L",
+  "group": "R32",
+  "match_date": "2026-07-02",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Croatia and Colombia have met only once in recorded history, with Croatia winning 2-1 in a March 2026 international friendly in Orlando.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "Croatia 2-1 Colombia - International Friendly - 2026"
+    ]
+  },
+  "form_home": ["W", "W", "L", "L", "W"],
+  "form_away": ["W", "L", "L", "W", "W"],
+  "key_players_home": [
+    "Luis Diaz (winger/forward)",
+    "James Rodriguez (attacking midfielder/captain)",
+    "Richard Rios (central midfielder)",
+    "Jefferson Lerma (defensive midfielder)",
+    "Daniel Munoz (right back)"
+  ],
+  "key_players_away": [
+    "Luka Modric (captain, central midfielder)",
+    "Mateo Kovacic (central midfielder)",
+    "Josko Gvardiol (centre-back)",
+    "Ivan Perisic (winger)",
+    "Andrej Kramaric (striker)"
+  ],
+  "team_style_home": "Colombia operate in a 4-2-3-1 or 4-3-3 under Nestor Lorenzo, combining a compact defensive block with fast vertical counter-attacks, using the pace of Luis Diaz to exploit half-spaces and the creativity of James Rodriguez to unlock deep defences.",
+  "team_style_away": "Croatia under Zlatko Dalic favour a 4-3-3 or 3-4-2-1 built around midfield control and technical possession, with Luka Modric orchestrating from a No.10 role and full-backs providing width in quick transitions from defence to attack.",
+  "wc_history_home": "Colombia's finest World Cup campaign was in 2014, where they reached the quarter-finals for the first time and James Rodriguez won the Golden Boot with six goals; the 2026 tournament marks their seventh World Cup appearance.",
+  "wc_history_away": "Croatia have won three World Cup medals — third place in 1998 on debut, runners-up in 2018 (losing 4-2 to France in the final), and third place again in 2022 — making them the most decorated small nation in World Cup history.",
+  "group_context": "This Round of 32 match (Match 83) pits the second-placed finisher from Group K (Portugal, Colombia, DR Congo, Uzbekistan) against the second-placed finisher from Group L (England, Croatia, Ghana, Panama), with the winner advancing to the Round of 16; predictions point to Colombia as the Group K runner-up behind Portugal, and Croatia as the Group L runner-up behind England.",
+  "strengths_home": [
+    "Elite attacking pace and creativity through Luis Diaz, James Rodriguez, and Jhon Arias",
+    "Strong defensive compactness conceding only 15 goals across 18 CONMEBOL qualifying matches",
+    "Excellent recent form with six wins from eight pre-tournament matches"
+  ],
+  "strengths_away": [
+    "World-class midfield control and tempo-setting through Modric and Kovacic",
+    "Exceptional big-tournament pedigree with three World Cup medals in 1998, 2018, and 2022",
+    "Tactical flexibility between 4-3-3 and 3-4-2-1 depending on opponent"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "home_team": "Switzerland",
+  "away_team": "Bosnia and Herzegovina",
+  "group": "B",
+  "match_date": "2026-06-18",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "Switzerland and Bosnia and Herzegovina have met only once, with Bosnia winning 2-0 in a 2018 World Cup qualifier in March 2016.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-2 (Bosnia win) - World Cup Qualifier - 2016"
+    ]
+  },
+  "form_home": ["D", "W", "D", "L", "D"],
+  "form_away": ["D", "D", "W", "W", "D"],
+  "key_players_home": [
+    "Granit Xhaka (central midfielder / captain)",
+    "Manuel Akanji (centre-back)",
+    "Breel Embolo (striker)",
+    "Dan Ndoye (winger)",
+    "Gregor Kobel (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Edin Dzeko (striker / captain)",
+    "Ermedin Demirovic (striker)",
+    "Esmir Bajraktarevic (winger)",
+    "Benjamin Tahirovic (central midfielder)",
+    "Armin Gigovic (central midfielder)"
+  ],
+  "team_style_home": "Switzerland play a flexible 4-3-3 or 3-4-3 under Murat Yakin, building patiently from the back with Xhaka controlling tempo in midfield, wide pace from Ndoye and Vargas, and a strong defensive structure that is difficult to break down.",
+  "team_style_away": "Bosnia and Herzegovina under Sergej Barbarez favour a direct 4-4-2 or 4-2-3-1, relying on physical duels, fast transitions, early crosses into Dzeko and Demirovic, and a compact defensive block — completing more take-ons and duels than any other UEFA qualifier side.",
+  "wc_history_home": "Switzerland have appeared in 12 World Cups (1934-2022), with their best results being three quarter-final exits in 1934, 1938, and 1954, and a reputation for solid knockout-stage appearances but never reaching a semi-final.",
+  "wc_history_away": "Bosnia and Herzegovina made their only World Cup appearance in 2014 in Brazil, reaching the group stage but failing to advance, losing to Argentina and Nigeria before beating Iran in their final group match.",
+  "group_context": "Group B contains co-hosts Canada, Switzerland, Bosnia and Herzegovina, and 2022 hosts Qatar; Switzerland are strong favourites to advance alongside Canada, making this match a potential decider for the second qualification spot for Bosnia.",
+  "strengths_home": [
+    "Experienced midfield engine anchored by Granit Xhaka with 145 caps",
+    "Tactically flexible and hard to break down defensively",
+    "Pace and creativity in wide areas from Ndoye and Vargas"
+  ],
+  "strengths_away": [
+    "Veteran striker Edin Dzeko (73 international goals) provides proven big-match quality",
+    "Determined team spirit shown by shock elimination of Italy in World Cup playoff",
+    "Direct and physical style with effective set-pieces and counter-attacking threat"
+  ]
+}

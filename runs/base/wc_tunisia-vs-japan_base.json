@@ -1,0 +1,49 @@
+{
+  "home_team": "Tunisia",
+  "away_team": "Japan",
+  "group": "F",
+  "match_date": "2026-06-20",
+  "venue": "Estadio BBVA, Monterrey, Mexico",
+  "h2h_summary": "Japan has dominated all known meetings, winning all 6 recorded encounters without conceding a goal from Tunisia across their head-to-head history.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 6,
+    "notable_results": [
+      "Japan 2-0 Tunisia - FIFA World Cup Group Stage - 2002",
+      "Japan 3-0 Tunisia - Kirin Cup - 2022",
+      "Japan 2-0 Tunisia - International Friendly - 2023"
+    ]
+  },
+  "form_home": ["D", "L", "D", "L", "L"],
+  "form_away": ["W", "W", "W", "W", "W"],
+  "key_players_home": [
+    "Ellyes Skhiri (defensive midfielder / captain)",
+    "Hannibal Mejbri (attacking midfielder)",
+    "Montassar Talbi (central defender)",
+    "Elias Achouri (central midfielder)",
+    "Ismail Gharbi (midfielder)"
+  ],
+  "key_players_away": [
+    "Wataru Endo (central midfielder / captain)",
+    "Takefusa Kubo (attacking midfielder / winger)",
+    "Daichi Kamada (attacking midfielder)",
+    "Ritsu Doan (winger)",
+    "Keito Nakamura (forward)"
+  ],
+  "team_style_home": "Tunisia deploy a compact 4-2-3-1 or 4-4-2 block under Sabri Lamouchi, relying on disciplined defensive structure, selective high pressing to force turnovers, and rapid transitions through midfield runners.",
+  "team_style_away": "Japan under Hajime Moriyasu use a flexible 3-4-2-1 or 4-2-3-1 with organised high-intensity pressing traps, patient ball circulation, and lightning-fast vertical counter-attacks exploiting wide areas.",
+  "wc_history_home": "Tunisia have qualified for seven World Cups (1978, 1998, 2002, 2006, 2018, 2022, 2026) but have never advanced past the group stage, despite a famous 1-0 win over defending champions France in 2022.",
+  "wc_history_away": "Japan have appeared at eight consecutive World Cups since 1998 and reached the Round of 16 four times, most memorably stunning Germany and Spain in 2022 before losing on penalties to Croatia.",
+  "group_context": "Group F features Netherlands, Japan, Sweden, and Tunisia; Netherlands are heavy favourites, with Japan and Sweden both projected to challenge for second place, leaving Tunisia as the group underdogs needing a strong result against Japan to keep qualification hopes alive.",
+  "strengths_home": [
+    "Exceptional defensive organisation and compactness that conceded zero goals in World Cup qualifying",
+    "Physical and combative midfield anchored by experienced Bundesliga players Skhiri and Khedira",
+    "Resilient team spirit and ability to absorb pressure and hit on the counter"
+  ],
+  "strengths_away": [
+    "Outstanding recent form with five consecutive international wins including victories over England and Brazil",
+    "Tactically flexible and disciplined system with elite pressing organisation under Moriyasu",
+    "Strong European-based squad with Premier League, Bundesliga, and Serie A experience across key positions"
+  ]
+}

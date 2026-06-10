@@ -1,0 +1,47 @@
+{
+  "home_team": "Sweden",
+  "away_team": "Tunisia",
+  "group": "F",
+  "match_date": "2026-06-14",
+  "venue": "Estadio BBVA, Monterrey, Mexico",
+  "h2h_summary": "Sweden and Tunisia have met only once in history — a February 2003 friendly that Tunisia won 1-0 — meaning they have virtually no head-to-head precedent ahead of their first-ever competitive meeting at the 2026 World Cup.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-1 (Tunisia win) - International Friendly - 2003"
+    ]
+  },
+  "form_home": ["W", "W", "D", "L", "L"],
+  "form_away": ["L", "L", "D", "W", "D"],
+  "key_players_home": [
+    "Viktor Gyokeres (striker)",
+    "Alexander Isak (striker)",
+    "Anthony Elanga (winger)",
+    "Victor Lindelof (centre-back / captain)",
+    "Benjamin Nygren (forward)"
+  ],
+  "key_players_away": [
+    "Ellyes Skhiri (defensive midfielder / captain)",
+    "Hannibal Mejbri (attacking midfielder)",
+    "Montassar Talbi (centre-back)",
+    "Aymen Dahmen (goalkeeper)",
+    "Elias Saad (forward)"
+  ],
+  "team_style_home": "Sweden under Graham Potter deploy a pragmatic 3-4-2-1 or 4-2-3-1, relying on quick counter-attacks and the explosive pace of Viktor Gyokeres and Anthony Elanga rather than sustained possession.",
+  "team_style_away": "Tunisia under Sabri Lamouchi are built on a compact 4-2-3-1 defensive structure that conceded zero goals across their entire qualifying campaign, looking to absorb pressure and hit on the counter through Hannibal Mejbri's creativity.",
+  "wc_history_home": "Sweden have appeared at 13 World Cups with a best finish as runners-up on home soil in 1958, and most recently reached the quarter-finals at Russia 2018.",
+  "wc_history_away": "Tunisia are making their seventh World Cup appearance and became the first team in FIFA history to qualify without conceding a single goal across ten group fixtures; they have never progressed beyond the group stage.",
+  "group_context": "Group F features Netherlands (strong favourites), Japan (dangerous dark horses), Sweden, and Tunisia; Sweden need at least one win to realistically advance while Tunisia, heavy outsiders against the Dutch and Japanese, must target maximum points from this opening match to have any hope of a historic first knockout-stage appearance.",
+  "strengths_home": [
+    "Elite striker partnership: Gyokeres (21 goals in 2025-26) and Isak provide rare attacking depth",
+    "Pace on the break with Elanga ranked among the fastest players in the Premier League",
+    "Playoff momentum — won both playoff matches (3-1 vs Ukraine, 3-2 vs Poland) to qualify"
+  ],
+  "strengths_away": [
+    "Exceptional defensive organisation — conceded zero goals in 10 World Cup qualifying matches",
+    "Experienced defensive midfield anchor in Ellyes Skhiri who controls tempo and ball recovery",
+    "Proven ability to upset stronger opponents (beat France 1-0 at 2022 WC; held West Germany 0-0 in 1978)"
+  ]
+}

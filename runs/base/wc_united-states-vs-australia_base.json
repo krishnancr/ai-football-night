@@ -1,0 +1,49 @@
+{
+  "home_team": "United States",
+  "away_team": "Australia",
+  "group": "D",
+  "match_date": "2026-06-19",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "The United States hold a dominant overall record with 5 wins, 3 draws, and 1 loss against Australia, including a 2-1 victory in their most recent October 2025 friendly.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 3,
+    "away_wins": 1,
+    "notable_results": [
+      "USA 3-1 Australia - International Friendly - 2010",
+      "USA 2-1 Australia - International Friendly - 2025",
+      "USA 1-1 Australia - International Friendly - 2023"
+    ]
+  },
+  "form_home": ["W", "L", "L", "W", "L"],
+  "form_away": ["L", "W", "W", "L", "D"],
+  "key_players_home": [
+    "Christian Pulisic (attacking midfielder / forward, AC Milan)",
+    "Tyler Adams (defensive midfielder, Bournemouth)",
+    "Weston McKennie (central midfielder, Juventus)",
+    "Folarin Balogun (striker, AS Monaco)",
+    "Antonee Robinson (left-back, Fulham)"
+  ],
+  "key_players_away": [
+    "Mathew Ryan (goalkeeper / captain, Levante)",
+    "Harry Souttar (centre-back, Leicester City)",
+    "Jackson Irvine (central midfielder, FC St. Pauli)",
+    "Nestory Irankunda (forward, Watford)",
+    "Martin Boyle (winger)"
+  ],
+  "team_style_home": "Under Pochettino, the USMNT employs a high-pressing 4-2-3-1 that shifts into a 3-2-5 in possession, with fluid movement, attacking fullbacks, and vertical transitions through Pulisic centrally.",
+  "team_style_away": "Under Tony Popovic, Australia defend in a disciplined back-three / five-man defensive line with compact organisation, looking to win possession and counter-attack quickly through pace and direct ball play.",
+  "wc_history_home": "The USA have appeared at 11 World Cups, reaching the semi-finals in 1930 and the quarter-finals in 2002, and are co-hosts of the 2026 edition alongside Canada and Mexico.",
+  "wc_history_away": "Australia have made six consecutive World Cup appearances, with their best performances coming in 2006 and 2022 when they reached the Round of 16 both times.",
+  "group_context": "Group D comprises co-hosts United States, Paraguay, Australia, and Turkey; the USA face home pressure to advance while Australia, targeting the quarter-finals under Popovic, face the hosts in their second group match after opening against Turkey.",
+  "strengths_home": [
+    "Home crowd advantage at Lumen Field in Seattle with massive home-nation support",
+    "Individual quality through Christian Pulisic and a squad with Premier League, Serie A, and Bundesliga regulars",
+    "High-pressing system under Pochettino designed to dominate possession and unsettle organised defences"
+  ],
+  "strengths_away": [
+    "Disciplined defensive structure in a back three that is hard to break down and dangerous at set pieces via Souttar",
+    "Explosive attacking pace in transition through young forward Nestory Irankunda and winger Martin Boyle",
+    "Experience and leadership from fourth-World-Cup goalkeeper Mathew Ryan, who provides stability and shot-stopping quality"
+  ]
+}

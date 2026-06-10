@@ -1,0 +1,45 @@
+{
+  "home_team": "Croatia",
+  "away_team": "Ghana",
+  "group": "L",
+  "match_date": "2026-06-27",
+  "venue": "Lincoln Financial Field, Philadelphia, USA",
+  "h2h_summary": "Croatia and Ghana have no previous head-to-head record; the 2026 World Cup group stage match on June 27 will be their first-ever official meeting.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "L", "L", "W", "W"],
+  "form_away": ["D", "L", "L", "L", "W"],
+  "key_players_home": [
+    "Luka Modric (central midfielder / captain)",
+    "Mateo Kovacic (central midfielder)",
+    "Josko Gvardiol (left-back / defender)",
+    "Dominik Livakovic (goalkeeper)",
+    "Andrej Kramaric (forward)"
+  ],
+  "key_players_away": [
+    "Jordan Ayew (forward / captain)",
+    "Inaki Williams (striker / wide forward)",
+    "Antoine Semenyo (winger)",
+    "Thomas Partey (defensive midfielder)",
+    "Mohammed Salisu (centre-back)"
+  ],
+  "team_style_home": "Croatia play a possession-based, midfield-controlled style under Zlatko Dalic, typically in a 4-3-3 or 3-4-2-1, relying on technical quality through the middle, a double pivot for defensive cover, and quick transitions from defense to attack.",
+  "team_style_away": "Under Carlos Queiroz, Ghana set up in a compact 4-2-3-1 or 3-4-2-1 that shifts into a defensive mid-block out of possession, with Thomas Partey anchoring midfield and Semenyo and Inaki Williams exploiting space on the counter-attack.",
+  "wc_history_home": "Croatia have been one of the most consistent World Cup performers since their debut, finishing third in 1998 and reaching the final in 2018 where they lost 4-2 to France, with Luka Modric winning the Golden Ball.",
+  "wc_history_away": "Ghana qualified for four World Cups (2006, 2010, 2014, 2022), with their best run in 2010 when the Black Stars reached the quarterfinals in South Africa before losing to Uruguay on penalties, becoming only the third African nation to reach that stage.",
+  "group_context": "Group L also contains England and Panama; England are heavy favorites to top the group, leaving Croatia and Ghana essentially competing for second place, with the winner advancing comfortably and the loser risking elimination or reliance on a third-place berth.",
+  "strengths_home": [
+    "Elite midfield depth anchored by Modric and Kovacic",
+    "Proven big-tournament mentality and knockout experience",
+    "Disciplined defensive organization and tactical flexibility"
+  ],
+  "strengths_away": [
+    "Explosive pace and direct running from Williams and Semenyo in attack",
+    "Compact defensive structure that is hard to break down",
+    "Strong qualifying campaign with 8 wins from 10 matches building cohesion"
+  ]
+}

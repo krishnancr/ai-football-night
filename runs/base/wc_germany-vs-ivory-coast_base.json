@@ -1,0 +1,47 @@
+{
+  "home_team": "Germany",
+  "away_team": "Ivory Coast",
+  "group": "E",
+  "match_date": "2026-06-20",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Germany and Ivory Coast have met only once, drawing 2-2 in a November 2009 friendly at the Veltins-Arena, making the 2026 World Cup group stage their first ever competitive encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "2-2 - International Friendly - 2009 (Podolski 2 vs Eboue, Doumbia)"
+    ]
+  },
+  "form_home": ["W", "W", "W", "W", "W"],
+  "form_away": ["W", "W", "W", "L", "W"],
+  "key_players_home": [
+    "Jamal Musiala (attacking midfielder)",
+    "Florian Wirtz (attacking midfielder)",
+    "Kai Havertz (striker/second striker)",
+    "Joshua Kimmich (central midfielder/captain)",
+    "Antonio Rudiger (centre-back)"
+  ],
+  "key_players_away": [
+    "Amad Diallo (winger/forward)",
+    "Franck Kessie (central midfielder/captain)",
+    "Ibrahim Sangare (defensive midfielder)",
+    "Simon Adingra (winger)",
+    "Evan Ndicka (centre-back)"
+  ],
+  "team_style_home": "Germany under Julian Nagelsmann play a flexible 4-2-3-1 with aggressive high pressing, rapid vertical transitions, and a dynamic attacking midfield pairing of Musiala and Wirtz driving incisive forward play.",
+  "team_style_away": "Ivory Coast under Emerse Fae deploy a 4-3-3 (shifting to 4-1-4-1 in defence) that combines powerful ball-winning in midfield from Kessie and Sangare with direct, quick wing play and dangerous counter-attacks.",
+  "wc_history_home": "Germany are four-time World Cup champions (1954, 1974, 1990, 2014) and one of the most decorated nations in the tournament's history, though they have suffered consecutive group-stage exits in 2018 and 2022.",
+  "wc_history_away": "Ivory Coast have qualified for the World Cup four times (2006, 2010, 2014, 2026) but have never advanced beyond the group stage, despite featuring star players like Didier Drogba in their previous three appearances.",
+  "group_context": "Group E contains Germany, Ivory Coast, Ecuador, and debutants Curacao; Germany are strong favourites to top the group and end two consecutive first-round exits, while Ivory Coast return after a 12-year absence and will be targeting their first ever knockout-round qualification.",
+  "strengths_home": [
+    "Elite attacking midfield combination in Musiala and Wirtz",
+    "Strong squad depth across all positions with nine consecutive wins entering the tournament",
+    "Aggressive high-pressing system that wins the ball back quickly in dangerous areas"
+  ],
+  "strengths_away": [
+    "Dominant physical midfield presence through Kessie and Sangare",
+    "Electric wide attackers (Adingra, Amad Diallo) capable of exploiting space on the counter",
+    "Defensive solidity and tournament momentum after beating France 2-1 in World Cup warm-up"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "home_team": "Colombia",
+  "away_team": "Portugal",
+  "group": "K",
+  "match_date": "2026-06-27",
+  "venue": "Hard Rock Stadium, Miami Gardens, USA",
+  "h2h_summary": "Colombia and Portugal have met only once in recorded history, a 2014 friendly in Geneva that Portugal won 1-0 via a Bruno Alves header; the 2026 World Cup group stage match will be their first competitive encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-1 (Portugal win) - International Friendly - 2014"
+    ]
+  },
+  "form_home": ["W", "W", "L", "L", "W"],
+  "form_away": ["W", "W", "D", "W", "W"],
+  "key_players_home": [
+    "Luis Diaz (left winger, Bayern Munich)",
+    "James Rodriguez (attacking midfielder / captain)",
+    "Richard Rios (central midfielder, Benfica)",
+    "Daniel Munoz (right back, Crystal Palace)",
+    "Jhon Arias (attacking midfielder/winger)"
+  ],
+  "key_players_away": [
+    "Cristiano Ronaldo (centre forward / captain)",
+    "Bruno Fernandes (attacking midfielder)",
+    "Bernardo Silva (midfield playmaker)",
+    "Rafael Leao (left winger, AC Milan)",
+    "Nuno Mendes (left back, PSG)"
+  ],
+  "team_style_home": "Colombia under Nestor Lorenzo operate in a compact 4-2-3-1/4-3-3 mid-block system, defending deep and attacking through rapid vertical transitions and wide pace, particularly via Luis Diaz on the left flank.",
+  "team_style_away": "Portugal under Roberto Martinez favour a possession-based 4-3-3 that transitions into a 3-4-2-1, using technical midfield triangles and wide attackers to create chances while Ronaldo operates as the primary penalty-box finisher.",
+  "wc_history_home": "Colombia have appeared at seven World Cups, with their best performance coming in 2014 when they reached the quarter-finals, won their group, and James Rodriguez claimed the Golden Boot with six goals.",
+  "wc_history_away": "Portugal have appeared at nine World Cups, winning third place in 1966 led by Eusebio (Golden Boot), finishing fourth in 2006, and reaching the quarter-finals in 2022; they have never won the tournament.",
+  "group_context": "Group K features Portugal (FIFA rank 5th) and Colombia (13th) as the two favourites ahead of debutants Uzbekistan and DR Congo (returning after 52 years); the Colombia vs Portugal clash on June 27 is effectively the group decider, with the winner likely securing top spot and a favourable round-of-32 draw.",
+  "strengths_home": [
+    "Explosive wide attacking threat through Luis Diaz and pace on the counter-attack",
+    "Disciplined defensive mid-block that frustrates possession-heavy opponents",
+    "Creative set-piece and chance creation from James Rodriguez as a free-roaming number ten"
+  ],
+  "strengths_away": [
+    "Elite technical midfield depth with Bruno Fernandes, Bernardo Silva, Vitinha, and João Neves all world-class",
+    "Tactical flexibility under Martinez — can shift between 4-3-3 and 3-4-2-1 to adapt in-game",
+    "Proven winning mentality reinforced by 2025 UEFA Nations League title and Cristiano Ronaldo's leadership"
+  ]
+}

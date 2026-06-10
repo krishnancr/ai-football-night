@@ -1,0 +1,46 @@
+{
+  "home_team": "Portugal",
+  "away_team": "DR Congo",
+  "group": "K",
+  "match_date": "2026-06-17",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Portugal and DR Congo have never previously met in international football, making their World Cup 2026 Group K opener the first ever encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "W", "D", "W"],
+  "form_away": ["W", "D", "D", "W", "W"],
+  "key_players_home": [
+    "Cristiano Ronaldo (striker)",
+    "Bruno Fernandes (attacking midfielder)",
+    "Bernardo Silva (midfielder)",
+    "Rafael Leao (winger)",
+    "Vitinha (central midfielder)",
+    "Ruben Dias (centre-back)"
+  ],
+  "key_players_away": [
+    "Yoane Wissa (winger/forward)",
+    "Cedric Bakambu (striker)",
+    "Chancel Mbemba (centre-back / captain)",
+    "Noah Sadiki (central midfielder)",
+    "Aaron Wan-Bissaka (right-back)"
+  ],
+  "team_style_home": "Portugal play a possession-heavy 4-3-3 or 4-2-3-1 under Roberto Martinez, dominating midfield with Vitinha, Fernandes, and Bernardo Silva, using inverted full-backs and wide pace through Leao and Conceicao to break down compact defences.",
+  "team_style_away": "DR Congo under Sebastien Desabre deploy a disciplined 4-2-3-1 or 4-4-2 built on a compact defensive block and rapid counter-attacks, leveraging Wissa's pace and direct running to exploit transitions.",
+  "wc_history_home": "Portugal have appeared in the World Cup seven consecutive times, with their best finishes being third place in 1966 (led by Eusebio) and a fourth-place finish in 2006, but they have never won the tournament.",
+  "wc_history_away": "DR Congo (then known as Zaire) made their only previous World Cup appearance in 1974 as the first Sub-Saharan African team in the tournament, losing all three group-stage matches before a 52-year absence ended with their 2026 qualification.",
+  "group_context": "Group K features Portugal as heavy favourites alongside Colombia, DR Congo, and Uzbekistan; Portugal's opening match against DR Congo is crucial for establishing early momentum, while DR Congo — returning to the World Cup after 52 years — face immediate pressure to take points against a top European side to remain in contention for a historic knockout-stage run.",
+  "strengths_home": [
+    "World-class midfield depth with Vitinha, Bruno Fernandes, and Bernardo Silva controlling tempo and creating chances",
+    "Dangerous wide attackers in Rafael Leao and Conceicao providing pace and direct threat down both flanks",
+    "Experienced and proven squad including Cristiano Ronaldo with 130+ international goals, backed by 2025 Nations League title"
+  ],
+  "strengths_away": [
+    "Organised and physically intense defensive structure under Desabre that frustrates attacking sides",
+    "Deadly counter-attacking threat through Yoane Wissa's pace and Bakambu's experienced finishing",
+    "High motivation and collective unity as a historic squad returning to the World Cup after 52 years with nothing to lose"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "home_team": "Korea Republic",
+  "away_team": "Czechia",
+  "group": "A",
+  "match_date": "2026-06-11",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "Korea Republic and Czechia have never officially met before, making their 2026 World Cup Group A clash a historic first encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "L", "L", "W"],
+  "form_away": ["W", "D", "D", "W", "W"],
+  "key_players_home": [
+    "Son Heung-min (captain / left winger)",
+    "Kim Min-jae (centre-back)",
+    "Lee Kang-in (attacking midfielder)",
+    "Hwang Hee-chan (forward)",
+    "Hwang In-beom (central midfielder)"
+  ],
+  "key_players_away": [
+    "Patrik Schick (striker)",
+    "Tomas Soucek (central midfielder / captain)",
+    "Ladislav Krejci (centre-back / squad captain)",
+    "Vladimir Coufal (right-back)",
+    "Matej Kovar (goalkeeper)"
+  ],
+  "team_style_home": "Korea Republic play a high-intensity pressing 4-2-3-1 system under Hong Myung-bo, emphasising rapid vertical transitions, attacking width through the full-backs, and unleashing pace through Son Heung-min and the wide attackers on the counter.",
+  "team_style_away": "Czechia operate a pragmatic 3-4-2-1 under veteran coach Miroslav Koubek, prioritising defensive solidity, deep blocks out of possession, and lethal set-piece delivery — 11 of their 22 qualifying goals came from dead-ball situations.",
+  "wc_history_home": "Korea Republic have appeared at 12 World Cups and famously reached the semi-finals as co-hosts in 2002, becoming the only Asian nation ever to reach the last four of the tournament.",
+  "wc_history_away": "Czechia (as Czechoslovakia) reached the World Cup final twice — in 1934 and 1962 — and as an independent Czech Republic qualified for 2006 before returning in 2026 after a 20-year absence, qualifying via two dramatic penalty shootout victories in the playoffs.",
+  "group_context": "Group A features co-host Mexico, South Korea, Czechia, and South Africa, with Mexico and South Korea considered the favourites to advance; Korea Republic vs Czechia is effectively an early battle for the second automatic qualification spot, making a positive opening result crucial for both sides.",
+  "strengths_home": [
+    "World-class individual quality through Son Heung-min and a technically gifted attacking line",
+    "High-intensity pressing and fast vertical transitions disrupt organised defences",
+    "Unbeaten through AFC qualifying — tournament experience and winning mentality"
+  ],
+  "strengths_away": [
+    "Elite defensive organisation and resilience — proven ability to grind results under pressure",
+    "Devastating set-piece threat; scored 11 of 22 qualifying goals from dead balls",
+    "Strong club chemistry with 10 Slavia Prague players forming a cohesive defensive block"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "home_team": "Uruguay",
+  "away_team": "Spain",
+  "group": "H",
+  "match_date": "2026-06-26",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "Spain have never lost to Uruguay in all recorded meetings, going 2 wins, 2 draws across World Cup and Confederations Cup encounters, with Uruguay yet to claim a victory against La Roja.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 2,
+    "away_wins": 2,
+    "notable_results": [
+      "2-2 - FIFA World Cup Final Round - 1950",
+      "0-0 - FIFA World Cup Group E - 1990",
+      "1-2 - FIFA Confederations Cup - 2013"
+    ]
+  },
+  "form_home": ["W", "L", "D", "D", "D"],
+  "form_away": ["W", "W", "D", "D", "W"],
+  "key_players_home": [
+    "Federico Valverde (attacking midfielder/right wing)",
+    "Darwin Nunez (striker)",
+    "Ronald Araujo (centre-back)",
+    "Jose Maria Gimenez (centre-back, captain)",
+    "Manuel Ugarte (defensive midfielder)"
+  ],
+  "key_players_away": [
+    "Lamine Yamal (right winger)",
+    "Rodri (defensive midfielder)",
+    "Pedri (central midfielder)",
+    "Nico Williams (left winger)",
+    "Fabian Ruiz (central midfielder)"
+  ],
+  "team_style_home": "Under Marcelo Bielsa, Uruguay press high and play vertical, transition-focused football with a 4-2-3-1 or 4-3-3 shape, relying on Valverde's engine, set-piece threat, and a resolute defensive block anchored by Araujo and Gimenez.",
+  "team_style_away": "Spain play a fluid 4-3-3 under Luis de la Fuente featuring elite ball circulation through Rodri and Pedri in midfield, dangerous wide isolation via Yamal and Williams, and high-pressing coordination that has kept them unbeaten in 28 normal-time games since March 2024.",
+  "wc_history_home": "Uruguay are two-time World Cup champions (1930, 1950), including the legendary 2-1 upset of hosts Brazil known as the 'Maracanazo', and have reached the semi-finals four times including a fourth-place finish in 2010.",
+  "wc_history_away": "Spain won their first and only World Cup title in 2010 in South Africa, defeating the Netherlands 1-0 in extra time, becoming the first European team to win the tournament outside of Europe.",
+  "group_context": "Group H comprises Spain, Uruguay, Cape Verde, and Saudi Arabia, with Spain as heavy favourites (-450) and Uruguay as the clear second seeds (+400); the final Group H fixture on June 26 — Uruguay vs Spain — is expected to be a decisive match that could determine which team advances as group winner.",
+  "strengths_home": [
+    "Elite centre-back pairing in Araujo and Gimenez providing world-class defensive solidity",
+    "Federico Valverde's tireless engine and ability to drive vertical transitions",
+    "High-pressing intensity under Bielsa that disrupts opponents and creates quick turnovers"
+  ],
+  "strengths_away": [
+    "Lamine Yamal's exceptional 1v1 dribbling and creativity on the right flank",
+    "Dominant midfield control and ball circulation through Rodri and Pedri",
+    "28-game unbeaten run in normal time reflecting squad depth and tactical cohesion"
+  ]
+}

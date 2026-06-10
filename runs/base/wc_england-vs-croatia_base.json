@@ -1,0 +1,49 @@
+{
+  "home_team": "England",
+  "away_team": "Croatia",
+  "group": "L",
+  "match_date": "2026-06-17",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "England lead the all-time head-to-head with 5 wins to Croatia's 3, but Croatia have delivered famous victories in the biggest moments including the 2018 World Cup semi-final.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 1,
+    "away_wins": 3,
+    "notable_results": [
+      "5-1 England win - World Cup Qualifying - 2009",
+      "2-1 Croatia win (AET) - World Cup Semi-Final - 2018",
+      "1-0 England win - UEFA Euro 2020 - 2021"
+    ]
+  },
+  "form_home": ["W", "W", "W", "W", "W"],
+  "form_away": ["W", "L", "L", "W", "W"],
+  "key_players_home": [
+    "Harry Kane (striker / captain)",
+    "Jude Bellingham (attacking midfielder)",
+    "Bukayo Saka (right winger)",
+    "Declan Rice (defensive midfielder)",
+    "Marc Guehi (centre-back)"
+  ],
+  "key_players_away": [
+    "Luka Modric (central midfielder / captain)",
+    "Mateo Kovacic (central midfielder)",
+    "Josko Gvardiol (centre-back)",
+    "Ivan Perisic (winger)",
+    "Andrej Kramaric (forward)"
+  ],
+  "team_style_home": "Under Thomas Tuchel, England play a possession-dominant 4-2-3-1 / 4-3-3 that morphs into a 3-2-5 in build-up, with inverted full-backs, aggressive counter-pressing, and over 70% average possession recorded throughout qualifying.",
+  "team_style_away": "Croatia under Zlatko Dalic favour a structured 4-3-3 or 3-4-2-1 system centred on midfield control and technical quality, using disciplined possession to dictate tempo and relying on quick transitions and set-piece threat.",
+  "wc_history_home": "England won the 1966 World Cup on home soil — their only major international title — and have since reached the semi-finals in 1990 and 2018, arriving at 2026 ranked 4th in the world seeking a second world title.",
+  "wc_history_away": "Croatia have collected three World Cup medals since their 1998 debut — third place in 1998 and 2022, and runners-up in 2018 — making them one of the most consistently successful small nations in tournament history.",
+  "group_context": "Group L features England, Croatia, Ghana, and Panama, with England and Croatia widely regarded as the two clear favourites to advance; the opening head-to-head clash on June 17 is likely to define which team progresses as group winners and sets the knockout bracket path.",
+  "strengths_home": [
+    "World-class attacking trio in Kane, Bellingham, and Saka capable of unlocking any defence",
+    "Dominant possession game averaging over 70% throughout qualifying under Tuchel",
+    "Defensive solidity anchored by Rice and Guehi with a well-organised high-press system"
+  ],
+  "strengths_away": [
+    "Elite midfield intelligence and technical quality led by Modric and Kovacic",
+    "Experienced tournament mentality — three World Cup medals and a history of overperforming expectations",
+    "Strong defensive structure anchored by Gvardiol, one of Europe's best centre-backs"
+  ]
+}

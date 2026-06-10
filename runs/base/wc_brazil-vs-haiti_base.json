@@ -1,0 +1,48 @@
+{
+  "home_team": "Brazil",
+  "away_team": "Haiti",
+  "group": "C",
+  "match_date": "2026-06-19",
+  "venue": "Lincoln Financial Field, Philadelphia, USA",
+  "h2h_summary": "Brazil have won both historical meetings convincingly, scoring 13 goals and conceding just 1, including a 6-0 friendly in 2004 and a 7-1 Copa America victory in 2016.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "7-1 Brazil win - Copa America Centenario - 2016",
+      "6-0 Brazil win - Friendly - 2004"
+    ]
+  },
+  "form_home": ["W", "L", "L", "W", "W"],
+  "form_away": ["L", "L", "W", "D", "L"],
+  "key_players_home": [
+    "Vinicius Junior (left winger, Real Madrid)",
+    "Raphinha (right winger, Barcelona)",
+    "Bruno Guimaraes (central midfielder, Newcastle United)",
+    "Marquinhos (centre-back, PSG)",
+    "Alisson Becker (goalkeeper, Liverpool)"
+  ],
+  "key_players_away": [
+    "Wilson Isidor (striker, Sunderland)",
+    "Duckens Nazon (forward, all-time top scorer with 44 goals)",
+    "Jean-Ricner Bellegarde (midfielder, Wolverhampton Wanderers)",
+    "Hannes Delcroix (centre-back, FC Lugano)",
+    "Johny Placide (goalkeeper and captain, Bastia)"
+  ],
+  "team_style_home": "Brazil under Carlo Ancelotti play a 4-2-3-1 or 4-3-3 with attacking freedom down the wings through Vinicius Jr. and Raphinha, supported by a double pivot of Bruno Guimaraes and Casemiro providing defensive cover and creative balance.",
+  "team_style_away": "Haiti deploy a compact 4-2-3-1 that transitions to a 4-4-2 defensive block, relying on quick counter-attacks through the pace of Wilson Isidor and direct runners like Derrick Etienne Jr. to exploit space behind high defensive lines.",
+  "wc_history_home": "Brazil are the most decorated World Cup nation with five titles (1958, 1962, 1970, 1994, 2002) and are the only team to have appeared in every tournament since 1930, though they have not won the championship since 2002.",
+  "wc_history_away": "Haiti appeared in their only previous World Cup in 1974, famously taking a 1-0 lead against Italy (ending Dino Zoff's 1,142-minute clean-sheet streak) before exiting in the group stage; the 2026 tournament marks their return after a 52-year absence.",
+  "group_context": "Group C features Brazil, Morocco, Scotland, and Haiti, with Brazil and Morocco expected to advance as the top two — Brazil enter as heavy favorites as five-time champions, while Haiti's historic qualification after 52 years means any result against the giants would be a landmark achievement for Caribbean football.",
+  "strengths_home": [
+    "World-class attacking talent led by Vinicius Jr. and Raphinha with Champions League and La Liga pedigree",
+    "Experienced and organized defense anchored by Marquinhos and Gabriel Magalhaes",
+    "Tactical flexibility under Ancelotti with proven ability to rotate formations mid-game"
+  ],
+  "strengths_away": [
+    "Explosive pace and physical strength of Wilson Isidor as a counter-attacking focal point",
+    "Organized defensive compactness and resilience — conceded only 4 goals in last 5 matches",
+    "Motivated diaspora squad with Premier League quality in Bellegarde and Isidor creating genuine danger on transitions"
+  ]
+}

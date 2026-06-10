@@ -1,0 +1,47 @@
+{
+  "home_team": "Winner Group D",
+  "away_team": "Best 3rd Group B/E/F/I/J",
+  "group": "R32",
+  "match_date": "2026-07-01",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "USA (most likely Winner Group D) have met Ivory Coast (most likely Best 3rd from Group E) only once, in the 1992 King Fahd Cup, with the USA winning 5-2 in a third-place play-off, giving the USA a narrow but limited historical edge.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "USA 5-2 Ivory Coast - King Fahd Cup (3rd place) - 1992"
+    ]
+  },
+  "form_home": ["L", "W", "L", "L", "W"],
+  "form_away": ["W", "W", "W", "D", "W"],
+  "key_players_home": [
+    "Christian Pulisic (attacking midfielder/forward, AC Milan, 84 caps, 32 goals)",
+    "Tyler Adams (defensive midfielder, captain, AFC Bournemouth)",
+    "Weston McKennie (box-to-box midfielder, Juventus)",
+    "Ricardo Pepi (striker, PSV Eindhoven, 19 goals in 2025-26)",
+    "Folarin Balogun (striker, AS Monaco, 18 CL/Ligue 1 goals in 2025-26)"
+  ],
+  "key_players_away": [
+    "Amad Diallo (right winger, Manchester United, scored winner vs France in warm-up)",
+    "Franck Kessie (defensive midfielder, captain, Al Ahli, 100+ caps)",
+    "Ousmane Diomande (centre-back, Sporting CP, 22 years old)",
+    "Yan Diomande (attacking midfielder, RB Leipzig, 12 goals in 2025-26 Bundesliga)",
+    "Ibrahim Sangare (defensive midfielder, Nottingham Forest)"
+  ],
+  "team_style_home": "Under Mauricio Pochettino, the USMNT deploy a high-energy 4-3-3 built on relentless pressing, quick transitions through pacey wide attackers Pulisic and Weah, and Tyler Adams anchoring a disciplined midfield.",
+  "team_style_away": "Ivory Coast under Emerse Fae play a compact 4-3-3 with aggressive counter-pressing, a dynamic midfield trio designed to disrupt opponents, and rapid transitions through pacey wide players including Amad Diallo and Simon Adingra.",
+  "wc_history_home": "The USA reached the semi-finals in 1930 and the quarter-finals in 2002, qualifying for 12 World Cups with the 2026 tournament on home soil representing their best opportunity since that 2002 run.",
+  "wc_history_away": "Ivory Coast (Cote d'Ivoire) appeared at three consecutive World Cups (2006, 2010, 2014) but were eliminated in the group stage each time, making 2026 their first appearance since 2014 and their best chance yet to reach the knockout stage.",
+  "group_context": "Group D (USA, Paraguay, Australia, Turkey) has USA as strong co-host favourites to top the group and advance to face the best third-place qualifier from Groups B/E/F/I/J; Ivory Coast (Group E, alongside Germany, Ecuador, Curacao) are the most likely third-place qualifier from this pool, needing to finish behind Germany and Ecuador to advance via this route.",
+  "strengths_home": [
+    "Home advantage on US soil at Levi's Stadium with passionate crowd support",
+    "Elite European-based attacking talent in Pulisic, Pepi and Balogun capable of exploiting space on the counter",
+    "High-press system under Pochettino proven effective against physical, direct opponents"
+  ],
+  "strengths_away": [
+    "Exceptional recent form including a stunning 2-1 friendly win over France and 4-0 demolition of South Korea in 2026",
+    "Dangerous pacey wide players Amad Diallo and Simon Adingra who can beat defenders in isolation",
+    "Unbeaten in all 10 World Cup qualifying matches with a defensive record of 10 clean sheets"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "home_team": "Czechia",
+  "away_team": "Mexico",
+  "group": "A",
+  "match_date": "2026-06-24",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": "Mexico hold the historical advantage with a win in the 1962 World Cup when Czechoslovakia scored within 15 seconds but ultimately lost 3-1; modern meetings have been rare with a 2-1 Czech win in 2000 and a 2-2 draw in 2025.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 1,
+    "away_wins": 2,
+    "notable_results": [
+      "Mexico 3-1 Czechoslovakia - FIFA World Cup Group Stage - 1962",
+      "Czech Republic 2-1 Mexico - International Friendly - 2000",
+      "Czechia 2-2 Mexico - International Friendly - 2025"
+    ]
+  },
+  "form_home": ["W", "W", "D", "D", "W"],
+  "form_away": ["W", "W", "W", "D", "D"],
+  "key_players_home": [
+    "Patrik Schick (striker, Bayer Leverkusen)",
+    "Tomas Soucek (central midfielder, West Ham)",
+    "Matej Kovar (goalkeeper)",
+    "Ladislav Krejci (centre-back, captain, Wolves)",
+    "Vladimir Coufal (right-back)"
+  ],
+  "key_players_away": [
+    "Raul Jimenez (striker, Fulham)",
+    "Edson Alvarez (defensive midfielder, West Ham)",
+    "Alvaro Fidalgo (attacking midfielder, Real Betis)",
+    "Julian Quinones (winger)",
+    "Guillermo Ochoa (goalkeeper, 6th World Cup)"
+  ],
+  "team_style_home": "Czechia play a disciplined, compact 4-2-3-1 or 3-4-2-1 with a defensive mid-block, relying on aerial dominance, set-piece efficiency, and quick transitions led by Soucek and Schick.",
+  "team_style_away": "Mexico under Javier Aguirre deploy a 4-3-3 emphasizing defensive discipline, rapid counter-attacks, a quick passing game through midfield, and dangerous set pieces with strong aerial threats.",
+  "wc_history_home": "As Czechoslovakia, the nation reached two World Cup finals (1934 and 1962), losing both; as Czech Republic since 1993, they qualified only in 2006 (group stage exit) and now 2026, making this their first World Cup since 2006.",
+  "wc_history_away": "Mexico has appeared in 18 World Cups and reached the quarter-finals in 1970 and 1986 (both as host), but have been eliminated in the Round of 16 in seven consecutive tournaments from 1994 to 2022, a streak locals call 'El Quinto Partido' curse.",
+  "group_context": "Group A features co-host Mexico alongside South Korea, South Africa, and Czechia, with the top two teams advancing automatically to the Round of 32; Mexico enter as heavy favorites on home soil at altitude, while Czechia face a must-perform third fixture after early group games against South Korea and South Africa.",
+  "strengths_home": [
+    "Elite set-piece delivery and aerial threat from Soucek and Schick — scored more set-piece goals than any European qualifier",
+    "Playoff-hardened mentality and resilience under pressure after overcoming Ireland and Denmark in shootouts",
+    "Patrik Schick's clinical finishing in limited chances (25 international goals, 7 in last 11 starts)"
+  ],
+  "strengths_away": [
+    "Home advantage at altitude in Estadio Azteca with massive crowd support",
+    "Experienced squad led by Raul Jimenez and veteran goalkeeper Ochoa, with seven World Cup appearances between key players",
+    "Rapid counter-attacking and set-piece danger with aerial threats from Cesar Montes and Johan Vasquez"
+  ]
+}

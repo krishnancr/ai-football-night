@@ -1,0 +1,47 @@
+{
+  "home_team": "Norway",
+  "away_team": "Senegal",
+  "group": "I",
+  "match_date": "2026-06-22",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "Senegal leads the all-time head-to-head record with their only meeting resulting in a 2-1 Senegal victory in a 2006 friendly.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "Senegal 2-1 Norway - Friendly - 2006"
+    ]
+  },
+  "form_home": ["W", "L", "D", "W", "D"],
+  "form_away": ["W", "L", "W", "W", "L"],
+  "key_players_home": [
+    "Erling Haaland (striker)",
+    "Martin Odegaard (attacking midfielder / captain)",
+    "Alexander Sorloth (striker)",
+    "Antonio Nusa (winger)",
+    "Oscar Bobb (winger)"
+  ],
+  "key_players_away": [
+    "Sadio Mane (forward / captain)",
+    "Nicolas Jackson (striker)",
+    "Iliman Ndiaye (winger)",
+    "Kalidou Koulibaly (centre-back)",
+    "Idrissa Gana Gueye (defensive midfielder)"
+  ],
+  "team_style_home": "Norway play an aggressive 4-3-3 with high pressing and rapid vertical transitions, built around Erling Haaland as a central target with Odegaard pulling strings in the advanced midfield role.",
+  "team_style_away": "Senegal deploy a physical 4-3-3 with high pressing and counter-attacking pace, relying on Mane's deep-lying creativity behind Jackson and wide players who attack defenders in transition.",
+  "wc_history_home": "Norway appeared at three World Cups (1938, 1994, 1998), with their best result being the Round of 16 in 1998, and return in 2026 after a 28-year absence having qualified with a perfect eight wins from eight games.",
+  "wc_history_away": "Senegal made a stunning debut at the 2002 World Cup reaching the quarter-finals after defeating defending champions France, and reached the Round of 16 again in 2022 before losing 3-0 to England.",
+  "group_context": "Group I is headlined by two-time runners-up France, making the second qualification spot a fierce battle between Senegal and Norway, with the June 22 clash between those two sides widely seen as the decisive game for knockout-stage progression; Iraq are heavy underdogs in their first World Cup in 40 years.",
+  "strengths_home": [
+    "Elite goalscoring threat through Haaland, who scored 16 goals in qualifying",
+    "Relentless high-press system that disrupts opposition build-up",
+    "Fast vertical transitions from defence to attack with quality in all positions"
+  ],
+  "strengths_away": [
+    "Experienced and well-organised defensive block anchored by Koulibaly",
+    "Multiple attacking threats across the front three with Premier League pedigree",
+    "Physical intensity and counter-attacking pace through Mane, Jackson and Sarr"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "home_team": "Mexico",
+  "away_team": "Korea Republic",
+  "group": "A",
+  "match_date": "2026-06-18",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "Mexico dominate the all-time head-to-head with approximately 8 wins to Korea Republic's 4 across 13 meetings, including two World Cup victories in 1998 and 2018.",
+  "h2h_record": {
+    "home_wins": 8,
+    "draws": 1,
+    "away_wins": 4,
+    "notable_results": [
+      "Mexico 3-1 Korea Republic - FIFA World Cup Group Stage - 1998",
+      "Korea Republic 1-2 Mexico - FIFA World Cup Group Stage - 2018",
+      "Mexico 2-1 Korea Republic - FIFA World Cup Group Stage - 2026"
+    ]
+  },
+  "form_home": ["W", "W", "W", "D", "W"],
+  "form_away": ["L", "L", "W", "W", "W"],
+  "key_players_home": [
+    "Santiago Gimenez (striker, AC Milan)",
+    "Edson Alvarez (defensive midfielder, Fenerbahce, captain)",
+    "Raul Jimenez (striker, Fulham)",
+    "Guillermo Ochoa (goalkeeper, record 6th World Cup)",
+    "Gilberto Mora (attacking midfielder, 17-year-old prodigy)"
+  ],
+  "key_players_away": [
+    "Son Heung-min (winger/captain, 4th World Cup appearance)",
+    "Kim Min-jae (centre-back, Bayern Munich)",
+    "Lee Kang-in (attacking midfielder, Paris Saint-Germain)",
+    "Hwang Hee-chan (forward, Wolverhampton Wanderers)",
+    "Kim Seung-gyu (goalkeeper, first choice)"
+  ],
+  "team_style_home": "Mexico under Javier Aguirre deploy a flexible 4-3-3 built around high-energy pressing, quick transitions, and Santiago Gimenez's pace up front, anchored by Edson Alvarez as the single pivot.",
+  "team_style_away": "Korea Republic under Hong Myung-bo use a 4-2-3-1 with high-intensity pressing and vertical passing, leveraging Son Heung-min's creativity and pace on the left wing to unlock defences rapidly.",
+  "wc_history_home": "Mexico have appeared at 16 World Cups, co-hosting in 1970 and 1986 when they reached the quarter-finals — their best-ever performance — and are notorious for being eliminated in the Round of 16 seven consecutive times from 1994 to 2018.",
+  "wc_history_away": "Korea Republic's greatest World Cup moment came in 2002 on home soil, when they became the first Asian team to reach the semi-finals, defeating Portugal, Italy, and Spain before losing to Germany 1-0.",
+  "group_context": "Group A features co-hosts Mexico, Korea Republic, Czechia, and South Africa, with all matches played in Mexico giving El Tri a massive home advantage; Mexico are strong favourites to top the group while Korea Republic and Czechia battle for the second automatic qualifying spot in what is the most consequential second-game fixture for both sides.",
+  "strengths_home": [
+    "Home crowd advantage and altitude at Estadio Akron in Guadalajara",
+    "Santiago Gimenez's elite goal-scoring form at AC Milan",
+    "Proven World Cup pedigree against Korea Republic (2 wins in 2 WC meetings)"
+  ],
+  "strengths_away": [
+    "Son Heung-min's world-class individual quality and leadership as captain",
+    "Kim Min-jae providing a formidable defensive foundation from Bayern Munich",
+    "Unbeaten Asian qualifying campaign with a disciplined vertical pressing system"
+  ]
+}

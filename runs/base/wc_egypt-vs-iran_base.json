@@ -1,0 +1,48 @@
+{
+  "home_team": "Egypt",
+  "away_team": "Iran",
+  "group": "G",
+  "match_date": "2026-06-26",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Egypt and Iran have met only twice in recorded history — a 1975 friendly won by Iran 2-1 and a 2000 friendly that finished 1-1 — giving Iran a narrow edge with one win and one draw.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "Iran 2-1 Egypt - International Friendly - 1975",
+      "Iran 1-1 Egypt - International Friendly - 2000"
+    ]
+  },
+  "form_home": ["L", "W", "D", "L", "D"],
+  "form_away": ["W", "D", "W", "L", "D"],
+  "key_players_home": [
+    "Mohamed Salah (forward/winger, captain)",
+    "Omar Marmoush (forward, Manchester City)",
+    "Mahmoud Hassan Trezeguet (winger)",
+    "Mohamed Abdelmonem (centre-back, OGC Nice)",
+    "Mohamed El Shenawy (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Mehdi Taremi (striker, captain, Olympiacos)",
+    "Alireza Jahanbakhsh (winger/midfielder, Dender)",
+    "Saeid Ezatolahi (defensive midfielder)",
+    "Saman Ghoddos (attacking midfielder)",
+    "Alireza Beiranvand (goalkeeper)"
+  ],
+  "team_style_home": "Egypt deploy a compact, disciplined 4-2-3-1 with defensive organization as the priority, using an asymmetric double-pivot in build-up and releasing Mohamed Salah and Omar Marmoush on fast transitions to exploit space behind opposition lines.",
+  "team_style_away": "Iran line up in a pragmatic 4-2-3-1 or 4-3-3 mid-to-low block under Amir Ghalenoei, containing opposition in their half before launching rapid counter-attacks and set-piece routines, with the right flank serving as the primary delivery corridor.",
+  "wc_history_home": "Egypt have appeared at only three previous World Cups (1934, 1990, 2018) and have never won a match or advanced beyond the group stage in any of those tournaments.",
+  "wc_history_away": "Iran have qualified for six World Cups (1978, 1998, 2006, 2014, 2018, 2022) and are making a fourth consecutive appearance, but have never progressed past the group stage in any of those tournaments.",
+  "group_context": "Group G features Belgium (FIFA rank 8) as heavy favourites to advance alongside Egypt (rank 34), Iran (rank 20), and New Zealand (rank 86); the Egypt vs Iran match is effectively the group's decisive third-place decider, with the winner holding a strong chance of claiming second place and a knockout-round berth.",
+  "strengths_home": [
+    "Mohamed Salah and Omar Marmoush provide a world-class attacking partnership capable of deciding games individually",
+    "Exceptional defensive record in CAF qualifying — seven clean sheets and only two goals conceded across ten unbeaten matches",
+    "Tactical flexibility under Hossam Hassan, shifting between 4-2-3-1 and 3-4-1-2 to control games and frustrate opponents"
+  ],
+  "strengths_away": [
+    "Mehdi Taremi's goal-scoring reliability — 10 goals in 15 qualifiers — makes Iran dangerous even with limited possession",
+    "Experienced and disciplined defensive block that conceded very few goals in AFC qualification, comfortable sitting deep and counter-attacking",
+    "Strong set-piece threat and high squad cohesion from a domestically-grounded core supplemented by experienced European-based players"
+  ]
+}

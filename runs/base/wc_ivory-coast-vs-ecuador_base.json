@@ -1,0 +1,45 @@
+{
+  "home_team": "Ivory Coast",
+  "away_team": "Ecuador",
+  "group": "E",
+  "match_date": "2026-06-14",
+  "venue": "Lincoln Financial Field, Philadelphia, USA",
+  "h2h_summary": "Ivory Coast and Ecuador have never previously met in international football — their Group E clash on June 14, 2026 will be the first-ever encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "W", "D", "W"],
+  "form_away": ["W", "D", "D", "W", "W"],
+  "key_players_home": [
+    "Franck Kessie (central midfielder / captain)",
+    "Amad Diallo (winger)",
+    "Yan Diomande (winger / attacking midfielder)",
+    "Ousmane Diomande (centre-back)",
+    "Simon Adingra (winger)"
+  ],
+  "key_players_away": [
+    "Moises Caicedo (defensive midfielder)",
+    "Enner Valencia (striker / all-time top scorer)",
+    "Kendry Paez (winger / attacking midfielder)",
+    "Willian Pacho (centre-back)",
+    "Piero Hincape (centre-back)"
+  ],
+  "team_style_home": "Ivory Coast deploy a 4-3-3 under Emerse Fae, pressing high and transitioning quickly through pace-filled wide attackers, underpinned by a physically dominant midfield and a defensive unit that conceded zero goals in World Cup qualifying.",
+  "team_style_away": "Ecuador under Sebastian Beccacece are built on elite defensive organisation in a compact 4-4-2 / 4-2-3-1 shape that conceded just five goals in 18 CONMEBOL qualifiers, relying on Caicedo's engine in midfield and devastating counter-attacks to punish opponents.",
+  "wc_history_home": "Ivory Coast appeared at the World Cup in 2006, 2010, and 2014 but were eliminated in the group stage each time, and the 2026 tournament marks their return after a 12-year absence.",
+  "wc_history_away": "Ecuador have appeared at the World Cup in 2002, 2006, and 2014, with their best run coming in 2006 when they reached the Round of 16 before losing 1-0 to England.",
+  "group_context": "Group E comprises Germany, Ecuador, Ivory Coast, and Curaçao; Germany are heavy favourites to top the group, making the Ivory Coast vs Ecuador opener a near-decisive contest for second place, with Ecuador given a roughly 87% chance and Ivory Coast around 64% of advancing to the knockouts.",
+  "strengths_home": [
+    "Explosive, pacey wide attackers led by Amad Diallo and Yan Diomande",
+    "Defensive solidity — conceded zero goals across 10 World Cup qualifying matches",
+    "Youngest squad at the tournament with momentum from recent wins over France and South Korea"
+  ],
+  "strengths_away": [
+    "Best defence in CONMEBOL qualifying — only five goals conceded in 18 matches",
+    "Moises Caicedo as one of the world's elite defensive midfielders anchoring a disciplined shape",
+    "Dangerous on the counter-attack with Valencia, Paez, and Gonzalo Plata providing the threat in transition"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "home_team": "Winner Group K",
+  "away_team": "Best 3rd Group D/E/I/J/L",
+  "group": "R32",
+  "match_date": "2026-07-03",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": "Portugal (heavy favourite to win Group K) and Colombia (most likely 3rd-place qualifier from Groups D/E/I/J/L) have met only twice in friendlies, with Colombia unbeaten — winning 2-0 in 1994 and drawing 2-2 in 2014 — and have never faced each other in competitive football before the 2026 World Cup.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "Colombia 2-0 Portugal - Friendly - 1994",
+      "Colombia 2-2 Portugal - Friendly - 2014"
+    ]
+  },
+  "form_home": ["W", "L", "W", "D", "W"],
+  "form_away": ["W", "W", "L", "L", "W"],
+  "key_players_home": [
+    "Cristiano Ronaldo (centre-forward, all-time top scorer at sixth World Cup, 41 years old)",
+    "Bruno Fernandes (attacking midfielder, Premier League Player of the Season, creative engine)",
+    "Vitinha (central midfielder, PSG, tempo-setter, Ballon d'Or top-3 in 2025)",
+    "Rafael Leao (left winger, AC Milan, pace and direct running)",
+    "Ruben Dias (centre-back, Manchester City, defensive leader and organiser)"
+  ],
+  "key_players_away": [
+    "Luis Diaz (left winger, Bayern Munich, 26 goals and 23 assists across all competitions in 2025-26)",
+    "James Rodriguez (attacking midfielder/captain, Colombia all-time leading World Cup scorer with 6 goals)",
+    "Richard Rios (central midfielder, Benfica, combative box-to-box presence)",
+    "Daniel Munoz (right back, Crystal Palace, overlapping runs and crossing ability)",
+    "Davinson Sanchez (centre-back, pace and physicality in defensive line)"
+  ],
+  "team_style_home": "Portugal under Roberto Martinez deploy a possession-based 4-3-3 with aggressive counterpressing immediately after losing the ball, Vitinha and Joao Neves controlling the midfield tempo, Bruno Fernandes as an advanced playmaker, and wide attackers providing cutting runs to support Ronaldo centrally.",
+  "team_style_away": "Colombia under Nestor Lorenzo operate in a disciplined 4-2-3-1 / 4-3-3 hybrid that sits in a compact mid-block out of possession and transitions rapidly through Luis Diaz's direct running, with James Rodriguez as the creative fulcrum in the half-space between midfield and attack.",
+  "wc_history_home": "Portugal have appeared at eight World Cups, achieving third place in 1966 led by Eusebio and fourth place in 2006, but have never lifted the trophy despite boasting Cristiano Ronaldo for five editions.",
+  "wc_history_away": "Colombia's greatest World Cup achievement came in 2014 when James Rodriguez's six-goal Golden Boot run carried them to the quarter-finals for the first time, before losing 2-1 to hosts Brazil; they have appeared at six World Cups in total.",
+  "group_context": "This Round of 32 match pits the Winner of Group K — where Portugal are overwhelming favourites at ~65% probability ahead of Colombia — against the best-ranked third-place team from Groups D, E, I, J, or L, with the winner advancing to the Round of 16 where a further challenging path awaits in the expanded 48-team tournament format.",
+  "strengths_home": [
+    "Elite midfield trio of Vitinha, Joao Neves, and Bruno Fernandes regarded as one of the best in the tournament, able to control possession and tempo against any opponent",
+    "Reigning UEFA Nations League champions arriving with strong squad depth and settled system under Roberto Martinez",
+    "Experience of Cristiano Ronaldo's big-game leadership combined with youthful talent like Leao and Joao Neves provides balance across all phases"
+  ],
+  "strengths_away": [
+    "Luis Diaz in the form of his career at Bayern Munich — 26 goals and 23 assists in 2025-26 — makes Colombia one of the most dangerous transition teams in the tournament",
+    "Colombia's 28-match unbeaten run and second-place CONMEBOL finish (29 points) demonstrate elite consistency and defensive solidity under Lorenzo",
+    "Set-piece threat and physical directness through Daniel Munoz's crosses and Davinson Sanchez's defensive leadership give Colombia an edge in tight matches"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "home_team": "Winner Group C",
+  "away_team": "Runner-up Group F",
+  "group": "R32",
+  "match_date": "2026-06-29",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Brazil (expected Winner Group C) historically dominate Japan (expected Runner-up Group F), winning 11 of 14 all-time meetings with 2 draws, though Japan claimed a landmark 3-2 friendly win in Tokyo in October 2025.",
+  "h2h_record": {
+    "home_wins": 11,
+    "draws": 2,
+    "away_wins": 1,
+    "notable_results": [
+      "Brazil 4-1 Japan - FIFA World Cup Group Stage - 2006",
+      "Japan 3-2 Brazil - International Friendly - 2025",
+      "Brazil 4-0 Japan - International Friendly - 2014"
+    ]
+  },
+  "form_home": ["W", "W", "W", "L", "D"],
+  "form_away": ["W", "W", "W", "W", "W"],
+  "key_players_home": [
+    "Vinicius Junior (left winger)",
+    "Raphinha (right winger)",
+    "Bruno Guimaraes (central midfielder)",
+    "Endrick (striker)",
+    "Marquinhos (centre-back)"
+  ],
+  "key_players_away": [
+    "Takefusa Kubo (attacking midfielder / winger)",
+    "Wataru Endo (defensive midfielder / captain)",
+    "Ao Tanaka (central midfielder)",
+    "Zion Suzuki (goalkeeper)",
+    "Hiroki Ito (centre-back)"
+  ],
+  "team_style_home": "Brazil under Carlo Ancelotti deploy a 4-2-3-1 or 4-3-3 with patient possession-based buildup, explosive counter-attacking pace on the wings through Vinicius and Raphinha, and a defensively disciplined double-pivot anchored by Casemiro and Bruno Guimaraes.",
+  "team_style_away": "Japan under Hajime Moriyasu use an aggressive high-pressing 3-4-2-1 system, stifling opponents in tight central lanes before transitioning into rapid counter-attacks, with Kubo's creativity and the team's collective intensity making them dangerous against any opposition.",
+  "wc_history_home": "Brazil are the most successful World Cup nation with five titles (1958, 1962, 1970, 1994, 2002) and have never missed a tournament, boasting a record 76 wins in 114 World Cup matches.",
+  "wc_history_away": "Japan have reached the Round of 16 four times (2002, 2010, 2018, 2022), with their 2022 group stage victories over Germany and Spain representing the high-water mark for Asian football before losing on penalties to Croatia.",
+  "group_context": "This Round of 32 match on June 29 at NRG Stadium pits the winner of Group C (Brazil heavily favored) against the runner-up of Group F (Japan the slight second-place favorite ahead of Sweden), with the winner advancing to the Round of 16 and keeping alive their quest for the title.",
+  "strengths_home": [
+    "Elite individual attacking quality — Vinicius Junior and Raphinha among the tournament's most dangerous wide forwards",
+    "Experienced defensive spine with Marquinhos, Casemiro and Bruno Guimaraes providing structural discipline",
+    "Tactical flexibility under Ancelotti with proven big-game management and a squad depth covering every position"
+  ],
+  "strengths_away": [
+    "High-intensity organized pressing system that has troubled elite teams including Germany, Spain, and Brazil in recent years",
+    "Takefusa Kubo's unpredictable creativity and ability to exploit spaces between defensive lines",
+    "Exceptional team cohesion and mental resilience demonstrated by multiple comeback victories in international football"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "home_team": "Jordan",
+  "away_team": "Algeria",
+  "group": "J",
+  "match_date": "2026-06-22",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "Jordan and Algeria have no documented competitive head-to-head history prior to this World Cup match, making their Group J encounter on June 22, 2026 effectively their first meaningful meeting.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["L", "L", "D", "D", "L"],
+  "form_away": ["W", "D", "W", "L", "W"],
+  "key_players_home": [
+    "Mousa Al-Taamari (captain, attacking winger/midfielder, Stade Rennais)",
+    "Ali Olwan (forward, 9 qualifying goals)",
+    "Ihsan Haddad (defensive captain, centre-back, 92 caps)",
+    "Yazeed Abulaila (goalkeeper, 76 caps)",
+    "Yazan Al-Arab (centre-back, 80 caps)"
+  ],
+  "key_players_away": [
+    "Riyad Mahrez (captain, right winger, 113 caps, 38 goals)",
+    "Mohamed Amoura (striker, VfL Wolfsburg, 10 qualifying goals)",
+    "Rayan Aït-Nouri (left back, Manchester City)",
+    "Ramy Bensebaini (centre-back/left back, Borussia Dortmund)",
+    "Anis Hadj Moussa (winger/midfielder, Feyenoord)"
+  ],
+  "team_style_home": "Jordan play disciplined, defensively compact football under coach Jamal Sellami, prioritizing midfield control and rapid counter-attacks, conceding only four goals in all of World Cup qualifying.",
+  "team_style_away": "Algeria play an attack-oriented, vertically direct style emphasizing quick counterattacking transitions, with technically gifted wide players and a reliance on individual brilliance from Mahrez and Amoura.",
+  "wc_history_home": "Jordan make their historic debut at the 2026 FIFA World Cup, having qualified for the first time after more than ten failed campaigns, sealing their spot with a 3-0 victory over Oman in June 2025.",
+  "wc_history_away": "Algeria have appeared at five World Cups (1982, 1986, 2010, 2014, 2026), with their best run coming in 2014 when they reached the Round of 16 before losing to Germany, and their most famous moment being the 2-1 upset of West Germany in 1982.",
+  "group_context": "Group J is widely regarded as one of the most challenging groups, with defending champions Argentina (Pot 1) as heavy favourites to top it; Algeria and Austria are realistic contenders for the second automatic qualifying spot, while Jordan, as World Cup debutants, aim to compete and secure a historic first victory, making the Jordan vs Algeria clash pivotal for second place.",
+  "strengths_home": [
+    "Exceptional defensive organisation — conceded only 4 goals in entire World Cup qualifying campaign",
+    "Dangerous on the counter-attack with quick, creative forwards led by Al-Taamari",
+    "Tournament experience from reaching 2023 Asian Cup final and 2025 Arab Cup final"
+  ],
+  "strengths_away": [
+    "Dominant qualifying campaign — won 8 of 10 CAF matches, finishing 7 points clear of second-place Uganda",
+    "Star quality and experience in attack, with Mahrez and Amoura combining for over 20 qualifying goals",
+    "Proven players across Europe's top leagues offering tactical versatility and big-game composure"
+  ]
+}

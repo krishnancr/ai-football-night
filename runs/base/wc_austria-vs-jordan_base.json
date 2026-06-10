@@ -1,0 +1,45 @@
+{
+  "home_team": "Austria",
+  "away_team": "Jordan",
+  "group": "J",
+  "match_date": "2026-06-16",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "Austria and Jordan have never previously met in an official or friendly international fixture, making their World Cup 2026 group stage clash the first-ever encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": ["W", "W", "W", "D", "W"],
+  "form_away": ["L", "L", "D", "D", "L"],
+  "key_players_home": [
+    "David Alaba (captain, central defender)",
+    "Marcel Sabitzer (central midfielder)",
+    "Konrad Laimer (midfielder)",
+    "Christoph Baumgartner (attacking midfielder)",
+    "Marko Arnautovic (striker)"
+  ],
+  "key_players_away": [
+    "Mousa Al-Taamari (captain, winger/attacking midfielder)",
+    "Ali Olwan (forward)",
+    "Ihsan Haddad (centre-back / defensive anchor)",
+    "Nizar Al-Rashdan (defensive midfielder)",
+    "Yazan Al-Arab (goalkeeper)"
+  ],
+  "team_style_home": "Austria under Ralf Rangnick deploy an aggressive 4-2-3-1 built on gegenpressing — high-intensity immediate pressure after losing the ball, compact defensive shape, and rapid vertical transitions through midfield runners.",
+  "team_style_away": "Jordan under Jamal Sellami use a disciplined 3-4-3 (morphing to a 5-4-1 out of possession), sitting deep in a compact block, winning the ball, and releasing Mousa Al-Taamari on lightning-quick counter-attacks.",
+  "wc_history_home": "Austria are making their eighth World Cup appearance and first since 1998, with their finest hour coming in 1954 when they finished third, including a famous 7-5 quarter-final victory over hosts West Germany that remains the highest-scoring match in World Cup history.",
+  "wc_history_away": "Jordan are making their first-ever FIFA World Cup appearance in 2026, having reached the 2023 AFC Asian Cup final and scored a record 32 goals in their World Cup qualifying campaign.",
+  "group_context": "Group J is headlined by defending champions Argentina alongside Algeria, Austria, and debutants Jordan; Austria need a positive result against Jordan to stay in contention for a top-two finish before facing Argentina, while Jordan must seize this opener as their best chance of any points before meeting Argentina in their final game.",
+  "strengths_home": [
+    "Elite pressing system and high defensive line under Rangnick creating turnovers in dangerous areas",
+    "Bundesliga-heavy squad with Champions League-level talent in Alaba, Sabitzer, and Laimer",
+    "Strong qualifying form — topped UEFA Group H with 6 wins and a 22-4 goal difference"
+  ],
+  "strengths_away": [
+    "World-class counter-attacking threat through Mousa Al-Taamari's pace and creativity",
+    "Disciplined defensive structure inspired by Morocco's 2022 World Cup semi-final run",
+    "Tournament-hardened squad that reached the 2023 Asian Cup final and 2025 Arab Cup final"
+  ]
+}

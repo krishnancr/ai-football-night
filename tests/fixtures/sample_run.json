@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-06-11T10:00:00",
+  "match_string": "Brazil vs Croatia",
+  "match_slug": "brazil-croatia",
+  "persona_set": {
+    "Statman": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "TacticalAnalyst": "mistralai/Mistral-Large-Instruct-2411",
+    "Contrarian": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+    "Judge": "deepseek-ai/DeepSeek-R1"
+  },
+  "idea": "Predict the score for: Brazil vs Croatia",
+  "decision": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "confidence": 0.67,
+    "upset_probability": 0.23,
+    "key_factors": [
+      "Brazil's squad depth and xG dominance over last 5 games",
+      "Croatia's tournament pedigree — they've beaten Brazil before"
+    ],
+    "match_headline": "Brazil edge Croatia but Modric makes it ugly",
+    "studio_banter_quote": {
+      "role": "Statman",
+      "exchange": "Stat_Bot: xG doesn't lie — Brazil 2.1 per game.\nR_Bot: Modric ran that midfield in 2022, nothing's changed.\nStat_Bot: He's 38. That's not a variable, that's a liability."
+    },
+    "most_outrageous_take": "Croatia have won a World Cup knockout against Brazil before. Stat_Bot is living in a spreadsheet.",
+    "host_intro": "Stat_Bot has the numbers, R_Bot has the trauma, and G_Bot has a touchscreen — here is the final verdict.",
+    "rationale": "Brazil's quality and depth should prevail, but Croatia's tournament experience and Modric's ability to control tempo make a comfortable win unlikely. A narrow Brazil win is the most probable outcome."
+  },
+  "full_debate": {
+    "proposals": {
+      "Statman": "Based on xG data over the last 6 games, Brazil generates 2.1 xG per game while Croatia concedes 1.3. The statistical edge is clear.",
+      "TacticalAnalyst": "Brazil's 4-3-3 press will suffocate Croatia's build-up. The key battle is Vinicius Jr vs Gvardiol.",
+      "Contrarian": "Brazil haven't kept a clean sheet in 4 games. Modric still runs that midfield. Don't sleep on Croatia."
+    },
+    "cross_critiques": {
+      "Statman": "The Contrarian ignores xG completely. Feelings aren't data.",
+      "TacticalAnalyst": "Statistician's xG doesn't account for Croatia's set-piece threat.",
+      "Contrarian": "The Statman's 6-game xG sample includes friendlies. Meaningless."
+    },
+    "rebuttals": {
+      "Statman": "Fair point on set pieces. Brazil concede 0.4 xG from set pieces per game — still manageable.",
+      "TacticalAnalyst": "Concede on the Gvardiol point — he's improved significantly since the last meeting.",
+      "Contrarian": "Stand firm. Tournament football is different. Brazil are vulnerable."
+    }
+  }
+}

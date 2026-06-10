@@ -1,0 +1,47 @@
+{
+  "home_team": "Bosnia and Herzegovina",
+  "away_team": "Qatar",
+  "group": "B",
+  "match_date": "2026-06-24",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Bosnia and Herzegovina and Qatar have met just once, a 1-1 friendly draw in Sarajevo in August 2010, giving them a completely even and very limited head-to-head record.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - International Friendly - 2010"
+    ]
+  },
+  "form_home": ["D", "D", "D", "D", "W"],
+  "form_away": ["L", "D", "L", "L", "D"],
+  "key_players_home": [
+    "Edin Dzeko (striker/captain)",
+    "Ermedin Demirovic (forward)",
+    "Esmir Bajraktarevic (winger)",
+    "Benjamin Tahirovic (midfielder)",
+    "Haris Tabakovic (striker)"
+  ],
+  "key_players_away": [
+    "Akram Afif (attacking midfielder/winger)",
+    "Almoez Ali (striker)",
+    "Hassan Al-Haydos (captain/midfielder)",
+    "Ahmed Fathi (defensive midfielder)",
+    "Assim Madibo (midfielder)"
+  ],
+  "team_style_home": "Bosnia and Herzegovina play a compact 4-4-2 or 4-2-3-1, relying on physicality, direct play, quick counter-attacks, and set-piece threat with Edin Dzeko as the focal point of their attack.",
+  "team_style_away": "Under Julen Lopetegui, Qatar operate in a disciplined 4-2-3-1 with a double pivot, emphasizing compact defensive organization and quick transitions to release Akram Afif in half-spaces.",
+  "wc_history_home": "Bosnia and Herzegovina made their only previous World Cup appearance at Brazil 2014, winning their opening group game 3-1 against Iran but narrowly missing the round of 16 after losses to Argentina and Nigeria.",
+  "wc_history_away": "Qatar debuted as hosts at the 2022 FIFA World Cup, becoming the first host nation in history to be eliminated in the group stage after losing all three matches to Ecuador, Senegal, and the Netherlands.",
+  "group_context": "Group B contains co-hosts Canada, European dark horses Bosnia and Herzegovina, two-time Asian champions Qatar, and consistent European performers Switzerland; Bosnia and Qatar are effectively battling for the third-place spot and a potential path to the knockout rounds as one of the eight best third-placed teams.",
+  "strengths_home": [
+    "Experienced striking partnership with Dzeko and Demirovic providing both hold-up play and pressing",
+    "Mental fortitude and big-game experience after eliminating both Wales and Italy on penalties in qualifying",
+    "Dangerous from set pieces and crosses with Dzeko's aerial presence in the box"
+  ],
+  "strengths_away": [
+    "Akram Afif's individual world-class quality capable of creating chances from nothing",
+    "Cohesive squad built through the Aspire Academy system providing strong team chemistry",
+    "Tactical discipline under Lopetegui keeping the team compact and hard to break down"
+  ]
+}

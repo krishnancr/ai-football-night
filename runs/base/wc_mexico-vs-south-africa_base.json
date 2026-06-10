@@ -1,0 +1,47 @@
+{
+  "home_team": "Mexico",
+  "away_team": "South Africa",
+  "group": "A",
+  "match_date": "2026-06-11",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": "Mexico and South Africa have met only once in official competition, a 1-1 draw in the opening match of the 2010 FIFA World Cup in Johannesburg.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - FIFA World Cup Group Stage - 2010"
+    ]
+  },
+  "form_home": ["W", "W", "W", "D", "D"],
+  "form_away": ["D", "L", "D", "L", "D"],
+  "key_players_home": [
+    "Santiago Gimenez (striker)",
+    "Raul Jimenez (striker)",
+    "Edson Alvarez (defensive midfielder / captain)",
+    "Hirving Lozano (winger)",
+    "Guillermo Ochoa (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Ronwen Williams (goalkeeper / captain)",
+    "Lyle Foster (striker)",
+    "Teboho Mokoena (central midfielder)",
+    "Relebohile Mofokeng (winger)",
+    "Oswin Appollis (winger)"
+  ],
+  "team_style_home": "Mexico under Javier Aguirre deploy a flexible 4-3-3 / 4-2-3-1 emphasizing high pressing, quick transitions, and building from the back with Edson Alvarez as the defensive anchor.",
+  "team_style_away": "South Africa under Hugo Broos use a disciplined 4-2-3-1 / 4-2-4 system that blends compact defensive mid-blocks with devastating counter-attacks exploiting the raw pace of Appollis and Mofokeng on the wings.",
+  "wc_history_home": "Mexico have appeared in 18 World Cups, reaching the quarter-finals as hosts in 1970 and 1986, but were eliminated from the 2022 Qatar edition in the group stage after seven consecutive Round of 16 exits.",
+  "wc_history_away": "South Africa hosted the 2010 World Cup but became the first host nation eliminated in the group stage, and the 2026 tournament marks their return to the competition for the first time in 16 years.",
+  "group_context": "Group A features co-host Mexico, South Africa, South Korea, and Czechia, with the top two teams advancing to the Round of 32; Mexico open as heavy favourites on home soil, while South Africa face an uphill battle but carry the poetic symmetry of rematching Mexico in a World Cup opener for the second time.",
+  "strengths_home": [
+    "Dual striker threat with Gimenez and Jimenez combining elite finishing and movement",
+    "Home advantage at the iconic Estadio Azteca with massive crowd support",
+    "Experienced squad with tactical flexibility under Aguirre and strong recent form (3W 2D in last 5)"
+  ],
+  "strengths_away": [
+    "Disciplined defensive organization conceding only 3 goals in last 10 qualifying matches",
+    "Dangerous pace on the wings with Appollis and Mofokeng capable of exploiting space on the counter",
+    "Captain Ronwen Williams is world-class in goal, proven under pressure at AFCON and qualifying"
+  ]
+}

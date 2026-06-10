@@ -1,0 +1,50 @@
+{
+  "home_team": "Winner Group H",
+  "away_team": "Runner-up Group J",
+  "group": "R32",
+  "match_date": "2026-07-02",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "notes": "Group H: Spain, Cape Verde, Saudi Arabia, Uruguay. Group J: Argentina, Algeria, Austria, Jordan. Most likely matchup: Spain (Group H winner) vs Algeria or Austria (Group J runner-up). Spain is -370 to -500 favorite to win Group H. In Group J, Argentina is heavy favorite; Austria (+350) and Algeria (+750) compete for second. H2H and player data below represent Spain vs Algeria as the primary likely matchup, with Austria notes included.",
+  "h2h_summary": "Spain and Algeria have met only once in official competition, a 3-0 Spain victory in the 1986 FIFA World Cup group stage in Mexico; their head-to-head record strongly favours Spain.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "Spain 3-0 Algeria - FIFA World Cup Group Stage - 1986",
+      "Algeria 2-1 West Germany - FIFA World Cup Group Stage - 1982 (Algeria's greatest WC upset, not vs Spain)",
+      "Algeria 1-2 Germany (AET) - FIFA World Cup Round of 16 - 2014 (Algeria's best WC run)"
+    ]
+  },
+  "form_home": ["W", "D", "D", "W", "D"],
+  "form_away": ["W", "D", "W", "L", "W"],
+  "key_players_home": [
+    "Lamine Yamal (right winger, 18-year-old Barcelona star)",
+    "Rodri (central midfielder, Ballon d'Or 2024, midfield anchor)",
+    "Mikel Oyarzabal (striker, 11 goals in last 10 Spain appearances)",
+    "Pedri (central midfielder, creative pulse and tempo-setter)",
+    "Nico Williams (left winger, pace and direct running)"
+  ],
+  "key_players_away": [
+    "Riyad Mahrez (captain/winger, 35 years old, 113 caps, 38 international goals)",
+    "Mohamed Amine Amoura (striker, 10 qualifying goals, Algeria's most dangerous attacker)",
+    "Houssem Aouar (attacking midfielder, creative late runner into scoring positions)",
+    "Rayan Ait-Nouri (left back/winger, Manchester City, dynamic overlapping runs)",
+    "Ibrahim Maza (midfielder, Bayer Leverkusen, next-generation talent)"
+  ],
+  "team_style_home": "Spain play a 4-3-3 (adjustable to 4-2-3-1) built on possession-based high press and rapid transitions, combining patient build-up play with explosive wide threats through Yamal and Williams.",
+  "team_style_away": "Algeria operate in a 4-4-2 emphasising intense attack-minded combination play with wide runners creating space for central combinations, relying on Mahrez's creativity and Amoura's direct running.",
+  "wc_history_home": "Spain won their only FIFA World Cup in 2010, defeating the Netherlands 1-0 in extra time, and have appeared at 16 of 22 tournaments with a fourth-place finish in 1950 as their best pre-2010 result.",
+  "wc_history_away": "Algeria have appeared at four World Cups (1982, 1986, 2010, 2014), with their best run a Round of 16 exit to Germany in 2014, and famously upset West Germany 2-1 in 1982 before being controversially eliminated.",
+  "group_context": "This Round of 32 tie pits Group H winner (most likely Spain, European champions and 2026 tournament favourites) against the Group J runner-up (most likely Austria under Rangnick's gegenpressing system at +350, or Algeria with Mahrez at +750), with the winner advancing to the Round of 16 and a potential clash with a Group I or Group K qualifier.",
+  "strengths_home": [
+    "Elite midfield control and possession with Rodri and Pedri dictating tempo",
+    "World-class wide threat through Lamine Yamal, one of the most dangerous wingers at this tournament",
+    "Prolific striker in Oyarzabal arriving in peak form with 11 goals in 10 pre-tournament matches"
+  ],
+  "strengths_away": [
+    "Lethal counter-attacking pace through Amoura and Ait-Nouri on the flanks",
+    "Riyad Mahrez's technical brilliance and big-game experience in tight spaces",
+    "Strong qualifying form (dominated CAF with 8 wins from 10, beat Netherlands 1-0 in June 2026 friendly)"
+  ]
+}
