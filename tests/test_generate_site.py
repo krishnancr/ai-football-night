@@ -309,3 +309,90 @@ def test_index_pundits_section_present_when_runs_exist(tmp_path):
     html = generate_index_html(pairs, "20260614")
     assert "The Panel" in html
     assert "Stat_Bot" in html
+
+
+def test_index_keeps_studio_image_when_runs_exist(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260611")
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260614")
+    assert "studio.png" in html
+
+
+def test_future_run_in_tomorrow_section_not_archive(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260611")
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260610")
+    assert "Tomorrow · June 11" in html
+    # Only run is future-dated, so the archive must not render at all
+    assert "All predictions" not in html
+
+
+def test_future_run_beyond_tomorrow_uses_plain_date_heading(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260613")
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260610")
+    assert "Tomorrow" not in html
+    assert "<h2>June 13</h2>" in html
+
+
+def test_past_run_still_in_archive(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260609")
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260610")
+    assert "All predictions" in html
+
+
+def test_coming_up_excludes_fixture_with_existing_run(tmp_path):
+    # Run for Brazil vs Croatia on June 11 (future); schedule lists it plus another fixture
+    _write_pair(tmp_path, "brazil-croatia", "20260611")
+    schedule = [
+        {"date": "2026-06-11", "home": "Brazil", "away": "Croatia", "group": "D",
+         "match_string": "Brazil vs Croatia"},
+        {"date": "2026-06-11", "home": "Canada", "away": "Norway", "group": "B",
+         "match_string": "Canada vs Norway"},
+    ]
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260610", schedule=schedule)
+    assert "<h2>Coming Up</h2>" in html
+    start = html.index("<h2>Coming Up</h2>")
+    end = html.index("<section", start)
+    coming_up = html[start:end]
+    assert "Brazil vs Croatia" not in coming_up
+    assert "Canada vs Norway" in coming_up
+
+
+def test_coming_up_skips_day_heading_when_all_fixtures_excluded(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260611")
+    schedule = [
+        {"date": "2026-06-11", "home": "Brazil", "away": "Croatia", "group": "D",
+         "match_string": "Brazil vs Croatia"},
+        {"date": "2026-06-12", "home": "Canada", "away": "Norway", "group": "B",
+         "match_string": "Canada vs Norway"},
+    ]
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_index_html(pairs, "20260610", schedule=schedule)
+    start = html.index("<h2>Coming Up</h2>")
+    end = html.index("<section", start)
+    coming_up = html[start:end]
+    assert "June 11" not in coming_up  # whole day excluded → heading skipped
+    assert "June 12" in coming_up
+
+
+def test_group_chat_bubbles_alternate_left_right(tmp_path):
+    _write_pair(tmp_path, "brazil-croatia", "20260611", run_extra={"group_chat": SAMPLE_CHAT})
+    pairs = load_run_pairs(tmp_path / "runs")
+    html = generate_match_html(pairs[0]["run"], pairs[0]["context"])
+    rows = [seg.split('"')[0] for seg in html.split('<div class="chat-row')[1:]]
+    assert len(rows) == len(SAMPLE_CHAT)
+    assert "right" not in rows[0]   # first message: left
+    assert "right" in rows[1]       # second message: right
+    assert "right" not in rows[2]
+    assert "right" in rows[3]
+
+
+def test_sample_banter_bubbles_alternate(tmp_path):
+    html = generate_index_html([], "20260610")
+    rows = [seg.split('"')[0] for seg in html.split('<div class="banter-row')[1:]]
+    assert len(rows) >= 2
+    assert "right" not in rows[0]
+    assert "right" in rows[1]

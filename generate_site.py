@@ -44,6 +44,8 @@ _LANDING_CSS = """
 .banter-name { font-size: 0.68rem; font-weight: 700; margin-bottom: 3px; }
 .banter-text { font-size: 0.85rem; line-height: 1.45; color: #e2e8f0; }
 .banter-row.judge .banter-bubble { background: #0d2618; border: 1px solid #166534; }
+.banter-row.right { flex-direction: row-reverse; }
+.banter-row.right .banter-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
 """
 
 _SAMPLE_BANTER = [
@@ -88,10 +90,15 @@ def _pundits_html() -> str:
     return f'<section><h2>The Panel</h2><div class="pundits-grid">{cards}</div></section>'
 
 
-def _upcoming_html(schedule: list, from_date_str: str, days: int = 7) -> str:
-    """Fixtures from from_date_str (inclusive) for `days` days ahead."""
+def _upcoming_html(schedule: list, from_date_str: str, days: int = 7, exclude: set = None) -> str:
+    """Fixtures from from_date_str (inclusive) for `days` days ahead.
+
+    `exclude` is a set of (iso_date, match_string) tuples for fixtures that
+    already have a published prediction — those are skipped here.
+    """
     from datetime import datetime, timedelta
     from itertools import groupby as _groupby
+    exclude = exclude or set()
     try:
         start = datetime.strptime(from_date_str, "%Y%m%d").date()
     except ValueError:
@@ -101,6 +108,7 @@ def _upcoming_html(schedule: list, from_date_str: str, days: int = 7) -> str:
         (datetime.strptime(m["date"], "%Y-%m-%d").date(), m)
         for m in schedule
         if start <= datetime.strptime(m["date"], "%Y-%m-%d").date() <= end
+        and (m["date"], m.get("match_string", f'{m["home"]} vs {m["away"]}')) not in exclude
     ]
     if not matches:
         return ""
@@ -119,13 +127,14 @@ def _upcoming_html(schedule: list, from_date_str: str, days: int = 7) -> str:
 
 def _sample_banter_html(collapsed: bool = False) -> str:
     rows = ""
-    for msg in _SAMPLE_BANTER:
+    for i, msg in enumerate(_SAMPLE_BANTER):
         role = msg["role"]
         color = ROLE_COLORS.get(role, "#64748b")
         name = role
         judge_class = " judge" if role == "K_Bot" else ""
+        side_class = " right" if i % 2 else ""
         rows += (
-            f'<div class="banter-row{judge_class}">'
+            f'<div class="banter-row{judge_class}{side_class}">'
             f'<div class="avatar" style="background:{color};width:28px;height:28px;border-radius:50%;'
             f'display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;'
             f'color:white;flex-shrink:0;">{name[0]}</div>'
@@ -360,7 +369,21 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
 
     from itertools import groupby
     from datetime import datetime, timedelta
-    past_pairs = [p for p in reversed(run_pairs) if p["date_str"] != today_str]
+
+    # Pre-published predictions for future match days — a feature, shown proudly.
+    tomorrow_str = (datetime.strptime(today_str, "%Y%m%d") + timedelta(days=1)).strftime("%Y%m%d")
+    future_pairs = [p for p in run_pairs if p["date_str"] > today_str]
+    future_sections = ""
+    for date_str, group_iter in groupby(future_pairs, key=lambda p: p["date_str"]):
+        cards = "\n".join(_match_card_html(p) for p in group_iter)
+        heading = f"Tomorrow · {_fmt_date(date_str)}" if date_str == tomorrow_str else _fmt_date(date_str)
+        future_sections += f"""<section>
+  <h2>{heading}</h2>
+  <div class="match-grid">{cards}</div>
+</section>
+"""
+
+    past_pairs = [p for p in reversed(run_pairs) if p["date_str"] < today_str]
     archive_html = ""
     for date_str, group_iter in groupby(past_pairs, key=lambda p: p["date_str"]):
         rows = ""
@@ -384,9 +407,13 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
 
     archive_section = f'<section class="archive-section"><h2>All predictions</h2>{archive_html}</section>' if archive_html else ""
 
-    # Upcoming: start from tomorrow so it doesn't duplicate "Today" grid
-    tomorrow = (datetime.strptime(today_str, "%Y%m%d") + timedelta(days=1)).strftime("%Y%m%d")
-    upcoming_section = _upcoming_html(schedule, tomorrow) if schedule else ""
+    # Upcoming: start from tomorrow so it doesn't duplicate "Today" grid,
+    # and exclude fixtures that already have a published prediction.
+    predicted = {
+        (f'{p["date_str"][:4]}-{p["date_str"][4:6]}-{p["date_str"][6:]}', p["run"]["match_string"])
+        for p in run_pairs
+    }
+    upcoming_section = _upcoming_html(schedule, tomorrow_str, exclude=predicted) if schedule else ""
 
     pundits_section = _pundits_html()
 
@@ -403,9 +430,11 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     <h1>AI Football Night</h1>
     <p>Four AI pundits. One studio. Every World Cup 2026 match.</p>
   </header>
+  <img class="studio-img" src="assets/studio.png" alt="AI Football Night studio">
   <div class="accuracy-pill">📊 {accuracy_text}</div>
   {_leaderboard_html(run_pairs)}
   {today_section}
+  {future_sections}
   {archive_section}
   {upcoming_section}
   {pundits_section}
@@ -452,6 +481,8 @@ _CHAT_CSS = """
 .chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
 .chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
 .chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
 .full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
 """
 
@@ -470,12 +501,13 @@ def _role_card_html(role: str, text: str, abridge: bool = True) -> str:
 </div>"""
 
 
-def _chat_bubble_html(msg: dict) -> str:
+def _chat_bubble_html(msg: dict, index: int = 0) -> str:
     role = msg.get("role", "")
     color = ROLE_COLORS.get(role, "#64748b")
     name = _display(role)
     judge_class = " judge" if role == "Judge" else ""
-    return f"""<div class="chat-row{judge_class}">
+    side_class = " right" if index % 2 else ""
+    return f"""<div class="chat-row{judge_class}{side_class}">
   <div class="avatar" style="background:{color};">{name[0]}</div>
   <div class="chat-bubble">
     <div class="chat-name" style="color:{color};">{name}</div>
@@ -533,7 +565,7 @@ def _generate_group_page(run: dict, context: dict) -> str:
 
     group_chat = run.get("group_chat") or []
     if group_chat:
-        bubbles = "\n".join(_chat_bubble_html(m) for m in group_chat)
+        bubbles = "\n".join(_chat_bubble_html(m, i) for i, m in enumerate(group_chat))
         debate_section = f"""<div class="round-header">The Studio Group Chat</div>
 {bubbles}
 <details class="full-debate"><summary>Full debate transcript →</summary>

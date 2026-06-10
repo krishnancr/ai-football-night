@@ -40,10 +40,12 @@ jobs:
       - name: Run today's matches
         id: run_daily
         env:
+          PYTHONUNBUFFERED: "1"
           MATCH_DATE: ${{ inputs.match_date }}
           COUNCIL_API_KEY: ${{ secrets.COUNCIL_API_KEY }}
           COUNCIL_BASE_URL: ${{ secrets.COUNCIL_BASE_URL }}
           RESEARCH_MODEL: ${{ secrets.RESEARCH_MODEL }}
+          RESEARCH_MODEL_FALLBACK: ${{ secrets.RESEARCH_MODEL_FALLBACK }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: python daily_runner.py ${{ inputs.force_rerun == 'true' && '--force' || '' }}
 
