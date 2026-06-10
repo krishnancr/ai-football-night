@@ -44,6 +44,16 @@ def update_result(run_path: Path, home_goals: int, away_goals: int) -> dict:
     with open(run_path, "w") as f:
         json.dump(run, f, indent=2)
 
+    # Emit paste-ready receipts reply (act two of the prediction tweet).
+    # Never let receipts formatting break result recording.
+    try:
+        from post_pack import format_receipts
+        receipts_path = run_path.parent / f"{run_path.stem}_receipts.md"
+        receipts_path.write_text(format_receipts(run), encoding="utf-8")
+        print(f"   Receipts reply: {receipts_path}")
+    except Exception as e:
+        print(f"   ⚠️  Receipts emission failed (result still recorded): {e}")
+
     match_str = run.get("match_string", run_path.stem)
     score_emoji = "✅" if correct_scoreline else ("🟡" if correct_result else "❌")
     print(f"\n{score_emoji} {match_str}: predicted {pred_home}-{pred_away}, actual {home_goals}-{away_goals}")

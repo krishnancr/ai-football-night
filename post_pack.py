@@ -25,6 +25,11 @@ KBOT_LINES = {
         "A clean sweep of wrong. I've seen better punditry from the kit man.",
         "All three of you, wrong. The sack race just got interesting.",
     ],
+    "no_calls": [
+        "Not a single prediction on the record. Brave stuff, panel.",
+        "The panel abstained. The sack race remembers cowardice too.",
+        "No calls logged. K_Bot notes the silence for the record.",
+    ],
 }
 
 
@@ -53,7 +58,10 @@ def _score_pundit(pred: dict, actual: dict) -> str:
 
 
 def format_receipts(run: dict) -> str:
-    """Paste-ready full-time reply (≤280 chars) for under the prediction tweet."""
+    """Paste-ready full-time reply (≤280 chars) for under the prediction tweet.
+
+    Requires run["actual"] (call only after a result is recorded).
+    """
     actual = run["actual"]
     home, away = _teams(run)
     lines = [f"FULL TIME: {home} {actual['home_goals']}–{actual['away_goals']} {away}", ""]
@@ -67,7 +75,9 @@ def format_receipts(run: dict) -> str:
     if preds:
         lines.append("")
 
-    if "✅" in marks:
+    if not preds:
+        outcome = "no_calls"
+    elif "✅" in marks:
         outcome = "exact_hit"
     elif "🟡" in marks:
         outcome = "split"

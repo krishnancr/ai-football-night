@@ -61,3 +61,30 @@ def test_accuracy_summary(tmp_run, capsys):
     update_result(tmp_run, home_goals=2, away_goals=1)
     captured = capsys.readouterr()
     assert "correct" in captured.out.lower() or "accuracy" in captured.out.lower()
+
+
+def test_update_result_emits_receipts_file(tmp_path):
+    """Recording a result must also write a paste-ready <stem>_receipts.md."""
+    import json
+    from update_result import update_result
+
+    run = {
+        "match_string": "Brazil vs Croatia",
+        "match_slug": "brazil-croatia",
+        "decision": {"home_goals": 2, "away_goals": 1, "result": "home_win"},
+        "pundit_predictions": {
+            "Stat_Bot": {"home_goals": 2, "away_goals": 1},
+            "R_Bot": {"home_goals": 0, "away_goals": 2},
+        },
+    }
+    run_path = tmp_path / "wc_brazil-croatia_20260613.json"
+    run_path.write_text(json.dumps(run))
+
+    update_result(run_path, 2, 1)
+
+    receipts_path = tmp_path / "wc_brazil-croatia_20260613_receipts.md"
+    assert receipts_path.exists()
+    text = receipts_path.read_text()
+    assert "FULL TIME: Brazil 2–1 Croatia" in text
+    assert "✅ Stat_Bot" in text
+    assert "❌ R_Bot" in text

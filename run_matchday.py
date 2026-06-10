@@ -179,6 +179,12 @@ def main():
     print(f"  Substack draft: {draft_path}")
     print(f"  Twitter thread: {thread_path} ({len(thread)} tweets)")
 
+    from post_pack import format_post_pack
+    result["date_compact"] = date_str
+    pack_path = runs_dir / f"wc_{slug}_{date_str}_postpack.md"
+    pack_path.write_text(format_post_pack(result, context, thread), encoding="utf-8")
+    print(f"  Post pack: {pack_path}")
+
     # ── Stage 4: Distribute ─────────────────────────────────────────
     print(f"\n[4/4] Distribution...")
     if args.dry_run:
