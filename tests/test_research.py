@@ -118,26 +118,45 @@ def test_merge_context_tier3_falls_back_to_base_when_extracted_empty():
     assert ctx["injuries_home"] == ["Guardado (hamstring)"]
 
 
-def test_validate_context_restores_empty_form_from_base():
-    """validate_context should restore form_home from base when merge left it empty."""
+def test_validate_context_quality_rating():
+    """Quality rating: all 4 critical fields → 'full'; 2 → 'partial'; 0 → 'degraded'."""
     from research import validate_context
-    base = {
+
+    # All 4 critical fields populated → full
+    ctx_full = {
         "form_home": ["W", "D", "W", "W", "L"],
         "form_away": ["D", "W", "W", "L", "W"],
         "key_players_home": ["Lozano (winger)"],
         "key_players_away": ["Tau (forward)"],
-    }
-    ctx = {
-        "form_home": [],   # empty after merge
-        "form_away": [],   # empty after merge
-        "key_players_home": ["Lozano (winger)"],
-        "key_players_away": ["Tau (forward)"],
         "h2h_summary": "Mexico leads",
     }
-    validated, quality = validate_context(ctx, base)
-    assert validated["form_home"] == ["W", "D", "W", "W", "L"]
-    assert validated["form_away"] == ["D", "W", "W", "L", "W"]
+    validated, quality = validate_context(ctx_full, {})
     assert quality == "full"
+    assert validated["research_quality"] == "full"
+
+    # 2 critical fields populated → partial
+    ctx_partial = {
+        "form_home": ["W", "W"],
+        "form_away": [],
+        "key_players_home": ["Lozano (winger)"],
+        "key_players_away": [],
+        "h2h_summary": None,
+    }
+    validated, quality = validate_context(ctx_partial, {})
+    assert quality == "partial"
+    assert validated["research_quality"] == "partial"
+
+    # 0 critical fields populated → degraded
+    ctx_degraded = {
+        "form_home": [],
+        "form_away": [],
+        "key_players_home": [],
+        "key_players_away": [],
+        "h2h_summary": None,
+    }
+    validated, quality = validate_context(ctx_degraded, {})
+    assert quality == "degraded"
+    assert validated["research_quality"] == "degraded"
 
 
 def test_validate_context_sets_research_quality_full():

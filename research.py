@@ -127,6 +127,7 @@ def merge_context(base: dict, extracted: dict, home: str, away: str) -> dict:
         "form_away": extracted.get("form_away") or base.get("form_away") or [],
         "key_players_home": extracted.get("key_players_home") or base.get("key_players_home") or [],
         "key_players_away": extracted.get("key_players_away") or base.get("key_players_away") or [],
+        "context": base.get("group_context") or base.get("context"),
     }
     return ctx
 
@@ -134,18 +135,6 @@ def merge_context(base: dict, extracted: dict, home: str, away: str) -> dict:
 def validate_context(ctx: dict, base: dict) -> tuple:
     """Returns (validated_ctx, quality: 'full'|'partial'|'degraded')"""
     issues = []
-
-    # Form arrays: if empty after merge but base had data, restore from base
-    for field in ("form_home", "form_away"):
-        if not ctx[field] and base.get(field):
-            ctx[field] = base[field]
-            issues.append(f"{field} restored from base (live extraction empty)")
-
-    # Key players: if empty, always restore from base
-    for field in ("key_players_home", "key_players_away"):
-        if not ctx[field] and base.get(field):
-            ctx[field] = base[field]
-            issues.append(f"{field} restored from base")
 
     # H2H: should always come from base; log if base had no h2h
     if not ctx.get("h2h_summary") and not base.get("h2h_summary"):
