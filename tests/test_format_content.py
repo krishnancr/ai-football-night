@@ -63,6 +63,52 @@ def test_format_twitter_thread_first_tweet_has_prediction(run_data, context_data
     assert "2" in first  # goals in prediction
 
 
+def test_format_twitter_thread_tweet1_no_upset_has_panel_confidence(run_data, context_data):
+    from format_content import format_twitter_thread
+    thread = format_twitter_thread(run_data, context_data)
+    first = thread[0]
+    assert "Upset:" not in first, "Tweet 1 should not contain 'Upset:'"
+    assert "panel confidence" in first, "Tweet 1 should contain 'panel confidence'"
+    hook = run_data["decision"]["tweet_hook"]
+    assert hook in first, f"Tweet 1 should contain tweet_hook: {hook!r}"
+
+
+def test_format_twitter_thread_tweet3_uses_stat_bot_highlight(run_data, context_data):
+    from format_content import format_twitter_thread
+    thread = format_twitter_thread(run_data, context_data)
+    tweet3 = thread[2]
+    highlight = run_data["decision"]["stat_bot_highlight"]
+    assert highlight in tweet3, f"Tweet 3 should contain stat_bot_highlight: {highlight!r}"
+    # The full raw Stat_Bot proposal text should NOT appear verbatim
+    raw_statman = run_data["full_debate"]["proposals"]["Statman"]
+    assert raw_statman not in tweet3, "Tweet 3 should not contain full raw Stat_Bot proposal text"
+
+
+def test_format_twitter_thread_tweet1_no_hook_fallback(context_data):
+    from format_content import format_twitter_thread
+    import copy
+    run_no_hook = {
+        "decision": {
+            "home_goals": 1,
+            "away_goals": 0,
+            "confidence": 0.75,
+            "tweet_hook": "",
+            "stat_bot_highlight": "Some stat highlight",
+            "match_headline": "Team A vs Team B",
+            "studio_banter_quote": {"role": "Council", "exchange": "Heated debate."},
+            "key_factors": ["Factor A"],
+            "most_outrageous_take": "Outrageous!",
+            "host_intro": "Host verdict here.",
+        },
+        "full_debate": {"proposals": {}},
+    }
+    thread = format_twitter_thread(run_no_hook, context_data)
+    first = thread[0]
+    # No blank line gap before "The panel got heated" when hook is empty
+    assert "\n\n\n" not in first, "Tweet 1 should not have a blank line gap when tweet_hook is empty"
+    assert "The panel got heated" in first
+
+
 def test_format_twitter_thread_last_tweet_has_link(run_data, context_data):
     from format_content import format_twitter_thread
     thread = format_twitter_thread(run_data, context_data)

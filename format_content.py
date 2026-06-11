@@ -138,7 +138,6 @@ def format_twitter_thread(run: dict, context: dict) -> list:
     home_g = decision["home_goals"]
     away_g = decision["away_goals"]
     confidence_pct = int(decision.get("confidence", 0) * 100)
-    upset_pct = int(decision.get("upset_probability", 0) * 100)
     banter = decision.get("studio_banter_quote") or {"role": "Council", "exchange": "The panel reached a unanimous verdict."}
     match_headline = decision.get("match_headline", f"{home} vs {away} — The Council's Verdict")
     key_factors = decision.get("key_factors", [])
@@ -156,10 +155,18 @@ def format_twitter_thread(run: dict, context: dict) -> list:
 
     exchange_text = truncate(banter.get("exchange", ""), 210)
 
+    hook = decision.get("tweet_hook", "")
+    hook_line = f"\n\n{hook}" if hook else ""
+
+    stat_highlight = decision.get("stat_bot_highlight", "")
+    if not stat_highlight:
+        # fallback: first 200 chars of Stat_Bot proposal
+        stat_highlight = statman_text[:200] + ("…" if len(statman_text) > 200 else "")
+
     return [
-        truncate(f"🏟️ {match_headline}\n\n{home} {home_g}–{away_g} {away} ({confidence_pct}% confidence) | Upset: {upset_pct}%\n\nThe panel got heated 👇 [1/5]", 280),
+        truncate(f"🏟️ {match_headline}\n\n{home} {home_g}–{away_g} {away} — {confidence_pct}% panel confidence{hook_line}\n\nThe panel got heated 👇 [1/5]", 280),
         truncate(f"💬 {banter['role']}:\n\n{exchange_text}\n\n[2/5]", 280),
-        truncate(f"📊 Stat_Bot:\n\n{statman_text}\n\n[3/5]", 280),
+        truncate(f"📊 Stat_Bot:\n\n{stat_highlight}\n\n[3/5]", 280),
         truncate(f"🔥 Most outrageous take:\n\n{outrageous}\n\n[4/5]", 280),
         truncate(f"⚖️ Host's call:\n\n{host_intro}\n\nFull debate → {substack_url}\n\n[5/5]", 280),
     ]
