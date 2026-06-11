@@ -80,3 +80,66 @@ def test_format_twitter_thread_statbot_tweet_not_empty_with_live_roles(run_data,
     statbot_tweet = thread[2]
     body = statbot_tweet.replace("📊 Stat_Bot:", "").replace("[3/5]", "").strip()
     assert len(body) > 20, f"Stat_Bot tweet body is empty/near-empty: {statbot_tweet!r}"
+
+
+def test_personas_json_is_valid():
+    """personas.json must remain valid JSON after edits."""
+    import json
+    from pathlib import Path
+    personas_path = Path(__file__).parent.parent / "personas.json"
+    data = json.loads(personas_path.read_text())
+    assert "world_cup" in data
+    assert "K_Bot" in data["world_cup"]
+
+
+def test_kbot_system_contains_tweet_hook():
+    """K_Bot system prompt must contain the tweet_hook field definition."""
+    import json
+    from pathlib import Path
+    personas_path = Path(__file__).parent.parent / "personas.json"
+    data = json.loads(personas_path.read_text())
+    system = data["world_cup"]["K_Bot"]["system"]
+    assert "tweet_hook" in system, "K_Bot system prompt missing tweet_hook field"
+
+
+def test_kbot_system_contains_stat_bot_highlight():
+    """K_Bot system prompt must contain the stat_bot_highlight field definition."""
+    import json
+    from pathlib import Path
+    personas_path = Path(__file__).parent.parent / "personas.json"
+    data = json.loads(personas_path.read_text())
+    system = data["world_cup"]["K_Bot"]["system"]
+    assert "stat_bot_highlight" in system, "K_Bot system prompt missing stat_bot_highlight field"
+
+
+def test_kbot_system_match_headline_forbids_generic_phrases():
+    """K_Bot match_headline instruction must list the FORBIDDEN phrases."""
+    import json
+    from pathlib import Path
+    personas_path = Path(__file__).parent.parent / "personas.json"
+    data = json.loads(personas_path.read_text())
+    system = data["world_cup"]["K_Bot"]["system"]
+    assert "FORBIDDEN" in system, "K_Bot system prompt missing FORBIDDEN phrases constraint for match_headline"
+    assert "tactical battle" in system, "K_Bot system missing 'tactical battle' in FORBIDDEN list"
+
+
+def test_kbot_system_banter_quote_is_pre_match_only():
+    """K_Bot studio_banter_quote instruction must forbid post-match references."""
+    import json
+    from pathlib import Path
+    personas_path = Path(__file__).parent.parent / "personas.json"
+    data = json.loads(personas_path.read_text())
+    system = data["world_cup"]["K_Bot"]["system"]
+    assert "match has not been played yet" in system, "K_Bot system prompt missing pre-match-only constraint for studio_banter_quote"
+
+
+def test_sample_run_decision_has_tweet_hook(run_data):
+    """Sample run fixture decision must include tweet_hook field."""
+    assert "tweet_hook" in run_data["decision"], "sample_run.json decision missing tweet_hook"
+    assert len(run_data["decision"]["tweet_hook"]) > 0
+
+
+def test_sample_run_decision_has_stat_bot_highlight(run_data):
+    """Sample run fixture decision must include stat_bot_highlight field."""
+    assert "stat_bot_highlight" in run_data["decision"], "sample_run.json decision missing stat_bot_highlight"
+    assert len(run_data["decision"]["stat_bot_highlight"]) > 0
