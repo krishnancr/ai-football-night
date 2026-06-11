@@ -84,7 +84,7 @@ def _degraded_context(home: str, away: str, search_results: list) -> dict:
 
 
 def _parse_synthesis(raw, home: str, away: str, search_results: list) -> dict:
-    """Parse the synthesis LLM output; degrade gracefully instead of raising."""
+    """Parse LLM extraction output; degrade gracefully instead of raising."""
     raw = raw or ""
     json_match = re.search(r"\{.*\}", raw, re.DOTALL)
     candidate = json_match.group() if json_match else raw
@@ -98,8 +98,78 @@ def _parse_synthesis(raw, home: str, away: str, search_results: list) -> dict:
     return _degraded_context(home, away, search_results)
 
 
+def merge_context(base: dict, extracted: dict, home: str, away: str) -> dict:
+    """Three-tier deterministic merge: base for history, live for injuries/odds/news,
+    live-with-base-fallback for form and key players."""
+    ctx = {
+        "home_team": home,
+        "away_team": away,
+        "match_date": base.get("match_date"),
+        "group": base.get("group"),
+        "venue": base.get("venue"),
+        # Tier 1 — always base
+        "h2h_summary": base.get("h2h_summary"),
+        "h2h_record": base.get("h2h_record"),
+        "wc_history_home": base.get("wc_history_home"),
+        "wc_history_away": base.get("wc_history_away"),
+        "group_context": base.get("group_context"),
+        "strengths_home": base.get("strengths_home"),
+        "strengths_away": base.get("strengths_away"),
+        "team_style_home": base.get("team_style_home"),
+        "team_style_away": base.get("team_style_away"),
+        # Tier 2 — always live (null/empty if not found)
+        "injuries_home": extracted.get("injuries_home") or [],
+        "injuries_away": extracted.get("injuries_away") or [],
+        "odds": extracted.get("odds") or {"home_win": None, "draw": None, "away_win": None},
+        "recent_news": extracted.get("recent_news"),
+        # Tier 3 — live if present, else base
+        "form_home": extracted.get("form_home") or base.get("form_home") or [],
+        "form_away": extracted.get("form_away") or base.get("form_away") or [],
+        "key_players_home": extracted.get("key_players_home") or base.get("key_players_home") or [],
+        "key_players_away": extracted.get("key_players_away") or base.get("key_players_away") or [],
+    }
+    return ctx
+
+
+def validate_context(ctx: dict, base: dict) -> tuple:
+    """Returns (validated_ctx, quality: 'full'|'partial'|'degraded')"""
+    issues = []
+
+    # Form arrays: if empty after merge but base had data, restore from base
+    for field in ("form_home", "form_away"):
+        if not ctx[field] and base.get(field):
+            ctx[field] = base[field]
+            issues.append(f"{field} restored from base (live extraction empty)")
+
+    # Key players: if empty, always restore from base
+    for field in ("key_players_home", "key_players_away"):
+        if not ctx[field] and base.get(field):
+            ctx[field] = base[field]
+            issues.append(f"{field} restored from base")
+
+    # H2H: should always come from base; log if base had no h2h
+    if not ctx.get("h2h_summary") and not base.get("h2h_summary"):
+        issues.append("h2h_summary missing from both base and live")
+
+    for issue in issues:
+        print(f"  ⚠️  Research validation: {issue}")
+
+    # Quality rating
+    critical_fields = ["form_home", "form_away", "key_players_home", "key_players_away"]
+    populated = sum(1 for f in critical_fields if ctx.get(f))
+    if populated == 4:
+        quality = "full"
+    elif populated >= 2:
+        quality = "partial"
+    else:
+        quality = "degraded"
+
+    ctx["research_quality"] = quality
+    return ctx, quality
+
+
 def research_match(match_string: str) -> dict:
-    """Full research: merge base context + daily Tavily search, synthesize to JSON."""
+    """Full research: merge base context + daily Tavily extraction, three-tier merge to JSON."""
     parts = match_string.split(" vs ")
     if len(parts) != 2:
         raise ValueError(f"Match string must be 'Team A vs Team B', got: {match_string}")
@@ -135,40 +205,33 @@ def research_match(match_string: str) -> dict:
             except Exception as e:
                 search_results.append({"query": query, "results": [], "error": str(e)})
 
-    synthesis_prompt = f"""You are a football analyst briefing an AI debate council before a World Cup 2026 match.
+    extraction_prompt = f"""You are extracting structured facts from football news snippets about {home} vs {away}.
 
-Match: {home} vs {away}
-
-Pre-researched base context (historical, static):
-{json.dumps(base, indent=2) if base else "None available"}
-
-Fresh web search results (odds, injuries, latest news):
+Search results:
 {json.dumps(search_results, indent=2)}
 
-Synthesize everything into structured JSON. Prefer base context for H2H and key players. Prefer search results for odds, injuries, and recent news.
-Return ONLY valid JSON (no prose before or after):
+Extract ONLY the following fields. Return ONLY valid JSON, no prose:
 {{
-  "home_team": "{home}",
-  "away_team": "{away}",
-  "match_date": null,
-  "group": null,
-  "form_home": [],
-  "form_away": [],
-  "h2h_summary": "summary of head-to-head record",
-  "injuries_home": [],
-  "injuries_away": [],
+  "injuries_home": ["Player Name (issue)"],
+  "injuries_away": ["Player Name (issue)"],
   "odds": {{"home_win": null, "draw": null, "away_win": null}},
-  "key_players_home": [],
-  "key_players_away": [],
-  "context": "1-2 sentences about match context and stakes",
-  "recent_news": "key news items in 2-3 sentences"
+  "recent_news": "2-3 sentences of key news",
+  "form_home": ["W","D","L"],
+  "form_away": ["W","D","L"],
+  "key_players_home": ["Name (role)"],
+  "key_players_away": ["Name (role)"]
 }}
-
 Rules:
-- form arrays use "W", "D", "L" strings for last 5 results (most recent last)
-- injuries arrays use "Player Name (issue)" format
-- odds use decimal format (e.g. 1.65) or null if not found
-- If information is not available, use null or empty array — do not fabricate"""
+- injuries_home: confirmed injuries for {home}. Empty list [] if none found.
+- injuries_away: confirmed injuries for {away}. Empty list [] if none found.
+- odds: decimal odds or null for each value
+- recent_news: null if nothing notable
+- form_home: last 5 results for {home}, most recent last. Empty list [] if not found.
+- form_away: last 5 results for {away}, most recent last. Empty list [] if not found.
+- key_players_home: key players for {home} to watch. Empty list [] if not found.
+- key_players_away: key players for {away} to watch. Empty list [] if not found.
+- Use null for unknown values, empty list [] if no items found. Do not fabricate.
+- Only include form/key_players if explicitly mentioned in the search results."""
 
     client = OpenAI(
         base_url=os.getenv("COUNCIL_BASE_URL", "http://localhost:11434/v1"),
@@ -185,18 +248,32 @@ Rules:
             response = client.chat.completions.create(
                 model=research_model,
                 max_tokens=2048,
-                messages=[{"role": "user", "content": synthesis_prompt}],
+                messages=[{"role": "user", "content": extraction_prompt}],
                 **extra,
             )
             raw = response.choices[0].message.content
         except Exception as e:
-            print(f"  ⚠️  Synthesis call failed (attempt {attempt}): {type(e).__name__}: {e}")
+            print(f"  ⚠️  Extraction call failed (attempt {attempt}): {type(e).__name__}: {e}")
             raw = None
         if raw and re.search(r"\{.*\}", raw, re.DOTALL):
             break
         if attempt == 1:
-            print("  Retrying synthesis once...")
-    return _parse_synthesis(raw, home, away, search_results)
+            print("  Retrying extraction once...")
+
+    extracted = _parse_synthesis(raw, home, away, search_results)
+
+    # If extraction itself failed completely, return the degraded context directly
+    if extracted.get("research_quality") == "degraded":
+        return extracted
+
+    # Deterministic three-tier merge
+    ctx = merge_context(base, extracted, home, away)
+
+    # Validation guardrails
+    ctx, quality = validate_context(ctx, base)
+    print(f"  Research quality: {quality}")
+
+    return ctx
 
 
 def main():
