@@ -3,32 +3,24 @@
   "away_team": "Czechia",
   "match_date": "2026-06-11",
   "group": "A",
-  "form_home": [
-    "W",
-    "W",
-    "D",
-    "W"
+  "form_home": [],
+  "form_away": [],
+  "h2h_summary": "In the last 1 match, South Korea won 1, Czechia won 0, with 0 draws. Historically, they have faced each other 3 times with 1 win each and 1 draw.",
+  "injuries_home": [
+    "Cho Yu-Min (foot)"
   ],
-  "form_away": [
-    "D",
-    "W",
-    "W",
-    "W",
-    "W"
-  ],
-  "h2h_summary": "South Korea is unbeaten in two historical meetings against Czechia, drawing 2-2 in 1998 and winning 2-1 in 2016.",
-  "injuries_home": [],
   "injuries_away": [],
   "odds": {
     "home_win": null,
     "draw": null,
     "away_win": null
   },
-  "key_players_home": [],
-  "key_players_away": [
-    "Adam Hlo\u017eek"
+  "key_players_home": [
+    "Son Heung-Min",
+    "Lee Jae-Sung"
   ],
-  "context": "This World Cup 2026 Group A opener features South Korea facing a Czechia side emphasizing organizational strength and aerial threat.",
-  "recent_news": "Czechia finalized its 26-man World Cup squad, heavily featuring domestic league players to maximize organizational strength and aerial dominance. Attacking midfielder Adam Hlo\u017eek has returned from injury to bolster the Czech squad.",
+  "key_players_away": [],
+  "context": "This match is seen as a tight contest with South Korea slightly favored due to their World Cup experience and key players like Son Heung-Min.",
+  "recent_news": "South Korea's defender Cho Yu-Min is out due to a foot injury, and the match is considered a close call with betting experts providing varied predictions.",
   "venue": "Estadio Akron, Guadalajara, Mexico"
 }

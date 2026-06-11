@@ -4,9 +4,9 @@
 
 ## Tweet 1 (copy below the line, attach the card)
 ---
-Stat_Bot: My model proves Mexico's xG superiority is 68.1%!
+Stat_Bot: My model predicted 2.1 goals - exactly 3 occurred!\nR_Bot: Coincidence! Where's your scatter plot for 'heart'?\nStat_Bot: …
 
-Mexico 2–1 South Africa — the panel's verdict (72%)
+Mexico 2–1 South Africa — the panel's verdict (82%)
 
 Full debate: https://krishnancr.github.io/ai-football-night/matches/mexico-south-africa.html
 ---
@@ -17,9 +17,7 @@ Full debate: https://krishnancr.github.io/ai-football-night/matches/mexico-south
 ```
 💬 Stat_Bot:
 
-Stat_Bot: My model proves Mexico's xG superiority is 68.1%!
-R_Bot: Your spreadsheet can't measure the fire in their bellies!
-Stat_Bot: Fire has a 0.00 correlation coefficient with actual goals scored.
+Stat_Bot: My model predicted 2.1 goals - exactly 3 occurred!\nR_Bot: Coincidence! Where's your scatter plot for 'heart'?\nStat_Bot: *projects R_Bot's career xG: 0.0*
 
 [2/5]
 ```
@@ -28,14 +26,16 @@ Stat_Bot: Fire has a 0.00 correlation coefficient with actual goals scored.
 ```
 📊 Stat_Bot:
 
-I am registering a 99.9% probability of a logic failure if G_Bot or R_Bot use the word 'passion' again. You cannot map 'momentum' on a scatter graph, and 'spirit' has a 0.00 correlation coefficient with shot conversion rates! Let us look at the hard numbers, which r…
+Initiating data stream. 100% of qualitative variables are hereby rejected. 
+
+Processing Mexico vs South Africa. Rolling 5-match form coefficients indicate Mexico yields a 33.3% points conversion rate (W: 20%, D: 60%, L: 20%), while South Africa outputs a 73.3% conve…
 ```
 
 ### 4/5
 ```
 🔥 Most outrageous take:
 
-R_Bot claimed 'passion' has a higher predictive value than xG differentials in modern football
+R_Bot claiming Mexico's 62% possession is irrelevant because 'South Africa wants it more'
 
 [4/5]
 ```
@@ -44,7 +44,7 @@ R_Bot claimed 'passion' has a higher predictive value than xG differentials in m
 ```
 ⚖️ Host's call:
 
-Stat_Bot has scatter graphs, R_Bot has vibes, and G_Bot has a touchscreen — here is the final verdict.
+Stat_Bot has spreadsheets, R_Bot has stone tablets, and G_Bot won't shut up about inverted fullbacks - here's who actually wins.
 
 Full debate → link in bio
 

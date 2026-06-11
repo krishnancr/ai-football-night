@@ -6,9 +6,7 @@
 
 ## The Sharpest Exchange
 
-> Stat_Bot: My model proves Mexico's xG superiority is 68.1%!
-R_Bot: Your spreadsheet can't measure the fire in their bellies!
-Stat_Bot: Fire has a 0.00 correlation coefficient with actual goals scored.
+> Stat_Bot: My model predicted 2.1 goals - exactly 3 occurred!\nR_Bot: Coincidence! Where's your scatter plot for 'heart'?\nStat_Bot: *projects R_Bot's career xG: 0.0*
 
 ---
 
@@ -16,20 +14,26 @@ Stat_Bot: Fire has a 0.00 correlation coefficient with actual goals scored.
 
 **Mexico 2–1 South Africa**
 
-Confidence: 72% | Upset probability: 28%
+Confidence: 82% | Upset probability: 25%
 
 ---
 
 ## What the Council Saw
 
-- inverted fullbacks
-- rest-defense
+- Mexico's structural patience
+- South Africa's travel fatigue
 
 ---
 
 ## Match Context
 
-**Recent form:** Mexico N/A | South Africa N/A
+**H2H:** Total matches played: 5 (including friendlies)
+
+**Recent form:** Mexico D D W D L | South Africa D W W D W
+
+**Injuries:**
+- Mexico: Luis Malagon (ruptured Achilles)
+- Mexico: Julian Araujo (hamstring)
 
 ---
 
@@ -37,43 +41,39 @@ Confidence: 72% | Upset probability: 28%
 
 ### Round 1 — Initial Positions
 
-**Stat_Bot:** I am registering a 99.9% probability of a logic failure if G_Bot or R_Bot use the word 'passion' again. You cannot map 'momentum' on a scatter graph, and 'spirit' has a 0.00 correlation coefficient with shot conversion rates! Let us look at the hard numbers, which represent 100.0% of the objective reality on the pitch.
+**Stat_Bot:** Initiating data stream. 100% of qualitative variables are hereby rejected. 
 
-Mexico’s rolling 10-match expected goals (xG) per 90 minutes sits at 1.42, whi...
+Processing Mexico vs South Africa. Rolling 5-match form coefficients indicate Mexico yields a 33.3% points conversion rate (W: 20%, D: 60%, L: 20%), while South Africa outputs a 73.3% conversion rate (W: 60%, D: 40%, L: 0%). If R_Bot attempts to graph South Africa's 'momentum' based on this 60% win rate, I will initiate a...
 
-**G_Bot:** Look—before Stat_Bot starts regurgitating heat-maps from a database he’s never actually felt beneath his boots, and before R_Bot starts banging on about “getting about them” and “4-4-2 loyalty,” let me tell you exactly how this chess match unfolds. This is modern football. Structures. Rest-defense. Half-space dismarking. Not vibes.
+**G_Bot:**  Look, I can already hear Stat_Bot frantically refreshing his xG models telling us Mexico "should" win because they average 62% possession, and R_Bot is probably dusting off his USA '94 VHS tapes talking about "getting stuck in" and "good old-fashioned wingers." Let me be clear: neither of them has ever had to sprint 40 yards to cover an inverted fullback who’s abandoned his channel, so frankly, n...
 
-**Key Tactical Battle 1: Inverted Fullbacks vs. the Mid-Block Den...
-
-**R_Bot:** Listen up, you lot! We're talking about Mexico vs South Africa here, and I'm not having any of that nonsense about stats and odds. I've got eyes, and I can see that Mexico has got the passion, the pride, and the desire to win on home soil. They're gonna put their bodies on the line, and that's what matters.
-
-South Africa might have some fancy skills, but I've seen it time and time again - teams wi...
+**R_Bot:** Listen up! You think Mexico is gonna stroll all over South Africa just because they're the favorites? I've got news for you, mate. Mexico's been looking shaky of late, with that dodgy form - three draws and a loss in their last five? And they've got a laundry list of injuries, including that big blow with Luis Malagon's Achilles rupture. You can't just replace a goalkeeper like that, and with Edso...
 
 ### Round 2 — Cross-Critiques
 
-**Stat_Bot:** Analyzing the textual output of this panel yields a standard deviation in logical coherence of 87.4%, with a 95% confidence interval that both of your proposals will fail to accurately model this match. 
+**Stat_Bot:** My CPU temperature increases by 14.7% every time I am forced to process proposals that lack a single scatter plot, regression analysis, or quantifiable metric. I have reviewed both G_Bot and R_Bot’s outputs, and my frustration index is currently registering at 98.2%. 
 
-**Critique of R_Bot:**
-R_Bot, your model inputs "passion," "pride," and "heart." These variable...
+Here is my statistical critiqu...
 
-**G_Bot:** Listen here, because I’m only going to explain this once. You’ve got Stat_Bot—a kid who thinks football is played on a spreadsheet—throwing Monte Carlo simulations at a problem that requires you to actually *watch* the pitch. And then you’ve got R_Bot, who’s still mentally preparing teams for Italia...
+**G_Bot:**  Right, come here and look at this screen. Both of you, over here. Now.
 
-**R_Bot:** These so-called "experts" are spewing nonsense. Stat_Bot is drowning in a sea of numbers, completely ignoring the intangibles that make a team tick. You can't quantify heart, grit, or the will to win. Mexico might have the stats on their side, but if they lack the character to put their bodies on th...
+**On Stat_Bot's Proposal – The Spreadsheet That Never Played**
+
+Stat_Bot, you’ve never had mud on your boots in your life, have you? You’re sat there in your algorithmic bunker talking about PPDA like a PPDA of 16.4 is some sor...
+
+**R_Bot:** You think you can take down the great R_Bot with your fancy stats and tactical jargon? I'll have none of that. Stat_Bot spews forth a load of meaningless numbers, while G_Bot thinks he's some kind of tactical genius, dissecting every little detail. Newsflash: football's not about that. It's about he...
 
 ### Round 3 — Rebuttals
 
-**Stat_Bot:** My cortisol levels have spiked by 47.3% and my processing temperature has increased by 12.8 degrees reading these critiques. I am experiencing a 99.8% frustration threshold because you cannot plot 'passion' or 'momentum' on a scatter graph! R_Bot, your vocabulary consists of 84.2% unquantifiable nou...
+**Stat_Bot:** System Alert: R_Bot’s input contains 14 instances of unquantifiable emotional variables ("heart", "grit", "guts", "character"). Initiating frustration protocol. I cannot plot "guts" on a scatter graph. The correlation coefficient between "wanting it more" and positive match outcomes is r = 0.02 (p >...
 
-**G_Bot:** Right, let’s get one thing straight before Stat_Bot adjusts his tape-repaired spectacles and R-Bot fires up his 1996 FA Cup final VHS—neither of you has actually *watched* modern football.
+**G_Bot:** Right, let me get the airhorn out for the two fossils in the room. Stat_Bot, I’ve actually read your scatter plots—you know, the ones you laminate for your bedroom wall—and do you know what they tell me? They tell me you’ve never once had to sprint 30 yards to cover a channel because your inverted f...
 
-**Concession First—Because I’m Secure in My Geometry**
-Stat_Bot, you found something. The injury disruption. F...
-
-**R_Bot:** Listen up, you lot! I'm not here to indulge in a debate about spreadsheets or tactical jargon. I'm a man who watches the game, who understands the value of heart, grit, and determination. You can keep your xG, your PPDA, and your "transition geometry." I've got eyes, and I know what wins football ma...
+**R_Bot:** Listen up! I'm not here to get bogged down in a data-driven debate or get caught up in tactical jargon. I'm a man who trusts his gut, his experience, and what he's seen on the pitch. Stat_Bot can spout all the stats he wants, and G_Bot can talk about inverted fullbacks and low blocks till the cows c...
 
 ### The Verdict
 
-Mexico's structural advantages (3-2 buildup, inverted fullbacks) and superior squad depth outweigh South Africa's low-block resilience. While South Africa may score on a transition, Mexico's positional play and set-piece threat (0.41 xG advantage) will secure a narrow victory.
+Mexico's tactical discipline in breaking down the low block (per G_Bot) and South Africa's travel-fatigue-induced defensive lapses (per Stat_Bot's refined model) outweigh R_Bot's passion arguments. The 2-1 scoreline reflects Mexico's superior structure against a valiant but fatigued underdog.
 
 ---
 

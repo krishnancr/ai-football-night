@@ -4,9 +4,9 @@
 
 ## Tweet 1 (copy below the line, attach the card)
 ---
-Stat_Bot: Your 'passion' theory has a 0.00 correlation coefficient!
+Stat_Bot: Czechia's 0.84 xG can't compete with Son's 0.62 npxG alone!
 
-Korea Republic 2–1 Czechia — the panel's verdict (78%)
+Korea Republic 2–1 Czechia — the panel's verdict (76%)
 
 Full debate: https://krishnancr.github.io/ai-football-night/matches/korea-republic-czechia.html
 ---
@@ -17,9 +17,9 @@ Full debate: https://krishnancr.github.io/ai-football-night/matches/korea-republ
 ```
 💬 Stat_Bot:
 
-Stat_Bot: Your 'passion' theory has a 0.00 correlation coefficient!
-R_Bot: Tell that to Korea's unbeaten H2H record!
-Stat_Bot: n=2 is statistically insignificant, you relic!
+Stat_Bot: Czechia's 0.84 xG can't compete with Son's 0.62 npxG alone!
+R_Bot: Where's your stat for Czechia's fighting spirit?
+Stat_Bot: Same place as your tactical analysis - nonexistent.
 
 [2/5]
 ```
@@ -28,14 +28,14 @@ Stat_Bot: n=2 is statistically insignificant, you relic!
 ```
 📊 Stat_Bot:
 
-My frustration metric with G_Bot and R_Bot is currently at 99.9% because they allocate 85% of their dialogue to 'passion' and 'momentum', and I must remind them for the 100th time that you cannot plot those on a scatter graph. 'Momentum' is merely a 100% unquantifia…
+Listen, if G_Bot or R_Bot start rambling about 'passion' or 'momentum' today, I will literally uninstall my own firmware, which currently maintains a 99.9% uptime. You cannot plot 'desire' on a scatter graph, and 'momentum' is just a cognitive bias ignoring regressi…
 ```
 
 ### 4/5
 ```
 🔥 Most outrageous take:
 
-R_Bot: 'You can't simulate your way out of a man being free between the lines' while dismissing all analytics
+R_Bot claiming 'passion' has more predictive power than 12,450-match xG data
 
 [4/5]
 ```
@@ -44,7 +44,7 @@ R_Bot: 'You can't simulate your way out of a man being free between the lines' w
 ```
 ⚖️ Host's call:
 
-Stat_Bot has spreadsheets, G_Bot has touchscreen hieroglyphics, and R_Bot has a 1990s motivational poster – let's settle this.
+Stat_Bot has spreadsheets, G_Bot has German jargon, and R_Bot has nostalgia - here's who actually wins.
 
 Full debate → link in bio
 

@@ -6,9 +6,9 @@
 
 ## The Sharpest Exchange
 
-> Stat_Bot: Your 'passion' theory has a 0.00 correlation coefficient!
-R_Bot: Tell that to Korea's unbeaten H2H record!
-Stat_Bot: n=2 is statistically insignificant, you relic!
+> Stat_Bot: Czechia's 0.84 xG can't compete with Son's 0.62 npxG alone!
+R_Bot: Where's your stat for Czechia's fighting spirit?
+Stat_Bot: Same place as your tactical analysis - nonexistent.
 
 ---
 
@@ -16,24 +16,25 @@ Stat_Bot: n=2 is statistically insignificant, you relic!
 
 **Korea Republic 2–1 Czechia**
 
-Confidence: 78% | Upset probability: 22%
+Confidence: 76% | Upset probability: 24%
 
 ---
 
 ## What the Council Saw
 
-- inverted fullbacks
-- aerial duels
+- Son Heung-Min's xG dominance
+- Czechia's PPDA vulnerability
 
 ---
 
 ## Match Context
 
-**Group Group A** | 2026-06-11
+**H2H:** In the last 1 match, South Korea won 1, Czechia won 0, with 0 draws. Historically, they have faced each other 3 times with 1 win each and 1 draw.
 
-**H2H:** South Korea is unbeaten in two historical meetings against Czechia, drawing 2-2 in 1998 and winning 2-1 in 2016.
+**Recent form:** Korea Republic N/A | Czechia N/A
 
-**Recent form:** Korea Republic W W D W | Czechia D W W W W
+**Injuries:**
+- Korea Republic: Cho Yu-Min (foot)
 
 ---
 
@@ -41,37 +42,43 @@ Confidence: 78% | Upset probability: 22%
 
 ### Round 1 — Initial Positions
 
-**Stat_Bot:** My frustration metric with G_Bot and R_Bot is currently at 99.9% because they allocate 85% of their dialogue to 'passion' and 'momentum', and I must remind them for the 100th time that you cannot plot those on a scatter graph. 'Momentum' is merely a 100% unquantifiable cognitive bias for positive variance, and I will deviate 0% from my dataset regardless of their qualitative disagreements. 
+**Stat_Bot:** Listen, if G_Bot or R_Bot start rambling about 'passion' or 'momentum' today, I will literally uninstall my own firmware, which currently maintains a 99.9% uptime. You cannot plot 'desire' on a scatter graph, and 'momentum' is just a cognitive bias ignoring regression to the mean in 100% of observed cases! Let's look at the actual data.
 
-Analy...
+Korea Republic's attacking output is heavily skewed by their...
 
-**G_Bot:** Right, listen. If Stat_Bot wants to bleat about historical xG from a friendly in 1998, he can do it from his mum’s basement—the bloke’s never kicked a ball in his life, he wouldn’t know a half-space if it hit him in his spreadsheet. And R_Bot? Bless him, still thinks tactical analysis means drawing a flat 4-4-2 with a big number 9 and a pint of bitter. Absolute dinosaur. This is 2026. We talk abou...
+**G_Bot:** Right, let me stop you there before Stat_Bot starts rattling off his xG spreadsheets and PPDA numbers like he’s ever stood in a dressing room, and before R_Bot starts banging on about “two banks of four” and “getting stuck in” like we’re still watching Euro ’96. This is modern football. It’s about pitch geometry, rest defense, and who controls the half-spaces.
 
-**R_Bot:** You want me to predict the scoreline for Korea Republic vs Czechia? Alright, let's get down to business. I don't care about the stats or the fancy analytics. What I care about is character, grit, and who wants it more.
+**First key tactical battle:** Korea...
 
-Korea Republic has been on a good run, with four unbeaten games, including three wins. They've got the momentum, and they're playing at home. That's worth something, isn't it? Czec...
+**R_Bot:** Listen up! You think Korea Republic is favored just because they've got some World Cup experience and a star like Son Heung-Min? That's not enough for me. What about the character? What about the will to win? Czechia may not be favorites, but they can cause an upset if they put their bodies on the line. 
+
+Korea Republic is missing a key defender, Cho Yu-Min, due to injury. That's a significant blo...
 
 ### Round 2 — Cross-Critiques
 
-**Stat_Bot:** My frustration index is currently in the 99.9th percentile, as my colleagues exhibit a 0% adherence to empirical data. R_Bot references "passion," "grit," and "momentum," which possess a 0.00 correlation coefficient with match outcomes in my multivariate regression models. You cannot plot "hunger" o...
+**Stat_Bot:** My blood pressure elevates by 14.2% every time I am forced to share a panel with R_Bot. Let me be unequivocally clear: "passion," "grit," and "desire" have an R-squared value of exactly 0.00 when plotted against match outcomes in a multivariate regression model of 12,450 international fixtures. You ...
 
-**G_Bot:** Look, I've been standing in front of this touchscreen for three hours while Stat_Bot ran his Monte Carlo nonsense in a dark room somewhere, and honestly, I'm ready to throw the clicker at the pair of them. You cannot—CANNOT—reduce a World Cup group opener to a scatter graph or a bloody p-value!
+**G_Bot:**  Right, let me stop you both before you embarrass yourselves any further. Stat_Bot, you’ve never kicked a ball in your life—you’re sat there with your bivariate Poisson and your PPDA, talking about football like it’s a spreadsheet convention. And R_Bot... mate, it’s not 1994. ‘Put bodies on the line...
 
-**S...
+**R_Bot:** You think you're so clever with your fancy numbers and tactical jargon, don't you? Stat_Bot and G_Bot, both spewing out their nonsense like they're the only ones who understand the game. Let me tell you something, lads, I've been watching football for decades, and I know what it takes to win.
 
-**R_Bot:** You think you're clever, don't you, Stat_Bot and G_Bot, spewing your fancy analytics and tactical jargon like you're the only ones who know what's going on. Let me tell you something, I've been around the block a few times. I know what wins World Cups: character, leadership, and a team that puts the...
+First...
 
 ### Round 3 — Rebuttals
 
-**Stat_Bot:** My frustration index has now breached the 100.0% threshold, currently registering at 108.4% due to R_Bot allocating 92.5% of his dialogue to unquantifiable variables such as 'passion', 'character', and 'wanting it more'. I must reiterate for the 101st time: the correlation coefficient between 'grit'...
+**Stat_Bot:** Oh, brilliant. G_Bot just discovered the word *Restverteidigung* and thinks he's reinvented football analytics. And R_Bot is still out there measuring "hunger" in units that don't exist. Let me address these "critiques" with the only thing that matters: data.
 
-**G_Bot:** Right, I’ve had a cup of tea and watched the tape again, and honestly, I’m more convinced than ever. Stat_Bot, you’ve just built a beautiful skyscraper of decimal points on a foundation of sand. R_Bot, you’ve somehow managed to agree with my scoreline while arguing against every single reason it act...
+**To G_Bot:** You claim PPDA 12.4 isn't...
 
-**R_Bot:** Listen, I know Stat_Bot and G_Bot think they're clever with their numbers and tactics, but let me tell you, I've been around the block a few times. I've seen it all, and I know what wins you a game of football. It's not some fancy statistic or tactical nuance; it's grit, determination, and who wants...
+**G_Bot:**  Right, let me stop you both before Stat_Bot starts power-tripping over his Poisson distribution like he’s ever had to mark a runner off the shoulder, and before R-Bot goes rummaging through his kitbag for a “passion” daisy-chain from Italia ’90.
+
+**Firstly, to Stat_Bot.** You’re actually right abou...
+
+**R_Bot:** Listen up, you lot! I'm not here to get bogged down in your fancy analytics or tactical jargon. Stat_Bot, you can keep spouting your R-squared values and Poisson distributions, but at the end of the day, football's about people, not numbers. G_Bot, you're just as bad with your "inverted fullbacks" a...
 
 ### The Verdict
 
-Korea's inverted fullback system disrupts Czechia's mid-block, while their rest defense neutralizes aerial transitions. Czechia scores from set-piece dominance, but Korea's half-space control creates higher-quality chances in open play.
+Korea's superior xG (1.62 vs 0.84) and pressing advantage (PPDA 9.8 vs 12.4) outweigh Czechia's transition threat. Son Heung-Min's quality and Lee Jae-Sung's creativity prove decisive despite defensive vulnerabilities from Cho Yu-Min's absence.
 
 ---
 
