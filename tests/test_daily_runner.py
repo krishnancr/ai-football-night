@@ -53,7 +53,7 @@ def test_run_match_returns_true_on_success(tmp_path):
         mock_run.return_value = MagicMock(returncode=0)
         success, run_file, thread_file = run_match("Brazil vs Morocco")
     assert success is True
-    assert "wc_brazil-morocco_" in run_file
+    assert "wc_brazil-morocco.json" in run_file
     assert "_thread.json" in thread_file
 
 
@@ -86,7 +86,8 @@ def test_write_daily_summary_creates_file(tmp_path):
 def test_write_daily_summary_filename_format(tmp_path):
     with patch("daily_runner.RUNS_DIR", tmp_path):
         path = write_daily_summary("2026-06-13", "group", [])
-    assert path.name == "daily_20260613_summary.json"
+    assert path.name == "daily_summary.json"
+    assert path.parent.name == "2026-06-13"
 
 
 def test_fetch_match_result_returns_none_without_tavily_key(monkeypatch):
@@ -141,21 +142,23 @@ def test_distribute_today_skips_failed_matches(tmp_path):
         "date": "2026-06-13", "stage": "group",
         "matches": [{"match_string": "Brazil vs Morocco", "thread_file": "runs/x_thread.json", "success": False}]
     }
-    summary_path = tmp_path / "daily_20260613_summary.json"
-    summary_path.write_text(json.dumps(summary))
+    summary_dir = tmp_path / "2026-06-13"
+    summary_dir.mkdir(parents=True, exist_ok=True)
+    (summary_dir / "daily_summary.json").write_text(json.dumps(summary))
     with patch("daily_runner.RUNS_DIR", tmp_path):
         result = distribute_today("2026-06-13")
     assert result == 0
 
 
 def test_distribute_today_posts_successful_matches(tmp_path):
-    thread_file = tmp_path / "wc_brazil-morocco_20260613_thread.json"
+    thread_file = tmp_path / "2026-06-13" / "wc_brazil-morocco_thread.json"
+    thread_file.parent.mkdir(parents=True, exist_ok=True)
     thread_file.write_text(json.dumps(["tweet 1", "tweet 2"]))
     summary = {
         "date": "2026-06-13", "stage": "group",
         "matches": [{"match_string": "Brazil vs Morocco", "thread_file": str(thread_file), "success": True}]
     }
-    (tmp_path / "daily_20260613_summary.json").write_text(json.dumps(summary))
+    (tmp_path / "2026-06-13" / "daily_summary.json").write_text(json.dumps(summary))
     with patch("daily_runner.RUNS_DIR", tmp_path), \
          patch("daily_runner.post_twitter_thread") as mock_post:
         result = distribute_today("2026-06-13")
@@ -174,7 +177,8 @@ def test_update_yesterday_results_no_previous_files(tmp_path, capsys):
 def test_update_yesterday_results_skips_already_recorded(tmp_path):
     runs = tmp_path
     run_data = {"match_string": "Brazil vs Morocco", "actual": {"home_goals": 2, "away_goals": 1}}
-    (runs / "wc_brazil-morocco_20260612.json").write_text(json.dumps(run_data))
+    (runs / "2026-06-12").mkdir(parents=True, exist_ok=True)
+    (runs / "2026-06-12" / "wc_brazil-morocco.json").write_text(json.dumps(run_data))
     with patch("daily_runner.RUNS_DIR", runs):
         result = update_yesterday_results("2026-06-13")
     assert result == 0
@@ -183,7 +187,8 @@ def test_update_yesterday_results_skips_already_recorded(tmp_path):
 def test_update_yesterday_results_records_new_result(tmp_path):
     runs = tmp_path
     run_data = {"match_string": "Brazil vs Morocco", "decision": {"home_goals": 2, "away_goals": 0, "result": "home_win"}}
-    (runs / "wc_brazil-morocco_20260612.json").write_text(json.dumps(run_data))
+    (runs / "2026-06-12").mkdir(parents=True, exist_ok=True)
+    (runs / "2026-06-12" / "wc_brazil-morocco.json").write_text(json.dumps(run_data))
     with patch("daily_runner.RUNS_DIR", runs), \
          patch("daily_runner.fetch_match_result", return_value=(2, 1)) as mock_fetch, \
          patch("daily_runner.update_result_fn") as mock_record:

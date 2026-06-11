@@ -60,9 +60,8 @@ def run_match(match_string: str, persona: str | None = None,
     home, away = [t.strip() for t in match_string.split(" vs ")]
     slug = f"{slugify(home)}-{slugify(away)}"
     match_date = match_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    date_compact = match_date.replace("-", "")
-    run_file = str(RUNS_DIR / f"wc_{slug}_{date_compact}.json")
-    thread_file = str(RUNS_DIR / f"wc_{slug}_{date_compact}_thread.json")
+    run_file = str(RUNS_DIR / match_date / f"wc_{slug}.json")
+    thread_file = str(RUNS_DIR / match_date / f"wc_{slug}_thread.json")
     cmd = [sys.executable, "run_matchday.py", match_string, "--no-tweet", "--date", match_date]
     if force:
         cmd.append("--force")
@@ -74,8 +73,10 @@ def run_match(match_string: str, persona: str | None = None,
 
 def write_daily_summary(date_str: str, stage: str, results: list) -> Path:
     RUNS_DIR.mkdir(exist_ok=True)
+    date_dir = RUNS_DIR / date_str
+    date_dir.mkdir(exist_ok=True)
     summary = {"date": date_str, "stage": stage, "matches": results}
-    path = RUNS_DIR / f"daily_{date_str.replace('-', '')}_summary.json"
+    path = date_dir / "daily_summary.json"
     path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     return path
 
@@ -166,7 +167,7 @@ def distribute_today(date_str: str) -> int:
         print("distribute module not available")
         return 0
 
-    summary_path = RUNS_DIR / f"daily_{date_str.replace('-', '')}_summary.json"
+    summary_path = RUNS_DIR / date_str / "daily_summary.json"
     if not summary_path.exists():
         print(f"No summary found for {date_str}: {summary_path}")
         return 0
@@ -197,18 +198,18 @@ def update_yesterday_results(date_str: str) -> int:
     field, fetch the result via Tavily+LLM and record it.
     Returns count of results successfully recorded.
     """
-    # Find all dated run files (wc_*_YYYYMMDD.json, not context/thread/summary/base)
+    # Find all dated run files (????-??-??/wc_*.json, not context/thread/summary/base)
     all_run_files = [
-        f for f in RUNS_DIR.glob("wc_*_????????.json")
+        f for f in RUNS_DIR.glob("????-??-??/wc_*.json")
         if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json"))
         and not f.name.endswith("_base.json")
     ]
 
-    # Group by date, find most recent date before today
+    # Group by date (folder name YYYY-MM-DD), find most recent date before today
     today_compact = date_str.replace("-", "")
     dates_before_today = set()
     for f in all_run_files:
-        file_date = f.stem[-8:]  # last 8 chars of stem = YYYYMMDD
+        file_date = f.parent.name.replace("-", "")  # YYYY-MM-DD folder → YYYYMMDD
         if file_date < today_compact:
             dates_before_today.add(file_date)
 
@@ -216,14 +217,14 @@ def update_yesterday_results(date_str: str) -> int:
         print(f"No previous match days found before {date_str}")
         return 0
 
-    prev_date = max(dates_before_today)
-    prev_files = [f for f in all_run_files if f.stem[-8:] == prev_date]
+    prev_date_compact = max(dates_before_today)
+    prev_files = [f for f in all_run_files if f.parent.name.replace("-", "") == prev_date_compact]
 
     if update_result_fn is None:
         print("  update_result not available — skipping result update")
         return 0
 
-    print(f"Checking results for {prev_date}: {len(prev_files)} match(es)")
+    print(f"Checking results for {prev_date_compact}: {len(prev_files)} match(es)")
     updated = 0
     for run_file in prev_files:
         try:

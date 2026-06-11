@@ -104,15 +104,18 @@ def main():
 
     home, away = [t.strip() for t in args.match.split(" vs ")]
     slug = f"{slugify(home)}-{slugify(away)}"
-    date_str = (args.match_date or datetime.utcnow().strftime("%Y-%m-%d")).replace("-", "")
+    match_date_dashed = args.match_date or datetime.utcnow().strftime("%Y-%m-%d")
+    date_str = match_date_dashed.replace("-", "")
 
     runs_dir = Path("runs")
     runs_dir.mkdir(exist_ok=True)
+    date_dir = runs_dir / match_date_dashed
+    date_dir.mkdir(exist_ok=True)
 
-    run_path = runs_dir / f"wc_{slug}_{date_str}.json"
-    context_path = runs_dir / f"wc_{slug}_{date_str}_context.json"
-    draft_path = runs_dir / f"wc_{slug}_{date_str}_substack.md"
-    thread_path = runs_dir / f"wc_{slug}_{date_str}_thread.json"
+    run_path = date_dir / f"wc_{slug}.json"
+    context_path = date_dir / f"wc_{slug}_context.json"
+    draft_path = date_dir / f"wc_{slug}_substack.md"
+    thread_path = date_dir / f"wc_{slug}_thread.json"
 
     if should_skip_run(run_path, args.force):
         print(f"\n✓ Already complete: {run_path}")
@@ -208,7 +211,7 @@ def main():
     try:
         from post_pack import format_post_pack
         result["date_compact"] = date_str
-        pack_path = runs_dir / f"wc_{slug}_{date_str}_postpack.md"
+        pack_path = date_dir / f"wc_{slug}_postpack.md"
         pack_path.write_text(format_post_pack(result, context, thread), encoding="utf-8")
         print(f"  Post pack: {pack_path}")
     except Exception as e:

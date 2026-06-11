@@ -71,7 +71,7 @@ def build_track_records_from_runs(runs: list) -> dict:
 
 def build_track_records(runs_dir: Path = Path("runs")) -> dict:
     runs = []
-    for path in sorted(runs_dir.glob("wc_*.json")):
+    for path in sorted(runs_dir.glob("????-??-??/wc_*.json")):
         if path.name.endswith(("_context.json", "_thread.json")):
             continue
         try:

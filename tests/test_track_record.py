@@ -46,7 +46,8 @@ def test_extract_falls_back_to_proposal():
 
 
 def _write_run(runs_dir, slug, preds, actual):
-    runs_dir.mkdir(exist_ok=True)
+    date_dir = runs_dir / "2026-06-11"
+    date_dir.mkdir(parents=True, exist_ok=True)
     run = {
         "match_string": slug.replace("-", " vs ", 1),
         "decision": {"home_goals": 9, "away_goals": 9},
@@ -54,7 +55,7 @@ def _write_run(runs_dir, slug, preds, actual):
     }
     if actual:
         run["actual"] = actual
-    (runs_dir / f"wc_{slug}_20260611.json").write_text(json.dumps(run))
+    (date_dir / f"wc_{slug}.json").write_text(json.dumps(run))
 
 
 def test_build_track_records_scores_pundits(tmp_path):

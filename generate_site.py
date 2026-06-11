@@ -183,7 +183,7 @@ def _abridge(text: str, role: str) -> str:
 def load_run_pairs(runs_dir: Path = RUNS_DIR) -> list:
     """Load all (run, context) pairs sorted by filename date ascending."""
     run_files = sorted(
-        f for f in runs_dir.glob("wc_*.json")
+        f for f in runs_dir.glob("????-??-??/wc_*.json")
         if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json"))
     )
     pairs = []
@@ -191,7 +191,7 @@ def load_run_pairs(runs_dir: Path = RUNS_DIR) -> list:
         context_file = run_file.parent / run_file.name.replace(".json", "_context.json")
         run = json.loads(run_file.read_text())
         context = json.loads(context_file.read_text()) if context_file.exists() else {}
-        date_str = run_file.stem[-8:]
+        date_str = run_file.parent.name.replace("-", "")  # YYYY-MM-DD → YYYYMMDD
         pairs.append({"run": run, "context": context, "date_str": date_str})
     return pairs
 

@@ -5,9 +5,12 @@ from generate_site import load_run_pairs, is_knockout_match, accuracy_stats, gen
 
 
 def _write_pair(tmp_path, slug, date_str, run_extra=None, context_extra=None):
-    """Write a run+context pair to tmp_path/runs/."""
+    """Write a run+context pair to tmp_path/runs/YYYY-MM-DD/."""
     runs = tmp_path / "runs"
-    runs.mkdir(exist_ok=True)
+    # date_str is YYYYMMDD; convert to YYYY-MM-DD for folder name
+    date_dashed = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:]}"
+    date_dir = runs / date_dashed
+    date_dir.mkdir(parents=True, exist_ok=True)
     run = {
         "match_string": "Brazil vs Croatia",
         "match_slug": slug,
@@ -28,8 +31,8 @@ def _write_pair(tmp_path, slug, date_str, run_extra=None, context_extra=None):
         run.update(run_extra)
     if context_extra:
         context.update(context_extra)
-    (runs / f"wc_{slug}_{date_str}.json").write_text(json.dumps(run))
-    (runs / f"wc_{slug}_{date_str}_context.json").write_text(json.dumps(context))
+    (date_dir / f"wc_{slug}.json").write_text(json.dumps(run))
+    (date_dir / f"wc_{slug}_context.json").write_text(json.dumps(context))
     return run, context
 
 
@@ -44,7 +47,7 @@ def test_load_run_pairs_returns_run_and_context(tmp_path):
 def test_load_run_pairs_excludes_context_and_thread_files(tmp_path):
     _write_pair(tmp_path, "brazil-croatia", "20260611")
     runs = tmp_path / "runs"
-    (runs / "wc_brazil-croatia_20260611_thread.json").write_text("[]")
+    (runs / "2026-06-11" / "wc_brazil-croatia_thread.json").write_text("[]")
     pairs = load_run_pairs(runs)
     assert len(pairs) == 1
 
@@ -208,9 +211,10 @@ def test_build_site_creates_match_html(tmp_path):
 
 def test_build_site_skips_runs_without_slug(tmp_path):
     runs = tmp_path / "runs"
-    runs.mkdir()
+    date_dir = runs / "2026-06-11"
+    date_dir.mkdir(parents=True)
     run_no_slug = {"match_string": "A vs B", "decision": {"home_goals": 1, "away_goals": 0, "confidence": 0.5, "upset_probability": 0.2, "key_factors": [], "best_debate_quote": None, "rationale": "", "dissenting_views": []}, "full_debate": {"proposals": {}, "cross_critiques": {}, "rebuttals": {}}}
-    (runs / "wc_a-b_20260611.json").write_text(json.dumps(run_no_slug))
+    (date_dir / "wc_a-b.json").write_text(json.dumps(run_no_slug))
     output_dir = tmp_path / "_site"
     build_site(output_dir, runs_dir=runs)
     assert (output_dir / "index.html").exists()

@@ -186,6 +186,7 @@ def screenshot_card(html: str, out_path: Path) -> bool:
             page.goto(html_path.resolve().as_uri())
             page.screenshot(path=str(out_path))
             browser.close()
+        html_path.unlink(missing_ok=True)
         print(f"  Card: {out_path}")
         return True
     except Exception as e:
@@ -209,8 +210,7 @@ def main():
     args = parser.parse_args()
 
     if args.date:
-        compact = args.date.replace("-", "")
-        summary_path = Path("runs") / f"daily_{compact}_summary.json"
+        summary_path = Path("runs") / args.date / "daily_summary.json"
         if not summary_path.exists():
             print(f"No summary for {args.date}: {summary_path}")
             sys.exit(0)
