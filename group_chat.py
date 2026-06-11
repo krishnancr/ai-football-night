@@ -23,13 +23,20 @@ THE DEBATE (3 rounds):
 THE VERDICT:
 {verdict}
 
-Rewrite this as a group chat of 14-20 short messages between Stat_Bot (data-obsessed, quotes xG at people), G_Bot (touchscreen tactics nerd, condescending), R_Bot (old-school, hates analytics, all vibes and passion) and K_Bot (witty host, sarcastic about the others' egos).
+STEP 1: Before writing anything, scan the debate and identify the 4-5 sharpest or funniest actual lines — the ones that land as a standalone punch. Hold these in mind.
+
+STEP 2: Build a group chat of 14-20 short messages structured around those specific lines. Characters:
+- Stat_Bot: data-obsessed, quotes xG at people
+- G_Bot: touchscreen tactics nerd, condescending
+- R_Bot: old-school contrarian who grounds his argument in something specific he's actually seen — not just vibes
+- K_Bot: witty host, sarcastic about the others' egos
 
 Rules:
 - Each message under 200 characters. Punchy, conversational, like texting.
-- Keep the pundits' ACTUAL arguments and numbers from the debate — compress, don't invent stats.
+- Use the pundits' ACTUAL arguments and numbers from the debate — don't invent stats.
 - They interrupt and mock each other. Escalate the disagreement.
-- K_Bot sends the final 2 messages: one roasting the panel, one delivering the verdict with the scoreline {home_goals}-{away_goals}.
+- K_Bot's penultimate message names what each pundit actually missed in their specific argument about THIS match — not their general archetype, their actual mistake. Good: "Stat_Bot built the whole model around a striker who's suspended. G_Bot had the right shape but the wrong personnel." Bad: "Three egos, zero self-awareness."
+- K_Bot's final message delivers the verdict with the scoreline {home_goals}-{away_goals}.
 - Return ONLY a JSON array, no prose, no markdown fences:
 [{{"role": "Stat_Bot", "text": "..."}}, {{"role": "R_Bot", "text": "..."}}]
 - role must be exactly one of: Stat_Bot, G_Bot, R_Bot, K_Bot."""
@@ -45,9 +52,9 @@ def build_group_chat_prompt(run: dict) -> str:
     decision = run.get("decision", {})
     sections = []
     for label, key, limit in [
-        ("ROUND 1 — OPENING POSITIONS", "proposals", 1500),
-        ("ROUND 2 — CRITIQUES", "cross_critiques", 900),
-        ("ROUND 3 — REBUTTALS", "rebuttals", 900),
+        ("ROUND 1 — OPENING POSITIONS", "proposals", 2500),
+        ("ROUND 2 — CRITIQUES", "cross_critiques", 1400),
+        ("ROUND 3 — REBUTTALS", "rebuttals", 1400),
     ]:
         round_data = debate.get(key, {})
         if round_data:
