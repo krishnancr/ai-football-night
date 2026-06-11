@@ -197,7 +197,7 @@ def screenshot_card(html: str, out_path: Path) -> bool:
 def render_for_run(run_path: Path) -> bool:
     from track_record import build_track_records
     run = json.loads(Path(run_path).read_text())
-    records = build_track_records(Path(run_path).parent)
+    records = build_track_records(Path(run_path).parent.parent)
     html = build_card_html(run, records)
     out_path = Path(run_path).parent / f"{Path(run_path).stem}_card.png"
     return screenshot_card(html, out_path)
