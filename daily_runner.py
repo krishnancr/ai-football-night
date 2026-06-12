@@ -87,6 +87,18 @@ def _write_github_output(key: str, value: str) -> None:
             f.write(f"{key}={value}\n")
 
 
+# FIFA official names that sports media writes differently
+_SEARCH_NAME = {
+    "Korea Republic": "South Korea",
+    "Türkiye": "Turkey",
+    "Cabo Verde": "Cape Verde",
+}
+
+
+def _search_team(name: str) -> str:
+    return _SEARCH_NAME.get(name, name)
+
+
 def fetch_match_result(match_string: str) -> tuple | None:
     """
     Search for the actual result of a played match using Tavily + LLM parsing.
@@ -105,7 +117,7 @@ def fetch_match_result(match_string: str) -> tuple | None:
         return None
 
     home, away = [t.strip() for t in match_string.split(" vs ")]
-    query = f"{home} vs {away} World Cup 2026 final score result"
+    query = f"{_search_team(home)} vs {_search_team(away)} World Cup 2026 final score result"
 
     try:
         tavily = TavilyClient(api_key=tavily_key)
