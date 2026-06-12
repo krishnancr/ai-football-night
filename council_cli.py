@@ -24,6 +24,8 @@ client = OpenAI(
     api_key=os.getenv("COUNCIL_API_KEY") or os.getenv("OLLAMA_API_KEY", "ollama"),
 )
 
+LAST_USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "calls": 0}
+
 def load_personas():
     """Load all available persona configurations"""
     personas_path = Path(__file__).parent / "personas.json"
@@ -49,6 +51,14 @@ def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "lla
         temperature=temperature,
         **kwargs,
     )
+    usage = getattr(resp, "usage", None)
+    if usage:
+        pt = getattr(usage, "prompt_tokens", 0)
+        ct = getattr(usage, "completion_tokens", 0)
+        if isinstance(pt, int) and isinstance(ct, int):
+            LAST_USAGE["prompt_tokens"] += pt
+            LAST_USAGE["completion_tokens"] += ct
+            LAST_USAGE["calls"] += 1
     return resp.choices[0].message.content
 
 def run_council(idea: str, constraints: str, persona_set: dict) -> dict:

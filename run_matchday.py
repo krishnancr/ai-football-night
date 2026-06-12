@@ -144,6 +144,7 @@ def main():
 
     # ── Stage 2: Debate ─────────────────────────────────────────────
     print(f"\n[2/4] Debate council...")
+    import council_cli
     from council_cli import load_personas, run_council
     from track_record import build_track_records, extract_pundit_predictions, inject_track_records
     personas = load_personas()
@@ -163,6 +164,12 @@ def main():
     result["match_slug"] = slug
     result["match_string"] = args.match
     result["pundit_predictions"] = extract_pundit_predictions(result.get("full_debate", {}))
+    result["cost"] = {
+        "prompt_tokens": council_cli.LAST_USAGE.get("prompt_tokens", 0),
+        "completion_tokens": council_cli.LAST_USAGE.get("completion_tokens", 0),
+        "calls": council_cli.LAST_USAGE.get("calls", 0),
+    }
+    print(f"  💸 tokens in={result['cost']['prompt_tokens']} out={result['cost']['completion_tokens']} calls={result['cost']['calls']}")
 
     run_path.write_text(json.dumps(result, indent=2))
     print(f"  Saved: {run_path}")
