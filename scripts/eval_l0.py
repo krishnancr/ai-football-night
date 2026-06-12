@@ -34,15 +34,33 @@ def load(globpats):
     return out
 
 
+def _stat_bot_text(d):
+    """All of Stat_Bot's debate text, across rounds (lives under full_debate)."""
+    fd = d.get("full_debate") or {}
+    parts = []
+    for section in ("proposals", "cross_critiques", "rebuttals"):
+        parts.append((fd.get(section) or {}).get("Stat_Bot") or "")
+    return " ".join(parts).lower()
+
+
+def _research_quality(path):
+    """research_quality lives in the sibling *_context.json, not the run JSON."""
+    ctx_path = path.replace(".json", "_context.json")
+    try:
+        return json.load(open(ctx_path)).get("research_quality", "unknown")
+    except Exception:
+        return "unknown"
+
+
 def metrics(runs, label):
     scorelines, qualities = Counter(), Counter()
     fabrication, cost_in, cost_out, calls, n = 0, 0, 0, 0, 0
-    for d in runs.values():
+    for path, d in runs.items():
         n += 1
         for pred in (d.get("pundit_predictions") or {}).values():
             scorelines[f"{pred['home_goals']}-{pred['away_goals']}"] += 1
-        qualities[d.get("research_quality", "unknown")] += 1
-        stat_text = ((d.get("proposals") or {}).get("Stat_Bot") or "").lower()
+        qualities[_research_quality(path)] += 1
+        stat_text = _stat_bot_text(d)
         if "xg" in stat_text or "ppda" in stat_text:
             fabrication += 1
         c = d.get("cost") or {}
