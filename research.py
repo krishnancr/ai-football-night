@@ -15,17 +15,15 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from tavily import TavilyClient
 
+import teams
+
 load_dotenv()
 
 
-def slugify(text: str) -> str:
-    return text.lower().replace(" ", "-").replace("'", "").replace(".", "")
-
-
 def load_base_context(home: str, away: str) -> dict:
-    """Load pre-scraped base context if it exists."""
-    slug = f"{slugify(home)}-{slugify(away)}"
-    base_path = Path("runs/base") / f"wc_{slug}_base.json"
+    """Load pre-scraped base context if it exists. Keyed via teams.py so the
+    '-vs-' filename convention and name aliases can't break the join."""
+    base_path = Path("runs/base") / teams.base_filename(home, away)
     if base_path.exists():
         return json.loads(base_path.read_text())
     return {}
@@ -43,10 +41,11 @@ def research_daily(match_string: str) -> dict:
 
     tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
+    home_q, away_q = teams.search(home), teams.search(away)
     queries = [
-        f"{home} {away} World Cup 2026 betting odds",
-        f"{home} {away} injuries squad news World Cup 2026",
-        f"{home} vs {away} World Cup 2026 preview prediction",
+        f"{home_q} {away_q} World Cup 2026 betting odds",
+        f"{home_q} {away_q} injuries squad news World Cup 2026",
+        f"{home_q} vs {away_q} World Cup 2026 preview prediction",
     ]
 
     search_results = []
@@ -177,9 +176,9 @@ def research_match(match_string: str) -> dict:
     if not base:
         tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
         for query in [
-            f"{home} vs {away} head to head history football",
-            f"{home} recent form results 2025 2026",
-            f"{away} recent form results 2025 2026",
+            f"{teams.search(home)} vs {teams.search(away)} head to head history football",
+            f"{teams.search(home)} recent form results 2025 2026",
+            f"{teams.search(away)} recent form results 2025 2026",
         ]:
             try:
                 result = tavily.search(query, max_results=3, search_depth="basic")
