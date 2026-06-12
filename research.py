@@ -152,6 +152,10 @@ def validate_context(ctx: dict, base: dict) -> tuple:
     else:
         quality = "degraded"
 
+    if quality == "degraded":
+        print(f"  ❌ RESEARCH DEGRADED for {ctx.get('home_team')} vs {ctx.get('away_team')} "
+              f"— base loaded={bool(base)}, critical fields populated={populated}/4. "
+              f"Bots will debate near-blind.")
     ctx["research_quality"] = quality
     return ctx, quality
 

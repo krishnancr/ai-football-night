@@ -235,3 +235,12 @@ def test_load_base_context_finds_vs_named_file(tmp_path, monkeypatch):
     base = load_base_context("Korea Republic", "Czechia")
     assert base["h2h_summary"] == "KR leads"
     assert base["form_home"] == ["W", "W"]
+
+
+def test_validate_context_logs_loudly_when_degraded(capsys):
+    from research import validate_context
+    ctx = {"form_home": [], "form_away": [], "key_players_home": [], "key_players_away": []}
+    out_ctx, quality = validate_context(ctx, base={})
+    assert quality == "degraded"
+    captured = capsys.readouterr()
+    assert "DEGRADED" in captured.out  # visible, not silent
