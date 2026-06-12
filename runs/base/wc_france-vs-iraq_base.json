@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "L", "W", "W"],
-  "form_away": ["D", "W", "W", "L", "L"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "L",
+    "L"
+  ],
   "key_players_home": [
     "Kylian Mbappe (captain, striker/forward)",
     "Ousmane Dembele (winger, 2025 Ballon d'Or winner)",
@@ -41,5 +53,29 @@
     "Compact defensive organization makes them difficult to break down quickly",
     "Physical strikers (Hussein, Al-Hamadi) dangerous from set pieces and direct play",
     "Qualification momentum and underdog hunger — ended a 40-year World Cup absence with play-off heroics"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 57,
+    "elo": 1446,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 3,
+      "L": 3,
+      "GF": 9,
+      "GA": 9
+    }
+  }
 }

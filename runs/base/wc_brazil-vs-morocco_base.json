@@ -14,8 +14,20 @@
       "Morocco 2-1 Brazil - International Friendly - 2023"
     ]
   },
-  "form_home": ["W", "W", "W", "L", "D"],
-  "form_away": ["D", "W", "W", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Vinicius Junior (left winger)",
     "Raphinha (right winger)",
@@ -44,5 +56,29 @@
     "World-record 19-game winning streak and AFCON 2025 champions with proven tournament pedigree",
     "Achraf Hakimi's dynamic right-flank threat combined with Brahim Diaz's creative brilliance in tight spaces",
     "Compact defensive shape with synchronized midfield pressing that makes them hard to break down even against elite opposition"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 6,
+    "elo": 1766,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 4,
+      "L": 6,
+      "GF": 24,
+      "GA": 17
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 7,
+    "elo": 1755,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 2
+    }
+  }
 }

@@ -14,8 +14,20 @@
       "Scotland 0-0 Morocco - Friendly - 2023"
     ]
   },
-  "form_home": ["L", "L", "W", "W", "W"],
-  "form_away": ["D", "W", "W", "W", "D"],
+  "form_home": [
+    "L",
+    "L",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Scott McTominay (central midfielder / talisman)",
     "Andy Robertson (left back / captain)",
@@ -44,5 +56,29 @@
     "Achraf Hakimi as a world-class attacking threat and defensive anchor at right back",
     "Proven big-game mentality from 2022 World Cup semi-final run",
     "Strong collective defensive structure with Amrabat shielding a compact backline and Bounou's elite penalty-saving record"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 42,
+    "elo": 1503,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 13,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 7,
+    "elo": 1755,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 2
+    }
+  }
 }

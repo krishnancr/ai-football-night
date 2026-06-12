@@ -13,8 +13,20 @@
       "0-0 - International Friendly - 1995"
     ]
   },
-  "form_home": ["W", "W", "W", "W", "W"],
-  "form_away": ["W", "L", "W", "L", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Hakan Çalhanoğlu (captain, deep-lying playmaker)",
     "Arda Güler (attacking midfielder, Real Madrid)",
@@ -43,5 +55,29 @@
     "Defensively disciplined 4-4-2 system that concedes very few goals",
     "Almirón and Enciso provide dangerous counter-attacking pace and invention",
     "Gustavo Alfaro's battle-hardened squad psychologically prepared for tournament football"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  }
 }

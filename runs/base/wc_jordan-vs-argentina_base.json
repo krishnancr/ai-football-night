@@ -13,8 +13,20 @@
       "1-1 - Friendly - 1990"
     ]
   },
-  "form_home": ["W", "L", "D", "L", "L"],
-  "form_away": ["W", "W", "W", "W", "W"],
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Mousa Al-Tamari (winger/captain, Rennes)",
     "Ali Olwan (striker)",
@@ -44,5 +56,29 @@
     "World-class individual quality throughout the squad — Messi, Alvarez, Lautaro, Romero, Martínez",
     "Exceptional defensive record — conceded just 10 goals across 18 CONMEBOL qualifying matches",
     "Tactical flexibility under Scaloni with a fluid system adaptable to any opponent"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 63,
+    "elo": 1388,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 4,
+      "L": 2,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  }
 }

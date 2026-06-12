@@ -14,8 +14,20 @@
       "Netherlands 2-0 Morocco - International Friendly - 1994"
     ]
   },
-  "form_home": ["W", "W", "D", "L", "W"],
-  "form_away": ["W", "W", "D", "W", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "D",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Virgil van Dijk (centre-back / captain)",
     "Frenkie de Jong (central midfielder)",

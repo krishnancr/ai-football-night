@@ -15,8 +15,20 @@
       "1-2 - FIFA Confederations Cup - 2013"
     ]
   },
-  "form_home": ["W", "L", "D", "D", "D"],
-  "form_away": ["W", "W", "D", "D", "W"],
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "D",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Federico Valverde (attacking midfielder/right wing)",
     "Darwin Nunez (striker)",
@@ -45,5 +57,29 @@
     "Lamine Yamal's exceptional 1v1 dribbling and creativity on the right flank",
     "Dominant midfield control and ball circulation through Rodri and Pedri",
     "28-game unbeaten run in normal time reflecting squad depth and tactical cohesion"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 16,
+    "elo": 1673,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 22,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  }
 }

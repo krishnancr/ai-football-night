@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "L", "L", "W", "W"],
-  "form_away": ["D", "L", "L", "L", "W"],
+  "form_home": [
+    "W",
+    "L",
+    "L",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "L",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Luka Modric (central midfielder / captain)",
     "Mateo Kovacic (central midfielder)",
@@ -41,5 +53,29 @@
     "Explosive pace and direct running from Williams and Semenyo in attack",
     "Compact defensive structure that is hard to break down",
     "Strong qualifying campaign with 8 wins from 10 matches building cohesion"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 11,
+    "elo": 1715,
+    "qual": {
+      "P": 8,
+      "W": 7,
+      "D": 1,
+      "L": 0,
+      "GF": 26,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 73,
+    "elo": 1347,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 23,
+      "GA": 6
+    }
+  }
 }

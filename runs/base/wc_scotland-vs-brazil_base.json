@@ -15,8 +15,20 @@
       "1-2 loss (Collins pen, Boyd OG) - FIFA World Cup Group Stage - 1998"
     ]
   },
-  "form_home": ["W", "W", "L", "L", "W"],
-  "form_away": ["W", "W", "L", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Andy Robertson (left back / captain)",
     "Scott McTominay (box-to-box midfielder)",
@@ -45,5 +57,29 @@
     "World-class attacking duo in Vinicius Junior and Raphinha",
     "Tactical adaptability and man-management under Carlo Ancelotti",
     "Depth across all positions with Brazil's strongest squad in years"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 42,
+    "elo": 1503,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 13,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 6,
+    "elo": 1766,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 4,
+      "L": 6,
+      "GF": 24,
+      "GA": 17
+    }
+  }
 }

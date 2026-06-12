@@ -13,8 +13,20 @@
       "0-1 (Switzerland 0 Qatar 1) - International Friendly - 2018"
     ]
   },
-  "form_home": ["L", "D", "L", "L", "D"],
-  "form_away": ["W", "L", "W", "D", "W"],
+  "form_home": [
+    "L",
+    "D",
+    "L",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Akram Afif (attacking midfielder / winger)",
     "Almoez Ali (striker)",
@@ -43,5 +55,29 @@
     "Experienced, cohesive squad featuring Xhaka in his fourth World Cup",
     "High-pressing system that disrupts opponents and generates turnovers",
     "Strong recent form including a 4-1 win over Jordan and solid qualifying campaign"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 56,
+    "elo": 1450,
+    "qual": {
+      "P": 12,
+      "W": 5,
+      "D": 2,
+      "L": 5,
+      "GF": null,
+      "GA": null
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  }
 }

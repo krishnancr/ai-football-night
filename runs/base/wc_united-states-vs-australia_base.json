@@ -15,8 +15,20 @@
       "USA 1-1 Australia - International Friendly - 2023"
     ]
   },
-  "form_home": ["W", "L", "L", "W", "L"],
-  "form_away": ["L", "W", "W", "L", "D"],
+  "form_home": [
+    "W",
+    "L",
+    "L",
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "W",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Christian Pulisic (attacking midfielder / forward, AC Milan)",
     "Tyler Adams (defensive midfielder, Bournemouth)",
@@ -45,5 +57,22 @@
     "Disciplined defensive structure in a back three that is hard to break down and dangerous at set pieces via Souttar",
     "Explosive attacking pace in transition through young forward Nestory Irankunda and winger Martin Boyle",
     "Experience and leadership from fourth-World-Cup goalkeeper Mathew Ryan, who provides stability and shot-stopping quality"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 17,
+    "elo": 1671,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  }
 }

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["D", "D", "L", "D", "W"],
-  "form_away": ["W", "D", "L", "D", "D"],
+  "form_home": [
+    "D",
+    "D",
+    "L",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "L",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Federico Valverde (central midfielder, Real Madrid)",
     "Darwin Núñez (centre-forward, Al-Hilal)",
@@ -41,5 +53,29 @@
     "Disciplined defensive compactness and tactical organisation earned under Bubista — unbeaten at home throughout qualifying",
     "Dangerous counter-attacking pace through wide areas with Mendes and Livramento capable of catching higher-ranked sides off guard",
     "Historic debut motivation and strong collective spirit built from a 7-win qualifying campaign that included victories over Cameroon and Angola"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 16,
+    "elo": 1673,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 22,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 67,
+    "elo": 1371,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 16,
+      "GA": 8
+    }
+  }
 }

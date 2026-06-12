@@ -15,8 +15,20 @@
       "Japan 2-0 Tunisia - International Friendly - 2023"
     ]
   },
-  "form_home": ["D", "L", "D", "L", "L"],
-  "form_away": ["W", "W", "W", "W", "W"],
+  "form_home": [
+    "D",
+    "L",
+    "D",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Ellyes Skhiri (defensive midfielder / captain)",
     "Hannibal Mejbri (attacking midfielder)",
@@ -45,5 +57,29 @@
     "Outstanding recent form with five consecutive international wins including victories over England and Brazil",
     "Tactically flexible and disciplined system with elite pressing organisation under Moriyasu",
     "Strong European-based squad with Premier League, Bundesliga, and Serie A experience across key positions"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 45,
+    "elo": 1476,
+    "qual": {
+      "P": 10,
+      "W": 9,
+      "D": 1,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  }
 }

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["L", "L", "W", "W", "D"],
-  "form_away": ["W", "L", "D", "L", "D"],
+  "form_home": [
+    "L",
+    "L",
+    "W",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "D",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Aymen Hussein (striker, all-time leading scorer with 33 international goals)",
     "Ali Al-Hamadi (forward, former Luton Town / Ipswich Town, first Iraqi in the Premier League)",
@@ -41,5 +53,29 @@
     "Erling Haaland — elite finishing and physical dominance in the penalty area",
     "Perfect qualifying record (8W from 8) with 37 goals and just 5 conceded",
     "High-pressing system suffocates opposition build-up and creates turnovers in dangerous areas"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 57,
+    "elo": 1446,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 3,
+      "L": 3,
+      "GF": 9,
+      "GA": 9
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 31,
+    "elo": 1557,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 37,
+      "GA": 5
+    }
+  }
 }

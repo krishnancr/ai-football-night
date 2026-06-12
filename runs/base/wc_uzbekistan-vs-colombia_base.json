@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "D", "W", "L"],
-  "form_away": ["W", "W", "L", "L", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Eldor Shomurodov (striker / captain, all-time top scorer with 44 international goals)",
     "Abdukodir Khusanov (centre-back, Manchester City)",
@@ -41,5 +53,29 @@
     "Luis Diaz's explosive pace and goal threat after a 26-goal debut season at Bayern Munich",
     "James Rodriguez's vision and dead-ball quality providing creative control in midfield",
     "Proven big-tournament pedigree with high-pressing tactical system under Lorenzo"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 50,
+    "elo": 1459,
+    "qual": {
+      "P": 10,
+      "W": 6,
+      "D": 3,
+      "L": 1,
+      "GF": 14,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 13,
+    "elo": 1698,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 28,
+      "GA": 18
+    }
+  }
 }

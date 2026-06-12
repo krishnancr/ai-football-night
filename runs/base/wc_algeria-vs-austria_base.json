@@ -13,8 +13,20 @@
       "0-2 (Austria win) - FIFA World Cup Group Stage - 1982"
     ]
   },
-  "form_home": ["W", "D", "W", "L", "W"],
-  "form_away": ["W", "W", "W", "D", "W"],
+  "form_home": [
+    "W",
+    "D",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Riyad Mahrez (attacking midfielder/winger, captain)",
     "Mohamed Amoura (striker, top scorer in qualifying with 10 goals)",
@@ -43,5 +55,29 @@
     "Rangnick's organised gegenpressing system disrupts opponents' build-up effectively",
     "Deep squad with Bundesliga quality throughout midfield",
     "Excellent recent form — four wins from last five with only two goals conceded"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 24,
+    "elo": 1597,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 1,
+      "L": 1,
+      "GF": 22,
+      "GA": 4
+    }
+  }
 }

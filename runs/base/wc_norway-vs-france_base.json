@@ -16,8 +16,20 @@
       "France 3-3 Norway - Friendly - 1998"
     ]
   },
-  "form_home": ["D", "W", "D", "L", "W"],
-  "form_away": ["W", "W", "W", "W", "W"],
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Erling Haaland (striker)",
     "Martin Odegaard (attacking midfielder / captain)",
@@ -46,5 +58,29 @@
     "World No. 1 ranked team with elite quality across every position",
     "Kylian Mbappe leading a devastating front three with Dembele and Olise",
     "Defensively solid with Saliba and Upamecano providing a world-class centre-back partnership"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 31,
+    "elo": 1557,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 37,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  }
 }

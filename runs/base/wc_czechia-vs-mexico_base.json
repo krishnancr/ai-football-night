@@ -15,8 +15,20 @@
       "Czechia 2-2 Mexico - International Friendly - 2025"
     ]
   },
-  "form_home": ["W", "W", "D", "D", "W"],
-  "form_away": ["W", "W", "W", "D", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Patrik Schick (striker, Bayer Leverkusen)",
     "Tomas Soucek (central midfielder, West Ham)",
@@ -45,5 +57,22 @@
     "Home advantage at altitude in Estadio Azteca with massive crowd support",
     "Experienced squad led by Raul Jimenez and veteran goalkeeper Ochoa, with seven World Cup appearances between key players",
     "Rapid counter-attacking and set-piece danger with aerial threats from Cesar Montes and Johan Vasquez"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 40,
+    "elo": 1506,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 1,
+      "L": 2,
+      "GF": 18,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 14,
+    "elo": 1687,
+    "qual": null
+  }
 }

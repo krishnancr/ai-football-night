@@ -13,8 +13,20 @@
       "1-1 - International Friendly - 2011"
     ]
   },
-  "form_home": ["W", "W", "W", "D", "L"],
-  "form_away": ["L", "L", "L", "L", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Harry Kane (striker / captain)",
     "Jude Bellingham (attacking midfielder)",
@@ -43,5 +55,29 @@
     "Pacey, direct wide forwards in Williams and Semenyo capable of exploiting space on the counter",
     "Experienced leadership through captain Jordan Ayew and deep-lying anchor Thomas Partey",
     "Queiroz's proven ability to organise defensively compact units against superior opponents"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 4,
+    "elo": 1828,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 73,
+    "elo": 1347,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 23,
+      "GA": 6
+    }
+  }
 }

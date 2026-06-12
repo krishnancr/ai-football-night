@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "D", "D", "W"],
-  "form_away": ["W", "W", "L", "D", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Lamine Yamal (right winger)",
     "Rodri (defensive midfielder / captain)",
@@ -41,5 +53,29 @@
     "Compact and disciplined defensive organisation conceding just 5 goals in 6 CAF qualifiers",
     "Dangerous on the counter-attack through quick transitions",
     "Strong team unity and collective spirit as motivated tournament debutants"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 67,
+    "elo": 1371,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 16,
+      "GA": 8
+    }
+  }
 }

@@ -14,8 +14,20 @@
       "Iran 1-1 Egypt - International Friendly - 2000"
     ]
   },
-  "form_home": ["L", "W", "D", "L", "D"],
-  "form_away": ["W", "D", "W", "L", "D"],
+  "form_home": [
+    "L",
+    "W",
+    "D",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "W",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Mohamed Salah (forward/winger, captain)",
     "Omar Marmoush (forward, Manchester City)",
@@ -44,5 +56,29 @@
     "Mehdi Taremi's goal-scoring reliability — 10 goals in 15 qualifiers — makes Iran dangerous even with limited possession",
     "Experienced and disciplined defensive block that conceded very few goals in AFC qualification, comfortable sitting deep and counter-attacking",
     "Strong set-piece threat and high squad cohesion from a domestically-grounded core supplemented by experienced European-based players"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 29,
+    "elo": 1562,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 20,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 20,
+    "elo": 1620,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 19,
+      "GA": 8
+    }
+  }
 }

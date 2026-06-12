@@ -13,8 +13,20 @@
       "6-1 England win - FIFA World Cup Group Stage - 2018"
     ]
   },
-  "form_home": ["W", "D", "L", "W", "D"],
-  "form_away": ["W", "W", "W", "L", "W"],
+  "form_home": [
+    "W",
+    "D",
+    "L",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Adalberto Carrasquilla (central midfielder / creative engine)",
     "Anibal Godoy (defensive midfielder / captain)",
@@ -43,5 +55,29 @@
     "World-class attacking trio in Kane, Bellingham, and Saka capable of dismantling organised defences",
     "High-press system that suffocates teams with limited technical quality in build-up",
     "Dominant possession game with structural flexibility under Tuchel that can adapt to any opponent"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 34,
+    "elo": 1539,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 9,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 4,
+    "elo": 1828,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  }
 }

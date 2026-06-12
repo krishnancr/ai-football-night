@@ -14,8 +14,20 @@
       "Australia 1-0 Paraguay - Friendly - 2010"
     ]
   },
-  "form_home": ["W", "L", "W", "L", "W"],
-  "form_away": ["W", "W", "L", "D", "L"],
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "D",
+    "L"
+  ],
   "key_players_home": [
     "Miguel Almiron (attacking midfielder / winger)",
     "Julio Enciso (forward / second striker)",
@@ -44,5 +56,29 @@
     "Disciplined back-three defensive structure with Harry Souttar's aerial dominance",
     "Explosive attacking pace through Nestory Irankunda and Martin Boyle on the flanks",
     "High work rate, pressing intensity and set-piece threat throughout the squad"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  }
 }

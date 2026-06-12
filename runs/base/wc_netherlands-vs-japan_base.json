@@ -15,8 +15,20 @@
       "2-2 - International Friendly - 2013"
     ]
   },
-  "form_home": ["W", "L", "D", "W", "W"],
-  "form_away": ["W", "W", "W", "W", "W"],
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Virgil van Dijk (centre-back / captain)",
     "Frenkie de Jong (central midfielder)",
@@ -45,5 +57,29 @@
     "Exceptional recent form with five consecutive wins including scalps against England and Scotland in pre-tournament friendlies",
     "Organised high-press system that has dismantled elite European opposition through collective pressing and quick transitions",
     "Experienced captain Wataru Endo provides tactical discipline and leadership, with technically gifted forwards Kubo and Doan as constant threats"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  }
 }

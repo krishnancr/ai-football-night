@@ -13,8 +13,20 @@
       "Egypt 1-0 New Zealand - International Friendly - 2024"
     ]
   },
-  "form_home": ["L", "L", "W", "L", "L"],
-  "form_away": ["L", "W", "D", "W", "W"],
+  "form_home": [
+    "L",
+    "L",
+    "W",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Chris Wood (striker, captain, Nottingham Forest)",
     "Liberato Cacace (left-back/winger, Wrexham)",
@@ -43,5 +55,29 @@
     "Mohamed Salah and Omar Marmoush form one of the tournament's most dangerous attacking partnerships, capable of deciding tight matches individually",
     "Exceptional defensive record in qualifying — only two goals conceded across ten CAF World Cup qualifying matches",
     "Egypt were unbeaten through the entire CAF qualifying campaign, demonstrating consistency and tactical solidity under coach Hossam Hassan"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 85,
+    "elo": 1276,
+    "qual": {
+      "P": 5,
+      "W": 5,
+      "D": 0,
+      "L": 0,
+      "GF": 29,
+      "GA": 1
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 29,
+    "elo": 1562,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 20,
+      "GA": 2
+    }
+  }
 }

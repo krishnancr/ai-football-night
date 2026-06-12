@@ -15,8 +15,20 @@
       "Canada 3-1 South Korea - International Friendly - 2026"
     ]
   },
-  "form_home": ["W", "W", "D", "D", "W"],
-  "form_away": ["D", "W", "D", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Son Heung-min (captain / forward)",
     "Lee Kang-in (attacking midfielder)",

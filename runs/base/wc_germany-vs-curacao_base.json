@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["L", "W", "W", "W", "W"],
-  "form_away": ["W", "L", "L", "L", "D"],
+  "form_home": [
+    "L",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Jamal Musiala (attacking midfielder)",
     "Florian Wirtz (attacking midfielder / forward)",
@@ -41,5 +53,29 @@
     "Unbeaten CONCACAF qualifying campaign (10 played, 7W 3D 0L) with strong defensive discipline",
     "Physically robust and well-organised defensive unit with a high tackle rate",
     "Dutch-developed players with European league experience providing technical quality throughout"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 10,
+    "elo": 1736,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 0,
+      "L": 1,
+      "GF": 16,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 82,
+    "elo": 1295,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 13,
+      "GA": 3
+    }
+  }
 }

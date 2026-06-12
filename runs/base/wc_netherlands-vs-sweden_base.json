@@ -17,8 +17,20 @@
       "0-0 draw - FIFA World Cup Group Stage - 1974"
     ]
   },
-  "form_home": ["W", "L", "W", "D", "W"],
-  "form_away": ["L", "W", "L", "D", "W"],
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "L",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Virgil van Dijk (central defender / captain)",
     "Frenkie de Jong (central midfielder)",
@@ -47,5 +59,29 @@
     "Devastating counter-attacking pace with Gyokeres and Elanga among Europe's most dangerous transition threats",
     "Gyokeres in lethal form after 21+ goals in 2025-26 and match-winning playoff performances",
     "Compact defensive structure under Potter that concedes few chances and is hard to break down"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  }
 }

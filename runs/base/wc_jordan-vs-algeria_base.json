@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["L", "L", "D", "D", "L"],
-  "form_away": ["W", "D", "W", "L", "W"],
+  "form_home": [
+    "L",
+    "L",
+    "D",
+    "D",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Mousa Al-Taamari (captain, attacking winger/midfielder, Stade Rennais)",
     "Ali Olwan (forward, 9 qualifying goals)",
@@ -41,5 +53,29 @@
     "Dominant qualifying campaign — won 8 of 10 CAF matches, finishing 7 points clear of second-place Uganda",
     "Star quality and experience in attack, with Mahrez and Amoura combining for over 20 qualifying goals",
     "Proven players across Europe's top leagues offering tactical versatility and big-game composure"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 63,
+    "elo": 1388,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 4,
+      "L": 2,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  }
 }

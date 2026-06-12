@@ -15,8 +15,20 @@
       "1-0 England win - UEFA Euro 2020 - 2021"
     ]
   },
-  "form_home": ["W", "W", "W", "W", "W"],
-  "form_away": ["W", "L", "L", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "L",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Harry Kane (striker / captain)",
     "Jude Bellingham (attacking midfielder)",
@@ -45,5 +57,29 @@
     "Elite midfield intelligence and technical quality led by Modric and Kovacic",
     "Experienced tournament mentality — three World Cup medals and a history of overperforming expectations",
     "Strong defensive structure anchored by Gvardiol, one of Europe's best centre-backs"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 4,
+    "elo": 1828,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 11,
+    "elo": 1715,
+    "qual": {
+      "P": 8,
+      "W": 7,
+      "D": 1,
+      "L": 0,
+      "GF": 26,
+      "GA": 4
+    }
+  }
 }

@@ -14,8 +14,20 @@
       "2-2 Draw - 1995 Umbro/Stanley Rous Cup (Leeds)"
     ]
   },
-  "form_home": ["W", "W", "W", "L", "W"],
-  "form_away": ["L", "W", "L", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "L",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Takefusa Kubo (winger, Real Sociedad)",
     "Wataru Endo (defensive midfielder, Liverpool)",
@@ -44,5 +56,29 @@
     "Elite striker duo in Gyokeres (21 goals in 2025-26) and Isak providing multi-threat attack",
     "Devastating on the counter-attack with Elanga providing electrifying wide pace",
     "Graham Potter's pragmatic setup maximises squad cohesion despite limited caps"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  }
 }

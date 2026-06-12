@@ -15,8 +15,20 @@
       "Korea Republic lead overall head-to-head record with 2 wins, 1 draw, 0 South Africa wins"
     ]
   },
-  "form_home": ["W", "D", "L", "D", "W"],
-  "form_away": ["W", "W", "L", "W", "L"],
+  "form_home": [
+    "W",
+    "D",
+    "L",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Ronwen Williams (goalkeeper, captain)",
     "Lyle Foster (striker, Burnley)",
@@ -45,5 +57,29 @@
     "World-class attacking threat through Son Heung-min, one of the tournament's elite forwards",
     "Elite centre-back Kim Min-jae providing defensive solidity",
     "Strong European-based squad with depth and experience at the highest level"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 60,
+    "elo": 1428,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 3,
+      "L": 2,
+      "GF": 15,
+      "GA": 9
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 25,
+    "elo": 1592,
+    "qual": {
+      "P": 10,
+      "W": 6,
+      "D": 4,
+      "L": 0,
+      "GF": 20,
+      "GA": 7
+    }
+  }
 }

@@ -5,16 +5,77 @@
   "match_date": "2026-06-25",
   "venue": "Lincoln Financial Field, Philadelphia, USA",
   "h2h_summary": "Curaçao and Ivory Coast have no previous official meeting, making their 2026 World Cup Group E clash a historic first encounter between the two nations.",
-  "h2h_record": {"home_wins": 0, "draws": 0, "away_wins": 0, "notable_results": []},
-  "form_home": ["W","L","L","L","D"],
-  "form_away": ["W","W","W","L","W"],
-  "key_players_home": ["Leandro Bacuna (captain, central midfielder)", "Rangelo Janga (striker, all-time top scorer)", "Tahith Chong (forward/winger)", "Juninho Bacuna (attacking midfielder)", "Eloy Room (goalkeeper)"],
-  "key_players_away": ["Franck Kessie (captain, central midfielder)", "Amad Diallo (right winger)", "Ousmane Diomande (centre-back)", "Evan Ndicka (centre-back)", "Yan Diomande (attacking midfielder)"],
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": [
+    "W",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Leandro Bacuna (captain, central midfielder)",
+    "Rangelo Janga (striker, all-time top scorer)",
+    "Tahith Chong (forward/winger)",
+    "Juninho Bacuna (attacking midfielder)",
+    "Eloy Room (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Franck Kessie (captain, central midfielder)",
+    "Amad Diallo (right winger)",
+    "Ousmane Diomande (centre-back)",
+    "Evan Ndicka (centre-back)",
+    "Yan Diomande (attacking midfielder)"
+  ],
   "team_style_home": "Curaçao under Dick Advocaat deploy a disciplined 4-3-3 or 4-4-2 mid-block, defending compactly and looking to hurt opponents on direct counter-attacks through the pace of Tahith Chong.",
   "team_style_away": "Ivory Coast under Emerse Fae play a dynamic 4-3-3 with a compact midfield block, quick transitions, and pace-driven wide attackers who are most dangerous immediately after winning the ball.",
   "wc_history_home": "Curaçao are making their debut at the FIFA World Cup in 2026, having become the smallest nation by population and area ever to qualify for the tournament.",
   "wc_history_away": "Ivory Coast are appearing at their fourth World Cup (2006, 2010, 2014, 2026), returning after a 12-year absence but have never advanced beyond the group stage.",
   "group_context": "Group E features heavy favourites Germany alongside Ecuador, Ivory Coast, and debutants Curaçao; Ivory Coast and Ecuador are battling for the second knockout berth, while Curaçao will be targeting a famous upset to announce themselves on the world stage.",
-  "strengths_home": ["Disciplined defensive organization under an experienced European coach", "Dangerous counter-attacking pace through Tahith Chong", "Strong European-based squad with Netherlands football experience"],
-  "strengths_away": ["High-scoring attack — most goals in CAF qualifying with 25 in 10 games", "Pace and creativity across wide positions with Amad Diallo and Yan Diomande", "Excellent recent form including a 2-1 win over France in their final World Cup warm-up"]
+  "strengths_home": [
+    "Disciplined defensive organization under an experienced European coach",
+    "Dangerous counter-attacking pace through Tahith Chong",
+    "Strong European-based squad with Netherlands football experience"
+  ],
+  "strengths_away": [
+    "High-scoring attack — most goals in CAF qualifying with 25 in 10 games",
+    "Pace and creativity across wide positions with Amad Diallo and Yan Diomande",
+    "Excellent recent form including a 2-1 win over France in their final World Cup warm-up"
+  ],
+  "stats_home": {
+    "fifa_rank": 82,
+    "elo": 1295,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 13,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 33,
+    "elo": 1541,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 25,
+      "GA": 0
+    }
+  }
 }

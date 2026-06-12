@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "D", "W", "W"],
-  "form_away": ["W", "W", "W", "L", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Kevin De Bruyne (attacking midfielder)",
     "Romelu Lukaku (striker)",
@@ -41,5 +53,29 @@
     "Defensive solidity and organised low-block structure that is difficult to break down in tight games",
     "Dangerous counter-attacking threat through Taremi, who has 59 international goals in 103 caps",
     "Experienced core — led by 142-cap Hajsafi — with the resolve and tactical discipline to grind out results"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 20,
+    "elo": 1620,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 19,
+      "GA": 8
+    }
+  }
 }

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["D", "W", "D", "D", "W"],
-  "form_away": ["D", "D", "W", "W", "L"],
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "D",
+    "W",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Jonathan David (striker, all-time top scorer with 39 international goals)",
     "Alphonso Davies (left back/captain, recovering from hamstring injury, doubtful for opener)",
@@ -41,5 +53,22 @@
     "Veteran leadership of Edin Dzeko providing a reliable target and clinical finishing",
     "Battle-hardened squad tempered by dramatic penalty shootout wins over Wales and Italy in qualifying",
     "Disciplined counter-attacking style that can exploit space left by pressing teams"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 64,
+    "elo": 1387,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 2,
+      "L": 1,
+      "GF": 17,
+      "GA": 7
+    }
+  }
 }

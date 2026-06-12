@@ -15,8 +15,20 @@
       "Paraguay 1-0 USA - International Friendly - 2011"
     ]
   },
-  "form_home": ["L", "W", "L", "L", "W"],
-  "form_away": ["W", "L", "W", "L", "W"],
+  "form_home": [
+    "L",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Christian Pulisic (attacking midfielder / forward)",
     "Tyler Adams (defensive midfielder)",
@@ -45,5 +57,22 @@
     "Disciplined defensive structure conceding only 10 goals in 18 qualifying matches",
     "Counter-attacking threat through Almiron's pace and movement in behind defences",
     "Tournament experience in the squad, including veterans of Copa America campaigns"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 17,
+    "elo": 1671,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  }
 }

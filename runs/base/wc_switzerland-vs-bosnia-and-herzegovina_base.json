@@ -13,8 +13,20 @@
       "0-2 (Bosnia win) - World Cup Qualifier - 2016"
     ]
   },
-  "form_home": ["D", "W", "D", "L", "D"],
-  "form_away": ["D", "D", "W", "W", "D"],
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "D",
+    "D",
+    "W",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Granit Xhaka (central midfielder / captain)",
     "Manuel Akanji (centre-back)",
@@ -43,5 +55,29 @@
     "Veteran striker Edin Dzeko (73 international goals) provides proven big-match quality",
     "Determined team spirit shown by shock elimination of Italy in World Cup playoff",
     "Direct and physical style with effective set-pieces and counter-attacking threat"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 64,
+    "elo": 1387,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 2,
+      "L": 1,
+      "GF": 17,
+      "GA": 7
+    }
+  }
 }
