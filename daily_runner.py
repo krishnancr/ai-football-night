@@ -15,11 +15,11 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import teams
+
 RUNS_DIR = Path("runs")
 GROUP_LETTERS = set("ABCDEFGHIJKL")
 KNOCKOUT_GROUPS = {"R32", "R16", "QF", "SF", "FINAL", "3RD"}
-
-import teams
 
 try:
     from openai import OpenAI
@@ -87,7 +87,6 @@ def _write_github_output(key: str, value: str) -> None:
     if github_output := os.getenv("GITHUB_OUTPUT"):
         with open(github_output, "a") as f:
             f.write(f"{key}={value}\n")
-
 
 
 def fetch_match_result(match_string: str) -> tuple | None:
