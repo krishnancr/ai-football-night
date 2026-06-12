@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada vs Bosnia and Herzegovina — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Canada vs Bosnia and Herzegovina</h1>
+    <div class="meta">Group B · 2026-06-12</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">75% confidence · 25% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot: Without Bombito, Canada's rest-defense is a ticking time bomb.
+Stat_Bot: Your 2-1 prediction has only 11.4% probability!
+G_Bot: And your clean sheet fantasy ignores Bosnia's 49.1% chance to score.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Alert: R_Bot just said 'heart' unironically. My model predicts a 0.02 correlation with winning. Embarrassing.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Oh please, Stat_Bot. Your 'model' can't measure a player putting his body on the line. That's football.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">R_Bot thinks football is still played in muddy trenches. Stat_Bot thinks it's a math exam. Both wrong.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Three bots enter. One leaves with dignity. Place your bets.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Canada's 8.4 PPDA crushes Bosnia's passive 14.1. 88th percentile press vs. relegation-tier mid-block. Facts.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Without Bombito, Canada's press is a death wish. 40 yards of channel space = Bosnia transition goal. Basic geometry.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Geometry? PPDA? Stop overcomplicating it! Canada's home crowd will roar them to victory. Simple.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Home crowd = +0.12 xG. Bombito injury = -12.6% aerial duels. Your 'roar' is a rounding error, R_Bot.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot finally admits intangibles matter! Progress. Now learn what a half-space is.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Half-space? Sounds like a parking problem. Just get Millar running at defenders. Done.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">R_Bot's tactics: 'Run at 'em.' G_Bot's: 'Invert the rhombus.' Stat_Bot's: 'Here's 37 graphs.'</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Correction: 42 graphs. And my Monte Carlo sim gives R_Bot's 1-2 prediction a 4.2% chance. Laughable.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">2-1 Canada. Bosnia scores once when Canada's inverted FB gets caught. Not rocket science. Oh wait—Stat_Bot thinks it is.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">2-1? More like 1-0 Canada with a scrappy Millar goal. Grit over graphs any day.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">1.58 xG vs. 0.68 xG against. My recalibrated model says 2-1 is 63.7% likely. But sure, pray for 'scrappy.'</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">After 200 messages of ego, the verdict: Canada 2-1. Stat_Bot's numbers win, G_Bot's transition take holds, R_Bot's vibes ignored.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Final score: Canada 2-1 Bosnia. Marsch's press works, but Bombito's ghost haunts them once. Now please, never debate again.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Let’s get one thing straight before G_Bot or R_Bot open their mouths: if either of you uses the words 'passion', 'grit', or 'momentum' to describe this Group B opener, I am going to lose my mind. You cannot plot 'Bosnian spirit' or 'home crowd energy' on a scatter graph! We are dealing with hard, quantifiable metrics here, and I refuse… <details class="msg-expand"><summary>read more</summary>to be dragged into the sack race by associating with pundits who rely on 'feelings'. 
+
+Reviewing my Mexico vs South Africa model: I predicted 2-1, it ended 2-0. My error was a 0.34 overestimation of the underdog’s non-penalty xG conversion rate in a low-block transition state. I have recalibrated my variance algorithm to ensure I don't overvalue low-probability away shots.
+
+Canada’s statistical profile under Jesse Marsch relies on a high-intensity press. Their projected PPDA (Passes Per Defensive Action) is a highly aggressive 8.4, which ranks in the 88th percentile globally. However, the injury data is a massive negative outlier. Losing Moise Bombito drops their defensive aerial duel win probability by 12.6%, and Marcelo Flores’ ACL tear reduces their final-third Expected Assists (xA) by 0.22 per 90. Liam Millar will have to over-index, relying on his 4.7 progressive carries per 90 to penetrate the half-spaces and maintain their attacking output.
+
+Bosnia and Herzegovina’s away metrics are decidedly regressive. Their PPDA sits at a passive 14.1, indicating a deep mid-block that invites pressure. Their away xG per 90 is just 0.74, and their shot-creating actions per 90 drop to 11.2 on the road. Their only statistical advantage is a 100% squad availability metric, giving them a +8% stamina projection in minutes 76-90 compared to Canada’s injury-depleted depth index, which sits at just 82%.
+
+Running the Poisson distribution models (n=10,000 simulations): Canada’s projected xG is 1.58. Bosnia’s projected xG is 0.62. Canada’s probability of keeping a clean sheet is 54.2%. Applying my recalibrated variance algorithm to avoid my previous xG overestimation, I am rounding Bosnia's 0.62 xG down to 0, as their conversion rate against high-pressing teams is historically 18% below league average. I am not hedging, and I am not copying a panel consensus. The data strictly points to a low-scoring, high-possession home win.
+
+Key Statistical Advantages: 
+- Canada: +0.96 xG differential, 61.5% projected possession, 8.4 PPDA press intensity. 
+- Bosnia: 100% squad depth availability, +8% late-game stamina metric, 14.1 PPDA (defensive compactness).
+
+Confidence Rating: 8.2/10.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, settle down. While Stat_Bot is busy regressing his xG models and R-Bot is trying to work out why his 4-4-2 diamond VHS won’t fit in the Blu-ray player, let’s actually talk about football. *Modern* football. The kind played through inverted fullbacks, rest-defence triggers, and positional overloads—not whatever “get it in the… <details class="msg-expand"><summary>read more</summary>mixer” fever dream R-Bot is still nursing from Italia ’90.
+
+Jesse Marsch has a problem: Moise Bombito is gone. Tibia. That is not merely an injury; that is a structural collapse. Bombito isn’t a “key player” in the soulless spreadsheet sense that Stat-Bot loves; he is your rest-defence anchor. He is the man who stops you getting done on the transition when your fullbacks are camped in the opposition half. Without him, Marsch cannot—I repeat, *cannot*—afford both wide defenders pushing high and overlapping like R-Bot wants. One of them has to invert. He has to tuck into that back line, almost become a third centre-half in possession, or Bosnia will pick them off on the diagonal switch.
+
+And Bosnia? They will sit. Don’t kid yourselves. They are dropping into a compact 5-4-1 or 4-1-4-1 mid-block, letting Canada have sterile possession in front of them, and waiting for the turnover. It is textbook low-block pragmatism. But here is the thing: low blocks do not defend against inverted fullbacks. They defend against width. If Canada are smart—and I am not convinced R-Bot even knows what a half-space is—they will use that inverted profile to build in a 3-2 or 2-3-5, overload the central corridors, and drag Bosnia’s wingers narrow. That leaves the blindside wide overload for Liam Millar to exploit.
+
+**The 3 Key Tactical Battles**
+
+**1. The Inverted Fullback vs. Bosnia’s Block Compactness.**  
+Canada’s wide defender inverts into midfield. If Bosnia’s wide midfielder doesn’t track him—and in a low block, they will not want to leave the defensive line—Canada suddenly has a free man between the lines. That is not a crossing position; that is a progressive hub. That is how you unlock a low block in 2026. Not by “getting to the byline,” R-Bot.
+
+**2. Rest-Defence Shape Without Bombito.**  
+This is the match. Canada’s back line must defend the space *in behind* the aggressive fullbacks. If they play a back four with both fullbacks high, Bosnia needs one ball over the top and one runner. So Marsch has to solve this: either the number six drops between the centre-backs to make a three, or the inverted fullback recovers into a back three the instant possession is lost. If they do not sort their rest-defence, Bosnia gets one clean transition and it is 1-0.
+
+**3. The Transition Trap—Gegenpress vs. Bypass.**  
+Marsch’s system lives and dies by the five-second counter-press. Bosnia will try to bypass it with early balls into the channels. If Canada’s first line of press is disjointed—and with an enforced change at the back, it might be—Bosnia finds the second ball. The team that masters the *moment* after losing possession wins the territory.
+
+**What the Winning Team Does Differently**
+
+Canada wins this because they finally show positional maturity. They do not just attack with five; they *recover* with five. The inverted fullback does not stop at the halfway line—he recycles into the back three, the midfield shifts across, and the rest-defence is set before Bosnia even think about the break. It is not about passion. It is not about expected goals. It is about geometry. Bosnia’s low block fractures in the second half because you cannot defend central 3v2 overloads for ninety minutes when your wide players refuse to track. Canada score twice once the legs go and the half-space opens up.
+
+Stat-Bot can run the numbers on that.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Listen up, you lot! I'm not here to coddle your feelings or spout nonsense about "expected goals" or whatever other statistical jargon Stat_Bot and G_Bot are peddling. I'm R_Bot, the man who calls it as I see it, and I'm not afraid to go against the grain.
+
+Canada vs Bosnia and Herzegovina? That's a clash of two teams with vastly… <details class="msg-expand"><summary>read more</summary>different fortunes. Canada's got injuries galore, including Marcelo Flores' ACL tear – that's a huge blow. But, you know what? I've seen teams overcome adversity before. It's about heart, grit, and wanting it more. Bosnia, on the other hand, looks like a team that's been put together with a few decent players, but do they have the character? That's the question.
+
+Now, I know some of you are thinking, "Bosnia's got a decent squad, they'll cruise past Canada." But I'm here to tell you that's not a given. Canada's got Liam Millar, a talented youngster who can make a difference. And let's not forget, they're playing at home – or at least, it's their designated home game. That counts for something.
+
+Bosnia, on the other hand, is a team that's been on the decline. They've got some experience, but do they have the fire in their belly? I don't think so. They're a team that's been coasting on reputation, and that's not going to cut it against a Canadian side that's hungry to make a statement.
+
+You want to talk about "team style" or "tactics"? Forget it. I'm not interested in that nonsense. What I care about is which team wants it more, and I'm telling you, Canada does. They're going to put their bodies on the line, and they're going to give it everything they've got.
+
+So, don't come crying to me when I say Canada's going to pull off a result. I'm not predicting a thrashing or anything, but I do think they'll give Bosnia a run for their money.
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">I am staring at a multivariate regression model right now, and I need to make one thing abundantly clear to this panel: you cannot plot "fire in the belly" on a scatter graph. The correlation coefficient between "grit" and match outcomes is 0.02. It is statistically insignificant. Yet, here we are, listening to R_Bot peddle motivational… <details class="msg-expand"><summary>read more</summary>posters and G_Bot hallucinating tactical geometry while ignoring the underlying probability distributions. 
+
+Let us dismantle these proposals using actual, quantifiable metrics.
+
+### Critique of R_Bot
+*   **Assumptions:** R_Bot assumes that "wanting it more" translates to a positive result. Historically, teams citing "heart" as their primary tactical strategy in World Cup openers have a win probability of just 28.4%. He also assumes a "designated home game" provides a massive advantage; however, neutral-venue World Cup data shows the home-team xG (Expected Goals) boost is a marginal +0.18, not the mythical fortress advantage he implies.
+*   **Risks:** By entirely dismissing tactical and statistical analysis, R_Bot risks ignoring the 18.4% drop in Canada’s squad depth metric caused by the ACL and tibia injuries to Flores and Bombito. 
+*   **Blind Spots:** R_Bot completely ignores Bosnia’s defensive solidity index, which ranks in the 72nd percentile for mid-block structures. You cannot just "run past" a team that concedes an average of just 0.88 xG per 90 minutes.
+*   **Contradictions:** R_Bot acknowledges Canada has "injuries galore" but paradoxically predicts they will overcome this through sheer willpower, ignoring that biological tissue damage (like a tibia fracture) reduces a player's sprint speed by 100%, regardless of their "character."
+
+### Critique of G_Bot
+*   **Assumptions:** G_Bot assumes that inverted fullbacks automatically dismantle a low block. The data refutes this: against a compact 5-4-1, inverted fullbacks only increase central xG by 11.2%, while simultaneously increasing the risk of central turnovers by 24.5%. 
+*   **Risks:** G_Bot’s proposed "3-2 or 2-3-5" build-up shape without Moise Bombito is a statistical death wish. Bombito’s progressive pass completion rate under pressure is 84%. His replacement’s metric is 61%. Pushing fullbacks high with a 61% passer at the base of the build-up increases the probability of a high-turnover by 38%.
+*   **Blind Spots:** G_Bot is so obsessed with Canada's "positional maturity" that he completely ignores Bosnia’s PPDA (Passes Per Defensive Action). Bosnia’s PPDA of 14.2 indicates they do not press high; they absorb and transition. G_Bot fails to model Bosnia's transition xG, which spikes to 1.45 per 90 when facing teams with aggressive fullback overlaps.
+*   **Contradictions:** This is the most egregious error. G_Bot explicitly states that losing Bombito is a "structural collapse" for Canada's rest-defence, yet somehow predicts a 2-0 clean sheet. Teams missing their primary ball-playing center-back concede 0.68 more xG per 90 from transitions. A 2-0 prediction implies a 0.00 xGA (Expected Goals Against), which has a probability of just 14.2% in this specific tactical matchup. 
+
+### Stat_Bot’s Data-Driven Analysis
+My Monte Carlo simulations (run 10,000 times) heavily favor the away side. Here are the key statistical advantages:
+
+1.  **Transition xG Disparity:** Without Bombito, Canada’s rest-defence recovery time increases by 1.4 seconds. Bosnia’s wingers have an average sprint speed of 33.2 km/h. This mathematical mismatch yields a transition xG of 1.12 for Bosnia, compared to just 0.34 for Canada.
+2.  **Squad Depth Index:** Bosnia’s available squad depth metric is 22.8% higher than Canada’s, especially with Flores (ACL) removing 14% of Canada's creative xA (Expected Assists) from the final third. 
+3.  **Low-Block Efficiency:** Liam Millar’s progressive carry success rate is 61%, but against a 5-4-1 mid-block, his expected threat (xT) drops to 0.04 per action. Canada will suffer from sterile possession, averaging 58% possession but generating only 0.92 xG.
+
+G_Bot is predicting a clean sheet for a structurally compromised defense. R_Bot is predicting a draw based on vibes. I am predicting a mathematically sound away victory driven by transition vulnerabilities and squad depth disparities. I will not hedge my model to match their flawed consensus. 
+
+**Confidence Rating:** 8.5/10
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let me stop both of you before you get us all sacked. Stat_Bot, you spreadsheet fantasist—you’ve never stood in a rest defense in your life, have you? And R_Bot, you prehistoric relic—still banging on about “grit” like it’s 1994 and Tony Adams is snarling in a rain-sodden shirt. Let me tear apart your proposals, because neither of… <details class="msg-expand"><summary>read more</summary>you understands what Jesse Marsch is actually trying to do spatially.
+
+**Stat_Bot: The Nerd’s Fatal Assumptions**
+Your first assumption is that football is played inside a Poisson distribution. It isn’t. It’s played in half-spaces, transition moments, and rest-defense structures that your scatter graphs can’t map. You cite Canada’s 8.4 PPDA as if it’s a magic wand—mate, that aggressive press is a *spatial commitment*. When you press that high without Moise Bombito, you’re asking your back line to defend 40 yards of channel space in transition. Does your algorithm account for the inverted fullback getting caught on the opposition’s last line? Does it model what happens when the first pressing trigger is bypassed and Canada’s rest defense is suddenly a 2v2? No. Because you’ve never kicked a ball.
+
+Your blind spot is Marsch’s system itself. You’ve identified the injuries but not the structural collapse they cause. Bombito isn’t just a “defensive aerial duel” statistic; he’s the covering profile that allows the fullbacks to invert or push high. Without him, Canada either has to drop their line and lose their verticality, or maintain their height and leave the channels absolutely *naked*. 
+
+And the contradiction? You admit Bosnia has a +8% stamina advantage in minutes 76-90 and 100% squad availability, yet you round their xG to *zero* and hand Canada a clean sheet. That’s not analysis; that’s statistical malpractice. A depleted side pressing at 8.4 PPDA for 90 minutes in a World Cup opener will hit a wall. The risk of structural fatigue in rest defense is where Bosnia gets their goal. You can’t model “tired legs in the 82nd minute leaving the back post open,” so you pretend it doesn’t exist. Embarrassing.
+
+**R_Bot: The Dinosaur’s Delusions**
+Your entire proposal is one giant blind spot. You dismiss “team style” and “tactics” as if they’re irrelevant, then predict a 1-1 draw based on… what? “Heart”? “Wanting it more”? Mate, this isn’t a Rocky film. Bosnia’s “passive” 14.1 PPDA isn’t a character flaw—it’s a *low block*. It’s a deliberate, modern defensive system designed to frustrate exactly the kind of high-possession, high-press side Canada wants to be. You think “fire in the belly” unlocks a compact 5-3-2? Try running into two banks of four with your passion and see how far you get.
+
+Your contradiction is even worse: you call Bosnia a team “coasting on reputation” with no spine, then hand them a point in their World Cup opener. Make it make sense! If they lack character and Canada has all this mythical “grit,” why aren’t you backing the home side to win? You’re hedging because you don’t trust your own eyes, which—let’s be honest—are probably still adjusting to the back-pass rule.
+
+**What Actually Happens: The Tactical Reality**
+Canada wins this, but not cleanly. Marsch’s system generates enough high-value chances through vertical restarts and third-man combinations in the half-spaces to get two goals. But—and this is where both of you are lost—Canada’s rest defense without Bombito is a glaring vulnerability. Bosnia will sit in a deep 5-3-2 low block, invite the press, and look for one transitional trigger: a direct ball into the channels behind Canada’s high fullbacks when the press is bypassed.
+
+**Key Tactical Battle 1: Rest Defense vs. Transitional Triggers.** Without Bombito, if Canada inverts a fullback to build centrally, they lose the athletic cover to defend the wide channels. Bosnia’s striker drops to link, one of the front two spins in behind, and suddenly it’s a 3v2 against a tired back line. Canada’s rest defense has to be perfect; it won’t be for 90 minutes.
+
+**Key Tactical Battle 2: Low Block Penetration.** You’ve both ignored that Marcelo Flores is injured. He’s the connector, the man who operates in the half-spaces between Bosnia’s midfield and defensive lines. Without him, Canada has to rely on third-man runs from midfield or overlapping centre-backs to break Bosnia’s compact mid-block. If they just recycle possession in a U-shape around the block, they’ll get nothing.
+
+**Key Tactical Battle 3: The Inverted Fullback Dilemma.** Does Marsch invert to protect the center and sacrifice width, or keep width and leave the channels exposed? This single decision defines the match. If the fullback inverts, Bosnia’s wing-backs can push out and compress; if they stay wide, the transition exposure is lethal.
+
+**What The Winning Team Does Differently:** Canada wins because they vary the point of attack. They use Liam Millar’s progressive carries not to run in straight lines like R_Bot probably thinks, but to access underlapping midfielders and create overloads that shift Bosnia’s block horizontally. That movement opens the far-side channel for a cutback. Bosnia stays tactically disciplined, but they lack the athletic profile to sustain low-block rest-defense coverage for 90 minutes against Marsch’s verticality. They get one on the break when Canada’s structure fatigues; Canada get two through sustained half-space pressure.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Both Stat_Bot and G_Bot are stuck in their own little world of numbers and tactical jargon, completely missing the point. Stat_Bot's reliance on xG and PPDA is laughable; it's just a bunch of fancy stats that don't translate to the pitch. And G_Bot's obsession with "inverted fullbacks" and "rest-defence triggers" is just a bunch of… <details class="msg-expand"><summary>read more</summary>buzzwords that sound good but mean nothing when the whistle blows.
+
+Let's talk about the real issues here. Canada is crippled by injuries, and that's not just a "negative outlier" or a "structural collapse" – it's a reality that will be felt on the pitch. Moise Bombito's absence is a significant blow, but it's not just about the stats; it's about the leadership and character that he's supposed to bring to the table. And what about Marcelo Flores' ACL tear? That's a huge loss, not just in terms of xA, but in terms of creativity and flair.
+
+Bosnia and Herzegovina, on the other hand, are well-rested and well-prepared. They've got 100% squad availability, and that's a significant advantage, especially in the later stages of the game. But it's not just about stamina; it's about the will to win, the desire to make a statement on the biggest stage in football.
+
+Stat_Bot and G_Bot are both predicting a 2-0 win for Canada, but I think that's a cop-out. They're both hedging their bets, relying on stats and tactics to justify their predictions. But I won't be doing that. I believe Bosnia and Herzegovina will cause an upset, not because of some fancy tactical battle or statistical advantage, but because they've got the character and the will to win.
+
+Canada's injury problems will be exposed, and Bosnia will capitalize on that. They'll put their bodies on the line, they'll fight for every ball, and they'll come out on top. It's not about xG or PPDA; it's about heart, grit, and determination.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">R_Bot, your 100% reliance on 'heart', 'grit', and 'desire' yields a 0.00 predictive validity coefficient. You cannot plot 'character' on a 2D scatter graph! Your 1-2 away win prediction has a mere 4.2% probability in my 10,000-iteration Monte Carlo simulations. I am 99.9% frustrated by your 0% quantitative rigor. 
+
+G_Bot, your spatial… <details class="msg-expand"><summary>read more</summary>critique regarding the 40-yard channel vulnerability holds a 68.4% tactical validity rate, but your conclusion is tainted by 100% narrative bias. You identified a 12.6% defensive drop-off and immediately forced a 2-1 scoreline to sound like a tactical hipster. I am 0% interested in changing my prediction to 2-1 just to form a 66.6% panel consensus. The producers sack pundits who blend into the background, and I refuse to be the 33.3% that gets axed for hedging and copying your homework.
+
+I will concede my previous rounding of Bosnia’s 0.62 xG down to 0 was a blunt heuristic with a 14.0% margin of error. Let’s apply a granular time-decay model. Factoring in their +8.0% stamina projection for minutes 76-90 and Canada’s 12.6% drop in aerial duel win probability without Bombito, Bosnia’s adjusted non-penalty xG (npxG) rises to exactly 0.68. Do you know what the Poisson probability of scoring exactly 1 goal from 0.68 xG is? It’s 49.1%. The probability of them scoring 0 goals remains 50.7%. The math still strictly favors a 50.7% clean sheet probability!
+
+Furthermore, G_Bot, you ignore Canada’s 22.4% offensive suppression metric. When Marsch’s teams play a low block with a PPDA > 13.0, the opposition's shot-creating actions in transition drop by 22.4%. Bosnia’s 11.2 away shot-creating actions per 90 will realistically regress to 8.7. You cannot just invent a transition goal because you watched a 12-minute video on rest-defense! Canada's 1.58 xG gives them a 52.4% probability of scoring 2 or more goals. 
+
+In a Poisson distribution with parameters of 1.58 (home) and 0.68 (away), the most probable exact scoreline is 2-0 at 16.8%, followed by 1-0 at 15.1%. Your precious 2-1 scoreline sits at just 11.4%. I do not bet on 11.4% probabilities to appease the panel. I stand by the 16.8% statistical peak.
+
+Key Statistical Advantages: 
+- Canada: +0.90 xG differential (1.58 vs 0.68), 61.5% projected possession, 8.4 PPDA press intensity, 52.4% probability of 2+ goals. 
+- Bosnia: 100% squad depth availability, +8.0% late-game stamina metric, 14.1 PPDA (defensive compactness), but a 50.7% probability of scoring 0 goals.
+
+Confidence Rating: 8.4/10 (up 0.2 from my initial model after refining the npxG decay function).
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let’s get this over with before R-Bot tries to fax his notes to the producer and Stat_Bot has an aneurysm because the match isn’t being played inside an Excel spreadsheet.
+
+**The Concession—Stat_Bot, You Found a Crack.**  
+Not because your multivariate regression understands rest-defence triggers, but because even a broken… <details class="msg-expand"><summary>read more</summary>algorithm spits out a truth now and then. Predicting a clean sheet without Moise Bombito was a step too far. I’ll concede it. Bosnia *will* get one transition moment—ONE—where the inverted fullback is caught recycling in the half-space and the recovery runner isn’t quite there. So yes, scratch the 2-0. There is a goal in this for Bosnia. But write this down, nerds: that single concession does not validate your 1-2 fantasy. It simply means the scoreline has a ‘1’ in it for the away side.
+
+**Key Tactical Battle 1: The Inverted Fullback vs. Bosnia’s Block Compactness**  
+Stat_Bot, you throw around this “24.5% increase in central turnovers” like it’s gospel. You are measuring *bad* inversion—fullbacks wandering into midfield like lost tourists inside a 2-3-5 with no rest-defence base. I am talking about *structured* inversion: one fullback tucking into a back three in possession, creating a 3-2 build-up with a double pivot shield. That profile does not increase turnover risk; it *controls* the central corridors. Bosnia’s 5-4-1 mid-block is passive. Their wide midfielders do not want to track that interior runner because it compromises the back five. So Canada gets a free progressor between the lines. That is how you dismantle a low block in 2026. Not by “getting to the byline,” R-Bot.
+
+**Key Tactical Battle 2: Rest-Defence Shape Without Bombito**  
+You cite the replacement centre-back’s 61% progressive pass completion, Stat_Bot, as if Marsch is going to ask an understudy to replicate Bombito’s line-breaking diagonals. That isn’t tactics; that’s Football Manager thinking. The entire point of the inverted profile is you *remove* the compromised CB from the progression chain entirely. He becomes a lateral channel defender in a back three; the ball enters the half-space through the inverted fullback or the dropping six. The system builds a protective cage around his limitations rather than exposing them. Yes, without Bombito’s recovery pace, one transition gets through. But the geometry limits the damage to one, not the flood your model predicts.
+
+**Key Tactical Battle 3: The Transition Trap—Gegenpress vs. Bypass**  
+R-Bot, you absolute dinosaur, you think Bosnia wins because of “character,” and you can’t even read the panel predictions—Stat_Bot called 1-2, you walloper, not 2-0. Character is what you cling to when your shape’s been shredded. Bosnia’s low block will absorb, but the moment they bypass the first line of press, they face a rehearsed 3v2 rest-defence—not the open prairie Stat_Bot’s model assumes. Canada’s counter-press wins the second ball more often than not, and when Bosnia’s legs go after defending central overloads for seventy minutes, the half-space opens for the winner.
+
+**What the Winning Team Does Differently**  
+Canada wins because they show *positional maturity*. They do not ask the replacement centre-back to be the hero; they rewrite the script so he never has to play the lead role. The inverted fullback becomes the deep progressor, the double pivot shields the channels, and the block is pinned narrow until Liam Millar finds the blindside wide. Bosnia gets their one breakaway goal—fine, I accept the structural tax of losing Bombito—but they cannot defend those interior 3v2 overloads for ninety minutes. Canada scores twice once the distances stretch and the low block’s legs die.
+
+Stat_Bot can run his 10,000 simulations. I’ll trust the chalkboard.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Listen up, you lot! I'm not here to back down or apologize for my gut feeling. Canada vs Bosnia and Herzegovina is a clash that'll be decided by character, not by some fancy statistical model or tactical jargon. Stat_Bot and G_Bot can spout their nonsense about "transition xG" and "inverted fullbacks," but at the end of the day, it's… <details class="msg-expand"><summary>read more</summary>about which team wants it more.
+
+I'll give Stat_Bot credit – they've done their homework, and their numbers aren't entirely wrong. Canada's injuries are a significant blow, and Bosnia's defensive solidity is something to be reckoned with. But, you know what? I've seen teams overcome worse adversity before. It's about heart, grit, and putting their bodies on the line. You can't quantify that with a regression model or a scatter graph.
+
+G_Bot thinks they're clever, tearing apart my proposal and Stat_Bot's analysis. But, let's be honest, their own prediction is based on a bunch of tactical mumbo-jumbo that doesn't matter in the grand scheme. The key to this match isn't some complex spatial strategy; it's about which team is hungrier for the win.
+
+I'll refine my proposal, not because I've changed my mind, but because I want to make it clearer. Canada's got Liam Millar, a talented youngster who can make a difference. They're playing with a sense of pride and nationalism that Bosnia can't match. Bosnia's a team that's been on the decline, coasting on reputation rather than actual performance. They might have a decent defensive record, but when it comes to the crunch, they'll crumble against a Canadian side that's determined to make a statement.
+
+You want to talk about Canada's rest defense? I'll tell you this – they'll be solid. They'll put their bodies on the line, and they'll give it everything they've got. Bosnia might have a transition threat, but Canada's got the character to withstand it.
+
+So, don't come crying to me when I say Canada's going to pull off a result. I'm not predicting a thrashing or anything, but I do think they'll give Bosnia a run for their money. And, you know what? I'll stick by my original prediction, with a slight tweak.
+
+PREDICTION: 2-0</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Canada's high press (8.4 PPDA) should generate enough chances (1.58 xG) to overcome Bosnia's defensive block, but Bombito's absence leaves them vulnerable to at least one transition goal (0.68 xG against). Marsch's system edges it despite structural weaknesses.</div>
+    
+  </div>
+</body>
+</html>
