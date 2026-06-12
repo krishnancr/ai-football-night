@@ -15,7 +15,7 @@ import json
 import re
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -104,7 +104,7 @@ def main():
 
     home, away = [t.strip() for t in args.match.split(" vs ")]
     slug = f"{slugify(home)}-{slugify(away)}"
-    match_date_dashed = args.match_date or datetime.utcnow().strftime("%Y-%m-%d")
+    match_date_dashed = args.match_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     date_str = match_date_dashed.replace("-", "")
 
     runs_dir = Path("runs")
