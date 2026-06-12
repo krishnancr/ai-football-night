@@ -30,11 +30,16 @@ def load_personas():
     with open(personas_path) as f:
         return json.load(f)
 
-def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "llama3.2:1b", model_fallback: str = None) -> str:
-    """Call LLM with specified model. If model_fallback is set, OpenRouter tries it automatically on failure."""
+def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "llama3.2:1b",
+             model_fallback: str = None, reasoning_effort: str = None) -> str:
+    """Call LLM. model_fallback → OpenRouter auto-retries the second model.
+    reasoning_effort ('low'|'medium'|'high') → enables reasoning via OpenRouter."""
     extra = {}
     if model_fallback:
-        extra["extra_body"] = {"models": [model, model_fallback]}
+        extra["models"] = [model, model_fallback]
+    if reasoning_effort:
+        extra["reasoning"] = {"effort": reasoning_effort}
+    kwargs = {"extra_body": extra} if extra else {}
     resp = client.chat.completions.create(
         model=model,
         messages=[
@@ -42,7 +47,7 @@ def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "lla
             {"role": "user", "content": user},
         ],
         temperature=temperature,
-        **extra,
+        **kwargs,
     )
     return resp.choices[0].message.content
 
@@ -60,7 +65,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
     proposals = {}
     for role, config in roles.items():
         print(f"[Round 1] {role} ({config['model']}) proposing...")
-        content = call_llm(config['system'], prompt, temperature=0.6, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], prompt, temperature=0.6, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         proposals[role] = content
         debate_transcript.append({
             "round": 1,
@@ -83,7 +88,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             f"Provide specific critiques addressing: assumptions, risks, blind spots, and contradictions."
         )
         print(f"[Round 2] {role} ({config['model']}) critiquing others...")
-        content = call_llm(config['system'], critique_prompt, temperature=0.4, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], critique_prompt, temperature=0.4, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         cross_critiques[role] = content
         debate_transcript.append({
             "round": 2,
@@ -107,7 +112,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             f"Respond: concede weak points, defend strong points, refine your proposal if needed."
         )
         print(f"[Round 3] {role} ({config['model']}) rebutting critiques...")
-        content = call_llm(config['system'], rebuttal_prompt, temperature=0.5, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], rebuttal_prompt, temperature=0.5, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         rebuttals[role] = content
         debate_transcript.append({
             "round": 3,
@@ -128,7 +133,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
         f"Make a final decision. Output valid JSON with: decision, rationale, confidence (0-1), next_actions (list)."
     )
     print(f"[Round 4] K_Bot ({judge_config['model']}) making final decision...")
-    judge_raw = call_llm(judge_config['system'], judge_prompt, temperature=0.05, model=judge_config['model'], model_fallback=judge_config.get('model_fallback'))
+    judge_raw = call_llm(judge_config['system'], judge_prompt, temperature=0.05, model=judge_config['model'], model_fallback=judge_config.get('model_fallback'), reasoning_effort=judge_config.get('reasoning_effort'))
     
     # Parse decision
     try:
