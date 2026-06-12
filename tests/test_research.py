@@ -244,3 +244,14 @@ def test_validate_context_logs_loudly_when_degraded(capsys):
     assert quality == "degraded"
     captured = capsys.readouterr()
     assert "DEGRADED" in captured.out  # visible, not silent
+
+
+def test_merge_context_passes_stats_blocks_from_base():
+    from research import merge_context
+    base = {
+        "stats_home": {"fifa_rank": 23, "elo": 1789, "qual": {"P": 10, "W": 7, "D": 2, "L": 1, "GF": 22, "GA": 8}},
+        "stats_away": {"fifa_rank": 40, "elo": 1650, "qual": {"P": 10, "W": 5, "D": 2, "L": 3, "GF": 15, "GA": 12}},
+    }
+    ctx = merge_context(base, extracted={}, home="Korea Republic", away="Czechia")
+    assert ctx["stats_home"]["elo"] == 1789
+    assert ctx["stats_away"]["qual"]["GF"] == 15

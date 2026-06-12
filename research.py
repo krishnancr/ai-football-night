@@ -116,6 +116,8 @@ def merge_context(base: dict, extracted: dict, home: str, away: str) -> dict:
         "strengths_away": base.get("strengths_away"),
         "team_style_home": base.get("team_style_home"),
         "team_style_away": base.get("team_style_away"),
+        "stats_home": base.get("stats_home"),
+        "stats_away": base.get("stats_away"),
         # Tier 2 — always live (null/empty if not found)
         "injuries_home": extracted.get("injuries_home") or [],
         "injuries_away": extracted.get("injuries_away") or [],
