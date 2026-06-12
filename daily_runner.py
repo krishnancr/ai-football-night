@@ -203,7 +203,7 @@ def update_yesterday_results(date_str: str) -> int:
     # Find all dated run files (????-??-??/wc_*.json, not context/thread/summary/base)
     all_run_files = [
         f for f in RUNS_DIR.glob("????-??-??/wc_*.json")
-        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json"))
+        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json", "_reasoning.json"))
         and not f.name.endswith("_base.json")
     ]
 

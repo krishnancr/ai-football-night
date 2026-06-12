@@ -184,7 +184,7 @@ def load_run_pairs(runs_dir: Path = RUNS_DIR) -> list:
     """Load all (run, context) pairs sorted by filename date ascending."""
     run_files = sorted(
         f for f in runs_dir.glob("????-??-??/wc_*.json")
-        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json"))
+        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json", "_reasoning.json"))
     )
     pairs = []
     for run_file in run_files:
