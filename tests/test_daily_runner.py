@@ -195,3 +195,10 @@ def test_update_yesterday_results_records_new_result(tmp_path):
         result = update_yesterday_results("2026-06-13")
     assert result == 1
     mock_fetch.assert_called_once_with("Brazil vs Morocco")
+
+
+def test_result_query_uses_teams_search_name():
+    import daily_runner, teams
+    # daily_runner must delegate to teams.search, not a private map
+    assert not hasattr(daily_runner, "_SEARCH_NAME")
+    assert teams.search("Korea Republic") == "South Korea"

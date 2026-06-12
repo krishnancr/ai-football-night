@@ -19,6 +19,8 @@ RUNS_DIR = Path("runs")
 GROUP_LETTERS = set("ABCDEFGHIJKL")
 KNOCKOUT_GROUPS = {"R32", "R16", "QF", "SF", "FINAL", "3RD"}
 
+import teams
+
 try:
     from openai import OpenAI
     from dotenv import load_dotenv
@@ -87,18 +89,6 @@ def _write_github_output(key: str, value: str) -> None:
             f.write(f"{key}={value}\n")
 
 
-# FIFA official names that sports media writes differently
-_SEARCH_NAME = {
-    "Korea Republic": "South Korea",
-    "Türkiye": "Turkey",
-    "Cabo Verde": "Cape Verde",
-    "Czechia": "Czech Republic",
-}
-
-
-def _search_team(name: str) -> str:
-    return _SEARCH_NAME.get(name, name)
-
 
 def fetch_match_result(match_string: str) -> tuple | None:
     """
@@ -118,7 +108,7 @@ def fetch_match_result(match_string: str) -> tuple | None:
         return None
 
     home, away = [t.strip() for t in match_string.split(" vs ")]
-    query = f"{_search_team(home)} vs {_search_team(away)} World Cup 2026 final score result"
+    query = f"{teams.search(home)} vs {teams.search(away)} World Cup 2026 final score result"
 
     try:
         tavily = TavilyClient(api_key=tavily_key)
