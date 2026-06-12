@@ -1,0 +1,50 @@
+{
+  "home_team": "United States",
+  "away_team": "Paraguay",
+  "match_date": "2026-06-12",
+  "group": "D",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "injuries_home": [
+    "Chris Richards (ankle)"
+  ],
+  "injuries_away": [
+    "Julio Enciso (unknown)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Paraguay's star forward Julio Enciso is injured ahead of the match, while USMNT defender Chris Richards is ready for the opener despite an ankle issue.",
+  "form_home": [
+    "L",
+    "W",
+    "L",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Christian Pulisic (forward)"
+  ],
+  "key_players_away": [
+    "Braian Ojeda (midfielder)"
+  ],
+  "context": null,
+  "research_quality": "full"
+}

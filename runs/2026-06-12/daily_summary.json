@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-12",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Canada vs Bosnia and Herzegovina",
+      "run_file": "runs/2026-06-12/wc_canada-bosnia-and-herzegovina.json",
+      "thread_file": "runs/2026-06-12/wc_canada-bosnia-and-herzegovina_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "United States vs Paraguay",
+      "run_file": "runs/2026-06-12/wc_united-states-paraguay.json",
+      "thread_file": "runs/2026-06-12/wc_united-states-paraguay_thread.json",
+      "success": true
+    }
+  ]
+}
