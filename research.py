@@ -162,6 +162,7 @@ def research_match(match_string: str) -> dict:
     if len(parts) != 2:
         raise ValueError(f"Match string must be 'Team A vs Team B', got: {match_string}")
     home, away = parts[0].strip(), parts[1].strip()
+    home_q, away_q = teams.search(home), teams.search(away)
 
     base = load_base_context(home, away)
     if base:
@@ -176,9 +177,9 @@ def research_match(match_string: str) -> dict:
     if not base:
         tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
         for query in [
-            f"{teams.search(home)} vs {teams.search(away)} head to head history football",
-            f"{teams.search(home)} recent form results 2025 2026",
-            f"{teams.search(away)} recent form results 2025 2026",
+            f"{home_q} vs {away_q} head to head history football",
+            f"{home_q} recent form results 2025 2026",
+            f"{away_q} recent form results 2025 2026",
         ]:
             try:
                 result = tavily.search(query, max_results=3, search_depth="basic")
@@ -193,7 +194,7 @@ def research_match(match_string: str) -> dict:
             except Exception as e:
                 search_results.append({"query": query, "results": [], "error": str(e)})
 
-    extraction_prompt = f"""You are extracting structured facts from football news snippets about {home} vs {away}.
+    extraction_prompt = f"""You are extracting structured facts from football news snippets about {home_q} vs {away_q}.
 
 Search results:
 {json.dumps(search_results, indent=2)}
@@ -210,14 +211,14 @@ Extract ONLY the following fields. Return ONLY valid JSON, no prose:
   "key_players_away": ["Name (role)"]
 }}
 Rules:
-- injuries_home: confirmed injuries for {home}. Empty list [] if none found.
-- injuries_away: confirmed injuries for {away}. Empty list [] if none found.
+- injuries_home: confirmed injuries for {home_q}. Empty list [] if none found.
+- injuries_away: confirmed injuries for {away_q}. Empty list [] if none found.
 - odds: decimal odds or null for each value
 - recent_news: null if nothing notable
-- form_home: last 5 results for {home}, most recent last. Empty list [] if not found.
-- form_away: last 5 results for {away}, most recent last. Empty list [] if not found.
-- key_players_home: key players for {home} to watch. Empty list [] if not found.
-- key_players_away: key players for {away} to watch. Empty list [] if not found.
+- form_home: last 5 results for {home_q}, most recent last. Empty list [] if not found.
+- form_away: last 5 results for {away_q}, most recent last. Empty list [] if not found.
+- key_players_home: key players for {home_q} to watch. Empty list [] if not found.
+- key_players_away: key players for {away_q} to watch. Empty list [] if not found.
 - Use null for unknown values, empty list [] if no items found. Do not fabricate.
 - Only include form/key_players if explicitly mentioned in the search results."""
 

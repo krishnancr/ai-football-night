@@ -225,11 +225,10 @@ def test_merge_context_no_base_uses_extracted_tier3():
 
 def test_load_base_context_finds_vs_named_file(tmp_path, monkeypatch):
     """The real base files are named with '-vs-'; the loader must find them."""
-    import json as _json
     base_dir = tmp_path / "runs" / "base"
     base_dir.mkdir(parents=True)
     (base_dir / "wc_korea-republic-vs-czechia_base.json").write_text(
-        _json.dumps({"h2h_summary": "KR leads", "form_home": ["W", "W"]})
+        json.dumps({"h2h_summary": "KR leads", "form_home": ["W", "W"]})
     )
     monkeypatch.chdir(tmp_path)
     from research import load_base_context

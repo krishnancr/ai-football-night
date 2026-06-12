@@ -14,8 +14,6 @@ _SEARCH_NAME = {
     "Türkiye": "Turkey",
     "Cabo Verde": "Cape Verde",
     "Czechia": "Czech Republic",
-    "IR Iran": "Iran",
-    "China PR": "China",
 }
 
 # Reverse: any incoming alias -> FIFA canonical. Built from _SEARCH_NAME.
