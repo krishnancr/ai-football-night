@@ -43,3 +43,24 @@ def test_call_llm_records_usage_tokens():
     assert council_cli.LAST_USAGE["prompt_tokens"] == 100
     assert council_cli.LAST_USAGE["completion_tokens"] == 200
     assert council_cli.LAST_USAGE["calls"] == 1
+
+
+def test_call_llm_captures_reasoning_trace():
+    import council_cli
+    fake = MagicMock()
+    fake.choices = [MagicMock(message=MagicMock(content="ok", reasoning="step1: home advantage. step2: 2-1."))]
+    with patch.object(council_cli.client.chat.completions, "create", return_value=fake):
+        council_cli.call_llm("sys", "usr", model="x", reasoning_effort="medium")
+    assert council_cli.LAST_REASONING["text"] == "step1: home advantage. step2: 2-1."
+
+
+def test_call_llm_reasoning_none_when_absent():
+    import council_cli
+    fake = MagicMock()
+    msg = MagicMock(content="ok")
+    # simulate a message with NO reasoning attribute
+    del msg.reasoning
+    fake.choices = [MagicMock(message=msg)]
+    with patch.object(council_cli.client.chat.completions, "create", return_value=fake):
+        council_cli.call_llm("sys", "usr", model="x")
+    assert council_cli.LAST_REASONING["text"] is None

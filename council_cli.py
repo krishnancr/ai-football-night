@@ -25,6 +25,7 @@ client = OpenAI(
 )
 
 LAST_USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "calls": 0}
+LAST_REASONING = {"text": None}
 
 def load_personas():
     """Load all available persona configurations"""
@@ -59,6 +60,7 @@ def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "lla
             LAST_USAGE["prompt_tokens"] += pt
             LAST_USAGE["completion_tokens"] += ct
             LAST_USAGE["calls"] += 1
+    LAST_REASONING["text"] = getattr(resp.choices[0].message, "reasoning", None)
     return resp.choices[0].message.content
 
 def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
@@ -83,6 +85,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "proposal",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 2: Cross-critiques
@@ -106,6 +109,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "critique",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 3: Rebuttals
@@ -130,6 +134,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "rebuttal",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 4: Judge's decision
@@ -166,14 +171,16 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
         "model": judge_config['model'],
         "type": "decision",
         "content": judge_raw,
+        "reasoning": LAST_REASONING["text"],
     })
-    
+
     return {
         "timestamp": datetime.utcnow().isoformat(),
         "persona_set": {k: v['model'] for k, v in persona_set.items()},
         "idea": idea,
         "constraints": constraints,
         "decision": decision,
+        "debate_transcript": debate_transcript,
         "full_debate": {
             "proposals": proposals,
             "cross_critiques": cross_critiques,

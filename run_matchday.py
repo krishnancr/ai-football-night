@@ -173,6 +173,17 @@ def main():
 
     run_path.write_text(json.dumps(result, indent=2))
     print(f"  Saved: {run_path}")
+
+    reasoning_entries = [
+        {k: e.get(k) for k in ("round", "role", "model", "reasoning")}
+        for e in result.get("debate_transcript", [])
+        if e.get("reasoning")
+    ]
+    if reasoning_entries:
+        reasoning_path = run_path.parent / f"wc_{slug}_reasoning.json"
+        reasoning_path.write_text(json.dumps(reasoning_entries, indent=2, ensure_ascii=False))
+        print(f"  🧠 saved {len(reasoning_entries)} reasoning traces → {reasoning_path.name}")
+
     if result["pundit_predictions"]:
         preds = ", ".join(f"{r} {p['home_goals']}-{p['away_goals']}" for r, p in result["pundit_predictions"].items())
         print(f"  Pundit calls: {preds}")
