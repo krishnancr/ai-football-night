@@ -92,6 +92,7 @@ _SEARCH_NAME = {
     "Korea Republic": "South Korea",
     "Türkiye": "Turkey",
     "Cabo Verde": "Cape Verde",
+    "Czechia": "Czech Republic",
 }
 
 
