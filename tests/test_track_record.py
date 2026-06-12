@@ -139,3 +139,22 @@ def test_leader_does_not_get_sack_zone_warning():
     from track_record import format_track_record_block
     block = format_track_record_block("Stat_Bot", _records_two_pundits())
     assert "SACK ZONE" not in block
+
+
+def test_build_track_records_ignores_reasoning_sidecar(tmp_path):
+    """A *_reasoning.json sidecar (a JSON list) must not crash track-record building."""
+    import json
+    from pathlib import Path
+    from track_record import build_track_records
+    day = tmp_path / "2026-06-12"
+    day.mkdir()
+    # a reasoning sidecar is a LIST, not a run dict — must be skipped, not crash
+    (day / "wc_a-vs-b_reasoning.json").write_text(json.dumps([{"role": "Stat_Bot", "reasoning": "x"}]))
+    # a real run with predictions + actual still scores fine
+    (day / "wc_a-vs-b.json").write_text(json.dumps({
+        "match_string": "A vs B",
+        "pundit_predictions": {"Stat_Bot": {"home_goals": 2, "away_goals": 1}},
+        "actual": {"home_goals": 2, "away_goals": 1, "result": "home_win"},
+    }))
+    records = build_track_records(runs_dir=tmp_path)
+    assert records["Stat_Bot"]["correct_result"] == 1
