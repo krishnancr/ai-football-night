@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["D", "W", "W", "W", "D"],
-  "form_away": ["L", "W", "D", "L", "W"],
+  "form_home": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Achraf Hakimi (right back / captain)",
     "Brahim Diaz (attacking midfielder)",
@@ -41,5 +53,29 @@
     "Dangerous pace and directness on the counter-attack via Isidor and Nazon",
     "Compact defensive structure capable of frustrating stronger opponents",
     "High motivation and underdog mentality returning to the World Cup after 52 years"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 7,
+    "elo": 1755,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 83,
+    "elo": 1293,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 2,
+      "L": 1,
+      "GF": 9,
+      "GA": 6
+    }
+  }
 }

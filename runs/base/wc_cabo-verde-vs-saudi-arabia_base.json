@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "D", "L", "D"],
-  "form_away": ["W", "L", "D", "W", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "D",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Dailon Livramento (forward/striker)",
     "Ryan Mendes (captain, winger)",
@@ -41,5 +53,29 @@
     "Experienced international players with World Cup pedigree, led by the clinical Salem Al-Dawsari",
     "Organised defensive structure and disciplined shape that is hard to break down",
     "Wide threat through overlapping full-back Saud Abdulhamid and fast wingers on the counter"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 67,
+    "elo": 1371,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 61,
+    "elo": 1424,
+    "qual": {
+      "P": 12,
+      "W": 4,
+      "D": 5,
+      "L": 3,
+      "GF": 10,
+      "GA": 10
+    }
+  }
 }

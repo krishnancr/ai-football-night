@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "W", "L", "L"],
-  "form_away": ["D", "L", "W", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Luis Diaz (left winger / Bayern Munich)",
     "James Rodriguez (attacking midfielder / captain)",
@@ -41,5 +53,29 @@
     "Highly organised and compact defensively — conceded only 7 goals in 10 qualifying matches",
     "Dangerous on the counter through Wissa's pace and Bakambu's experience and aerial presence",
     "Fresh motivation and team unity as a historic second World Cup appearance after a 52-year absence"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 13,
+    "elo": 1698,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 28,
+      "GA": 18
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 46,
+    "elo": 1474,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 1,
+      "L": 2,
+      "GF": 15,
+      "GA": 6
+    }
+  }
 }

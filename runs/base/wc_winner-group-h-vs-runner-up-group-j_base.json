@@ -16,8 +16,20 @@
       "Algeria 1-2 Germany (AET) - FIFA World Cup Round of 16 - 2014 (Algeria's best WC run)"
     ]
   },
-  "form_home": ["W", "D", "D", "W", "D"],
-  "form_away": ["W", "D", "W", "L", "W"],
+  "form_home": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Lamine Yamal (right winger, 18-year-old Barcelona star)",
     "Rodri (central midfielder, Ballon d'Or 2024, midfield anchor)",

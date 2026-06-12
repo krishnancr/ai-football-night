@@ -15,8 +15,20 @@
       "Mexico 2-1 Korea Republic - FIFA World Cup Group Stage - 2026"
     ]
   },
-  "form_home": ["W", "W", "W", "D", "W"],
-  "form_away": ["L", "L", "W", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Santiago Gimenez (striker, AC Milan)",
     "Edson Alvarez (defensive midfielder, Fenerbahce, captain)",
@@ -45,5 +57,22 @@
     "Son Heung-min's world-class individual quality and leadership as captain",
     "Kim Min-jae providing a formidable defensive foundation from Bayern Munich",
     "Unbeaten Asian qualifying campaign with a disciplined vertical pressing system"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 14,
+    "elo": 1687,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 25,
+    "elo": 1592,
+    "qual": {
+      "P": 10,
+      "W": 6,
+      "D": 4,
+      "L": 0,
+      "GF": 20,
+      "GA": 7
+    }
+  }
 }

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "D", "D", "W"],
-  "form_away": ["L", "L", "L", "W", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "L",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Moisés Caicedo (defensive midfielder, Chelsea)",
     "Willian Pacho (centre-back, PSG)",
@@ -41,5 +53,29 @@
     "Qualification pedigree — unbeaten through CONCACAF rounds with collective, disciplined defending",
     "Dutch football DNA with several players experienced in European leagues (Premier League, EFL Championship)",
     "Experienced goalkeeper Eloy Room with 71 caps providing stability at the back"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 23,
+    "elo": 1599,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 8,
+      "L": 2,
+      "GF": 14,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 82,
+    "elo": 1295,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 13,
+      "GA": 3
+    }
+  }
 }

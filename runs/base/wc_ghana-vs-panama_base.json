@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["D", "L", "L", "L", "W"],
-  "form_away": ["D", "W", "D", "L", "D"],
+  "form_home": [
+    "D",
+    "L",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "D",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Antoine Semenyo (winger, Manchester City)",
     "Inaki Williams (striker, Athletic Club)",
@@ -41,5 +53,29 @@
     "League-leading defensive organisation and pressing intensity from CONCACAF qualifying — Panama went unbeaten in their final 12 competitive qualifiers",
     "Physicality and combative style well-suited to the pressures of a World Cup group-stage battle against fellow underdogs",
     "Experienced leadership through record appearance-holder Anibal Godoy (157 caps) and proven goal-scorer Jose Fajardo (17 international goals)"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 73,
+    "elo": 1347,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 23,
+      "GA": 6
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 34,
+    "elo": 1539,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 9,
+      "GA": 4
+    }
+  }
 }

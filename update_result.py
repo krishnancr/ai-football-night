@@ -68,7 +68,7 @@ def compute_tournament_accuracy(runs_dir: Path = Path("runs")) -> dict:
     """Scan all wc_*.json files with 'actual' field and return aggregate accuracy."""
     results = {"total": 0, "correct_scoreline": 0, "correct_result": 0}
     for path in sorted(runs_dir.glob("wc_*.json")):
-        if path.name.endswith("_context.json") or path.name.endswith("_thread.json"):
+        if path.name.endswith(("_context.json", "_thread.json", "_reasoning.json")):
             continue
         try:
             run = json.loads(path.read_text())

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "L", "L", "W"],
-  "form_away": ["W", "D", "D", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Son Heung-min (captain / left winger)",
     "Kim Min-jae (centre-back)",
@@ -41,5 +53,29 @@
     "Elite defensive organisation and resilience — proven ability to grind results under pressure",
     "Devastating set-piece threat; scored 11 of 22 qualifying goals from dead balls",
     "Strong club chemistry with 10 Slavia Prague players forming a cohesive defensive block"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 25,
+    "elo": 1592,
+    "qual": {
+      "P": 10,
+      "W": 6,
+      "D": 4,
+      "L": 0,
+      "GF": 20,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 40,
+    "elo": 1506,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 1,
+      "L": 2,
+      "GF": 18,
+      "GA": 8
+    }
+  }
 }

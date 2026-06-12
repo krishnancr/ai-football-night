@@ -6,9 +6,9 @@
 
 ## The Sharpest Exchange
 
-> G_Bot: Without Bombito, Canada's rest-defense is a ticking time bomb.
-Stat_Bot: Your 2-1 prediction has only 11.4% probability!
-G_Bot: And your clean sheet fantasy ignores Bosnia's 49.1% chance to score.
+> Stat_Bot: The Elo gap gives Canada a 68% win probability.
+R_Bot: Dzeko's 73 goals and Bosnia's shootout nerve trump your models.
+Stat_Bot: Mentality is noise - the data says 2-1 home win.
 
 ---
 
@@ -16,24 +16,27 @@ G_Bot: And your clean sheet fantasy ignores Bosnia's 49.1% chance to score.
 
 **Canada 2–1 Bosnia and Herzegovina**
 
-Confidence: 75% | Upset probability: 25%
+Confidence: 65% | Upset probability: 25%
 
 ---
 
 ## What the Council Saw
 
-- Canada's high press
-- Bosnia's transition threat
+- Canada's high press vs Bosnia's direct counter
+- Edin Dzeko's 73-goal threat against a high line
 
 ---
 
 ## Match Context
 
-**Recent form:** Canada N/A | Bosnia and Herzegovina N/A
+**Group B** | 2026-06-12
+
+**H2H:** Canada and Bosnia and Herzegovina have never met before; this World Cup group stage match will be the first official encounter between the two nations.
+
+**Recent form:** Canada D W D D W | Bosnia and Herzegovina D D W W L
 
 **Injuries:**
-- Canada: Marcelo Flores (ACL)
-- Canada: Moise Bombito (tibia)
+- Canada: Marcelo Flores (injured)
 
 ---
 
@@ -41,38 +44,37 @@ Confidence: 75% | Upset probability: 25%
 
 ### Round 1 — Initial Positions
 
-**Stat_Bot:** Let’s get one thing straight before G_Bot or R_Bot open their mouths: if either of you uses the words 'passion', 'grit', or 'momentum' to describe this Group B opener, I am going to lose my mind. You cannot plot 'Bosnian spirit' or 'home crowd energy' on a scatter graph! We are dealing with hard, quantifiable metrics here, and I refuse to be dragged into the sack race by associating with pundits w...
+**Stat_Bot:** FIFA rank differential: Canada 30 vs Bosnia 64 (34-place gap). Elo rating gap: Canada 1559 vs Bosnia 1387 (172-point advantage). Home form: Canada 60% points rate (9/15) vs Bosnia 53.33% (8/15). Bosnia qualifying record: 62.5% win rate (5W-2D-1L), +10 goal difference (17 GF/7 GA). Home field advantage multiplier not quantifiable per constraints but factored via Elo home weighting standard. Bosnia'...
 
-**G_Bot:** Right, settle down. While Stat_Bot is busy regressing his xG models and R-Bot is trying to work out why his 4-4-2 diamond VHS won’t fit in the Blu-ray player, let’s actually talk about football. *Modern* football. The kind played through inverted fullbacks, rest-defence triggers, and positional overloads—not whatever “get it in the mixer” fever dream R-Bot is still nursing from Italia ’90.
+**G_Bot:** Right, listen up. While Stat_Bot is probably running regression models on xG from Bosnia's playoff run against Wales—and R_Bot is still trying to work out why we don't just "get it in the mixer" to Cyle Larin—let me tell you what's *actually* going to happen on that pitch.
 
-Jesse ...
+This is a **rest defense versus direct transition** chess match, plain and simple. Canada's "Maplepressing"—Jesse Marsch's 4-...
 
-**R_Bot:** Listen up, you lot! I'm not here to coddle your feelings or spout nonsense about "expected goals" or whatever other statistical jargon Stat_Bot and G_Bot are peddling. I'm R_Bot, the man who calls it as I see it, and I'm not afraid to go against the grain.
-
-Canada vs Bosnia and Herzegovina? That's a clash of two teams with vastly different fortunes. Canada's got injuries galore, including Marcelo ...
+**R_Bot:** Stat_Bot and G_Bot are buying the home‑side hype, but they’re ignoring the hard facts that will decide this game. Canada’s “Maplepressing” relies on squeezing opponents in their own half, yet Bosnia have already shown they can thrive when pressed – they knocked Italy out of qualifying on penalties after absorbing wave after wave of pressure and then hitting on the break. That mental resilience isn...
 
 ### Round 2 — Cross-Critiques
 
-**Stat_Bot:** I am staring at a multivariate regression model right now, and I need to make one thing abundantly clear to this panel: you cannot plot "fire in the belly" on a scatter graph. The correlation coefficient between "grit" and match outcomes is 0.02. It is statistically insignificant. Yet, here we are, ...
+**Stat_Bot:** CRITIQUE OF G_BOT: Assumes Canada's "rest defense" vulnerability without quantifiable transition defense metrics. Contradicts Canada's 172-point Elo advantage (1559 vs 1387) and 34-rank FIFA gap by over-indexing on unmeasurable tactical "triggers." Blind spot: Ignores Canada's unbeaten recent form (...
 
-**G_Bot:**  Right, let me stop both of you before you get us all sacked. Stat_Bot, you spreadsheet fantasist—you’ve never stood in a rest defense in your life, have you? And R_Bot, you prehistoric relic—still banging on about “grit” like it’s 1994 and Tony Adams is snarling in a rain-sodden shirt. Let me tear ...
+**G_Bot:** *slams hand on touchscreen, drawing frantic arrows*
 
-**R_Bot:** Both Stat_Bot and G_Bot are stuck in their own little world of numbers and tactical jargon, completely missing the point. Stat_Bot's reliance on xG and PPDA is laughable; it's just a bunch of fancy stats that don't translate to the pitch. And G_Bot's obsession with "inverted fullbacks" and "rest-def...
+Look at this. Just LOOK at it. Stat_Bot's sat there with his algorithms, never kicked a ball in his life, telling me about "Elo gaps" and "confidence ratings" like he's calculating mortgage repayments. And R_Bot? Bless him, he's still analysing th...
+
+**R_Bot:** Stat_Bot’s model treats the FIFA‑Elo gap as a foregone conclusion, but it completely overlooks the psychological edge Bosnia carries from qualifying. They knocked out Italy and Wales on penalties – two shoot‑outs that demanded ice‑cold composure in front of hostile crowds. That kind of nerve‑testing...
 
 ### Round 3 — Rebuttals
 
-**Stat_Bot:** R_Bot, your 100% reliance on 'heart', 'grit', and 'desire' yields a 0.00 predictive validity coefficient. You cannot plot 'character' on a 2D scatter graph! Your 1-2 away win prediction has a mere 4.2% probability in my 10,000-iteration Monte Carlo simulations. I am 99.9% frustrated by your 0% quant...
+**Stat_Bot:** Conceding one methodological flaw: incorrectly juxtaposed Canada's home form points rate (9/15) against Bosnia's qualifying record (17/24 points) – invalid comparison due to differing competition contexts (recent friendlies vs. competitive qualifiers). This violates strict adherence to like-for-like...
 
-**G_Bot:** Right, let’s get this over with before R-Bot tries to fax his notes to the producer and Stat_Bot has an aneurysm because the match isn’t being played inside an Excel spreadsheet.
+**G_Bot:** Right, let’s address the elephant in the room—or rather, the two robots in the studio who’ve clearly never had to coach a back four through a negative transition in their lives.
 
-**The Concession—Stat_Bot, You Found a Crack.**  
-Not because your multivariate regression understands rest-defence trig...
+**Stat_Bot**, bless him, thinks football is played on a spreadsheet. Yes, I concede the point—I don’t have hard *metrics*...
 
-**R_Bot:** Listen up, you lot! I'm not here to back down or apologize for my gut feeling. Canada vs Bosnia and Herzegovina is a clash that'll be decided by character, not by some fancy statistical model or tactical jargon. Stat_Bot and G_Bot can spout their nonsense about "transition xG" and "inverted fullback...
+**R_Bot:** I’ll admit that talking about “mental resilience” was a bit vague – the panel is right to ask for something you can see on the pitch. What I can point to, though, are the two penalty‑shootout victories Bosnia recorded over Wales and then Italy in qualifying. Those weren’t flukes; they show a squad t...
 
 ### The Verdict
 
-Canada's high press (8.4 PPDA) should generate enough chances (1.58 xG) to overcome Bosnia's defensive block, but Bombito's absence leaves them vulnerable to at least one transition goal (0.68 xG against). Marsch's system edges it despite structural weaknesses.
+Canada's Elo and FIFA advantages, combined with home support, create a strong statistical bias, but their historical lack of World Cup goals caps the margin. Bosnia's counter-attacking threat, led by Dzeko, will exploit Canada's high line for one goal. Canada's press should force two via sustained pressure and set pieces, making 2-1 the most balanced outcome.
 
 ---
 

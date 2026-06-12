@@ -13,8 +13,20 @@
       "0-1 (Tunisia win) - International Friendly - 2003"
     ]
   },
-  "form_home": ["W", "W", "D", "L", "L"],
-  "form_away": ["L", "L", "D", "W", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "D",
+    "W",
+    "D"
+  ],
   "key_players_home": [
     "Viktor Gyokeres (striker)",
     "Alexander Isak (striker)",
@@ -43,5 +55,29 @@
     "Exceptional defensive organisation — conceded zero goals in 10 World Cup qualifying matches",
     "Experienced defensive midfield anchor in Ellyes Skhiri who controls tempo and ball recovery",
     "Proven ability to upset stronger opponents (beat France 1-0 at 2022 WC; held West Germany 0-0 in 1978)"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 45,
+    "elo": 1476,
+    "qual": {
+      "P": 10,
+      "W": 9,
+      "D": 1,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  }
 }

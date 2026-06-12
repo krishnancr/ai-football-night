@@ -15,17 +15,15 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from tavily import TavilyClient
 
+import teams
+
 load_dotenv()
 
 
-def slugify(text: str) -> str:
-    return text.lower().replace(" ", "-").replace("'", "").replace(".", "")
-
-
 def load_base_context(home: str, away: str) -> dict:
-    """Load pre-scraped base context if it exists."""
-    slug = f"{slugify(home)}-{slugify(away)}"
-    base_path = Path("runs/base") / f"wc_{slug}_base.json"
+    """Load pre-scraped base context if it exists. Keyed via teams.py so the
+    '-vs-' filename convention and name aliases can't break the join."""
+    base_path = Path("runs/base") / teams.base_filename(home, away)
     if base_path.exists():
         return json.loads(base_path.read_text())
     return {}
@@ -43,10 +41,11 @@ def research_daily(match_string: str) -> dict:
 
     tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
+    home_q, away_q = teams.search(home), teams.search(away)
     queries = [
-        f"{home} {away} World Cup 2026 betting odds",
-        f"{home} {away} injuries squad news World Cup 2026",
-        f"{home} vs {away} World Cup 2026 preview prediction",
+        f"{home_q} {away_q} World Cup 2026 betting odds",
+        f"{home_q} {away_q} injuries squad news World Cup 2026",
+        f"{home_q} vs {away_q} World Cup 2026 preview prediction",
     ]
 
     search_results = []
@@ -117,6 +116,8 @@ def merge_context(base: dict, extracted: dict, home: str, away: str) -> dict:
         "strengths_away": base.get("strengths_away"),
         "team_style_home": base.get("team_style_home"),
         "team_style_away": base.get("team_style_away"),
+        "stats_home": base.get("stats_home"),
+        "stats_away": base.get("stats_away"),
         # Tier 2 — always live (null/empty if not found)
         "injuries_home": extracted.get("injuries_home") or [],
         "injuries_away": extracted.get("injuries_away") or [],
@@ -153,6 +154,10 @@ def validate_context(ctx: dict, base: dict) -> tuple:
     else:
         quality = "degraded"
 
+    if quality == "degraded":
+        print(f"  ❌ RESEARCH DEGRADED for {ctx.get('home_team')} vs {ctx.get('away_team')} "
+              f"— base loaded={bool(base)}, critical fields populated={populated}/4. "
+              f"Bots will debate near-blind.")
     ctx["research_quality"] = quality
     return ctx, quality
 
@@ -163,6 +168,7 @@ def research_match(match_string: str) -> dict:
     if len(parts) != 2:
         raise ValueError(f"Match string must be 'Team A vs Team B', got: {match_string}")
     home, away = parts[0].strip(), parts[1].strip()
+    home_q, away_q = teams.search(home), teams.search(away)
 
     base = load_base_context(home, away)
     if base:
@@ -177,9 +183,9 @@ def research_match(match_string: str) -> dict:
     if not base:
         tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
         for query in [
-            f"{home} vs {away} head to head history football",
-            f"{home} recent form results 2025 2026",
-            f"{away} recent form results 2025 2026",
+            f"{home_q} vs {away_q} head to head history football",
+            f"{home_q} recent form results 2025 2026",
+            f"{away_q} recent form results 2025 2026",
         ]:
             try:
                 result = tavily.search(query, max_results=3, search_depth="basic")
@@ -194,7 +200,7 @@ def research_match(match_string: str) -> dict:
             except Exception as e:
                 search_results.append({"query": query, "results": [], "error": str(e)})
 
-    extraction_prompt = f"""You are extracting structured facts from football news snippets about {home} vs {away}.
+    extraction_prompt = f"""You are extracting structured facts from football news snippets about {home_q} vs {away_q}.
 
 Search results:
 {json.dumps(search_results, indent=2)}
@@ -211,14 +217,14 @@ Extract ONLY the following fields. Return ONLY valid JSON, no prose:
   "key_players_away": ["Name (role)"]
 }}
 Rules:
-- injuries_home: confirmed injuries for {home}. Empty list [] if none found.
-- injuries_away: confirmed injuries for {away}. Empty list [] if none found.
+- injuries_home: confirmed injuries for {home_q}. Empty list [] if none found.
+- injuries_away: confirmed injuries for {away_q}. Empty list [] if none found.
 - odds: decimal odds or null for each value
 - recent_news: null if nothing notable
-- form_home: last 5 results for {home}, most recent last. Empty list [] if not found.
-- form_away: last 5 results for {away}, most recent last. Empty list [] if not found.
-- key_players_home: key players for {home} to watch. Empty list [] if not found.
-- key_players_away: key players for {away} to watch. Empty list [] if not found.
+- form_home: last 5 results for {home_q}, most recent last. Empty list [] if not found.
+- form_away: last 5 results for {away_q}, most recent last. Empty list [] if not found.
+- key_players_home: key players for {home_q} to watch. Empty list [] if not found.
+- key_players_away: key players for {away_q} to watch. Empty list [] if not found.
 - Use null for unknown values, empty list [] if no items found. Do not fabricate.
 - Only include form/key_players if explicitly mentioned in the search results."""
 

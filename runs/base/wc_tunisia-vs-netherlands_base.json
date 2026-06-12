@@ -15,8 +15,20 @@
       "Netherlands 1-1 Tunisia - Friendly - 2009"
     ]
   },
-  "form_home": ["L", "L", "D", "W", "L"],
-  "form_away": ["W", "L", "W", "D", "D"],
+  "form_home": [
+    "L",
+    "L",
+    "D",
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Ellyes Skhiri (midfield anchor / captain)",
     "Hannibal Mejbri (creative midfielder)",
@@ -45,5 +57,29 @@
     "World-class defensive core led by Virgil van Dijk, one of the best defenders in the world",
     "Prolific attack with Memphis Depay (all-time Dutch top scorer) and Cody Gakpo providing cutting edge",
     "Deep squad with Premier League and Champions League experience across multiple positions"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 45,
+    "elo": 1476,
+    "qual": {
+      "P": 10,
+      "W": 9,
+      "D": 1,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  }
 }

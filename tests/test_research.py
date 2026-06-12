@@ -221,3 +221,37 @@ def test_merge_context_no_base_uses_extracted_tier3():
     assert ctx["form_home"] == ["W", "L", "W"]
     assert ctx["key_players_away"] == ["Player B (keeper)"]
     assert ctx["h2h_summary"] is None   # base was empty
+
+
+def test_load_base_context_finds_vs_named_file(tmp_path, monkeypatch):
+    """The real base files are named with '-vs-'; the loader must find them."""
+    base_dir = tmp_path / "runs" / "base"
+    base_dir.mkdir(parents=True)
+    (base_dir / "wc_korea-republic-vs-czechia_base.json").write_text(
+        json.dumps({"h2h_summary": "KR leads", "form_home": ["W", "W"]})
+    )
+    monkeypatch.chdir(tmp_path)
+    from research import load_base_context
+    base = load_base_context("Korea Republic", "Czechia")
+    assert base["h2h_summary"] == "KR leads"
+    assert base["form_home"] == ["W", "W"]
+
+
+def test_validate_context_logs_loudly_when_degraded(capsys):
+    from research import validate_context
+    ctx = {"form_home": [], "form_away": [], "key_players_home": [], "key_players_away": []}
+    out_ctx, quality = validate_context(ctx, base={})
+    assert quality == "degraded"
+    captured = capsys.readouterr()
+    assert "DEGRADED" in captured.out  # visible, not silent
+
+
+def test_merge_context_passes_stats_blocks_from_base():
+    from research import merge_context
+    base = {
+        "stats_home": {"fifa_rank": 23, "elo": 1789, "qual": {"P": 10, "W": 7, "D": 2, "L": 1, "GF": 22, "GA": 8}},
+        "stats_away": {"fifa_rank": 40, "elo": 1650, "qual": {"P": 10, "W": 5, "D": 2, "L": 3, "GF": 15, "GA": 12}},
+    }
+    ctx = merge_context(base, extracted={}, home="Korea Republic", away="Czechia")
+    assert ctx["stats_home"]["elo"] == 1789
+    assert ctx["stats_away"]["qual"]["GF"] == 15

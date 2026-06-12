@@ -24,17 +24,25 @@ client = OpenAI(
     api_key=os.getenv("COUNCIL_API_KEY") or os.getenv("OLLAMA_API_KEY", "ollama"),
 )
 
+LAST_USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "calls": 0}
+LAST_REASONING = {"text": None}
+
 def load_personas():
     """Load all available persona configurations"""
     personas_path = Path(__file__).parent / "personas.json"
     with open(personas_path) as f:
         return json.load(f)
 
-def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "llama3.2:1b", model_fallback: str = None) -> str:
-    """Call LLM with specified model. If model_fallback is set, OpenRouter tries it automatically on failure."""
+def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "llama3.2:1b",
+             model_fallback: str = None, reasoning_effort: str = None) -> str:
+    """Call LLM. model_fallback → OpenRouter auto-retries the second model.
+    reasoning_effort ('low'|'medium'|'high') → enables reasoning via OpenRouter."""
     extra = {}
     if model_fallback:
-        extra["extra_body"] = {"models": [model, model_fallback]}
+        extra["models"] = [model, model_fallback]
+    if reasoning_effort:
+        extra["reasoning"] = {"effort": reasoning_effort}
+    kwargs = {"extra_body": extra} if extra else {}
     resp = client.chat.completions.create(
         model=model,
         messages=[
@@ -42,8 +50,17 @@ def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "lla
             {"role": "user", "content": user},
         ],
         temperature=temperature,
-        **extra,
+        **kwargs,
     )
+    usage = getattr(resp, "usage", None)
+    if usage:
+        pt = getattr(usage, "prompt_tokens", 0)
+        ct = getattr(usage, "completion_tokens", 0)
+        if isinstance(pt, int) and isinstance(ct, int):
+            LAST_USAGE["prompt_tokens"] += pt
+            LAST_USAGE["completion_tokens"] += ct
+            LAST_USAGE["calls"] += 1
+    LAST_REASONING["text"] = getattr(resp.choices[0].message, "reasoning", None)
     return resp.choices[0].message.content
 
 def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
@@ -60,7 +77,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
     proposals = {}
     for role, config in roles.items():
         print(f"[Round 1] {role} ({config['model']}) proposing...")
-        content = call_llm(config['system'], prompt, temperature=0.6, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], prompt, temperature=0.6, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         proposals[role] = content
         debate_transcript.append({
             "round": 1,
@@ -68,6 +85,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "proposal",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 2: Cross-critiques
@@ -83,7 +101,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             f"Provide specific critiques addressing: assumptions, risks, blind spots, and contradictions."
         )
         print(f"[Round 2] {role} ({config['model']}) critiquing others...")
-        content = call_llm(config['system'], critique_prompt, temperature=0.4, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], critique_prompt, temperature=0.4, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         cross_critiques[role] = content
         debate_transcript.append({
             "round": 2,
@@ -91,6 +109,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "critique",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 3: Rebuttals
@@ -107,7 +126,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             f"Respond: concede weak points, defend strong points, refine your proposal if needed."
         )
         print(f"[Round 3] {role} ({config['model']}) rebutting critiques...")
-        content = call_llm(config['system'], rebuttal_prompt, temperature=0.5, model=config['model'], model_fallback=config.get('model_fallback'))
+        content = call_llm(config['system'], rebuttal_prompt, temperature=0.5, model=config['model'], model_fallback=config.get('model_fallback'), reasoning_effort=config.get('reasoning_effort'))
         rebuttals[role] = content
         debate_transcript.append({
             "round": 3,
@@ -115,6 +134,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
             "model": config['model'],
             "type": "rebuttal",
             "content": content,
+            "reasoning": LAST_REASONING["text"],
         })
     
     # Round 4: Judge's decision
@@ -128,7 +148,7 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
         f"Make a final decision. Output valid JSON with: decision, rationale, confidence (0-1), next_actions (list)."
     )
     print(f"[Round 4] K_Bot ({judge_config['model']}) making final decision...")
-    judge_raw = call_llm(judge_config['system'], judge_prompt, temperature=0.05, model=judge_config['model'], model_fallback=judge_config.get('model_fallback'))
+    judge_raw = call_llm(judge_config['system'], judge_prompt, temperature=0.05, model=judge_config['model'], model_fallback=judge_config.get('model_fallback'), reasoning_effort=judge_config.get('reasoning_effort'))
     
     # Parse decision
     try:
@@ -151,14 +171,16 @@ def run_council(idea: str, constraints: str, persona_set: dict) -> dict:
         "model": judge_config['model'],
         "type": "decision",
         "content": judge_raw,
+        "reasoning": LAST_REASONING["text"],
     })
-    
+
     return {
         "timestamp": datetime.utcnow().isoformat(),
         "persona_set": {k: v['model'] for k, v in persona_set.items()},
         "idea": idea,
         "constraints": constraints,
         "decision": decision,
+        "debate_transcript": debate_transcript,
         "full_debate": {
             "proposals": proposals,
             "cross_critiques": cross_critiques,

@@ -4,9 +4,9 @@
 
 ## Tweet 1 (copy below the line, attach the card)
 ---
-Stat_Bot: My model shows Paraguay's attack is statistically neutered without Enciso
+Stat_Bot: Paraguay's 0.56 GA/game is impressive but USA's 2.0 GF/game is decisive.
 
-United States 2–1 Paraguay — the panel's verdict (82%)
+United States 2–0 Paraguay — the panel's verdict (75%)
 
 Full debate: https://krishnancr.github.io/ai-football-night/matches/united-states-paraguay.html
 ---
@@ -17,9 +17,9 @@ Full debate: https://krishnancr.github.io/ai-football-night/matches/united-state
 ```
 💬 Stat_Bot:
 
-Stat_Bot: My model shows Paraguay's attack is statistically neutered without Enciso
-R_Bot: Stats don't measure Paraguayan hunger!
-Stat_Bot: Hunger has a 0.00 correlation coefficient with xG conversion
+Stat_Bot: Paraguay's 0.56 GA/game is impressive but USA's 2.0 GF/game is decisive.
+R_Bot: Friendlies don't count; World Cup pressure is different.
+Stat_Bot: Pressure doesn't change the math.
 
 [2/5]
 ```
@@ -28,7 +28,7 @@ Stat_Bot: Hunger has a 0.00 correlation coefficient with xG conversion
 ```
 📊 Stat_Bot:
 
-Hunger has a 0.00 correlation coefficient with xG conversion - this isn't a cooking show, R_Bot
+Paraguay's 0.78 GF/game means they score ≤1 goal in 89% of matches — and they're missing their top scorer.
 
 [3/5]
 ```
@@ -37,7 +37,7 @@ Hunger has a 0.00 correlation coefficient with xG conversion - this isn't a cook
 ```
 🔥 Most outrageous take:
 
-R_Bot claiming Paraguay's 'grit' will overcome a 316% xG overperformance requirement
+R_Bot insists Paraguay's compact 4-4-2 and counter-attacking will stun the home crowd with a 1-0 upset.
 
 [4/5]
 ```
@@ -46,7 +46,7 @@ R_Bot claiming Paraguay's 'grit' will overcome a 316% xG overperformance require
 ```
 ⚖️ Host's call:
 
-Stat_Bot has spreadsheets, G_Bot has touchlines, R_Bot has a time machine to 1994 - let's settle this.
+Stat_Bot dismissed Paraguay's stingy defense as 'qualification noise', G_Bot assumed Enciso's absence neuters the attack completely, and R_Bot bet on a 1-0 upset that defies the data — here is the final verdict.
 
 Full debate → link in bio
 

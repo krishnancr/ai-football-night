@@ -13,8 +13,20 @@
       "Senegal 2-1 Norway - Friendly - 2006"
     ]
   },
-  "form_home": ["W", "L", "D", "W", "D"],
-  "form_away": ["W", "L", "W", "W", "L"],
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Erling Haaland (striker)",
     "Martin Odegaard (attacking midfielder / captain)",
@@ -43,5 +55,29 @@
     "Experienced and well-organised defensive block anchored by Koulibaly",
     "Multiple attacking threats across the front three with Premier League pedigree",
     "Physical intensity and counter-attacking pace through Mane, Jackson and Sarr"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 31,
+    "elo": 1557,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 37,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 15,
+    "elo": 1684,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 3,
+      "L": 0,
+      "GF": 22,
+      "GA": 3
+    }
+  }
 }

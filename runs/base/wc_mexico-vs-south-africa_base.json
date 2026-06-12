@@ -13,8 +13,20 @@
       "1-1 - FIFA World Cup Group Stage - 2010"
     ]
   },
-  "form_home": ["W", "W", "W", "D", "D"],
-  "form_away": ["D", "L", "D", "L", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "D"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "D",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Santiago Gimenez (striker)",
     "Raul Jimenez (striker)",
@@ -43,5 +55,22 @@
     "Disciplined defensive organization conceding only 3 goals in last 10 qualifying matches",
     "Dangerous pace on the wings with Appollis and Mofokeng capable of exploiting space on the counter",
     "Captain Ronwen Williams is world-class in goal, proven under pressure at AFCON and qualifying"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 14,
+    "elo": 1687,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 60,
+    "elo": 1428,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 3,
+      "L": 2,
+      "GF": 15,
+      "GA": 9
+    }
+  }
 }

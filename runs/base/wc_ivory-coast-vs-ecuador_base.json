@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "W", "D", "W"],
-  "form_away": ["W", "D", "D", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Franck Kessie (central midfielder / captain)",
     "Amad Diallo (winger)",
@@ -41,5 +53,29 @@
     "Best defence in CONMEBOL qualifying — only five goals conceded in 18 matches",
     "Moises Caicedo as one of the world's elite defensive midfielders anchoring a disciplined shape",
     "Dangerous on the counter-attack with Valencia, Paez, and Gonzalo Plata providing the threat in transition"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 33,
+    "elo": 1541,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 25,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 23,
+    "elo": 1599,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 8,
+      "L": 2,
+      "GF": 14,
+      "GA": 5
+    }
+  }
 }

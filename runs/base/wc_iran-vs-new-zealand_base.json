@@ -14,8 +14,20 @@
       "New Zealand 0-0 Iran - International Friendly - 1973"
     ]
   },
-  "form_home": ["W", "L", "W", "L", "W"],
-  "form_away": ["L", "L", "L", "L", "D"],
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
   "key_players_home": [
     "Mehdi Taremi (captain / striker)",
     "Alireza Beiranvand (goalkeeper)",
@@ -44,5 +56,29 @@
     "Chris Wood's Premier League-proven goalscoring threat and aerial dominance",
     "Set-piece potency and physicality from a Europe-based defensive core",
     "OFC qualification dominance (6 wins, 24 goals, 2 conceded) providing team cohesion and confidence"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 20,
+    "elo": 1620,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 19,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 85,
+    "elo": 1276,
+    "qual": {
+      "P": 5,
+      "W": 5,
+      "D": 0,
+      "L": 0,
+      "GF": 29,
+      "GA": 1
+    }
+  }
 }

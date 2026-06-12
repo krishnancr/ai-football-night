@@ -13,8 +13,20 @@
       "Croatia 2-1 Colombia - International Friendly - 2026"
     ]
   },
-  "form_home": ["W", "W", "L", "L", "W"],
-  "form_away": ["W", "L", "L", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "L",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Luis Diaz (winger/forward)",
     "James Rodriguez (attacking midfielder/captain)",

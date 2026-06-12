@@ -16,8 +16,20 @@
       "2-1 (Turkey win) - International Friendly - 2025"
     ]
   },
-  "form_home": ["D", "W", "W", "W", "W"],
-  "form_away": ["W", "W", "L", "L", "W"],
+  "form_home": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Hakan Çalhanoğlu (captain, deep-lying playmaker, Inter Milan)",
     "Arda Güler (attacking midfielder / playmaker, Real Madrid)",
@@ -46,5 +58,22 @@
     "Home crowd advantage at SoFi Stadium provides a significant psychological and atmospheric edge",
     "Deep European-based squad with elite club experience through Pulisic, McKennie, Adams, and Balogun",
     "High-energy pressing system under Pochettino creates turnovers and generates attacking transitions"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 17,
+    "elo": 1671,
+    "qual": null
+  }
 }

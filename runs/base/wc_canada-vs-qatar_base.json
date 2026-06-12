@@ -14,8 +14,20 @@
       "3-1 Canada win - International Friendly - 2002"
     ]
   },
-  "form_home": ["D", "W", "D", "D", "W"],
-  "form_away": ["D", "L", "L", "D", "L"],
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "L",
+    "D",
+    "L"
+  ],
   "key_players_home": [
     "Alphonso Davies (left back / winger, captain, Bayern Munich)",
     "Jonathan David (striker, Juventus, Canada all-time leading scorer)",
@@ -44,5 +56,22 @@
     "Reigning two-time AFC Asian Cup champions with tournament experience",
     "Creative danger through Akram Afif in tight spaces",
     "Experienced squad coached by tactically sophisticated Julen Lopetegui"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 56,
+    "elo": 1450,
+    "qual": {
+      "P": 12,
+      "W": 5,
+      "D": 2,
+      "L": 5,
+      "GF": null,
+      "GA": null
+    }
+  }
 }

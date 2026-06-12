@@ -15,8 +15,20 @@
       "3-2 Spain win - Friendly - 2010"
     ]
   },
-  "form_home": ["W", "D", "W", "D", "W"],
-  "form_away": ["L", "W", "D", "L", "W"],
+  "form_home": [
+    "W",
+    "D",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Lamine Yamal (right winger)",
     "Rodri (defensive midfielder, captain)",
@@ -45,5 +57,29 @@
     "Proven ability to produce major upsets against top-ranked sides (Argentina 2022)",
     "Salem Al Dawsari's experience and match-winning individual quality",
     "Compact defensive organisation capable of frustrating possession-based teams"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 61,
+    "elo": 1424,
+    "qual": {
+      "P": 12,
+      "W": 4,
+      "D": 5,
+      "L": 3,
+      "GF": 10,
+      "GA": 10
+    }
+  }
 }

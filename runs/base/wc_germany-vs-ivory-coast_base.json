@@ -13,8 +13,20 @@
       "2-2 - International Friendly - 2009 (Podolski 2 vs Eboue, Doumbia)"
     ]
   },
-  "form_home": ["W", "W", "W", "W", "W"],
-  "form_away": ["W", "W", "W", "L", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Jamal Musiala (attacking midfielder)",
     "Florian Wirtz (attacking midfielder)",
@@ -43,5 +55,29 @@
     "Dominant physical midfield presence through Kessie and Sangare",
     "Electric wide attackers (Adingra, Amad Diallo) capable of exploiting space on the counter",
     "Defensive solidity and tournament momentum after beating France 2-1 in World Cup warm-up"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 10,
+    "elo": 1736,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 0,
+      "L": 1,
+      "GF": 16,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 33,
+    "elo": 1541,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 25,
+      "GA": 0
+    }
+  }
 }

@@ -14,8 +14,20 @@
       "Turkey 1-0 Australia - Friendly - 2004"
     ]
   },
-  "form_home": ["W", "W", "W", "L", "D"],
-  "form_away": ["W", "W", "W", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Mathew Ryan (goalkeeper, captain)",
     "Harry Souttar (centre-back)",
@@ -44,5 +56,29 @@
     "World-class creative talent in Güler and Yıldız",
     "Hakan Çalhanoğlu's experience, leadership and set-piece quality",
     "Strong qualifying form — won group with victories over Bulgaria and Georgia"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  }
 }

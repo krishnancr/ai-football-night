@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "W", "D", "W"],
-  "form_away": ["W", "D", "D", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Cristiano Ronaldo (striker)",
     "Bruno Fernandes (attacking midfielder)",
@@ -42,5 +54,29 @@
     "Organised and physically intense defensive structure under Desabre that frustrates attacking sides",
     "Deadly counter-attacking threat through Yoane Wissa's pace and Bakambu's experienced finishing",
     "High motivation and collective unity as a historic squad returning to the World Cup after 52 years with nothing to lose"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 5,
+    "elo": 1768,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 20,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 46,
+    "elo": 1474,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 1,
+      "L": 2,
+      "GF": 15,
+      "GA": 6
+    }
+  }
 }

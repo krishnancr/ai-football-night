@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["L", "W", "L", "L", "L"],
-  "form_away": ["W", "W", "W", "D", "W"],
+  "form_home": [
+    "L",
+    "W",
+    "L",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Chris Wood (striker / captain)",
     "Liberato Cacace (left back)",
@@ -41,5 +53,29 @@
     "World-class attacking quality with De Bruyne, Doku, Lukaku, and Trossard",
     "Excellent goalkeeper in Thibaut Courtois (two-time UEFA Champions League winner with Real Madrid)",
     "Strong squad depth and form — on a 13-match unbeaten run heading into the tournament"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 85,
+    "elo": 1276,
+    "qual": {
+      "P": 5,
+      "W": 5,
+      "D": 0,
+      "L": 0,
+      "GF": 29,
+      "GA": 1
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  }
 }

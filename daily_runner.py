@@ -15,6 +15,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import teams
+
 RUNS_DIR = Path("runs")
 GROUP_LETTERS = set("ABCDEFGHIJKL")
 KNOCKOUT_GROUPS = {"R32", "R16", "QF", "SF", "FINAL", "3RD"}
@@ -87,19 +89,6 @@ def _write_github_output(key: str, value: str) -> None:
             f.write(f"{key}={value}\n")
 
 
-# FIFA official names that sports media writes differently
-_SEARCH_NAME = {
-    "Korea Republic": "South Korea",
-    "Türkiye": "Turkey",
-    "Cabo Verde": "Cape Verde",
-    "Czechia": "Czech Republic",
-}
-
-
-def _search_team(name: str) -> str:
-    return _SEARCH_NAME.get(name, name)
-
-
 def fetch_match_result(match_string: str) -> tuple | None:
     """
     Search for the actual result of a played match using Tavily + LLM parsing.
@@ -118,7 +107,7 @@ def fetch_match_result(match_string: str) -> tuple | None:
         return None
 
     home, away = [t.strip() for t in match_string.split(" vs ")]
-    query = f"{_search_team(home)} vs {_search_team(away)} World Cup 2026 final score result"
+    query = f"{teams.search(home)} vs {teams.search(away)} World Cup 2026 final score result"
 
     try:
         tavily = TavilyClient(api_key=tavily_key)
@@ -214,7 +203,7 @@ def update_yesterday_results(date_str: str) -> int:
     # Find all dated run files (????-??-??/wc_*.json, not context/thread/summary/base)
     all_run_files = [
         f for f in RUNS_DIR.glob("????-??-??/wc_*.json")
-        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json"))
+        if not any(f.name.endswith(s) for s in ("_context.json", "_thread.json", "_reasoning.json"))
         and not f.name.endswith("_base.json")
     ]
 

@@ -72,12 +72,14 @@ def build_track_records_from_runs(runs: list) -> dict:
 def build_track_records(runs_dir: Path = Path("runs")) -> dict:
     runs = []
     for path in sorted(runs_dir.glob("????-??-??/wc_*.json")):
-        if path.name.endswith(("_context.json", "_thread.json")):
+        if path.name.endswith(("_context.json", "_thread.json", "_reasoning.json")):
             continue
         try:
-            runs.append(json.loads(path.read_text()))
+            data = json.loads(path.read_text())
         except Exception:
             continue
+        if isinstance(data, dict):  # defensive: only run dicts, never sidecar lists
+            runs.append(data)
     return build_track_records_from_runs(runs)
 
 

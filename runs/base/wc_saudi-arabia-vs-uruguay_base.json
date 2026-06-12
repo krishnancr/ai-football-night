@@ -14,8 +14,20 @@
       "1-1 (Draw) - International Friendly - 2014"
     ]
   },
-  "form_home": ["W", "W", "L", "L", "W"],
-  "form_away": ["W", "D", "L", "D", "D"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "L",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Salem Al-Dawsari (captain/winger, AFC Player of the Year 2025)",
     "Saud Abdulhamid (right-back, RC Lens)",
@@ -44,5 +56,29 @@
     "Elite midfield trio of Valverde, Ugarte and Bentancur dominating central areas",
     "Experienced and commanding centre-back partnership of Gimenez and Araujo",
     "Darwin Nunez's pace and physicality stretching defences in behind"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 61,
+    "elo": 1424,
+    "qual": {
+      "P": 12,
+      "W": 4,
+      "D": 5,
+      "L": 3,
+      "GF": 10,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 16,
+    "elo": 1673,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 22,
+      "GA": 12
+    }
+  }
 }

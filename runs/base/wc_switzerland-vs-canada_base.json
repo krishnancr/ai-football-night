@@ -13,8 +13,20 @@
       "1-3 (Canada win) - Friendly - 2002"
     ]
   },
-  "form_home": ["W", "L", "D", "W", "D"],
-  "form_away": ["W", "D", "W", "D", "D"],
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "W",
+    "D",
+    "D"
+  ],
   "key_players_home": [
     "Granit Xhaka (captain, central midfielder)",
     "Breel Embolo (striker)",
@@ -43,5 +55,22 @@
     "Playing at home in front of a passionate Canadian crowd at BC Place",
     "Jonathan David's prolific finishing — Canada's all-time leading scorer",
     "Alphonso Davies' explosive pace and direct threat on the left flank"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  }
 }

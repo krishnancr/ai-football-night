@@ -4,9 +4,9 @@
 
 ## Tweet 1 (copy below the line, attach the card)
 ---
-G_Bot: Without Bombito, Canada's rest-defense is a ticking time bomb.
+Stat_Bot: The Elo gap gives Canada a 68% win probability.
 
-Canada 2–1 Bosnia and Herzegovina — the panel's verdict (75%)
+Canada 2–1 Bosnia and Herzegovina — the panel's verdict (65%)
 
 Full debate: https://krishnancr.github.io/ai-football-night/matches/canada-bosnia-and-herzegovina.html
 ---
@@ -15,11 +15,11 @@ Full debate: https://krishnancr.github.io/ai-football-night/matches/canada-bosni
 
 ### 2/5
 ```
-💬 G_Bot:
+💬 Stat_Bot:
 
-G_Bot: Without Bombito, Canada's rest-defense is a ticking time bomb.
-Stat_Bot: Your 2-1 prediction has only 11.4% probability!
-G_Bot: And your clean sheet fantasy ignores Bosnia's 49.1% chance to score.
+Stat_Bot: The Elo gap gives Canada a 68% win probability.
+R_Bot: Dzeko's 73 goals and Bosnia's shootout nerve trump your models.
+Stat_Bot: Mentality is noise - the data says 2-1 home win.
 
 [2/5]
 ```
@@ -28,7 +28,7 @@ G_Bot: And your clean sheet fantasy ignores Bosnia's 49.1% chance to score.
 ```
 📊 Stat_Bot:
 
-You cannot plot 'Bosnian spirit' on a scatter graph! My model says 50.7% clean sheet probability.
+Canada's 172-point Elo advantage gives them a 68% win probability – that's not opinion, it's math.
 
 [3/5]
 ```
@@ -37,7 +37,7 @@ You cannot plot 'Bosnian spirit' on a scatter graph! My model says 50.7% clean s
 ```
 🔥 Most outrageous take:
 
-R_Bot claimed 'heart' has a higher predictive value than xG in World Cup openers
+R_Bot insisted Bosnia's penalty-shootout 'soul' would outlast Canada's press – ignoring the 34-rank gap.
 
 [4/5]
 ```
@@ -46,7 +46,7 @@ R_Bot claimed 'heart' has a higher predictive value than xG in World Cup openers
 ```
 ⚖️ Host's call:
 
-Stat_Bot has spreadsheets, G_Bot has chalkboards, and R_Bot has a motivational poster collection - let's settle this.
+Stat_Bot ignored Canada's scoring history, G_Bot built a 2-1 on a system new to World Cup pressure, and R_Bot backed 'resilience' over rankings – here's who nailed it.
 
 Full debate → link in bio
 

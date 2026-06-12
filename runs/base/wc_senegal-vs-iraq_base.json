@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["L", "W", "W", "W", "W"],
-  "form_away": ["D", "W", "W", "L", "L"],
+  "form_home": [
+    "L",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "L",
+    "L"
+  ],
   "key_players_home": [
     "Sadio Mane (captain / forward, Al-Nassr)",
     "Nicolas Jackson (striker, Bayern Munich loan from Chelsea)",
@@ -41,5 +53,29 @@
     "Disciplined defensive organisation under Graham Arnold's structured system",
     "Dangerous from set pieces with physical aerial presence",
     "Strong team spirit and counter-attacking threat through Aymen Hussein and Al-Hamadi"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 15,
+    "elo": 1684,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 3,
+      "L": 0,
+      "GF": 22,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 57,
+    "elo": 1446,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 3,
+      "L": 3,
+      "GF": 9,
+      "GA": 9
+    }
+  }
 }

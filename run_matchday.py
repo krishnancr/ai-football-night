@@ -144,6 +144,7 @@ def main():
 
     # ── Stage 2: Debate ─────────────────────────────────────────────
     print(f"\n[2/4] Debate council...")
+    import council_cli
     from council_cli import load_personas, run_council
     from track_record import build_track_records, extract_pundit_predictions, inject_track_records
     personas = load_personas()
@@ -163,9 +164,26 @@ def main():
     result["match_slug"] = slug
     result["match_string"] = args.match
     result["pundit_predictions"] = extract_pundit_predictions(result.get("full_debate", {}))
+    result["cost"] = {
+        "prompt_tokens": council_cli.LAST_USAGE.get("prompt_tokens", 0),
+        "completion_tokens": council_cli.LAST_USAGE.get("completion_tokens", 0),
+        "calls": council_cli.LAST_USAGE.get("calls", 0),
+    }
+    print(f"  💸 tokens in={result['cost']['prompt_tokens']} out={result['cost']['completion_tokens']} calls={result['cost']['calls']}")
 
     run_path.write_text(json.dumps(result, indent=2))
     print(f"  Saved: {run_path}")
+
+    reasoning_entries = [
+        {k: e.get(k) for k in ("round", "role", "model", "reasoning")}
+        for e in result.get("debate_transcript", [])
+        if e.get("reasoning")
+    ]
+    if reasoning_entries:
+        reasoning_path = run_path.parent / f"wc_{slug}_reasoning.json"
+        reasoning_path.write_text(json.dumps(reasoning_entries, indent=2, ensure_ascii=False))
+        print(f"  🧠 saved {len(reasoning_entries)} reasoning traces → {reasoning_path.name}")
+
     if result["pundit_predictions"]:
         preds = ", ".join(f"{r} {p['home_goals']}-{p['away_goals']}" for r, p in result["pundit_predictions"].items())
         print(f"  Pundit calls: {preds}")

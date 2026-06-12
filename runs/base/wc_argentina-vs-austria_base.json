@@ -14,8 +14,20 @@
       "Austria 1-1 Argentina - International Friendly - 1990"
     ]
   },
-  "form_home": ["W", "W", "W", "W", "W"],
-  "form_away": ["W", "W", "W", "D", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
   "key_players_home": [
     "Lionel Messi (free-roaming attacking midfielder/forward)",
     "Lautaro Martinez (striker)",
@@ -45,5 +57,29 @@
     "Cohesive gegenpressing system under the tactically elite Ralf Rangnick",
     "Experienced senior players (Alaba, Sabitzer, Arnautovic) supplemented by in-form Bundesliga talents",
     "Excellent recent form with five wins and one draw from last six matches including strong pre-tournament friendlies"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 24,
+    "elo": 1597,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 1,
+      "L": 1,
+      "GF": 22,
+      "GA": 4
+    }
+  }
 }

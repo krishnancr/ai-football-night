@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["D", "W", "L", "W", "D"],
-  "form_away": ["W", "W", "L", "L", "W"],
+  "form_home": [
+    "D",
+    "W",
+    "L",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Anibal Godoy (defensive midfielder, captain, 159 caps)",
     "Adalberto Carrasquilla (creative central midfielder)",
@@ -41,5 +53,29 @@
     "World-class midfield quality led by Modric and Kovacic",
     "Vast World Cup experience and big-game temperament",
     "Kramaric's clinical finishing and Gvardiol's defensive solidity"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 34,
+    "elo": 1539,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 9,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 11,
+    "elo": 1715,
+    "qual": {
+      "P": 8,
+      "W": 7,
+      "D": 1,
+      "L": 0,
+      "GF": 26,
+      "GA": 4
+    }
+  }
 }

@@ -14,8 +14,20 @@
       "Belgium 1-2 Egypt - International Friendly - 2022"
     ]
   },
-  "form_home": ["W", "W", "W", "D", "W"],
-  "form_away": ["L", "W", "D", "W", "L"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Kevin De Bruyne (attacking midfielder)",
     "Romelu Lukaku (striker)",
@@ -44,5 +56,29 @@
     "Mohamed Salah and Omar Marmoush form one of the tournament's most dangerous attacking duos",
     "Exceptional defensive record in CAF qualifying — seven clean sheets, only two goals conceded in ten matches",
     "Strong domestic spine from Al Ahly combined with European-based quality gives tactical flexibility"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 29,
+    "elo": 1562,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 20,
+      "GA": 2
+    }
+  }
 }

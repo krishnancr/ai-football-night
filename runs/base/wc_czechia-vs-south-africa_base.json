@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "D", "D", "W", "W"],
-  "form_away": ["D", "W", "W", "W", "L"],
+  "form_home": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Patrik Schick (striker, Bayer Leverkusen)",
     "Tomáš Souček (central midfielder, West Ham)",
@@ -41,5 +53,29 @@
     "Explosive wide attackers Mofokeng and Appollis capable of stretching any defence",
     "High collective energy and pressing intensity that can disrupt technically superior opponents",
     "Experienced captain and shot-stopper Ronwen Williams — a proven match-winner in penalty situations"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 40,
+    "elo": 1506,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 1,
+      "L": 2,
+      "GF": 18,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 60,
+    "elo": 1428,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 3,
+      "L": 2,
+      "GF": 15,
+      "GA": 9
+    }
+  }
 }

@@ -11,8 +11,20 @@
     "away_wins": 0,
     "notable_results": []
   },
-  "form_home": ["W", "W", "L", "W", "D"],
-  "form_away": ["W", "L", "L", "L", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "L",
+    "L",
+    "W"
+  ],
   "key_players_home": [
     "Duckens Nazon (striker / all-time leading scorer)",
     "Jean-Ricner Bellegarde (central midfielder, Wolverhampton Wanderers)",
@@ -41,5 +53,29 @@
     "Midfield quality and energy with McTominay and McGinn as driving forces",
     "Strong set-piece threat and defensive solidity under Clarke",
     "Tournament experience and momentum from high-scoring warm-up matches"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 83,
+    "elo": 1293,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 2,
+      "L": 1,
+      "GF": 9,
+      "GA": 6
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 42,
+    "elo": 1503,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 13,
+      "GA": 7
+    }
+  }
 }

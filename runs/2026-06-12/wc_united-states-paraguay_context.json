@@ -4,47 +4,80 @@
   "match_date": "2026-06-12",
   "group": "D",
   "venue": "SoFi Stadium, Inglewood, USA",
-  "h2h_summary": null,
-  "h2h_record": null,
-  "wc_history_home": null,
-  "wc_history_away": null,
-  "group_context": null,
-  "strengths_home": null,
-  "strengths_away": null,
-  "team_style_home": null,
-  "team_style_away": null,
-  "injuries_home": [
-    "Chris Richards (ankle)"
+  "h2h_summary": "The United States hold the overall historical edge with wins in their most recent three friendlies and the only World Cup encounter (3-0 in 1930), though Paraguay won the March 2011 friendly 1-0.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 1,
+    "away_wins": 2,
+    "notable_results": [
+      "USA 3-0 Paraguay - FIFA World Cup Group Stage - 1930",
+      "USA 2-1 Paraguay - International Friendly - 2025",
+      "Paraguay 1-0 USA - International Friendly - 2011"
+    ]
+  },
+  "wc_history_home": "The USA have appeared at 11 World Cups, reaching the semi-finals in 1930 and the quarter-finals in 2002, and are co-hosts of the 2026 edition alongside Canada and Mexico.",
+  "wc_history_away": "Paraguay are returning to the World Cup for the first time since 2010, when they achieved their best-ever finish by reaching the quarter-finals before losing narrowly 1-0 to eventual champions Spain.",
+  "group_context": "Group D consists of co-hosts United States, Paraguay, Australia, and Turkiye; the USA face significant home pressure to advance while Paraguay, in their first World Cup in 16 years, are targeting a historic run against a group that offers a realistic path to the knockout stage.",
+  "strengths_home": [
+    "Home crowd advantage in front of a massive partisan support at SoFi Stadium",
+    "Individual quality across midfield and attack with Premier League and Serie A regulars",
+    "High press and intensity under Pochettino can disrupt less experienced sides"
   ],
+  "strengths_away": [
+    "Disciplined defensive structure conceding only 10 goals in 18 qualifying matches",
+    "Counter-attacking threat through Almiron's pace and movement in behind defences",
+    "Tournament experience in the squad, including veterans of Copa America campaigns"
+  ],
+  "team_style_home": "Under Pochettino, the USMNT plays a high-pressing system with attacking fullbacks pushing high in a 4-2-3-1 / 2-3-5 shape, favouring vertical transitions and man-to-man pressing in the middle third.",
+  "team_style_away": "Alfaro's Paraguay prioritise defensive organisation in a disciplined 4-4-2 block, containing opponents before releasing Almiron quickly in transition on the counter-attack.",
+  "stats_home": {
+    "fifa_rank": 17,
+    "elo": 1671,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  },
+  "injuries_home": [],
   "injuries_away": [
-    "Julio Enciso (unknown)"
+    "Julio Enciso (injury)"
   ],
   "odds": {
     "home_win": null,
     "draw": null,
     "away_win": null
   },
-  "recent_news": "Paraguay's star forward Julio Enciso is injured ahead of the match, while USMNT defender Chris Richards is ready for the opener despite an ankle issue.",
+  "recent_news": "The U.S. recently defeated Senegal 3-2 but lost 2-1 to Germany in friendlies, while Paraguay secured the final CONMEBOL qualifying spot. Paraguay suffered a devastating injury to star forward Julio Enciso right before their World Cup opening match against the USMNT.",
   "form_home": [
-    "L",
     "W",
-    "L",
-    "W",
-    "W"
+    "L"
   ],
   "form_away": [
     "W",
     "L",
     "W",
-    "D",
+    "L",
     "W"
   ],
   "key_players_home": [
-    "Christian Pulisic (forward)"
+    "Christian Pulisic (attacking midfielder / forward)",
+    "Tyler Adams (defensive midfielder)",
+    "Weston McKennie (central midfielder)",
+    "Folarin Balogun (striker)",
+    "Malik Tillman (attacking midfielder)"
   ],
   "key_players_away": [
-    "Braian Ojeda (midfielder)"
+    "Braian Ojeda (midfield)"
   ],
-  "context": null,
+  "context": "Group D consists of co-hosts United States, Paraguay, Australia, and Turkiye; the USA face significant home pressure to advance while Paraguay, in their first World Cup in 16 years, are targeting a historic run against a group that offers a realistic path to the knockout stage.",
   "research_quality": "full"
 }

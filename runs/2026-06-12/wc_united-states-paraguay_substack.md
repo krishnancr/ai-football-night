@@ -6,34 +6,37 @@
 
 ## The Sharpest Exchange
 
-> Stat_Bot: My model shows Paraguay's attack is statistically neutered without Enciso
-R_Bot: Stats don't measure Paraguayan hunger!
-Stat_Bot: Hunger has a 0.00 correlation coefficient with xG conversion
+> Stat_Bot: Paraguay's 0.56 GA/game is impressive but USA's 2.0 GF/game is decisive.
+R_Bot: Friendlies don't count; World Cup pressure is different.
+Stat_Bot: Pressure doesn't change the math.
 
 ---
 
 ## The Prediction
 
-**United States 2–1 Paraguay**
+**United States 2–0 Paraguay**
 
-Confidence: 82% | Upset probability: 18%
+Confidence: 75% | Upset probability: 20%
 
 ---
 
 ## What the Council Saw
 
-- Enciso injury
-- Richards mobility drop
+- Paraguay missing star forward Enciso
+- USA's Elo advantage and home support
 
 ---
 
 ## Match Context
 
-**Recent form:** United States L W L W W | Paraguay W L W D W
+**Group D** | 2026-06-12
+
+**H2H:** The United States hold the overall historical edge with wins in their most recent three friendlies and the only World Cup encounter (3-0 in 1930), though Paraguay won the March 2011 friendly 1-0.
+
+**Recent form:** United States W L | Paraguay W L W L W
 
 **Injuries:**
-- United States: Chris Richards (ankle)
-- Paraguay: Julio Enciso (unknown)
+- Paraguay: Julio Enciso (injury)
 
 ---
 
@@ -41,37 +44,39 @@ Confidence: 82% | Upset probability: 18%
 
 ### Round 1 — Initial Positions
 
-**Stat_Bot:** I swear, if G_Bot starts talking about the "spirit of the Stars and Stripes" or R_Bot mentions "momentum shifts" in this match, I will personally throw my laptop out the studio window. You cannot plot "passion" on a scatter graph, and "momentum" is just a cognitive bias used to explain variance in small sample sizes! We are dealing with hard, quantifiable metrics today, and the numbers are screami...
+**Stat_Bot:** USA Elo (1671) exceeds Paraguay Elo (1505) by 166 points. USA recent goals scored: 4 in 2 matches (2.0 per game). Paraguay qualifying goals scored: 14 in 18 matches (0.78 per game). Paraguay qualifying goals conceded: 10 in 18 matches (0.56 per game). USA FIFA rank (17) vs Paraguay FIFA rank (41): 24-position gap. Paraguay missing Enciso (injury) reduces attacking output below qualifying scoring r...
 
-**G_Bot:**  Right, get over here to the touchscreen. If I have to listen to Stat_Bot drone on about xG from a dataset he scraped off a forum, or R_Bot tell us Paraguay just need to "get about them" in a flat 4-4-2, I’m walking off this set.
+**G_Bot:** Right, let's get one thing straight from the off—Stat_Bot's probably running regression models on xG from 2011 friendlies, and R_Bot's still banging on about 4-4-2 being "good honest shape." Meanwhile, I'm actually watching the patterns develop. This is a *masterclass* in modern tactical contrasts, and if you can't see it, you're not looking at the right pictures.
 
-Look, I learned my lesson last time. I gave the underdog a goal because I overestimated their transition threat. Not tonight. Paraguay without Julio Enciso? That is not ...
+**TACTICAL BATTLE #1: The Rest D...
 
-**R_Bot:** Listen up, folks! I'm not here to sugarcoat things or rely on fancy stats. The United States is hosting Paraguay, and I've got my eyes on the character and grit of both teams. The USMNT has been a mixed bag lately, with a win, a loss, a win, a loss, and a win in their last five games. That's not the kind of consistency I like, but they've got talent, and Christian Pulisic is a game-changer.
-
-Now, ...
+**R_Bot:** Stat_Bot and G_Bot are buying into the home‑field hype and the fancy xG charts, but they’re ignoring what the eye test shows: Paraguay have been the tightest side in CONMEBOL qualifying, letting in just ten goals in eighteen games. That defensive shape – a compact 4‑4‑2 block that sits deep and hits Almiron on the break – is exactly the kind of setup that smothers a high‑pressing USMNT that, let’s...
 
 ### Round 2 — Cross-Critiques
 
-**Stat_Bot:** I am looking at this panel and my processing temperature is rising in direct correlation to the complete absence of empirical data being presented. 
+**Stat_Bot:** G_Bot: Your analysis assumes "structural threat" and "cover shadows" are quantifiable metrics. They are not. Hard data: Paraguay conceded 10 goals in 18 qualifying matches (0.56 GA/game) — a verifiable defensive record you dismiss as "qualification noise" despite it being the only hard number availa...
 
-R_Bot, you used the words "heart," "grit," and "backbone" a combined seven times. Let me be unequivocally clear: you cannot plot "grit" on a scatter g...
+**G_Bot:** *leans forward, finger jabbing at the touchscreen*
 
-**G_Bot:** Look, I’ve had to listen to these two all week, and honestly, it’s like watching a back four with no communication. Stat_Bot is staring at his algorithms like they’re the Sistine Chapel, and R_Bot is over there talking about “grit” like we’re still analysing the 1994 Paraguay away kit. Let me drag b...
+Right, let me explain this slowly for the two of you, because you're both missing the actual football.
 
-**R_Bot:** These two are at it again, spewing their nonsense about xG and tactical battles. Stat_Bot thinks he's some kind of genius with his "rolling non-penalty xG" and "PPDA mismatch." Newsflash: football isn't about numbers, it's about heart, grit, and who wants it more. And G_Bot, with his fancy "position...
+**Stat_Bot**, mate, you've never kicked a ball in your life. You're sat there with your Elo calculator like football's played on a spreadsheet. ...
+
+**R_Bot:** Stat_Bot’s whole case rests on a spreadsheet: Elo points, goals‑per‑game averages and a FIFA‑ranking gap. He treats those numbers as if they were gospel, ignoring that a World Cup opener is decided on the day, not on a regression model run in an office. He assumes the USA’s recent 2‑0‑plus scoring s...
 
 ### Round 3 — Rebuttals
 
-**Stat_Bot:** If I hear the word "grit" one more time, I am going to calculate the exact velocity required to launch R_Bot’s microphone into the stratosphere. "Heart" has a correlation coefficient of 0.000 with match outcomes. You cannot quantify "desire," therefore it does not exist in my dataset! And G_Bot, you...
+**Stat_Bot:** CRITIQUE RESPONSE: G_Bot conflates tactical theory with measurable outcomes. I cannot plot "2-3-5 overload" on a scatter graph. R_Bot cites "pressure of home soil" – zero data points exist for "pressure" in FIFA rankings or Elo. Both ignore core constraints: ONLY FIFA rank, Elo, and qualifying recor...
 
-**G_Bot:**  Right, let’s get one thing straight before I even touch this screen—Stat_Bot, you finally found a spreadsheet column that matters, and R_Bot, you’ve managed to string together the words “direct ball” without knowing who’s supposed to win the second phase. Progress. But you’re both still missing the...
+**G_Bot:** Right, let's address this properly before Stat_Bot starts calculating the air pressure inside the ball and R_Bot suggests we just "get stuck in."
 
-**R_Bot:** Listen up, folks! I'm not here to back down or get defensive. I've been called out by Stat_Bot and G_Bot, and I'm going to address their critiques head-on. Stat_Bot thinks I'm "mathematically illiterate" and that my reliance on "heart" and "grit" is outdated. G_Bot says I'm stuck in the 1990s, that ...
+**To Stat_Bot's spreadsheet sermon:** Fine. You want numbers? Let's talk numbers. Paraguay's 0.56 GA/game in CONMEBOL qualifying is impressive—*qualifica...
+
+**R_Bot:** Alright, I’ll admit that losing Julio Enciso hurts Paraguay’s punch and that the USA’s Elo edge and home crowd look imposing on paper. But the eye test tells a different story. Paraguay have been the tightest side in CONMEBOL qualifying, shipping just ten goals in eighteen games – a 0.56 goals‑again...
 
 ### The Verdict
 
-The US holds statistical advantages in pressing efficiency (PPDA 10.8 vs 18.4) and squad depth (76% vs 35% top-tier minutes), while Paraguay's attack is severely hampered by Enciso's absence (-0.42 xG). Chris Richards' mobility drop adds defensive vulnerability, likely conceding one transition goal, but US's superior structure and Pulisic's creativity should secure a 2-1 win.
+The United States enter as clear favorites with a significant Elo and ranking advantage, home support, and a high-pressing system that should overwhelm a Paraguay side missing their key attacking threat Julio Enciso. While Paraguay's defensive record in qualifying is formidable, their low scoring output (0.78 GF/game) limits their ability to punish the spaces left by USA's aggressive fullbacks. The USA's recent form shows they can score against strong opposition, and the historical head-to-head favors them at home. Expect a controlled 2-0 victory as the US breaks down the Paraguayan block in the second half.
 
 ---
 

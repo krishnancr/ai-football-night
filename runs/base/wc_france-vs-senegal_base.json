@@ -13,8 +13,20 @@
       "0-1 - FIFA World Cup Group Stage - 2002"
     ]
   },
-  "form_home": ["W", "W", "W", "W", "W"],
-  "form_away": ["L", "W", "W", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Kylian Mbappe (captain / striker)",
     "Ousmane Dembele (winger / Ballon d'Or winner)",
@@ -43,5 +55,29 @@
     "AFCON 2025 champions with unbeaten run stretching back to early 2024",
     "Physical and tactically disciplined squad balancing veterans and emerging talent",
     "Sadio Mane's leadership and ability to unlock defences combined with Jackson's pressing"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 15,
+    "elo": 1684,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 3,
+      "L": 0,
+      "GF": 22,
+      "GA": 3
+    }
+  }
 }

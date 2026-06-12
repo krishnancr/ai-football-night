@@ -15,8 +15,20 @@
       "Brazil 4-0 Japan - International Friendly - 2014"
     ]
   },
-  "form_home": ["W", "W", "W", "L", "D"],
-  "form_away": ["W", "W", "W", "W", "W"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
   "key_players_home": [
     "Vinicius Junior (left winger)",
     "Raphinha (right winger)",

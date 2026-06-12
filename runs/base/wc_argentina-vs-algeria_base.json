@@ -13,8 +13,20 @@
       "Argentina 4-3 Algeria - International Friendly - 2007"
     ]
   },
-  "form_home": ["W", "W", "W", "L", "W"],
-  "form_away": ["W", "W", "W", "W", "L"],
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "L"
+  ],
   "key_players_home": [
     "Lionel Messi (attacking midfielder / free-roaming forward)",
     "Lautaro Martinez (striker)",
@@ -43,5 +55,29 @@
     "Mohamed Amoura's clinical finishing — top scorer in CAF qualifying with 10 goals in 8 matches",
     "Upset pedigree — beat Netherlands 1-0 in June 2026 World Cup preparation friendly",
     "Strong team cohesion under Petkovic with disciplined defensive structure and set-piece threat"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  }
 }

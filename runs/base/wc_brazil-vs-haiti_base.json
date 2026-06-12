@@ -14,8 +14,20 @@
       "6-0 Brazil win - Friendly - 2004"
     ]
   },
-  "form_home": ["W", "L", "L", "W", "W"],
-  "form_away": ["L", "L", "W", "D", "L"],
+  "form_home": [
+    "W",
+    "L",
+    "L",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "W",
+    "D",
+    "L"
+  ],
   "key_players_home": [
     "Vinicius Junior (left winger, Real Madrid)",
     "Raphinha (right winger, Barcelona)",
@@ -44,5 +56,29 @@
     "Explosive pace and physical strength of Wilson Isidor as a counter-attacking focal point",
     "Organized defensive compactness and resilience — conceded only 4 goals in last 5 matches",
     "Motivated diaspora squad with Premier League quality in Bellegarde and Isidor creating genuine danger on transitions"
-  ]
+  ],
+  "stats_home": {
+    "fifa_rank": 6,
+    "elo": 1766,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 4,
+      "L": 6,
+      "GF": 24,
+      "GA": 17
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 83,
+    "elo": 1293,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 2,
+      "L": 1,
+      "GF": 9,
+      "GA": 6
+    }
+  }
 }
