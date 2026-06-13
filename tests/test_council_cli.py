@@ -1,4 +1,36 @@
+import json
+
 from unittest.mock import patch, MagicMock
+
+
+def test_call_llm_retries_on_json_decode_error():
+    """A non-JSON provider body (the Haiti vs Scotland crash) must retry, not kill the run."""
+    import council_cli
+    fake = MagicMock()
+    fake.choices = [MagicMock(message=MagicMock(content="ok"))]
+    err = json.JSONDecodeError("Expecting value", "", 0)
+    with patch.object(council_cli.client.chat.completions, "create",
+                      side_effect=[err, fake]) as create, \
+            patch("council_cli.time.sleep"):
+        out = council_cli.call_llm("sys", "usr", model="x")
+    assert out == "ok"
+    assert create.call_count == 2
+
+
+def test_call_llm_raises_after_max_attempts():
+    """After exhausting retries, the original error propagates so the match is marked failed."""
+    import council_cli
+    err = json.JSONDecodeError("Expecting value", "", 0)
+    with patch.object(council_cli.client.chat.completions, "create",
+                      side_effect=err) as create, \
+            patch("council_cli.time.sleep"), \
+            patch.object(council_cli, "MAX_LLM_ATTEMPTS", 3):
+        try:
+            council_cli.call_llm("sys", "usr", model="x")
+            assert False, "expected JSONDecodeError to propagate"
+        except json.JSONDecodeError:
+            pass
+    assert create.call_count == 3
 
 
 def test_call_llm_passes_reasoning_effort_in_extra_body():
