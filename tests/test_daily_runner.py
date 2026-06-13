@@ -90,40 +90,74 @@ def test_write_daily_summary_filename_format(tmp_path):
     assert path.parent.name == "2026-06-13"
 
 
-def test_fetch_match_result_returns_none_without_tavily_key(monkeypatch):
-    monkeypatch.delenv("TAVILY_API_KEY", raising=False)
-    result = fetch_match_result("Brazil vs Morocco")
-    assert result is None
+def _espn_event(home_name, home_score, away_name, away_score, status="STATUS_FULL_TIME"):
+    """Minimal ESPN scoreboard event shape."""
+    return {
+        "competitions": [{
+            "status": {"type": {"name": status}},
+            "competitors": [
+                {"homeAway": "home", "team": {"displayName": home_name}, "score": home_score},
+                {"homeAway": "away", "team": {"displayName": away_name}, "score": away_score},
+            ],
+        }]
+    }
 
 
-def test_fetch_match_result_returns_tuple_on_high_confidence(monkeypatch):
-    monkeypatch.setenv("TAVILY_API_KEY", "fake-key")
-    mock_search_result = {"results": [{"title": "Brazil 2-1 Morocco", "content": "Brazil beat Morocco 2-1 in World Cup 2026 group stage match."}]}
-    mock_llm_response = MagicMock()
-    mock_llm_response.choices[0].message.content = '{"home_goals": 2, "away_goals": 1, "confidence": "high"}'
-
-    with patch("daily_runner.TavilyClient") as MockTavily, \
-         patch("daily_runner.OpenAI") as MockOpenAI:
-        MockTavily.return_value.search.return_value = mock_search_result
-        MockOpenAI.return_value.chat.completions.create.return_value = mock_llm_response
-        result = fetch_match_result("Brazil vs Morocco")
-
-    assert result == (2, 1)
+def test_fetch_match_result_returns_score_from_espn():
+    """The exact match the old Tavily+LLM path missed: US 4-1 Paraguay, read deterministically."""
+    events = [_espn_event("United States", "4", "Paraguay", "1")]
+    with patch("daily_runner._espn_events", return_value=events) as mock_events:
+        result = fetch_match_result("United States vs Paraguay", "20260612")
+    assert result == (4, 1)
+    mock_events.assert_called()
 
 
-def test_fetch_match_result_returns_none_on_low_confidence(monkeypatch):
-    monkeypatch.setenv("TAVILY_API_KEY", "fake-key")
-    mock_search_result = {"results": [{"title": "Brazil vs Morocco preview", "content": "Match preview for upcoming World Cup game."}]}
-    mock_llm_response = MagicMock()
-    mock_llm_response.choices[0].message.content = '{"home_goals": null, "away_goals": null, "confidence": "low"}'
+def test_fetch_match_result_orients_to_our_home_away():
+    """Goals are oriented to OUR fixture's home/away by team identity, not ESPN's ordering."""
+    events = [_espn_event("United States", "4", "Paraguay", "1")]
+    with patch("daily_runner._espn_events", return_value=events):
+        # Our fixture has Paraguay as home, USA as away — must flip to (1, 4).
+        result = fetch_match_result("Paraguay vs United States", "20260612")
+    assert result == (1, 4)
 
-    with patch("daily_runner.TavilyClient") as MockTavily, \
-         patch("daily_runner.OpenAI") as MockOpenAI:
-        MockTavily.return_value.search.return_value = mock_search_result
-        MockOpenAI.return_value.chat.completions.create.return_value = mock_llm_response
-        result = fetch_match_result("Brazil vs Morocco")
 
-    assert result is None
+def test_fetch_match_result_matches_team_name_aliases():
+    """ESPN 'Bosnia-Herzegovina' must match our 'Bosnia and Herzegovina'; 'South Korea' → 'Korea Republic'."""
+    events = [
+        _espn_event("Canada", "1", "Bosnia-Herzegovina", "1"),
+        _espn_event("South Korea", "2", "Japan", "0"),
+    ]
+    with patch("daily_runner._espn_events", return_value=events):
+        assert fetch_match_result("Canada vs Bosnia and Herzegovina", "20260612") == (1, 1)
+        assert fetch_match_result("Korea Republic vs Japan", "20260612") == (2, 0)
+
+
+def test_fetch_match_result_none_when_not_final():
+    events = [_espn_event("Brazil", "0", "Morocco", "0", status="STATUS_SCHEDULED")]
+    with patch("daily_runner._espn_events", return_value=events):
+        assert fetch_match_result("Brazil vs Morocco", "20260612") is None
+
+
+def test_fetch_match_result_none_when_match_not_found():
+    events = [_espn_event("Spain", "3", "Portugal", "1")]
+    with patch("daily_runner._espn_events", return_value=events):
+        assert fetch_match_result("Brazil vs Morocco", "20260612") is None
+
+
+def test_fetch_match_result_none_on_fetch_error():
+    """A network/HTTP failure must degrade to None, never crash the run."""
+    with patch("daily_runner._espn_events", side_effect=Exception("boom")):
+        assert fetch_match_result("Brazil vs Morocco", "20260612") is None
+
+
+def test_fetch_match_result_falls_back_to_adjacent_day():
+    """Timezone skew: a match listed under the neighbouring UTC date is still found."""
+    def fake_events(date_compact):
+        if date_compact == "20260611":
+            return [_espn_event("Brazil", "2", "Morocco", "1")]
+        return []
+    with patch("daily_runner._espn_events", side_effect=fake_events):
+        assert fetch_match_result("Brazil vs Morocco", "20260612") == (2, 1)
 
 
 from daily_runner import distribute_today, update_yesterday_results
@@ -194,7 +228,29 @@ def test_update_yesterday_results_records_new_result(tmp_path):
          patch("daily_runner.update_result_fn") as mock_record:
         result = update_yesterday_results("2026-06-13")
     assert result == 1
-    mock_fetch.assert_called_once_with("Brazil vs Morocco")
+    mock_fetch.assert_called_once_with("Brazil vs Morocco", "20260612")
+
+
+def test_update_yesterday_results_backfills_older_unresolved_days(tmp_path):
+    """An orphan from an OLDER day (not just the most recent) self-heals — the old
+    code only checked max(prior dates) and left earlier misses stranded forever."""
+    runs = tmp_path
+    # Most-recent prior day (6/12) is already resolved...
+    (runs / "2026-06-12").mkdir(parents=True, exist_ok=True)
+    (runs / "2026-06-12" / "wc_canada-bosnia.json").write_text(json.dumps(
+        {"match_string": "Canada vs Bosnia", "actual": {"home_goals": 1, "away_goals": 1}}))
+    # ...but two days back (6/11) has an unresolved match.
+    (runs / "2026-06-11").mkdir(parents=True, exist_ok=True)
+    (runs / "2026-06-11" / "wc_united-states-paraguay.json").write_text(json.dumps(
+        {"match_string": "United States vs Paraguay",
+         "decision": {"home_goals": 1, "away_goals": 1, "result": "draw"}}))
+    with patch("daily_runner.RUNS_DIR", runs), \
+         patch("daily_runner.fetch_match_result", return_value=(4, 1)) as mock_fetch, \
+         patch("daily_runner.update_result_fn"):
+        result = update_yesterday_results("2026-06-13")
+    assert result == 1
+    # Fetched with the orphan's OWN date, not the most recent prior day.
+    mock_fetch.assert_called_once_with("United States vs Paraguay", "20260611")
 
 
 def test_result_query_uses_teams_search_name():

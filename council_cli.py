@@ -11,11 +11,12 @@ Usage:
 import os
 import sys
 import json
+import time
 import argparse
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAI, APIError
 
 load_dotenv()
 
@@ -23,6 +24,28 @@ client = OpenAI(
     base_url=os.getenv("COUNCIL_BASE_URL") or os.getenv("OLLAMA_BASE_URL", "http://localhost:11434/v1"),
     api_key=os.getenv("COUNCIL_API_KEY") or os.getenv("OLLAMA_API_KEY", "ollama"),
 )
+
+# A flaky provider response (non-JSON body, timeout, 5xx, rate limit) used to kill
+# the whole match — one bad call out of ~10 per match exited the run with code 1.
+# Retry with exponential backoff so a transient blip retries instead of crashing.
+MAX_LLM_ATTEMPTS = max(1, int(os.getenv("LLM_MAX_ATTEMPTS", "4")))
+
+
+def _create_with_retry(**kwargs):
+    """client.chat.completions.create with retry on transient provider failures."""
+    last_err = None
+    for attempt in range(1, MAX_LLM_ATTEMPTS + 1):
+        try:
+            return client.chat.completions.create(**kwargs)
+        except (json.JSONDecodeError, APIError) as e:
+            last_err = e
+            if attempt == MAX_LLM_ATTEMPTS:
+                break
+            backoff = min(2 ** attempt, 30)
+            print(f"  ⚠️  LLM call failed (attempt {attempt}/{MAX_LLM_ATTEMPTS}): "
+                  f"{type(e).__name__}: {e} — retrying in {backoff}s", flush=True)
+            time.sleep(backoff)
+    raise last_err
 
 LAST_USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "calls": 0}
 LAST_REASONING = {"text": None}
@@ -43,7 +66,7 @@ def call_llm(system: str, user: str, temperature: float = 0.4, model: str = "lla
     if reasoning_effort:
         extra["reasoning"] = {"effort": reasoning_effort}
     kwargs = {"extra_body": extra} if extra else {}
-    resp = client.chat.completions.create(
+    resp = _create_with_retry(
         model=model,
         messages=[
             {"role": "system", "content": system},

@@ -12,23 +12,17 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime, timezone
+import unicodedata
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+import requests
 
 import teams
 
 RUNS_DIR = Path("runs")
 GROUP_LETTERS = set("ABCDEFGHIJKL")
 KNOCKOUT_GROUPS = {"R32", "R16", "QF", "SF", "FINAL", "3RD"}
-
-try:
-    from openai import OpenAI
-    from dotenv import load_dotenv
-    from tavily import TavilyClient
-except ImportError:
-    OpenAI = None  # type: ignore[assignment,misc]
-    load_dotenv = None  # type: ignore[assignment]
-    TavilyClient = None  # type: ignore[assignment,misc]
 
 try:
     from distribute import post_twitter_thread
@@ -89,77 +83,94 @@ def _write_github_output(key: str, value: str) -> None:
             f.write(f"{key}={value}\n")
 
 
-def fetch_match_result(match_string: str) -> tuple | None:
+# ESPN's keyless public scoreboard feed — the same JSON that powers their score
+# widgets. A final score is structured data, so we read it deterministically here
+# instead of web-searching and asking an LLM to guess it from snippets.
+ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard"
+
+
+def _espn_events(date_compact: str) -> list:
+    """Fetch the raw ESPN scoreboard events for a YYYYMMDD date. Network boundary
+    (mocked in tests). Raises on HTTP/transport errors so the caller can degrade."""
+    resp = requests.get(ESPN_SCOREBOARD_URL, params={"dates": date_compact}, timeout=20)
+    resp.raise_for_status()
+    return resp.json().get("events", [])
+
+
+def _match_key(name: str) -> set:
+    """Identity token-set for a team name, tolerant of media spelling variants.
+    Routes through teams.canonical (alias map) then strips accents/punctuation and
+    connector words so 'Bosnia-Herzegovina' == 'Bosnia and Herzegovina'."""
+    canon = teams.canonical(name)
+    ascii_name = unicodedata.normalize("NFKD", canon).encode("ascii", "ignore").decode("ascii")
+    for ch in "-.'&/":
+        ascii_name = ascii_name.replace(ch, " ")
+    return {t for t in ascii_name.lower().split() if t not in ("and", "the")}
+
+
+def _teams_match(name_a: str, name_b: str) -> bool:
+    """True if two team names refer to the same side. Exact token-set match, or one
+    being a subset of the other (handles 'Iran' vs FIFA 'IR Iran')."""
+    a, b = _match_key(name_a), _match_key(name_b)
+    if not a or not b:
+        return False
+    return a == b or a <= b or b <= a
+
+
+def fetch_match_result(match_string: str, date_compact: str) -> tuple | None:
     """
-    Search for the actual result of a played match using Tavily + LLM parsing.
-    Returns (home_goals, away_goals) as ints, or None if result not found/confident.
+    Look up the final score for a played match from ESPN's keyless scoreboard feed.
+    `date_compact` is YYYYMMDD (the fixture's match day). Returns
+    (home_goals, away_goals) oriented to `match_string`'s home/away by team identity,
+    or None if the match isn't found or hasn't reached full time. Never raises.
     """
-    if load_dotenv is not None:
-        load_dotenv()
-
-    if TavilyClient is None or OpenAI is None:
-        print(f"  [result] tavily/openai not installed — skipping result fetch for {match_string}")
-        return None
-
-    tavily_key = os.getenv("TAVILY_API_KEY")
-    if not tavily_key:
-        print(f"  [result] No TAVILY_API_KEY — skipping result fetch for {match_string}")
-        return None
-
     home, away = [t.strip() for t in match_string.split(" vs ")]
-    query = f"{teams.search(home)} vs {teams.search(away)} World Cup 2026 final score result"
 
+    # Try the match day plus ±1 to absorb UTC-vs-local date skew on late kickoffs.
     try:
-        tavily = TavilyClient(api_key=tavily_key)
-        search = tavily.search(query, max_results=5, search_depth="basic")
-        snippets = "\n".join(
-            f"- {r['title']}: {r['content'][:300]}"
-            for r in search.get("results", [])
-        )
-    except Exception as e:
-        print(f"  [result] Tavily search failed for {match_string}: {e}")
-        return None
+        base = datetime.strptime(date_compact, "%Y%m%d")
+        candidate_dates = [date_compact,
+                           (base - timedelta(days=1)).strftime("%Y%m%d"),
+                           (base + timedelta(days=1)).strftime("%Y%m%d")]
+    except ValueError:
+        candidate_dates = [date_compact]
 
-    if not snippets:
-        return None
+    for d in candidate_dates:
+        try:
+            events = _espn_events(d)
+        except Exception as e:
+            print(f"  [result] ESPN scoreboard fetch failed for {d}: {type(e).__name__}: {e}")
+            continue
 
-    prompt = f"""Extract the final score from these search results for the World Cup 2026 match: {home} vs {away}
+        for ev in events:
+            comp = (ev.get("competitions") or [{}])[0]
+            competitors = comp.get("competitors", [])
+            if len(competitors) != 2:
+                continue
 
-Search results:
-{snippets}
+            our_home_goals = our_away_goals = None
+            for c in competitors:
+                espn_name = c.get("team", {}).get("displayName", "")
+                if _teams_match(espn_name, home):
+                    our_home_goals = c.get("score")
+                elif _teams_match(espn_name, away):
+                    our_away_goals = c.get("score")
 
-If the match has been played and you can determine the score with high confidence, respond ONLY with JSON like:
-{{"home_goals": 2, "away_goals": 1, "confidence": "high"}}
+            if our_home_goals is None or our_away_goals is None:
+                continue  # not our fixture
 
-If the match has NOT been played yet, or you cannot determine the score confidently, respond ONLY with:
-{{"home_goals": null, "away_goals": null, "confidence": "low"}}
+            status = comp.get("status", {}).get("type", {}).get("name", "")
+            if status != "STATUS_FULL_TIME":
+                print(f"  [result] {match_string} found but not final (status={status})")
+                return None
+            try:
+                return int(our_home_goals), int(our_away_goals)
+            except (TypeError, ValueError):
+                print(f"  [result] {match_string} final but score unparseable "
+                      f"({our_home_goals!r}-{our_away_goals!r})")
+                return None
 
-Return ONLY the JSON, no other text."""
-
-    try:
-        client = OpenAI(
-            base_url=os.getenv("COUNCIL_BASE_URL", "http://localhost:11434/v1"),
-            api_key=os.getenv("COUNCIL_API_KEY", "ollama"),
-        )
-        response = client.chat.completions.create(
-            model=os.getenv("RESEARCH_MODEL", "mistral:7b"),
-            max_tokens=64,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0,
-        )
-        raw = response.choices[0].message.content.strip()
-        # Strip markdown code fences if present
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
-            raw = raw.strip()
-        parsed = json.loads(raw)
-        if parsed.get("confidence") == "high" and parsed.get("home_goals") is not None:
-            return int(parsed["home_goals"]), int(parsed["away_goals"])
-    except Exception as e:
-        print(f"  [result] LLM parse failed for {match_string}: {e}")
-
+    print(f"  [result] No final result for {match_string} around {date_compact}")
     return None
 
 
@@ -196,9 +207,11 @@ def distribute_today(date_str: str) -> int:
 
 def update_yesterday_results(date_str: str) -> int:
     """
-    For each run file from the most recent previous match day that lacks an 'actual'
-    field, fetch the result via Tavily+LLM and record it.
-    Returns count of results successfully recorded.
+    Backfill the actual score for EVERY past match still missing an 'actual' field,
+    not just the most recent match day. A score the feed missed on an earlier day
+    self-heals on a later run instead of needing a manual patch. Already-recorded
+    matches are skipped, so the daily cost is one free ESPN lookup per open result.
+    Returns count of results recorded this run.
     """
     # Find all dated run files (????-??-??/wc_*.json, not context/thread/summary/base)
     all_run_files = [
@@ -207,41 +220,37 @@ def update_yesterday_results(date_str: str) -> int:
         and not f.name.endswith("_base.json")
     ]
 
-    # Group by date (folder name YYYY-MM-DD), find most recent date before today
     today_compact = date_str.replace("-", "")
-    dates_before_today = set()
-    for f in all_run_files:
-        file_date = f.parent.name.replace("-", "")  # YYYY-MM-DD folder → YYYYMMDD
-        if file_date < today_compact:
-            dates_before_today.add(file_date)
+    # Every past run file, paired with its own match day (YYYYMMDD), oldest first.
+    pending = sorted(
+        (f.parent.name.replace("-", ""), f)
+        for f in all_run_files
+        if f.parent.name.replace("-", "") < today_compact
+    )
 
-    if not dates_before_today:
+    if not pending:
         print(f"No previous match days found before {date_str}")
         return 0
-
-    prev_date_compact = max(dates_before_today)
-    prev_files = [f for f in all_run_files if f.parent.name.replace("-", "") == prev_date_compact]
 
     if update_result_fn is None:
         print("  update_result not available — skipping result update")
         return 0
 
-    print(f"Checking results for {prev_date_compact}: {len(prev_files)} match(es)")
+    print(f"Checking {len(pending)} past match(es) for results")
     updated = 0
-    for run_file in prev_files:
+    for file_date, run_file in pending:
         try:
             run = json.loads(run_file.read_text())
         except (json.JSONDecodeError, OSError) as e:
             print(f"  ⚠️  Skipping unreadable run file {run_file.name}: {e}")
             continue
         if "actual" in run:
-            print(f"  Already recorded: {run_file.name}")
-            continue
+            continue  # already recorded — skip quietly to keep the log readable
         match_string = run.get("match_string", "")
         if not match_string:
             continue
-        print(f"  Fetching result: {match_string}...")
-        result = fetch_match_result(match_string)
+        print(f"  Fetching result: {match_string} ({file_date})...")
+        result = fetch_match_result(match_string, file_date)
         if result is None:
             print(f"  Could not determine result for {match_string}")
             continue
