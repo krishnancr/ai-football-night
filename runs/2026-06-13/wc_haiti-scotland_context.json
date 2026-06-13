@@ -50,30 +50,20 @@
       "GA": 7
     }
   },
-  "injuries_home": [
-    "Leverton Pierre (adductor muscle injury)"
-  ],
+  "injuries_home": [],
   "injuries_away": [
-    "Scott McTominay (fitness concern)"
+    "Scott McTominay (fitness)"
   ],
   "odds": {
     "home_win": null,
     "draw": null,
     "away_win": null
   },
-  "recent_news": "Haiti midfielder Leverton Pierre has been ruled out of the World Cup with an adductor injury. Scotland are monitoring the fitness of key midfielder Scott McTominay ahead of their opener.",
+  "recent_news": "Scotland is the clear favorite to win their FIFA World Cup group stage match against Haiti, with computer models giving the Scots a 59% chance of victory. A tight, controlled 2-1 or 2-0 win for Scotland is the most widely anticipated result.",
   "form_home": [
-    "W",
-    "W",
-    "L",
-    "W",
-    "D"
+    "L"
   ],
   "form_away": [
-    "W",
-    "L",
-    "L",
-    "L",
     "W"
   ],
   "key_players_home": [
@@ -84,6 +74,7 @@
     "Derrick Etienne Jr. (winger)"
   ],
   "key_players_away": [
+    "Scott McTominay (midfielder)",
     "John McGinn (midfielder)"
   ],
   "context": "Group C features five-time champions Brazil and 2022 semi-finalists Morocco alongside Scotland and Haiti, making it one of the tournament's toughest groups; for Haiti the Scotland game is likely their best chance of a positive result, while Scotland must avoid defeat to keep realistic hopes of reaching the round of 32 for the first time in their history.",

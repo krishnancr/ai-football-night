@@ -18,7 +18,7 @@
       "match_string": "Haiti vs Scotland",
       "run_file": "runs/2026-06-13/wc_haiti-scotland.json",
       "thread_file": "runs/2026-06-13/wc_haiti-scotland_thread.json",
-      "success": false
+      "success": true
     },
     {
       "match_string": "Australia vs T\u00fcrkiye",
