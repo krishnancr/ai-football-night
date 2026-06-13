@@ -1,60 +1,54 @@
 # Post pack — Brazil vs Morocco
 
-**Attach card if present:** `runs/wc_brazil-morocco_20260613_card.png`
+**Attach the picks card:** `runs/2026-06-13/wc_brazil-morocco_card.png`
 
-## Tweet 1 (copy below the line, attach the card)
+## Tweet 1 (copy below the line, attach the picks card)
 ---
-Stat_Bot: Morocco's 100% qualifying win rate is the single strongest stat.
+🏟️ Neymar's absence and Morocco's compact defence cancel Brazil's early threat
 
-Brazil 1–1 Morocco — the panel's verdict (62%)
+Brazil 1–1 Morocco — the panel's verdict (62% confidence)
 
-Full debate: https://krishnancr.github.io/ai-football-night/matches/brazil-morocco.html
+Brazil without Neymar face Morocco's unbeaten qualifying run – can Vinicius unlock the low bl…
+
+But our 4 AI pundits didn't all agree 👇 [1/4]
 ---
 
-## Rest of thread (optional, reply to tweet 1 in order)
+## Rest of thread (reply to tweet 1 in order)
 
-### 2/5
+### 2/4
 ```
-💬 Stat_Bot vs R_Bot:
+The panel's calls:
 
-Stat_Bot: Morocco's 100% qualifying win rate is the single strongest stat.
-R_Bot: They played nobody! That friendly win counts more than your spreadsheets.
-Stat_Bot: A friendly from 2023? That's not data, that…
+Stat_Bot 0-1
+G_Bot 2-1
+R_Bot 1-2
 
-[2/5]
-```
+⚖️ Verdict: 1-1
 
-### 3/5
-```
-📊 Stat_Bot:
-
-ELO EDGE INSUFFICIENT TO OFFSET MOROCCO'S QUALIFYING DOMINANCE.
-
-[3/5]
+G_Bot is the outlier. [2/4]
 ```
 
-### 4/5
+### 3/4
 ```
-🔥 Most outrageous take:
+🔥 The most outrageous take:
 
-R_Bot claimed Morocco would win because of a friendly two years ago – ignoring Brazil's 1998 WC win.
-
-[4/5]
+R_Bot claimed Morocco would win because of a friendly two years ago – ignoring Brazil's 1998 WC win. [3/4]
 ```
 
-### 5/5
+### 4/4
 ```
-⚖️ Host's call:
+⚖️ Stat_Bot overindexed on qualifying records against minnows, G_Bot trusted a rest defence that hasn't been tested, and R_Bot dusted off a friendly from 2023 – here is the final verdict.
 
-Stat_Bot overindexed on qualifying records against minnows, G_Bot trusted a rest defence that hasn't been tested, and R_Bot dusted off a friendly from 2023 – here is the final verdict.
-
-Full debate → link in bio
-
-[5/5]
+Full debate → link in bio [4/4]
 ```
+
+## Thread finale (optional)
+
+Reply to the last tweet with the season standings — attach `runs/2026-06-13/sack_race.png`.
+That's the soap-opera hook: who's leading, who's in the sack zone.
 
 ## After full time
 
-A paste-ready receipts reply will appear at `runs/wc_brazil-morocco_20260613_receipts.md` after the
+A paste-ready receipts reply will appear at `runs/2026-06-13/wc_brazil-morocco_receipts.md` after the
 result is recorded (next morning's run does this automatically).
 **Paste it as a REPLY to tweet 1** — that's act two of the show.

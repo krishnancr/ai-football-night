@@ -63,25 +63,31 @@ def test_format_twitter_thread_first_tweet_has_prediction(run_data, context_data
     assert "2" in first  # goals in prediction
 
 
-def test_format_twitter_thread_tweet1_no_upset_has_panel_confidence(run_data, context_data):
+def test_format_twitter_thread_tweet1_has_verdict_and_hook(run_data, context_data):
     from format_content import format_twitter_thread
     thread = format_twitter_thread(run_data, context_data)
     first = thread[0]
     assert "Upset:" not in first, "Tweet 1 should not contain 'Upset:'"
-    assert "panel confidence" in first, "Tweet 1 should contain 'panel confidence'"
+    assert "verdict" in first.lower() and "confidence" in first.lower()
     hook = run_data["decision"]["tweet_hook"]
     assert hook in first, f"Tweet 1 should contain tweet_hook: {hook!r}"
 
 
-def test_format_twitter_thread_tweet3_uses_stat_bot_highlight(run_data, context_data):
+def test_format_twitter_thread_tweet2_lists_the_divergence(run_data, context_data):
+    """Tweet 2 must mirror the picks card: each pundit's call + the named outlier."""
+    from format_content import format_twitter_thread
+    thread = format_twitter_thread(run_data, context_data)
+    tweet2 = thread[1]
+    for role in ("Stat_Bot", "G_Bot", "R_Bot"):
+        assert role in tweet2, f"divergence tweet missing {role}"
+    assert "R_Bot is the outlier" in tweet2  # R_Bot picked away alone in the fixture
+
+
+def test_format_twitter_thread_tweet3_is_outrageous_take(run_data, context_data):
     from format_content import format_twitter_thread
     thread = format_twitter_thread(run_data, context_data)
     tweet3 = thread[2]
-    highlight = run_data["decision"]["stat_bot_highlight"]
-    assert highlight in tweet3, f"Tweet 3 should contain stat_bot_highlight: {highlight!r}"
-    # The full raw Stat_Bot proposal text should NOT appear verbatim
-    raw_statman = run_data["full_debate"]["proposals"]["Statman"]
-    assert raw_statman not in tweet3, "Tweet 3 should not contain full raw Stat_Bot proposal text"
+    assert run_data["decision"]["most_outrageous_take"] in tweet3
 
 
 def test_format_twitter_thread_tweet1_no_hook_fallback(context_data):
@@ -104,9 +110,9 @@ def test_format_twitter_thread_tweet1_no_hook_fallback(context_data):
     }
     thread = format_twitter_thread(run_no_hook, context_data)
     first = thread[0]
-    # No blank line gap before "The panel got heated" when hook is empty
+    # No blank line gap before the closing line when hook is empty
     assert "\n\n\n" not in first, "Tweet 1 should not have a blank line gap when tweet_hook is empty"
-    assert "The panel got heated" in first
+    assert "didn't all agree" in first
 
 
 def test_format_twitter_thread_last_tweet_has_link(run_data, context_data):
@@ -117,15 +123,24 @@ def test_format_twitter_thread_last_tweet_has_link(run_data, context_data):
     assert "substack" in last.lower() or "http" in last.lower() or "full" in last.lower()
 
 
-def test_format_twitter_thread_statbot_tweet_not_empty_with_live_roles(run_data, context_data):
-    """Live runs key proposals by Stat_Bot (not legacy Statman) — tweet 3 must not be empty."""
+def test_format_twitter_thread_divergence_from_parsed_predictions(context_data):
+    """When pundit_predictions is absent, picks are parsed from PREDICTION: lines
+    in the debate (legacy keys normalized) — the divergence tweet still populates."""
     from format_content import format_twitter_thread
-    proposals = run_data["full_debate"]["proposals"]
-    proposals["Stat_Bot"] = proposals.pop("Statman")
-    thread = format_twitter_thread(run_data, context_data)
-    statbot_tweet = thread[2]
-    body = statbot_tweet.replace("📊 Stat_Bot:", "").replace("[3/5]", "").strip()
-    assert len(body) > 20, f"Stat_Bot tweet body is empty/near-empty: {statbot_tweet!r}"
+    run = {
+        "match_string": "Brazil vs Croatia",
+        "decision": {"home_goals": 2, "away_goals": 1, "confidence": 0.7,
+                     "most_outrageous_take": "Croatia stun Brazil.", "host_intro": "Final word."},
+        "full_debate": {"proposals": {
+            "Statman": "Numbers favour Brazil. PREDICTION: 2-1",
+            "TacticalAnalyst": "Brazil's press wins it. PREDICTION: 2-0",
+            "Contrarian": "Croatia have the pedigree. PREDICTION: 1-2",
+        }},
+    }
+    thread = format_twitter_thread(run, context_data)
+    tweet2 = thread[1]
+    for role in ("Stat_Bot", "G_Bot", "R_Bot"):
+        assert role in tweet2, f"divergence tweet missing {role}"
 
 
 def test_personas_json_is_valid():

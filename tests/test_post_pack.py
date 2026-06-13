@@ -68,20 +68,21 @@ def test_receipts_handles_missing_predictions(scored_run):
     assert "FULL TIME" in text  # degrades gracefully, never raises
 
 
-def test_post_pack_tweet1_overflow_truncates_to_280(scored_run):
+def test_post_pack_tweet1_is_thread_first_verbatim(scored_run):
+    """Tweet 1 in the pack is thread[0] verbatim — the copy can't drift from the card."""
     from post_pack import format_post_pack
     scored_run["date_compact"] = "20260613"
-    scored_run["decision"]["studio_banter_quote"] = {"role": "K_Bot", "exchange": "x" * 400}
-    pack = format_post_pack(scored_run, {}, ["t1", "t2"])
+    pack = format_post_pack(scored_run, {}, ["LEAD TWEET matching the card", "t2"])
     tweet1 = pack.split("---\n")[1].rsplit("\n---", 1)[0].strip()
-    assert len(tweet1) <= 280
+    assert tweet1 == "LEAD TWEET matching the card"
 
 
-def test_post_pack_single_tweet_thread(scored_run):
+def test_post_pack_points_to_picks_card_and_sack_race(scored_run):
     from post_pack import format_post_pack
     scored_run["date_compact"] = "20260613"
     pack = format_post_pack(scored_run, {}, ["only tweet"])
-    assert "_card.png" in pack
+    assert "_card.png" in pack       # picks card
+    assert "sack_race.png" in pack   # finale
     assert "REPLY" in pack
 
 

@@ -46,5 +46,19 @@
       "TacticalAnalyst": "Concede on the Gvardiol point — he's improved significantly since the last meeting.",
       "Contrarian": "Stand firm. Tournament football is different. Brazil are vulnerable."
     }
+  },
+  "pundit_predictions": {
+    "Stat_Bot": {
+      "home_goals": 2,
+      "away_goals": 1
+    },
+    "G_Bot": {
+      "home_goals": 2,
+      "away_goals": 1
+    },
+    "R_Bot": {
+      "home_goals": 1,
+      "away_goals": 2
+    }
   }
 }

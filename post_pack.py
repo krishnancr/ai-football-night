@@ -4,7 +4,6 @@ Compose audience-facing post artifacts: morning post pack + full-time receipts.
 No LLM calls — the daily path stays deterministic. The human posts manually
 (X auto-posting is deliberately unpaid); these files are paste-ready.
 """
-import os
 
 # Canned K_Bot full-time quips, keyed by panel outcome. Picked deterministically
 # from the match slug so the same match always gets the same line, but lines
@@ -90,48 +89,44 @@ def format_receipts(run: dict) -> str:
 
 
 def format_post_pack(run: dict, context: dict, thread: list) -> str:
-    """Morning post pack: card pointer + tweet 1 + rest of thread + receipts reminder."""
+    """Morning post pack: picks-card pointer + the thread (matched to that card) +
+    sack-race finale + receipts reminder. Tweet 1 is thread[0] verbatim so the copy
+    and the image can never drift apart again."""
     home, away = _teams(run)
-    decision = run.get("decision", {})
     slug = run.get("match_slug", "")
-    stem = f"wc_{slug}_{run.get('date_compact', '')}".rstrip("_")
-    site = os.getenv("SITE_URL", "https://krishnancr.github.io/ai-football-night")
-    match_url = f"{site}/matches/{slug}.html"
+    dc = run.get("date_compact", "")
+    date = f"{dc[:4]}-{dc[4:6]}-{dc[6:8]}" if len(dc) == 8 else ""
+    folder = f"runs/{date}" if date else "runs"
+    card_path = f"{folder}/wc_{slug}_card.png"
+    sack_path = f"{folder}/sack_race.png"
+    receipts_path = f"{folder}/wc_{slug}_receipts.md"
 
-    banter = decision.get("studio_banter_quote") or {}
-    hook = (banter.get("exchange") or "").strip().split("\n")[0][:180]
-    confidence_pct = int(decision.get("confidence", 0) * 100)
-    tweet1 = (f"{hook}\n\n"
-              f"{home} {decision.get('home_goals', '?')}–{decision.get('away_goals', '?')} {away} "
-              f"— the panel's verdict ({confidence_pct}%)\n\n"
-              f"Full debate: {match_url}")
-    if len(tweet1) > 280:
-        overflow = len(tweet1) - 280
-        hook = hook[:max(0, len(hook) - overflow - 1)] + "…"
-        tweet1 = (f"{hook}\n\n"
-                  f"{home} {decision.get('home_goals', '?')}–{decision.get('away_goals', '?')} {away} "
-                  f"— the panel's verdict ({confidence_pct}%)\n\n"
-                  f"Full debate: {match_url}")
+    tweet1 = thread[0] if thread else ""
 
     lines = [
         f"# Post pack — {home} vs {away}",
         "",
-        f"**Attach card if present:** `runs/{stem}_card.png`",
+        f"**Attach the picks card:** `{card_path}`",
         "",
-        "## Tweet 1 (copy below the line, attach the card)",
+        "## Tweet 1 (copy below the line, attach the picks card)",
         "---",
         tweet1,
         "---",
         "",
-        "## Rest of thread (optional, reply to tweet 1 in order)",
+        "## Rest of thread (reply to tweet 1 in order)",
         "",
     ]
     for i, t in enumerate(thread[1:], 2):
         lines += [f"### {i}/{len(thread)}", "```", t, "```", ""]
     lines += [
+        "## Thread finale (optional)",
+        "",
+        f"Reply to the last tweet with the season standings — attach `{sack_path}`.",
+        "That's the soap-opera hook: who's leading, who's in the sack zone.",
+        "",
         "## After full time",
         "",
-        f"A paste-ready receipts reply will appear at `runs/{stem}_receipts.md` after the",
+        f"A paste-ready receipts reply will appear at `{receipts_path}` after the",
         "result is recorded (next morning's run does this automatically).",
         "**Paste it as a REPLY to tweet 1** — that's act two of the show.",
         "",

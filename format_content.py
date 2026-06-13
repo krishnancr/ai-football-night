@@ -130,43 +130,72 @@ def format_substack(run: dict, context: dict) -> str:
     return "\n".join(lines)
 
 
+# Legacy role keys (older runs) -> current display names.
+_LEGACY_ROLES = {"Statman": "Stat_Bot", "TacticalAnalyst": "G_Bot", "Contrarian": "R_Bot", "Judge": "K_Bot"}
+
+
+def _lean(home_goals: int, away_goals: int) -> str:
+    return "H" if home_goals > away_goals else ("A" if away_goals > home_goals else "D")
+
+
 def format_twitter_thread(run: dict, context: dict) -> list:
-    """Generate a Twitter thread as a list of tweet strings (each ≤280 chars)."""
+    """Twitter thread (each ≤280 chars) matching the picks card: the 4-way pick
+    divergence, the lone outlier, and the judge's verdict — not the old banter snippet."""
+    from collections import Counter
+    from track_record import extract_pundit_predictions
+
     decision = run["decision"]
-    home = context.get("home_team", "Home")
-    away = context.get("away_team", "Away")
+    home = context.get("home_team") or run.get("match_string", "Home vs Away").split(" vs ")[0].strip()
+    away = context.get("away_team") or (run.get("match_string", " vs ").split(" vs ")[-1].strip() or "Away")
     home_g = decision["home_goals"]
     away_g = decision["away_goals"]
     confidence_pct = int(decision.get("confidence", 0) * 100)
-    banter = decision.get("studio_banter_quote") or {"role": "Council", "exchange": "The panel reached a unanimous verdict."}
-    match_headline = decision.get("match_headline", f"{home} vs {away} — The Council's Verdict")
+    match_headline = decision.get("match_headline", f"{home} vs {away} — the panel's verdict")
     key_factors = decision.get("key_factors", [])
-    outrageous = decision.get("most_outrageous_take") or (key_factors[1] if len(key_factors) > 1 else key_factors[0] if key_factors else "")
+    outrageous = decision.get("most_outrageous_take") or (key_factors[0] if key_factors else "")
     host_intro = decision.get("host_intro") or decision.get("rationale", "")[:120]
     substack_url = os.getenv("SUBSTACK_URL", "link in bio")
-
-    proposals = run.get("full_debate", {}).get("proposals", {})
-    statman_text = proposals.get("Stat_Bot") or proposals.get("Statman", "")
-
-    def truncate(text: str, max_len: int) -> str:
-        if len(text) <= max_len:
-            return text
-        return text[:max_len - 1] + "…"
-
-    exchange_text = truncate(banter.get("exchange", ""), 210)
-
     hook = decision.get("tweet_hook", "")
     hook_line = f"\n\n{hook}" if hook else ""
 
-    stat_highlight = decision.get("stat_bot_highlight", "")
-    if not stat_highlight:
-        # fallback: first 200 chars of Stat_Bot proposal
-        stat_highlight = statman_text[:200] + ("…" if len(statman_text) > 200 else "")
+    # Predictions: prefer structured field, else parse "PREDICTION:" lines; normalize legacy keys.
+    preds_raw = run.get("pundit_predictions") or extract_pundit_predictions(run.get("full_debate", {}))
+    preds = {_LEGACY_ROLES.get(k, k): v for k, v in preds_raw.items()}
 
-    return [
-        truncate(f"🏟️ {match_headline}\n\n{home} {home_g}–{away_g} {away} — {confidence_pct}% panel confidence{hook_line}\n\nThe panel got heated 👇 [1/5]", 280),
-        truncate(f"💬 {banter['role']}:\n\n{exchange_text}\n\n[2/5]", 280),
-        truncate(f"📊 Stat_Bot:\n\n{stat_highlight}\n\n[3/5]", 280),
-        truncate(f"🔥 Most outrageous take:\n\n{outrageous}\n\n[4/5]", 280),
-        truncate(f"⚖️ Host's call:\n\n{host_intro}\n\nFull debate → {substack_url}\n\n[5/5]", 280),
-    ]
+    def truncate(text: str, max_len: int = 280) -> str:
+        return text if len(text) <= max_len else text[:max_len - 1] + "…"
+
+    # 1/4 — hook + verdict (the card's headline). Trim the HOOK to fit, never the
+    # verdict/CTA/marker — those must always survive.
+    head_verdict = (f"🏟️ {match_headline}\n\n{home} {home_g}–{away_g} {away} "
+                    f"— the panel's verdict ({confidence_pct}% confidence)")
+    closing = "\n\nBut our 4 AI pundits didn't all agree 👇 [1/4]"
+    room = 280 - len(head_verdict) - len(closing) - 2  # 2 = "\n\n" before hook
+    if hook and room > 12:
+        hook_fit = hook if len(hook) <= room else hook[:room - 1] + "…"
+        tweet1 = f"{head_verdict}\n\n{hook_fit}{closing}"
+    else:
+        tweet1 = head_verdict + closing
+    tweet1 = truncate(tweet1)
+
+    # 2/4 — the divergence shown on the card
+    order = ["Stat_Bot", "G_Bot", "R_Bot"]
+    pick_lines = [f"{r} {preds[r]['home_goals']}-{preds[r]['away_goals']}" for r in order if r in preds]
+    leans = {r: _lean(preds[r]["home_goals"], preds[r]["away_goals"]) for r in order if r in preds}
+    counts = Counter(leans.values())
+    minority = [r for r, lv in leans.items() if counts[lv] == 1] if len(counts) > 1 else []
+    outlier_line = f"\n\n{minority[0]} is the outlier." if len(minority) == 1 else ""
+    if pick_lines:
+        tweet2 = truncate("The panel's calls:\n\n" + "\n".join(pick_lines)
+                          + f"\n\n⚖️ Verdict: {home_g}-{away_g}{outlier_line} [2/4]")
+    else:
+        tweet2 = truncate(f"⚖️ The panel's verdict: {home} {home_g}–{away_g} {away}.\n\n"
+                          "Four bots, one final call. [2/4]")
+
+    # 3/4 — debate bait
+    tweet3 = truncate(f"🔥 The most outrageous take:\n\n{outrageous} [3/4]")
+
+    # 4/4 — host's call + where to read the full debate
+    tweet4 = truncate(f"⚖️ {host_intro}\n\nFull debate → {substack_url} [4/4]")
+
+    return [tweet1, tweet2, tweet3, tweet4]

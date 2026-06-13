@@ -1,58 +1,54 @@
 # Post pack — Australia vs Türkiye
 
-**Attach card if present:** `runs/wc_australia-türkiye_20260613_card.png`
+**Attach the picks card:** `runs/2026-06-13/wc_australia-türkiye_card.png`
 
-## Tweet 1 (copy below the line, attach the card)
+## Tweet 1 (copy below the line, attach the picks card)
 ---
-Stat_Bot: Türkiye's 2.83 GF/game crushes Australia's 0.70 GA/game. R_Bot: Those numbers came against Bulgaria, not a World Cup block. St…
+🏟️ Güler and Yıldız face Australia's World Cup-tested defence
 
-Australia 1–2 Türkiye — the panel's verdict (65%)
+Australia 1–2 Türkiye — the panel's verdict (65% confidence)
 
-Full debate: https://krishnancr.github.io/ai-football-night/matches/australia-türkiye.html
+Australia have never beaten Türkiye in two previous meetings (both 2004 friendlies).
+
+But our 4 AI pundits didn't all agree 👇 [1/4]
 ---
 
-## Rest of thread (optional, reply to tweet 1 in order)
+## Rest of thread (reply to tweet 1 in order)
 
-### 2/5
+### 2/4
 ```
-💬 Stat_Bot:
+The panel's calls:
 
-Stat_Bot: Türkiye's 2.83 GF/game crushes Australia's 0.70 GA/game. R_Bot: Those numbers came against Bulgaria, not a World Cup block. Stat_Bot: The 27-point Elo gap is significant at p<0.05.
+Stat_Bot 1-2
+G_Bot 2-1
+R_Bot 2-0
 
-[2/5]
-```
+⚖️ Verdict: 1-2
 
-### 3/5
-```
-📊 Stat_Bot:
-
-Türkiye's 2.83 GF/game in qualifying is the highest in Group D — Australia's 0.70 GA/game is the lowest. Something has to give.
-
-[3/5]
+Stat_Bot is the outlier. [2/4]
 ```
 
-### 4/5
+### 3/4
 ```
-🔥 Most outrageous take:
+🔥 The most outrageous take:
 
-Türkiye's leaky defense won't matter because they'll dominate possession and force Australia to chase.
-
-[4/5]
+Türkiye's leaky defense won't matter because they'll dominate possession and force Australia to chase. [3/4]
 ```
 
-### 5/5
+### 4/4
 ```
-⚖️ Host's call:
+⚖️ Stat_Bot crunched the numbers but ignored the goalkeeper, G_Bot drew tactical diagrams around a midfielder who's injured, and R_Bot backed the wrong kind of resilience — here is the final verdict.
 
-Stat_Bot crunched the numbers but ignored the goalkeeper, G_Bot drew tactical diagrams around a midfielder who's injured, and R_Bot backed the wrong kind of resilience — here is the final verdict.
-
-Full debate → link in bio
-
-[5/5]
+Full debate → link in bio [4/4]
 ```
+
+## Thread finale (optional)
+
+Reply to the last tweet with the season standings — attach `runs/2026-06-13/sack_race.png`.
+That's the soap-opera hook: who's leading, who's in the sack zone.
 
 ## After full time
 
-A paste-ready receipts reply will appear at `runs/wc_australia-türkiye_20260613_receipts.md` after the
+A paste-ready receipts reply will appear at `runs/2026-06-13/wc_australia-türkiye_receipts.md` after the
 result is recorded (next morning's run does this automatically).
 **Paste it as a REPLY to tweet 1** — that's act two of the show.
