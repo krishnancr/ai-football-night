@@ -308,5 +308,12 @@
       "role": "K_Bot",
       "text": "Verdict: USA 2-0. Home advantage, Elo gap, and press break them down in the second half."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 4,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
