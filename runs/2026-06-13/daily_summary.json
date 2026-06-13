@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-13",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Qatar vs Switzerland",
+      "run_file": "runs/2026-06-13/wc_qatar-switzerland.json",
+      "thread_file": "runs/2026-06-13/wc_qatar-switzerland_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Brazil vs Morocco",
+      "run_file": "runs/2026-06-13/wc_brazil-morocco.json",
+      "thread_file": "runs/2026-06-13/wc_brazil-morocco_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Haiti vs Scotland",
+      "run_file": "runs/2026-06-13/wc_haiti-scotland.json",
+      "thread_file": "runs/2026-06-13/wc_haiti-scotland_thread.json",
+      "success": false
+    },
+    {
+      "match_string": "Australia vs T\u00fcrkiye",
+      "run_file": "runs/2026-06-13/wc_australia-t\u00fcrkiye.json",
+      "thread_file": "runs/2026-06-13/wc_australia-t\u00fcrkiye_thread.json",
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "home_team": "Australia",
+  "away_team": "T\u00fcrkiye",
+  "match_date": "2026-06-13",
+  "group": "D",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "T\u00fcrkiye have won both previous meetings, both 2004 friendlies, with Australia yet to score a win over them.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 2,
+    "notable_results": [
+      "Turkey 3-1 Australia - Friendly - 2004",
+      "Turkey 1-0 Australia - Friendly - 2004"
+    ]
+  },
+  "wc_history_home": "Australia have appeared at six consecutive World Cups (1974, 2006\u20132026), with their best performance reaching the Round of 16 twice \u2014 in 2006 against Italy and in 2022 against Argentina.",
+  "wc_history_away": "T\u00fcrkiye's finest World Cup moment came in 2002 when they finished third, featuring Hakan \u015e\u00fck\u00fcr's fastest-ever World Cup goal (11 seconds); this 2026 tournament is their first appearance since 2002.",
+  "group_context": "Group D features co-hosts USA (favourites), an exciting T\u00fcrkiye side, defensively-solid Paraguay, and Australia; all three non-host teams are competing for two automatic qualification spots plus a potential third-place berth, making each match crucial.",
+  "strengths_home": [
+    "Disciplined defensive organisation and high work rate",
+    "Set-piece threat through Harry Souttar",
+    "Dangerous on the counter-attack with pace in wide areas"
+  ],
+  "strengths_away": [
+    "World-class creative talent in G\u00fcler and Y\u0131ld\u0131z",
+    "Hakan \u00c7alhano\u011flu's experience, leadership and set-piece quality",
+    "Strong qualifying form \u2014 won group with victories over Bulgaria and Georgia"
+  ],
+  "team_style_home": "Australia under Tony Popovic deploy a back-three/back-five system with compact defensive blocks, high work rate, and quick counter-attacking transitions rather than dominant possession play.",
+  "team_style_away": "T\u00fcrkiye under Vincenzo Montella use a 4-2-3-1 with high pressing, possession-oriented build-up, and creative central midfield play to unlock defences through G\u00fcler and Y\u0131ld\u0131z.",
+  "stats_home": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  },
+  "injuries_home": [
+    "Riley McGree (hamstring)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": 1.62
+  },
+  "recent_news": "Australia will miss midfielder Riley McGree due to a hamstring injury. Turkey is favored to win the match with odds at 1.62.",
+  "form_home": [
+    "W",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Mathew Ryan (goalkeeper, captain)",
+    "Harry Souttar (centre-back)",
+    "Martin Boyle (winger)",
+    "Nestory Irankunda (forward)",
+    "Aiden O'Neill (midfielder)"
+  ],
+  "key_players_away": [
+    "Hakan \u00c7alhano\u011flu (defensive midfielder, captain)",
+    "Arda G\u00fcler (attacking midfielder, Real Madrid)",
+    "Kenan Y\u0131ld\u0131z (winger, Juventus)",
+    "Kerem Akt\u00fcrko\u011flu (winger)",
+    "Merih Demiral (centre-back)"
+  ],
+  "context": "Group D features co-hosts USA (favourites), an exciting T\u00fcrkiye side, defensively-solid Paraguay, and Australia; all three non-host teams are competing for two automatic qualification spots plus a potential third-place berth, making each match crucial.",
+  "research_quality": "full"
+}

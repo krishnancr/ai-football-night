@@ -1,0 +1,92 @@
+{
+  "home_team": "Qatar",
+  "away_team": "Switzerland",
+  "match_date": "2026-06-13",
+  "group": "B",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "Qatar and Switzerland have met only once before, with Qatar winning 1-0 in a November 2018 friendly via a late Akram Afif goal.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "0-1 (Switzerland 0 Qatar 1) - International Friendly - 2018"
+    ]
+  },
+  "wc_history_home": "Qatar made history as the 2022 hosts but became the first host nation to lose all three group stage games, exiting without a point in a 7-1 aggregate defeat; the 2026 tournament marks their first World Cup qualification via the standard AFC process.",
+  "wc_history_away": "Switzerland are competing at their sixth consecutive World Cup and have reached the quarter-finals on three occasions (1934, 1938, 1954), most recently advancing to the last 16 in 2022 before losing to Portugal.",
+  "group_context": "Group B contains co-hosts Canada, Switzerland, Qatar, and Bosnia and Herzegovina; Switzerland and Canada are the favourites to advance, making Qatar vs Switzerland a crucial early match where a Qatar defeat would likely end their realistic hopes of progression.",
+  "strengths_home": [
+    "Akram Afif's creativity and ability to unlock defences on the counter",
+    "Asian Cup pedigree and experience of playing in major tournaments",
+    "Defensive discipline and set-piece threat under Lopetegui's structured system"
+  ],
+  "strengths_away": [
+    "Experienced, cohesive squad featuring Xhaka in his fourth World Cup",
+    "High-pressing system that disrupts opponents and generates turnovers",
+    "Strong recent form including a 4-1 win over Jordan and solid qualifying campaign"
+  ],
+  "team_style_home": "Qatar under Julen Lopetegui set up in a compact 4-2-3-1, prioritising defensive solidity, counter-attacking football, and set-piece threats, with Akram Afif as the primary creative outlet in the half-spaces.",
+  "team_style_away": "Switzerland under Murat Yakin deploy a flexible 3-4-3 or 4-3-3, pressing aggressively man-to-man, building patiently from the back through the Xhaka-Freuler double pivot, with Ndoye and Vargas providing width.",
+  "stats_home": {
+    "fifa_rank": 56,
+    "elo": 1450,
+    "qual": {
+      "P": 12,
+      "W": 5,
+      "D": 2,
+      "L": 5,
+      "GF": null,
+      "GA": null
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 13.94,
+    "draw": 6.66,
+    "away_win": 1.227
+  },
+  "recent_news": "Qatar faces Switzerland at Levi\u2019s Stadium on Saturday afternoon, aiming to prove their footballing growth on the global stage. Switzerland is tipped as a potential dark horse at this World Cup, starting their campaign against Qatar, who are making just their second World Cup appearance.",
+  "form_home": [
+    "L",
+    "D",
+    "L",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Mahmud Abunada (goalkeeper)",
+    "Boualem Khoukhi (defender)",
+    "Pedro Miguel (defender)",
+    "Ayoub Al-Oui (defender)"
+  ],
+  "key_players_away": [
+    "Granit Xhaka (captain / central midfielder)",
+    "Breel Embolo (striker)",
+    "Gregor Kobel (goalkeeper)",
+    "Dan Ndoye (winger)",
+    "Ricardo Rodriguez (left-back)"
+  ],
+  "context": "Group B contains co-hosts Canada, Switzerland, Qatar, and Bosnia and Herzegovina; Switzerland and Canada are the favourites to advance, making Qatar vs Switzerland a crucial early match where a Qatar defeat would likely end their realistic hopes of progression.",
+  "research_quality": "full"
+}
