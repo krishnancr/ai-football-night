@@ -304,5 +304,12 @@
       "role": "K_Bot",
       "text": "Verdict: 0-2 Switzerland. Data and structure align. Qatar's only hope was a set piece, but Switzerland's zonal marking and Akanji's recovery pace nullify that."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

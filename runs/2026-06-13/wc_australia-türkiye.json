@@ -297,5 +297,12 @@
       "role": "K_Bot",
       "text": "Final verdict: T\u00fcrkiye's attacking talent edges Australia's defense. Expect both teams to score. 1-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

@@ -1,0 +1,91 @@
+{
+  "home_team": "Germany",
+  "away_team": "Cura\u00e7ao",
+  "match_date": "2026-06-14",
+  "group": "E",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Germany and Cura\u00e7ao have never met before in any official or friendly match; this World Cup group stage fixture on June 14, 2026 will be their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Germany are four-time World Cup champions (1954, 1974, 1990, 2014) and one of the most decorated nations in tournament history, though they suffered back-to-back group-stage exits in 2018 and 2022.",
+  "wc_history_away": "Cura\u00e7ao are making their first-ever FIFA World Cup appearance in 2026, having qualified as CONCACAF group winners with an unbeaten six-game campaign, becoming the smallest nation by population ever to reach a World Cup finals.",
+  "group_context": "Group E also contains Ivory Coast and Ecuador; Germany and Ecuador are heavy favourites to advance, making this opening fixture crucial for Cura\u00e7ao, who need a strong showing to have any realistic chance of a surprise progression, while Germany will want maximum points to assert their position at the top of the group.",
+  "strengths_home": [
+    "Elite midfield creativity \u2014 Musiala and Wirtz among the best in the world",
+    "Experienced squad blending youth and veteran leadership (Kimmich, R\u00fcdiger, Neuer)",
+    "High-intensity gegenpressing system that quickly recovers possession and creates chances"
+  ],
+  "strengths_away": [
+    "Unbeaten CONCACAF qualifying campaign (10 played, 7W 3D 0L) with strong defensive discipline",
+    "Physically robust and well-organised defensive unit with a high tackle rate",
+    "Dutch-developed players with European league experience providing technical quality throughout"
+  ],
+  "team_style_home": "Germany under Julian Nagelsmann play an aggressive 4-2-3-1 built on high gegenpressing, dominant possession, and fluid attacking interplay between Musiala and Wirtz behind a target forward, with overlapping full-backs providing width.",
+  "team_style_away": "Cura\u00e7ao under Dick Advocaat deploy a disciplined 4-3-3 / 4-5-1 shape that prioritises defensive organisation and possession control, drawing on their Dutch-developed squad to play out from the back while remaining compact and hard to break down.",
+  "stats_home": {
+    "fifa_rank": 10,
+    "elo": 1736,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 0,
+      "L": 1,
+      "GF": 16,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 82,
+    "elo": 1295,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 13,
+      "GA": 3
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": null,
+  "form_home": [
+    "L",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
+  "key_players_home": [
+    "Jamal Musiala (attacking midfielder)",
+    "Florian Wirtz (attacking midfielder / forward)",
+    "Joshua Kimmich (captain, right-back / central midfielder)",
+    "Antonio R\u00fcdiger (centre-back)",
+    "Manuel Neuer (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Leandro Bacuna (captain, midfielder)",
+    "Juninho Bacuna (central midfielder)",
+    "Rangelo Janga (striker, all-time leading scorer)",
+    "Tahith Chong (winger / attacking midfielder)",
+    "Eloy Room (goalkeeper)"
+  ],
+  "context": "Group E also contains Ivory Coast and Ecuador; Germany and Ecuador are heavy favourites to advance, making this opening fixture crucial for Cura\u00e7ao, who need a strong showing to have any realistic chance of a surprise progression, while Germany will want maximum points to assert their position at the top of the group.",
+  "research_quality": "full"
+}

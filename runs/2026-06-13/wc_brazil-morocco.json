@@ -301,5 +301,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-1. Both sides cancel out. Low scoring stalemate at MetLife."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

@@ -1,0 +1,93 @@
+{
+  "home_team": "Sweden",
+  "away_team": "Tunisia",
+  "match_date": "2026-06-14",
+  "group": "F",
+  "venue": "Estadio BBVA, Monterrey, Mexico",
+  "h2h_summary": "Sweden and Tunisia have met only once in history \u2014 a February 2003 friendly that Tunisia won 1-0 \u2014 meaning they have virtually no head-to-head precedent ahead of their first-ever competitive meeting at the 2026 World Cup.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-1 (Tunisia win) - International Friendly - 2003"
+    ]
+  },
+  "wc_history_home": "Sweden have appeared at 13 World Cups with a best finish as runners-up on home soil in 1958, and most recently reached the quarter-finals at Russia 2018.",
+  "wc_history_away": "Tunisia are making their seventh World Cup appearance and became the first team in FIFA history to qualify without conceding a single goal across ten group fixtures; they have never progressed beyond the group stage.",
+  "group_context": "Group F features Netherlands (strong favourites), Japan (dangerous dark horses), Sweden, and Tunisia; Sweden need at least one win to realistically advance while Tunisia, heavy outsiders against the Dutch and Japanese, must target maximum points from this opening match to have any hope of a historic first knockout-stage appearance.",
+  "strengths_home": [
+    "Elite striker partnership: Gyokeres (21 goals in 2025-26) and Isak provide rare attacking depth",
+    "Pace on the break with Elanga ranked among the fastest players in the Premier League",
+    "Playoff momentum \u2014 won both playoff matches (3-1 vs Ukraine, 3-2 vs Poland) to qualify"
+  ],
+  "strengths_away": [
+    "Exceptional defensive organisation \u2014 conceded zero goals in 10 World Cup qualifying matches",
+    "Experienced defensive midfield anchor in Ellyes Skhiri who controls tempo and ball recovery",
+    "Proven ability to upset stronger opponents (beat France 1-0 at 2022 WC; held West Germany 0-0 in 1978)"
+  ],
+  "team_style_home": "Sweden under Graham Potter deploy a pragmatic 3-4-2-1 or 4-2-3-1, relying on quick counter-attacks and the explosive pace of Viktor Gyokeres and Anthony Elanga rather than sustained possession.",
+  "team_style_away": "Tunisia under Sabri Lamouchi are built on a compact 4-2-3-1 defensive structure that conceded zero goals across their entire qualifying campaign, looking to absorb pressure and hit on the counter through Hannibal Mejbri's creativity.",
+  "stats_home": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 45,
+    "elo": 1476,
+    "qual": {
+      "P": 10,
+      "W": 9,
+      "D": 1,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Sweden drew 2-2 against Greece in their last friendly, while Tunisia suffered a 5-0 defeat in their last fixture.",
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "D",
+    "W",
+    "D"
+  ],
+  "key_players_home": [
+    "Viktor Gyokeres (striker)",
+    "Alexander Isak (striker)",
+    "Anthony Elanga (winger)",
+    "Victor Lindelof (centre-back / captain)",
+    "Benjamin Nygren (forward)"
+  ],
+  "key_players_away": [
+    "Ellyes Skhiri (defensive midfielder / captain)",
+    "Hannibal Mejbri (attacking midfielder)",
+    "Montassar Talbi (centre-back)",
+    "Aymen Dahmen (goalkeeper)",
+    "Elias Saad (forward)"
+  ],
+  "context": "Group F features Netherlands (strong favourites), Japan (dangerous dark horses), Sweden, and Tunisia; Sweden need at least one win to realistically advance while Tunisia, heavy outsiders against the Dutch and Japanese, must target maximum points from this opening match to have any hope of a historic first knockout-stage appearance.",
+  "research_quality": "full"
+}

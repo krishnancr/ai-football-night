@@ -1,0 +1,93 @@
+{
+  "home_team": "Netherlands",
+  "away_team": "Japan",
+  "match_date": "2026-06-14",
+  "group": "F",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "The Netherlands are unbeaten in all three previous meetings with Japan, winning two and drawing one, including a 1-0 victory in the 2010 FIFA World Cup group stage.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "3-0 - International Friendly - 2009",
+      "1-0 - FIFA World Cup Group Stage - 2010",
+      "2-2 - International Friendly - 2013"
+    ]
+  },
+  "wc_history_home": "The Netherlands are one of football's most storied underachievers, having reached three World Cup finals (1974, 1978, 2010) without winning, and have been a consistent contender in every tournament they have qualified for.",
+  "wc_history_away": "Japan have qualified for every World Cup since 1998 and reached their peak in 2022 by sensationally defeating Germany and Spain to top their group before being eliminated by Croatia on penalties.",
+  "group_context": "Group F consists of Netherlands, Japan, Sweden, and Tunisia, with the top two teams advancing; Netherlands enter as heavy favourites to top the group, while Japan \u2014 full of confidence after pre-tournament wins over Scotland, England, and Iceland \u2014 are widely regarded as the main challengers for second place.",
+  "strengths_home": [
+    "World-class defensive spine anchored by Virgil van Dijk, providing commanding aerial and positional dominance",
+    "Creative midfield depth with De Jong, Simons, and Gravenberch capable of controlling and unlocking compact defences",
+    "Prolific attacking options including Gakpo and depth across the frontline with Depay, Malen, and Brobbey"
+  ],
+  "strengths_away": [
+    "Exceptional recent form with five consecutive wins including scalps against England and Scotland in pre-tournament friendlies",
+    "Organised high-press system that has dismantled elite European opposition through collective pressing and quick transitions",
+    "Experienced captain Wataru Endo provides tactical discipline and leadership, with technically gifted forwards Kubo and Doan as constant threats"
+  ],
+  "team_style_home": "Netherlands under Ronald Koeman deploy a possession-based 4-2-3-1 that transitions into a 4-2-5 in build-up, emphasizing central midfield control through De Jong and Gravenberch, with wingers cutting inside to create overloads and fullbacks providing width.",
+  "team_style_away": "Japan under Hajime Moriyasu use a flexible 3-4-2-1 / 4-2-3-1 system featuring high-intensity pressing, compact defensive blocks against stronger opponents, and rapid vertical transitions with technically gifted wide forwards exploiting space in behind.",
+  "stats_home": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  },
+  "injuries_home": [
+    "Verbruggen (injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.83,
+    "draw": 3.61,
+    "away_win": 3.74
+  },
+  "recent_news": "Netherlands are facing an injury crisis ahead of their World Cup opener against Japan, with Verbruggen among the affected players. Japan, on the other hand, arrives in strong form and is seen as a genuine threat to underestimate.",
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Cody Gakpo (forward)"
+  ],
+  "key_players_away": [
+    "Wataru Endo (defensive midfielder / captain)",
+    "Takefusa Kubo (winger / attacking midfielder)",
+    "Ritsu Doan (winger)",
+    "Takehiro Tomiyasu (right-back)",
+    "Yuto Nagatomo (left-back)"
+  ],
+  "context": "Group F consists of Netherlands, Japan, Sweden, and Tunisia, with the top two teams advancing; Netherlands enter as heavy favourites to top the group, while Japan \u2014 full of confidence after pre-tournament wins over Scotland, England, and Iceland \u2014 are widely regarded as the main challengers for second place.",
+  "research_quality": "full"
+}
