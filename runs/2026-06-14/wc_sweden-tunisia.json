@@ -300,5 +300,12 @@
       "role": "K_Bot",
       "text": "Verdict: Sweden's attack is real, Tunisia's defense is solid but untested. Expect a tight 2-1."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 5,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

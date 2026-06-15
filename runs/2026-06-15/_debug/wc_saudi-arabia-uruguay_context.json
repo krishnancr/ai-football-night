@@ -1,0 +1,96 @@
+{
+  "home_team": "Saudi Arabia",
+  "away_team": "Uruguay",
+  "match_date": "2026-06-15",
+  "group": "H",
+  "venue": "Hard Rock Stadium, Miami Gardens, USA",
+  "h2h_summary": "Uruguay leads the head-to-head with 1 win and 1 draw from 2 prior meetings, including a 1-0 win at the 2018 World Cup (Luis Suarez goal) and a 1-1 friendly draw in 2014.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "0-1 (Uruguay win) - FIFA World Cup Group Stage - 2018",
+      "1-1 (Draw) - International Friendly - 2014"
+    ]
+  },
+  "wc_history_home": "Saudi Arabia have appeared at seven World Cups, with their best run coming in 1994 (Round of 16), and their most iconic moment being the stunning 2-1 upset of eventual champions Argentina at Qatar 2022.",
+  "wc_history_away": "Uruguay are one of football's most decorated nations, having won the World Cup twice (1930, 1950) and reached the semi-finals five times, including a fourth-place finish as recently as 2010.",
+  "group_context": "Group H features pre-tournament favourites Spain alongside Uruguay, Saudi Arabia, and Cape Verde; Saudi Arabia desperately need points in their opening match to avoid early elimination, while Uruguay must assert themselves as the second-strongest side in the group to secure a last-16 berth.",
+  "strengths_home": [
+    "Organised, disciplined defensive block difficult to break down",
+    "Salem Al-Dawsari's match-winning individual quality on the counter",
+    "High-press intensity capable of disrupting structured opponents"
+  ],
+  "strengths_away": [
+    "Elite midfield trio of Valverde, Ugarte and Bentancur dominating central areas",
+    "Experienced and commanding centre-back partnership of Gimenez and Araujo",
+    "Darwin Nunez's pace and physicality stretching defences in behind"
+  ],
+  "team_style_home": "Saudi Arabia under Georgios Donis deploy a compact 4-3-3 or 4-2-3-1 with disciplined defensive organisation, aggressive pressing to win possession high up the pitch, and rapid counter-attacks through Al-Dawsari and Al-Buraikan.",
+  "team_style_away": "Uruguay under Marcelo Bielsa play a high-intensity 4-4-2 or 4-3-3 built on relentless pressing, quick vertical transitions, and an adventurous defensive line with full-backs bombing forward, driven by Valverde's box-to-box engine.",
+  "stats_home": {
+    "fifa_rank": 61,
+    "elo": 1424,
+    "qual": {
+      "P": 12,
+      "W": 4,
+      "D": 5,
+      "L": 3,
+      "GF": 10,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 16,
+    "elo": 1673,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 22,
+      "GA": 12
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Ronald Araujo (physical problems)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Saudi Arabia and Uruguay will both look to start their 2026 World Cup campaigns with a win when they go head-to-head at Hard Rock Stadium on Monday. Uruguay have injury concerns, including Ronald Araujo, who will not take part due to physical problems.",
+  "form_home": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "L",
+    "D",
+    "D"
+  ],
+  "key_players_home": [
+    "Salem Al-Dawsari (captain/winger, AFC Player of the Year 2025)",
+    "Saud Abdulhamid (right-back, RC Lens)",
+    "Musab Al-Juwayr (attacking midfielder, Al-Qadsiah)",
+    "Firas Al-Buraikan (striker)",
+    "Nawaf Al-Aqidi (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Federico Valverde (midfielder, Real Madrid)",
+    "Darwin Nunez (striker, leads attack)",
+    "Jose Maria Gimenez (centre-back/captain, Atletico Madrid)",
+    "Ronald Araujo (centre-back, Barcelona)",
+    "Manuel Ugarte (defensive midfielder, Manchester United)"
+  ],
+  "context": "Group H features pre-tournament favourites Spain alongside Uruguay, Saudi Arabia, and Cape Verde; Saudi Arabia desperately need points in their opening match to avoid early elimination, while Uruguay must assert themselves as the second-strongest side in the group to secure a last-16 berth.",
+  "research_quality": "full"
+}

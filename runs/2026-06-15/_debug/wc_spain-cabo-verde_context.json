@@ -1,0 +1,91 @@
+{
+  "home_team": "Spain",
+  "away_team": "Cabo Verde",
+  "match_date": "2026-06-15",
+  "group": "H",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "Spain and Cabo Verde have never previously met in international football; this World Cup group stage match will be their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Spain won their only World Cup title in 2010 in South Africa, defeating the Netherlands 1-0 in the final, and have appeared in 16 of 22 tournaments with a fourth-place finish in 1950 as their previous best.",
+  "wc_history_away": "Cabo Verde are making their first-ever FIFA World Cup appearance in 2026 after qualifying from CAF Group D, winning seven of ten matches and finishing ahead of Cameroon.",
+  "group_context": "Group H consists of Spain (FIFA #2, defending Euro 2024 champions), Uruguay, Saudi Arabia, and debutants Cabo Verde (FIFA #69); Spain are heavy favourites to top the group while Cabo Verde's realistic target is a strong showing against Saudi Arabia, with the top two teams advancing to the Round of 32.",
+  "strengths_home": [
+    "Elite technical quality with world-class players across all positions",
+    "Dominant ball retention and high pressing that suffocates opponents",
+    "Devastating wide threat through Lamine Yamal and Nico Williams"
+  ],
+  "strengths_away": [
+    "Compact and disciplined defensive organisation conceding just 5 goals in 6 CAF qualifiers",
+    "Dangerous on the counter-attack through quick transitions",
+    "Strong team unity and collective spirit as motivated tournament debutants"
+  ],
+  "team_style_home": "Spain play a possession-dominant 4-3-3/4-2-3-1 with high pressing, rapid transitions, and technically refined combination play that has evolved beyond traditional tiki-taka into a faster, more vertical and ruthless attacking approach.",
+  "team_style_away": "Cabo Verde set up in a compact 4-2-3-1 under manager Bubista, prioritising defensive discipline and collective shape, winning the ball in useful areas and exploiting direct counter-attacks before opponents can reorganise.",
+  "stats_home": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 67,
+    "elo": 1371,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "injuries_home": [
+    "Lamine Yamal (hamstring tear)",
+    "Nico Williams (unspecified injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Spain is back at full strength ahead of its World Cup opener against Cape Verde, with Lamine Yamal and Nico Williams available but not starting. Spain has won five of their last six matches across all competitions.",
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "D",
+    "D"
+  ],
+  "key_players_home": [
+    "Mikel Oyarzabal (forward)"
+  ],
+  "key_players_away": [
+    "Ryan Mendes (forward / captain, all-time leading scorer)",
+    "Dailon Rocha Livramento (striker, top qualifier scorer)",
+    "Jovane Cabral (attacking midfielder / winger)",
+    "Logan Costa (centre-back)",
+    "Steven Moreira (right-back, 2024 MLS Defender of the Year)"
+  ],
+  "context": "Group H consists of Spain (FIFA #2, defending Euro 2024 champions), Uruguay, Saudi Arabia, and debutants Cabo Verde (FIFA #69); Spain are heavy favourites to top the group while Cabo Verde's realistic target is a strong showing against Saudi Arabia, with the top two teams advancing to the Round of 32.",
+  "research_quality": "full"
+}

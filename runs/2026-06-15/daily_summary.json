@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-15",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Belgium vs Egypt",
+      "run_file": "runs/2026-06-15/wc_belgium-egypt.json",
+      "thread_file": "runs/2026-06-15/_debug/wc_belgium-egypt_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Iran vs New Zealand",
+      "run_file": "runs/2026-06-15/wc_iran-new-zealand.json",
+      "thread_file": "runs/2026-06-15/_debug/wc_iran-new-zealand_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Spain vs Cabo Verde",
+      "run_file": "runs/2026-06-15/wc_spain-cabo-verde.json",
+      "thread_file": "runs/2026-06-15/_debug/wc_spain-cabo-verde_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Saudi Arabia vs Uruguay",
+      "run_file": "runs/2026-06-15/wc_saudi-arabia-uruguay.json",
+      "thread_file": "runs/2026-06-15/_debug/wc_saudi-arabia-uruguay_thread.json",
+      "success": true
+    }
+  ]
+}

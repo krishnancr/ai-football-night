@@ -1,0 +1,94 @@
+{
+  "home_team": "Belgium",
+  "away_team": "Egypt",
+  "match_date": "2026-06-15",
+  "group": "G",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Belgium and Egypt have met twice in friendlies, splitting wins 1-1, with Belgium winning 3-0 in 2018 and Egypt winning 2-1 in 2022.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "Belgium 3-0 Egypt - International Friendly - 2018",
+      "Belgium 1-2 Egypt - International Friendly - 2022"
+    ]
+  },
+  "wc_history_home": "Belgium have appeared in 14 World Cups, with their finest hour coming in 2018 when they finished third \u2014 their best-ever result \u2014 defeating Brazil in the quarter-finals.",
+  "wc_history_away": "Egypt have appeared at only three previous World Cups (1934, 1990, 2018) and have never won a match or progressed past the group stage in any of those tournaments.",
+  "group_context": "Group G also contains Iran and New Zealand; Belgium are strong favourites to top the group, while Egypt \u2014 led by Mohamed Salah in what is likely his final World Cup \u2014 are battling Iran for the crucial second qualification spot.",
+  "strengths_home": [
+    "World-class creative talent in De Bruyne and explosive width from Doku",
+    "Elite goalkeeper in Courtois providing a solid last line of defence",
+    "Prolific attack \u2014 29 goals in 8 qualifying matches \u2014 with depth across European top clubs"
+  ],
+  "strengths_away": [
+    "Mohamed Salah and Omar Marmoush form one of the tournament's most dangerous attacking duos",
+    "Exceptional defensive record in CAF qualifying \u2014 seven clean sheets, only two goals conceded in ten matches",
+    "Strong domestic spine from Al Ahly combined with European-based quality gives tactical flexibility"
+  ],
+  "team_style_home": "Belgium play an attacking 4-2-3-1 built on possession, quick transitions and wide pace through Doku, with De Bruyne orchestrating from deep and Lukaku as the target striker.",
+  "team_style_away": "Egypt set up in a compact, disciplined 4-2-3-1 that prioritizes defensive organization and concedes minimal space before releasing Salah and Marmoush on the counter-attack.",
+  "stats_home": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 29,
+    "elo": 1562,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 20,
+      "GA": 2
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.57,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Belgium is favored to win against Egypt with odds at 1.57. The match is part of the 2026 World Cup and will take place on June 15, 2026.",
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D",
+    "W",
+    "L"
+  ],
+  "key_players_home": [
+    "Kevin De Bruyne (attacking midfielder)",
+    "Romelu Lukaku (striker)",
+    "Thibaut Courtois (goalkeeper)",
+    "Jeremy Doku (winger)",
+    "Youri Tielemans (central midfielder, captain)"
+  ],
+  "key_players_away": [
+    "Mohamed Salah (forward/winger, captain)",
+    "Omar Marmoush (forward)",
+    "Ahmed Hegazi (centre-back)",
+    "Mahmoud Hassan Trezeguet (winger)",
+    "Hamza Abdelkarim (midfielder)"
+  ],
+  "context": "Group G also contains Iran and New Zealand; Belgium are strong favourites to top the group, while Egypt \u2014 led by Mohamed Salah in what is likely his final World Cup \u2014 are battling Iran for the crucial second qualification spot.",
+  "research_quality": "full"
+}

@@ -1,0 +1,94 @@
+{
+  "home_team": "Iran",
+  "away_team": "New Zealand",
+  "match_date": "2026-06-15",
+  "group": "G",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "Iran and New Zealand have met only twice in history, with Iran winning the only competitive encounter 3-0 in the 2003 FIFA World Cup intercontinental playoff and drawing 0-0 in a 1973 friendly.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "Iran 3-0 New Zealand - FIFA World Cup intercontinental playoff - 2003",
+      "New Zealand 0-0 Iran - International Friendly - 1973"
+    ]
+  },
+  "wc_history_home": "Iran have appeared at six World Cups (1978, 1998, 2006, 2014, 2018, 2022) without ever advancing beyond the group stage, with notable results including a famous 2-1 victory over the USA in 1998 and a 2-0 win over Wales in 2022.",
+  "wc_history_away": "New Zealand have appeared at three World Cups (1982, 2010, 2026), with their finest hour in 2010 when they became the only unbeaten side in the tournament, drawing all three group games against Slovakia, Italy, and Paraguay.",
+  "group_context": "Group G features Belgium (heavy favourites), Egypt, Iran, and New Zealand; the Iran vs New Zealand opener is effectively a must-win for both sides, as a loss in the first game would leave either team needing results against Belgium or Egypt to stay alive for a third-place qualification spot in the expanded 48-team format.",
+  "strengths_home": [
+    "Experienced defensive organisation and tactical flexibility under Ghalenoei",
+    "Mehdi Taremi's clinical finishing and penalty-drawing ability at the highest level",
+    "Compact shape and counter-attacking efficiency in tight matches"
+  ],
+  "strengths_away": [
+    "Chris Wood's Premier League-proven goalscoring threat and aerial dominance",
+    "Set-piece potency and physicality from a Europe-based defensive core",
+    "OFC qualification dominance (6 wins, 24 goals, 2 conceded) providing team cohesion and confidence"
+  ],
+  "team_style_home": "Iran deploy a disciplined 4-2-3-1 (with a 3-6-1 defensive block option against stronger sides), focusing on compact defending, physical midfield control, and rapid counter-attacks through Taremi.",
+  "team_style_away": "New Zealand operate in a pragmatic 4-3-3 or 4-2-3-1, emphasising direct vertical play into Chris Wood, heavy wing utilisation, set-piece threat from aerial duels, and a compact mid-block defensively.",
+  "stats_home": {
+    "fifa_rank": 20,
+    "elo": 1620,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 19,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 85,
+    "elo": 1276,
+    "qual": {
+      "P": 5,
+      "W": 5,
+      "D": 0,
+      "L": 0,
+      "GF": 29,
+      "GA": 1
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.75,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Iran\u2019s national football team departed its base camp hotel in Tijuana, Mexico, as Team Melli headed across the U.S. border for its opening 2026 FIFA World Cup Group G match against New Zealand in Los Angeles. The fixture marks the start of Iran\u2019s World Cup campaign amid heightened security and political scrutiny, with both nations seeking a breakthrough.",
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "D"
+  ],
+  "key_players_home": [
+    "Mehdi Taremi (captain / striker)",
+    "Alireza Beiranvand (goalkeeper)",
+    "Saeid Ezatolahi (defensive midfielder)",
+    "Saman Ghoddos (attacking midfielder)",
+    "Mehdi Ghayedi (winger)"
+  ],
+  "key_players_away": [
+    "Chris Wood (captain / striker)",
+    "Liberato Cacace (left-back)",
+    "Tyler Bindon (centre-back)",
+    "Sarpreet Singh (midfielder)",
+    "Max Crocombe (goalkeeper)"
+  ],
+  "context": "Group G features Belgium (heavy favourites), Egypt, Iran, and New Zealand; the Iran vs New Zealand opener is effectively a must-win for both sides, as a loss in the first game would leave either team needing results against Belgium or Egypt to stay alive for a third-place qualification spot in the expanded 48-team format.",
+  "research_quality": "full"
+}

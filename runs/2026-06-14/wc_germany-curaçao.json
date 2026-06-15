@@ -285,5 +285,12 @@
       "role": "K_Bot",
       "text": "Verdict: 3-0. Germany's quality breaks through. Cura\u00e7ao's defense holds an hour, then cracks."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 7,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

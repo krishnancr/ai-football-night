@@ -292,5 +292,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-1. Both defenses hold, Kessie vs Caicedo cancels out, and Ivory Coast's attack finds one before Ecuador locks it down."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }
