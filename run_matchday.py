@@ -112,10 +112,16 @@ def main():
     date_dir = runs_dir / match_date_dashed
     date_dir.mkdir(exist_ok=True)
 
+    # The run JSON is the one debuggable artifact kept top-level (site, cards, and
+    # result self-heal all read it). Everything else is a sidecar demoted into
+    # _debug/ so the daily folder surfaces only what gets posted: the run JSON,
+    # the picks cards, sack_race.png, and THREAD.md.
+    debug_dir = date_dir / "_debug"
+    debug_dir.mkdir(exist_ok=True)
+
     run_path = date_dir / f"wc_{slug}.json"
-    context_path = date_dir / f"wc_{slug}_context.json"
-    draft_path = date_dir / f"wc_{slug}_substack.md"
-    thread_path = date_dir / f"wc_{slug}_thread.json"
+    context_path = debug_dir / f"wc_{slug}_context.json"
+    thread_path = debug_dir / f"wc_{slug}_thread.json"
 
     if should_skip_run(run_path, args.force):
         print(f"\n✓ Already complete: {run_path}")
@@ -180,7 +186,7 @@ def main():
         if e.get("reasoning")
     ]
     if reasoning_entries:
-        reasoning_path = run_path.parent / f"wc_{slug}_reasoning.json"
+        reasoning_path = debug_dir / f"wc_{slug}_reasoning.json"
         reasoning_path.write_text(json.dumps(reasoning_entries, indent=2, ensure_ascii=False))
         print(f"  🧠 saved {len(reasoning_entries)} reasoning traces → {reasoning_path.name}")
 
@@ -215,21 +221,21 @@ def main():
         print("  Skipped (generation failed) — site falls back to full-debate layout")
 
     # ── Stage 3: Format ─────────────────────────────────────────────
+    # Substack is retired — the project posts to X only. The per-match thread.json
+    # and postpack are kept for debugging but demoted to _debug/; the postable
+    # artifact is the day-level THREAD.md, built by daily_runner after the slate.
     print(f"\n[3/4] Formatting content...")
-    from format_content import format_substack, format_twitter_thread
-    draft = format_substack(result, context)
+    from format_content import format_twitter_thread
     thread = format_twitter_thread(result, context)
 
-    draft_path.write_text(draft)
     thread_path.write_text(json.dumps(thread, indent=2))
-    print(f"  Substack draft: {draft_path}")
     print(f"  Twitter thread: {thread_path} ({len(thread)} tweets)")
 
     # Artifacts never block the run — post pack failure is a warning, not an exit.
     try:
         from post_pack import format_post_pack
         result["date_compact"] = date_str
-        pack_path = date_dir / f"wc_{slug}_postpack.md"
+        pack_path = debug_dir / f"wc_{slug}_postpack.md"
         pack_path.write_text(format_post_pack(result, context, thread), encoding="utf-8")
         print(f"  Post pack: {pack_path}")
     except Exception as e:
@@ -248,7 +254,6 @@ def main():
 
     print(f"\n{'='*60}")
     print(f"DONE")
-    print(f"  Paste {draft_path} into Substack → review → send")
     if not args.dry_run and not args.no_tweet:
         print(f"  Twitter thread live")
     print(f"  After the match: python update_result.py {run_path} <home_goals> <away_goals>")

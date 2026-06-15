@@ -57,7 +57,7 @@ def run_match(match_string: str, persona: str | None = None,
     slug = f"{slugify(home)}-{slugify(away)}"
     match_date = match_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     run_file = str(RUNS_DIR / match_date / f"wc_{slug}.json")
-    thread_file = str(RUNS_DIR / match_date / f"wc_{slug}_thread.json")
+    thread_file = str(RUNS_DIR / match_date / "_debug" / f"wc_{slug}_thread.json")
     cmd = [sys.executable, "run_matchday.py", match_string, "--no-tweet", "--date", match_date]
     if force:
         cmd.append("--force")
@@ -314,8 +314,10 @@ def main():
             print(f"  FAILED: {match_string}")
         else:
             print(f"  OK: {run_file}")
-            # Patch context file with group/date from schedule (research.py doesn't have this)
-            ctx_file = Path(run_file.replace(".json", "_context.json"))
+            # Patch context file with group/date from schedule (research.py doesn't have this).
+            # Context lives in _debug/ now — match the demoted path run_matchday writes.
+            run_path = Path(run_file)
+            ctx_file = run_path.parent / "_debug" / run_path.name.replace(".json", "_context.json")
             if ctx_file.exists():
                 ctx = json.loads(ctx_file.read_text())
                 ctx["group"] = match.get("group")
@@ -325,6 +327,13 @@ def main():
 
     summary_path = write_daily_summary(date_str, stage, results)
     print(f"\nSummary: {summary_path}")
+
+    # The day's headline deliverable: one postable thread for the whole slate,
+    # combining every picks card + the sack race with copy and hashtags. Written
+    # into runs/<date>/ so CI's `git add -f runs/` tracks and pushes it.
+    from thread_builder import write_thread_md
+    thread_md = write_thread_md(date_str)
+    print(f"Thread: {thread_md}" if thread_md else "Thread: no usable runs — THREAD.md skipped")
 
     if failed:
         print(f"Failed: {', '.join(failed)}")

@@ -16,8 +16,33 @@ _SEARCH_NAME = {
     "Czechia": "Czech Republic",
 }
 
-# Reverse: any incoming alias -> FIFA canonical. Built from _SEARCH_NAME.
+# Reverse: any incoming alias -> FIFA canonical. Built from _SEARCH_NAME, plus
+# aliases the schedule/media use that aren't a search-name flip (e.g. the
+# English exonym "Ivory Coast" for the French official "Côte d'Ivoire").
 _ALIAS_TO_CANONICAL = {v: k for k, v in _SEARCH_NAME.items()}
+_ALIAS_TO_CANONICAL["Ivory Coast"] = "Côte d'Ivoire"
+
+# Official FIFA three-letter trigrams, keyed by canonical name. The single source
+# for per-match hashtags (#NEDJPN), where fans search the real code — a naive
+# 3-char truncation (NET/JAP) is worse than useless. Covers the WC2026 field.
+_FIFA_CODE = {
+    "Argentina": "ARG", "Australia": "AUS", "Austria": "AUT", "Belgium": "BEL",
+    "Bosnia and Herzegovina": "BIH", "Brazil": "BRA", "Cabo Verde": "CPV",
+    "Cameroon": "CMR", "Canada": "CAN", "Chile": "CHI", "Colombia": "COL",
+    "Costa Rica": "CRC", "Côte d'Ivoire": "CIV", "Croatia": "CRO",
+    "Curaçao": "CUW", "Czechia": "CZE", "Denmark": "DEN", "Ecuador": "ECU",
+    "Egypt": "EGY", "England": "ENG", "France": "FRA", "Germany": "GER",
+    "Ghana": "GHA", "Haiti": "HAI", "Honduras": "HON", "Iran": "IRN",
+    "Italy": "ITA", "Jamaica": "JAM", "Japan": "JPN", "Jordan": "JOR",
+    "Korea Republic": "KOR", "Mexico": "MEX", "Morocco": "MAR",
+    "Netherlands": "NED", "New Zealand": "NZL", "Nigeria": "NGA", "Norway": "NOR",
+    "Panama": "PAN", "Paraguay": "PAR", "Peru": "PER", "Poland": "POL",
+    "Portugal": "POR", "Qatar": "QAT", "Saudi Arabia": "KSA", "Scotland": "SCO",
+    "Senegal": "SEN", "Serbia": "SRB", "South Africa": "RSA", "Spain": "ESP",
+    "Sweden": "SWE", "Switzerland": "SUI", "Tunisia": "TUN", "Türkiye": "TUR",
+    "Ukraine": "UKR", "United States": "USA", "Uruguay": "URU",
+    "Uzbekistan": "UZB", "Wales": "WAL",
+}
 
 
 def slugify(text: str) -> str:
@@ -40,6 +65,16 @@ def search(name: str) -> str:
 def slug(name: str) -> str:
     """Stable slug for base-file joins, keyed off the canonical name."""
     return slugify(canonical(name))
+
+
+def fifa_code(name: str) -> str:
+    """Official FIFA trigram for a team (e.g. 'NED'), via the canonical name.
+    Falls back to the first three ASCII letters uppercased if unmapped."""
+    canon = canonical(name)
+    if canon in _FIFA_CODE:
+        return _FIFA_CODE[canon]
+    ascii_name = unicodedata.normalize("NFKD", canon).encode("ascii", "ignore").decode("ascii")
+    return "".join(c for c in ascii_name if c.isalpha())[:3].upper()
 
 
 def resolve(name: str) -> dict:

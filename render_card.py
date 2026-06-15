@@ -43,7 +43,7 @@ FLAG = {
     "Argentina": "ar", "Australia": "au", "Austria": "at", "Belgium": "be",
     "Bosnia and Herzegovina": "ba", "Brazil": "br", "Cabo Verde": "cv", "Cameroon": "cm",
     "Canada": "ca", "Chile": "cl", "Colombia": "co", "Costa Rica": "cr",
-    "Côte d'Ivoire": "ci", "Croatia": "hr", "Czechia": "cz", "Denmark": "dk",
+    "Côte d'Ivoire": "ci", "Croatia": "hr", "Curaçao": "cw", "Czechia": "cz", "Denmark": "dk",
     "Ecuador": "ec", "Egypt": "eg", "England": "gb-eng", "France": "fr",
     "Germany": "de", "Ghana": "gh", "Haiti": "ht", "Honduras": "hn",
     "Iran": "ir", "Italy": "it", "Jamaica": "jm", "Japan": "jp", "Jordan": "jo",

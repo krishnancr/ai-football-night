@@ -2,7 +2,13 @@ name: Daily Match Day
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # 7am UTC daily
+    # 09:40 UTC, off the hour on purpose. GitHub delays scheduled runs under load,
+    # worst at the top of the hour — our old '0 7' landed 3–4.5h late (10:00–11:23
+    # UTC). Posting is manual, so this only sets when the post pack is READY: run
+    # early + off-peak so even GitHub's worst delay finishes before the ~15:00 UTC
+    # manual-post window and the ~16:00 UTC earliest US kickoffs. Post by hand at
+    # your window (≈11 AM ET / 15:00 UTC).
+    - cron: '40 9 * * *'
   workflow_dispatch:
     inputs:
       match_date:
@@ -107,11 +113,11 @@ jobs:
           publish_dir: ./_site
           commit_message: "site: ${{ github.run_id }}"
 
-      - name: Upload tweet threads
+      - name: Upload daily thread
         uses: actions/upload-artifact@v4
         with:
-          name: tweet-threads-${{ github.run_id }}
-          path: runs/*/*_thread.json
+          name: daily-thread-${{ github.run_id }}
+          path: runs/*/THREAD.md
           if-no-files-found: warn
           retention-days: 7
 

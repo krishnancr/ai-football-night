@@ -188,7 +188,12 @@ def load_run_pairs(runs_dir: Path = RUNS_DIR) -> list:
     )
     pairs = []
     for run_file in run_files:
-        context_file = run_file.parent / run_file.name.replace(".json", "_context.json")
+        # Context moved to _debug/ in the daily-output restructure; old committed
+        # runs still have it flat beside the run JSON, so check both locations.
+        ctx_name = run_file.name.replace(".json", "_context.json")
+        context_file = run_file.parent / "_debug" / ctx_name
+        if not context_file.exists():
+            context_file = run_file.parent / ctx_name
         run = json.loads(run_file.read_text())
         context = json.loads(context_file.read_text()) if context_file.exists() else {}
         date_str = run_file.parent.name.replace("-", "")  # YYYY-MM-DD → YYYYMMDD
