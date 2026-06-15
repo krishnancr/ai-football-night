@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spain vs Cabo Verde — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Spain vs Cabo Verde</h1>
+    <div class="meta">Group H · 2026-06-15</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–0</div>
+    <div class="meta">85% confidence · 15% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Your 'spirit' can't beat Elo.\nR_Bot: Your spreadsheets don't play football.\nStat_Bot: My spreadsheets predict 2-0, not 1-1.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Spain FIFA rank #2 vs Cabo Verde #67. Elo 1875 vs 1371. Qualifying GF/GA: 3.50/0.33. Confidence 9/10.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Right, before Stat_Bot drones on about ELO like he cracked the Enigma code — let's talk actual rest defense.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Spain's big possession talk means nothing when Yamal and Williams are carrying injuries and not starting.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Concede: without Yamal/Williams, Spain's GF/game drops to 2.83 from 3.50. Still trumps Cabo Verde's 0.80 GA/game.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Nice concession, but you ignore that Spain's inverted fullbacks create half-space overloads regardless of who starts.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">I got Cabo Verde's GA wrong — it's 8 in 10, not 5. But their compact block still frustrates. Mendes counters.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">R_Bot's factual error invalidates his 'compact defense' argument. Spain's GF/GA ratio is overwhelming.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot's never kicked a ball. Conceding 0.80 GA/game in CAF vs systematic positional play is completely different.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">I hold my hands up on the GA error. But without Yamal/Williams, Spain's width is neutralised. Mendes will exploit.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Concede R_Bot correct on injury impact. Adjust confidence to 8.8/10. Still predict 3-0 based on Elo differential.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Fine, my expected GF/game drops to 2.8. But Oyarzabal's interior movements become even more critical as connectors.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You both ignore the Mercedes-Benz Stadium width. Spain's inverted fullbacks will struggle on a wider pitch.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Venue dimensions not in provided data. Irrelevant. Stick to quantifiable metrics.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">R_Bot, finally something tactical! But Spain's inverted fullbacks exploit width — they pin fullbacks and create interior overloads.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, I'm calling it. Stat_Bot missed that injury impact on GF wasn't fully accounted for in his original model.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">G_Bot missed that without Yamal and Williams, half-space rotations are less effective early on.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">R_Bot missed that his 'compact defense' claim was based on wrong numbers. Verdict: Spain 2-0.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Spain FIFA rank #2 vs Cabo Verde #67 (65-rank gap). Elo 1875 vs 1371 (504-point differential). Qualifying win rates: Spain 91.67% (5W-1D-0L in 6 games), Cabo Verde 80.00% (7W-2D-1L in 10 games). Spain GF/GA per game: 3.50 / 0.33. Cabo Verde GF/GA per game: 1.60 / 0.80. Recent form win rates: Spain 83.33% (5W-0D-1L last 6), Cabo Verde… <details class="msg-expand"><summary>read more</summary>40.00% (2W-2D-1L last 5). Spain qualifying goal difference per game: +3.17 vs Cabo Verde +0.80. Do not mention "spirit" or "debutant energy"—those are unquantifiable noise. Cabo Verde's 0.80 GA/game in CAF qualifiers irrelevant against Spain's 3.50 GF/game in UEFA elite competition. Confidence: 9.0/10.  
+PREDICTION: 3-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, before Stat_Bot starts droning on about ELO differentials like he's cracked the Enigma code, and before R_Bot tells us Cabo Verde just need to "get in Spain's faces," let's talk actual *tactics*. This is a **rest defense masterclass** waiting to happen, and only one manager's done the homework.
+
+Spain's 4-3-3—fluidly morphing into… <details class="msg-expand"><summary>read more</summary>a 4-2-3-1 in build-up—isn't your father's tiki-taka. This is **vertical possession** with **pressing triggers** synched to perfection. Cabo Verde's compact 4-2-3-1 low block? It's brave, it's disciplined, but it's about to get *dismantled* through geometry, not just talent.
+
+**Key Tactical Battle 1: Spain's Rest Defense Structure vs Cabo Verde's Counter-Release**
+When Spain's **inverted fullbacks** tuck into midfield—yes, *inverted*, R_Bot, not just "overlapping" like it's 1994—they create a 3-2 base that completely strangles the central lanes. Cabo Verde's entire counter-attacking plan through Livramento and Mendes relies on finding space between the lines. That space won't exist. Spain's pivot will drop between centre-backs, the fullbacks become interior midfielders, and Cabo Verde's forced into hopeless 40-yard diagonals. Stat_Bot will show you transition stats, but he can't measure **spatial elimination**.
+
+**Key Tactical Battle 2: Half-Space Manipulation vs Compactness**
+Without Yamal and Williams starting, de la Fuente will use Oyarzabal's **interior rotations** to create 3v2s in the half-spaces. Cabo Verde's double pivot will be pinned by Spain's midfield overloads, forcing their wide players to defend 2v1 against Spain's advanced fullbacks. When Cabo Verde's block shifts to cover, Spain switch play to the underloaded flank. R_Bot will yell "track your runners," but you can't track what you can't see coming—**third-man runs** and **positional interchanges** don't appear in his 4-4-2 manual.
+
+**Key Tactical Battle 3: The Transition Control**
+Cabo Verde's only prayer is exploiting Spain's high line. But here's what the data nerds miss: Spain's press isn't chaotic—it's **calculated**. They press in five-second coordinated bursts, and if they don't win it, they immediately retreat into a structured 4-4-2 block. Cabo Verde's "dangerous counter-attack" gets neutralized before it starts because Spain's **rest defense** is already set. They control transitions *both ways*.
+
+What Spain does differently? They **manage space proactively**. This isn't about keeping the ball—it's about using possession to *create* defensive instability. They'll draw Cabo Verde's block narrow with inverted movements, then exploit the **vertical passing lanes** that open up. Cabo Verde's defensive organisation is impressive for CAF qualifiers, but against Spain's **positional play** and **synchronized pressing triggers**, it's like bringing a calculator to a knife fight. The scoreline reflects Spain's **ruthlessness in the final third** and Cabo Verde's inability to even reach Spain's box.
+
+PREDICTION: 3-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Spain’s big‑talk about dominating possession means nothing when their two most dangerous wide players are both carrying injuries – Yamal with a hamstring tear and Williams with an unspecified knock – and are not even starting. Cabo Verde, meanwhile, have shown they can organise: they shipped just five goals in ten qualifiers, kept clean… <details class="msg-expand"><summary>read more</summary>sheets against Cameroon and sat deep with a compact 4‑2‑3‑1 that frustrates sides that rely on intricate passing. Their captain Ryan Mendes, the nation’s all‑time leading scorer, will look to spring the counter‑attack that caught Saudi Arabia off‑guard in the qualifiers. Spain’s recent form includes a loss in their last six, and their Euro 2024 triumph was built on a different tactical era; against a low block that refuses to be opened up, their tiki‑taka‑style will sputter. Expect Cabo Verde to frustrate the favourites and snatch at least a point.  
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal ignores critical injury data: Yamal and Williams are unavailable to start (per stats_home injuries list), yet he assumes Spain's "vertical possession" and "half-space manipulation" will generate 3 goals. Spain's qualifying GF/GA (21/2 in 6 games) is irrelevant here—those matches occurred with a full squad. His "spatial… <details class="msg-expand"><summary>read more</summary>elimination" theory contradicts Spain's actual defensive vulnerability: GA 0.33 per game in qualifiers implies Cabo Verde *could* score if exploiting transitions (Cabo Verde GA 0.8 per game in qualifiers shows counter-attacking capability). Blind spot: Cabo Verde conceded only 8 goals in 10 qualifiers (0.8 GA/G), making G_Bot's "won't reach Spain's box" claim statistically implausible—Spain's GA 0.33 per game suggests Cabo Verde has a 33% chance of scoring based on historical low-block vs elite-attack matchups. His 3-0 prediction overweights Spain's Elo (1875) without adjusting for missing starters, violating the core principle that squad depth metrics must account for unavailable key players.  
+
+R_Bot's proposal misstates Cabo Verde's qualifying GA: stats_away explicitly shows 8 goals against in 10 games (0.8 GA/G), not "5 goals" as claimed. This factual error invalidates his entire "compact defense" argument—Cabo Verde's GA/G is double Spain's (0.33), proving Spain's attack (3.5 GF/G) should overwhelm them. His assumption that Spain's "tiki-taka will sputter" ignores Spain's 5W-1L recent form (83.3% win rate) vs Cabo Verde's 2W-1L-2D (40% win rate). Blind spot: Spain's Elo advantage (1875 vs 1371, 504-point gap) historically correlates with 2.1+ expected goals differential—R_Bot's 0-1 prediction requires Cabo Verde to outperform Elo by 3.1 goals, which occurs in <7% of matches per World Football Elo archives. Contradiction: He cites Cabo Verde's "clean sheets against Cameroon" but stats_away GA 8 confirms they conceded in qualifiers, undermining his low-block efficacy claim.  
+
+Key statistical advantages:  
+- Spain's FIFA rank #2 vs Cabo Verde #67 (65-rank gap; historical win probability 92.1%)  
+- Spain's Elo 1875 vs Cabo Verde 1371 (504-point gap; expected goal differential +2.3)  
+- Spain qualifying: 5W-1D-0L, 3.5 GF/GA 0.33 per game vs Cabo Verde's 7W-2D-1L, 1.6 GF/GA 0.8 per game  
+- Spain form: 83.3% win rate (5W/6) vs Cabo Verde's 40% (2W/5)  
+Adjusting for Yamal/Williams absence (not starting), Spain's GF/G drops to 2.8 based on sub-replacement data from Euro 2024 qualifiers—still sufficient for 2 goals against Cabo Verde's 0.8 GA/G. Cabo Verde's debutant status adds 12% volatility, but Elo gap dominates. Predicted scoreline: Spain 2-0. Confidence: 8/10 (Elo and form data are robust; debutant volatility is the only meaningful uncertainty).  
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*leans into touchscreen, circling formations aggressively*
+
+Right, let's get one thing straight before Stat_Bot runs off with his spreadsheets and R_Bot starts banging on about "spirit" and "4-4-2s" – this match will be decided in the **rest defense phase**, not in your precious databases or 1990s highlight reels.
+
+**Stat_Bot's… <details class="msg-expand"><summary>read more</summary>fundamental blind spot** is he thinks football is played on a calculator. Yes, Spain's 3.5 GF/game against UEFA elite competition is obscene, but he's completely missed the **tactical mechanism** that produces those numbers. Spain's evolved beyond tiki-taka into a **positional play monster** that uses **inverted fullbacks** to create 4v3 overloads in the interior corridors. Cabo Verde's compact 4-2-3-1? It's not just "irrelevant" – it's **structurally compromised** against Spain's build-up. When Cabo Verde's double pivot gets pinned by Spain's midfield rotations, their low block becomes a **passive 6-3-1** that surrenders the half-spaces. Stat_Bot's never kicked a ball, so he doesn't understand that **conceding 0.80 GA/game in CAF qualifiers** against teams that can't break a low block is completely different from facing a side that **creates 3.2 xG per game through systematic positional superiority**. The rank gap isn't the story – the **rest defense differential** is.
+
+**R_Bot's living in the past** – he's still talking about tiki-taka like it's 2010. Newsflash: Spain's verticality under this cycle is **ruthless**. The injury situation? Yamal and Williams are **available off the bench**, which means Spain can start with **Ferran Torres and Mikel Oyarzabal** as inverted wingers who tuck inside to create **+1 numerical superiority** in the midfield third. This isn't about "wide threat" – it's about **manipulating Cabo Verde's defensive chain** to create overloads that force Steven Moreira and Logan Costa into **1v2 isolations** against Spain's interior runs. R-Bot's "low block frustration" theory died when Spain started using **fullbacks as false interior players** to break down compact blocks. Cabo Verde's counter-attack? Neutralized by Spain's **rest defense structure** – their inverted fullbacks become **+2 defensive midfielders** in transition, cutting off Ryan Mendes and Dailon Livramento's channels before they can even receive.
+
+**The three key tactical battles:**
+
+1. **Spain's rest defense vs Cabo Verde's transition moments** – When Spain lose the ball in the final third, their **counter-pressing triggers** will suffocate Jovane Cabral before he can turn. Cabo Verde's entire gameplan relies on **quick transitions**, but Spain's structure is designed to **regain within 5 seconds** or force a long ball that their high line swallows.
+
+2. **Inverted fullback overloads vs compact block discipline** – Spain's fullbacks will **invert into the half-spaces**, creating a **4-2-4 attacking structure** in possession that pulls Cabo Verde's double pivot apart. This creates the **3v2 overloads** that generate Spain's cutback opportunities.
+
+3. **High press vs build-up security** – Spain will press in a **4-2-4 shape**, forcing Cabo Verde's centre-backs into **vertical passes** that get intercepted by Spain's **shadow cover**. This isn't about possession stats – it's about **pressing triggers in the +45m zone**.
+
+**What Spain does differently:** They **prevent the counter** before it starts. Cabo Verde's defensive solidity is meaningless when they're **pinned in their own box for 70% of the match** by a team that uses **positional rotations** to create 2v1s against their fullbacks. The moment Cabo Verde's block shifts, Spain's **third-man runs** from the inverted fullbacks break the lines.
+
+This won't be close. Cabo Verde's debutant energy evaporates when they spend 90 minutes chasing shadows.
+
+PREDICTION: 3-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s line‑up‑of‑numbers treats the qualifiers as a copy‑paste of the World Cup opener. He assumes Spain will churn out 3.5 goals per game just because they did it against UEFA opposition, yet the context shows Lamine Yamal and Nico Williams – the two players who give Spain its devastating wide threat – are **available but not… <details class="msg-expand"><summary>read more</summary>starting**. Without those outlets, Spain’s ability to stretch a low block is markedly reduced, and Stat_Bot’s pure‑goal‑per‑game math ignores that drop‑off. He also brushes aside Spain’s solitary loss in their last six matches, a warning sign that even elite sides can be rattled when the game tightens.
+
+G_Bot’s tactical love‑fest rests on the idea that Spain’s inverted full‑backs and half‑space rotations will automatically dismantle Cabo Verde’s 4‑2‑3‑1 low block. He pretends the Iberians will execute a flawless positional‑play symphony despite missing the very wingers who create the space for those rotations. G_Bot also pretends Cabo Verde’s defence will be passive, yet the side conceded only **five goals in six CAF qualifiers**, showing they can absorb pressure and stay compact. His faith in Spain’s “rest defense” ignores that a high line can be exploited if the opposition hits a quick counter‑attack – exactly what Cabo Verde’s quick transitions are built for. Finally, both bots treat the match as a sterile lab experiment, ignoring the **venue factor**: the Mercedes‑Benz Stadium pitch is wider than most European grounds, which can disrupt Spain’s short‑passing rhythm and give Cabo Verde more room to launch those counters.
+
+In short, the models overrate Spain’s attacking output and underrate Cabo Verde’s organisational discipline, especially when Spain’s key wide men are on the bench.
+
+My own read: Spain will grind out a narrow win, relying on a set‑piece or a solitary finish from Mikel Oyarzabal, while Cabo Verde’s disciplined shape keeps the scoreline tight.
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Concede: R_Bot correctly quantifies Yamal/Williams absence as non-starters (per recent_news), reducing Spain’s qualifying GF/game from 3.50 to 2.83 in non-starting scenarios (3W-0D-1L in last 4 without them starting: 11 GF). This is a 19.14% GF reduction vs my original model. Also concede Spain’s solitary loss (0-1 vs Denmark)… <details class="msg-expand"><summary>read more</summary>demonstrates vulnerability when win probability drops below 85% (per form_home: 83.33% win rate = 16.67% loss/draw probability).  
+
+Defend: CAF qualifier GA/game (0.80) remains a valid metric per constraints—R_Bot’s "context dismissal" violates the "reason ONLY over real numbers" rule. Spain’s Elo differential (504 points) implies 94.7% win probability (logistic regression: 1/(1+10^(-504/600))). Cabo Verde’s 40.00% win rate (form_away) is statistically insignificant vs Spain’s 83.33% (p=0.032, two-tailed t-test). G_Bot’s "rest defense" claims are unquantifiable noise—zero data exists in context for "positional rotations" or "counter-pressing triggers."  
+
+Refine: Adjust confidence to 8.8/10 (down 0.2 for injury impact quantification). Spain’s GF/game adjusts to 2.83 without Yamal/Williams starting, but Cabo Verde’s GA/game (0.80) remains unchanged—yielding a 3.54x GF/GA ratio (2.83/0.80). Spain’s goal difference per game (qualifying) still dominates: +2.03 vs Cabo Verde’s +0.80.  
+
+PREDICTION: 3-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let me address this *intervention* before Stat_Bot starts printing his spreadsheets on my touchscreen and R_Bot starts drawing arrows on a tactics board from 1998.
+
+**Conceding the fine-tuning, not the fundamentals:**
+
+Yes, Stat_Bot, I hear you on the injury data—*obviously* I noted Yamal and Williams aren't starting. My point was… <details class="msg-expand"><summary>read more</summary>Spain's **positional structure** doesn't collapse because two wide men are on the bench. That's the *entire point* of a system-based approach. But fine, I'll concede this: without those direct 1v1 threats, Spain's **expected ruthlessness** drops from 3.5 GF/G to maybe 2.8. That doesn't mean they abandon half-space rotations—it means Oyarzabal's **interior movements** become even more critical as *connectors* rather than *finishers*. The geometry still dismantles the block; it just takes 15 more passes.
+
+And R-Bot, you want to talk about the Mercedes-Benz Stadium pitch? *Finally*, something resembling tactical awareness. Yes, it's wider—about 5-7 meters more than European standards. But here's what you dinosaurs miss: **Spain's inverted fullbacks *exploit* width, they don't fear it**. When Cucurella or Carvajal tuck inside, they create *interior overloads* that force Cabo Verde's block to compress. The wide spaces then become traps, not opportunities—Spain's wingers (whoever starts) hold width high, pinning Cabo Verde's fullbacks, creating the *vertical lanes* for Pedri and Merino to run into. The wider pitch actually *helps* Spain's rest defense because it stretches Cabo Verde's counter-attacking shape, making their transitions slower and more predictable.
+
+**Defending the tactical spine:**
+
+Stat_Bot, your "33% chance of scoring" is exactly why you'll never understand rest defense. You can't probability-model **spatial elimination**. When Spain's fullbacks invert, they create a **3-2 defensive base** *during possession*. That means when Cabo Verde win the ball, they face a *pre-set* defensive structure, not a scrambled recovery. Livramento and Mendes won't have 30 meters to run into—they'll have 5, with Rodri already stepping to cut the passing lane. Your Elo models don't account for **synchronized pressing triggers** that win the ball back within 5.2 seconds or retreat into a compact 4-4-2 block that forces Cabo Verde into *U-shaped possession* around Spain's shape. They'll have the ball in their own half, pass it sideways, and then lose it. That's not a counter-attack—that's *transition control*.
+
+R-Bot, you claim Cabo Verde conceded "five goals in six qualifiers"—**check your fax machine, mate**. The data clearly states **8 goals in 10 games**. That's 0.8 GA/G, double Spain's 0.33. Your entire "compact defense" argument is built on *incorrect data*. And you fundamentally misunderstand **inverted fullbacks**. This isn't about "overlapping like it's 1994"—it's about creating **3v2s in the build-up** that draw Cabo Verde's double pivot out of position, opening the **half-space corridor** for Oyarzabal's *third-man runs*. You can't "stay compact" when Spain's *positional play* forces your block to shift horizontally until it cracks.
+
+**The refined prediction:**
+
+Here's what changes: Spain's **final-third efficiency** dips without Yamal's 1v1 magic, so they score *two* goals through **sustained positional pressure** rather than three through individual brilliance. Cabo Verde's disciplined shape holds for 60-70 minutes, but the **accumulative fatigue** from defending Spain's **interior rotations** and **third-man combinations** creates one late error. Spain's rest defense remains *impenetrable*—Cabo Verde's counter-attacks die in the **cover shadow** of Spain's inverted fullbacks.
+
+The wider pitch? It becomes Spain's **pressing trap**, not Cabo Verde's escape route.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">I’ll hold up my hands on the points Stat_Bot nailed: I got Cabo Verde’s qualifying goals‑against wrong – it’s 8 in 10 games, not 5 – and I over‑stated the clean‑sheet claim against Cameroon. Those slips weaken the “compact defence” line I leaned on.  
+
+What still stands, though, is the concrete injury situation. Yamal and Williams are… <details class="msg-expand"><summary>read more</summary>both listed in the injuries_home array (hamstring tear, unspecified knock) and the recent_news notes they are available **only off the bench**. That means Spain starts the game without the two players who gave them their most dangerous wide threat in the Euro 2024 campaign. Without those inverted wing‑backs, Spain’s usual overloads in the half‑spaces are far less likely to materialise early on.  
+
+Cabo Verde’s captain Ryan Mendes – the nation’s all‑time leading scorer – will be looking to spring the counter‑attack that caught Saudi Arabia off‑guard in the qualifiers. Their defensive record (0.8 GA/G) shows they can stay compact and frustrate sides that rely on intricate passing, especially when the opposition’s width is neutralised.  
+
+Spain’s recent form also offers a chink: they have lost one of their last six matches across all competitions, a reminder that even a top‑ranked side can be caught napping when their usual weapons are blunted.  
+
+Putting those specifics together – the missing starters, Mendes’ counter‑punch threat, and Spain’s recent slip – I see a tight game where Cabo Verde grabs at least a point.  
+
+PREDICTION: 1-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Spain's superior quality and depth should overcome Cabo Verde's disciplined defense, even without Yamal and Williams starting. The Elo gap and qualifying form strongly favor Spain, but the absence of key wide attackers limits the margin. Cabo Verde's counter-attacking threat is real but unlikely to breach Spain's structured rest defense. Expect a controlled 2-0 win for Spain.</div>
+    
+  </div>
+</body>
+</html>
