@@ -13,11 +13,19 @@ import re
 from pathlib import Path
 
 PREDICTION_RE = re.compile(r"PREDICTION:\s*(\d{1,2})\s*[-–:]\s*(\d{1,2})")
+# Fallback: tolerate team names / stray words between the token and the score,
+# e.g. "PREDICTION: Netherlands 2-1 Japan". Stays on the PREDICTION line (. excludes \n).
+PREDICTION_LOOSE_RE = re.compile(r"PREDICTION:[^\n]*?(\d{1,2})\s*[-–:]\s*(\d{1,2})", re.IGNORECASE)
 
 
 def parse_pundit_prediction(text):
-    """Last 'PREDICTION: X-Y' in text → {'home_goals': X, 'away_goals': Y}, or None."""
-    matches = PREDICTION_RE.findall(text or "")
+    """Last 'PREDICTION: X-Y' in text → {'home_goals': X, 'away_goals': Y}, or None.
+
+    Tries the strict format first; falls back to a looser match that survives a
+    model writing the line with team names ('PREDICTION: Netherlands 2-1 Japan').
+    """
+    text = text or ""
+    matches = PREDICTION_RE.findall(text) or PREDICTION_LOOSE_RE.findall(text)
     if not matches:
         return None
     home, away = matches[-1]
@@ -25,12 +33,28 @@ def parse_pundit_prediction(text):
 
 
 def extract_pundit_predictions(full_debate: dict) -> dict:
-    """Per-role final prediction: rebuttal (their last word) wins over proposal."""
+    """Per-role final (POST-debate) prediction: rebuttal wins over proposal."""
     proposals = full_debate.get("proposals", {})
     rebuttals = full_debate.get("rebuttals", {})
     predictions = {}
     for role in proposals:
         pred = parse_pundit_prediction(rebuttals.get(role)) or parse_pundit_prediction(proposals.get(role))
+        if pred:
+            predictions[role] = pred
+    return predictions
+
+
+def extract_pre_debate_predictions(full_debate: dict) -> dict:
+    """Per-role PRE-debate prediction: proposal round only, before anyone argues.
+
+    Paired with extract_pundit_predictions (post-debate) this is the control for
+    'does the debate change — and improve — each model's call?'. Backfillable over
+    existing runs since proposals are already stored in full_debate.
+    """
+    proposals = full_debate.get("proposals", {})
+    predictions = {}
+    for role in proposals:
+        pred = parse_pundit_prediction(proposals.get(role))
         if pred:
             predictions[role] = pred
     return predictions
