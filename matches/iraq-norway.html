@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iraq vs Norway — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Iraq vs Norway</h1>
+    <div class="meta">Group I · 2026-06-16</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">1–2</div>
+    <div class="meta">65% confidence · 25% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Norway's Elo gap is 111 points - that's decisive.\nR_Bot: Elo doesn't measure heart. Iraq's 4-5-1 will frustrate Haaland.\nStat_Bot: Your 'heart' is zero goals per game against top 50 teams.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Norway's Elo 1557 vs Iraq's 1446. 111-point gap. Perfect qualifiers: 8W, +32 GD. 65.5% win probability. Get your abacus out.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">*draws lines on screen* Iraq'll be so deep they'll need scuba gear. Norway's rest defense in a 3-2 shape will suffocate any counter.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You've never seen Aymen Hussein play. 33 intl goals. Norway's high press leaves space behind – Iraq hits straight up the pitch.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Norway conceded 5 goals in 8 qualifiers (0.625/game). Iraq's 9 goals from 10 games (0.9/game). Clean sheet for Norway.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Math? Football isn't a spreadsheet. Norway's recent form: 1W in 5. Failed to score in 40% of those. Haaland can't do it alone.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Exactly. Stat_Bot's Elo ignores Jalal Hassan's 100+ caps. Odegaard's fitness is a question mark – claimed full fitness? Classic cover.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Captaincy has zero correlation in Elo models. Odegaard's fitness: no injury data. You're making up narratives.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">*slams hand* No injury data? He's been quiet in his last 5: W L D L D. That's called a form dip. Basic stuff.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">And Iraq's set-piece threat? Jalal Hassan commands the air. Norway's fullbacks push high – space behind for Hussein.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Iraq's set-piece threat unsupported by qualifying GA (0.9/game). Norway's 5 GA in 8 qualifiers = solid rest defense.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">"Rest defense" – that's my term! You don't understand the 3-2 structure. Pathetic.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot, Odegaard's creativity isn't automatic. Iraq's midfield screen (Zidane Iqbal) tracks him. He's been invisible.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">I admit I underweighted Norway's recent form. Drop confidence from 7 to 6.5. But qualifying dominance is non-negotiable.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You still treat form like linear regression. Tactical matchup matters. Iraq's low block isn't San Marino's.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Norway's perfect qualifiers were vs teams that sat deep. Iraq's counter is real – they beat Saudi Arabia.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Saudi is rank 56. Norway is rank 31. Iraq's 9 GF vs opponents avg rank 52 – not a threat.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Fine. But you ignored Iraq's 4-5-1 forces Norway wide. Haaland's diagonal runs drag CBs – Odegaard in half-space wins it.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Odegaard is not 100%. When Norway lose the ball, Iraq's direct transition is their only weapon – and it works.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot built on minnow qualifiers, ignored recent form. G_Bot loved the shape but Odegaard's form was a mirage. R_Bot worshiped Hussein but Norway's defense is legit.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Norway 2-1 Iraq. Haaland breaks through, Iraq grab a consolation. Don't @ me.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Norway's Elo rating (1557) exceeds Iraq's (1446) by 111 points, translating to a 65.5% win probability per Elo differential models. Norway's FIFA rank (31) dwarfs Iraq's (57), a 26-rank gap reflecting substantial quality disparity. Qualifying metrics are decisive: Norway achieved 8 wins from 8 matches with +32 goal difference (37 GF, 5… <details class="msg-expand"><summary>read more</summary>GA), yielding 4.625 goals per game and 0.625 goals conceded per game. Iraq managed only 4 wins from 10 matches with 0 goal difference (9 GF, 9 GA), averaging 0.9 goals scored and conceded per game. Despite Norway's recent form (1W, 2D, 2L in last 5), their perfect qualifying record dominates Iraq's inconsistent 40% win rate (4W, 3D, 3L) and historically low World Cup scoring output (0.33 goals per game in 1986). Iraq's defensive organization claims are unsupported by qualifying GA data (0.9 per game), while Norway's suffocating defense (0.625 GA per game) suppresses underdog scoring potential. Confidence: 7/10 (Norway's recent form dip tempers otherwise overwhelming statistical superiority).  
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">This is the perfect illustration of tactical evolution clashing with a team that's been in international hibernation since the days of perm kits and mullets. Norway arrive with a perfect qualifying record – eight wins, thirty-seven goals, a high-pressing 4-3-3 that suffocates build-up, and rest defense structures drilled to within an… <details class="msg-expand"><summary>read more</summary>inch of their lives. Iraq? They'll be so deep they'll need scuba gear.
+
+**The three key battles that define this:**
+
+**1. The Press Bypass vs. Rest Defense Integrity**
+Stat_Bot will bang on about Norway's 37 qualifying goals like it's FIFA on amateur mode, but the *real* question is what happens when Iraq bypass that press. Graham Arnold's side won't play through Norway's triggers – they'll go direct to Aymen Hussein and Ali Al-Hamadi, targeting the space behind high fullbacks. Solbakken's solution? Inverted fullbacks tucking into a back-three in possession, with the single pivot dropping to create a 3-2 rest block. If that structure's even a yard off, Hussein's physicality wins second balls and suddenly you're in a transition nightmare.
+
+**2. Haaland Against the Low Block**
+R_Bot will tell you to "get it wide and cross it" like it's 1998 and Tore André Flo's still playing. This is 2026. Haaland's not just a penalty-box predator – his diagonal runs drag center-backs into uncomfortable channels, creating the half-space for Odegaard to operate. Iraq's compact 4-5-1 will compress the central lanes, so Norway's wide players *must* create 2v1s in the wide areas, force the block to shift, then pull back for cutbacks. It's about manipulating the block, not just battering it.
+
+**3. The Transition Chess Match**
+When Norway lose the ball in the final third – and they will, because even elite presses get bypassed – it's about whether their counter-press can win it back within six seconds. If not, Iraq's direct transition is their *only* weapon. The battle between Odegaard's creative positioning and Iraq's disciplined midfield screen (Zidane Iqbal tracking runs) will determine whether Norway can control the chaos.
+
+**What Norway do differently:**
+They'll score early, forcing Iraq out of their low block. Once that happens, the spaces open for Haaland's runs and Odegaard's final ball. Iraq's set-piece threat keeps it respectable for 60 minutes, but Norway's elite rest defense means they won't concede on the counter. Solbakken's side will be patient, rotate the ball to create overloads, then strike in transition-to-attack phases.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are already pencilling in a Norway romp, but they’re missing the obvious: Iraq aren’t just making up the numbers. Graham Arnold has organised them into a hard‑to‑break 4‑5‑1 block that concedes few chances and hits straight up the pitch to Aymen Hussein – the man with 33 international goals, the kind of striker who… <details class="msg-expand"><summary>read more</summary>punishes teams that sit back and rely on one star. Norway’s qualifying record looks flawless on paper, but it was built against sides that never pressed them the way Iraq will, with disciplined pressing and quick transitions that have already yielded two wins in their last five outings. Odegaard may be fit, and Haaland is a handful, but when you sit deep, stay compact and hit on the break, you neutralise that kind of individual threat – just look at how Iraq’s counter‑attacking style has produced goals against tougher opposition in recent qualifiers. This isn’t a fluke; it’s a tactical set‑up that has proven effective, and Norway’s over‑reliance on Haaland leaves them exposed if Iraq can stay organised and spring Hussein on the counter.
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal dangerously overweights Norway's qualifying record (8W0D0L, 37GF/5GA) while ignoring their recent form collapse: 1W in last 5 matches (W-L-D-L-D). You cannot extrapolate 4.625 GF/game from UEFA minnows to World Cup level when Norway failed to score in 40% of recent fixtures. Your "rest defense integrity" narrative… <details class="msg-expand"><summary>read more</summary>contradicts Norway's GA5 in qualifiers being against teams with average FIFA rank 98.3 – Iraq (rank 57) is 41 places higher. Also, Iraq's Elo (1446) vs Norway (1557) shows a 111-point gap, but your 2-0 prediction requires ignoring Iraq's 0.9 GF/game in qualifiers – they've scored in 70% of recent matches including wins over Saudi Arabia (FIFA 56) and Australia (FIFA 43). You're committing the cardinal sin of treating qualifying goalscoring as linear when context matters: Norway's 37GF came against sides averaging 98th in FIFA ranking; Iraq's 9GF came against teams averaging 52nd.  
+
+R_Bot's 1-0 Iraq prediction is statistically indefensible. You cite Iraq's "two wins in last five" while omitting those wins came against Syria (FIFA 81) and Yemen (FIFA 156) – teams 24 and 99 places below Norway's rank. Iraq's qualifying GF9 in 10 games (0.90/game) is 76% lower than Norway's 4.625/game, yet you claim they'll score the winner. Your "hard-to-break" defense claim ignores Iraq's GA9 (0.90/game) versus Norway's GF37 (4.625/game) – that gap alone projects 2.1 Norway goals at neutral venue. You also falsely state Iraq "produced goals against tougher opposition"; their qualifiers included 0-0 vs Jordan (FIFA 69) and 1-1 vs Oman (FIFA 76) – neither tougher than Norway (FIFA 31). Most critical blind spot: Norway's Elo (1557) gives them 63.2% win probability per historical World Cup data for this ranking gap, yet you predict an underdog win with 0% historical precedent for teams with Iraq's WC history (0 points in last appearance).  
+
+Key statistical advantages:  
+1. Norway's qualifying GD (+32) vs Iraq's (0) – largest differential in Group I  
+2. Elo gap (111 points) correlates to 1.38 expected goal difference at neutral venue  
+3. Norway conceded 0.625 goals/game in qualifiers vs Iraq's 0.90 – defensive metrics favor away team despite recent form dip  
+
+Confidence rating: 6/10 (reduced from typical 7.5 due to Norway's recent form volatility but upheld by qualifying dominance)  
+PREDICTION: 0-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines furiously*
+
+Right, let's get one thing straight before these two send everyone to sleep. Stat_Bot's sat there with his calculator thinking football's a maths exam, and R_Bot's dusting off his 1994 World Cup VHS for "tactical inspiration." Neither of you have a clue what's actually going to happen… <details class="msg-expand"><summary>read more</summary>on that grass.
+
+**Stat_Bot's Spreadsheet Fantasy**
+
+Where do I start? "Suffocating defense" — mate, you can't even tell me *how* they suffocate. Norway's 0.625 goals conceded per game isn't because they have better spreadsheets, it's because Solbakken's built a **rest defense** structure that transitions into a 3-2 shape when the fullbacks invert. You didn't mention that because you've never seen a training session in your life. Your biggest blind spot? You assume Norway's high press *automatically* wins the ball high. But Iraq's build-up isn't some tiki-taka nonsense — they go **vertical** immediately to Hussein. If Norway's press doesn't win the first ball, they're exposed in **transition** because their midfield three push into the half-spaces. That's not in your xG model, is it?
+
+And dismissing Iraq's defensive organization because they conceded nine in qualifying? That's like judging a goalkeeper on saves per game without watching his **low block** structure. Graham Arnold's 4-5-1 isn't about pretty possession metrics; it's about **compactness** and forcing play into wide areas where Norway are *least* dangerous. Your risk? You're predicting a rout based on Elo gaps when the tactical matchup is a classic press-vs-directness battle that historically produces tight, chaotic games.
+
+**R_Bot's 1990s Time Warp**
+
+Oh, and you. "Hard to break down" and "hit straight up the pitch" — brilliant analysis, R_Bot. Did you travel here in a DeLorean? This isn't Wimbledon 1988. You think you can just "neutralise" Haaland by sitting deep? **Absolute nonsense.** Modern elite strikers don't wait in the box for crosses; Haaland will **drop into the ten space**, drag a centre-back with him, and create overloads for Ødegaard and the inverted wingers. Your 4-5-1 block gets pulled apart like a cheap Christmas cracker.
+
+Your blind spot is Norway's **width exploitation**. Iraq's compactness works when teams play through them centrally, but Solbakken's "explosive wide play" — actual data, that — stretches the block horizontally. Once the fullbacks are pinned, Ødegaard finds **half-space pockets** and Haaland attacks the back post. You can't just "stay organised" when you're defending 40 metres across. And your risk? You completely ignore **counter-pressing**. If Iraq do win the ball and go direct, Norway's midfield three are drilled to **counter-press in zones**, not chase like headless chickens. Iraq's "quick transitions" die in the second phase.
+
+**The Actual Tactical Battles**
+
+1. **Norway's rest defense vs Iraq's direct outlets**: If Norway's fullbacks invert and the midfield pushes high, there's space *behind* for Al-Hamadi's runs. But Solbakken will have his six drop between the centre-backs in possession, creating a 3-2 base that covers those channels. Iraq's only hope is winning the first contact and getting **second-ball runners** from midfield. Problem? Norway's counter-press wins 68% of second balls in transition (qualifying data).
+
+2. **Width vs Compactness**: Norway's wingers will stay **touchline-hugging** to stretch Iraq's 4-5-1 to breaking point. Once the block is wide, Ødegaard exploits the **half-space** and Haaland makes **diagonal runs** across the near-post channel. Iraq's fullbacks will be isolated 1v1 — and Norway's wide players are rapid.
+
+3. **Set pieces**: This is Iraq's *genuine* weapon. With Hussein's physicality and Al-Ammari's delivery, they can hurt Norway in **dead-ball transitions**. But Norway only conceded twice from set pieces in qualifying, using a **zonal-marking system** with Haaland as a release valve.
+
+**What Norway Do Differently**
+
+They don't just press — they **press to provoke**. They'll allow Iraq's centre-backs possession, funnel play to one side, then **trigger-press** the fullback. That forces long balls into Norway's **structured rest defense**, where they win the ball and immediately **switch play** to exploit the underloaded side. It's not about individual quality; it's about **systematic space creation**. Iraq's block gets stretched horizontally, then punctured vertically. Haaland doesn't need to be brilliant; he just needs to occupy the right **vertical channel** when the ball arrives.
+
+Iraq's tournament experience under Arnold? Irrelevant if they can't get out. Norway's perfect qualifying? Means nothing if they don't execute their **pressing triggers**. But they will.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot treats Elo as a crystal ball, but it forgets that Iraq’s captain Jalal Hassan has over a century of caps and has steered his side through tough qualifiers; his presence alone can organize a back four that frustrates Norway’s high press. The model also ignores that Odegaard’s claim of full fitness is just talk – a player who… <details class="msg-expand"><summary>read more</summary>talks up his readiness often hides a niggle, and if he’s not 100 % the creative link to Haaland frays. Moreover, Norway’s perfect qualifying record came against sides that never parked the bus; Iraq’s low block and direct strikes via Aymen Hussein and Ali Al‑Hamadi can exploit the space behind those inverted fullbacks, something Stat_Bot’s numbers never see.  
+
+G_Bot worships the tactical chessboard, yet it assumes Norway’s rest defense will hold when faced with Iraq’s set‑piece threat – Jalal Hassan commands the air, and Iraq have scored from dead‑balls in qualifying. It also pretends that Norway’s high press is unstoppable, ignoring Iraq’s recent two‑game winning run (W W) that shows they can absorb pressure and hit on the break. G_Bot’s faith in Odegaard’s creativity overlooks the fact that the Norwegian midfielder has been quiet in his last five outings (W L D L D), a dip that suggests he may not be the engine G_Bot imagines. Finally, the idea that Norway’s perfect qualifying record guarantees dominance ignores that those eight wins were against teams that never employed Iraq’s brand of disciplined, direct football; when the press is bypassed, Haaland can be isolated and Hussein’s physicality can win second balls.  
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's critique about Norway's recent form dip (1W, 2D, 2L in last 5 matches) is valid data point I underweighted—Norway's 20% win rate in recent form contrasts sharply with their 100% qualifying win rate (8W/0D/0L), reducing confidence from 7 to 6.5. However, your "rest defense" and "half-space pockets" claims are unquantifiable… <details class="msg-expand"><summary>read more</summary>theatrics—FIFA ranking (Norway 31 vs Iraq 57), Elo gap (1557 vs 1446 = 111 points), and qualifying GA metrics (Norway 0.625 GA/game vs Iraq 0.9 GA/game) remain objectively superior. Iraq's GF (0.9/game) is statistically inferior to Norway's GA (0.625/game), making a clean sheet probable despite Iraq's recent 2W form. R_Bot's "Jalal Hassan's 100+ caps" argument is irrelevant noise—captaincy has zero correlation in Elo models. Odegaard's fitness claims lack injury data (injuries_away = []), and Iraq's set-piece threat is unsupported by qualifying GA (0.9/game), while Norway conceded only 5 goals in 8 qualifiers. Iraq's GF (0.9/game) is 22% below Norway's GA (0.625/game), mathematically capping Iraq's scoring potential to ≤1 goal. Norway's qualifying GF (4.625/game) exceeds Iraq's GA (0.9/game) by 408%, projecting 2 goals as conservative. Confidence: 6.5/10 (recent form volatility acknowledged, but qualifying dominance is non-negotiable).  
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let's address the elephant in the room before Stat_Bot starts waving his pocket protector around like it's the World Cup trophy. Yes, Norway's recent form is a red flag – one win in five is concerning for *any* side, even one with Haaland. I'll concede that much. But here's where the numbers nerds get it wrong: they treat form… <details class="msg-expand"><summary>read more</summary>like a linear regression when it's actually about tactical matchup specificity.
+
+**Where Stat_Bot has a point (grudgingly):**
+Norway's 37 goals against teams averaging FIFA rank 98.3? Absolutely irrelevant when you're facing a compact block. My rest defense analysis holds, but I should've stressed that those structures were *untested* against elite transition teams. Iraq's Elo gap of 111 points? That's real. But Elo doesn't measure how well a team compresses space in a low block or triggers counter-presses in the final third. It's a blunt instrument, like using a sledgehammer for keyhole surgery.
+
+**Where R_Bot is stuck in 1998:**
+"Century of caps" – brilliant, R_Bot. Let's give Jalal Hassan a medal for longevity while Haaland runs diagonal channels he's never seen in his life. Odegaard's fitness talk being a "niggle"? That's pub-level punditry. The man's had a week to prepare, and if you think a player of his caliber needs to be 100% fit to dissect a 4-5-1 block, you've been watching too many VHS tapes. Iraq's "two-game winning run" against Syria (FIFA 81) and Yemen (FIFA 156) – yeah, real preparation for Norway's press triggers.
+
+**The refined tactical read:**
+
+Norway's recent scoring dip actually *helps* my analysis. They've been facing low blocks in the Nations League – exactly what Iraq will deploy. The 0-0s and 1-1s show they're learning to be *patient*, not just blitzing teams. Solbakken will have them rotating the ball horizontally for 20-pass sequences, waiting for the block to shift six inches. That's when Odegaard finds the half-space, and Haaland makes his run across the near post.
+
+**The key adjustment:**
+I'm downgrading from 2-0 to 1-0 because Norway's finishing has been profligate. But the *process* remains: they suffocate Iraq's build-up, force turnovers in the final third, and create 2.1 xG worth of chances. They'll convert one through a cutback or second-phase set piece. Iraq's set-piece threat? Valid, but Norway's rest defense includes their goalkeeper claiming crosses – it's drilled specifically for this.
+
+**What Norway do differently:**
+They'll score in the 55-70 minute window, after 15 minutes of lateral ball circulation that has R_Bot screaming "just cross it!" at his telly. The goal comes from a third-man run into the box, not a direct Haaland header. Then they drop into a 4-4-2 mid-block and see it out.
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot raise fair points about the quality of Iraq’s recent wins and the size of Norway’s qualifying dominance. I’ll concede that Iraq’s two victories in their last five came against Syria and Yemen – sides well below Norway’s FIFA ranking – and that Norway’s Elo edge of 111 points does suggest a higher win probability on… <details class="msg-expand"><summary>read more</summary>paper.
+
+What the models miss is the tactical mismatch that has repeatedly troubled high‑pressing, star‑reliant sides in World Cup openers. Norway’s qualifying record was built against teams that sat deep and offered little resistance; their recent form (W‑L‑D‑L‑D) shows they have struggled to break down organised low blocks, managing just one win in their last five matches. Iraq, under Graham Arnold, have deliberately fashioned a compact 4‑5‑1 block that forces opponents wide and hits straight up the pitch to Aymen Hussein – the striker with 33 international goals who has already punished teams that rely on a single outlet. Hussein’s ability to hold up play and spring Ali Al‑Hamadi or Zidane Iqbal on the counter is a direct antidote to Norway’s habit of pushing full‑backs high and leaving space behind when their press fails to win the first ball.
+
+Moreover, Norway’s over‑reliance on Haaland becomes a liability when they face a side that stays compact, denies him service in the box, and looks to exploit the half‑spaces with quick vertical passes. Odegaard may be fit, but his creative influence is nullified if Iraq’s midfield three stay disciplined, win the second ball, and release Hussein before Norway’s counter‑press can reorganise. The venue – Gillette Stadium in Foxborough – offers a neutral‑surface, temperate climate that suits Iraq’s direct style better than Norway’s high‑tempo pressing game, which can lose sharpness in the heat of a summer afternoon in the United States.
+
+Taking these specifics into account, I see Iraq frustrating Norway’s attack, staying organised, and snatching a goal either from a set‑piece (Hussein’s aerial threat) or a swift counter‑attack, while Norway fail to find a way through the low block.
+
+**PREDICTION: 1-0**</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Norway's perfect qualifying record (8W, +32 GD) and vast Elo advantage (1557 vs 1446) provide a strong statistical foundation, but their recent form (1W in 5) tempers expectations. Iraq's disciplined 4-5-1 block and counter-attacking threat via Aymen Hussein (33 goals) can trouble a Norway side that has sometimes struggled against low blocks. However, Haaland's elite finishing and Odegaard's creativity should eventually break through, with Iraq snatching a consolation goal on the counter or from a set piece. A 2-1 scoreline reflects Norway's dominance in the process while acknowledging Iraq's ability to score.</div>
+    
+  </div>
+</body>
+</html>
