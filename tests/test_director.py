@@ -313,7 +313,28 @@ def test_build_falls_back_when_llm_raises():
     assert len(out["shots"]) == 5
 
 
+import pytest
+
+
+def test_compose_no_double_terminal_punctuation():
+    shot = dict(_SHOT, line="Belgium take it three-one.")
+    out = compose_ltx_prompt(shot)
+    assert '."' in out            # line's period stays inside the quotes
+    assert '".' not in out        # but no period AFTER the closing quote
+    # a line WITHOUT terminal punctuation still gets a closing period after the quote
+    shot2 = dict(_SHOT, line="Belgium take it three-one")
+    out2 = compose_ltx_prompt(shot2)
+    assert 'three-one". Then' in out2
+
+
 from director import main
+
+
+def test_main_rejects_too_many_shots(tmp_path, capsys):
+    run_path = tmp_path / "run.json"
+    run_path.write_text(json.dumps(SAMPLE_RUN))
+    with pytest.raises(SystemExit):
+        main([str(run_path), "--n-shots", "9"])
 
 
 def test_main_writes_reel_json_beside_run(tmp_path):

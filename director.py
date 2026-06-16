@@ -192,6 +192,7 @@ def _repair_dynamism(shots):
        (2) >= MIN_STATIC static shots,
        (3) >= 2 distinct shot_types overall.
     Pundit beats (2-4) are the adjustable ones; host bookends keep their complementary feel."""
+    # Precondition: shots[i] aligns with BEATS[i] (callers build shots in BEATS order, len <= len(BEATS)).
     def is_static(t):
         return SHOT_GRAMMAR[t]["static"]
 
@@ -278,10 +279,12 @@ def compose_ltx_prompt(shot: dict) -> str:
     Focuses on motion + speech (the first-frame portrait already carries the look)."""
     g = SHOT_GRAMMAR[shot["shot_type"]]
     p = BOT_PROFILES[shot["speaker"]]
+    line = shot["line"]
+    tail = "" if line[-1:] in ".!?" else "."
     return (
         f'{g["framing"]}. '
         f'{STUDIO_LIGHT}. '
-        f'{p["identity"]} {shot["performance"]}, speaking directly to camera: "{shot["line"]}". '
+        f'{p["identity"]} {shot["performance"]}, speaking directly to camera: "{line}"{tail} '
         f'Then {g["camera"]}. '
         f'{p["voice"]}, with soft studio room tone underneath.'
     )
@@ -314,7 +317,7 @@ def build_shot_script(run: dict, *, n_shots: int = 5, model: str | None = None) 
     prompt = build_director_prompt(condensed, n_shots)
 
     script = None
-    for attempt in (1, 2):
+    for _attempt in (1, 2):
         try:
             raw = council_cli.call_llm(system, prompt, temperature=0.6, model=model)
         except Exception as e:
@@ -338,7 +341,7 @@ def build_shot_script(run: dict, *, n_shots: int = 5, model: str | None = None) 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="Director — build a reel shot-script from a run JSON")
     ap.add_argument("run_path", help="path to a run JSON, e.g. runs/2026-06-15/wc_belgium-egypt.json")
-    ap.add_argument("--n-shots", type=int, default=5)
+    ap.add_argument("--n-shots", type=int, default=5, choices=range(1, len(BEATS) + 1), help="number of shots (1..%d)" % len(BEATS))
     ap.add_argument("--model", default=None, help="override DIRECTOR_MODEL")
     ap.add_argument("--out", default=None, help="output path (default: <run>_reel.json beside the run)")
     args = ap.parse_args(argv)
