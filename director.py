@@ -285,3 +285,20 @@ def compose_ltx_prompt(shot: dict) -> str:
         f'Then {g["camera"]}. '
         f'{p["voice"]}, with soft studio room tone underneath.'
     )
+
+
+def fallback_shot_script(condensed: dict, n_shots: int = 5) -> dict:
+    """Deterministic Approach-C reel: map run fields straight onto the beats. No LLM."""
+    pundits = iter(PUNDITS)
+    raw = []
+    for i, beat_def in enumerate(BEATS[:n_shots]):
+        beat = beat_def["beat"]
+        speaker = beat_def["speaker"] or next(pundits)
+        raw.append({
+            "n": i + 1, "beat": beat, "speaker": speaker,
+            "line": _source_text(condensed, beat), "source": _source_name(beat),
+            "shot_type": beat_def["default_shot"], "duration": 6,
+            "performance": "looks directly at the camera",
+        })
+    return validate_and_repair({"match": condensed.get("match", ""), "reel_title": condensed.get("match", ""), "shots": raw},
+                               condensed, n_shots=n_shots)

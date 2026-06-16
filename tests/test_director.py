@@ -253,3 +253,22 @@ def test_compose_under_200_words_and_no_onscreen_text():
 def test_compose_uses_identity_anchor_not_portrait_redescription():
     out = compose_ltx_prompt(_SHOT)
     assert "The android host K_Bot" in out
+
+
+from director import fallback_shot_script
+
+
+def test_fallback_produces_valid_five_shot_reel():
+    out = fallback_shot_script(condense_run(SAMPLE_RUN), n_shots=5)
+    s = out["shots"]
+    assert [x["beat"] for x in s] == ["cold_open", "claim", "counter", "escalation", "verdict"]
+    assert s[0]["speaker"] == "K_Bot" and s[4]["speaker"] == "K_Bot"
+    assert {s[1]["speaker"], s[2]["speaker"], s[3]["speaker"]} == {"Stat_Bot", "G_Bot", "R_Bot"}
+    assert all(x["line"] and x["source"] for x in s)
+    assert sum(1 for x in s if SHOT_GRAMMAR[x["shot_type"]]["static"]) >= MIN_STATIC
+
+
+def test_fallback_survives_empty_run():
+    out = fallback_shot_script(condense_run({"match_string": "A vs B", "match_slug": "a-b"}), n_shots=5)
+    assert len(out["shots"]) == 5
+    assert out["shots"][4]["line"] == "?-?"  # verdict falls back to scoreline
