@@ -129,3 +129,57 @@ def test_parse_returns_none_on_garbage():
     assert parse_shot_script(None) is None
     assert parse_shot_script(json.dumps({"no": "shots"})) is None
     assert parse_shot_script(json.dumps(["a", "list"])) is None
+
+
+from director import validate_and_repair
+
+
+def _script(shots):
+    return {"match": "Belgium vs Egypt", "reel_title": "t", "shots": shots}
+
+
+def test_validate_coerces_to_five_beats_in_order():
+    out = validate_and_repair(_script([]), condense_run(SAMPLE_RUN), n_shots=5)
+    assert [s["beat"] for s in out["shots"]] == ["cold_open", "claim", "counter", "escalation", "verdict"]
+    assert [s["n"] for s in out["shots"]] == [1, 2, 3, 4, 5]
+
+
+def test_validate_forces_host_on_bookends_and_distinct_pundits():
+    out = validate_and_repair(_script([]), condense_run(SAMPLE_RUN), n_shots=5)
+    s = out["shots"]
+    assert s[0]["speaker"] == "K_Bot" and s[4]["speaker"] == "K_Bot"
+    middles = {s[1]["speaker"], s[2]["speaker"], s[3]["speaker"]}
+    assert middles == {"Stat_Bot", "G_Bot", "R_Bot"}  # three distinct pundits
+
+
+def test_validate_repairs_bad_speaker_and_duplicate_pundits():
+    bad = [
+        {"n": 1, "beat": "cold_open", "speaker": "R_Bot", "line": "hi", "source": "host_intro", "shot_type": "PUSH_IN", "duration": 6, "performance": "leans in"},
+        {"n": 2, "beat": "claim", "speaker": "Stat_Bot", "line": "a", "source": "stat_bot_highlight", "shot_type": "PUNDIT_STATIC", "duration": 6, "performance": "points"},
+        {"n": 3, "beat": "counter", "speaker": "Stat_Bot", "line": "b", "source": "group_chat", "shot_type": "LATERAL_TRACK", "duration": 6, "performance": "nods"},
+        {"n": 4, "beat": "escalation", "speaker": "Stat_Bot", "line": "c", "source": "most_outrageous_take", "shot_type": "LOW_ANGLE", "duration": 6, "performance": "scowls"},
+        {"n": 5, "beat": "verdict", "speaker": "G_Bot", "line": "d", "source": "rationale", "shot_type": "PULL_BACK", "duration": 6, "performance": "smiles"},
+    ]
+    out = validate_and_repair(_script(bad), condense_run(SAMPLE_RUN), n_shots=5)["shots"]
+    assert out[0]["speaker"] == "K_Bot" and out[4]["speaker"] == "K_Bot"
+    assert {out[1]["speaker"], out[2]["speaker"], out[3]["speaker"]} == {"Stat_Bot", "G_Bot", "R_Bot"}
+
+
+def test_validate_fills_blank_line_from_source_and_records_provenance():
+    out = validate_and_repair(_script([]), condense_run(SAMPLE_RUN), n_shots=5)["shots"]
+    assert out[0]["line"] and out[0]["source"]   # cold_open got a real line + provenance
+    assert all(s["line"] for s in out)
+
+
+def test_validate_truncates_overlong_line_to_word_cap():
+    long = " ".join(["word"] * 50)
+    shots = [{"n": 1, "beat": "cold_open", "speaker": "K_Bot", "line": long, "source": "host_intro", "shot_type": "PUSH_IN", "duration": 6, "performance": "leans in"}]
+    out = validate_and_repair(_script(shots), condense_run(SAMPLE_RUN), n_shots=5)["shots"]
+    assert len(out[0]["line"].split()) <= 18  # _word_cap(6)
+
+
+def test_validate_fixes_bad_duration_and_shot_type():
+    shots = [{"n": 1, "beat": "cold_open", "speaker": "K_Bot", "line": "hi", "source": "host_intro", "shot_type": "BOGUS", "duration": 7, "performance": "leans in"}]
+    out = validate_and_repair(_script(shots), condense_run(SAMPLE_RUN), n_shots=5)["shots"]
+    assert out[0]["duration"] in VALID_DURATIONS
+    assert out[0]["shot_type"] in SHOT_GRAMMAR

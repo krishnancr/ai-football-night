@@ -184,3 +184,60 @@ def parse_shot_script(raw):
     if not isinstance(data, dict) or not isinstance(data.get("shots"), list):
         return None
     return data
+
+
+def _repair_dynamism(shots):  # replaced with the real body in Task 6
+    return shots
+
+
+def _clean_str(value) -> str:
+    return str(value or "").strip()
+
+
+def validate_and_repair(script: dict, condensed: dict, n_shots: int = 5) -> dict:
+    """Coerce raw casting into a valid shot list: fixed beats, host bookends, three distinct
+    pundits, grounded non-empty lines, legal durations/shot_types. Repairs in place, never raises."""
+    raw_shots = script.get("shots") or []
+    by_beat = {}
+    for s in raw_shots:
+        if isinstance(s, dict) and s.get("beat"):
+            by_beat.setdefault(s["beat"], s)  # keep the first shot offered per beat
+
+    shots = []
+    for i, beat_def in enumerate(BEATS[:n_shots]):
+        beat = beat_def["beat"]
+        src = by_beat.get(beat, {}) if isinstance(by_beat.get(beat), dict) else {}
+        duration = src.get("duration") if src.get("duration") in VALID_DURATIONS else 6
+        shot_type = src.get("shot_type") if src.get("shot_type") in SHOT_GRAMMAR else beat_def["default_shot"]
+        line = _clean_str(src.get("line"))
+        source = _clean_str(src.get("source"))
+        if not line:
+            line = _clean_str(_source_text(condensed, beat))
+            source = _source_name(beat)
+        if not source:
+            source = _source_name(beat)
+        line = " ".join(line.split()[:_word_cap(duration)])
+        performance = _clean_str(src.get("performance")) or "looks directly at the camera"
+        speaker = beat_def["speaker"] if beat_def["speaker"] else _clean_str(src.get("speaker"))
+        shots.append({"n": i + 1, "beat": beat, "speaker": speaker, "line": line,
+                      "source": source, "shot_type": shot_type, "duration": duration,
+                      "performance": performance})
+
+    # Beats 2-4 must be three distinct pundits; fill invalid/duplicate slots from PUNDITS in order.
+    pundit_idx = [i for i, s in enumerate(shots) if not BEATS[i]["speaker"]]
+    used = []
+    for i in pundit_idx:
+        sp = shots[i]["speaker"]
+        if sp in PUNDITS and sp not in used:
+            used.append(sp)
+        else:
+            shots[i]["speaker"] = None  # mark for fill
+    leftovers = [p for p in PUNDITS if p not in used]
+    for i in pundit_idx:
+        if shots[i]["speaker"] is None:
+            shots[i]["speaker"] = leftovers.pop(0)
+
+    shots = _repair_dynamism(shots)
+    return {"match": script.get("match") or condensed.get("match", ""),
+            "reel_title": _clean_str(script.get("reel_title")) or condensed.get("match", ""),
+            "shots": shots}
