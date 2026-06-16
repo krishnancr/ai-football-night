@@ -302,3 +302,34 @@ def fallback_shot_script(condensed: dict, n_shots: int = 5) -> dict:
         })
     return validate_and_repair({"match": condensed.get("match", ""), "reel_title": condensed.get("match", ""), "shots": raw},
                                condensed, n_shots=n_shots)
+
+
+def build_shot_script(run: dict, *, n_shots: int = 5, model: str | None = None) -> dict:
+    """Run JSON -> validated, LTX-prompted shot script. One cheap LLM call (with one retry);
+    deterministic fallback if the reply is unusable. No video spend."""
+    import council_cli
+    condensed = condense_run(run)
+    model = model or os.getenv("DIRECTOR_MODEL") or run.get("persona_set", {}).get("K_Bot") or DEFAULT_MODEL
+    system = "You are the director of a sports talk show. You output only valid JSON objects."
+    prompt = build_director_prompt(condensed, n_shots)
+
+    script = None
+    for attempt in (1, 2):
+        try:
+            raw = council_cli.call_llm(system, prompt, temperature=0.6, model=model)
+        except Exception as e:
+            print(f"  director LLM call failed: {e}")
+            break
+        parsed = parse_shot_script(raw)
+        if parsed:
+            script = validate_and_repair(parsed, condensed, n_shots)
+            break
+        prompt = prompt + "\n\nReturn ONLY the JSON object — no prose, no fences."
+
+    if script is None:
+        print("  director: LLM output unusable, using deterministic fallback")
+        script = fallback_shot_script(condensed, n_shots)
+
+    for shot in script["shots"]:
+        shot["ltx_prompt"] = compose_ltx_prompt(shot)
+    return script

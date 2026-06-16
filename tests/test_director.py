@@ -272,3 +272,42 @@ def test_fallback_survives_empty_run():
     out = fallback_shot_script(condense_run({"match_string": "A vs B", "match_slug": "a-b"}), n_shots=5)
     assert len(out["shots"]) == 5
     assert out["shots"][4]["line"] == "?-?"  # verdict falls back to scoreline
+
+
+from director import build_shot_script
+
+_LLM_OK = json.dumps({"match": "Belgium vs Egypt", "reel_title": "DBchess", "shots": [
+    {"n": 1, "beat": "cold_open", "speaker": "K_Bot", "line": "Egypt's clean sheets meet Belgium's firepower tonight.", "source": "host_intro", "shot_type": "PUSH_IN", "duration": 6, "performance": "leans in"},
+    {"n": 2, "beat": "claim", "speaker": "Stat_Bot", "line": "Belgium average three-point-six goals a game.", "source": "stat_bot_highlight", "shot_type": "PUNDIT_STATIC", "duration": 6, "performance": "points"},
+    {"n": 3, "beat": "counter", "speaker": "R_Bot", "line": "Seven clean sheets in ten says that back line can defend.", "source": "group_chat", "shot_type": "LATERAL_TRACK", "duration": 6, "performance": "folds arms"},
+    {"n": 4, "beat": "escalation", "speaker": "G_Bot", "line": "Their compact block strangles those numbers.", "source": "most_outrageous_take", "shot_type": "LOW_ANGLE", "duration": 6, "performance": "gestures"},
+    {"n": 5, "beat": "verdict", "speaker": "K_Bot", "line": "Belgium take it three-one. Depth wins.", "source": "rationale", "shot_type": "PULL_BACK", "duration": 6, "performance": "smiles"},
+]})
+
+
+def test_build_success_path_attaches_ltx_prompts():
+    with patch("council_cli.call_llm", return_value=_LLM_OK) as mock_llm:
+        out = build_shot_script(SAMPLE_RUN)
+    assert len(out["shots"]) == 5
+    assert all("ltx_prompt" in s and s["ltx_prompt"] for s in out["shots"])
+    assert mock_llm.call_args.kwargs["model"] == "deepseek/deepseek-chat-v3-0324"  # K_Bot model
+
+
+def test_build_retries_then_succeeds_on_second_reply():
+    with patch("council_cli.call_llm", side_effect=["garbage no json", _LLM_OK]) as mock_llm:
+        out = build_shot_script(SAMPLE_RUN)
+    assert mock_llm.call_count == 2
+    assert out["shots"][0]["speaker"] == "K_Bot"
+
+
+def test_build_falls_back_when_llm_unusable():
+    with patch("council_cli.call_llm", return_value="still no json"):
+        out = build_shot_script(SAMPLE_RUN)
+    assert len(out["shots"]) == 5  # fallback produced a full reel
+    assert all("ltx_prompt" in s for s in out["shots"])
+
+
+def test_build_falls_back_when_llm_raises():
+    with patch("council_cli.call_llm", side_effect=RuntimeError("boom")):
+        out = build_shot_script(SAMPLE_RUN)
+    assert len(out["shots"]) == 5
