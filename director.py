@@ -186,7 +186,37 @@ def parse_shot_script(raw):
     return data
 
 
-def _repair_dynamism(shots):  # replaced with the real body in Task 6
+def _repair_dynamism(shots):
+    """Enforce the calm-first dynamism rules, deterministically:
+       (1) no two adjacent identical MOVING shot_types,
+       (2) >= MIN_STATIC static shots,
+       (3) >= 2 distinct shot_types overall.
+    Pundit beats (2-4) are the adjustable ones; host bookends keep their complementary feel."""
+    def is_static(t):
+        return SHOT_GRAMMAR[t]["static"]
+
+    # (1) Break adjacent identical MOVING repeats by falling back to the later beat's default,
+    #     then to the first non-conflicting type.
+    for i in range(1, len(shots)):
+        cur = shots[i]["shot_type"]
+        if cur == shots[i - 1]["shot_type"] and not is_static(cur):
+            default = BEATS[i]["default_shot"]
+            choice = default if default != shots[i - 1]["shot_type"] else None
+            if choice is None:
+                choice = next((t for t in SHOT_GRAMMAR if t != shots[i - 1]["shot_type"]), cur)
+            shots[i]["shot_type"] = choice
+
+    # (2) Top up statics, converting pundit beats (2-4) to PUNDIT_STATIC, latest first.
+    pundit_idx = [i for i, s in enumerate(shots) if not BEATS[i]["speaker"]]
+    for i in reversed(pundit_idx):
+        if sum(1 for s in shots if is_static(s["shot_type"])) >= MIN_STATIC:
+            break
+        shots[i]["shot_type"] = "PUNDIT_STATIC"
+
+    # (3) Guarantee variety: if everything collapsed to one type, set complementary bookends.
+    if len({s["shot_type"] for s in shots}) < 2 and len(shots) >= 2:
+        shots[0]["shot_type"] = "PUSH_IN"
+        shots[-1]["shot_type"] = "PULL_BACK"
     return shots
 
 

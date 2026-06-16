@@ -183,3 +183,41 @@ def test_validate_fixes_bad_duration_and_shot_type():
     out = validate_and_repair(_script(shots), condense_run(SAMPLE_RUN), n_shots=5)["shots"]
     assert out[0]["duration"] in VALID_DURATIONS
     assert out[0]["shot_type"] in SHOT_GRAMMAR
+
+
+from director import _repair_dynamism
+
+
+def _types(shots):
+    return [s["shot_type"] for s in shots]
+
+
+def _static_count(shots):
+    return sum(1 for s in shots if SHOT_GRAMMAR[s["shot_type"]]["static"])
+
+
+def test_dynamism_guarantees_min_two_static():
+    shots = [{"n": i + 1, "beat": BEATS[i]["beat"], "shot_type": "PUSH_IN"} for i in range(5)]
+    out = _repair_dynamism([dict(s) for s in shots])
+    assert _static_count(out) >= MIN_STATIC
+
+
+def test_dynamism_breaks_adjacent_moving_repeats():
+    shots = [{"n": i + 1, "beat": BEATS[i]["beat"], "shot_type": "PUSH_IN"} for i in range(5)]
+    out = _repair_dynamism([dict(s) for s in shots])
+    t = _types(out)
+    # no two adjacent identical MOVING types
+    assert all(not (t[i] == t[i + 1] and not SHOT_GRAMMAR[t[i]]["static"]) for i in range(len(t) - 1))
+
+
+def test_dynamism_ensures_at_least_two_distinct_types():
+    shots = [{"n": i + 1, "beat": BEATS[i]["beat"], "shot_type": "PUNDIT_STATIC"} for i in range(5)]
+    out = _repair_dynamism([dict(s) for s in shots])
+    assert len(set(_types(out))) >= 2
+
+
+def test_dynamism_leaves_a_good_assignment_untouched():
+    good = ["PUSH_IN", "PUNDIT_STATIC", "LATERAL_TRACK", "LOW_ANGLE", "PULL_BACK"]
+    shots = [{"n": i + 1, "beat": BEATS[i]["beat"], "shot_type": good[i]} for i in range(5)]
+    out = _repair_dynamism([dict(s) for s in shots])
+    assert _types(out) == good
