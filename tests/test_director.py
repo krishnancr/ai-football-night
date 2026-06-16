@@ -53,3 +53,26 @@ def test_beats_are_five_host_bookended():
     assert BEATS[1]["speaker"] is None and BEATS[2]["speaker"] is None and BEATS[3]["speaker"] is None
     for b in BEATS:
         assert b["default_shot"] in SHOT_GRAMMAR
+
+
+from director import condense_run
+
+
+def test_condense_run_pulls_decision_and_chat():
+    c = condense_run(SAMPLE_RUN)
+    assert c["match"] == "Belgium vs Egypt"
+    assert c["slug"] == "belgium-egypt"
+    assert c["home_goals"] == 3 and c["away_goals"] == 1
+    assert c["host_intro"].startswith("Stat_Bot ignored")
+    assert c["stat_bot_highlight"].startswith("Belgium average")
+    assert c["most_outrageous_take"].startswith("R_Bot says Salah")
+    assert c["rationale"].startswith("Belgium's attacking depth")
+    assert len(c["group_chat"]) == 4
+    assert c["group_chat"][0] == {"role": "Stat_Bot", "text": SAMPLE_RUN["group_chat"][0]["text"]}
+
+
+def test_condense_run_tolerates_missing_fields():
+    c = condense_run({"match_string": "A vs B", "match_slug": "a-b"})
+    assert c["match"] == "A vs B"
+    assert c["host_intro"] == "" and c["group_chat"] == []
+    assert c["home_goals"] == "?" and c["away_goals"] == "?"

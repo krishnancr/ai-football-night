@@ -67,3 +67,28 @@ BEATS = [
     {"beat": "escalation", "speaker": None,    "sources": ["most_outrageous_take", "group_chat"],          "default_shot": "LOW_ANGLE"},
     {"beat": "verdict",    "speaker": "K_Bot", "sources": ["rationale", "decision"],                       "default_shot": "PULL_BACK"},
 ]
+
+GROUP_CHAT_CAP = 14  # keep the prompt small; first N messages carry the spiciest exchange
+
+
+def condense_run(run: dict) -> dict:
+    """Pull only the fields the casting LLM needs into a compact dict."""
+    decision = run.get("decision") or {}
+    chat = [
+        {"role": m.get("role"), "text": str(m.get("text") or "").strip()}
+        for m in (run.get("group_chat") or [])
+        if m.get("role") in VALID_SPEAKERS and str(m.get("text") or "").strip()
+    ][:GROUP_CHAT_CAP]
+    return {
+        "match": run.get("match_string", ""),
+        "slug": run.get("match_slug", ""),
+        "home_goals": decision.get("home_goals", "?"),
+        "away_goals": decision.get("away_goals", "?"),
+        "host_intro": str(decision.get("host_intro") or ""),
+        "match_headline": str(decision.get("match_headline") or ""),
+        "tweet_hook": str(decision.get("tweet_hook") or ""),
+        "stat_bot_highlight": str(decision.get("stat_bot_highlight") or ""),
+        "most_outrageous_take": str(decision.get("most_outrageous_take") or ""),
+        "rationale": str(decision.get("rationale") or ""),
+        "group_chat": chat,
+    }
