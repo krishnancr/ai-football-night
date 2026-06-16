@@ -333,3 +333,27 @@ def build_shot_script(run: dict, *, n_shots: int = 5, model: str | None = None) 
     for shot in script["shots"]:
         shot["ltx_prompt"] = compose_ltx_prompt(shot)
     return script
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(description="Director — build a reel shot-script from a run JSON")
+    ap.add_argument("run_path", help="path to a run JSON, e.g. runs/2026-06-15/wc_belgium-egypt.json")
+    ap.add_argument("--n-shots", type=int, default=5)
+    ap.add_argument("--model", default=None, help="override DIRECTOR_MODEL")
+    ap.add_argument("--out", default=None, help="output path (default: <run>_reel.json beside the run)")
+    args = ap.parse_args(argv)
+
+    run = json.loads(Path(args.run_path).read_text())
+    script = build_shot_script(run, n_shots=args.n_shots, model=args.model)
+
+    out_path = Path(args.out) if args.out else Path(args.run_path).with_name(Path(args.run_path).stem + "_reel.json")
+    out_path.write_text(json.dumps(script, indent=2))
+
+    print(f"\n{script.get('match', '')}  →  {out_path}")
+    for s in script["shots"]:
+        print(f"  [{s['n']}] {s['beat']:<10} {s['speaker']:<9} {s['shot_type']:<13} {s['duration']}s  {s['line'][:48]}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

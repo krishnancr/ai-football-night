@@ -311,3 +311,28 @@ def test_build_falls_back_when_llm_raises():
     with patch("council_cli.call_llm", side_effect=RuntimeError("boom")):
         out = build_shot_script(SAMPLE_RUN)
     assert len(out["shots"]) == 5
+
+
+from director import main
+
+
+def test_main_writes_reel_json_beside_run(tmp_path):
+    run_path = tmp_path / "wc_belgium-egypt.json"
+    run_path.write_text(json.dumps(SAMPLE_RUN))
+    with patch("council_cli.call_llm", return_value=_LLM_OK):
+        rc = main([str(run_path)])
+    assert rc == 0
+    out_path = tmp_path / "wc_belgium-egypt_reel.json"
+    assert out_path.exists()
+    data = json.loads(out_path.read_text())
+    assert len(data["shots"]) == 5
+    assert all("ltx_prompt" in s for s in data["shots"])
+
+
+def test_main_respects_out_override(tmp_path):
+    run_path = tmp_path / "run.json"
+    run_path.write_text(json.dumps(SAMPLE_RUN))
+    out_path = tmp_path / "custom_reel.json"
+    with patch("council_cli.call_llm", return_value=_LLM_OK):
+        main([str(run_path), "--out", str(out_path)])
+    assert out_path.exists()
