@@ -92,3 +92,76 @@ def condense_run(run: dict) -> dict:
         "rationale": str(decision.get("rationale") or ""),
         "group_chat": chat,
     }
+
+
+def _word_cap(duration: int) -> int:
+    """Hard ceiling on spoken words for a shot. OUR heuristic (~3 words/sec), not an
+    official LTX figure — tune after the first real renders."""
+    return int(duration) * 3
+
+
+def _source_text(condensed: dict, beat: str) -> str:
+    """Best available run text for a beat, in the beat's source-preference order."""
+    chat = condensed.get("group_chat") or []
+    if beat == "cold_open":
+        return condensed["host_intro"] or condensed["match_headline"] or condensed["tweet_hook"]
+    if beat == "claim":
+        return condensed["stat_bot_highlight"] or (chat[0]["text"] if chat else "")
+    if beat == "counter":
+        return (chat[1]["text"] if len(chat) > 1 else "") or condensed["tweet_hook"]
+    if beat == "escalation":
+        return condensed["most_outrageous_take"] or (chat[2]["text"] if len(chat) > 2 else "")
+    if beat == "verdict":
+        return condensed["rationale"] or f'{condensed["home_goals"]}-{condensed["away_goals"]}'
+    return ""
+
+
+def _source_name(beat: str) -> str:
+    """Canonical provenance label used when code fills a line."""
+    return {"cold_open": "host_intro", "claim": "stat_bot_highlight", "counter": "group_chat",
+            "escalation": "most_outrageous_take", "verdict": "rationale"}[beat]
+
+
+_PROMPT_TEMPLATE = """You are the Director of "AI Football Night", cutting a finished pundit debate into a {n_shots}-shot vertical talk-show reel (~30s). Four android pundits: K_Bot (host), Stat_Bot (data), G_Bot (tactics), R_Bot (old-school contrarian).
+
+THE MATCH: {match}  (predicted final score {home_goals}-{away_goals})
+
+MATERIAL YOU MAY CUT FROM (select the best, tighten — do NOT invent new claims or stats):
+- host_intro: {host_intro}
+- match_headline: {match_headline}
+- tweet_hook: {tweet_hook}
+- stat_bot_highlight: {stat_bot_highlight}
+- most_outrageous_take: {most_outrageous_take}
+- rationale: {rationale}
+- group_chat:
+{group_chat}
+
+PRODUCE EXACTLY {n_shots} SHOTS following this fixed arc (the cut must FLOW — the claim, counter and escalation must actually answer each other, not be three disconnected takes):
+1. cold_open  — K_Bot frames the match and stakes.
+2. claim      — one pundit plants a strong, specific assertion.
+3. counter    — a DIFFERENT pundit directly rebuts shot 2.
+4. escalation — the remaining pundit raises the stakes / spiciest angle.
+5. verdict    — K_Bot delivers the {home_goals}-{away_goals} scoreline and signs off.
+
+Each spoken line: tighten to ~{soft_words} words (a single short, punchy sentence). Beats 2-4 must be three DIFFERENT pundits from: Stat_Bot, G_Bot, R_Bot.
+
+Pick a shot_type for each shot from this list (vary them so it isn't visually monotonous; at least two should be static): {shot_types}.
+Give one PHYSICAL performance cue per shot (e.g. "leans in, raises an eyebrow") — physical action, never an emotion word.
+
+Return ONLY this JSON object, no prose, no markdown fences:
+{{"match": "{match}", "reel_title": "<short label, not shown on screen>", "shots": [
+  {{"n": 1, "beat": "cold_open", "speaker": "K_Bot", "line": "<tightened spoken line>", "source": "<which field above this line came from>", "shot_type": "<one of the list>", "duration": 6, "performance": "<one physical cue>"}}
+]}}"""
+
+
+def build_director_prompt(condensed: dict, n_shots: int = 5) -> str:
+    chat = "\n".join(f'  {m["role"]}: {m["text"]}' for m in condensed["group_chat"]) or "  (none)"
+    return _PROMPT_TEMPLATE.format(
+        n_shots=n_shots,
+        match=condensed["match"],
+        home_goals=condensed["home_goals"], away_goals=condensed["away_goals"],
+        host_intro=condensed["host_intro"], match_headline=condensed["match_headline"],
+        tweet_hook=condensed["tweet_hook"], stat_bot_highlight=condensed["stat_bot_highlight"],
+        most_outrageous_take=condensed["most_outrageous_take"], rationale=condensed["rationale"],
+        group_chat=chat, soft_words=14, shot_types=", ".join(SHOT_GRAMMAR),
+    )

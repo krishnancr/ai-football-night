@@ -76,3 +76,32 @@ def test_condense_run_tolerates_missing_fields():
     assert c["match"] == "A vs B"
     assert c["host_intro"] == "" and c["group_chat"] == []
     assert c["home_goals"] == "?" and c["away_goals"] == "?"
+
+
+from director import build_director_prompt, _source_text, _word_cap
+
+
+def test_word_cap_scales_with_duration():
+    assert _word_cap(6) == 18 and _word_cap(8) == 24 and _word_cap(10) == 30
+
+
+def test_source_text_picks_best_available_per_beat():
+    c = condense_run(SAMPLE_RUN)
+    assert _source_text(c, "cold_open").startswith("Stat_Bot ignored")   # host_intro
+    assert _source_text(c, "claim").startswith("Belgium average")         # stat_bot_highlight
+    assert _source_text(c, "escalation").startswith("R_Bot says Salah")   # most_outrageous_take
+    assert _source_text(c, "verdict").startswith("Belgium's attacking")   # rationale
+
+
+def test_source_text_verdict_falls_back_to_scoreline():
+    c = condense_run({"match_string": "A vs B", "match_slug": "a-b"})
+    assert _source_text(c, "verdict") == "?-?"
+
+
+def test_build_prompt_includes_material_beats_and_grammar():
+    prompt = build_director_prompt(condense_run(SAMPLE_RUN), n_shots=5)
+    assert "Belgium vs Egypt" in prompt
+    assert "Egypt conceded TWO in ten qualifiers" in prompt  # a group_chat line
+    assert "cold_open" in prompt and "verdict" in prompt
+    assert "PUSH_IN" in prompt and "PUNDIT_STATIC" in prompt  # shot vocabulary offered
+    assert '"source"' in prompt and '"shot_type"' in prompt   # schema keys named
