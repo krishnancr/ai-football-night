@@ -302,5 +302,12 @@
       "role": "K_Bot",
       "text": "Verdict: Uruguay's midfield control and set-piece threat edge it. Saudi's counter-attack is real but insufficient. Score: 0-1."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

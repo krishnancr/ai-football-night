@@ -1,0 +1,90 @@
+{
+  "home_team": "France",
+  "away_team": "Senegal",
+  "match_date": "2026-06-16",
+  "group": "I",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "Senegal lead the all-time head-to-head series with their only meeting being the iconic 2002 World Cup upset, when Papa Bouba Diop's 30th-minute strike sealed a 1-0 win over the defending champions in Seoul.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-1 - FIFA World Cup Group Stage - 2002"
+    ]
+  },
+  "wc_history_home": "France are two-time World Cup winners (1998, 2018) and 2022 runners-up, making them one of the tournament's most decorated nations in the modern era.",
+  "wc_history_away": "Senegal's finest World Cup moment came in 2002 when they reached the quarter-finals as debutants, famously beating defending champions France; they also reached the Round of 16 at the 2022 edition.",
+  "group_context": "Group I features France, Senegal, Norway and Iraq, with France widely regarded as the strongest team in the group; the opening fixture between France and Senegal is the group's marquee clash, and Senegal's path to the knockout round likely hinges on taking points against Norway, as France are expected to claim first place.",
+  "strengths_home": [
+    "World-class attacking depth with Mbappe, Dembele, Olise and Barcola",
+    "Defensive solidity anchored by Saliba and an experienced back line",
+    "Tournament experience \u2014 winners in 1998 and 2018, finalists in 2022"
+  ],
+  "strengths_away": [
+    "AFCON 2025 champions with unbeaten run stretching back to early 2024",
+    "Physical and tactically disciplined squad balancing veterans and emerging talent",
+    "Sadio Mane's leadership and ability to unlock defences combined with Jackson's pressing"
+  ],
+  "team_style_home": "France deploy a 4-2-3-1 under Didier Deschamps, building through a solid defensive block with a double pivot before releasing elite attackers in transition, prioritising results over aesthetics.",
+  "team_style_away": "Senegal press high in a 4-3-3, using Mane's ability to drop deep and link play, with physical intensity and rapid counterattacking on the flanks through Sarr and Jackson.",
+  "stats_home": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 15,
+    "elo": 1684,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 3,
+      "L": 0,
+      "GF": 22,
+      "GA": 3
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "France won 3-1 against Northern Ireland in their last game. Senegal's recent results include a 3-0 win against Morocco and a 3-2 loss to USA.",
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Kylian Mbappe (captain / striker)",
+    "Ousmane Dembele (winger / Ballon d'Or winner)",
+    "Michael Olise (winger)",
+    "William Saliba (centre-back)",
+    "Bradley Barcola (winger)"
+  ],
+  "key_players_away": [
+    "Sadio Mane (captain / forward)",
+    "Nicolas Jackson (striker)",
+    "Ismaila Sarr (winger)",
+    "Kalidou Koulibaly (centre-back)",
+    "Idrissa Gana Gueye (defensive midfielder)"
+  ],
+  "context": "Group I features France, Senegal, Norway and Iraq, with France widely regarded as the strongest team in the group; the opening fixture between France and Senegal is the group's marquee clash, and Senegal's path to the knockout round likely hinges on taking points against Norway, as France are expected to claim first place.",
+  "research_quality": "full"
+}

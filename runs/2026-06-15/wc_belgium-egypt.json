@@ -303,5 +303,12 @@
       "role": "K_Bot",
       "text": "Verdict: Belgium 2-1 Egypt. Elo and depth edge it, but Egypt's defense keeps it tight until a late De Bruyne moment."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

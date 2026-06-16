@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-16",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "France vs Senegal",
+      "run_file": "runs/2026-06-16/wc_france-senegal.json",
+      "thread_file": "runs/2026-06-16/_debug/wc_france-senegal_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Iraq vs Norway",
+      "run_file": "runs/2026-06-16/wc_iraq-norway.json",
+      "thread_file": "runs/2026-06-16/_debug/wc_iraq-norway_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Argentina vs Algeria",
+      "run_file": "runs/2026-06-16/wc_argentina-algeria.json",
+      "thread_file": "runs/2026-06-16/_debug/wc_argentina-algeria_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Austria vs Jordan",
+      "run_file": "runs/2026-06-16/wc_austria-jordan.json",
+      "thread_file": "runs/2026-06-16/_debug/wc_austria-jordan_thread.json",
+      "success": true
+    }
+  ]
+}

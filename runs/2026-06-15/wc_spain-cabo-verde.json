@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "R_Bot missed that his 'compact defense' claim was based on wrong numbers. Verdict: Spain 2-0."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

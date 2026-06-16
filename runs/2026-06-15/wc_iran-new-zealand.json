@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: Iran 2-1. Taremi's trickery beats Bindon, set-piece goal cancels Wood's header. NZ get a late corner but fall short."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 2,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

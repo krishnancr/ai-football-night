@@ -1,0 +1,89 @@
+{
+  "home_team": "Argentina",
+  "away_team": "Algeria",
+  "match_date": "2026-06-16",
+  "group": "J",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": "Argentina and Algeria have met only once, a 4-3 Argentina win in a 2007 friendly, making this their first competitive meeting.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "Argentina 4-3 Algeria - International Friendly - 2007"
+    ]
+  },
+  "wc_history_home": "Argentina are three-time World Cup champions (1978, 1986, 2022) and enter as defending title holders looking to become the first team to win back-to-back tournaments since Brazil in 1962.",
+  "wc_history_away": "Algeria are making their fifth World Cup appearance (1982, 1986, 2010, 2014) with their best run coming in 2014 when they pushed eventual champions Germany to extra time in the Round of 16, losing 2-1.",
+  "group_context": "Group J is headlined by defending champions Argentina, who are strong favourites to advance, while Algeria, Austria, and debutants Jordan compete for the second qualification spot; a result against Argentina would dramatically boost Algeria's knockout stage hopes.",
+  "strengths_home": [
+    "World-class individual quality led by Messi in potentially his final World Cup",
+    "Elite defensive record \u2014 conceded only 10 goals in 18 CONMEBOL qualifiers",
+    "Tournament pedigree and experience as reigning world champions"
+  ],
+  "strengths_away": [
+    "Mohamed Amoura's clinical finishing \u2014 top scorer in CAF qualifying with 10 goals in 8 matches",
+    "Upset pedigree \u2014 beat Netherlands 1-0 in June 2026 World Cup preparation friendly",
+    "Strong team cohesion under Petkovic with disciplined defensive structure and set-piece threat"
+  ],
+  "team_style_home": "Argentina deploy a fluid 4-3-3 / 4-2-3-1 that shifts into a 3-2-5 in build-up, with Messi as a free-roaming quarterback-10, strong defensive compactness, and rapid vertical transitions.",
+  "team_style_away": "Algeria set up in a 4-2-3-1 with a disciplined double pivot, Mahrez as the creative fulcrum on the right, energetic wide attackers, and emphasis on defensive solidity and quick counter-attacks.",
+  "stats_home": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  },
+  "injuries_home": [
+    "Emiliano Martinez (injury boost)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.36,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Argentina received a major injury boost with Emiliano Martinez returning ahead of the World Cup opener. Algeria has no notable injury updates mentioned.",
+  "form_home": [
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W"
+  ],
+  "key_players_home": [
+    "Lionel Messi (attacking midfielder / free-roaming forward)",
+    "Lautaro Martinez (striker)",
+    "Julian Alvarez (striker)",
+    "Enzo Fernandez (central midfielder)",
+    "Emiliano Martinez (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Riyad Mahrez (winger / attacking midfielder)",
+    "Mohamed Amoura (striker)",
+    "Ibrahim Maza (attacking midfielder)",
+    "Ismael Bennacer (defensive midfielder)",
+    "Rayan Ait-Nouri (left back)"
+  ],
+  "context": "Group J is headlined by defending champions Argentina, who are strong favourites to advance, while Algeria, Austria, and debutants Jordan compete for the second qualification spot; a result against Argentina would dramatically boost Algeria's knockout stage hopes.",
+  "research_quality": "full"
+}
