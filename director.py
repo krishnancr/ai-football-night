@@ -271,3 +271,17 @@ def validate_and_repair(script: dict, condensed: dict, n_shots: int = 5) -> dict
     return {"match": script.get("match") or condensed.get("match", ""),
             "reel_title": _clean_str(script.get("reel_title")) or condensed.get("match", ""),
             "shots": shots}
+
+
+def compose_ltx_prompt(shot: dict) -> str:
+    """Render one shot into a single present-tense LTX-2.3 paragraph.
+    Focuses on motion + speech (the first-frame portrait already carries the look)."""
+    g = SHOT_GRAMMAR[shot["shot_type"]]
+    p = BOT_PROFILES[shot["speaker"]]
+    return (
+        f'{g["framing"]}. '
+        f'{STUDIO_LIGHT}. '
+        f'{p["identity"]} {shot["performance"]}, speaking directly to camera: "{shot["line"]}". '
+        f'Then {g["camera"]}. '
+        f'{p["voice"]}, with soft studio room tone underneath.'
+    )

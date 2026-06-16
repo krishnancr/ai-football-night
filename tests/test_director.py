@@ -221,3 +221,35 @@ def test_dynamism_leaves_a_good_assignment_untouched():
     shots = [{"n": i + 1, "beat": BEATS[i]["beat"], "shot_type": good[i]} for i in range(5)]
     out = _repair_dynamism([dict(s) for s in shots])
     assert _types(out) == good
+
+
+from director import compose_ltx_prompt
+
+_SHOT = {"n": 1, "beat": "cold_open", "speaker": "K_Bot",
+         "line": "Belgium average three goals a game; Egypt's clean sheets get tested.",
+         "source": "host_intro", "shot_type": "PUSH_IN", "duration": 6,
+         "performance": "leans in and raises an eyebrow"}
+
+
+def test_compose_starts_with_framing_then_lighting():
+    out = compose_ltx_prompt(_SHOT)
+    assert out.startswith("Medium-close shot.")       # framing first
+    assert "Cool neon studio key light" in out         # lighting next
+
+
+def test_compose_puts_dialogue_in_quotes_and_camera_and_voice():
+    out = compose_ltx_prompt(_SHOT)
+    assert '"' + _SHOT["line"] + '"' in out             # dialogue inline in quotes
+    assert "pushes in" in out                            # camera move phrase
+    assert "British broadcast accent" in out             # voice/accent last
+
+
+def test_compose_under_200_words_and_no_onscreen_text():
+    out = compose_ltx_prompt(_SHOT)
+    assert len(out.split()) <= 200
+    assert "text on screen" not in out.lower() and "subtitle" not in out.lower()
+
+
+def test_compose_uses_identity_anchor_not_portrait_redescription():
+    out = compose_ltx_prompt(_SHOT)
+    assert "The android host K_Bot" in out
