@@ -38,3 +38,4 @@ runs/*/*.html
 runs/*/*.wav
 runs/*/*.mp4
 runs/*/*.mp3
+.venv-tts/

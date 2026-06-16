@@ -143,7 +143,12 @@ PRODUCE EXACTLY {n_shots} SHOTS following this fixed arc (the cut must FLOW — 
 4. escalation — the remaining pundit raises the stakes / spiciest angle.
 5. verdict    — K_Bot delivers the {home_goals}-{away_goals} scoreline and signs off.
 
-Each spoken line: tighten to ~{soft_words} words (a single short, punchy sentence). Beats 2-4 must be three DIFFERENT pundits from: Stat_Bot, G_Bot, R_Bot.
+Each spoken line is VOICED by a text-to-speech actor (spoken aloud, never shown on screen) — tighten to ~{soft_words} words, a single short, punchy spoken sentence. Beats 2-4 must be three DIFFERENT pundits from: Stat_Bot, G_Bot, R_Bot.
+
+SPOKEN-LINE RULES (critical — these lines are read aloud by TTS):
+- TEAM STATISTICS ARE GOOD — lean on them. Clean percentages and round numbers are fine when they make sense ("Belgium win nearly three in four", "seven clean sheets in qualifying", "they've scored in every game"). But do NOT read awkward ratios or analytics acronyms aloud — no "0.2 GA/game", "xG", "PPDA", "Elo", "win probability"; rephrase those in plain words ("they barely conceded all qualifying").
+- Player names ONLY when they're EASY to say. Use a clearly pronounceable, widely-known name; if a name is tricky for a TTS voice (e.g. "De Bruyne"), use a role instead ("Belgium's playmaker", "the veteran keeper"). At most one name per line.
+- Write how a broadcaster TALKS, not how a spreadsheet reads: contractions, rhythm, one clear idea per line.
 
 Pick a shot_type for each shot from this list (vary them so it isn't visually monotonous; at least two should be static): {shot_types}.
 Give one PHYSICAL performance cue per shot (e.g. "leans in, raises an eyebrow") — physical action, never an emotion word.
