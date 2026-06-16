@@ -247,7 +247,7 @@ def validate_and_repair(script: dict, condensed: dict, n_shots: int = 5) -> dict
         if not source:
             source = _source_name(beat)
         line = " ".join(line.split()[:_word_cap(duration)])
-        performance = _clean_str(src.get("performance")) or "looks directly at the camera"
+        performance = _clean_str(src.get("performance")) or "gives a slight nod"
         speaker = beat_def["speaker"] if beat_def["speaker"] else _clean_str(src.get("speaker"))
         shots.append({"n": i + 1, "beat": beat, "speaker": speaker, "line": line,
                       "source": source, "shot_type": shot_type, "duration": duration,
@@ -298,7 +298,7 @@ def fallback_shot_script(condensed: dict, n_shots: int = 5) -> dict:
             "n": i + 1, "beat": beat, "speaker": speaker,
             "line": _source_text(condensed, beat), "source": _source_name(beat),
             "shot_type": beat_def["default_shot"], "duration": 6,
-            "performance": "looks directly at the camera",
+            "performance": "gives a slight nod",
         })
     return validate_and_repair({"match": condensed.get("match", ""), "reel_title": condensed.get("match", ""), "shots": raw},
                                condensed, n_shots=n_shots)
