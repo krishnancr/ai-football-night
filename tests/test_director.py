@@ -105,3 +105,27 @@ def test_build_prompt_includes_material_beats_and_grammar():
     assert "cold_open" in prompt and "verdict" in prompt
     assert "PUSH_IN" in prompt and "PUNDIT_STATIC" in prompt  # shot vocabulary offered
     assert '"source"' in prompt and '"shot_type"' in prompt   # schema keys named
+
+
+from director import parse_shot_script
+
+_OBJ = {"match": "A vs B", "reel_title": "t", "shots": [{"n": 1, "beat": "cold_open"}]}
+
+
+def test_parse_plain_object():
+    assert parse_shot_script(json.dumps(_OBJ)) == _OBJ
+
+
+def test_parse_strips_markdown_fences():
+    assert parse_shot_script("```json\n" + json.dumps(_OBJ) + "\n```") == _OBJ
+
+
+def test_parse_extracts_object_from_prose():
+    assert parse_shot_script("Here you go:\n" + json.dumps(_OBJ) + "\nDone") == _OBJ
+
+
+def test_parse_returns_none_on_garbage():
+    assert parse_shot_script("no json here") is None
+    assert parse_shot_script(None) is None
+    assert parse_shot_script(json.dumps({"no": "shots"})) is None
+    assert parse_shot_script(json.dumps(["a", "list"])) is None

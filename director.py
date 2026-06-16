@@ -165,3 +165,22 @@ def build_director_prompt(condensed: dict, n_shots: int = 5) -> str:
         most_outrageous_take=condensed["most_outrageous_take"], rationale=condensed["rationale"],
         group_chat=chat, soft_words=14, shot_types=", ".join(SHOT_GRAMMAR),
     )
+
+
+def parse_shot_script(raw):
+    """Extract the JSON object from the LLM reply. Returns the dict, or None if unusable."""
+    raw = raw or ""
+    fence = re.search(r"```(?:json)?\s*(\{.*\})\s*```", raw, re.DOTALL)
+    candidate = fence.group(1) if fence else None
+    if candidate is None:
+        obj = re.search(r"\{.*\}", raw, re.DOTALL)
+        candidate = obj.group(0) if obj else None
+    if candidate is None:
+        return None
+    try:
+        data = json.loads(candidate)
+    except Exception:
+        return None
+    if not isinstance(data, dict) or not isinstance(data.get("shots"), list):
+        return None
+    return data
