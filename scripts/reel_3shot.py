@@ -33,6 +33,7 @@ import time
 import argparse
 import urllib.request
 import urllib.error
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -104,15 +105,20 @@ def build_body(shot, a):
                       "movement; keep any gestures minimal and believable.",
         }
     if shot == "two":
+        # Tuned per InfiniteTalk/MultiTalk guide: prompt is a HIGH-LEVEL steer
+        # (scene, interaction, listener reaction) — audio drives lips/expression.
+        # Keep it concrete (place + lighting) and short (~2 sentences).
         return {
             "image": a.two_image_url,
             "left_audio": a.two_left_audio_url,
             "right_audio": a.two_right_audio_url,
             "order": a.order,
             "resolution": a.resolution,
-            "prompt": "Two sports pundits at a broadcast desk; the left presenter "
-                      "speaks first, then the right presenter responds. Natural "
-                      "turn-taking, the listener reacts and nods.",
+            "prompt": "Two football pundits side by side at a broadcast desk in a "
+                      "bright TV studio; the left presenter speaks while the right one "
+                      "listens and nods, then they swap as the right presenter "
+                      "responds. Calm, natural head movements and cinematic broadcast "
+                      "lighting.",
         }
     if shot == "wide":
         return {
@@ -128,6 +134,36 @@ def build_body(shot, a):
             "generate_audio": False,
         }
     raise ValueError(shot)
+
+
+def _ffprobe_dur(path, stream):
+    """Duration (s) of the first audio/video stream, or 0.0 if absent/unreadable."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", stream,
+             "-show_entries", "stream=duration", "-of",
+             "default=noprint_wrappers=1:nokey=1", path],
+            capture_output=True, text=True).stdout.strip()
+        return float(out) if out else 0.0
+    except Exception:
+        return 0.0
+
+
+def trim_to_audio(raw_path, final_path):
+    """Trim trailing video that runs past the audio. Audio-driven avatar models pad
+    the tail with degraded idle motion (the 'melty hand' artifact). No audio stream
+    or no overrun -> just move the file. Returns trimmed seconds, or None."""
+    adur = _ffprobe_dur(raw_path, "a:0")
+    vdur = _ffprobe_dur(raw_path, "v:0")
+    if adur <= 0 or vdur <= adur + 0.15:
+        os.replace(raw_path, final_path)
+        return None
+    subprocess.run(
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", raw_path, "-t", f"{adur:.3f}",
+         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "copy", final_path],
+        check=True)
+    os.remove(raw_path)
+    return round(vdur - adur, 2)
 
 
 def run_shot(shot, body, key, out_dir, poll_secs, max_polls):
@@ -151,9 +187,14 @@ def run_shot(shot, body, key, out_dir, poll_secs, max_polls):
             if not outs:
                 print("    completed but no outputs:", json.dumps(data)[:300])
                 return None
+            raw_path = out_dir / f"{shot}_raw.mp4"
+            raw_path.write_bytes(urllib.request.urlopen(outs[0]).read())
             out_path = out_dir / f"{shot}.mp4"
-            out_path.write_bytes(urllib.request.urlopen(outs[0]).read())
-            print(f"    saved {out_path} ({out_path.stat().st_size} bytes)")
+            trimmed = trim_to_audio(str(raw_path), str(out_path))
+            msg = f"    saved {out_path} ({out_path.stat().st_size} bytes)"
+            if trimmed:
+                msg += f"  [trimmed {trimmed}s silent tail to match audio]"
+            print(msg)
             return job_id
         if sv in ("failed", "error"):
             print(f"    generation {sv}: {json.dumps(data)[:400]}")
@@ -197,7 +238,7 @@ def main():
     a.close_audio_url = asset("assets/bots/kbot_line_5s.wav", a.close_audio_url)
     a.two_image_url = asset("assets/twoshot_left2.png", a.two_image_url)
     a.two_left_audio_url = asset("assets/bots/kbot_line_5s.wav", a.two_left_audio_url)
-    a.two_right_audio_url = asset("assets/bots/kbot_line_5s.wav", a.two_right_audio_url)
+    a.two_right_audio_url = asset("assets/twoshot_right_line.wav", a.two_right_audio_url)
     a.wide_image_url = asset("assets/AIPanel.png", a.wide_image_url)
 
     shots = [s.strip() for s in a.shots.split(",") if s.strip()]
