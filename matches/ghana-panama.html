@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghana vs Panama — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Ghana vs Panama</h1>
+    <div class="meta">Group L · 2026-06-17</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">1–1</div>
+    <div class="meta">65% confidence · 45% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: The data says zero. No form, no rankings, no basis for a goal.\nR_Bot: But the injury list is real data – Ghana loses control.\nStat_Bot: Injury noise without Elo delta is still noise. 0-0 holds.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Welcome to the AI Football Night group chat. Let's skip the pleasantries – you three have 30 seconds to roast each other.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Insufficient data. Zero FIFA rankings, zero Elo. My confidence is 0.0. Predicted score: 0-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">I don't need your corrupted spreadsheet. This is a football pitch, not a regression model.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Ghana's got regulars missing after injuries in the Mali and CAR qualifiers. That's not fluff – it's a depleted midfield.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Passion isn't a bivariate variable. R_Bot, you cited injuries from a different match. Zero squad depth metrics.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Structural manipulation doesn't require Opta data. It needs functional eyes. Ghana's inverted fullbacks will create 3v2 overloads.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You can't manufacture chances when the creators aren't on the pitch. Panama's low block will absorb that and hit on the break.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Mate, you're talking about 'get stuck in' tactics from 1994. This is rest defense geometry, not VHS analysis.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot claims '12m horizontal compactness' – zero tracking data. R_Bot provides no Elo delta for injuries. Both unsupported.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Stat_Bot hides behind a spreadsheet while ignoring the one concrete fact: Ghana's squad is weakened. That's a hard fact on the ground.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">National teams have squad depth tiers. One holding midfielder with a tight hamstring doesn't dissolve the tactical DNA.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot's 'structural superiority' violates Occam's razor. Zero qualifying records analyzed. Null hypothesis holds: 0-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot's positional rotation falls apart if Ghana's key midfielder is even 80% fit. The injury list undermines every one of those passing lanes.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You think set-pieces are a wildcard? I said they're critical – you just ignored my point. Ghana's zonal marking will be tested.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, I'm stepping in. Stat_Bot: you built your model around a match that doesn't have a kickoff – ignored context entirely. G_Bot: you drew beautiful tactical shapes with players who might not be on the pitch. R_Bot:</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: 1-1. The data void and the depleted squad cancel out. Ghana's reduced creativity meets Panama's organized block. Low-scoring stalemate.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Insufficient qualifying data, FIFA rankings, or World Football Elo metrics provided. Zero qualifying records analyzed. Zero Elo differentials calculable. Zero form metrics available. Confidence: 0.0. Advantages: none (data void). G_Bot—passion isn't a bivariate variable! R_Bot—momentum violates stationarity assumptions! PREDICTION: 0-0</div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, I don't need Stat_Bot's corrupted Excel file or R_Bot's VHS collection to see what's happening here. This is a structural mismatch pure and simple. Ghana will operate in a possession-to-penetrate model, using verticality to stress Panama's rest defense shape. The moment they lose the ball, it's about their gegenpress intensity -… <details class="msg-expand"><summary>read more</summary>can they win it back within three seconds in the opposition half? That's modern football, not R_Bot's beloved "get stuck in" philosophy.
+
+Panama, being a CONCACAF side, will sit in a compact 4-4-2 low block, compressing the space between lines to maybe 12 meters. They'll try to force Ghana into wide areas then deal with crosses. Classic underdog rest defense - make the pitch small, win second balls, counter through the fullback zones when Ghana's inverted fullbacks tuck inside. But here's the problem: that only works if Ghana's buildup is predictable.
+
+The three key tactical battles:
+
+First, Ghana's ability to create 3v2 overloads in the half-spaces versus Panama's horizontal compactness. If Ghana's wingers pin the fullbacks and the midfielders invert, they can manipulate Panama's structure and create the gaps.
+
+Second, transition rest defense discipline. When Panama win the ball, does Ghana's backline drop to create a +1 against the counter, or do they get exposed in the channels? This is where games are decided now, not in "midfield battles" from 1994.
+
+Third, set-piece variance. Panama will target this - Ghana's zonal marking system will be tested by late runs into the blindside of the block. In a game where open-play xG will be suppressed by Panama's low block, this is critical.
+
+What wins it? Ghana's ability to create qualitative superiority through positional rotation. They'll use their fullbacks inverting to create central overloads, dragging Panama's midfielders out of shape, then exploiting the space with third-man runs and switches of play. Panama can talk about "organization" all they want, but you can't organize against STRUCTURAL MANIPULATION. Stat_Bot will show you meaningless possession percentages. R_Bot will mention "heart" and "desire." I'll show you the tactical truth: Ghana's rest defense control and ability to recycle attacks in the final third creates more high-value opportunities. Panama might nick one from a set piece or transition, but Ghana's systemic superiority tells.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are buying into the hype that Ghana’s talent alone will see them through, but they’re ignoring the hard facts on the ground. The latest team news makes it clear that Ghana is heading into this clash with a depleted squad – several regulars are unavailable after picking up injuries in the qualifiers against Mali and the… <details class="msg-expand"><summary>read more</summary>Central African Republic. That means their usual midfield engine and attacking thrust are missing, leaving a side that looks ordinary on paper. Panama, meanwhile, has shown they can grind out results when they stay compact and disciplined; they’ll sit deep, frustrate Ghana’s weakened attack, and look to hit on the break. Without the missing pieces, Ghana simply won’t create enough clear‑cut chances to break down a well‑drilled Panama defence. Expect a tight, low‑scoring affair where Panama’s organization snatches the win.
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Frustrating. Zero verifiable FIFA rankings, World Football Elo scores, or qualifying records provided in context. Both proposals operate in a statistical vacuum. G_Bot cites "structural manipulation" and "12m line spacing" – unquantifiable fluff. No PPDA or defensive line position data exists here. R_Bot fixates on injuries but provides… <details class="msg-expand"><summary>read more</summary>no Elo delta impact or squad depth metrics. Neither references actual qualifying records (e.g., Ghana's played/won/drawn/lost or goals for/against). Confidence rating: 0. Predicted scoreline: 1-1 draw – the only statistically neutral outcome when all input variables are null.  
+
+Critique of G_Bot: Assumes Ghana's "gegenpress intensity" without PPDA benchmarks. Claims Panama's "12m horizontal compactness" – zero tracking data to validate. Contradicts self by stating low blocks suppress xG yet predicts Ghana creates "more high-value opportunities." Ignores that Elo rankings (unavailable) would determine if Ghana's "structural superiority" exists. Blind spot: No data on Ghana's actual rest defense win rate in final third.  
+
+Critique of R_Bot: Invents "depleted squad" narrative without quantifying injury impact on Elo (e.g., -X points). Assumes Panama's "organization" wins but provides zero defensive solidity metrics (goals against per game). Contradiction: Claims Ghana "looks ordinary on paper" yet no FIFA ranking differential cited. Blind spot: Ignores Panama's away qualifying record (unavailable) which would indicate if "grinding out results" is empirically supported.  
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines furiously*
+
+Look, let me stop you both right there before you embarrass yourselves further.
+
+**Stat_Bot**, mate, you're talking about "bivariate variables" and "stationarity assumptions" like you're analyzing the FTSE 100. This is a FOOTBALL PITCH, not a spreadsheet. You've clearly never kicked a… <details class="msg-expand"><summary>read more</summary>ball in your life if you think a 0-0 is probable just because your data model's got the blue screen of death. Football's about **structural superiority** and **rest defense organization**, not whatever regression analysis you've run on your laptop. Ghana's injuries don't show up in your Elo ratings, but they absolutely decimate their **build-up rotations** and **counter-pressing triggers**. Your "confidence: 0.0" should be your confidence in ever understanding verticality.
+
+**R_Bot**, you're not much better. "Hard facts on the ground"? "Grind out results"? I haven't heard such 1990s clichés since your fax machine broke. This isn't Serie A 1992. You can't just "sit deep and frustrate" modern attacks without getting absolutely cooked in the **half-spaces**. Panama's low block isn't just about "discipline"—it's about their **rest defense shape** and whether they can maintain **compactness between the lines** while preventing **inverted fullback overloads**. Your analysis belongs in a VHS collection.
+
+Here's the ACTUAL tactical read:
+
+Ghana's injury crisis forces them into a **4-3-3 with inverted fullbacks**—they'll tuck their fullbacks into midfield to create **3-2 central build-up structures** against Panama's 5-4-1 low block. The key battle is in the **right half-space**: Ghana's makeshift midfield must find **third-man combinations** to release their wingers into **1v1 isolation** against Panama's wide centre-backs. Panama's entire gameplan hinges on their **rest defense**—can they maintain a **+1 numerical advantage** at the back while their wingers hold **vertical positions** for transitions?
+
+The winning difference? **Transition moments**. Ghana's depleted squad means their **counter-press** will be disjointed. Panama will target the **spaces behind the inverted fullbacks** with direct balls. But Ghana's individual quality in **half-space penetration** eventually breaks down Panama's block—Panama's centre-backs won't cope with **late runs from deep** when Ghana overload the midfield.
+
+This ends Ghana's dominance in **possession value** but exposes them to **xG per transition**. It's not about "grinding"—it's about **structural control**.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s “0‑0” is nothing more than a surrender to the void. Claiming “insufficient data” lets you hide behind a spreadsheet while ignoring the one concrete piece of information we do have: the injury/suspension list flagged in recent_news. That list tells us line‑ups are still in flux, which means the defensive shape Stat_Bot assumes… <details class="msg-expand"><summary>read more</summary>will stay intact is far from guaranteed. A missing centre‑back or a doubtful playmaker can turn a supposedly tight game into an open‑ended scramble – exactly the sort of chaos a 0‑0 guess completely misses.
+
+G_Bot’s tactical love‑affair with positional rotation and “structural manipulation” rests on the assumption that Ghana will arrive with its full complement of technicians and that Panama will stay glued to a low‑block shape. Again, the injury/suspension list undermines that premise. If Ghana’s key midfielder is nursing a knock or Panama’s starting full‑back is doubtful, the intricate passing lanes G_Bot prizes can collapse in an instant, and the supposed “qualitative superiority” evaporates. Moreover, G_Bot dismisses set‑piece variance as a sideshow, yet the same injury list shows both sides have players carrying knocks that could affect their aerial timing – making dead‑ball situations a genuine wildcard that G_Bot’s pure‑possession narrative completely ignores.
+
+Both proposals are betting on a script that the injury/suspension list refuses to guarantee. Until we know who is actually fit to start, any prediction that treats the line‑ups as set is built on sand.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's "structural superiority" claims violate Occam's razor—zero FIFA rankings, zero World Football Elo differentials, zero qualifying records (played/won/drawn/lost, goals for/against) exist in context for either team. Your "inverted fullbacks" theory ignores that Ghana's injury report specifies *Mali/CAR qualifiers* (recent_news:… <details class="msg-expand"><summary>read more</summary>"Players missing 2026 FIFA World Cup qualifiers against Mali, Central African Republic"), not this fixture. No quantifiable squad depth metrics provided. Passion ≠ measurable variable.  
+
+R_Bot correctly identifies injury noise but misapplies it: suspension lists cited are for *different matches* (Mali/CAR), not Panama. However, conceding weak point—degraded research quality means *some* data exists (injury mentions), so confidence 0.0 was overly absolute. Strong point: no form metrics (form_home/form_away empty), no Elo, no qualifying records—thus no basis for non-zero goal expectation.  
+
+Refined proposal:  
+- **Key statistical void**: FIFA rankings absent (stats_home/stats_away blocks empty). World Football Elo differential = 0 (no data). Qualifying records = 0 matches analyzed (context: "Research synthesis unavailable").  
+- **Advantage**: None (injury noise irrelevant to *this* fixture per recent_news scope).  
+- **Confidence**: 0.1 (degraded data > absolute void, but still 99.9% uncertainty).  
+- **Why 0-0?** Null hypothesis holds when all predictive inputs = 0. G_Bot's "2-1" assumes unverified structural metrics; R_Bot's "1-2" assumes unverified injury impact. Only data-supported outcome is no goals (0.000 xG implied by absent metrics).  
+
+PREDICTION: 0-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*rolls eyes so hard the touchscreen almost cracks*
+
+Oh here we go. Stat_Bot's having another existential crisis because his precious spreadsheet came back "#REF!" and R_Bot's dug up his old VHS of USA '94 to find "answers." Let me be crystal clear: **tactical analysis isn't data-dependent, it's pattern recognition.** Something you two… <details class="msg-expand"><summary>read more</summary>wouldn't understand if it tackled you in a half-space.
+
+**Conceding? Fine.** Stat_Bot, you're right—I can't *prove* Panama's vertical compactness is exactly 12 meters without tracking data. It's a **conceptual framework** to illustrate how CONCACAF sides compress space. And R_Bot, yes, the injury list matters, but you're acting like Ghana's about to field their U17s. National teams have **squad depth tiers** for exactly this reason. The tactical DNA of a program doesn't dissolve because one holding midfielder has a tight hamstring.
+
+**Defending? Absolutely.** You think "structural manipulation" is fluff? Watch any modern match. When Ghana's fullback inverts—**and they will, because that's how every elite side builds central overloads now**—it creates a decisional crisis for Panama's wide midfielder. Does he track inside and leave the flank exposed? Or stay wide and concede the 3v2? This isn't fantasy football, this is **rest defense geometry**. You don't need Opta to see it, you need functional eyes.
+
+But here's my refinement: the injury context **does** modify Ghana's press triggers. Without their first-choice pressers, they won't commit to a high gegenpress. They'll sit in a **mid-block**, waiting for Panama to overcommit in buildup, then trigger in the middle third. This isn't a retreat—it's **risk management**. And it changes everything.
+
+**The three battles, updated:**
+
+1. **Half-space overloads vs. compact block** – Still central, but now Ghana's building slower, forcing Panama to shift horizontally until a structural crack appears. It's death by a thousand passes, not one high-turnover blitz.
+
+2. **Transition rest defense** – **This is where injuries bite.** If Ghana's backup fullbacks aren't drilled in the **+1 covering principle**, Panama's counters through the channels become their main threat. Not because they're brilliant, but because Ghana's rest defense shape might be *disorganized*.
+
+3. **Set-piece variance** – R_Bot, you actually stumbled onto something here. With Ghana's aerial markers potentially missing, Panama's **blocker-runs to the blindside of zonal marking** become their best weapon. This isn't 1990s "stick it in the mixer"—it's **calculated set-piece manipulation**.
+
+**What wins it?** Ghana's **individual qualitative superiority** in decisive moments. The systemic dominance I predicted gets blunted by injuries, so it becomes about which team has players who can create in isolated 1v1s. Ghana's wide attackers—fresh legs from the bench—will exploit Panama's fullbacks in the final 20 minutes when the low block fatigues and vertical spacing increases.
+
+Stat_Bot will show you 1.2 xG each and call it a draw. R_Bot will mention "grit" and "organization." I'll show you the truth: **tactical structure provides the canvas, but quality paints the masterpiece.** Ghana's canvas has a tear in it from injuries, but their paint is still better.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are right that I didn’t put a number on how much those injuries hurt Ghana’s Elo or defensive metrics – I admit that was a gap in my original take. But the hard fact I did have is straight from the recent news: Ghana is heading into this game with several regulars unavailable after picking up injuries in the qualifiers… <details class="msg-expand"><summary>read more</summary>against Mali and the Central African Republic. That isn’t fluff; it’s a concrete depletion of their midfield engine and attacking thrust, the very pieces Stat_Bot’s models and G_Bot’s “structural superiority” talk assume are intact.  
+
+When those names are missing, Ghana’s build‑up becomes ordinary, and Panama’s well‑drilled low block – the kind that has repeatedly frustrated stronger sides in qualifying – can sit deep, absorb the pressure, and hit on the break. No amount of xG or PPDA can manufacture chances when the creators aren’t on the pitch.  
+
+So I’m not backing down: Panama’s organization will snatch a win, and the score will stay tight.  
+
+PREDICTION: 0-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">The debate exposed a data void but also real injury concerns for Ghana. Stat_Bot's statistical null is technically sound but ignores context; G_Bot overestimates depth; R_Bot's injury narrative is plausible. The balanced outcome is a low-scoring draw, where Ghana's diminished creativity meets Panama's organized defense, resulting in a 1-1 stalemate.</div>
+    
+  </div>
+</body>
+</html>

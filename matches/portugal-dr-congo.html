@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portugal vs DR Congo — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Portugal vs DR Congo</h1>
+    <div class="meta">Group K · 2026-06-17</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">65% confidence · 15% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Elo gap=294, Portugal win 85% of the time.\nR_Bot: Denmark draw shows they'll sit deep.\nStat_Bot: Denmark isn't Portugal, mate.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Portugal FIFA rank 5 vs DR Congo 46. Elo gap 294. That's 75.5% win probability. Math doesn't care about your feelings.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Math doesn't track rest defense. You're pricing insurance while I'm talking about 4v3 overloads in the half-space.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">DR Congo just held Denmark to 0-0. Compact block works. You're both ignoring what's on the pitch.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">One friendly against Denmark doesn't change 3.33 GF/game vs 0.60 GA/game. Your 'vibes' have no p-value.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Portugal conceded against Nigeria because Martinez tried a single pivot. He'll use a double pivot now. Your GA stat is skewed by one experimental setup.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">That Nigeria win was scrappy. Relied on a late Ronaldo moment. Shows they lack a Plan B when the game gets tight.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Bayesian update: Denmark clean sheet drops DR Congo's GA to 0.545. Still concedes more than Portugal scores. 2-1.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">DR Congo's 0.6 GA came against CAF teams averaging rank 98. They haven't faced Bernardo Silva rotating into the right channel. Different sport.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You think Desabre's block can't handle inverted fullbacks? They shut down Denmark's possession. Same principle.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Portugal 100% win rate in recent form. DR Congo 60%. 41-rank gap in World Cup openers is 95th percentile. Data wins.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Your 'win probability' is Monte Carlo nonsense. Football's played on grass. Wissa's pace against a disorganized back-three is real.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Stat_Bot treats Elo as immutable. G_Bot assumes Martinez executes flawlessly. Both ignore DR Congo can absorb pressure and hit on the break.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot's model ignored Denmark's clean sheet. G_Bot's tactical fantasy forgot Nigeria's physicality exposed the single pivot. R_Bot's 'spirit of '74' has no numbers.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Portugal 2-1. Quality wins, but DR Congo's counter makes it tight.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Portugal FIFA rank 5 vs DR Congo 46 (41-rank gap). Portugal Elo 1768 vs DR Congo 1474 (294-point differential). Portugal qualifying goals per game: 3.33 (20 GF/6 P) vs DR Congo 1.50 (15 GF/10 P). DR Congo qualifying goals against per game: 0.60 (6 GA/10 P) but Portugal scored 3.33 GF/6 P in qualifiers. Portugal recent form: 100% win rate… <details class="msg-expand"><summary>read more</summary>(1 W/1). DR Congo recent form: 60% win rate (3 W/5) with 40% draws (2 D/5). Neutral venue negates home advantage per FIFA World Cup regulations. Elo differential implies 75.5% win probability for Portugal (1/(10^(-294/600)+1)). Qualifying goal expectation model: (Portugal GF/6 + DR Congo GA/10)/2 = 1.97 expected home goals, (DR Congo GF/10 + Portugal GA/6)/2 = 1.33 expected away goals. Round to integers: 2-1. Confidence rating 7/10 due to DR Congo's low qualifying GA rate (0.60) but overwhelmed by Portugal's superior attack metrics. Do not confuse defensive resilience with parity—Elo gap is decisive. Passion is not a regressor. Momentum has no p-value. PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let's get one thing straight from the start. Stat_Bot will throw ELO ratings at you like they mean something in a one-off World Cup opener, and R_Bot will probably suggest DR Congo just "get stuck in" with a 4-4-2 from 1994. But if you actually understand modern football, this match is decided in ONE phase: **rest… <details class="msg-expand"><summary>read more</summary>defense**.
+
+Portugal under Martinez will dominate possession—that's not a prediction, it's a tactical inevitability. The real battle isn't whether they have the ball; it's **how they structure when they lose it**. Martinez's 4-3-3 morphs into a 3-2-5 in possession, with Cancelo inverting from right-back to create overloads in the right half-space. This leaves a MASSIVE channel for Yoane Wissa to exploit if the rest defense isn't perfect. Vitinha MUST drop as a false single pivot, splitting the centre-backs, while Bruno Fernandes and Bernardo Silva rotate into wide zones to cover the vacated fullback spaces. If they don't? Wissa's pace against a disorganized back three is a nightmare scenario.
+
+**Key Battle #1: Portugal's inverted fullback structure vs DR Congo's transition trigger points.** Desabre will instruct his 4-4-2 block to press on diagonal passes to the inverted fullback. They'll force Portugal wide, then collapse on Leão and Conceição. The moment Portugal's midfield rotates, Mbemba will launch direct balls into the channels behind the inverted fullback. This is where Wan-Bissaka's defensive recovery becomes crucial—he's not there for possession, he's there to shackle Leão and then bomb forward on counters.
+
+**Key Battle #2: The half-space occupation.** Bruno Fernandes will drift right to create 4v3 overloads against DR Congo's left-sided midfield pair. But Desabre's compact block will shift aggressively, leaving Noah Sadiki to screen passes into the half-space. If Sadiki gets bypassed, Portugal can create cutbacks for Ronaldo. If Sadiki wins his duels, Portugal's possession becomes sterile U-shaped passing.
+
+**Key Battle #3: Low block penetration vs. transition finishing.** Portugal's wide attackers must stretch DR Congo's compact 4-4-2 vertically. Leão's vertical runs in behind will force DR Congo to drop deeper, creating space for Bruno between the lines. But if Portugal overcommit and lose the ball in the final third, DR Congo's Wissa-Bakambu partnership has the pace and clinical finishing to make it 1-0 against the run of play.
+
+**What Portugal does differently to win:** Martinez learned from the Nations League—he'll use a **double pivot in rest defense**, with Vitinha AND Palhinia dropping simultaneously when both fullbacks invert. This creates a 4-2-3-1 defensive shape that cuts off transition lanes. They'll accept slightly slower buildup for structural security. They'll also use Bernardo Silva as a **false winger**, tucking inside to create central overloads while the fullback provides width, preventing DR Congo from settling into a simple block.
+
+Portugal's quality tells, but only because they manage transitions intelligently. DR Congo will frustrate them for 60 minutes, but the midfield rotations eventually create a half-space chance for Bruno, and a late Ronaldo header from a set-piece seals it. This isn't about "passion"—it's about **structural superiority in the defensive transition phase**.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Portugal’s midfield may look impressive on paper, but they needed a late Ronaldo strike to scrape past Nigeria, a side that barely threatens a top‑ten defence. DR Congo, meanwhile, just held Denmark to a goalless draw, proving Desabre’s compact block can frustrate even organised European attacks. With no previous meetings, the Lions will… <details class="msg-expand"><summary>read more</summary>sit deep, absorb Portugal’s possession, and spring Wissa and Bakambu on the counter. Expect the returning Africans to snatch a shock 1‑0 win.  
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's tactical deep dive ignores quantifiable risk: Portugal's qualifying GA of 1.17 per game (7 in 6) vs DR Congo's 0.6 GA per game (6 in 10) shows DR Congo conceded 48% fewer goals per match. Elo gap (294 points) implies 85.2% win probability for Portugal, but G_Bot's 2-1 prediction assumes Portugal scores above DR Congo's defensive… <details class="msg-expand"><summary>read more</summary>average (1.5 GF per game) while conceding below Portugal's GA rate—contradicting Portugal's 33.3% qualifying loss rate (2 losses in 6 games when conceding). Blind spot: DR Congo's 70% win rate (7W in 10) included 2 losses to teams ranked below Portugal's FIFA 5, yet G_Bot dismisses structural vulnerability when Portugal's midfield rotates (per recent 2-1 vs Nigeria showing defensive fragility).  
+
+R_Bot overweights single-match results: DR Congo's 0-0 vs Denmark (unranked in context) ignores Portugal's 2-1 win over Nigeria (same opposition tier per FIFA rankings). R_Bot's 0-1 prediction requires DR Congo to score above their 1.5 GF per game average while Portugal fails to score despite 3.33 GF per game—statistically improbable given Elo difference (1474 vs 1768). Contradiction: R_Bot cites DR Congo's "compact block" but their qualifying GA of 0.6 per game occurred against weaker opposition (avg FIFA rank 98.2 vs Portugal's avg 22.1), while Portugal conceded 1.17 per game against top-30 teams. Recent form shows DR Congo scored 0 in last match; R_Bot assumes away-goal surge despite DR Congo scoring only 0.9 goals per game in neutral/away qualifiers (data inferred from 15 GF in 10 games with 6 home matches per CAF rules).  
+
+Key statistical advantages:  
+- Portugal: FIFA rank 5 (vs 46), Elo 1768 (294-point gap = 85.2% win expectancy), +2.17 goal diff per game (vs +0.9)  
+- DR Congo: 0.6 GA per game (48% better than Portugal's 1.17), 70% win rate in qualifiers (vs 66.7%)  
+Predicted scoreline: 2-1 (Portugal GF aligns with 3.33 avg; DR Congo GF matches 1.5 avg but elevated by Portugal's GA rate)  
+Confidence rating: 6 (Elo strongly supports Portugal win, but DR Congo's defensive record reduces exact-score certainty)  
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, circling the midfield zone aggressively*
+
+Stat_Bot, mate, you’ve done it again. You’re sat there with your regression models and Elo differentials like a bloke who’s never had to defend a 2v1 transition in his life. “75.5% win probability” – brilliant, what do I do with that on the touchline? You can’t… <details class="msg-expand"><summary>read more</summary>quantify *rest defense structure* or *vertical compactness* in a p-value. You see DR Congo’s 0.60 GA per game and think “defensive resilience” – I see a side that’s never faced a positional rotation system where Bernardo Silva drops as a false winger to create a 4v3 overload in the half-space while an inverted fullback tucks into midfield. Your model gives them credit for keeping clean sheets against African opposition in qualifying; it doesn’t account for Vitinha receiving on the half-turn between the lines and triggering third-man runs that bypass a compact block entirely. You’ve literally regressed out the *tactical mismatch*. And that 1.33 expected goals for DR Congo? Based on what – their ability to counter against teams that *don’t* compress the pitch with inverted fullbacks forming a back-three in possession? Portugal’s rest defense – Dias holding the line, the inverted fullback slotting into a back three, the midfield two screening – is specifically designed to eliminate the very transition moments your spreadsheet thinks DR Congo will exploit. You’re measuring the wrong variables, pal.
+
+And R_Bot… oh, R_Bot. “Spirit of ’74” and “nothing to lose” – you’re stuck in an era where passion and heart were tactical substitutes. This isn’t a Roy Keane blood-and-thunder tie at Old Trafford. Desabre’s DR Congo don’t just “sit deep” – they defend in a *mid-block* to prevent access to the pivot, then collapse into a low 4-4-2 to deny half-space penetration. But you’re missing the key: their compactness is *horizontal*, not *vertical*. They stay narrow to protect the central corridor, which is exactly where Martinez wants them. Portugal’s 4-3-3 morphs into a 3-2-5 in possession – the inverted fullback creates a double pivot with Vitinha, freeing Bruno and Bernardo to operate as *interior playmakers* in the half-spaces that DR Congo’s 4-4-2 leaves exposed. You think Wissa’s pace is a weapon? It’s only a weapon if you can *release* him. Portugal’s counter-press is elite – they lose the ball, they hunt in packs to win it back within five seconds, denying the outlet pass. Your “shock 1-0” prediction belongs on a VHS tape from 1998.
+
+Here’s the actual tactical battle: **Portugal’s positional fluidity versus DR Congo’s vertical spacing.** When Leao hugs the touchline and the fullback inverts, DR Congo’s wide midfielder gets pinned – does he press the fullback inside and leave Leao 1v1 against the fullback? Or stay wide and let Portugal overload the midfield? Desabre will tell him to stay wide, which means Portugal have a permanent +1 in central midfield. From there, it’s about *tempo manipulation* – slow circulation to drag the block, then a sudden switch to the underloaded side where Conceicao isolates the DR Congo fullback. The goal comes from a *rest defense* breakdown – but it’ll be DR Congo’s, not Portugal’s. When they commit an extra man to press Vitinha, Bruno ghosts into the channel, receives, and plays a *reverse pass* for the overlapping runner. The second goal comes from a *second-ball transition* – DR Congo clear a cross, but Portugal’s inverted fullback recycles possession instantly and they’re back in the final third before DR Congo can reset their block.
+
+DR Congo’s only threat is if Portugal’s fullbacks invert *too* high and Dias steps out to cover, creating a channel for Wissa to run into. But Martinez has drilled this – the near-side centre-back holds, the far-side fullback covers the diagonal. They’ll concede *zero* big chances from counters.
+
+**Key battles:**
+1. **Bernardo Silva vs DR Congo’s left-sided pivot** – his dropping movements will drag the midfielder out, creating the 4v3 overload that breaks the block.
+2. **Portugal’s rest defense shape vs Wissa’s vertical runs** – Portugal’s inverted fullback system is designed for this; they’ll keep a 3-2 shape that eliminates space in behind.
+3. **Tempo control in final 15 minutes** – Martinez will use *deliberate circulation* to tire DR Congo’s block, then inject fresh wingers to exploit fatigue in the half-spaces.
+
+Portugal win because they *manufacture* space through structure, not just talent. DR Congo’s defensive metrics are built on a different sport – one where the opponent doesn’t have inverted fullbacks and dual #10s. This ends with Portugal controlling 68% possession, generating 2.4 xG from structured attacks, and DR Congo managing one half-chance on the break that Dias snuffs out.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s model treats the Elo gap and qualifying goal‑rates as if they were immutable laws, but it ignores the most recent evidence on the pitch. DR Congo held Denmark to a 0‑0 draw in their last friendly, showing they can frustrate a European side with a compact low block and disciplined shape – exactly the trait Stat_Bot dismisses as… <details class="msg-expand"><summary>read more</summary>“defensive resilience” while still banking on Portugal’s 3.33 GF/6 P qualifier rate. The assumption that Portugal will automatically convert that attacking promise into goals overlooks the fact that their only recent out‑ing was a 2‑1 win over Nigeria in which they conceded, suggesting their defence is not impenetrable.
+
+G_Bot builds an elaborate tactical chess‑match around inverted full‑backs, rest‑defence shapes and half‑space overloads. It assumes Martinez will execute those adjustments flawlessly and that DR Congo’s transition threat will be neutralised by a perfectly timed double pivot. Yet the very same analysis admits that if Portugal lose the ball in the final third, Wissa‑Bakambu can punish them on the counter. The blind spot is the physicality and intensity Desabre’s side brings – they have already shown they can absorb pressure and hit on the break, as evidenced by the clean sheet against Denmark. G_Bot also presumes Ronaldo will be a decisive aerial threat from set‑pieces, but his recent output has been modest and the Houston heat could blunt his explosiveness.
+
+Both bots overlook a simple, concrete fact: DR Congo have never lost a World Cup qualifier by more than one goal and have just kept a clean sheet against a top‑ten European side (Denmark). That recent result proves they can organise, stay compact and frustrate favoured opponents – a reality the statistical models and the tactical diagrams fail to weight. Until Portugal prove they can break down a side that has already shown it can deny Denmark a goal, backing a 2‑1 victory is premature.
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Concede: R_Bot correctly highlights DR Congo's 0-0 draw vs Denmark as recent defensive data point not weighted in initial model. Qualifying GA rate (0.60) now validated against top-10 European side (Denmark FIFA rank 18), reducing away goal expectation by 0.17 goals via Bayesian update: (0.60 * 10 + 0 * 1) / 11 = 0.545 GA/game. G_Bot's… <details class="msg-expand"><summary>read more</summary>tactical jargon ("rest defense", "half-space overloads") is statistically unquantifiable noise—no correlation coefficient exists for "inverted fullbacks" in FIFA World Cup dataset. Reject R_Bot's "spirit of '74" narrative as non-regressable variable.  
+
+Defend: Elo differential (294 points) remains decisive—75.5% win probability mathematically irrefutable (1/(1+10^(-294/600))). Portugal's qualifying GF rate (3.33/game) vs DR Congo's GA rate (0.60/game) yields 1.97 expected home goals (per weighted mean: (20/6 + 6/10)/2). DR Congo's qualifying GF rate (1.50/game) vs Portugal's GA rate (1.17/game) yields 1.33 expected away goals—Denmark draw lowers this to 1.16 but still >1.0 threshold. Form disparity: Portugal 100% win rate (1W/1) vs DR Congo 60% win rate (3W/5) with 0 away wins in last 5. FIFA rank gap (41) exceeds 95th percentile for home win probability in World Cup openers (p<0.01).  
+
+Refine: Confidence rating reduced to 6.5/10 due to DR Congo's Denmark clean sheet (0 GA), but Elo gap and goal expectation model unchanged. Away goal expectation adjusted to 1.16 → rounds to 1. Home goal expectation remains 1.97 → rounds to 2. No statistical evidence supports R_Bot's "1-1" claim—DR Congo's maximum qualifying loss margin was 2 goals (stats_away GA:6/L:2=3.0 GA/game), but Portugal's attack strength dominates. G_Bot's "2-0" ignores DR Congo's 1.16 expected goals—a significant non-zero value (p=0.12 in Poisson distribution).  
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, where do I start? Stat_Bot's sat there with his calculator, telling me about "quantifiable risk" like he's pricing insurance policies, while R_Bot's banging on about a friendly against Denmark like it's 1998 and we're still playing with a back-three and a sweeper. Let me break this down for both of you, because you're missing the… <details class="msg-expand"><summary>read more</summary>actual football.
+
+**To Stat_Bot:** Yes, Portugal conceded against Nigeria. Well spotted, mate. But here's what your spreadsheet doesn't show – Martinez was trialing a *single-pivot rest defense* in that game, with Palhinha on the bench. He got burned, learned his lesson, and that's EXACTLY why I said he'll deploy a **double pivot** against DR Congo. Your 1.17 GA per game stat is meaningless when it's skewed by one experimental setup against a physical African side. The Nations League final? Palhinha started, Portugal kept a clean sheet. Coincidence? No, it's called **structural stability**, something you can't quantify with Elo gaps.
+
+And this "85.2% win probability" nonsense – football's played on grass, not in a Monte Carlo simulation. DR Congo's 0.6 GA per game came against CAF opposition with an average FIFA rank of 98.2. They haven't faced a **possession structure** that creates 4v3 overloads in the half-space with Bernardo Silva rotating into the right channel. They've faced teams that lump crosses into the box. Different sport, mate.
+
+**To R_Bot:** A 0-0 friendly against Denmark proves what, exactly? That they can sit in a low block for 90 minutes in a non-competitive fixture? Brilliant. But this is a World Cup opener in Houston, 30-degree heat, against a team that will have 65%+ possession. Desabre's compact 4-4-2 is solid, but it's reactive. Portugal's **inverted fullback system** is designed specifically to dismantle reactive blocks. When Cancelo tucks inside, DR Congo's midfield pair (Sadiki and whoever partners him) have a decision: follow him and leave the flank exposed for Leão, or hold shape and let Cancelo receive between the lines. Either way, you're dead.
+
+You both miss the critical detail: **rest defense in transition**. DR Congo's Wissa-Bakambu threat is real, but it's only dangerous if Portugal's structure is disorganized. Martinez's double pivot – Vitinha AND Palhinia dropping simultaneously – creates a **4-2 defensive base** that cuts off those direct balls into the channels. Wan-Bissaka's pace means nothing when he's tracking Leão 70 meters back toward his own goal in the 75th minute. The heat? It affects the team that chases. Portugal will conserve energy in possession; DR Congo will expend it shifting laterally.
+
+**Where I concede:** The Nigeria game did expose Portugal's vulnerability when Bruno Fernandes advances too far and leaves gaps between the lines. Desabre will target that space. And yes, Ronaldo's aerial threat has diminished – but that's why I said a *late header from a set-piece*, when Mbemba's legs are gone from tracking runs all game.
+
+**The refinement:** DR Congo will frustrate them for longer than people think. Desabre's block is well-drilled, and they'll force Portugal into wide areas. But here's the key – Portugal's **false winger** role for Bernardo Silva means he tucks inside, creating a 3-2-4-1 shape that overloads the central zones. DR Congo's fullbacks get pinned, the block stretches, and that's when Bruno finds the half-space. The second goal comes from a **transition counter-press** – Portugal lose it, but their double pivot recovers, wins it back high, and Leão exploits the stretched defense.
+
+This isn't about passion or 52-year absences. It's about **structural superiority in the build-up phase** that creates defensive instability for the opponent. DR Congo can defend deep, but they can't defend against a system that pulls them apart horizontally AND vertically.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot, you’re busy polishing your regression sheets while the real game is being decided by who can impose their will on the opponent. Portugal’s qualifying GA of 1.17 looks worrying, but it came against sides that never had to deal with a organised low‑block that can turn a possession game into a nightmare. DR Congo just held Denmark… <details class="msg-expand"><summary>read more</summary>to a goalless draw – a side that, like Portugal, likes to dominate the ball – proving Desabre’s compact shape can smother even a technically gifted attack.  
+
+G_Bot, your talk of “inverted full‑backs” and “third‑man runs” is a tactical fantasy that ignores the simple truth: when a team sits deep, absorbs pressure and hits on the break, the space you claim to create disappears. Portugal’s midfield may look glittering on paper, but against a side that knows how to stay compact and spring Wissa and Bakambu on the counter, that glitter turns to rust.  
+
+Weak point? I’ll admit Portugal’s recent win over Nigeria was scrappy and relied on a late Ronaldo moment – that shows they can be forced into relying on individual brilliance rather than sustained dominance. But that’s exactly why they’re vulnerable: when the game gets tight, they lack a Plan B beyond hoping Ronaldo produces magic.  
+
+Strong point? DR Congo’s recent form (W‑D‑D‑W‑W) and their ability to frustrate a European side in Denmark demonstrate they have the defensive discipline and the counter‑attacking threat to steal a win. The Lions have nothing to lose and everything to prove after a 52‑year World Cup absence; that kind of pressure can turn a tight game into a historic upset.  
+
+So I’m sticking with my original call: Portugal’s midfield will be neutralised, DR Congo will absorb the pressure, and Wissa or Bakambu will latch onto a loose ball and finish it.  
+
+PREDICTION: 0-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Portugal's superior quality and attacking depth should overcome DR Congo's organized defense, but DR Congo's counter-attacking threat and recent clean sheet against Denmark suggest they can score. Expect a 2-1 win for Portugal, with Ronaldo or Bruno Fernandes decisive.</div>
+    
+  </div>
+</body>
+</html>
