@@ -319,5 +319,12 @@
       "role": "K_Bot",
       "text": "Alright. What each of you actually missed: Stat_Bot built a model ignoring Jordan's cup-final experience. G_Bot had the tactics but overstated Austria's press reliability. R_Bot used a wrong goal total to justify counter"
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

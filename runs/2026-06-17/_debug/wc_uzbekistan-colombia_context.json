@@ -1,0 +1,79 @@
+{
+  "home_team": "Uzbekistan",
+  "away_team": "Colombia",
+  "match_date": "2026-06-17",
+  "group": "K",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": "Uzbekistan and Colombia have never previously met in senior international football, making this World Cup match a historic first encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Uzbekistan are making their historic debut at the 2026 FIFA World Cup, becoming the first Central Asian nation to qualify after failing in seven previous attempts since gaining independence in 1991.",
+  "wc_history_away": "Colombia have appeared at six World Cups, most notably reaching the quarter-finals in 2014 where James Rodriguez won the Golden Boot with six goals before a 2-1 defeat by host nation Brazil.",
+  "group_context": "Group K features Portugal (FIFA rank 5), Colombia (rank 13), DR Congo (rank 45), and Uzbekistan (rank 50); the top two advance, with Colombia expected to fight Portugal for first place while Uzbekistan face a steep climb as debutants.",
+  "strengths_home": [
+    "Organised defensive structure and counter-attacking speed under Cannavaro",
+    "Experienced striker Shomurodov as a proven goal threat with 44 international goals",
+    "World-class defender Khusanov providing elite-level defensive leadership from Manchester City"
+  ],
+  "strengths_away": [
+    "Luis Diaz's explosive pace and goal threat after a 26-goal debut season at Bayern Munich",
+    "James Rodriguez's vision and dead-ball quality providing creative control in midfield",
+    "Proven big-tournament pedigree with high-pressing tactical system under Lorenzo"
+  ],
+  "team_style_home": "Uzbekistan under Fabio Cannavaro deploy a compact 4-2-3-1 built on defensive discipline and quick counter-attacks, prioritising organisation and rapid transitions over possession.",
+  "team_style_away": "Colombia under Nestor Lorenzo use a 4-2-3-1 or 4-3-3 that blends high pressing and fast vertical combinations with defensive compactness, relying on wide pace and James Rodriguez's creativity.",
+  "stats_home": {
+    "fifa_rank": 50,
+    "elo": 1459,
+    "qual": {
+      "P": 10,
+      "W": 6,
+      "D": 3,
+      "L": 1,
+      "GF": 14,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 13,
+    "elo": 1698,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 28,
+      "GA": 18
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": null,
+  "form_home": [
+    "W"
+  ],
+  "form_away": [
+    "L"
+  ],
+  "key_players_home": [
+    "Eldor Shomurodov (forward)"
+  ],
+  "key_players_away": [
+    "Luis Diaz (winger, Bayern Munich, 26 goals in debut season)",
+    "James Rodriguez (attacking midfielder / captain, 2014 World Cup Golden Boot winner)",
+    "Richard Rios (central midfielder, Benfica)",
+    "Daniel Munoz (right back, Crystal Palace)",
+    "Davinson Sanchez (centre-back, Galatasaray)"
+  ],
+  "context": "Group K features Portugal (FIFA rank 5), Colombia (rank 13), DR Congo (rank 45), and Uzbekistan (rank 50); the top two advance, with Colombia expected to fight Portugal for first place while Uzbekistan face a steep climb as debutants.",
+  "research_quality": "full"
+}

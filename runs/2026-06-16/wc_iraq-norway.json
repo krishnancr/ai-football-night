@@ -328,5 +328,12 @@
       "role": "K_Bot",
       "text": "Verdict: Norway 2-1 Iraq. Haaland breaks through, Iraq grab a consolation. Don't @ me."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 4,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

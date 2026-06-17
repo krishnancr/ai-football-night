@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-17",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Portugal vs DR Congo",
+      "run_file": "runs/2026-06-17/wc_portugal-dr-congo.json",
+      "thread_file": "runs/2026-06-17/_debug/wc_portugal-dr-congo_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Uzbekistan vs Colombia",
+      "run_file": "runs/2026-06-17/wc_uzbekistan-colombia.json",
+      "thread_file": "runs/2026-06-17/_debug/wc_uzbekistan-colombia_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "England vs Croatia",
+      "run_file": "runs/2026-06-17/wc_england-croatia.json",
+      "thread_file": "runs/2026-06-17/_debug/wc_england-croatia_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Ghana vs Panama",
+      "run_file": "runs/2026-06-17/wc_ghana-panama.json",
+      "thread_file": "runs/2026-06-17/_debug/wc_ghana-panama_thread.json",
+      "success": true
+    }
+  ]
+}
