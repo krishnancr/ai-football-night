@@ -237,7 +237,7 @@ def main():
     a.close_image_url = asset("assets/bots/kbot_closeup.png", a.close_image_url)
     a.close_audio_url = asset("assets/bots/kbot_line_5s.wav", a.close_audio_url)
     a.two_image_url = asset("assets/twoshot_left2.png", a.two_image_url)
-    a.two_left_audio_url = asset("assets/bots/kbot_line_5s.wav", a.two_left_audio_url)
+    a.two_left_audio_url = asset("assets/kbot_line_trim.wav", a.two_left_audio_url)
     a.two_right_audio_url = asset("assets/twoshot_right_line.wav", a.two_right_audio_url)
     a.wide_image_url = asset("assets/AIPanel.png", a.wide_image_url)
 
