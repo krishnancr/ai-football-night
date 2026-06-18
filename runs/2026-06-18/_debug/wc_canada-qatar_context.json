@@ -1,0 +1,89 @@
+{
+  "home_team": "Canada",
+  "away_team": "Qatar",
+  "match_date": "2026-06-18",
+  "group": "B",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "Canada lead the all-time head-to-head with 2 wins from 2 meetings, including a 3-1 friendly win in 2002 and a comfortable 2-0 victory over Qatar on neutral ground in September 2022.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "2-0 Canada win - International Friendly - 2022",
+      "3-1 Canada win - International Friendly - 2002"
+    ]
+  },
+  "wc_history_home": "Canada have appeared at the World Cup twice (1986 and 2022), failing to win a single match on both occasions, though they recorded their historic first World Cup goal through Alphonso Davies against Croatia in 2022.",
+  "wc_history_away": "Qatar participated in the 2022 World Cup as hosts but became the first host nation to lose all three group games, finishing bottom of Group A without a point.",
+  "group_context": "Group B features co-hosts Canada, Switzerland (the group favourites), Bosnia and Herzegovina, and Qatar; Switzerland and Canada are widely projected to advance to the knockout rounds, making the Canada vs Qatar match a must-win for Qatar and an important chance for Canada to build momentum on home soil.",
+  "strengths_home": [
+    "High-intensity pressing and rapid transitions exploit defensive errors",
+    "World-class individual quality in Alphonso Davies and Jonathan David",
+    "Massive home crowd advantage at BC Place in Vancouver"
+  ],
+  "strengths_away": [
+    "Reigning two-time AFC Asian Cup champions with tournament experience",
+    "Creative danger through Akram Afif in tight spaces",
+    "Experienced squad coached by tactically sophisticated Julen Lopetegui"
+  ],
+  "team_style_home": "Canada under Jesse Marsch employ an aggressive high-press 4-4-2 / 4-2-3-1 system known as 'Maplepressing', winning the ball high and launching rapid vertical attacks through pacey wide players and a dynamic midfield double pivot.",
+  "team_style_away": "Qatar under Julen Lopetegui use a disciplined 4-2-3-1 / 4-3-3 built on compact defensive blocks, a double-pivot midfield, and quick transitions that funnel the ball into Akram Afif in dangerous half-spaces.",
+  "stats_home": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 56,
+    "elo": 1450,
+    "qual": {
+      "P": 12,
+      "W": 5,
+      "D": 2,
+      "L": 5,
+      "GF": null,
+      "GA": null
+    }
+  },
+  "injuries_home": [
+    "Marcelo Flores (injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.29,
+    "draw": null,
+    "away_win": 9.5
+  },
+  "recent_news": "Canada's first 2026 FIFA World Cup match ended in a 1-1 draw against Bosnia and Herzegovina. Their odds to win the World Cup dropped from 200-1 to 250-1 after the match.",
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "L",
+    "D",
+    "L"
+  ],
+  "key_players_home": [
+    "Alphonso Davies (left back / winger, captain, Bayern Munich)",
+    "Jonathan David (striker, Juventus, Canada all-time leading scorer)",
+    "Stephen Eustaquio (central midfielder, FC Porto, vice-captain)",
+    "Tajon Buchanan (right winger, Villarreal CF)",
+    "Ismael Kone (box-to-box midfielder)"
+  ],
+  "key_players_away": [
+    "Akram Afif (winger / attacking midfielder, Al-Sadd, two-time Asian Player of the Year)",
+    "Almoez Ali (striker, Al-Duhail, top scorer in AFC World Cup qualifying)",
+    "Hassan Al-Haydos (attacking midfielder, Al Sadd, captain)",
+    "Mohammed Muntari (striker, Al Gharafa, Qatar's only 2022 WC goalscorer)",
+    "Assim Madibo (defensive midfielder, double pivot anchor)"
+  ],
+  "context": "Group B features co-hosts Canada, Switzerland (the group favourites), Bosnia and Herzegovina, and Qatar; Switzerland and Canada are widely projected to advance to the knockout rounds, making the Canada vs Qatar match a must-win for Qatar and an important chance for Canada to build momentum on home soil.",
+  "research_quality": "full"
+}

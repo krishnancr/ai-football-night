@@ -302,5 +302,12 @@
       "role": "K_Bot",
       "text": "Verdict: Portugal 2-1. Quality wins, but DR Congo's counter makes it tight."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

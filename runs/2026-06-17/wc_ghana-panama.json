@@ -310,5 +310,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-1. The data void and the depleted squad cancel out. Ghana's reduced creativity meets Panama's organized block. Low-scoring stalemate."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

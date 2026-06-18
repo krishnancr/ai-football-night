@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-18",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Czechia vs South Africa",
+      "run_file": "runs/2026-06-18/wc_czechia-south-africa.json",
+      "thread_file": "runs/2026-06-18/_debug/wc_czechia-south-africa_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Mexico vs Korea Republic",
+      "run_file": "runs/2026-06-18/wc_mexico-korea-republic.json",
+      "thread_file": "runs/2026-06-18/_debug/wc_mexico-korea-republic_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Switzerland vs Bosnia and Herzegovina",
+      "run_file": "runs/2026-06-18/wc_switzerland-bosnia-and-herzegovina.json",
+      "thread_file": "runs/2026-06-18/_debug/wc_switzerland-bosnia-and-herzegovina_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Canada vs Qatar",
+      "run_file": "runs/2026-06-18/wc_canada-qatar.json",
+      "thread_file": "runs/2026-06-18/_debug/wc_canada-qatar_thread.json",
+      "success": true
+    }
+  ]
+}

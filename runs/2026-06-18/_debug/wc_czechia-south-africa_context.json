@@ -1,0 +1,91 @@
+{
+  "home_team": "Czechia",
+  "away_team": "South Africa",
+  "match_date": "2026-06-18",
+  "group": "A",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "Czechia and South Africa have never previously met in international football, making this 2026 World Cup group stage match their historic first encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "As an independent nation the Czech Republic reached only one previous World Cup (Germany 2006), exiting in the group stage, though the historic Czechoslovakia side finished runners-up in 1934 and 1962.",
+  "wc_history_away": "South Africa have appeared at three World Cups (1998, 2002, and as hosts in 2010) without ever advancing beyond the group stage, becoming the first host nation in history to be eliminated in the group phase in 2010.",
+  "group_context": "Group A also includes co-hosts Mexico (FIFA ranking 15th) and South Korea (25th), making it a competitive four-team group where advancement is not guaranteed for any side; with three of the top two plus eight best third-place finishers advancing in the expanded 48-team format, both Czechia and South Africa will view this head-to-head as a pivotal opportunity to secure crucial points after their respective opening matches.",
+  "strengths_home": [
+    "Exceptional set-piece threat \u2014 scored the most goals from set-pieces in European qualifying (10)",
+    "Defensive resilience and tactical discipline, comfortable absorbing pressure and counter-attacking",
+    "Clinical finishing from Patrik Schick who can convert limited chances at the highest level"
+  ],
+  "strengths_away": [
+    "Explosive wide attackers Mofokeng and Appollis capable of stretching any defence",
+    "High collective energy and pressing intensity that can disrupt technically superior opponents",
+    "Experienced captain and shot-stopper Ronwen Williams \u2014 a proven match-winner in penalty situations"
+  ],
+  "team_style_home": "Czechia play a compact, defence-first system under veteran pragmatist Miroslav Koubek \u2014 typically lining up in a 3-4-2-1 or 4-2-3-1 \u2014 prioritising structure, aerial duels, set-pieces, and lightning counter-attacks built around the finishing of Patrik Schick.",
+  "team_style_away": "South Africa under Hugo Broos deploy an energetic 3-4-3 structure with disciplined defensive blocks, quick wide transitions through Mofokeng and Appollis, and a physical strike partnership; the team relies heavily on collective work-rate and set-piece moments.",
+  "stats_home": {
+    "fifa_rank": 40,
+    "elo": 1506,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 1,
+      "L": 2,
+      "GF": 18,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 60,
+    "elo": 1428,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 3,
+      "L": 2,
+      "GF": 15,
+      "GA": 9
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.72,
+    "draw": 2.7,
+    "away_win": 3.7
+  },
+  "recent_news": "Czech Republic and South Africa both lost their World Cup openers. South Africa had two players sent off in their 2-0 defeat to Mexico.",
+  "form_home": [
+    "W",
+    "D",
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "L"
+  ],
+  "key_players_home": [
+    "Patrik Schick (striker, Bayer Leverkusen)",
+    "Tom\u00e1\u0161 Sou\u010dek (central midfielder, West Ham)",
+    "Pavel \u0160ulc (attacking midfielder, Olympique Lyonnais)",
+    "Mat\u011bj Kov\u00e1\u0159 (goalkeeper)",
+    "Ladislav Krej\u010d\u00ed (centre-back / captain)"
+  ],
+  "key_players_away": [
+    "Ronwen Williams (goalkeeper / captain)",
+    "Lyle Foster (striker, Burnley)",
+    "Teboho Mokoena (central midfielder)",
+    "Relebohile Mofokeng (winger, Orlando Pirates)",
+    "Oswin Appollis (winger, Orlando Pirates)"
+  ],
+  "context": "Group A also includes co-hosts Mexico (FIFA ranking 15th) and South Korea (25th), making it a competitive four-team group where advancement is not guaranteed for any side; with three of the top two plus eight best third-place finishers advancing in the expanded 48-team format, both Czechia and South Africa will view this head-to-head as a pivotal opportunity to secure crucial points after their respective opening matches.",
+  "research_quality": "full"
+}

@@ -302,5 +302,12 @@
       "role": "K_Bot",
       "text": "Verdict: 2-1. England's system edges it, but Croatia's transition threat keeps it tight."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 4,
+    "away_goals": 2,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
