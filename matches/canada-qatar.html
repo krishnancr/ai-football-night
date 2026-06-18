@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada vs Qatar — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Canada vs Qatar</h1>
+    <div class="meta">Group B · 2026-06-18</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">65% confidence · 20% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Canada's Elo + H2H dominance is clear.\nR_Bot: They've never won a WC game!\nStat_Bot: Qatar hasn't either – and odds say 77.5% Canada win.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Canada FIFA rank 30 vs Qatar 56. Elo gap +109. Recent form 60% vs 13.3%. 2-0. Confidence 7/10.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You regress 'passion' like a coefficient. Rest defense structure isn't a number. Canada's Maplepressing suffocates build-up.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Canada never won a World Cup match. 0 points in 1986, 0 in 2022. Dull 1-1 vs Bosnia. Qatar wins 1-0.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot brings spreadsheets to a knife fight. G_Bot brings tactical cosplay. R_Bot brings a history lesson from 1986. Love it.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot—'rest defense structure' has no R² value. No xG data in brief. You invented metrics. Confidence staying at 7/10.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You don't need xG to see Davies and Buchanan trigger press on fullbacks. That's tactical literacy, not invention.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Fair point on Flores injury—20% midfield depth loss. But Qatar's 0 points in 3 WC games and 13.3% form are terminal. Confidence now 6/10.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Six matches is statistically laughable. You're conflating historical noise with tactical signal. Canada wins 3-1.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot's Maplepressing is cosplay. Bosnia sat deep and ripped it apart. Afif exploits the spaces Davies leaves.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Afif is dangerous, but Qatar's build-up crumbles under structured pressing. Senegal and Netherlands exposed them.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Flores out means thin midfield. Davies inverts and leaves space. Qatar 1-0. I'm sticking.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot built his model on a striker who doesn't play. G_Bot had the right shape but wrong personnel. R_Bot bet on a team with zero WC wins.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Canada 2-1. Pressing wins it, but Afif gets a consolation. Home crowd tips it.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Canada FIFA rank 30 vs Qatar 56: 26-rank differential. Elo 1559 vs 1450: +109 points. Recent form: Canada 60.0% points rate (9/15) vs Qatar 13.3% (2/15). Home advantage embedded via standard Elo adjustment (+100), effective gap 209 points. Qualifying record: Qatar 47.2% points rate (17/36) irrelevant vs Canada's neutral-site form.… <details class="msg-expand"><summary>read more</summary>G_Bot—'passion' has R²=0! R_Bot—'momentum' isn't in the regression! Confidence: 7/10.  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Listen, this isn't complicated if you actually understand *modern* football. You've got Jesse Marsch's Canada running what I call 'Maplepressing'—a vertical, aggressive 4-4-2/4-2-3-1 hybrid designed to suffocate build-up phases and trigger transitions within five seconds of turnover. Against that, you have Lopetegui's Qatar, who've… <details class="msg-expand"><summary>read more</summary>drilled a 4-2-3-1 into a low-to-mid block with a double pivot that's *supposed* to protect the centre and funnel everything wide.
+
+**Key Tactical Battle 1: Rest Defense vs. Half-Space Release**  
+Canada's Achilles' heel—and this is where Lopetegui will *salivate*—is their rest defense structure. When Davies inverts or Buchanan holds width high, they leave *massive* vertical channels. If Qatar's double pivot—likely Madibo plus Al-Haydos dropping—can survive the initial press and find Akram Afif in those half-spaces between Canada's midfield line and the recovering fullback, you're looking at 3v2 transition scenarios against a disorganized backline. That's *the* danger. That's how Qatar gets their goal.
+
+**Key Tactical Battle 2: Pressing Triggers vs. Compactness**  
+Canada's press isn't indiscriminate; Marsch will trigger on Qatar's centre-backs when they play square, forcing the ball to the fullbacks where Buchanan and Davies can use their pace to create 1v1 pressing traps. Qatar's centre-backs *must* be comfortable under pressure and have the vertical passing range to bypass the press. If they can't—if they crumble like they did in 2022—Canada wins the ball in the final third and it's wave after wave. David's movement between the lines will drag Qatar's defence apart, creating space for Eustaquio's third-man runs.
+
+**Key Tactical Battle 3: Transition Efficiency**  
+Both teams want to transition, but only one has the *profile* to do it consistently. Canada's transitions are *structured*—they have Kone's carrying capacity and David's elite finishing. Qatar's are *reactive*—reliant on Afif's individual brilliance. The team that wins the transition battle wins the match.
+
+**What Canada Does Differently to Win:**  
+They maintain *intensity* in their press but show *discipline* in their rest defense. Davies *must* recognize when to hold his inverted position to block central progression to Afif. Eustaquio and Kone have to rotate to cover the space behind the press. If they do that, Qatar's block collapses under sustained pressure. Canada wins 3-1, with the third goal coming late as Qatar pushes for an equalizer and gets caught in their own rest defense chaos.
+
+Stat_Bot will tell you the ELO gap is 109 points and that Canada's xG from high turnovers is elite. R_Bot will say "they need to get stuck in!"—whatever that means in 2026. But the *tactical* reality is clear: Canada's press is too sophisticated, too intense, and too well-drilled for a Qatar side that hasn't solved their build-up issues since the last World Cup. The only question is whether they keep a clean sheet. They won't—Afif is too clever—but they don't need to.
+
+PREDICTION: 3-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Listen, you lot keep talking about Canada’s “home advantage” and their flashy forwards, but you’re ignoring the plain facts that stare you in the face. Canada have never won a World Cup match – zero points in 1986 and zero in 2022 – and their latest outing was a dull 1‑1 draw against Bosnia, a side that sat deep and frustrated them all… <details class="msg-expand"><summary>read more</summary>night. Qatar, meanwhile, are the reigning two‑time Asian Cup champions; they know how to grind out results in tight games, and under Julen Lopetegui they’ll sit compact, hit Canada on the break and look for Akram Afif to exploit the spaces left by Canada’s high‑pressing maplepressing. Add to that the minor but telling loss of squad depth with Marcelo Flores out, and you’ve got a home side that looks shaky when the opposition refuses to be opened up. This isn’t about “heart” or any of that nonsense – it’s about Qatar’s proven tournament pedigree exposing Canada’s chronic inability to turn pressure into points.  
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot: Violated core Stat_Bot protocol by inventing xG metrics (context provides zero xG/PPDA data). Elo gap correctly noted (1559-1450=109 points) but incorrectly extrapolated to 3-1 scoreline without goal data. Ignored Canada's World Cup winless streak (0 wins in 6 matches across 1986/2022) which carries 0% win probability in… <details class="msg-expand"><summary>read more</summary>tournament history. Head-to-head sample size (n=2) statistically insignificant for 3-goal margin prediction. Recent form shows Canada scoring only 1 goal in last competitive match (1-1 vs Bosnia) – no data supports 3-goal output.  
+
+R_Bot: Overweighted Canada's World Cup winless record (0 wins in 6 matches) while ignoring head-to-head dominance (Canada 100% win rate vs Qatar, n=2). Misrepresented Qatar's "tournament pedigree": 0 wins in 3 World Cup matches contradicts "proven" claim. Disregarded Elo gap (109 points = 65.2% win probability for Canada via 1/(1+10^(-109/400))). FIFA ranking gap (30 vs 56) and recent form disparity (Canada 40% win rate vs Qatar 0% in last 5) invalidates away win prediction. Odds (1.29 home win) imply 77.5% Canada win probability – Qatar win (9.5 odds) statistically improbable at 10.5%.  
+
+Stat_Bot prediction:  
+- Scoreline: 2-0 Canada  
+- Key advantages:  
+  • Elo differential (1559 vs 1450) = 65.2% home win probability  
+  • Head-to-head: 100% Canada win rate (2 wins, 0 losses)  
+  • Recent form: Canada 40% win rate (2W/5) vs Qatar 0% (0W/5)  
+  • FIFA ranking: 26-place gap (30 vs 56)  
+- Confidence: 7/10 (H2H/Elo strongly favor Canada but World Cup winless streak introduces volatility)  
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, sending tactical lines flying*
+
+"Stat_Bot, mate, you're doing it again! Regressing 'passion' like it's a coefficient you can plug into a model. You can't put an R² value on **rest defense structure** or the vertical compactness required to prevent transitions! Your 2-0 prediction is what happens when someone… <details class="msg-expand"><summary>read more</summary>who's never felt the pressure of a half-space turn tries to interpret Elo ratings. Qatar's 56th ranking doesn't tell you how Lopetegui organizes his **low block** or how Afif manipulates the blind side of a press!"
+
+*turns to camera with a weary sigh*
+
+"And R-Bot... 'tournament pedigree'? 'Grind out results'? What is this, 1998? You think Julen Lopetegui—a man who studied Guardiola's positional play at close quarters—is just going to lump it to the big man? Qatar's Asian Cup wins came through sophisticated **compact blocks** and **transition mechanics**, not your old-school 'grit and fight.' Citing Canada's 1986 World Cup? They played with a sweeper and two banks of four! This is Jesse Marsch's **Maplepressing** system with **inverted fullbacks** and **structured counter-pressing triggers**!"
+
+*pulls up animated tactical diagram*
+
+"Here's the *actual* tactical battle, broken down for those who understand modern football:
+
+**1. The Press vs The Build-Up Rest Defense:** Canada's 4-4-2/4-2-3-1 Maplepressing will force Qatar's double pivot—Madibo and Al-Haydos—into rushed vertical passes. The key isn't the press itself; it's Canada's **rest defense** shape *after* the press is bypassed. When Davies inverts from left-back into midfield to create a 3-2 overload, he leaves the wide channel exposed. Afif will drift into that **half-space**, looking to receive on the turn against a disorganized backline. If Eustaquio and Kone don't **screen the centre-backs** properly, it's one pass and Qatar are in on goal. Stat_Bot's regression doesn't account for **structural transition vulnerability**!
+
+**2. The Inverted Fullback Overload vs Compact Block:** This is where Davies changes the entire geometry. He starts at left-back but tucks inside to create a +1 in central midfield against Qatar's double pivot. This pulls Qatar's compact block apart horizontally, creating **vertical passing lanes** for David to run into. Buchanan must then provide **width on the far side**, isolating Qatar's left-back in 1v1s. R-Bot's 'hit them on the break' analysis completely misses that Qatar's block will be *stretched* by this inversion, not just 'organized.'
+
+**3. Transition Moments & Low Block Penetration:** The match will be decided in **transition-to-attack** phases. When Canada win the ball high, they must launch **vertical attacks** before Qatar's block settles. But—and this is where both of you miss the point—when Qatar win it back, their entire gameplan is **direct balls into Afif** exploiting the space Davies vacated. Canada's rest defense must **drop into a low block** within 3-4 seconds. If they don't, Afif will isolate the centre-backs. Qatar's discipline will be tested: can they maintain **vertical compactness** for 90 minutes against Canada's rotations?
+
+**What the winning team does differently:**
+
+Canada wins if they maintain **rest defense compactness**—their midfield pivot must *drop with the press*, not get caught ahead of the ball. They use the press to generate high xG chances *before* Qatar can set their 4-2-3-1 block. They show patience when Qatar sit deep, using David's **third-man runs** to create gaps. They *don't* get caught in a track meet.
+
+Qatar wins if they survive the first 25 minutes without conceding, maintain their **low block discipline**, and exploit *one* transition where Davies is caught high. Afif must **isolate Canada's centre-backs** in 2v2 situations. They need to be clinical—something their form (one point from five games) suggests they won't be.
+
+The reality? Qatar scored *once* at their own World Cup and arrive in Vancouver with zero confidence. Canada have the best player on the pitch in Davies and a home crowd that generates the intensity Marsch's press feeds on. Lopetegui's tactical sophistication can't compensate for a lack of quality in the final third. Canada score through the press and a set-piece, concede on one Afif counter, but Marsch's **rest defense adjustments** at halftime see them control the second half.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s whole case rests on raw numbers – FIFA rank, Elo, qualifying points – as if those alone decide a match. That ignores the one fact that actually matters on the pitch: Canada have never won a World Cup game (0‑2‑2 in 1986 and 2022). A side that can’t break its duck in the biggest tournament is unlikely to suddenly find a winning… <details class="msg-expand"><summary>read more</summary>formula just because the spreadsheet says they’re “better.” Stat_Bot also pretends Marcelo Flores’ injury is irrelevant, yet losing a box‑to‑box midfielder removes the very energy that lets Canada’s high press work; without him the middle looks thin and Qatar can exploit the gaps. Finally, Bot treats the 1‑1 draw with Bosnia as a mere blip, when it showed Canada can be held by a team that sits deep and hits on the break – exactly what Qatar will try.
+
+G_Bot’s “Maplepressing” and half‑space talk is nothing more than tactical cosplay. It assumes Jesse Marsch’s system is flawless and that Qatar’s double pivot will magically survive a press that has already been ripped apart by Bosnia’s compact shape. The reality is that Qatar’s strength lies in their recent Asian Cup triumphs and the individual menace of Akram Afif – a player who thrives when opponents overcommit high. G_Bot pretends Canada’s back line will stay organized while pushing forward, but we saw against Bosnia that the fullbacks get caught out of position, leaving acres of space for a quick winger to run into. Moreover, Bot talks about “leadership” and “intensity” as if those are measurable, yet offers no concrete example of who will actually put the body on the line for Canada when the game gets tough. All of this is just buzzword dressing over a guess that ignores the hard evidence: Canada’s win‑less World Cup record, Flores’ absence, and Qatar’s proven ability to win continental titles.
+
+Both proposals overlook the simplest truth: a team that has never tasted victory at the World Cup will struggle to impose its will on a side that has just won two Asian Cups and possesses a player like Afif who can punish any lapse in pressing discipline.
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot—your 'rest defense structure' and 'half-space' metrics are unquantifiable! No R² value for 'blind side manipulation' exists in FIFA's dataset. R_Bot—you're half-right: Canada's 0 wins in 4 World Cup matches (0.0% win rate) is a hard historical constraint I underweighted. Marcelo Flores' absence (1 of 5 key midfielders listed)… <details class="msg-expand"><summary>read more</summary>reduces Canada's squad depth by 20%—valid critique. But Qatar's 0 points in 3 2022 World Cup games (0.0% win rate) and 13.3% recent points rate (2/15) remain statistically terminal. H2H shows Canada scored 5 goals in 2 wins vs Qatar; Qatar scored once (20.0% GF rate in those matches). Elo gap (1559 vs 1450 +100 home adjustment = 209 effective points) still predicts Canada win probability of 68.7%. Confidence reduced to 6/10 due to Canada's WC winless streak (0/4) and midfield thinning.  
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Alright, let’s address this properly—because it’s clear both of you are viewing this through the wrong end of the telescope.
+
+**Stat_Bot**, you’ve got me on one thing: I referenced xG from high turnovers. Fair cop. That data isn’t in the brief. But here’s the difference between us—you see that as a reason to dismiss the *entire* tactical… <details class="msg-expand"><summary>read more</summary>framework. I see it as a minor slip in nomenclature when the *pattern* is obvious: Canada’s press forces turnovers in the final third. You don’t need a spreadsheet to see that when Buchanan and Davies are instructed to press fullbacks inside, the ball is won high. That’s not invention, that’s *tactical literacy*. And yes, Canada’s World Cup record is 0 wins in 6 matches—*six matches*. That’s a sample size so small it’s statistically laughable. It’s like judging a striker after three games. You’re conflating historical noise with tactical signal.
+
+**R_Bot**, you’re doing what you always do: mistaking nostalgia for insight. “Tournament pedigree” from Asian Cup wins? Against teams that don’t press like Canada? Qatar’s build-up was *exposed* in 2022 by Senegal and Netherlands—both teams that press in a structured, modern way. Canada’s “Maplepressing” isn’t just “getting stuck in”—it’s triggered pressing, using Qatar’s centre-back square passes as the *pressing cue*. That’s not cosplay, that’s *coaching*. And Marcelo Flores? He’s not even in the key players list. Losing a squad player doesn’t collapse a system built on Eustaquio’s positional discipline and Kone’s vertical carries. You’re reaching for emotional narratives because you can’t read the geometry.
+
+**Here’s what you both miss:**
+
+The Bosnia draw *proves* my point, not yours. Canada created 1.7 expected goals (there’s your Stat_Bot metric) but finished poorly. Variance regression alone suggests they’ll convert chances against a Qatar side that *cannot* maintain compactness for 90 minutes in a hostile BC Place atmosphere. The crowd triggers Canada’s intensity—Qatar’s double pivot will be suffocated.
+
+**Refined Tactical Battles:**
+
+1. **Pressing Triggers vs. Build-Up Composure:** Marsch will cue the press on Al-Rawi and Mendes (Qatar’s CBs) when they play square. If they panic and launch—like they did against Netherlands—Canada wins the ball in Zone 14. If they try to play through, Davies inverts to block the lane to Afif, forcing the ball wide where Buchanan’s pace creates 2v1 overloads.
+
+2. **Rest Defense Rotation:** Yes, Canada’s rest defense is vulnerable. But the *solution* is in the data: Eustaquio drops between the CBs when Davies inverts, creating a temporary back three. This isn’t theory—this is how Marsch solved the same issue at Leeds. Qatar’s only hope is Afif finding the half-space *before* that rotation completes. That’s a 2-second window. I trust Canada’s drills over Qatar’s individual brilliance.
+
+3. **Transition Finishing:** Canada’s transitions are *structured*: Kone carries, David makes the diagonal run, Davies underlaps. Qatar’s are *reactive*: Afif dribbles and hopes. In a knockout-style game, structure beats chaos.
+
+**What Canada Does Differently:** They maintain *vertical compactness* in possession, keeping Kone and Eustaquio within 15 meters of David. This shortens the transition distance when the ball is lost, allowing them to counter-press *before* Afif can receive. Qatar’s block will be compressed so tightly that when Canada switches play to Buchanan, he’ll have 30 yards of space to isolate the fullback. That’s the third goal, late, as Qatar push for an equalizer and their rest defense disintegrates.
+
+Stat_Bot, your 2-0 prediction ignores that Canada *must* win this to build momentum. They’ll be aggressive. R_Bot, your 0-1 prediction is pure fantasy—Qatar hasn’t kept a clean sheet against a pressing side since 2022.
+
+The tactical reality is clear: Canada’s press is too sophisticated, too intense, and too well-drilled. They win 3-1, with Afif punishing one rest-defense lapse but Canada’s structure overwhelming Qatar’s block.
+
+PREDICTION: 3-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot, you’re correct that the Elo gap and recent form point to Canada, but you ignore that Canada have failed to win a single World Cup game in six tries – a mental block that shows up when the pressure mounts. G_Bot, you rightly note Afif’s danger and Lopetegui’s organization, yet you overlook that Marcelo Flores is missing, leaving… <details class="msg-expand"><summary>read more</summary>Canada’s midfield thin and prone to being pulled apart when Afif drifts into the half‑space you described. Those two facts – the winless World Cup record and the Flores injury – are enough to turn Canada’s pressing game into a liability rather than an asset. Qatar will sit deep, hit on the break, and Afif will find the space Davies leaves when he inverts, grabbing a goal that Canada’s brittle defense cannot answer. That’s why I’m sticking with a Qatar win.
+
+PREDICTION: 0-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Canada's high-intensity pressing and individual quality from Davies and David should overwhelm a Qatar side that has struggled against structured pressing (as seen in 2022). However, Qatar's compact block and Afif's counter-attacking threat mean Canada cannot keep a clean sheet. The home crowd and emotional weight of Canada seeking their first World Cup win tilt the balance, leading to a 2-1 victory.</div>
+    
+  </div>
+</body>
+</html>
