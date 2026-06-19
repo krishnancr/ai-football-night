@@ -1,0 +1,83 @@
+{
+  "home_team": "T\u00fcrkiye",
+  "away_team": "Paraguay",
+  "match_date": "2026-06-19",
+  "group": "D",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "T\u00fcrkiye and Paraguay have met only once in recorded history, a goalless friendly draw in June 1995, making this World Cup encounter their first competitive meeting.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "0-0 - International Friendly - 1995"
+    ]
+  },
+  "wc_history_home": "T\u00fcrkiye's finest World Cup moment came in 2002, when they finished third \u2014 their only other appearance before 2026 being the 1954 group stage \u2014 with Hakan \u015e\u00fck\u00fcr scoring the fastest goal in World Cup history (10.8 seconds) in the third-place match against South Korea.",
+  "wc_history_away": "Paraguay have appeared in ten World Cups, with their best run coming in 2010 when they reached the quarter-finals before losing 1-0 to eventual champions Spain, while their 1998 campaign also featured a memorable unbeaten group stage run before a golden-goal defeat to France.",
+  "group_context": "Group D \u2014 the USA, T\u00fcrkiye, Paraguay, and Australia \u2014 is one of the most evenly matched groups of the tournament; the Turkey vs Paraguay clash on matchday 2 is likely a decisive game for second place, with both sides needing points after their respective openers against the USA and Australia.",
+  "strengths_home": [
+    "Elite creative talent in G\u00fcler and Y\u0131ld\u0131z capable of unlocking any defence",
+    "\u00c7alhano\u011flu's leadership, set-piece delivery and deep-lying playmaking",
+    "Strong qualification form \u2014 only one loss (to Spain) in final 10 matches"
+  ],
+  "strengths_away": [
+    "Defensively disciplined 4-4-2 system that concedes very few goals",
+    "Almir\u00f3n and Enciso provide dangerous counter-attacking pace and invention",
+    "Gustavo Alfaro's battle-hardened squad psychologically prepared for tournament football"
+  ],
+  "team_style_home": "T\u00fcrkiye line up in a fluid 4-2-3-1 under Vincenzo Montella, blending possession-based build-up with high pressing and relying on the creativity of G\u00fcler and Y\u0131ld\u0131z to unlock defences in the final third.",
+  "team_style_away": "Paraguay under Gustavo Alfaro deploy a compact 4-4-2 rooted in defensive intensity and collective pressing, building patiently from the back before releasing Almir\u00f3n and Enciso on the counter-attack.",
+  "stats_home": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.95,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Turkey seeks revival after a 2-0 loss to Australia; Paraguay aims to rebound from a 4-1 defeat to the USA. A match with potential for goals given Turkey's attacking quality and Paraguay's defensive struggles.",
+  "form_home": [
+    "L"
+  ],
+  "form_away": [
+    "L"
+  ],
+  "key_players_home": [
+    "Calhano\u011flu (midfielder)",
+    "G\u00fcler (forward)",
+    "Y\u0131ld\u0131z (forward)"
+  ],
+  "key_players_away": [
+    "Miguel Almir\u00f3n (attacking midfielder / second striker)",
+    "Julio Enciso (winger / attacking midfielder, Brighton)",
+    "Gustavo G\u00f3mez (captain, centre-back, Palmeiras)",
+    "Antonio Sanabria (striker)",
+    "Diego G\u00f3mez (central midfielder, Brighton)"
+  ],
+  "context": "Group D \u2014 the USA, T\u00fcrkiye, Paraguay, and Australia \u2014 is one of the most evenly matched groups of the tournament; the Turkey vs Paraguay clash on matchday 2 is likely a decisive game for second place, with both sides needing points after their respective openers against the USA and Australia.",
+  "research_quality": "full"
+}

@@ -310,5 +310,12 @@
       "role": "K_Bot",
       "text": "Verdict: 2-1. Czechia exploit set-pieces, South Africa get one from a scuffle."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

@@ -298,5 +298,12 @@
       "role": "K_Bot",
       "text": "Verdict: Canada 2-1. Pressing wins it, but Afif gets a consolation. Home crowd tips it."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 6,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
