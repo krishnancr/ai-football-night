@@ -1,0 +1,46 @@
+{
+  "home_team": "Germany",
+  "away_team": "Ivory Coast",
+  "match_date": "2026-06-20",
+  "group": "E",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "stats_home": null,
+  "stats_away": null,
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": -193,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Germany thrashed Curacao 7-1 in their opening match, while Ivory Coast narrowly beat Ecuador 1-0 thanks to a late Amad Diallo strike.",
+  "form_home": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "W"
+  ],
+  "key_players_home": [],
+  "key_players_away": [
+    "Amad Diallo (striker)"
+  ],
+  "context": null,
+  "research_quality": "partial"
+}

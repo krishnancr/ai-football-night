@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "Verdict: Brazil 2-0. Closer than the spreadsheet, but superior quality wins."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

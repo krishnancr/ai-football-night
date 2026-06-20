@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-20",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Germany vs Ivory Coast",
+      "run_file": "runs/2026-06-20/wc_germany-ivory-coast.json",
+      "thread_file": "runs/2026-06-20/_debug/wc_germany-ivory-coast_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Ecuador vs Cura\u00e7ao",
+      "run_file": "runs/2026-06-20/wc_ecuador-cura\u00e7ao.json",
+      "thread_file": "runs/2026-06-20/_debug/wc_ecuador-cura\u00e7ao_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Netherlands vs Sweden",
+      "run_file": "runs/2026-06-20/wc_netherlands-sweden.json",
+      "thread_file": "runs/2026-06-20/_debug/wc_netherlands-sweden_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Tunisia vs Japan",
+      "run_file": "runs/2026-06-20/wc_tunisia-japan.json",
+      "thread_file": "runs/2026-06-20/_debug/wc_tunisia-japan_thread.json",
+      "success": true
+    }
+  ]
+}

@@ -307,5 +307,12 @@
       "role": "K_Bot",
       "text": "Verdict: T\u00fcrkiye's creative talent and Elo edge overcome defensive fragility. Paraguay's counter threat means no clean sheet. Final score: 2-1."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 1,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

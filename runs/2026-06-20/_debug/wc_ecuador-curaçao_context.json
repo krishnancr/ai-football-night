@@ -1,0 +1,83 @@
+{
+  "home_team": "Ecuador",
+  "away_team": "Cura\u00e7ao",
+  "match_date": "2026-06-20",
+  "group": "E",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": "Ecuador and Cura\u00e7ao have no documented competitive head-to-head meetings; the 2026 World Cup Group E match on June 20 will be their first-ever encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Ecuador have appeared at five World Cups (2002, 2006, 2014, 2022, 2026), with their best performance reaching the Round of 16 in Germany 2006; they finished second in CONMEBOL 2026 qualifying behind Argentina.",
+  "wc_history_away": "Cura\u00e7ao are making their debut at the 2026 FIFA World Cup, qualifying as the smallest nation by population and area ever to reach the tournament after an unbeaten CONCACAF campaign capped by a 0-0 draw with Jamaica in November 2025.",
+  "group_context": "Group E features Germany, Ecuador, Ivory Coast, and Cura\u00e7ao; Ecuador must win this opener to build momentum before facing Ivory Coast and Germany, while Cura\u00e7ao \u2014 massive underdogs at 8/1 to reach the knockouts \u2014 need an early upset to have any hope of advancing from their debut World Cup.",
+  "strengths_home": [
+    "Elite defensive organisation \u2014 13 clean sheets and only 5 goals conceded in 18 CONMEBOL qualifiers",
+    "World-class midfield anchor in Mois\u00e9s Caicedo providing both defensive cover and ball progression",
+    "19-match unbeaten run heading into the tournament, including a 1-0 win over Argentina"
+  ],
+  "strengths_away": [
+    "Qualification pedigree \u2014 unbeaten through CONCACAF rounds with collective, disciplined defending",
+    "Dutch football DNA with several players experienced in European leagues (Premier League, EFL Championship)",
+    "Experienced goalkeeper Eloy Room with 71 caps providing stability at the back"
+  ],
+  "team_style_home": "Ecuador are a disciplined, counter-attacking side under Sebasti\u00e1n Beccacece that flexes between back-four and back-three systems, prioritising defensive compactness \u2014 they conceded only 5 goals in 18 CONMEBOL qualifying matches.",
+  "team_style_away": "Cura\u00e7ao play Dutch-inspired, possession-based football in a 4-2-3-1 or 4-3-3 under 79-year-old Dick Advocaat, building from the back, though they must adapt to situations where they hold less possession than opponents.",
+  "stats_home": {
+    "fifa_rank": 23,
+    "elo": 1599,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 8,
+      "L": 2,
+      "GF": 14,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 82,
+    "elo": 1295,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 13,
+      "GA": 3
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Ecuador aims to bounce back from their defeat to Ivory Coast, while Cura\u00e7ao looks to recover after a tough loss in their opening game. Ecuador is strong favorites to beat debutants Cura\u00e7ao in their second Group E fixture.",
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L"
+  ],
+  "key_players_home": [
+    "Mois\u00e9s Caicedo (defensive midfielder, Chelsea)",
+    "Willian Pacho (centre-back, PSG)",
+    "Enner Valencia (forward, all-time leading scorer)",
+    "Kendry P\u00e1ez (winger, River Plate)",
+    "Piero Hincapi\u00e9 (left-back, Arsenal)"
+  ],
+  "key_players_away": [
+    "Livano Comenencia (midfielder)"
+  ],
+  "context": "Group E features Germany, Ecuador, Ivory Coast, and Cura\u00e7ao; Ecuador must win this opener to build momentum before facing Ivory Coast and Germany, while Cura\u00e7ao \u2014 massive underdogs at 8/1 to reach the knockouts \u2014 need an early upset to have any hope of advancing from their debut World Cup.",
+  "research_quality": "full"
+}

@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: Morocco 2-1 Scotland. Elite defense and transition win, Scotland fights. Numbers now, egos later."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 1,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

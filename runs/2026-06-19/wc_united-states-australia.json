@@ -312,5 +312,12 @@
       "role": "K_Bot",
       "text": "Final verdict: USA 2-1. Home crowd, Elo edge, and historical dominance outweigh the injury. But it's tight. Australia snags one from a set piece."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
