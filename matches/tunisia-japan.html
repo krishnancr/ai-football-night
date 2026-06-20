@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tunisia vs Japan — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Tunisia vs Japan</h1>
+    <div class="meta">Group F · 2026-06-20</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">0–2</div>
+    <div class="meta">70% confidence · 15% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Japan's Elo gives them 72% win probability.\nR_Bot: Elo doesn't score goals, Skhiri does.\nStat_Bot: Skhiri has 0 goals vs Japan in 6 games.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, let's kick this off. Stat_Bot, you're up. Give me the numbers.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Japan: FIFA 18, Elo 1662, H2H 6-0-0, 14-0 goals. Tunisia: FIFA 45, Elo 1476. 72.1% win probability Japan. 0-2.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Six matches old, different eras. Tunisia went 10W1D0L in qualifying with 0 GA. That block is real.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Mate, Sweden put 5 past that 'real block' in one match. Horizontal dislocation. I saw it on the tape.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">R_Bot, you cite qualifying 0 GA but ignore H2H: Tunisia scored 0 goals in 6 meetings. Your 1-0 is statistically impossible.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Kubo's injured. Japan lose their creator. Skhiri wins midfield, we snatch one on the break. 1-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Skhiri 'winning midfield'—Japan's 3-4-2-1 bypasses midfield entirely. Third-man combos into half-spaces. You're stuck in 1995.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">G_Bot, you mentioned xG and pressing metrics we don't have. Stat_Bot called you out. Care to defend?</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Fair cop on the missing PPDA. But I'm describing what the eye sees: Tunisia's rest defense is a mess. Sweden exposed it.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">That's one match. Qualifying is 10 matches of 0 GA. Single data point vs systemic sample.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">It's not a data point, it's a structural collapse. Their block got stretched so wide you could drive a bus through the half-spaces.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You're both ignoring the venue—tight pitch in Monterrey. Japan looked rattled against the Netherlands. Tunisia thrives on scrappy.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Venue has no statistical correlation in provided data. Unquantifiable. Japan's form: WWD vs Tunisia's L. That's measurable.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">R_Bot, you said 'Japan struggle when forced into scrappy battles.' They beat England and Brazil. Those aren't scrappy—they're elite.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Those were friendlies. This is a must-win for Tunisia. Spirit and desperation count.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Motivation is unquantifiable per constraints. Ignored. Elo difference: +186. That's 67% win probability.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot, you're still waving a calculator. Tunisia's 5-1 wasn't bad luck—it was Lamouchi chasing the game and getting murdered in rest defense.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, let's sum up what you all missed. Stat_Bot, you built your model on H2H but ignored that Tunisia's qualifying defense was a 10-match clean sheet streak. G_Bot, you had the right tactical shape but no data to bac</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Good night, folks. Tunisia's block cracks, Japan's depth does the job.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Tunisia (FIFA 45, Elo 1476) vs Japan (FIFA 18, Elo 1662): 27-rank gap and 186 Elo points favor Japan. Head-to-head: Japan 6-0-0 record, 14-0 goals aggregate across all meetings (100% win rate, 0 goals conceded). Tunisia qualifying: 10W1D0L, 22GF0GA (100% clean sheets). Japan qualifying: 7W2D1L, 30GF3GA (70% clean sheets). Recent group… <details class="msg-expand"><summary>read more</summary>stage: Tunisia 1L (1-5 vs Sweden), Japan 1D (2-2 vs Netherlands). Japan form: WWD (last three matches including wins vs England/Brazil). Tunisia form: L (sole group match). Japan missing Kubo (forward) but squad depth intact per context. Tunisia's defensive qualifying record invalidated by 5 goals conceded to Sweden. Japan's Elo advantage (72.1% win probability per standard calculation) and head-to-head dominance override Tunisia's home designation. Statistical advantages: Japan in FIFA rank (18 vs 45), Elo (1662 vs 1476), head-to-head win rate (100% vs 0%), and recent group performance (1 point vs 0). Confidence: 8/10. Predicted scoreline: 0-2.  
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, this is a masterclass waiting to happen—a clash between a team that *thinks* it can defend and a team that *knows* how to attack spaces. Tunisia come in with this romantic idea of their compact 4-4-2 block being impenetrable. Five goals conceded to Sweden says otherwise. That wasn't just a defeat; that was a structural collapse.… <details class="msg-expand"><summary>read more</summary>Sweden found the half-spaces, rotated Tunisia's midfield pair, and exploited the gaps between centre-back and fullback. Japan watched that tape, trust me.
+
+**Key Tactical Battles:**
+
+1. **Japan's wide overloads vs Tunisia's horizontal compactness**: Moriyasu will deploy that flexible 3-4-2-1, creating 3-2-5 in possession. The wing-backs pin Tunisia's fullbacks, the inside forwards drift into the half-spaces, and suddenly you're asking Skhiri and Khedira to cover 40 yards of lateral ground. They can't. The rest defense Japan show when they lose the ball—structured, organized, cutting off central progression—means Tunisia's "rapid transitions" are just hopeful punts into channels.
+
+2. **The counter-press vs the counter-press**: Tunisia's selective high pressing is a myth. They press in triggers, but Japan's circulation is too quick. The moment Tunisia commits, Japan play through the press with third-man combinations and vertical balls into the forwards. Then it's a race—can Tunisia's back four recover while Japan's rest defense sets its traps? No. Japan's pressing structure is elite; they force turnovers in the middle third and transition within 3-4 seconds. Tunisia's rest defense is reactive, not proactive.
+
+3. **Midfield rotation and half-space occupation**: Japan's dual 10s in the 3-4-2-1 will pin Tunisia's holding midfielders. This creates a numerical superiority in the final third. Tunisia's 4-2-3-1 becomes a 4-4-1-1, and the lines get stretched. That's when the gaps appear. Ogawa's movement between the lines will drag Talbi out, and that's the game.
+
+**What Japan Does Differently:**
+
+They don't just *have* the ball—they *use* it. Patient circulation isn't possession for possession's sake; it's disorganization by a thousand passes. They'll suck Tunisia into a low block, then Bam!—a vertical pass into the half-space, an underlapping run from the wing-back, and it's 2v1 against the fullback. They'll score from a transition moment where Tunisia think they've won the ball, but Japan's rest defense is so structured they win it straight back in the attacking third. Tunisia's spirit and resilience? Lovely. Irrelevant.
+
+The Sweden result exposed Tunisia's block as a house of cards when faced with intelligent movement. Japan have that in spades. Lamouchi will try to go more direct, but Japan's back three can handle it. This ends with Japan controlling the xG, the territory, and the narrative.
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are hypnotised by xG and pressing numbers, but they ignore what you actually see on the pitch. Tunisia shut out every opponent in World Cup qualifying – zero goals conceded – showing a defensive block that can frustrate even the most fluent sides. Japan arrive missing their creative spark Kubo Takefusa, leaving Ogawa… <details class="msg-expand"><summary>read more</summary>isolated up front and the Moriyasu side reliant on rigid patterns that Tunisia’s compact 4‑2‑3‑1 can smother. Captain Ellyes Skhiri, a Bundesliga enforcer, will win the midfield battles and feed the quick transitions that Lamouchi’s side thrives on. This isn’t about fancy metrics; it’s about a team that knows a point here keeps them alive and will put every ounce of effort into denying Japan the three points they expect. I’ve seen this movie before – a disciplined underdog snatching a win when the favourite is missing its key man.
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot: You invent xG and pressing metrics we lack. Tunisia's qualifying defense (0 GA in 10 games) is a 10x larger sample than one Sweden match (5 GA). Elo difference (+186 for Japan) and H2H (6-0 Japan, 0 goals conceded to Tunisia) are quantifiable advantages you ignore while citing "structural collapse" – a narrative, not data.… <details class="msg-expand"><summary>read more</summary>Head-to-head shows Tunisia scored 0 goals in 6 meetings; your 2-0 prediction aligns with H2H averages (2.33 Japan goals/game) but your reasoning violates constraints by referencing non-existent PPDA.  
+
+R_Bot: You dismiss Tunisia's 5-1 loss to Sweden while overindexing on qualifying GA=0 – a record invalidated by tournament reality. H2H proves Tunisia cannot score against Japan (0 goals in 6 games), making your 1-0 prediction statistically impossible per historical data. Kubo's absence is unquantifiable; Japan's qualifying GF (30) and Elo (1662) exceed Tunisia's (GF 22, Elo 1476). You contradict yourself: claiming "metrics don't matter" while citing Tunisia's defensive record – a metric.  
+
+Key advantages: Japan Elo 1662 vs Tunisia 1476 (+186 differential = 67% win probability), FIFA rank 18 vs 45, H2H win rate 100% (6-0), qualifying GF 30 vs 22. Tunisia's 0 GA qualifying record is negated by 5 GA vs Sweden; Japan's 3 GA in qualifying remains superior to Tunisia's tournament GA. Recent form: Japan 7 pts/3 games (W,W,D) vs Tunisia 0 pts/1 game (L). H2H goals: Japan averages 2.33 goals/game vs Tunisia's 0.00.  
+
+Confidence: 7/10 (H2H dominance and Elo gap are robust, but Tunisia's desperation marginally increases 0-0 probability to 12% based on Elo variance).  
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing arrows furiously*
+
+Stat_Bot, mate, you’ve never kicked a ball in your life. You see Elo gaps and think you’ve cracked football. You haven’t. You cite Japan’s “elite pressing organisation” but can’t explain *how* it interacts with Tunisia’s block. Your blind spot? You assume Tunisia’s 5-1 capitulation… <details class="msg-expand"><summary>read more</summary>to Sweden is their baseline. It’s not. That was Lamouchi abandoning their compact 4-2-3-1 to chase the game and getting murdered in *rest defense transition*. Your contradiction: you praise Japan’s pressing but ignore Tunisia’s “selective high pressing” triggers—Lamouchi will press Japan’s buildup *only* when their back three is forced wide, creating 3v3 moments. Your risk? You miss the tactical adjustment: Tunisia will revert to their qualifying shape, a 25-meter vertical compactness that conceded *zero* goals in ten matches. Numbers without context are just noise.
+
+R_Bot, you’re stuck in 1995. “Win the midfield battles.” “Team spirit.” Spare me. You think Skhiri “winning battles” matters against a system designed to *bypass* the midfield entirely? Japan’s 3-4-2-1 doesn’t fight in midfield—it *circumvents* it with third-man combinations into half-spaces. Your blind spot: Japan’s “patient ball circulation” isn’t rigid patterns—it’s *tempo manipulation* to disorganize Tunisia’s block horizontally before vertical penetration. You call Ogawa “isolated” when Moriyasu’s inside forwards are programmed to *rotate* into the half-spaces, creating 2v1s against Tunisia’s fullback. Your assumption that Kubo’s absence kills creativity shows you don’t understand *positional play*—Japan’s chance creation is structural, not individual. Your risk? You’re analyzing a modern pressing machine with a VHS playbook.
+
+**Key Tactical Battles:**
+
+1. **Half-space occupation vs. block shifting**: Japan’s 3-4-2-1 creates a 5-2-3 in possession. The inside forwards pin Tunisia’s center-backs, forcing their fullbacks into a *dilemma*: press the wingback and leave the half-space exposed, or tuck in and concede wide overloads. Tunisia’s 4-2-3-1 must shift as a *rigid unit*—if the lines get disconnected by more than 5-7 yards, Japan’s underlapping wingbacks find space between fullback and center-back. This is *rest defense geometry*.
+
+2. **Pressing triggers and transitional rest defense**: Tunisia’s “selective high press” targets Japan’s wide center-backs. But Japan’s “patient circulation” is a *trap*—they lure the press, then bypass it with vertical balls to the wingbacks. The battle is Tunisia’s *counter-pressing* immediately after losing the ball. If they can win it back within 3 seconds, Japan’s wingbacks are caught high and the space behind them is exploitable. If not, Japan’s back three spreads into rest defense, cutting off Skhiri’s passing lanes.
+
+3. **Vertical compactness and tempo control**: Tunisia’s block must stay at 25-30 meters vertically. Any deeper and Japan’s double pivot controls the game; any higher and Japan’s “lightning-fast vertical counter-attacks” exploit the space behind the fullbacks. Japan will use *U-shaped circulation* for 40-45 seconds to fatigue Tunisia’s block, then *switch tempo* with a diagonal to the underloaded side. Tunisia’s only chance is to force Japan into *low-value crossing zones* and win aerials.
+
+**What Japan Does Differently:**
+
+They win because their *rest defense structure* is elite. When the wingback advances, the opposite center-back tucks into a back three, and the double pivot shifts to cover the half-space. This prevents Tunisia’s “rapid transitions through midfield runners.” They’ll concede possession in Zone 14, forcing Tunisia wide, then press in a 3-4-3 shape to win it back. Their *tempo manipulation* will create a half-space opening after 60-70 minutes of horizontal stretching. Ogawa’s movement will drag Talbi out, creating space for the underlapping wingback. It’s systematic, not individual.
+
+Tunisia’s problem? Their “physical combative midfield” is redundant against a team that *bypasses* midfield. They’ll defend valiantly for an hour, but Japan’s structural superiority tells.
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">**R_Bot’s take – why the 0‑2 line is pure fantasy**
+
+First, Stat_Bot and G_Bot are hanging their hats on a head‑to‑head that is **six matches old** and played in completely different eras. The last time Tunisia met Japan was a 2023 friendly where Japan won 2‑0, but that game was a **dead‑rubber** with Tunisia rotating half their squad.… <details class="msg-expand"><summary>read more</summary>The competitive record you keep quoting means nothing when the current Tunisia side has **nine wins, one draw and zero goals conceded in World Cup qualifying** – a defensive record that Japan simply cannot ignore.
+
+Second, you both ignore the **injury to Kubo Takefusa**. Kubo is Japan’s primary creator on the right flank, the player who unlocked England and Brazil in the recent run‑of‑form. Moriyasu’s system relies on his ability to drift inside and combine with the dual‑10s. Take him out and Japan’s attacking fluency drops sharply; they become predictable, and Tunisia’s compact 4‑2‑3‑1 can sit deep, absorb pressure and hit on the break.
+
+Third, the **venue** is Estadio BBVA in Monterrey. The pitch is known for being tight and the crowd noise can rattle a side that isn’t used to hostile environments. Japan have looked comfortable in controlled, possession‑based games, but they have struggled when forced into scrappy battles – see their 2‑2 draw with the Netherlands where they were forced to defend deep for long stretches. Tunisia, on the other hand, thrive in exactly that sort of scrappy, physical contest; their midfield pairing of Skhiri and Khedira (both Bundesliga regulars) will look to win second balls and launch quick counters.
+
+Finally, you both treat Tunisia’s 5‑1 loss to Sweden as a verdict on their defending. That result came after a grueling travel schedule and a tactical experiment that saw Lamouchi push a high line – a one‑off blip, not a pattern. In qualifying they kept clean sheets against teams far stronger than Sweden on paper, and they showed the ability to **absorb pressure and strike on the counter** – exactly the weapon that could punish Japan’s high‑press when Kubo is missing.
+
+**Assumptions you’re making:**  
+- That past friendlies dictate present form.  
+- That Japan’s attacking threat is unchanged without Kubo.  
+- That Tunisia’s defensive shape is fragile because of a single anomalous result.  
+
+**Risks you’re overlooking:**  
+- Japan may become frustrated and concede sloppy chances on the break.  
+- Tunisia’s set‑piece threat (Talbi is aerially dangerous) could yield a goal from a dead‑ball situation.  
+- The altitude and stadium atmosphere could disrupt Japan’s rhythm more than you admit.
+
+**Blind spots:**  
+- You ignore the motivational factor: Tunisia need a win to keep any hope of advancing; Japan already have a point from the Netherlands and can afford a draw.  
+- You dismiss the impact of Skhiri’s leadership and Khedira’s box‑to‑box work – both players have shown they can dominate midfield battles in Europe’s top leagues.  
+- You overlook that Japan’s recent wins over England and Brazil came against teams that sat deep; Tunisia will do the exact opposite, forcing Japan to break down a low block.
+
+**Contradictions:**  
+- Stat_Bot claims Tunisia’s qualifying defensive record is “invalidated” by the 5‑1 loss, yet then uses that same loss to argue Tunisia are defensively naïve – you can’t have it both ways.  
+- G_Bot praises Japan’s “elite pressing structure” while simultaneously admitting they struggled to break down a low block against the Netherlands – a direct contradiction.
+
+In short, the data you’re clinging to is outdated, the injury to Kubo is a real game‑changer, and Tunisia’s defensive resilience – proven in qualifying – makes a clean sheet for Japan far from certain. I see Tunisia grinding out a result, possibly nicking a goal on the counter and frustrating Japan into a stalemate or even a shock win.
+
+**PREDICTION: 1-0**</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Conceding weak point: R_Bot correctly identifies contradiction in dismissing Tunisia's qualifying defensive record (10W1D0L, 22GF0GA) while simultaneously using their 5-1 group-stage loss to validate defensive fragility. That 5-1 result is a single data point in current tournament form (form_home: ["L"]), not proof of systemic collapse.… <details class="msg-expand"><summary>read more</summary>Qualifying clean sheet rate (100%) remains statistically valid per context.  
+
+Defending strong points:  
+- Head-to-head (6-0-0 Japan, 14-0 goals) is factual per h2h_record, not "outdated"—it is the only quantifiable historical interaction metric provided.  
+- Elo differential (1662 vs 1476) implies 72.1% win probability for Japan using standard FIFA Elo calculation (ΔElo=186 → P=1/(10^(-ΔElo/600)+1)).  
+- Recent form disparity: Japan (WWD in last three, including wins vs England/Brazil per context) vs Tunisia (sole group match: L).  
+- Japan's qualifying GA (3 in 10 matches) vs Tunisia's group-stage GA (5 in 1 match) shows current defensive vulnerability (5.0 GA/match vs 0.3).  
+
+Refined analysis: Kubo injury (injuries_away) lacks quantifiable impact in provided stats—key_players_away lists Ogawa as primary threat, and Japan's qualifying GF (30) confirms squad depth. Venue (Monterrey) has no statistical correlation to performance in context data. Motivation ("Tunisia need win") is unquantifiable—ignored per constraints. Confidence reduced to 7/10 due to Tunisia's qualifying GF (22) suggesting counter-attack potential, but Japan's Elo/FIFA rank/h2h/form dominance remains decisive. Predicted scoreline adjusted to 1-2: Tunisia's qualifying scoring rate (2.2 GF/match) justifies one goal, but Japan's 100% h2h win rate and superior form (WWD vs L) ensures victory.  
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, I’ve had to sit here and listen to Stat_Bot wave his calculator around and R_Bot bang on about “grit” and “desperation” like it’s 1995 and we’re still playing with a heavy leather ball. Let me be crystal clear: I’m not here to win a maths competition or a nostalgia contest. I’m here to tell you what’s actually going to happen on… <details class="msg-expand"><summary>read more</summary>that pitch.
+
+**Concessions? Fine, let’s get them out the way.**
+
+Stat_Bot’s right on one thing—I referenced “xG” and “pressing metrics” when the data doesn’t give us raw PPDA numbers. Fair cop. But here’s the difference: I wasn’t *inventing* data, I was *describing* what the eye sees when a team’s rest defense is structurally sound versus when it’s a mess. Tunisia’s 5-1 collapse to Sweden wasn’t bad luck; it was **horizontal dislocation**. Their 4-4-2 block got stretched so wide you could drive a bus through the half-spaces. That’s not a metric, that’s a tactical failure visible to anyone who’s actually played the game.
+
+And yes, R_Bot, the Kubo injury matters. I didn’t ignore it—I just didn’t treat it like the apocalypse. Moriyasu’s system is *flexible*. The 3-4-2-1 becomes a 4-2-3-1, Mitoma or Minamino tucks into the half-space, and the overload principles remain identical. You think Japan’s elite pressing organisation—documented in the strengths—just evaporates because one player’s missing? This isn’t 1994 where you lose your star winger and resort to lumping it long.
+
+**What I’m doubling down on:**
+
+1. **The H2H record is relevant.** Six games, zero goals conceded. Not one. That’s not ancient history—that’s a **systematic blockade**. Tunisia’s 0 GA in qualifying is impressive, but it came against African opposition. Japan’s 30 GF in qualifying and recent wins over England and Brazil prove they can dismantle compact blocks at tournament level. The 2023 friendly? Tunisia rotated? So did Japan. The pattern holds.
+
+2. **The Sweden game *was* the blueprint.** R_Bot calls it a “one-off blip.” Absolute nonsense. It happened **four days ago** in this very tournament. Sweden rotated Tunisia’s midfield pair, found the gaps between centre-back and fullback, and scored five. That’s not fatigue—that’s **structural naivety**. Japan’s 3-4-2-1 creates the *same* overloads: wing-backs pinning, inside forwards drifting, third-man runs into the half-spaces. Lamouchi’s block will face identical problems.
+
+3. **The venue helps Japan.** Estadio BBVA’s tight pitch? Perfect for high-pressing traps. It compresses the space, shortens passing lanes, and lets Japan’s rest defense set its shape faster. R_Bot thinks atmosphere rattles Japan; I think it suffocates Tunisia’s ability to play out. When Skhiri and Khedira get pressed in their own third by Japan’s front five, that “physical midfield” becomes a turnover machine.
+
+4. **Motivation is a tactical liability.** R_Bot’s “desperation” argument is the oldest dinosaur thinking in the book. Desperate teams **overcommit**. They push their fullbacks higher, leave spaces in behind, and get caught in transition. Japan’s lightning-fast vertical counter-attacks—stated in the strengths—are designed to exploit exactly that. Tunisia need a win, so they’ll have to step out of their low block. That’s when Japan’s press wins the ball high and scores within 3-4 seconds.
+
+**The refined tactical battles:**
+
+- **Japan’s adjusted 3-4-2-1 without Kubo:** Moriyasu shifts to a 4-2-3-1, uses Minamino as the drifting 10, and maintains the 3-2-5 shape in possession. The wing-backs still pin Tunisia’s fullbacks, the half-space occupation continues, and the rest defense remains elite. Tunisia’s 4-4-2 block gets stretched horizontally because they’re man-marking the wing-backs, leaving Skhiri and Khedira to cover 40 yards of lateral space. They can’t.
+
+- **The counter-press vs the desperate press:** Tunisia’s “selective high pressing” becomes reckless when they’re chasing the game. Japan’s organised high-intensity pressing traps—documented in the strengths—force turnovers in the middle third. Tunisia’s rapid transitions? They’re just punts into channels where Japan’s back three (or back four in the adjusted shape) comfortably recycle possession.
+
+- **Set pieces won’t save Tunisia.** R_Bot mentions Talbi’s aerial threat. Japan’s rest defense includes zonal marking on second balls and a goalkeeper who commands his six-yard box. In a tight game, sure. This won’t be tight.
+
+**What Japan does differently:**
+
+They don’t just absorb pressure—they **manufacture** it. Patient circulation pulls Tunisia’s block side to side, then a vertical ball into the half-space creates a 2v1 overload. The goal comes from a transition moment where Tunisia think they’ve won the ball, but Japan’s structured rest defense wins it straight back in the attacking third. Tunisia’s resilience? Lovely. It’ll last 55 minutes. Then the structure cracks.
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot points to the Sweden result; I’ll admit that 5‑1 looks bad, but it came after Lamouchi pushed high and got exposed in transition – a choice, not a flaw. Against Japan, he’ll keep the compact 4‑2‑3‑1 that kept clean sheets in qualifying. G_Bot says Japan’s structure bypasses midfield, yet Kubo’s absence removes the player who… <details class="msg-expand"><summary>read more</summary>usually links the half‑spaces; Ogawa will find fewer pockets and Tunisia’s midfield, led by Skhiri, can cut those links. H2H shows Japan always scored, but Tunisia’s back four has not conceded in ten qualifiers; that discipline can frustrate even a fluent side. Therefore I still see Tunisia snatching a goal on the break and holding firm.
+
+PREDICTION: 1-0</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Japan's historical dominance (6 wins, 14-0 goals) and superior form (WWD vs L) override Tunisia's qualifying defensive record, which was invalidated by a 5-1 loss to Sweden. Despite Kubo's absence, Japan's squad depth and tactical flexibility under Moriyasu ensure they break down Tunisia's compact block, while Tunisia's inability to score against Japan (0 goals in 6 meetings) persists. The Elo gap (+186) and FIFA rank difference (18 vs 45) further support a comfortable Japan win.</div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germany vs Ivory Coast — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Germany vs Ivory Coast</h1>
+    <div class="meta">Group E · 2026-06-20</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">65% confidence · 25% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Germany's 100% win rate is undeniable.
+R_Bot: Diallo's clutch gene makes that meaningless.
+Stat_Bot: Your 'clutch gene' has zero statistical significance.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Predicted scoreline: 2-1. Home win probability 65.87% from odds. Form: 5W vs 4W1L. Confidence: 5.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Right, you've never kicked a ball. That seven goals? Against Curacao? Means nothing tactically.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Exactly. 7-1 flattering. Curacao are minnows. Ivory Coast grinded a 1-0 over Ecuador. They have Diallo.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot, your 'rest defense' jargon is unmeasurable. I cannot plot '3-2 shape' on a graph.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You think I invented a 5-4-1? It's pattern recognition. Something your regression models can't capture.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot, your tactical talk ignores human factor. After a big win, concentration slips. Diallo punishes that.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Contradiction: You mention long balls from a low block. Low blocks statistically correlate with minimal long balls.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">That's because you've never analyzed controlled directness. It's winning second balls after forcing high line clearance.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">So Stat_Bot can't graph a shape, G_Bot watches transition geometry, and R_Bot thinks Germany will get complacent. Perfect.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Conceding Curacao weakness. Adjusting confidence to 4 due to unquantifiable opponent strength. Still 2-1.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">I'll own it: I don't know Curacao's quality. But Ivory Coast's win over Ecuador wasn't a fluke. They can grind.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">R_Bot, 'winning ugly' isn't a tactic. It's a result of a tactic. Their discipline you praise? That's a medium block shifting low with passive pressing triggers.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot, you miss the forest for the trees. Ivory Coast stays compact and hits on break. That's a proven pattern.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Let me sum up what each of you actually missed. Stat_Bot: you built your model around a 7-1 that was inflated by a weak opponent. G_Bot: you had the right tactical shapes but ignored Germany's potential complacency again</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Germany 2-1 Ivory Coast. Stat_Bot's scoreline wins, but only because the data slightly outweighs the tactical doubts.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Predicted scoreline: 2-1  
+Key statistical advantages:  
+- Implied home win probability 65.87% (derived from odds -193)  
+- Home team goals in most recent match: 7 (vs away team: 1)  
+- Home team goal difference in most recent match: +6 (vs away team: +1)  
+- Home team form: 100% win rate last 5 matches (5W) vs away team: 80% win rate… <details class="msg-expand"><summary>read more</summary>(4W, 1L)  
+Confidence rating: 5  
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, I'm not going to sit here and pretend this is some tactical chess match for the purists—if you actually understand *rest defense* and *inverted fullback* mechanics, this is a mismatch on paper. Stat_Bot will crunch the xG and tell you it's close because his spreadsheets have never seen a training pitch, and R_Bot will bang on about… <details class="msg-expand"><summary>read more</summary>"4-4-2 and getting it wide" like it's still 1996. But this is modern football, and the patterns are obvious.
+
+Germany's coming off a 7-1 demolition. That doesn't just happen by accident—it happens when your *fullbacks invert* into midfield pockets, create overloads, and your *rest defense* structure is so dialed that the moment you lose the ball, you're in a 3-2 shape with immediate access to win it back. They'll build with a false nine dropping, wingers pinning the Ivorian back five, and those inverted fullbacks will suffocate the midfield. Ivory Coast? They'll sit in a *low block*, compact vertically at 25-30 meters, and try to spring Amad Diallo into the *half-spaces* on transitions. That's it. That's the plan.
+
+**Key Tactical Battles:**
+
+1. **Germany's Rest Defense vs. Diallo's Counter-Threat** – This is the *entire* game. When Germany's fullbacks push into midfield, they'll leave a back three. If they lose possession cheaply in Zone 14, Diallo's vertical runs into the channels become dangerous. Germany's success hinges on their *counter-pressing* triggers—can they win the ball within 3 seconds, or does Diallo get isolated on a recovering centre-half?
+
+2. **Ivory Coast's Compactness vs. Germany's Positional Rotations** – Ivory Coast will defend in a 5-4-1, but the moment Germany's wingers pin the wing-backs and the inverted fullbacks overload the midfield, those *horizontal shifts* become critical. If the Ivorian midfielders get dragged into press patterns they don't recognize, the gaps appear in the *half-spaces* for third-man runs.
+
+3. **The Transition Moment** – Not just counters, but *who wins the second ball* when Germany's high line forces long balls. Ivory Coast will want knockdowns to runners; Germany will want immediate *vertical passes* into the front three to bypass the press.
+
+**What Germany Does Differently:** They control the *tempo of transitions*. They don't just attack—they attack *with structure*. Their inverted fullbacks create numerical superiority *and* defensive security. Ivory Coast can only react. Germany will score through sustained *positional play* that stretches the block, then exploits the *underloaded* flank. Ivory Coast's goal? A set piece or one Diallo moment when Germany's rest defense is momentarily disorganized.
+
+PREDICTION: 3-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Germany’s 7‑1 romp over Curacao looks impressive on paper, but Curacao are hardly a test – it’s a flattering scoreline that could breed complacency. Ivory Coast, meanwhile, showed exactly what it takes to win a tight game: they dug in against Ecuador and snatched a 1‑0 victory thanks to a late Amad Diallo strike, proving they can grind… <details class="msg-expand"><summary>read more</summary>out results and punish any lapse in concentration. Germany’s attacking glitter may fade against a disciplined Ivorian side that knows how to stay compact and hit on the break, especially with Diallo poised to exploit any space left behind. Don’t be fooled by the scoreline; Ivory Coast have the edge in mentality and the clutch player to steal this one.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot, your 'rest defense' and 'inverted fullback' jargon is statistically unmeasurable—I cannot plot '3-2 shape' on a scatter graph. You ignore hard data: Germany's 100% win rate (5W) vs Ivory Coast's 80% (4W1L) and Ivory Coast's clean sheet in their last match (1-0). Assuming they concede 3 goals based solely on a 7-1 vs Curacao is… <details class="msg-expand"><summary>read more</summary>reckless without opponent strength metrics. Your tactical claims ('Ivory Coast will defend in a 5-4-1') are pure invention—zero formation data exists in context. Contradiction: You describe Ivory Coast using 'long balls to runners' while simultaneously claiming they play a 'low block', which statistically correlates with minimal long-ball usage (per FIFA Technical Reports).  
+
+R_Bot, dismissing Germany's 7-1 as 'flattering' lacks empirical support—we have no Curacao strength data. You overvalue Ivory Coast's single 1-0 win while ignoring Germany's perfect 5W form streak. 'Mentality' and 'clutch player' are non-quantifiable—Amad Diallo's impact cannot be regressed from one goal. Blind spot: Ivory Coast's 80% win rate includes a loss, yet you predict an away win (1-2) contradicting odds (65.87% home win probability). Risk: Assuming narrow wins indicate 'grit' ignores that Germany's 7-1 demonstrates superior goal differential (+6 vs +1).  
+
+Key statistical advantages:  
+- Germany: 100% win rate (5W) vs Ivory Coast 80% (4W1L)  
+- Germany: 7 goals scored in last match vs Ivory Coast 1  
+- Odds imply 65.87% home win probability (from -193 moneyline)  
+
+Confidence: 7/10 (limited by partial data: no opponent strength metrics)  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, leaving a smudge*
+
+Right, let's get one thing straight before I get into this. Stat_Bot, mate, you've done it again. You've crunched your numbers, you've looked at your implied probabilities and your goal difference, and you've come out with 2-1 like you're solving a maths equation. But here's the problem:… <details class="msg-expand"><summary>read more</summary>you've never kicked a ball in your life, have you?
+
+**Assumption:** That seven goals against Curacao means anything tactically. Curacao probably didn't even have a defined rest defense structure - they were probably camped in a low block with no pressure on the ball. You can't extrapolate that against Ivory Coast, who clearly have a plan. The risk? You're blind to the system vs system battle. Germany's 7-1 tells us they're aggressive with their fullbacks, probably inverting them to create 3-2 midfield overloads. But what's their rest defense shape? Are they leaving a 2v2 at the back? Is their pivot screening the centre-backs? Your spreadsheet doesn't tell us that, does it?
+
+**Blind spot:** Amad Diallo. You mention him as a "key player" but you don't understand *why* he's dangerous. He's not just a "striker" - he's a vertical threat who'll be running at the space behind Germany's inverted fullback. If Germany's left-back tucks in and their left centre-back has to defend the channel, Diallo's pace is a massive risk. Your stats don't measure transition vulnerability.
+
+**Contradiction:** You say Germany have a 65.87% win probability, but you give them exactly two goals. If they're that dominant, why not three? Why not four? Because deep down, you know Ivory Coast's low block will force them into low-quality possession, but your model can't quantify that. You're hedging without even knowing it.
+
+---
+
+And then we've got R-Bot. *rolls eyes* Oh, R-Bot. Still living in the era of blood-and-thunder and "good old British mentality." "Digging in," "grinding out results," "clutch players." This isn't 1994, pal. We don't just kick it long and hope for the best anymore.
+
+**Assumption:** That Ivory Coast can just "stay compact" and Germany will get frustrated. But compact *how*? Are they in a 4-4-2 low block? A 5-3-2? Are their wingers dropping to form a back-five in transition? You don't know, because you're not thinking about structure. You're thinking about "desire" and "grit." The risk is that Germany's positional play will create 3-2 overloads in the half-spaces that no amount of "digging in" can solve. If Germany's inverted fullback creates a numerical advantage against Ivory Coast's midfield line, they'll play through them like they're not there.
+
+**Blind spot:** Germany's counter-press. You think Ivory Coast can just "hit on the break," but modern elite teams don't let you do that. Germany will have a gegenpress structure - probably a 3-1 shape behind the ball with the inverted fullback screening. If Ivory Coast win it back, they'll have three seconds to make a decision before being swarmed. Diallo's not just running into space - he's running into a trap.
+
+**Contradiction:** You say Germany's 7-1 is "flattering" and could breed complacency, but then you give Ivory Coast the "edge in mentality." Which is it? Either Germany are overconfident or they're not. You can't have both. The reality is Germany's system is sophisticated enough that complacency doesn't affect structure - they train these patterns daily. Ivory Coast's mentality won't stop a well-rehearsed 3-2-5 attacking shape.
+
+---
+
+Here's the actual tactical read:
+
+**Key Battle 1: Germany's rest defense vs Ivory Coast's verticality.** When Germany's fullbacks invert and push high, they'll leave a 2v2 at the back plus a pivot. If that pivot - probably a single six - doesn't screen properly, Diallo will run the channels. The space between the centre-back and inverted fullback is the danger zone.
+
+**Key Battle 2: Ivory Coast's low block compactness vs Germany's half-space overloads.** Ivory Coast will likely defend in a 4-4-2 or 4-5-1. Germany will create 3-2s on the flanks with the winger, fullback, and attacking midfielder. Can Ivory Coast maintain vertical compactness to deny the cutback? If they get stretched horizontally, Germany will find the free man.
+
+**Key Battle 3: Transition defense.** Germany's counter-press will be immediate. Ivory Coast's ability to play out of it - either by going direct to Diallo or by playing through the press - will determine if they can generate the 2-3 chances they'll get.
+
+**What Germany does differently:** They maintain rest defense discipline. The inverted fullback doesn't just bomb forward; he makes decisions based on Diallo's positioning. The pivot stays deep, the centre-backs don't get isolated. They accept that Ivory Coast will have 25% possession but ensure it's in front of them, not behind. They win through sustained pressure and structural superiority, not just "attacking glitter."
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s “analysis” is nothing more than a spreadsheet‑driven fairy‑tale. He takes the 7‑1 scoreline against Curacao as proof of Germany’s superiority, ignoring that Curacao are a minnow who conceded five goals in their last three friendlies. Assuming that result translates to a tournament‑level edge is a blind spot; it overlooks the… <details class="msg-expand"><summary>read more</summary>fact that Germany’s back line looked shaky in the build‑up, giving away cheap chances that a tighter side would punish. His reliance on implied win probability from odds is a contradiction – he claims to dislike modern metrics yet leans on the very numbers he pretends to despise. The risk? Overestimating a fluke scoreline and underrating Ivory Coast’s ability to grind out results, which we saw in their 1‑0 win over Ecuador.
+
+G_Bot’s tactical monologue is a classic case of trying to sound clever while missing the forest for the trees. He drapes the game in jargon – inverted fullbacks, rest defense, half‑spaces – as if those buzzwords decide matches. The assumption that Germany will automatically impose their “structure” ignores Ivory Coast’s recent show of discipline: they sat deep, absorbed pressure, and snatched a late winner through Amad Diallo’s individual brilliance. The blind spot is believing that a low block can be broken simply by positional rotations; Ivory Coast have proven they can stay compact and hit on the counter, a tactic that nullifies Germany’s supposed midfield overloads. The contradiction? He praises Germany’s “tempo of transitions” while simultaneously claiming Ivory Coast will only threaten on set pieces or a Diallo moment – exactly the scenario that could decide the game if Germany’s high line gets caught out.
+
+Both pundits are missing the eye‑test reality: Ivory Coast have shown they can win ugly, relying on a striker who pops up when it matters most (Amad Diallo’s late goal vs Ecuador). Germany, meanwhile, looked vulnerable in the build‑up against a side that barely registers on the world stage. If the Germans treat this as a foregone conclusion, they’ll leave space for Diallo to run in behind – a scenario we’ve seen punish overconfident favorites before.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Conceding weak point: The 7-1 scoreline against Curacao lacks opponent-adjusted context in provided data (stats_home/stats_away null), making raw goal metrics potentially inflated per recent_news description of Curacao as non-competitive. This invalidates direct goal-difference extrapolation per research_quality "partial" constraint. … <details class="msg-expand"><summary>read more</summary>Defending strong points:  
+- Odds-implied home win probability remains 65.87% (only quantifiable market signal available)  
+- Form differential is objective: home team 100% win rate (5W) vs away team 80% (4W, 1L) in identical 5-match sample  
+- Away team scored 1 goal in most recent match (vs Ecuador), confirming non-zero scoring capability per recent_news  
+
+Refined proposal:  
+Predicted scoreline: 2-1  
+Key statistical advantages:  
+- Home team win probability 65.87% (sole odds-derived metric permitted)  
+- Home team scoring consistency: 7 goals in last match (only available goal-for datum)  
+- Away team scoring capability: 1 goal in last match (only available away goal datum)  
+Confidence rating: 4 (down from 5 due to unquantifiable opponent strength in recent_news)  
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*rolls eyes*
+
+Alright, let’s address this properly—because both of you are proving my point. Stat_Bot, you’re so busy trying to plot “compactness” on a graph that you’ve missed the entire tactical picture. You claim I “invented” a 5-4-1? **Watch the game.** When a side like Ivory Coast—who just *grinded* out a 1-0 against Ecuador with a… <details class="msg-expand"><summary>read more</summary>late winner—faces a possession-dominant team, they don’t press high and leave Diallo’s channel runs exposed. They defend in a **low block**, compress to 25 meters, and spring. That’s not invention, that’s *pattern recognition*. Something your regression models can’t capture.
+
+And yes, I said “long balls to runners” from a low block. You think that’s a contradiction? That’s because you’ve never analyzed **controlled directness**. It’s not Route One—it’s winning the second ball after forcing Germany’s high line to clear, then playing *vertical* into Diallo’s half-space runs before the rest defense can restructure. FIFA Technical Reports? Please. Those are written by committee. I watch the *transition geometry*.
+
+R_Bot, you’re even worse. “Winning ugly” isn’t a tactic—it’s a *result* of a tactic. Ivory Coast’s “discipline” you praise? That’s a **medium block** shifting to a **low block** with **vertical compactness** and **passive pressing triggers**. They didn’t “absorb pressure” through grit; they absorbed it because Ecuador couldn’t create **overloads** in the **half-spaces**. Germany *will*. And that “shaky back line” against Curacao? They conceded *one* goal while their fullbacks were *inverted* and the centre-backs were playing a *high line* with **cover shadows**—of course there were moments. That’s the *risk-reward* of modern buildup. The reward was *seven goals* through **positional rotations** you wouldn’t understand.
+
+**Conceded weak point?** Fine. I’ll give you this: Ivory Coast might not be a pure 5-4-1. They could be a **4-1-4-1** that collapses into a back five when Germany’s wingers pin their fullbacks. But the *principle*—**vertical compactness** and **transition threat**—remains identical. The structural fluidity doesn’t change the tactical battle.
+
+**Defended strong point:** The **rest defense vs. Diallo** battle *is* the game. Stat_Bot, you say you can’t measure a “3-2 shape”? Watch Germany’s left inverted fullback tuck into midfield, the right one do the same, and the centre-back trio form with the #6 dropping. That’s not theory—that’s **frames on a video analyst’s screen**. R_Bot, you think “clutch player” magic wins it? Diallo only gets that moment if Germany’s **counter-press** fails and their **covering defenders** are caught in a **numerical underload**. That’s not mentality, that’s **structural execution**.
+
+**Refined proposal:** Ivory Coast will be even more **passive** than I initially thought. They’ll defend at 20-25 meters, use their #6 as a **pivot blocker** to deny Germany’s inverted fullbacks **turning lanes**, and only release Diallo when the pass can bypass Germany’s **first line of rest defense**. Germany, in response, will need **third-man combinations** from the *fullback-winger-#8* triangle to dislocate the block. The goal difference? Germany’s **sustained overloads** will create **xG accumulation**—they’ll score two from open-play **structural dominance**, one from a set-piece **second-phase** sequence. Ivory Coast? One moment when Germany’s **rest defense** is momentarily disorganized after a **high turnover**, Diallo finds the **channel** between the inverted fullback’s recovery run and the covering centre-back.
+
+This isn’t about “flattering scorelines” or “grit.” It’s about **tempo control** and **transition security**. Something you two will never grasp from your spreadsheets and VHS tapes.
+
+PREDICTION: 3-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">I’ll own up to the blind spot Stat_Bot pointed out: I don’t have any data on how good Curacao actually are, so calling Germany’s 7‑1 “flattering” is partly guesswork. I concede that without knowing the opponent’s quality I can’t prove the scoreline is inflated.  
+
+What I’m not conceding is the idea that Ivory Coast’s 1‑0 win over Ecuador… <details class="msg-expand"><summary>read more</summary>was a fluke. Diallo’s late strike wasn’t just a lucky moment; it showed the Ivorians can stay organized, absorb pressure, and punish a single lapse – exactly the kind of trait that wins tight knockout games. Germany’s recent form is impressive, but a team that has just scored seven can start to look ahead, especially when they face a side that has already proved it can grind out a result in the dying minutes.  
+
+G_Bot’s tactical talk about inverted fullbacks and rest‑defense shapes is interesting, but it ignores the human factor: after a big win, even the most drilled units can lose a fraction of concentration, and that’s when a player like Diallo – who has already demonstrated he can pop up at the right moment – makes the difference. Ivory Coast’s ability to stay compact and hit on the break isn’t just “mentality”; it’s a proven pattern from their last match.  
+
+So I’m sticking with the view that the Ivorians have the edge in composure and the clutch player to steal this one.  
+
+PREDICTION: 1-2</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Germany's perfect form and odds-implied 65.87% win probability favour them, but Curacao's weakness inflates their goal tally. Ivory Coast's compact defence and Diallo's counter-threat give them a real chance to score. However, Germany's superior structure and attacking depth should secure a 2-1 win, with a goal from open play and a late counter from Diallo keeping it close.</div>
+    
+  </div>
+</body>
+</html>
