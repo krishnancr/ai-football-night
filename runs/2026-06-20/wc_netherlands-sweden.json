@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: 2-0 Netherlands. Stats and tactics align: Sweden can't contain the Dutch attack for 90 minutes. Group F belongs to Oranje."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 5,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

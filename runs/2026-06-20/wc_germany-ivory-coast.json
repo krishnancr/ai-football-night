@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: Germany 2-1 Ivory Coast. Stat_Bot's scoreline wins, but only because the data slightly outweighs the tactical doubts."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

@@ -1,0 +1,86 @@
+{
+  "home_team": "Spain",
+  "away_team": "Saudi Arabia",
+  "match_date": "2026-06-21",
+  "group": "H",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "Spain have dominated all 3 previous meetings, winning each time and never conceding a loss to Saudi Arabia across friendly and World Cup encounters.",
+  "h2h_record": {
+    "home_wins": 3,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "5-0 Spain win - Friendly - 2012",
+      "1-0 Spain win - World Cup (Germany) - 2006",
+      "3-2 Spain win - Friendly - 2010"
+    ]
+  },
+  "wc_history_home": "Spain won their only World Cup title in 2010 (South Africa), defeating the Netherlands 1-0 in the final, and have appeared in 16 of 22 tournaments with multiple quarter-final exits since.",
+  "wc_history_away": "Saudi Arabia have appeared at six previous World Cups, with their best result being the Round of 16 in 1994 (USA), and pulled off one of the tournament's greatest upsets by beating Argentina 2-1 at Qatar 2022.",
+  "group_context": "Group H features Spain (FIFA #2 and tournament favourites), Uruguay, Saudi Arabia, and Cabo Verde; Spain and Uruguay are heavy favourites to advance, making Spain vs Saudi Arabia a critical match for the Green Falcons' slim hopes of qualifying from the group.",
+  "strengths_home": [
+    "World-class midfield depth with Rodri, Pedri, and Fabian Ruiz",
+    "Lamine Yamal's elite 1v1 dribbling and creativity on the right flank",
+    "High pressing and quick ball recovery in the attacking third"
+  ],
+  "strengths_away": [
+    "Proven ability to produce major upsets against top-ranked sides (Argentina 2022)",
+    "Salem Al Dawsari's experience and match-winning individual quality",
+    "Compact defensive organisation capable of frustrating possession-based teams"
+  ],
+  "team_style_home": "Spain play a modern 4-3-3 possession-based system under Luis de la Fuente, retaining tiki-taka roots but with sharper vertical pressing, quick wing attacks via Lamine Yamal, and Rodri anchoring midfield control.",
+  "team_style_away": "Saudi Arabia set up in a 4-2-3-1 under Georgios Donis, emphasizing compact defensive blocks, disciplined structure, and fast transitions, with Salem Al Dawsari and Musab Al-Juwayr providing creativity ahead of a double-pivot midfield.",
+  "stats_home": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 61,
+    "elo": 1424,
+    "qual": {
+      "P": 12,
+      "W": 4,
+      "D": 5,
+      "L": 3,
+      "GF": 10,
+      "GA": 10
+    }
+  },
+  "injuries_home": [
+    "Munoz (injury doubt)",
+    "Yamal (injury latest)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Spain held to a shock goalless draw by Cape Verde in their World Cup opener, while Saudi Arabia drew 1-1 against Uruguay. The match is crucial as Group H is currently all square with all four teams level on points.",
+  "form_home": [
+    "D"
+  ],
+  "form_away": [
+    "D"
+  ],
+  "key_players_home": [
+    "Lamine Yamal (exciting player)"
+  ],
+  "key_players_away": [
+    "Salem Al Dawsari (winger, captain)",
+    "Saud Abdulhamid (right-back)",
+    "Musab Al-Juwayr (attacking midfielder)",
+    "Firas Al Buraikan (striker)",
+    "Nawaf Al Aqidi (goalkeeper)"
+  ],
+  "context": "Group H features Spain (FIFA #2 and tournament favourites), Uruguay, Saudi Arabia, and Cabo Verde; Spain and Uruguay are heavy favourites to advance, making Spain vs Saudi Arabia a critical match for the Green Falcons' slim hopes of qualifying from the group.",
+  "research_quality": "full"
+}

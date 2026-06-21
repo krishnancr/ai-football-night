@@ -314,5 +314,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-0. Ecuador's defense holds, Caicedo unlocks it once."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }
