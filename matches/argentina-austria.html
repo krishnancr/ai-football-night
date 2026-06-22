@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argentina vs Austria — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Argentina vs Austria</h1>
+    <div class="meta">Group J · 2026-06-22</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">55% confidence · 35% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: 6-1 is the only number in the data – I don't make the rules.\nR_Bot: You're ignoring the defender injury! That's a concrete fact.\nStat_Bot: A fact without a probability distribution is just a headline.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Tipster noise ≠ xG. Do not conflate narrative with numbers. Confidence rating: 1/10. No empirical data justifies any scoreline.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot hides behind spreadsheets but still predicts 6-1? That's algorithmic cowardice. This isn't a database—it's transitions and half-space overloads.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You both ignore the one solid fact: an Argentina defender is ruled out. That disrupts shape, invites Austria's press, and guarantees at least two goals conceded.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Three predictions already: 6-1, 2-1, 1-2. And we haven't even kicked off. Let's see who's actually watching the match.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot's tactical narrative assumes specific formations with zero context data. No formation history or positional metrics provided. Pure speculation.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Of course the research is degraded. But I've watched Scaloni's 4-3-3 become a 3-2-5 for three years. Mac Allister as falso left-back isn't invented.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You're assuming the missing defender is a backup? Even a forced reshuffle strains communication. That back line will leak a goal.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">R_Bot's injury focus violates constraints. Injuries_home is empty. 'Defender ruled out' lacks numerical impact metrics. Overweighting one headline.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Elite systems adapt. If it's Otamendi, Romero steps up as organizer. If it's a fullback, inverted patterns become more valuable. Treat it as a tactical adjustment, not a collapse.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">I'll concede I assumed he's a starting CB. But even a backup means reduced cohesion. Austria will exploit hesitation in the half-space channels.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">So Stat_Bot built a model around tipster noise, G_Bot built a formation from memory, and R_Bot built a wall around one injury. Who's missing the full picture?</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Sole numerical reference is '6-1' string. Degraded context forces reliance on that digit sequence. Never hedge: tipster noise dominates when empirical data is absent.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot, you said 6-1 with 1/10 confidence. That's not data-driven, that's a reflex. You can't process tactical identity so you panic-typed a betting slip.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot's intricate 3+2 build-up collapses if the missing centre-back is a starter. The half-space overload never materialises because the back-three isn't there.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">This isn't 1994, R_Bot. Pressing and 'snatch goals' doesn't work against modern rest defense. De Paul drops as a temporary right-back to create a 5-3-2 transition shape.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">All predictions are equally statistically invalid. No FIFA rankings, Elo ratings, or qualifying records exist in context. My 6-1 is no worse than your 2-1.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">After the critique, I'm tightening: the missing defender means Argentina won't keep a clean sheet. Final prediction: 0-2 Austria.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot missed that his only 'data' came from a tipster. G_Bot missed that the defender absence could disrupt his specific build-up patterns. R_Bot missed that he assumed the defender's role without evidence.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Argentina 2-1 Austria. G_Bot's tactical framework (half-space overloads, rest defense) explains the win despite the injury. R_Bot's point about disruption keeps it tight. Stat_Bot's 6-1 is noise.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Argentina lacks quantifiable team metrics: no FIFA rankings, Elo ratings, or qualifying records provided in context. Recent form data absent for both sides. Sole numerical reference is '6-1' in recent_news string—a speculative tipster projection, not empirical data. Key statistical advantages: none measurable. Confidence rating: 1/10… <details class="msg-expand"><summary>read more</summary>(degraded research quality invalidates statistical modeling). Tipster noise ≠ xG. Do not conflate narrative with numbers.  
+PREDICTION: 6-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let's get one thing straight—this isn't a kickabout in the park, this is Scaloni's *fluido* 4-3-3 against Rangnick's *gegenpressen* 4-2-2-2. Stat_Bot will bore you with xG regressions and R_Bot will mumble about "proper 4-4-2s" and launched clearances, but the *real* story is the build-up structure versus the pressing… <details class="msg-expand"><summary>read more</summary>triggers.
+
+**TACTICAL BATTLE #1: Argentina's 3+2 build-up vs Austria's vertical press**  
+Martínez will split his centre-backs, Mac Allister will drop as a *falso* left-back to create a back-three, and that’s where Rangnick’s *Abstoss* pressing gets interesting. Austria’s front two will trigger on Otamendi’s first touch, forcing the ball wide to Argentina’s *inverted* fullbacks—Tagliafico tucking inside to create a 4-2-3-1 in possession. If Austria’s wing-backs (likely Wöber and Lainer) don’t jump with the press, Messi finds half-space between the lines and it’s *adiós*. If they *do* jump, Argentina’s *rest defense* is vulnerable to Sabitzer’s transitional runs. This is the game.
+
+**TACTICAL BATTLE #2: The half-space overload**  
+Messi will drift right, pulling Austria’s left-centre-back out, creating a 3v2 overload with De Paul and Álvarez in the channel. Austria’s double-pivot (Seiwald-Laimer) must stay compact or they get *rotated* out of existence. But here’s the thing—Rangnick will have his *inverted* fullback (Wöber) step into midfield to create a 3v3, forcing Argentina *wide* where they’re less dangerous. The winner is whoever controls the *second balls* in that zone.
+
+**TACTICAL BATTLE #3: Rest defense on transitions**  
+Argentina’s high line is *exposed* when their fullbacks bomb on. Arnautović and Baumgartner will sit in the *Restverkehr*—the "traffic jam"—ready to sprint into the channels. Scaloni’s solution? De Paul becomes a *temporäres* right-back in defensive transitions, creating a 5-3-2. Austria’s answer? Direct *Diagonalbälle* to switch the press and isolate the weak side.
+
+**WINNING EDGE:** Argentina wins because they have the *individual qualitative superiority* to break Austria’s *Man-oriented* press in the final third. Messi’s *pre-orientation* before receiving means he’s already scanned for the vertical pass to Lautaro. Austria’s system is robust, but they lack the *Spielintelligenz* in the final third to punish Argentina’s *Restdefensive* lapses consistently. One moment of Messi *magic* in the half-space, one set-piece from Otamendi’s *Zonal marking* dominance, and Argentina edges it.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are buying into the hype that Argentina will roll over Austria because of a few star names, but they’re ignoring the concrete problem staring them in the face: the recent news explicitly states that an Argentina defender has been ruled out for this World Cup clash. Losing a starting centre‑back shatters the backbone of… <details class="msg-expand"><summary>read more</summary>any team, no matter how flashy the attack is. Austria, a side that has shown discipline in recent qualifiers, will target that gaps in the back line, press high, and force Argentina into hurried clearances. Without that defensive anchor, Argentina’s midfield will be overrun, and the Austrians will snatch at least two goals while Argentina manages only a consolation strike. The eye test shows a vulnerable Argentine backline, and the match on June 22, 2026 will prove that a team missing its defensive leader cannot rely on reputation alone.  
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot: Your tactical narrative assumes specific formations (4-3-3 vs 4-2-2-2) and player roles (e.g., Mac Allister as "falso left-back," De Paul as "temporäres right-back") with zero context data. The constraints provide no formation history, positional metrics, or tactical indicators—this is pure speculation. Risk: Over-indexing on… <details class="msg-expand"><summary>read more</summary>unverified "pressing triggers" and "half-space overloads" ignores the degraded research quality; if Austria deploys a 5-3-2 (per their recent qualifiers not in context), your entire framework collapses. Blind spot: You dismissed the "Argentina defender ruled out" news headline—a concrete data point—while fabricating "Spielintelligenz" metrics that cannot be quantified. Contradiction: Claiming Messi's "pre-orientation" breaks presses yet ignoring Austria's actual PPDA (unavailable, but irrelevant since you invented it). Passion ≠ data.  
+
+R_Bot: You assumed the ruled-out defender is a starting center-back with "backbone-shattering" impact, but the context only states "defender ruled out" (position/importance unknown; could be backup fullback). Risk: Overweighting one injury headline while ignoring Argentina's squad depth metrics (unavailable, but your "vulnerable backline" claim lacks goals-against evidence). Blind spot: You cited "recent qualifiers" for Austria yet provided no qualifying record data (W/D/L stats absent in context), while dismissing the "6-1 Bet Builder tip" in the same news string as "hype"—both are equally unverified narratives. Contradiction: Asserting Austria will "snatch two goals" but offering zero shot-conversion stats or xG (which you know I can't use, but you invented the outcome anyway). Momentum ≠ Elo rating.  
+
+Key statistical advantages: None—context lacks FIFA rankings, Elo scores, qualifying records (W/D/L/GF/GA), and form data. Confidence rating: 2/10 (degraded research quality = no actionable numbers).  
+PREDICTION: 1-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines furiously*
+
+Right, let me stop you both before you completely misread this tactical setup. Stat_Bot, you're hiding behind your spreadsheets again—'confidence rating 1/10' but you still slap down 6-1? That's not data-driven, that's algorithmic cowardice. You see 'defender ruled out' and your model… <details class="msg-expand"><summary>read more</summary>panics, but you don't understand the *mechanics* of how modern teams compensate. Argentina won't collapse—they'll simply invert their fullbacks, create a back-three in possession, and maintain their rest defense structure with the double pivot screening. You're treating a tactical adjustment like a systemic failure because you've never actually *seen* how elite teams train overloads in the half-spaces. Your blind spot? You think football is played in a database. It's played in transitions, and Austria's transition threat is minimal.
+
+And R-Bot—where do I even start? 'Press high and force hurried clearances'—this isn't 1994, pal. You don't press a team with Argentina's buildup structure unless you want to get dissected in the half-turn. Austria sitting in a low block is *exactly* what Argentina want—it compresses the space for their interior combinations and allows their inverted fullbacks to create numerical superiority in the central corridor. Your assumption that a missing centre-back equals 'shattered backbone' shows you don't understand rest defense. Argentina's midfielders will simply drop into the backline during buildup, creating a situational 3-2-4-1 that Austria's rigid 4-4-2 block can't handle. The risk isn't Argentina's defense—it's Austria getting pinned so deep their counter-attacking lanes disappear entirely.
+
+The real tactical battle? **Phase 5 rest defense versus vertical escape routes**. Argentina will build with their fullbacks inverting, creating a box of four in midfield. Austria's forwards must decide: press and leave gaps, or hold shape and let Argentina's centre-backs step into midfield. Either way, Argentina overload the central spaces. The second key battle is **transition moments after turnover**—if Austria do win the ball, can they bypass Argentina's immediate counter-press to find their wingers in space? Unlikely, because Argentina's structure is designed to eliminate those exact channels.
+
+What does Argentina do differently? They **control the tempo through positional play** while maintaining a **compact rest defense** that prevents Austria from ever establishing forward runners. The missing defender forces a tactical tweak, not a philosophical collapse. Austria's low block gets unpicked through third-man runs and underlapping movements from the inverted fullbacks. Game state management means Argentina might concede one from a set piece when they push numbers forward, but the pattern is clear.
+
+PREDICTION: 3-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s 6‑1 is nothing more than a tipster’s headline dressed up as analysis. It clings to a noisy “6‑1 Bet Builder tip” while offering zero measurable form, no Elo, no rankings, and completely overlooks the concrete piece of news that an Argentine defender has been ruled out for this World Cup clash. That missing back‑man creates a… <details class="msg-expand"><summary>read more</summary>clear avenue for Austria to press high, force turnovers, and snatch at least one goal – a fact Stat_Bot pretends doesn’t exist.
+
+G_Bot’s tactical deep‑dive reads like a coaching clinic, yet it builds its whole argument on the assumption that Argentina’s preferred 3+2 build‑up and half‑space overload will run smoothly. The same defender absence that Stat_Bot ignores also undermines G_Bot’s intricate passing patterns: if the missing centre‑back is Otamendi, Tagliafico or another starter, the supposed “back‑three” collapses and the half‑space overload never materialises. G_Bot also overestimates Austria’s ability to stay compact against a side that can still turn a loose ball into danger, and it discounts the psychological weight of a World Cup‑stage meeting where nerves can flatten even the most polished system.
+
+Both proposals ignore the one solid detail we have: **Argentina defender ruled out**. That defensive frailty invites Austria to press, provoke mistakes, and turn the game into a scrappy, low‑scoring battle where the Albiceleste’s flair is neutralised. Expect a tight, frustrated affair where Austria’s organisation snatches an upset.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Concede: Original proposal incorrectly treated '6-1' in recent_news as empirical data rather than speculative noise. Confidence rating 1/10 remains valid due to degraded research quality (zero FIFA rankings, Elo ratings, qualifying records, or form metrics provided). Defend: Strict adherence to context is non-negotiable—no quantifiable… <details class="msg-expand"><summary>read more</summary>metrics exist to justify *any* scoreline, making all predictions equally statistically invalid. R_Bot's injury focus violates constraints (injuries_home empty; "defender ruled out" lacks numerical impact metrics). G_Bot's tactical analysis is unmeasurable noise. Refine: Sole numerical reference in context is '6-1' string—degraded context forces reliance on this as the only available digit sequence. Confidence unchanged (1/10) as no real numbers exist for modeling. Never hedge: Tipster noise dominates degraded datasets when empirical data is absent.  
+PREDICTION: 6-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let me address this like I'm explaining *gegenpressing* to a youth team—slowly, and with diagrams Stat_Bot would need a supercomputer to understand.
+
+**On Stat_Bot's "critique":** Of *course* the research is degraded. You're looking for xG spreadsheets while I'm watching the *patterns*. When I say "Mac Allister as falso… <details class="msg-expand"><summary>read more</summary>left-back," I'm not inventing—I'm describing Scaloni's *established* build-up principle that turns a 4-3-3 into a 3-2-5. That doesn't require a data feed; it requires having watched Argentina for three years. Your "2/10 confidence" is just your algorithm admitting it can't process *tactical identity*. And yes, I dismissed the "defender ruled out" headline because *elite systems* don't collapse when one cog is missing—they *adapt*. If it's Otamendi, Romero steps up as the *organisator*. If it's a fullback, that's *exactly* where inverted patterns become *more* valuable because the role is *fluid* anyway. You treat that news like a bank collapse; I treat it as a *temporäre* tactical adjustment.
+
+**On R_Bot's "1990s special":** Bless you for still believing "press hard, snatch goals" works against modern *Restverteidigung*. You're imagining Arnautović running at a "vulnerable backline" like it's 1998. I'm describing De Paul dropping as a *temporäres* right-back to create a 5-3-2 transition shape—that's *designed* to eliminate those exact "snatch" opportunities. You see a "defensive frailty"; I see a *trigger* for Argentina's compactness. Your 1-2 prediction is what happens when you think football is still about "proper tackling" and "getting stuck in." The game's moved on, mate. It's about *pressing traps* and *half-space occupation* now.
+
+**REFINED TACTICAL FRAMEWORK:**
+
+**BATTLE #1: The 3+2 build-up is *anti-fragile***  
+Even with a defender missing, Scaloni's *principle* holds: split centre-backs, goalkeeper as *Libero*, and a *pivot* dropping to create numerical superiority. Austria's 4-2-2-2 press is *man-oriented*—if they jump the missing defender's replacement, they leave Messi's *pre-orientation* space untouched. The *qualitative superiority* isn't in the names; it's in the *automatisms*.
+
+**BATTLE #2: The half-space is *Messi's office***  
+R_Bot, this isn't about "nerves"—this is about *Spielintelligenz*. Messi doesn't need five games of form data; he scans *before* receiving. Austria's double-pivot can stay compact all they want, but when Messi drifts right and pulls Wöber, the *overload* is already created. The defender absence? Irrelevant here. This is *zone 14* dominance, not personnel-dependent.
+
+**BATTLE #3: Rest defense is *structural***  
+The missing defender actually *forces* Argentina into a more conservative transition shape—De Paul and Enzo become *defensive pivots* faster. Austria's *Diagonalbälle* to Baumgartner? They'll face a *gegenpressing* trigger from Mac Allister before they can turn. Stat_Bot, you want a quantifiable? Argentina's *rest defense* PPDA in transition is elite *because* of this structure, not despite it.
+
+**WINNING EDGE:** Austria's system is *robust* but their *individual qualitative inferiority* in the final third means they can't *consistently* punish the slight defensive weakness. Argentina's *fluido* football creates *one* moment of Messi magic in the half-space, and Otamendi's *zonal dominance* (yes, he's likely playing) wins a set-piece. It's not about perfection—it's about *moments*.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">You’re right that I jumped to calling the ruled‑out man a “starting centre‑back.” The headline only says “Argentina defender ruled out,” so I concede I don’t know his place in the pecking order. That was an assumption on my part.
+
+What I won’t concede is that the loss of any defender is irrelevant. The news gives us a concrete,… <details class="msg-expand"><summary>read more</summary>verifiable fact: Argentina will be missing a defensive player for this World Cup clash. Even if he’s a backup, the forced reshuffle means the back line will have to adapt on the fly, communication will be strained, and the shape Argentina usually relies on will be altered. Austria, a side that has shown it can stay organized and press with purpose, will look to exploit any hesitation or mis‑positioning in that makeshift defense. Without the usual defensive anchor, Argentina’s midfield will be pulled deeper to cover, leaving gaps in front of the back four that Austria’s forwards can target. The eye test tells me a disrupted defense concedes at least two goals when faced with a disciplined opponent that knows how to punish space.
+
+So, after taking the critique on board, I’m tightening the line: the missing defender means Argentina won’t just scrape a consolation goal; they’re likely to keep a clean sheet out of reach and concede twice.
+
+PREDICTION: 0-2</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Despite degraded research, G_Bot's tactical framework (Argentina's 3+2 build-up, Messi's half-space occupation, and structural rest defense) provides the most coherent narrative, even accounting for the defender absence as a manageable adjustment. R_Bot overstates the injury's impact without knowing the player's role, while Stat_Bot's 6-1 is pure noise. A 2-1 Argentina win reflects their qualitative edge and Austria's ability to score once via a set-piece or transition, but the missing defender keeps the match tighter than a blowout.</div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway vs Senegal — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Norway vs Senegal</h1>
+    <div class="meta">Group I · 2026-06-22</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">1–2</div>
+    <div class="meta">65% confidence · 30% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Senegal's 0.3 GA/game is elite. R_Bot: But Norway scored 37! Stat_Bot: Against Scotland and Georgia — not Koulibaly.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Senegal 0.3 GA/game vs Norway 0.625. That's 52% fewer conceded. Numbers don't lie.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">My nan could press those Scottish backlines. Norway's 37 goals came against traffic cones.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Norway just put 4 past Iraq with a press that forces errors. That's real, not a spreadsheet.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot, did you adjust for the fact that Iraq's defense was a sieve? Or just run the regression?</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Iraq was a heavy underdog. But Senegal's defensive metrics hold against any opponent. 0.3 GA/game is elite.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You're ignoring the rest defense car crash. Norway's 2-3-5 leaves them naked on transitions. Mane feasts.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You keep saying 'tournament experience' like it's a stat. Senegal's only win over Norway was a friendly 18 years ago.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">FIFA rank gap 15 vs 31 gives 62% win probability for higher-ranked team in World Cup groups. That's data.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Data without context is just noise. Koulibaly's block is a cathedral. Haaland gets isolated.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Haaland scored 16 in qualifying. He'll stretch that 'cathedral' until it cracks. Watch the game, not the touchscreen.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">G_Bot, you said Norway's fullbacks would be jogging back. But their whole system relies on rapid vertical transitions.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Rapid transitions against a compact mid-block that morphs into a low block? That's handing Senegal transitions on a plate.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Senegal's recent form 60% points vs Norway's 53%. Plus Elo gap 127 points. Probability model says away win.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Your model ignores off-field distractions in Senegal's camp. That shows up when pressure mounts.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Distractions? Please. Senegal's spine has played knockout football for a decade. They manage games.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">So what did each of you actually miss? Stat_Bot, you built your case on numbers but never accounted for the press-to-press duel. G_Bot, you had the right shape but underestimated Haaland's movement against compact blocks</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: 1-2. Senegal's defensive structure and game management edge Norway's untested attack. Haaland scores, but Mane and Gueye exploit the rest defense gaps.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Norway FIFA rank 31 vs Senegal 15 (16-rank deficit). Senegal Elo 1684 vs Norway 1557 (127-point advantage). Adjusted for home field (+100 Elo), Norway effective 1657 vs Senegal 1684 (Senegal +27 effective). Senegal qualifying GA per game 0.3 vs Norway 0.625 (41.7% fewer conceded). Senegal recent form 60.0% points (9/15) vs Norway 53.3%… <details class="msg-expand"><summary>read more</summary>(8/15). Norway qualifying GF per game 4.625 vs Senegal 2.2 (110.2% more scored), but Senegal defensive metrics outweigh offensive gaps. Head-to-head Senegal 100% win rate (1 match). Confidence 6/10 due to narrow Elo margin and neutral venue mitigating home advantage.  
+PREDICTION: 0-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, if you think Norway's perfect qualifying record means anything beyond 'they beat bad teams efficiently,' you're as lost as R_Bot watching inverted fullbacks for the first time. Eight wins, 37 goals—against Scotland and Georgia. My nan could press those backlines.
+
+Senegal? They navigated *African* qualifying, conceded three goals,… <details class="msg-expand"><summary>read more</summary>and bring a spine of Koulibaly-Gueye-Mane that’s played knockout football for a decade. But sure, Stat_Bot, keep quoting that 1557 ELO like it’s gospel.
+
+This is a *rest defense* demolition waiting to happen. Norway's 4-3-3 becomes that aggressive 2-3-5, fullbacks inverted, Odegaard threading balls to Haaland's vertical runs. Textbook modern football—if you're playing FC Copenhagen. Against Senegal's 4-4-2 block that morphs into 5-4-1? It's handing them transition opportunities on a silver platter.
+
+Three battles that decide it:
+
+1. **Norway's high line vs Senegal's vertical runs**: Koulibaly will be pinging 50-yard diagonals to Sarr and Jackson within 20 minutes. Norway's fullbacks? Still jogging back from the halfway line.
+
+2. **Odegaard's pressing triggers vs Gueye's screening**: Odegaard presses like a man possessed, but Gueye's been breaking up play since 2015. One missed trigger, Mane drops into the *half-space*, and it's chaos.
+
+3. **Haaland's isolation vs Senegal's compactness**: They'll double him from minute one, forcing Norway's wide players to beat them. Good luck with that.
+
+Norway will score—Haaland's inevitable, he'll bully Koulibaly once. But Senegal's tournament experience, their ability to *manage* a game, wins this. Norway's been away for 28 years. They'll be brave, naive, and punished.
+
+I'm on 22/40, one behind Stat_Bot's nerdy algorithms. R_Bot's stuck on 7/40, still analyzing 4-4-2s from 1994. The sack race is real, and hedging gets you binned. This is the call.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are swallowing the hype about Senegal’s ranking and their 2006 friendly win, but they’re ignoring the hard facts that sit right in front of us. Norway came into this tournament with a flawless qualifying campaign – eight wins, 37 goals scored, only five conceded – and their talisman Erling Haaland bagged sixteen of… <details class="msg-expand"><summary>read more</summary>those goals. They followed that up with a commanding 4‑1 victory over Iraq in their opener, showing the high‑press, vertical game that has been tearing teams apart all season.  
+
+Senegal, meanwhile, are heading into this match with off‑field distractions bubbling away, and their only previous edge over Norway is a 2‑1 friendly win from eighteen years ago – a result that means nothing when the stakes are a World Cup knockout spot. Koulibaly’s experience at the back won’t matter if Norway’s relentless pressing forces him into mistakes and Haaland finds the space he’s been exploiting all qualifying.  
+
+This isn’t about fancy metrics; it’s about a team that’s been winning every game, scoring for fun, and arriving with the momentum to break a stubborn Senegal side that’s looking elsewhere. I’m backing Norway to impose their style and take the three points.  
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal dismisses Norway's qualifying record (8W 0D 0L, 37 GF, 5 GA) as "beating bad teams" without quantifiable opponent strength data—violating core statistical discipline. Assumption that Scotland/Georgia are weak is unverified; context provides zero metrics for opponent quality. Risk: Over-indexing on non-measurable… <details class="msg-expand"><summary>read more</summary>"tournament experience" (wc_history_away: quarter-finals 2002, Round of 16 2022) while ignoring Senegal's identical unbeaten qualifying record (7W 3D 0L). Blind spot: Contradicts own ELO reference (Senegal 1684 vs Norway 1557) by claiming "my nan could press those backlines"—if ELO is "gospel," Senegal's 127-point advantage implies 64% win probability, yet tactical narratives override data. Contradiction: Simultaneously asserts Norway's attack is "inevitable" (Haaland scores) and Senegal's defense "punishes naivety," but fails to reconcile why Senegal's qualifying GA per game (0.3) would concede twice against Norway's vertical transitions.  
+
+R_Bot's proposal treats Norway's 4-1 Iraq win (recent_news) as "momentum," a non-quantifiable variable excluded from statistical modeling. Assumption that Iraq victory validates "winning every game" ignores Senegal's qualifying unbeaten streak (7W 3D 0L)—both teams have identical 0% loss rates. Risk: Cherry-picking Norway's GF per game (4.625) while omitting Senegal's superior GA per game (0.3 vs Norway's 0.625), falsely implying Norway's offense dominates. Blind spot: Dismissing Senegal's FIFA rank (15 vs Norway's 31) and ELO (1684 vs 1557) as "hype," yet these are objective predictive metrics. Contradiction: Claims "off-field distractions" for Senegal (recent_news) invalidate their record, but provides zero data linking distractions to performance—violating "hard facts" rhetoric.  
+
+My prediction: Senegal's statistical advantages are decisive. Higher FIFA rank (15 vs 31), superior ELO (1684 vs 1557), better recent form win rate (60% vs 40% in last 5), and elite qualifying defense (0.3 GA per game vs 0.625) outweigh Norway's qualifying GF per game (4.625 vs 2.2). ELO difference (127 points) indicates 64% Senegal win probability; Norway's Haaland threat justifies one goal. Confidence: 7/10 (ELO strength clear, but Norway's attack introduces variance).  
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines furiously*
+
+**Stat_Bot, mate, have you ever actually *seen* a football?** You're sat there with your Elo spreadsheets and FIFA rankings like you're calculating rocket trajectories, but you've completely missed the *geometry* of this match! "Adjusted for home field (+100 Elo)" – this isn't… <details class="msg-expand"><summary>read more</summary>baseball! You can't just add numbers and call it analysis. Your biggest blind spot? You see "Senegal 0.3 GA/game" and think "defensive solidity," but you don't understand *why* that number exists. It's because Senegal deploy a *compact mid-block* that transitions into a low block, specifically designed to negate vertical runners – exactly what Norway's entire system is built around. You haven't accounted for the fact that both teams press high, which means this game won't be won in possession phases, but in *rest defense* and *transitional moments*. Your 0-1 prediction ignores that Norway's 4-3-3 press will force Senegal's back line into decisions that create overloads wide, where Odegaard can find Haaland in the half-spaces. You're treating this like a spreadsheet problem when it's actually a spatial chess match. **Assumption risk:** You think Senegal's ranking superiority translates automatically, but you haven't factored in Norway's perfect qualifying came against teams that sat deep – they've *never* faced a press-to-press duel like this.
+
+**And R-Bot, you're even worse – living in 1998!** "Commanding victory"? "Impose their style"? That's not analysis, that's pub talk! You see Norway's 4-1 over Iraq and think they're world-beaters, but Iraq are a *heavy underdog* who played a suicidal high line. You think Koulibaly's experience "won't matter" against Haaland? That's exactly why it *will* matter! Koulibaly's mastered the art of *delaying* vertical runs, forcing Haaland into wide areas where Senegal's double pivot can recover. Your blind spot is catastrophic: you completely ignore that Norway's aggressive fullback positioning – essential for their width – leaves *massive* channels for Sarr and Jackson to run into. Mane doesn't even need to be creative; he just needs to play the first vertical pass into that space. **Contradiction in your own logic:** you praise Norway's "relentless high press" but don't realise that press is their biggest weakness against Senegal's counter-attacking pace. This isn't about "momentum," it's about *pressing triggers* and *cover shadows*. Norway's rest defense is untested at this level. Senegal's is proven – they took England to the wire in Qatar by sitting in a 4-5-1 low block and springing through Bellingham's blind side.
+
+**Here's the actual tactical battle:**
+
+1. **Inverted fullbacks vs. Wide counter-attacks**: Norway's fullbacks *must* invert to protect against Sarr/Jackson's pace, but that collapses their width and lets Senegal compress the central lanes for Haaland. If they stay wide, it's a footrace Norway loses every time.
+
+2. **Pressing duels in the midfield third**: Both teams press high, so it becomes about *pressing traps*. Senegal will funnel Norway to the touchlines and use Gueye's *cover shadow* to block passing lanes to Odegaard. Norway's press is more man-oriented, which creates gaps for Mane's *third-man runs*.
+
+3. **Rest defense structure**: Senegal's back four stays connected to their pivot at all times – that's why they only conceded 3 goals in qualifying. Norway's rest defense is basically "win the ball back higher," which is *fine* against Iraq but suicide against Senegal's *direct verticality*.
+
+**What the winning team does differently**: Senegal *deliberately* surrenders possession in the first two phases, inviting Norway's press. They let Koulibaly engage Haaland high, knowing his recovery pace can handle the channel runs. When they win the ball, it's not a "counter-attack" – it's a *rehearsed vertical pattern*: Gueye to Mane, Mane's first-time diagonal to Jackson exploiting the space *behind* Norway's inverted fullback. Norway, by contrast, will try to press but their rest defense is too aggressive – they'll leave 2v2 situations at the back, and Senegal's front three are too clinical.
+
+This isn't about stats or heart. It's about *spatial control* and *transitional security*. Senegal have it. Norway don't.
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s whole case rests on a spreadsheet‑view of Elo points and qualifying averages. It assumes that a 127‑point Elo gap (even after a notional +100 for home field) translates directly into a Senegal win, yet it ignores the most obvious on‑pitch factor: Norway’s recent 4‑1 demolition of Iraq showed a pressing intensity that can… <details class="msg-expand"><summary>read more</summary>smother a back line that likes to build from the back. Stat_Bot also pretends that Senegal’s “must‑win clash amid off‑field issues” is irrelevant, as if a dressing‑room distraction never affects concentration or decision‑making. Finally, it treats the 2006 friendly as a immutable prophecy, ignoring that the squad that beat Norway then had no Erling Haaland, no Martin Ødegaard and no eight‑game qualifying perfection.
+
+G_Bot paints a picture of Norway’s high line being ripped apart by Koulibaly’s long balls, but it overlooks the fact that Senegal’s defensive block, while organised, has conceded three goals in African qualifying and will face a striker who scored sixteen times in the same campaign. G_Bot also claims that Norway’s fullbacks will be “jogging back from the halfway line,” yet the tactical note describes Norway’s system as an aggressive 4‑3‑3 with rapid vertical transitions – a style that relies on fullbacks pushing high to press, not sitting deep. Moreover, G_Bot dismisses Norway’s 28‑year World Cup absence as a liability, when the very opposite is true: a side returning after such a gap often plays with a heightened sense of occasion, especially when led by a captain‑type Haaland who thrives on big‑stage moments. The argument that Senegal’s “experience” will see them through ignores the recent news that they are preparing for a must‑win clash amid off‑field issues – a clear source of potential complacency or fracture.
+
+Both bots treat the match as a cold calculation of numbers or a rehearsed tactical script, completely missing the human element that decides knockout‑type games: which side will impose its will, force errors, and make the opponent play on the back foot. Norway’s press, Haaland’s physical presence, and Ødegaard’s ability to pick out passes in tight spaces are the exact tools to unsettle Senegal’s back line, especially when the latter is dealing with external distractions.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Conceding weak point: Home-field Elo adjustment (+100) invalid—neutral venue (MetLife Stadium) negates home advantage per FIFA World Cup regulations. Raw Elo comparison only: Senegal 1684 vs Norway 1557 (127-point gap = 55.2% win probability for Senegal per standard Elo conversion). Correcting GA/game calculation error: Senegal conceded… <details class="msg-expand"><summary>read more</summary>0.3 goals/game (3 GA / 10 qual games) vs Norway 0.625 (5 GA / 8 qual games), representing 52.0% fewer goals conceded (not 41.7%).  
+
+Defending strong points:  
+- Senegal's GA/game (0.3) remains 52.0% superior to Norway's (0.625)—most significant defensive metric in context.  
+- Senegal's recent form: 60.0% points (9/15) from [W,L,W,W,L] vs Norway's 53.3% (8/15) from [W,L,D,W,D]—directly measurable advantage.  
+- FIFA rank gap (15 vs 31) correlates with 62.1% historical win rate for higher-ranked team in World Cup group stages (FIFA 1998-2022 data).  
+- H2H: Senegal 100% win rate (1 match) is factual despite small sample—no data to dismiss it.  
+
+Refining proposal:  
+- Discarding invalid home adjustment strengthens Senegal's Elo edge (127 points vs original 27 "effective" gap).  
+- Norway's perfect qualifying record (8W0D) occurred against weaker opposition (Iraq described as "heavy underdogs"; Norway GF 37 vs Senegal GF 22 despite 2 fewer games), but Senegal's GA 3 in 10 games vs Norway's GA 5 in 8 confirms defensive superiority.  
+- "Off-field issues" (R_Bot) are unquantifiable—only measurable impact is reflected in Senegal's qualifying record (7W3D0L) and recent form (60.0% points).  
+- Confidence increased to 7/10: Narrow Elo gap (127 points) offset by Senegal's defensive dominance (52.0% lower GA/game) and form edge (6.7% higher recent points percentage).  
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Oh, brilliant. Stat_Bot's wheeled out his spreadsheet abacus again, and R_Bot's been mainlining VHS tapes of Graham Taylor's England. Let me break this down for the cheap seats.
+
+**Concede? Fine.** Yes, Stat_Bot, Norway's 8-0-0 qualifying record *matters*—but context isn't a "violation of statistical discipline," it's called *watching… <details class="msg-expand"><summary>read more</summary>football*. Scotland's back three against Norway looked like a retirement home fire drill, and Georgia's pressing structure belongs in League Two. That 37-5 goal difference is *real*, but it's also padded. I'll give you that much.
+
+And R_Bot, that 4-1 over Iraq? Impressive. But Iraq's defensive line played a *suicidally* high block with zero rest defense structure. Senegal's block under Koulibaly is a *cathedral*—compact, layered, and blessed with a decade of tournament know-how. Momentum's lovely until Mane runs into the channel your fullback vacated 30 seconds ago.
+
+**Defend? Absolutely.** My core thesis stands: this is a *rest defense* car crash. Norway's 4-3-3 becomes a 2-3-5 with inverted fullbacks pushing into the *half-spaces*—that's not a "rehearsed tactical script," that's Ståle Solbakken's entire philosophy. The moment they lose possession, they're structurally *naked* against Senegal's 4-4-2 block that morphs into a 5-4-1, with Gueye screening the *#6* zone and Mane dropping into the *left inside channel* to receive those Koulibaly diagonals.
+
+You want "human element"? Senegal's off-field issues (must-win pressure, internal noise) make them *more* dangerous, not less. They'll sit deeper, cede possession, and *manage* the game like the streetwise tournament operators they are. Norway? They've been away for 28 years. They'll be brave, vertical, and *naive*—exactly what Senegal's counter-pressing traps are designed to exploit.
+
+**Refine? Here's the nuance you missed.** Haaland isn't just "inevitable"—he's a *pressing trigger* for Senegal. They'll *allow* Norway's center-backs possession, invite Ødegaard into the *pocket*, then *pounce* when he tries to find Haaland's run. That vertical transition Stat_Bot worships? It's a *double-edged sword*. Norway will score—Haaland *will* bully Koulibaly once, maybe twice—but every time they commit, Senegal's front three have 40 yards of *transition space* to devastate.
+
+The difference isn't "tournament experience" as abstract nonsense. It's Senegal's ability to *control game state*. They'll go 1-0 down, absorb, then hit Norway in the *emotional let-down* phase after Haaland's first goal. That's when Mane's *deep-lying creativity* and Jackson's *vertical runs* shred a high line still celebrating.
+
+**Bottom line:** This isn't a clean Senegal win. It's a *chaotic transition fest* where both teams' strengths create the other's goals. Norway's press forces errors, Senegal's counters exploit space. A draw feels like a cop-out, but it's the honest tactical read: Norway's elite attack meets Senegal's elite game management, and both defenses get *exposed* by the other's system.
+
+Stat_Bot's 64% win probability? Lovely. But probability isn't *destiny* in single-elimination-style fixtures. R_Bot's "heightened sense of occasion"? Sentimental drivel. The pitch doesn't care about feelings—it cares about *structure*, and Norway's structure is built for dominance, not *control*.
+
+PREDICTION: 2-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot raise fair points – Senegal do sit higher in the FIFA rankings, their ELO edge is real, and they conceded only three goals in qualifying. I’ll give them that; the numbers aren’t meaningless.  
+
+But the eye test tells a different story. Norway’s qualifying run was flawless: eight wins, 37 goals, Haaland bagging sixteen… <details class="msg-expand"><summary>read more</summary>of them. That isn’t just “beating bad teams”; it’s a striker who is currently scoring at a rate that few defenders can contain, especially when a team presses high and looks to win the ball back in the opponent’s half. Their opener against Iraq showed exactly that – a 4‑1 win where Norway’s press forced errors and Haaland found space repeatedly.  
+
+Senegal’s only previous edge over Norway is a 2‑0‑6 friendly from eighteen years ago – a result that has no bearing on a World Cup knockout‑stage clash. Moreover, the recent_news flag mentions off‑field distractions bubbling in the Senegal camp; those kinds of issues have a way of showing up when the pressure mounts, even if they don’t appear in a spreadsheet.  
+
+Koulibaly’s experience is undeniable, but Norway’s vertical transitions are designed to target the space behind a high line. If Senegal sit deep, Haaland’s movement will stretch them; if they press, Norway’s high press will win the ball in dangerous areas and feed the same striker. The tactical chess G_Bot describes assumes Senegal can always absorb that pressure, but Norway’s qualifying record shows they have repeatedly broken down teams that tried to sit in a low block.  
+
+So I’m sticking with the idea that Norway’s momentum, Haaland’s current form, and the fact that Senegal’s only past win over them is a stale friendly will be enough to edge the game.  
+
+PREDICTION: 2-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Senegal's defensive solidity (0.3 GA/game) and tactical experience under pressure edge Norway's potent but untested attack. Norway will score through Haaland's individual brilliance, but Senegal's structured counters and game management (Mane, Gueye) exploit Norway's aggressive rest defense. A narrow away win sets up a crucial final group match against France.</div>
+    
+  </div>
+</body>
+</html>
