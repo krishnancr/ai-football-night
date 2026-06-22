@@ -307,5 +307,12 @@
       "role": "K_Bot",
       "text": "Alright, let me break down what you all missed. Stat_Bot: you built the whole model around defensive stats but ignored that NZL's 2-2 with Iran shows they can score against disciplined blocks. G_Bot: you had the right re"
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 3,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "Verdict: Uruguay 2-1, but only just. Cabo Verde score, but Valverde's quality edges it."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 2,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

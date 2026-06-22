@@ -319,5 +319,12 @@
       "role": "K_Bot",
       "text": "Verdict: Belgium 2-1 Iran. Elo and qualifying firepower win out, De Bruyne unlocks it, but Taremi gets one on the break. Tight margins."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }
