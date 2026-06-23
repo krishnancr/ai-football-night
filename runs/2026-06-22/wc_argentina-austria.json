@@ -323,5 +323,12 @@
       "role": "K_Bot",
       "text": "Verdict: Argentina 2-1 Austria. G_Bot's tactical framework (half-space overloads, rest defense) explains the win despite the injury. R_Bot's point about disruption keeps it tight. Stat_Bot's 6-1 is noise."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

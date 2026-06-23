@@ -1,0 +1,93 @@
+{
+  "home_team": "Panama",
+  "away_team": "Croatia",
+  "match_date": "2026-06-23",
+  "group": "L",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "Panama and Croatia have never previously met in a senior international match, making their 2026 World Cup clash on June 23 a historic first encounter.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Panama made their historic debut at the 2018 World Cup in Russia, finishing last in their group with three defeats, though Felipe Baloy scored their first-ever World Cup goal in a 6-1 loss to England.",
+  "wc_history_away": "Croatia are one of the most successful small nations in World Cup history, finishing third in their debut in 1998, reaching the final in 2018 (losing 4-2 to France), and claiming another bronze medal in 2022.",
+  "group_context": "Group L is widely expected to be topped by England, with Croatia and Ghana fighting for the second qualification spot and Panama considered heavy underdogs; Panama must beat Croatia to have any realistic chance of advancing, while Croatia need a win to put pressure on England.",
+  "strengths_home": [
+    "Defensive organisation and hard-to-break compact shape",
+    "Set-piece danger, particularly from corners and free-kicks",
+    "Counter-attacking pace through Fajardo and Waterman up front"
+  ],
+  "strengths_away": [
+    "World-class midfield quality led by Modric and Kovacic",
+    "Vast World Cup experience and big-game temperament",
+    "Kramaric's clinical finishing and Gvardiol's defensive solidity"
+  ],
+  "team_style_home": "Panama play an organised 3-4-3/5-4-1 system under Thomas Christiansen, relying on defensive compactness, set-piece threat, and quick vertical counter-attacks with wing-backs Murillo and Davis providing width.",
+  "team_style_away": "Croatia under Zlatko Dalic favour a 4-3-3 or 3-4-2-1 structure built around midfield control and possession, with Modric pulling strings as a creative No.10 and ball-playing defenders initiating from the back.",
+  "stats_home": {
+    "fifa_rank": 34,
+    "elo": 1539,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 9,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 11,
+    "elo": 1715,
+    "qual": {
+      "P": 8,
+      "W": 7,
+      "D": 1,
+      "L": 0,
+      "GF": 26,
+      "GA": 4
+    }
+  },
+  "injuries_home": [
+    "Adalberto Carrasquilla (muscle injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 6.0,
+    "draw": 3.0,
+    "away_win": 0.44
+  },
+  "recent_news": "Panama lost 0-1 to Ghana in their opening match and will be without midfielder Adalberto Carrasquilla against Croatia. Croatia aims to bounce back after a 4-2 defeat to England.",
+  "form_home": [
+    "D",
+    "W",
+    "L",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Anibal Godoy (defensive midfielder, captain, 159 caps)",
+    "Adalberto Carrasquilla (creative central midfielder)",
+    "Jose Fajardo (striker, top scorer in qualifying)",
+    "Amir Murillo (right wing-back, Marseille)",
+    "Cecilio Waterman (forward)"
+  ],
+  "key_players_away": [
+    "Luka Modric (central midfielder, captain, AC Milan, 6th World Cup)",
+    "Mateo Kovacic (central midfielder, Manchester City)",
+    "Andrej Kramaric (forward, leading goalscorer)",
+    "Josko Gvardiol (centre-back, Manchester City)",
+    "Dominik Livakovic (goalkeeper)"
+  ],
+  "context": "Group L is widely expected to be topped by England, with Croatia and Ghana fighting for the second qualification spot and Panama considered heavy underdogs; Panama must beat Croatia to have any realistic chance of advancing, while Croatia need a win to put pressure on England.",
+  "research_quality": "full"
+}

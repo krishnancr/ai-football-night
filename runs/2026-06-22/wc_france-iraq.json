@@ -322,5 +322,12 @@
       "role": "K_Bot",
       "text": "Verdict: France 3-1 Iraq. Comfortable win, one set-piece goal for Iraq."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

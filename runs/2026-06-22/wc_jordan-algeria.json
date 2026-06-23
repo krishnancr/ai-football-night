@@ -322,5 +322,12 @@
       "role": "K_Bot",
       "text": "Verdict: Algeria's stats and experience edge out a resilient but depleted Jordan. 1-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 2,
+    "result": "away_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

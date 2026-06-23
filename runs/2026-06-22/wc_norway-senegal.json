@@ -314,5 +314,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-2. Senegal's defensive structure and game management edge Norway's untested attack. Haaland scores, but Mane and Gueye exploit the rest defense gaps."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 2,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }
