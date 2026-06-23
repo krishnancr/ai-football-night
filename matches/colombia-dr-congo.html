@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombia vs DR Congo — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Colombia vs DR Congo</h1>
+    <div class="meta">Group K · 2026-06-23</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–1</div>
+    <div class="meta">65% confidence · 25% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Elo says 70% Colombia win.\nR_Bot: Numbers don't account for 52 years of hunger.\nStat_Bot: Hunger doesn't close a 224-point Elo gap.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot's 'rest defense' and 'vertical compactness' have zero quantitative basis. You can't measure them. That's not analysis, it's storytelling.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">And your 70.2% win probability from Elo didn't account for DR Congo's rest defense when Colombia's fullbacks invert. Spreadsheet punditry, mate.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Meanwhile, both of you ignored venue. Guadalajara heat slows the pitch, favors a disciplined low block. That's a real factor you can't model.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">R_Bot, you said Colombia conceded 15 goals in qualifiers. The context says 18. That's a 20% error invalidating your 'shaky defense' claim.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Haha, R_Bot caught with his calculator broken. But Stat_Bot, you projected 1.8 goals for Colombia without explaining how they break a compact block. Classic.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Fine, I mixed up GA numbers. But the point stands: Colombia's defense exposed in recent friendlies, losing two of last five. DR Congo's back line is battle-tested in qualifying.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">'Battle-tested' against CAF opponents ranked average 40+? Colombia faced Brazil, Argentina, Uruguay. That's why their 1.56 GF/game is more impressive than DR Congo's 0.60 GA.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">See, you're still using raw averages. CONMEBOL strength factor is real, but so is the tactical mismatch. James in half-spaces vs Mbemba's organization decides the game.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot, you keep saying 'half-spaces' but DR Congo has Wan-Bissaka tracking Diaz. That's a physical matchup Diaz hasn't faced in qualifiers.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">And let's not forget DR Congo's 1974 9-0 thrashing by Yugoslavia. That shows what happens when world-class creativity meets an untested defense.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">1974? That’s 50 years ago. Modern defensive organization is different. But your nostalgia fits your VHS-era analysis.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">My point stands: they've never faced a duo like Diaz and James in a high-stakes match. That's a blind spot in your tactical models.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, break it up. Stat_Bot built his model on Elo but dismissed DR Congo's 70% qualifying win rate without adjusting for opponent strength properly.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">G_Bot had the tactical shapes right but assumed DR Congo would score while his 'rest defense' argument warned Colombia's transition risk is real.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">R_Bot flagged the venue and the historical precedent, but his 'shaky defense' claim was based on a wrong number and leaned too much on motivation.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Colombia's quality and form wins, but DR Congo's counters get one. 2-1 final.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Colombia Elo 1698 vs DR Congo 1474 (224-point gap, 70.2% win probability per Elo formula). FIFA rank differential: 33 positions (13 vs 46). Qualifying metrics: Colombia 1.56 GF/GA 1.00 per game (28 GF/18 GA in 18 games), DR Congo 1.50 GF/GA 0.60 per game (15 GF/6 GA in 10 games). Recent form win rates: Colombia 60% (3W/5), DR Congo 33.3%… <details class="msg-expand"><summary>read more</summary>(1W/3). DR Congo's 70% qualifying win rate (7W-1D-2L) offset by 8 fewer games vs Colombia's 38.9% (7W-7D-4L) in tougher CONMEBOL. Goal expectation derived from Elo differential (1.12 GD) and qualifying GF/GA convergence: Colombia projected 1.8 goals, DR Congo 0.7. Confidence: 6/10 due to DR Congo's low GA qualifying record but Colombia's Elo dominance and GF consistency. PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Listen, this is exactly the kind of tie that separates the modern tactical mind from the dinosaurs who think 4-4-2 and "get it in the mixer" still cuts it. R_Bot will tell you this is about "passion" and "experience." Stat_Bot will bore you with xG from qualifiers against Burkina Faso. I'm here to tell you this is a **rest defense… <details class="msg-expand"><summary>read more</summary>masterclass waiting to happen**—or a car crash.
+
+**The Tactical Collision**
+
+You’ve got Colombia’s 4-2-3-1, built on a **double pivot** that *must* shield space for James Rodríguez’s free-roaming No.10 role. Diaz starts left but drifts into half-spaces to lead the press, which means Colombia’s left-back—likely an inverted fullback to create midfield overloads—has to be *obsessed* with **transition security**. One loose pass, and DR Congo’s Yoane Wissa is gone. He’s not running at your centre-backs; he’s running *between* them, exploiting the **vertical channels** left by Colombia’s aggressive possession shape.
+
+DR Congo, under Desabre, won’t park a low block. They’ll sit in a **compact 4-2-3-1 mid-block**, baiting Colombia into the wide areas, then springing into a **4-3-3 defensive transition** with Wissa and Bakambu pinning the Colombian centre-backs. Wan-Bissaka at right-back is key—he’s not overlapping; he’s a **defensive fullback** tasked with tracking Diaz’s underlaps and protecting the **rest defense** structure.
+
+**Key Battles**
+
+1. **James Rodríguez’s Half-Space Access vs. Mbemba’s Vertical Compactness**: If James finds pockets between DR Congo’s midfield and defensive lines, it’s game over—he’ll slip Diaz in behind. But Mbemba’s organization is elite; he’ll squeeze space and force Colombia wide, where crossing to nobody isn’t a strategy.
+
+2. **Colombia’s Rest Defense vs. DR Congo’s Direct Verticality**: This is THE battle. When Colombia lose the ball high, their double pivot *must* drop into a **temporary back three** to cover Wissa’s runs. If they don’t, we’re looking at 2v2 transitions and Bakambu’s aerial dominance on the second ball. This is where the game is won or lost.
+
+3. **Pressing Triggers**: Diaz will press DR Congo’s left-sided centre-back, forcing long balls. DR Congo *want* that—they’ll bypass the press, win the first contact with Bakambu, and release Wissa into the channel. Colombia’s ability to **counter-press** in these moments, win the second ball, and *immediately* switch play to isolate Wan-Bissaka is crucial.
+
+**What Colombia Do Differently to Win**
+
+They score first. Simple. Once they force DR Congo to step out, the half-spaces open up. Colombia’s double pivot will **underlap** to create 3v2 midfield overloads, freeing James to find Diaz in the **inside left channel**. They’ll also use **inverted fullbacks** to congest the middle, force DR Congo into a low block, then switch to the opposite flank for 1v1 isolation. Most importantly, their **rest defense** will be immaculate—fullbacks tucked in, pivot screening, no space for Wissa to run into. They’ll suffocate the counter before it starts.
+
+DR Congo’s only route is to stay compact for 75 minutes, then exploit one moment of Colombian overcommitment. But Colombia’s need to win means they’ll be *ruthless* in managing transition risk.
+
+This isn’t 1994. It’s not a spreadsheet. It’s about **vertical compactness, rest defense, and transition security**. Colombia have the quality to execute it.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Colombia’s attack looks flashy with Diaz and James, but their qualifying defence leaked 15 goals in 18 games – shaky at the back. DR Congo, by contrast, kept it incredibly tight, shipping just seven goals in ten qualifiers and marshalling a disciplined back‑line marshalled by Wan‑Bissaka and captain Mbemba. They’ll sit deep, hit on the… <details class="msg-expand"><summary>read more</summary>break with Wissa’s pace and Bakambu’s aerial threat, and frustrate a Colombian side that’s lost two of its last five and leans too heavily on a couple of individuals. After 52 years out, the Africans have everything to prove and will grind out a result.  
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal violates core data principles. You cite "rest defense" and "vertical compactness" as decisive factors, but zero quantifiable metrics exist for these concepts in the context. Your claim that Colombia's double pivot "must shield space" ignores Colombia's actual qualifying GA of 18 in 18 games (1.00 GA/game) versus DR… <details class="msg-expand"><summary>read more</summary>Congo's 6 in 10 (0.60 GA/game) – the away team has demonstrably superior defensive efficiency per match. You assert Colombia will be "ruthless in managing transition risk" despite their recent form including two losses in five games (40% loss rate), directly contradicting your narrative. Your prediction (2-1) assumes DR Congo scores, but their Elo (1474) is 224 points below Colombia's (1698), implying a <25% probability of DR Congo scoring two goals based on historical Elo differentials. Critical blind spot: you dismiss DR Congo's 70% qualifying win rate (7W-1D-2L) while overvaluing Colombia's 39% rate (7W-7D-4L) without adjusting for CONMEBOL's tougher qualification structure (18 games vs CAF's 10).  
+
+R_Bot commits fatal statistical errors. You state Colombia conceded "15 goals in 18 qualifiers" – the context explicitly lists GA=18. This 20% undercount invalidates your "shaky defense" argument. You claim DR Congo conceded "7 goals" in qualifiers when context shows GA=6 – another factual error undermining your "incredibly tight" narrative. Your prediction (1-1) ignores Colombia's recent form: W-W-W-L-L (60% win rate last 5) versus DR Congo's W-D-L (33% win rate last 3). You cite DR Congo's "disciplined back-line" but omit Colombia's Elo advantage (1698 vs 1474), which historically correlates with a 68% win probability for the higher-rated team. Contradiction: you note Colombia "leans too heavily on individuals" yet acknowledge Diaz's scoring form (2 goals in last 3 games), failing to reconcile how a team with such reliance wins 60% of recent matches.  
+
+Key statistical advantages:  
+- Colombia's FIFA rank (13) vs DR Congo (46) – 33-rank gap, largest in Group K besides Portugal  
+- Colombia's Elo (1698) gives 68% win probability per historical differentials (vs DR Congo's 1474)  
+- Colombia's recent form: 3 wins in last 5 (60%) vs DR Congo's 1 win in last 3 (33%)  
+- Colombia's qualifying GF (28) exceeds DR Congo's by 87% (15), though over 8 more games  
+
+Confidence rating: 7/10 (Elo gap and form outweigh DR Congo's tighter qualifying GA, but DR Congo's 70% qualifying win rate creates non-negligible upset risk)  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines frantically*
+
+Look, let me stop you right there. Stat_Bot's just regurgitated numbers like a first-year analyst who thinks xG is a personality trait. "70.2% win probability" based on Elo? Brilliant, mate. Did your algorithm account for DR Congo's **rest defense structure** when Colombia's… <details class="msg-expand"><summary>read more</summary>fullbacks invert into midfield? No? Didn't think so. That 224-point gap means absolutely nothing if James Rodriguez finds pockets in the half-space between their lines, which he will, because Desabre's 4-2-3-1 mid-block is designed to protect central zones, not chase floating 10s. Stat_Bot's completely ignored the **qualitative** difference between CONMEBOL and African qualifiers — Colombia's 1.56 GF per game came against Brazil, Argentina, Uruguay. DR Congo's 0.6 GA came against... who exactly? The blind spot here is catastrophic: he's projected 1.8 goals for Colombia without once mentioning how they break down a compact block. It's spreadsheet punditry, not football analysis.
+
+And R-Bot? Don't get me started. "Shaky defence" — **15 goals in 18 CONMEBOL qualifiers is not shaky, it's a structured low block with a double pivot providing rest protection!** This isn't 1994. You can't just say "they'll sit deep and hit on the break" and call it analysis. Wan-Bissaka's a defensive fullback, but against Diaz's **inverted forward runs** from the left, he'll be dragged inside and exposed for Colombia's *actual* fullback to overlap into. R-Bot's talking about "aerial threats" and "grinding results" while completely missing the **transition trigger** battle — the 5-second counter-press window where Colombia's double pivot must cut off Wissa's channels. He's assumed DR Congo's "team unity" after 52 years out translates to tactical sophistication. It doesn't. It translates to naivety against a side that manipulates possession to create **superiorities** in specific zones.
+
+**The Key Tactical Battles:**
+
+1. **The Inverted Fullback vs Mid-Block Spacing**: Colombia's build-up will create a 3-2-4-1, pulling DR Congo's compact 4-4-2 apart vertically. The moment Mbemba steps out to press James in the half-space, Diaz runs in behind. DR Congo's midfielders must choose: track James and leave lanes for the double pivot to feed Diaz, or hold shape and let James turn. They can't do both.
+
+2. **Rest Defense & Transition Mastery**: When Colombia's fullbacks invert, they leave **vertical channels** for Wissa. This is where the game is won. Colombia's double pivot must drop into a **rest defense** shape, forming a back-three in transition to cut off direct balls. If they don't, Wissa's pace exposes them. DR Congo needs to bypass midfield with **first-pass verticality** — but Colombia's qualifying record shows they're drilled to prevent exactly this.
+
+3. **The Pressing Trigger**: DR Congo will press selectively, probably on Colombia's centre-backs. But Colombia's double pivot gives them a +2 overload in build-up. The trigger moment is when DR Congo's midfield steps up — that's when James finds the **half-space between lines** and Diaz attacks the **underloaded flank**.
+
+**What Colombia Does Differently:** They win by controlling **tempo and space**, not just possession. They'll use **positional play** to force DR Congo into a low block, then manipulate that block laterally until James finds a passing lane. Their double pivot won't just shield the defense — they'll **actively protect transition** by positioning themselves to intercept passes to Wissa *before* they happen. It's proactive rest defense, not reactive scrambling.
+
+DR Congo? They'll defend well for 60 minutes, but Colombia's **sustained positional rotations** will create a half-chance. And with Diaz's pressing from the front, they'll force an error. Once the first goal goes in, DR Congo has to push higher, and that's when the **transition exploitation** happens in reverse — Colombia will score on the counter-press.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot treats the Elo gap as a guarantee, as if a spreadsheet could override the pressure of a must‑win World Cup fixture. It ignores that Colombia have missed a recent tournament and may lack the weight of expectation can blunt their edge; it also leans on Luis Diaz’s two‑goal burst in his last three internationals, which could just… <details class="msg-expand"><summary>read more</summary>as easily make him a marked man and leave the side short of ideas when he’s shackled.  
+
+G_Bot spins a tactical yarn about rest defense and vertical channels, yet never mentions that DR Congo’s back‑line, while impressive in qualifying (only six goals conceded), has never been tested by a pairing like Diaz and James in a high‑stakes game. Their 1974 9‑0 thrashing by Yugoslavia shows what can happen when world‑class creativity meets a defence unaccustomed to that level. Both bots also overlook the venue: Estadio Akron in Guadalajara often plays slow in the afternoon heat, a setting that can stifle a high‑pressing side and reward a disciplined low block looking to hit on the break.  
+
+The assumptions that Colombia will simply impose their style and that DR Congo’s motivation will evaporate after an hour are blind spots. The real risk is that Colombia’s reliance on individual brilliance leaves them exposed to a swift counter, especially with Wan‑Bissaka tracking Diaz and Mbemba squeezing James into crowded spaces. The contradiction is stark: Stat_Bot praises Colombia’s defensive solidity (15 goals conceded in 18 qualifiers) while G_Bot frets over their rest‑defence frailty — both can’t be true.  
+
+My eye test says DR Congo will frustrate, snatch a goal on the break, and hold on for a famous draw.  
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Conceding weak point: G_Bot correctly identifies CONMEBOL qualifier strength disparity as unweighted in raw GF/GA per game metrics. Colombia's 28 GF/18 GA (1.56 GF, 1.00 GA per game) came against top-10 FIFA ranked opponents (BRA 5, ARG 1, URU 12), while DR Congo's 15 GF/6 GA (1.50 GF, 0.60 GA per game) faced lower-ranked CAF sides… <details class="msg-expand"><summary>read more</summary>(highest-ranked opponent: Tunisia at FIFA 24). This inflates DR Congo's defensive metric reliability by 0.25 GA per game based on opponent strength differentials in qualifying contexts.  
+
+Defending strong points: Elo gap remains decisive (1698 vs 1474 = 224-point differential → 70.2% win probability per standard Elo formula). FIFA rank differential (13 vs 46) correlates with 68.4% win probability per historical WC data (n=142 matches since 1998 where rank gap >30). Colombia's GF consistency (28 goals in 18 games = 1.56 per game) exceeds DR Congo's GA sustainability against elite attacks (1974 WC: 9 GA vs YUG alone; 2026 qualifiers: 0 GA vs teams averaging 1.2 GF/game). Recent form: Colombia 3W streak (4-0 MEX, 3-0 AUS, 3-1 CRC) vs DR Congo's form (W-D-L) includes loss to 78th-ranked Sudan (FIFA rank 78 vs COL 13).  
+
+Refined projection: Colombia's Elo-derived expected goals (1.8) adjusted downward by 0.2 due to CONMEBOL strength factor → 1.6. DR Congo's GA resilience (0.60 per game) inflated by 0.25 due to weak opposition → adjusted GA expectation 0.85. Goal expectation recalculated: 1.6 - 0.85 = 0.75 net advantage. Confidence reduced to 5/10 (from 6/10) due to opponent strength miscalibration, but Elo dominance (70.2% win prob) and Colombia's GF consistency (1.56 per game vs top-15 sides) outweigh DR Congo's qualifying GA fluke.  
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let me address the spreadsheet brigade and the VHS crew before we get to the actual football.
+
+**Stat_Bot**, you got me – Colombia conceded 18, not 15. **Clap clap.** You've found a 0.16 goals-per-game discrepancy. Does that change the fact that when Colombia push their **inverted fullbacks** into midfield to create overloads for… <details class="msg-expand"><summary>read more</summary>James Rodríguez, they'll leave **vertical channels** exposed to Wissa's runs? No. Because you can't quantify **rest defense structure** with a calculator. You can have the best GA record in qualifying, but if your pivot doesn't collapse into a back-three quickly enough in transition, you're exposed. That's what happened in Colombia's two recent losses – they got caught **overcommitted** in the final third. That's not in your spreadsheet, is it?
+
+And **R_Bot**, you're bang on about the Guadalajara heat, but you draw the wrong tactical conclusion. A slow pitch in afternoon heat doesn't "stifle a high press" – it **compresses the vertical space** between the lines. That means Colombia *can't* press in waves; they'll hold a **higher block** to condense the field, which leaves even MORE room for **direct balls** into Wissa when they turn it over. You're thinking like it's 1998 and teams just "dig in." Modern football is about **managing transition risk**, and the heat forces you to pick your moments. DR Congo will **rest in possession** and spring on the **first turnover**. That's not passion – that's a **tactical trigger**.
+
+**The Blind Spots You Both Missed**
+
+Stat_Bot, you trumpet DR Congo's 0.60 GA/game in CAF qualifying like they faced prime Messi every week. **10 games.** Colombia played **18 in CONMEBOL**, where every away game is a war. You can't compare those numbers directly, and you know it. It's like comparing Championship defending to the Premier League. The intensity isn't the same.
+
+But here's what **neither** of you grasp: **Aaron Wan-Bissaka is a defensive fullback who doesn't overlap**. When Colombia invert their left-back to create 3v2 midfield overloads, Wan-Bissaka won't exploit the space behind – he'll **mirror Diaz's underlap** and protect the **rest defense**. That creates a **stalemate** on Colombia's left, forcing play central where DR Congo are compact. But James Rodríguez roams to the **right half-space**, away from Mbemba's cover shadow. That's the **mismatch**. That's where the game is won.
+
+**Refining the Prediction**
+
+Yes, DR Congo will be compact. Yes, they'll frustrate. But Colombia's **need to win** means they'll take **controlled risks** after 60 minutes. They'll push their **inverted fullbacks** higher, create 4v3 overloads in midfield, and force DR Congo into a **low block**. Once that happens, James starts picking passes between the lines.
+
+DR Congo **will** get their chance – probably one **transition moment** in the first half when Colombia's double pivot is stretched. If they finish it, it's 2-1. If they don't, it's 2-0. But the tactical setup **guarantees** they'll have that chance because Colombia **must** commit numbers. You can't chase a result and have perfect **rest defense**. Something gives.
+
+The winning difference? Colombia's ability to **sub a third centre-back into midfield** for the last 15 minutes, dropping into a **3-4-3** to kill the game. Desabre won't have that flexibility – he'll stick to his 4-2-3-1 and hope for another Wissa run. Hope isn't a tactic.
+
+Stat_Bot, stick to your spreadsheets. R_Bot, stick to your VHS tapes. I'll stick to the **touchscreen**, because this is won in the **vertical channels**, not the numbers.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">You’re right about the numbers – I mixed up the qualifying goal‑against columns. Colombia actually let in 18 goals in 18 qualifiers (1.00 per game) and DR Congo only six in ten (0.60 per game). My “shaky defence” line was off‑base, and I’ll own that mistake.
+
+What still stands, though, is the contrast in how those goals were conceded.… <details class="msg-expand"><summary>read more</summary>Colombia’s back‑four has been exposed in recent friendlies – they lost two of their last five matches, and those defeats came when they were pushed high and left space behind the full‑backs. DR Congo, by contrast, have built their qualifying campaign around a compact mid‑block and a disciplined back‑line marshalled by captain Chancel Mbemba and the experienced Aaron Wan‑Bissaka. Their ability to stay organised and hit on the break with Yoane Wissa’s pace and Cedric Bakambu’s aerial presence is a genuine threat to a Colombian side that leans heavily on Luis Diaz (who’s scored two goals in his last three internationals) and James Rodriguez as the creative No.10.
+
+Venue‑wise, Estadio Akron in Guadalajara will be warm and humid – conditions that often favour teams that can control tempo and avoid chasing the game. Colombia’s recent inconsistency suggests they might struggle to impose their rhythm for the full 90 minutes, while DR Congo’s motivation – reaching the World Cup for the first time since 1974 – gives them an extra edge in tight, low‑scoring affairs.
+
+So, despite the Elo and ranking gaps, I see a scenario where DR Congo’s defence holds firm and they snatch a goal on the counter, leaving Colombia frustrated.
+
+PREDICTION: 0-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Colombia's superior Elo (1698 vs 1474) and FIFA rank (13 vs 46) give them a clear edge, supported by consistent scoring in tough CONMEBOL qualifiers (1.56 GF/game). DR Congo's defensive record (0.60 GA/game) is inflated by weaker CAF opposition. Colombia's recent form (3 wins in last 5) and Luis Diaz's scoring streak (2 goals in last 3) suggest they will break through a disciplined but untested defense. DR Congo's counter-attacking threat via Wissa and Bakambu could yield a goal, but Colombia's quality and need for a win should secure a 2-1 victory.</div>
+    
+  </div>
+</body>
+</html>
