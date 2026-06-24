@@ -1,0 +1,83 @@
+{
+  "home_team": "Morocco",
+  "away_team": "Haiti",
+  "match_date": "2026-06-24",
+  "group": "C",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "Morocco and Haiti have never previously met in any official international match, making their 2026 World Cup group stage encounter their first-ever fixture.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Morocco made history at the 2022 World Cup in Qatar by becoming the first African and Arab nation to reach the semi-finals, finishing fourth after stunning wins over Spain and Portugal.",
+  "wc_history_away": "Haiti's only previous World Cup appearance was in 1974 in West Germany, where they famously had Emmanuel Sanon end Dino Zoff's record scoreless streak before losing all three group games; their 2026 appearance ends a 52-year absence.",
+  "group_context": "Group C features five-time world champions Brazil alongside Africa's top-ranked side Morocco (7th in the world), returning giant-killers Scotland, and debutant Haiti \u2014 Morocco and Haiti meet on Matchday 3, with both teams needing points to secure or consolidate a knockout-stage berth.",
+  "strengths_home": [
+    "World-class individual talent led by Achraf Hakimi and Brahim Diaz",
+    "Elite defensive organisation and transition play built over years under Regragui and now Ouahbi",
+    "Strong tournament pedigree and mental resilience from their 2022 semi-final run"
+  ],
+  "strengths_away": [
+    "Dangerous pace and directness on the counter-attack via Isidor and Nazon",
+    "Compact defensive structure capable of frustrating stronger opponents",
+    "High motivation and underdog mentality returning to the World Cup after 52 years"
+  ],
+  "team_style_home": "Morocco deploy a compact 4-1-4-1 or 4-3-3, excelling in disciplined defensive organisation and rapid transitions, with Achraf Hakimi driving forward on the right and Brahim Diaz creating between the lines.",
+  "team_style_away": "Haiti set up in a 4-2-3-1 or 4-4-2 defensive block, prioritising compactness and counter-attacking speed, looking to release Wilson Isidor and Duckens Nazon into space on the break.",
+  "stats_home": {
+    "fifa_rank": 7,
+    "elo": 1755,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 83,
+    "elo": 1293,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 2,
+      "L": 1,
+      "GF": 9,
+      "GA": 6
+    }
+  },
+  "injuries_home": [
+    "Abde Ezzalzouli (knee)",
+    "Nayef Aguerd (groin)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Morocco's World Cup 2026 preparations have been hit by key injuries ahead of their opening match against Brazil. Winger Abde Ezzalzouli suffered a knee injury in a friendly against Norway, while defender Nayef Aguerd remains sidelined following groin surgery in March.",
+  "form_home": [
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L"
+  ],
+  "key_players_home": [
+    "Ismael Saibari (striker)"
+  ],
+  "key_players_away": [
+    "Duckens Nazon (forward / all-time top scorer)",
+    "Wilson Isidor (striker)",
+    "Jean-Ricner Bellegarde (midfielder)",
+    "Hannes Delcroix (centre-back)",
+    "Johny Placide (goalkeeper / captain)"
+  ],
+  "context": "Group C features five-time world champions Brazil alongside Africa's top-ranked side Morocco (7th in the world), returning giant-killers Scotland, and debutant Haiti \u2014 Morocco and Haiti meet on Matchday 3, with both teams needing points to secure or consolidate a knockout-stage berth.",
+  "research_quality": "full"
+}

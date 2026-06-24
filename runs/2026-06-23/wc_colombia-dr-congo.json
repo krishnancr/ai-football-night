@@ -311,5 +311,12 @@
       "role": "K_Bot",
       "text": "Verdict: Colombia's quality and form wins, but DR Congo's counters get one. 2-1 final."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

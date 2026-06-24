@@ -318,5 +318,12 @@
       "role": "K_Bot",
       "text": "Alright, verdict time. England's FIFA rank, home advantage, and Tuchel's structural control outweigh Ghana's injury boost. 2-1."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

@@ -1,0 +1,90 @@
+{
+  "home_team": "Bosnia and Herzegovina",
+  "away_team": "Qatar",
+  "match_date": "2026-06-24",
+  "group": "B",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Bosnia and Herzegovina and Qatar have met just once, a 1-1 friendly draw in Sarajevo in August 2010, giving them a completely even and very limited head-to-head record.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - International Friendly - 2010"
+    ]
+  },
+  "wc_history_home": "Bosnia and Herzegovina made their only previous World Cup appearance at Brazil 2014, winning their opening group game 3-1 against Iran but narrowly missing the round of 16 after losses to Argentina and Nigeria.",
+  "wc_history_away": "Qatar debuted as hosts at the 2022 FIFA World Cup, becoming the first host nation in history to be eliminated in the group stage after losing all three matches to Ecuador, Senegal, and the Netherlands.",
+  "group_context": "Group B contains co-hosts Canada, European dark horses Bosnia and Herzegovina, two-time Asian champions Qatar, and consistent European performers Switzerland; Bosnia and Qatar are effectively battling for the third-place spot and a potential path to the knockout rounds as one of the eight best third-placed teams.",
+  "strengths_home": [
+    "Experienced striking partnership with Dzeko and Demirovic providing both hold-up play and pressing",
+    "Mental fortitude and big-game experience after eliminating both Wales and Italy on penalties in qualifying",
+    "Dangerous from set pieces and crosses with Dzeko's aerial presence in the box"
+  ],
+  "strengths_away": [
+    "Akram Afif's individual world-class quality capable of creating chances from nothing",
+    "Cohesive squad built through the Aspire Academy system providing strong team chemistry",
+    "Tactical discipline under Lopetegui keeping the team compact and hard to break down"
+  ],
+  "team_style_home": "Bosnia and Herzegovina play a compact 4-4-2 or 4-2-3-1, relying on physicality, direct play, quick counter-attacks, and set-piece threat with Edin Dzeko as the focal point of their attack.",
+  "team_style_away": "Under Julen Lopetegui, Qatar operate in a disciplined 4-2-3-1 with a double pivot, emphasizing compact defensive organization and quick transitions to release Akram Afif in half-spaces.",
+  "stats_home": {
+    "fifa_rank": 64,
+    "elo": 1387,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 2,
+      "L": 1,
+      "GF": 17,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 56,
+    "elo": 1450,
+    "qual": {
+      "P": 12,
+      "W": 5,
+      "D": 2,
+      "L": 5,
+      "GF": null,
+      "GA": null
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Assim Madibo (suspension)",
+    "Homam El Amin (suspension)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Bosnia and Herzegovina suffered a heavy 4-1 defeat against Switzerland, conceding three late goals after a red card. Qatar faces a decisive match to advance to the round of 32 for the first time in their World Cup history.",
+  "form_home": [
+    "L",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "D",
+    "L",
+    "L",
+    "D"
+  ],
+  "key_players_home": [
+    "Edin Dzeko (striker)"
+  ],
+  "key_players_away": [
+    "Akram Afif (attacking midfielder/winger)",
+    "Almoez Ali (striker)",
+    "Hassan Al-Haydos (captain/midfielder)",
+    "Ahmed Fathi (defensive midfielder)",
+    "Assim Madibo (midfielder)"
+  ],
+  "context": "Group B contains co-hosts Canada, European dark horses Bosnia and Herzegovina, two-time Asian champions Qatar, and consistent European performers Switzerland; Bosnia and Qatar are effectively battling for the third-place spot and a potential path to the knockout rounds as one of the eight best third-placed teams.",
+  "research_quality": "full"
+}

@@ -1,0 +1,87 @@
+{
+  "home_team": "Scotland",
+  "away_team": "Brazil",
+  "match_date": "2026-06-24",
+  "group": "C",
+  "venue": "Hard Rock Stadium, Miami Gardens, USA",
+  "h2h_summary": "Brazil dominate the all-time record, winning 4 of 5 meetings (all at World Cups) with Scotland's only positive result a 0-0 draw in 1974; Scotland have never beaten Brazil.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 4,
+    "notable_results": [
+      "0-0 draw - FIFA World Cup Group Stage - 1974",
+      "1-4 loss (David Narey goal) - FIFA World Cup Group Stage - 1982",
+      "1-2 loss (Collins pen, Boyd OG) - FIFA World Cup Group Stage - 1998"
+    ]
+  },
+  "wc_history_home": "Scotland have appeared at eight World Cups (1974-1998, now 2026) but have never progressed past the group stage, twice going out on goal difference despite remaining unbeaten.",
+  "wc_history_away": "Brazil are the most successful nation in World Cup history with five titles (1958, 1962, 1970, 1994, 2002) and are the only team to have participated in every tournament.",
+  "group_context": "Group C contains five-time world champions Brazil, 2022 semi-finalists Morocco, Scotland (returning after a 28-year absence), and debutant-returnee Haiti; Brazil and Morocco are heavy favourites to advance, leaving Scotland and Haiti fighting for any remaining spot via the expanded third-place berths.",
+  "strengths_home": [
+    "Defensive organisation and hard-to-beat structure under Clarke",
+    "Scott McTominay's box-crashing goals and dynamic midfield energy",
+    "Tournament-hardened leadership through Robertson and McGinn"
+  ],
+  "strengths_away": [
+    "World-class attacking duo in Vinicius Junior and Raphinha",
+    "Tactical adaptability and man-management under Carlo Ancelotti",
+    "Depth across all positions with Brazil's strongest squad in years"
+  ],
+  "team_style_home": "Steve Clarke's Scotland play a disciplined 4-2-3-1 with a compact, hard-working midfield block, relying on defensive organisation to frustrate opponents and quick transitions through McTominay and wide runners.",
+  "team_style_away": "Carlo Ancelotti's Brazil combine Brazilian attacking flair with Italian defensive structure in a 4-2-3-1 / 4-3-3 hybrid, using wide forwards Vinicius and Raphinha to exploit space on the break while Guimaraes anchors midfield.",
+  "stats_home": {
+    "fifa_rank": 42,
+    "elo": 1503,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 13,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 6,
+    "elo": 1766,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 4,
+      "L": 6,
+      "GF": 24,
+      "GA": 17
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Danilo Santos (unknown)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Brazil is facing an injury crisis with seven stars potentially missing the World Cup clash against Scotland. Scotland recently lost 1-0 to Morocco after a 1-0 win over Haiti.",
+  "form_home": [
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "John McGinn (midfielder)"
+  ],
+  "key_players_away": [
+    "Raphinha (forward)",
+    "Casemiro (midfielder)"
+  ],
+  "context": "Group C contains five-time world champions Brazil, 2022 semi-finalists Morocco, Scotland (returning after a 28-year absence), and debutant-returnee Haiti; Brazil and Morocco are heavy favourites to advance, leaving Scotland and Haiti fighting for any remaining spot via the expanded third-place berths.",
+  "research_quality": "full"
+}

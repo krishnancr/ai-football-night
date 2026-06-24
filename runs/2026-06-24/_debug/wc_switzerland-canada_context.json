@@ -1,0 +1,81 @@
+{
+  "home_team": "Switzerland",
+  "away_team": "Canada",
+  "match_date": "2026-06-24",
+  "group": "B",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "These two sides have rarely met; the only confirmed men's senior fixture is a 2002 friendly in St. Gallen where Canada won 3-1, giving Canada the only head-to-head win on record.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "1-3 (Canada win) - Friendly - 2002"
+    ]
+  },
+  "wc_history_home": "Switzerland have appeared at 13 World Cups, reaching the quarter-finals in 1934, 1938, and 1954, and have been a consistent presence in the round of 16 in the modern era (2014, 2018) with a last-16 exit to Portugal in 2022.",
+  "wc_history_away": "Canada have qualified for just two World Cups \u2014 1986 (first round, no goals scored) and 2022 (first round, eliminated from Group F) \u2014 making 2026 as co-hosts a historic opportunity to advance past the group stage for the first time.",
+  "group_context": "Group B contains Canada (co-host), Switzerland, Bosnia and Herzegovina, and Qatar; Switzerland and Canada are considered the two strongest sides and this final group game on June 24 could effectively be a decisive head-to-head to determine group winner and secure a favourable draw in the knockout rounds.",
+  "strengths_home": [
+    "Experienced, defensively disciplined squad with quality throughout",
+    "High-press system generates turnovers and transition goals",
+    "Granit Xhaka's leadership and control of midfield tempo"
+  ],
+  "strengths_away": [
+    "Playing at home in front of a passionate Canadian crowd at BC Place",
+    "Jonathan David's prolific finishing \u2014 Canada's all-time leading scorer",
+    "Alphonso Davies' explosive pace and direct threat on the left flank"
+  ],
+  "team_style_home": "Switzerland under Murat Yakin play a disciplined 4-2-3-1 built around Granit Xhaka as the deep-lying playmaker, using a high man-to-man press to win the ball high up the pitch and launching quick transitions on the flanks through pace of Dan Ndoye and Ruben Vargas.",
+  "team_style_away": "Canada under Jesse Marsch employ an intense high-press system nicknamed 'Maplepressing', operating in a 4-4-2 shape that aggressively forces turnovers in dangerous areas and converts them into rapid vertical attacks led by the pace of Alphonso Davies and finishing quality of Jonathan David.",
+  "stats_home": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Canada's captain (hamstring)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Canada's captain is part of the World Cup squad but has a hamstring injury. Switzerland and Canada are battling for top spot in Group B after both teams performed well in earlier matches.",
+  "form_home": [
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W"
+  ],
+  "key_players_home": [
+    "Granit Xhaka (captain, central midfielder)",
+    "Breel Embolo (striker)",
+    "Gregor Kobel (goalkeeper)",
+    "Dan Ndoye (winger)",
+    "Manuel Akanji (centre-back)"
+  ],
+  "key_players_away": [
+    "Alphonso Davies (left winger / left-back)",
+    "Jonathan David (striker)",
+    "Stephen Eustaquio (central midfielder)",
+    "Ismael Kone (midfielder)",
+    "Tajon Buchanan (winger)"
+  ],
+  "context": "Group B contains Canada (co-host), Switzerland, Bosnia and Herzegovina, and Qatar; Switzerland and Canada are considered the two strongest sides and this final group game on June 24 could effectively be a decisive head-to-head to determine group winner and secure a favourable draw in the knockout rounds.",
+  "research_quality": "full"
+}

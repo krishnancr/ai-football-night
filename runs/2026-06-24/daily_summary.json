@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-24",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Czechia vs Mexico",
+      "run_file": "runs/2026-06-24/wc_czechia-mexico.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_czechia-mexico_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "South Africa vs Korea Republic",
+      "run_file": "runs/2026-06-24/wc_south-africa-korea-republic.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_south-africa-korea-republic_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Switzerland vs Canada",
+      "run_file": "runs/2026-06-24/wc_switzerland-canada.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_switzerland-canada_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Bosnia and Herzegovina vs Qatar",
+      "run_file": "runs/2026-06-24/wc_bosnia-and-herzegovina-qatar.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_bosnia-and-herzegovina-qatar_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Scotland vs Brazil",
+      "run_file": "runs/2026-06-24/wc_scotland-brazil.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_scotland-brazil_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Morocco vs Haiti",
+      "run_file": "runs/2026-06-24/wc_morocco-haiti.json",
+      "thread_file": "runs/2026-06-24/_debug/wc_morocco-haiti_thread.json",
+      "success": true
+    }
+  ]
+}

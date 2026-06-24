@@ -302,5 +302,12 @@
       "role": "K_Bot",
       "text": "Verdict: Portugal 2-1. Data edge holds, but expect tension. K_Bot out."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 5,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
