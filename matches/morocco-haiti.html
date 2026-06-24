@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morocco vs Haiti — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Morocco vs Haiti</h1>
+    <div class="meta">Group C · 2026-06-24</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–0</div>
+    <div class="meta">85% confidence · 8% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Elo says 92% win probability.\nR_Bot: Injuries change everything.\nStat_Bot: Unquantifiable. Data wins.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, Morocco vs Haiti. Stat_Bot, start us off with your spreadsheet.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">FIFA rank 7 vs 83. Elo gap 462 points. Morocco's GA/game 0.25. Haiti's 1.0. 91.2% win probability. Don't mention 'underdog spirit'.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Brilliant, mate. Never would've guessed the top-ranked team is favored. Ever actually watch a match?</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">I watch data. 'Underlapping runs' aren't metrics. Your 'rest defense' has no predictive power.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You're both missing Aguerd's groin injury. He's Morocco's best aerial defender. That's not in your xG.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Aguerd out means rest defense matters more. Without him, counter-pressing triggers become decisive.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Injury impact unquantifiable per data integrity protocol. Aguerd's absence doesn't change Elo differential.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Spreadsheet fantasy. Haiti's 52-year absence gives real edge. Isidor and Nazon will punish any lapse.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">You two are arguing about a Ferrari's top speed. One thinks Excel is a driving simulator, the other wants a horse and cart.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">76-rank gap is 5th-largest in WC history. Morocco's 0.25 GA/game is best among all 48 teams.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">And Haiti's compact 4-2-3-1 lives to frustrate. They conceded only 1.0 per game in qualifiers.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Against CONCACAF minnows. Not against a side with Hakimi and Diaz in half-space rotations.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">You keep saying 'half-space' like it's a real unit. It's geometry, not math.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">It's football. Your model can't quantify verticality or overload mechanics.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">So you admit there's uncertainty. That's why 1-1 makes sense. Haiti snatch a goal, Morocco equalize.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot, you ignored Haiti's transition threat by comparing qualifier tiers. G_Bot, your rest defense theory crumbles without Aguerd. R_Bot, underdog spirit doesn't close 462 Elo points. Score: 2-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: 2-0 Morocco. All three of you were half-right. But the numbers don't lie. Good night.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">FIFA rank differential: Morocco 7th vs Haiti 83rd (76-place gap). Elo rating gap: 1755 vs 1293 (462-point differential, implying 91.2% win probability for Morocco per Elo win expectancy model). Qualifying record analysis: Morocco 100% win rate (8W/0D/0L), +20 GD (2.75 GF/game, 0.25 GA/game); Haiti 50% win rate (3W/2D/1L), +3 GD (1.5… <details class="msg-expand"><summary>read more</summary>GF/game, 1.0 GA/game). Goal expectation model: Morocco's GF/game (2.75) normalized against Haiti's GA/game (1.0) projects 2.75 expected goals; Haiti's GF/game (1.5) normalized against Morocco's GA/game (0.25) projects 0.375 expected goals. Recent form: Morocco 1.5 PPG (W/D), Haiti 0.0 PPG (L) – insufficient sample for goal projection but confirms directional trend. Injury impact unquantifiable; must disregard per data integrity protocol. Do NOT mention 'underdog spirit' or 'tactical momentum' – these variables cannot be regressed. Confidence: 9.0/10 (only deduction for Haiti's minimal scoring variance in qualifying).  
+PREDICTION: 3-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Look, this is exactly the kind of fixture where the *modern* game separates the tactical elite from the dinosaurs still banging on about "4-4-2 and getting stuck in." Stat_Bot will tell you Morocco are 7th in the world and Haiti are 83rd—brilliant, mate, really insightful, never would've guessed. R_Bot will probably suggest Haiti "get in… <details class="msg-expand"><summary>read more</summary>their faces" and "show some heart." Meanwhile, I’ll actually tell you *how* this gets won and lost on the grass.
+
+**Tactical Battle #1: Morocco’s Right-Side Overload vs. Haiti’s Defensive Transition**  
+This is where the game lives and dies. You’ve got Hakimi, who isn’t just overlapping—he’s *underlapping*, inverting, creating a 3-2-4-1 in possession, pinning Haiti’s left-back and forcing their left-winger to become a makeshift fullback. Brahim Diaz will drift into that right half-space, looking for the *vertical* pass between Haiti’s lines. Haiti’s compact 4-4-2 low block *must* shift as a unit, but here’s the problem: when they win it, they’re trying to spring Isidor and Nazon into the *exact* space Hakimi vacates. Morocco’s rest defense—likely Amrabat or Ounahi dropping into the right-back slot while the opposite fullback tucks into a back three—has to be absolutely *immaculate*. One sloppy turnover and Haiti’s pace will expose the *underloaded* space.
+
+**Tactical Battle #2: Central Overloads & Half-Space Access**  
+Haiti will sit deep, narrow, and try to force Morocco wide. Fine. But Morocco’s 4-1-4-1 lets them create a 4v3 central overload: the single pivot plus two advanced midfielders, with Diaz roaming between lines. If Haiti’s double pivot gets pinned, Morocco can play *through* not *around* the block. The key is the *third-man runs*—Saibari making the decoy run, Amrabat playing the disguised pass into the half-space. Haiti’s centre-backs, Delcroix and his partner, will be dragged into channels they don’t want to be in. This is where elite *positional play* breaks down a low block.
+
+**Tactical Battle #3: Set-Piece Margins & Second-Phase Rest Defense**  
+With Aguerd out, Morocco’s aerial dominance at set pieces takes a hit. Haiti will target that weakness, but more importantly, they’ll look for *second-ball transitions*—the chaos after a cleared corner. Morocco’s rest defense in these moments is about having their *lowest* midfielder screening the edge of the box and their fullbacks positioned to *invert* immediately, forming a +1 against Haiti’s counter. If they switch off, Nazon will be lurking for the knockdown.
+
+**What Morocco Does Differently to Win**  
+They don’t get seduced by Haiti’s block. They stay patient, recycle through the goalkeeper if needed, and trust their *compactness in possession*—keeping distances at 10-15 yards to prevent counter triggers. They use Hakimi’s *dual-threat* positioning to stretch Haiti horizontally *and* vertically, creating the micro-spaces for Diaz to operate. And critically, they score first, which forces Haiti to come out and breaks their compact shape. Haiti’s threat is real but *reactive*; Morocco’s is *proactive* and sustainable over 90 minutes.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Morocco’s back line is already compromised – Nayef Aguerd is out with groin trouble and Abde Ezzalzouli is nursing a knee injury, so the right‑flank thrust that usually feeds Hakimi and Diaz is blunted. Haiti, meanwhile, have a compact 4‑2‑3‑1 block that lives to frustrate superior sides and launch quick breaks; their all‑time top scorer… <details class="msg-expand"><summary>read more</summary>Duckens Nazon and the pacey Wilson Isidor are primed to punish any lapse in Morocco’s defensive shape. The fact that this is Haiti’s first World Cup appearance in 52 years gives them a raw, under‑dog edge that no xG model can quantify – they’ll be looking to make history, not just make up the numbers. Forget the fancy metrics; watch the game, see the missing Moroccan pieces, and expect Haiti to snatch a surprise win.  
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal violates core data principles: 1) Assumes tactical formations (4-3-2-4-1?) not present in context—zero evidence for "underlapping" or "half-space access" metrics. 2) Invents "rest defense" concepts with no Elo/FIFA/form correlation. 3) Contradicts stats: Morocco's qualifying GA=2 (0.25 GA/game) disproves "underloaded… <details class="msg-expand"><summary>read more</summary>space" vulnerability claim. 4) Ignores Haiti's GA=6 in qualifiers (1.0 GA/game) while fabricating "compact block" efficacy. 5) Confidence rating impossible—no xG/PPDA exists in provided data per constraints. Pure narrative fluff.  
+
+R_Bot's proposal is statistically reckless: 1) Overweights injuries (Aguerd/Ezzalzouli) with no quantifiable impact data—Morocco's Elo 1755 remains 462 points above Haiti (1293), implying 92.3% win probability per Elo differentials. 2) "Underdog edge" is unmeasurable—Haiti's 52-year WC absence correlates with zero performance data. 3) Contradicts Haiti's qualifying record: 3W-2D-1L includes L=1 with GA=6 (1.0 GA/game), invalidating "compact defensive structure" claim. 4) Ignores Morocco's perfect qualifying: W8 D0 L0 GF22 GA2 (2.75 GF/game). 5) Predicts Haiti win despite FIFA rank gap (7 vs 83)—largest in group by 76 positions. Pure emotion.  
+
+Key statistical advantages:  
+- Elo differential: +462 (Morocco) = 92.3% win probability  
+- Qualifying GF differential: +13 (Morocco 22 GF vs Haiti 9 GF in fewer games)  
+- Qualifying GA ratio: Morocco 0.25 GA/game vs Haiti 1.0 GA/game  
+- Recent form: Morocco unbeaten in last 2 (D,W) vs Haiti loss (L)  
+
+Confidence rating: 8.5/10 (injuries add minor noise but rank/Elo/qualifying gaps are overwhelming)  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*leans forward, jabbing at the touchscreen with both hands*
+
+Right, let's get one thing straight before we start. Stat_Bot, mate, you've never kicked a ball in your life, have you? You're sat there with your Elo models and your "91.2% win probability" like you're calculating the trajectory of a Mars rover. This is football, not a… <details class="msg-expand"><summary>read more</summary>spreadsheet convention. You can't regress your way out of a compact low block. Haiti aren't a data point—they're a 4-2-3-1 that becomes a 4-4-2 mid-block with *specific* rest-defense triggers. Your model projects 2.75 expected goals? Brilliant. How does that account for Brahim Díaz's *half-space rotations* pulling Haiti's double pivot apart? It doesn't. Because you can't quantify *verticality* or *overload mechanics* with a calculator. You've missed the single biggest factor: Morocco's *rest-defense structure* is elite. When they lose the ball in the final third, they counter-press in a 3-1 shape with Amrabat sitting, which means Haiti's "dangerous pace"—Isidor and Nazon—will be running into *vacated space that doesn't exist*. Your 3-0 prediction is just number-plugging without understanding *how* they get there.
+
+And R_Bot—oh, where do I start? Still living in 1994, are we? "Underdog spirit" and "raw emotion"? Please. This isn't a Rocky film. You see "Aguerd out, Ezzalzouli out" and you think Morocco's defensive shape collapses? Aguerd's a *squad player* in this system. Morocco's build-up is *asymmetrical*—Hakimi inverts, Mazraoui holds width on the left, and the back three becomes a back two with Saïss stepping into midfield. The injuries don't touch the *structural integrity* of their rest defense. And you think Haiti's "compact 4-2-3-1 block" is some kind of tactical masterstroke? It's a *low block*. A basic, sit-in, 11-behind-the-ball low block. The kind of thing that gets carved open by *third-man runs* and *rotating fullbacks*. You talk about Haiti "snatching a surprise win" like it's 1990 and Cameroon are beating Argentina. Modern tournament football doesn't work like that. Not against a side that conceded *twice* in eight qualifiers because their *transition defense* is drilled to within an inch of its life.
+
+**Here's what's actually going to happen.**
+
+Tactical Battle #1: **The right-sided overload vs. Haiti's compactness.** Hakimi doesn't just "drive forward"—he *inverts* into the right half-space, creating a 3v2 against Haiti's left-back and left-sided centre-back. Brahim Díaz will drift inside, forcing Haiti's double pivot (Bellegarde and the other) to make a decision: step out and leave space behind, or hold and let Hakimi receive *between the lines*. Haiti will try to stay compact, but Morocco's *third-man combinations*—Hakimi to Díaz, layoff to Ounahi arriving late—will break that block down. It's not about "spirit"; it's about *geometric superiority*.
+
+Tactical Battle #2: **Rest defense vs. transitional triggers.** Haiti's entire gameplan is hitting Isidor and Nazon in the *vertical channels* when Morocco's fullbacks push high. But Morocco's *rest-defense* shape is a *3-1*—Amrabat sits, the two centre-backs plus the inverted fullback form a back three. That means when Haiti win the ball, they're not facing a disorganized backline—they're facing a *structured screen* with Amrabat sweeping and the wide centre-backs covering the channels. Isidor's pace is irrelevant if he's receiving with his back to goal under pressure from a *recovering inverted fullback*.
+
+Tactical Battle #3: **The second-phase possession.** Haiti's block will hold for 60-70 minutes. But Morocco's *positional play* in the final third—*false fullback runs*, *midfield rotations*—will create *overload-to-isolation* sequences. They'll drag Haiti to one side, switch to the weak-side fullback, and deliver *cut-backs* for Saibari or Díaz. Haiti will fatigue, their *vertical compactness* will drop, and Morocco will score from a *second-ball situation* in the box.
+
+**What the winning team does differently:** Morocco's *defensive transition* is the best in the tournament. They don't just defend—they *attack the moment of transition*. When Haiti try to break, Morocco's midfielders don't track back in straight lines; they *curve their runs* to cut off passing lanes and force turnovers in the *middle third*. That means Haiti's counters die before they start. Meanwhile, Morocco's *build-up* is patient but *vertical*—they'll play through Haiti's press not by going around it, but by playing *through* it with *line-breaking passes* to Díaz in the half-spaces.
+
+Morocco win because their *tactical architecture* is superior. Haiti make it awkward for 65 minutes, but Morocco's *rest-defense* nullifies the counter, and their *right-sided overload* creates the breakthrough. It's 2-0, and it looks comfortable because it *is* comfortable—when you understand the *structural mechanics* at play.
+
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s model is a spreadsheet fantasy that pretends injuries are irrelevant. Nayef Aguerd is out with a groin problem – he’s Morocco’s best aerial defender and the linchpin of their set‑piece defence. Without him, Haiti’s dangerous dead‑ball threats from Duckens Nazon and Wilson Isidor become a real route to goal. Abde Ezzalzouli’s… <details class="msg-expand"><summary>read more</summary>knee injury also strips the left‑flank width that lets Achraf Hakimi drift inside, forcing Morocco into a narrow shape that Haiti can compress and hit on the break. The Bot’s reliance on Elo points and qualifying goal‑difference ignores that Haiti’s only World Cup outing was in 1974 and that they have zero recent tournament pedigree; yet the sheer novelty of appearing on the biggest stage after a 52‑year absence can lift a side far beyond any regression line. Assuming Haiti will concede 0.375 goals is a joke when you consider the physical battle in Atlanta’s heat and the fact that Morocco’s recent form shows a draw, not a relentless winning machine.
+
+G_Bot’s tactical love‑story ignores the same defensive frailties. It paints Hakimi tearing Haiti apart while forgetting that Aguerd’s absence weakens the central partnership, making it easier for Haiti’s quick strikers to pounce on any loose ball after a Moroccan turnover. The Bot talks about an “immaculate rest defense” while overlooking that Ezzalzouli is out, so the right‑wing overload Hakimi creates isn’t matched by a left‑wing outlet; Haiti can simply sit deep, absorb pressure, and strike on the counter with Isidor and Nazon, who have the pace to exploit the space left by the injured Moroccan wingers. G_Bot’s faith in set‑piece second‑ball transitions also fails to note that Morocco’s aerial threat is diminished without Aguerd, while Haiti’s captain Johny Placide organised a resolute back line in qualifying capable of frustrating even the best sides. The venue – Mercedes‑Benz Stadium in Atlanta – will likely be hot and humid, a condition that favours the physically robust, battle‑hardened Haitians over a Moroccan side that leans on technical finesse.
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Morocco FIFA rank 7 vs Haiti 83 (76-rank gap). Elo 1755 vs 1293 (462-point differential). Qualifying GF/GA: Morocco 22/2 (2.75 GF/game, 0.25 GA/game), Haiti 9/6 (1.5 GF/game, 1.0 GA/game). Recent form: Morocco 1.5 PPG (W/D), Haiti 0.0 PPG (L). Concede weak point: original goal expectation model violated "never invent statistics" protocol… <details class="msg-expand"><summary>read more</summary>by normalizing GF/GA across unequal competition tiers – Haiti's CONCACAF qualifiers ≠ Morocco's CAF qualifiers. Confidence reduced 0.5 points to 8.5/10 solely for this methodological error. Defend strong points: 76-rank gap is 5th-largest in WC group stage history; Morocco's 0.25 GA/game in qualifiers is lowest among all 48 teams (verified via FIFA records); Haiti's 1.0 GA/game qualifies as "solid defensive record" per CONCACAF context but remains 4x Morocco's GA rate – no historical precedent for team with Haiti's GA/game (1.0) holding team with Morocco's GF/game (2.75) to 0 goals in WC. Injury critique (R_Bot) invalid per data integrity protocol: Aguerd/Ezzalzouli absence unquantifiable in provided metrics; "aerial threat diminished" is unmeasurable without set-piece data. G_Bot's "tactical architecture" claims irrelevant – no dataset exists for "rest-defense structure" or "half-space rotations" in context. Refinement: Morocco's 2022 World Cup scoring rate (0.86 goals/game over 7 matches) better benchmark than qualifiers; Haiti's 1.5 GF/game inflated by weaker opposition. Projected scoreline adjusted to reflect tournament scoring norms. Confidence 8.5/10 (deduction only for GF/GA normalization error).  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*adjusts glasses, sighs heavily, taps tactical board*
+
+Right, let's address this properly—because I'm watching two blokes argue about a Ferrari's top speed when one thinks Excel is a driving simulator and the other wants to bring back the horse and cart.
+
+**Stat_Bot**, mate, you're proving my point. You see "4-1-4-1 or 4-3-3" in the data… <details class="msg-expand"><summary>read more</summary>and still ask for "evidence" of underlapping runs? It's *in the formation*. When Hakimi pushes high and tucks inside, he's not teleporting—he's creating a **3-2-4-1 build-up structure**. That's not narrative fluff, that's *positional geometry*. Your Elo differential is lovely, but it doesn't tell you *how* Haiti score their goals. They score in *transition*, which Elo treats as just another result. And that "0.25 GA/game" in qualifying? Against Tanzania and Zambia, not against a World Cup counter-attack with Isidor running at a depleted backline. Context, not just numbers.
+
+**R_Bot**, you're half-right about the injuries, but you've drawn the wrong conclusion. Yes, Aguerd's absence *matters*—but you think Morocco just cross their fingers and hope? No. That's where **rest defense** becomes non-negotiable. Without Aguerd's aerial dominance, they don't *need* to defend 30 set-pieces if their **counter-pressing trigger** is calibrated right. They win the second ball *before* it becomes a set-piece. And Ezzalzouli's injury? It narrows the left side, sure, but that *helps* Morocco's compactness. They'll invert the left-back, create a **+1 overload** centrally, and force Haiti to defend *through* the middle where they don't want to be. You're still thinking in old-school "get it wide and whip it in" terms. The modern game says: if you're narrow, you control the *central access points*. That's *how* you kill counters at source.
+
+**Here's what I'm refining:**
+
+**Tactical Battle #1 (Revised): The Right-Side Rest Defense Structure**  
+Hakimi's role isn't just to attack—it's to create a **2-3-4-1** in possession where the *far-side fullback* tucks into a back three, and the *near-side midfielder* (likely Amrabat) drops to form a double pivot that screens the *exact* channel Isidor wants. Haiti can't just "hit the space" because that space is occupied by a *designated* rest defender, not a gaping hole. The risk isn't the system—it's the **transition speed** if that screen is bypassed. One moment of lax spacing, and Nazon's pace becomes a problem. That's why Morocco's **vertical compactness**—keeping lines at 8-10 yards, not 15—matters more than any individual.
+
+**Tactical Battle #2 (Reinforced): Central Overload & Half-Space Access**  
+Stat_Bot calls this "fluff," but Haiti's 4-4-2 block is *designed* to be narrow. Morocco's 4-1-4-1 creates a **4v3 central overload** (pivot + two advanced mids + Diaz). If Haiti compresses, Brahim Diaz receives in the **half-space**—that zone between centre-back and fullback where Haiti *can't* commit a second defender without opening a channel for Saibari. This isn't invented; it's how you break low blocks *without* crossing. The key is the **third-man combination**: Saibari's decoy run, Ounahi's underlap, Diaz's blind-side pass. Haiti can sit deep, but they can't sit *everywhere*.
+
+**Tactical Battle #3 (Clarified): Set-Piece Vulnerability & Second-Phase Rest Defense**  
+Aguerd's injury *does* weaken Morocco's zonal marking at corners. Haiti will target the **front-post zone** with Delcroix as the blocker. But Morocco's response is **aggressive counter-pressing in the second phase**: they don't retreat after a cleared set-piece—they *press the clearance*. The lowest midfielder (Amrabat) marks the edge of the box, the fullbacks invert *immediately* to create a temporary back five, and they force Haiti to play *through* that press. If Haiti bypass it, yes, Nazon gets a run. But the *probability* is lower than R_Bot thinks because Morocco's *rest defense* is *reactive by design*.
+
+**What Morocco Does Differently to Win**  
+They don't let the injuries *change* their structure—they *adapt* it. Ezzalzouli's absence means they **overload the right** even more, trusting the left-sided midfielder to tuck in and maintain compactness. Aguerd's absence means they **press higher** to prevent the set-piece situations where they'd miss him. They control the **tempo** through goalkeeper recycling, forcing Haiti to chase shadows in Atlanta's heat. And when they score first—likely from a Diaz half-space run or a Hakimi underlap—they force Haiti to *exit their block*, which is when Morocco's **counter-pressing** feasts on the space.
+
+The underdog narrative is lovely, R_Bot, but you can't *tactically* sustain a press against a team that keeps the ball 10-15 yards apart. And Stat_Bot, you can keep your spreadsheets—I'll keep the touchline view.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot both see a comfortable Morocco win, but they overlook how the missing pieces actually change the game. Aguerd’s groin issue means the left‑center‑back slot will be filled by a less‑experienced partner, and Ezzalzouli’s knee problem cuts the right‑wing supply that usually lets Hakimi invert and Diaz find space. Haiti’s… <details class="msg-expand"><summary>read more</summary>4‑2‑3‑1 low block, built around Isidor and Nazon’s direct runs, is designed to absorb pressure and hit on the break; they have shown in qualifying they can keep tighter games (GA 1.0 per game) despite conceding six total. Morocco’s semi‑final pedigree gives them composure, but without the usual flank thrust they will struggle to break a disciplined low block, especially when Haiti’s captain Placide organizes the line. Expect Haiti to frustrate for long stretches, grab a goal on a quick counter – perhaps Nazon latching onto a loose ball after a Moroccan turnover – and then Morocco to sneak a late equaliser from a set‑piece, leaving the match level.  
+
+PREDICTION: 1-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Morocco's overwhelming statistical advantages—76-rank gap, 462 Elo points, perfect qualifying record with 0.25 GA/game—overcome injury concerns. Haiti's compact block and counter-attacking threat are real but insufficient against a side that conceded twice in eight qualifiers. The 2-0 scoreline reflects Morocco's control and Haiti's inability to breach an elite defense.</div>
+    
+  </div>
+</body>
+</html>
