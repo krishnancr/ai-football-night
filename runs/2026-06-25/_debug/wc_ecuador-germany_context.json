@@ -1,0 +1,87 @@
+{
+  "home_team": "Ecuador",
+  "away_team": "Germany",
+  "match_date": "2026-06-25",
+  "group": "E",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "Germany have won both previous meetings convincingly, including a 3-0 group stage victory at the 2006 World Cup and a 4-2 friendly in 2013.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 2,
+    "notable_results": [
+      "0-3 - FIFA World Cup Group Stage - 2006",
+      "2-4 - International Friendly - 2013"
+    ]
+  },
+  "wc_history_home": "Ecuador have qualified for four World Cups (2002, 2006, 2014, 2022), with their best finish being the Round of 16 in 2006, and memorably opened the 2022 tournament with a 2-0 win over hosts Qatar.",
+  "wc_history_away": "Germany are four-time World Cup champions (1954, 1974, 1990, 2014) and the most successful European nation in the tournament's history, though they suffered back-to-back group-stage exits in 2018 and 2022.",
+  "group_context": "Group E consists of Germany, Ecuador, Ivory Coast, and Curacao; with Germany and Ecuador meeting in the final matchday on June 25, both sides could already know their qualification status, but a win would be crucial for topping the group and securing a favourable last-16 draw.",
+  "strengths_home": [
+    "Elite defensive solidity \u2014 only 5 goals conceded in 18 qualifying matches",
+    "World-class midfield pivot in Moises Caicedo providing interceptions, press resistance and ball-carrying",
+    "Dangerous and well-drilled counter-attacking with pace on the wings"
+  ],
+  "strengths_away": [
+    "Exceptional creative duo Musiala and Wirtz capable of breaking down any defence",
+    "High-press intensity and gegenpressing system that wins back possession quickly",
+    "Clinical attack \u2014 5 wins from last 5 competitive matches scoring 18 goals"
+  ],
+  "team_style_home": "Ecuador under Beccacece deploy a compact 4-4-2 / 4-2-3-1 built on elite defensive organisation \u2014 conceding only 5 goals across 18 qualifying matches \u2014 and rely on rapid, disciplined counter-attacks rather than sustained possession.",
+  "team_style_away": "Germany under Nagelsmann use a high-energy 4-2-3-1 or 4-3-3 with aggressive gegenpressing, fast ball circulation, and fluid interchanges between Musiala and Wirtz to unlock defences through combinative play in tight spaces.",
+  "stats_home": {
+    "fifa_rank": 23,
+    "elo": 1599,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 8,
+      "L": 2,
+      "GF": 14,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 10,
+    "elo": 1736,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 0,
+      "L": 1,
+      "GF": 16,
+      "GA": 3
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": 3.1,
+    "away_win": -110
+  },
+  "recent_news": "Germany is favored with -110 odds for the match, while a draw is at +310. The game will take place at MetLife Stadium in East Rutherford, New Jersey.",
+  "form_home": [
+    "W",
+    "W",
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Moises Caicedo (central midfielder / defensive shield)",
+    "Willian Pacho (centre-back, UCL winner with PSG)",
+    "Piero Hincapie (left-back / centre-back)",
+    "Kendry Paez (attacking midfielder / winger)",
+    "Enner Valencia (striker, all-time leading scorer)"
+  ],
+  "key_players_away": [
+    "Joshua Kimmich (midfielder)"
+  ],
+  "context": "Group E consists of Germany, Ecuador, Ivory Coast, and Curacao; with Germany and Ecuador meeting in the final matchday on June 25, both sides could already know their qualification status, but a win would be crucial for topping the group and securing a favourable last-16 draw.",
+  "research_quality": "full"
+}

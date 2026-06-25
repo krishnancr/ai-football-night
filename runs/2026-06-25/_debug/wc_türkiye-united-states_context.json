@@ -1,0 +1,88 @@
+{
+  "home_team": "T\u00fcrkiye",
+  "away_team": "United States",
+  "match_date": "2026-06-25",
+  "group": "D",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "The two nations have met five times since 1991, splitting the record evenly at two wins apiece and one draw, with both teams winning 2-1 across multiple encounters including a recent June 2025 friendly win for T\u00fcrkiye.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 1,
+    "away_wins": 2,
+    "notable_results": [
+      "1-1 - International Friendly - 1991",
+      "2-1 (Turkey win) - FIFA Confederations Cup - 2003",
+      "2-1 (USA win) - International Friendly - 2014",
+      "2-1 (Turkey win) - International Friendly - 2025"
+    ]
+  },
+  "wc_history_home": "T\u00fcrkiye's finest World Cup moment came in 2002, when they finished third \u2014 their only other appearance being the 1954 group stage \u2014 with Hakan \u015e\u00fck\u00fcr scoring the fastest goal in World Cup history (10.8 seconds) in the third-place match against South Korea.",
+  "wc_history_away": "The USMNT are appearing in their 12th World Cup and their best result in the modern era was a quarter-final finish in 2002, while their best ever result was a semi-final in the inaugural 1930 tournament; as co-hosts in 2026 they face immense pressure to equal or surpass that 2002 peak.",
+  "group_context": "Group D features co-hosts USA alongside T\u00fcrkiye, Paraguay, and Australia; the USA enter as strong favourites on home soil and need at least one win to advance, while T\u00fcrkiye \u2014 returning to the World Cup for the first time since 2002 \u2014 require a result here to keep their knockout stage hopes alive after opening games.",
+  "strengths_home": [
+    "Elite creative duo in G\u00fcler and Y\u0131ld\u0131z capable of unlocking any defence with pace, skill, and vision",
+    "\u00c7alhano\u011flu's leadership, passing range, and set-piece delivery give T\u00fcrkiye midfield control",
+    "Strong recent form \u2014 four wins in last four matches including a 4-0 friendly over North Macedonia and 2-1 win over USA in 2025"
+  ],
+  "strengths_away": [
+    "Home crowd advantage at SoFi Stadium provides a significant psychological and atmospheric edge",
+    "Deep European-based squad with elite club experience through Pulisic, McKennie, Adams, and Balogun",
+    "High-energy pressing system under Pochettino creates turnovers and generates attacking transitions"
+  ],
+  "team_style_home": "T\u00fcrkiye under Vincenzo Montella play a fluid 4-2-3-1 built on possession control and high pressing, using the creativity of Arda G\u00fcler and Kenan Y\u0131ld\u0131z to break down defences while \u00c7alhano\u011flu provides control and leadership from deep.",
+  "team_style_away": "The USMNT under Mauricio Pochettino employ a high-pressing 3-4-2-1/3-2-5 hybrid that shifts to a 4-2-3-1 defensively, using wing-backs for width and relying on Pulisic's movement and Balogun's finishing to create and convert chances.",
+  "stats_home": {
+    "fifa_rank": 22,
+    "elo": 1606,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 17,
+      "GA": 12
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 17,
+    "elo": 1671,
+    "qual": null
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Cristian Roldan (muscle strain)",
+    "Christian Pulisic (calf injury)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "The United States Men\u2019s National Team faces a lineup dilemma ahead of their World Cup Group D finale against Turkey, with injuries to Cristian Roldan and Christian Pulisic. Turkey have no injuries to contend with heading into the match.",
+  "form_home": [
+    "D",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Hakan \u00c7alhano\u011flu (captain, deep-lying playmaker, Inter Milan)",
+    "Arda G\u00fcler (attacking midfielder / playmaker, Real Madrid)",
+    "Kenan Y\u0131ld\u0131z (winger / forward, Juventus)",
+    "Merih Demiral (centre-back)",
+    "Ferdi Kad\u0131o\u011flu (left-back / midfielder)"
+  ],
+  "key_players_away": [
+    "Christian Pulisic (forward)"
+  ],
+  "context": "Group D features co-hosts USA alongside T\u00fcrkiye, Paraguay, and Australia; the USA enter as strong favourites on home soil and need at least one win to advance, while T\u00fcrkiye \u2014 returning to the World Cup for the first time since 2002 \u2014 require a result here to keep their knockout stage hopes alive after opening games.",
+  "research_quality": "full"
+}

@@ -1,0 +1,92 @@
+{
+  "home_team": "Japan",
+  "away_team": "Sweden",
+  "match_date": "2026-06-25",
+  "group": "F",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "Japan and Sweden have met only twice in senior international football, with Japan winning once and one draw \u2014 no Sweden win on record.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "3-2 Japan win - 1936 Berlin Olympics",
+      "2-2 Draw - 1995 Umbro/Stanley Rous Cup (Leeds)"
+    ]
+  },
+  "wc_history_home": "Japan have reached the Round of 16 on four occasions (2002, 2010, 2018, 2022), most recently stunning Germany and Spain in Qatar 2022 to top their group before exiting on penalties to Croatia.",
+  "wc_history_away": "Sweden's finest World Cup moment was finishing runners-up on home soil in 1958 (losing 5-2 to Brazil), and they reached the semi-finals again in 1994 and the quarter-finals in 2018 under Janne Andersson.",
+  "group_context": "Group F contains Netherlands, Japan, Sweden, and Tunisia \u2014 considered one of the most open and unpredictable groups of the tournament. With two places guaranteed for the Round of 32 and a potential third-place berth also available, the final matchday double-header (Japan vs Sweden and Tunisia vs Netherlands, both on June 25) could decide the group's fate entirely.",
+  "strengths_home": [
+    "High-press and quick transitions that unsettle organised defences",
+    "Deep squad of European-based players with top-club experience",
+    "Tactical versatility and ability to adapt mid-game under Moriyasu"
+  ],
+  "strengths_away": [
+    "Elite striker duo in Gyokeres (21 goals in 2025-26) and Isak providing multi-threat attack",
+    "Devastating on the counter-attack with Elanga providing electrifying wide pace",
+    "Graham Potter's pragmatic setup maximises squad cohesion despite limited caps"
+  ],
+  "team_style_home": "Japan under Hajime Moriyasu deploy a flexible 3-4-2-1 built on high-intensity pressing, rapid transitions, and a short-passing game, capable of switching to a disciplined low-block counter-attack against stronger opponents.",
+  "team_style_away": "Sweden under Graham Potter favour compact, pragmatic defending with minimal possession, then unleash explosive direct counter-attacks exploiting the blistering pace and clinical finishing of Gyokeres, Isak, and Elanga.",
+  "stats_home": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  },
+  "injuries_home": [
+    "Kaoru Mitoma (hamstring)",
+    "Takumi Minamino (injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.88,
+    "draw": 3.5,
+    "away_win": 4.2
+  },
+  "recent_news": "Japan dominated Tunisia 4-0, while Sweden suffered a heavy 5-1 defeat against the Netherlands in their recent matches.",
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "L",
+    "L"
+  ],
+  "key_players_home": [
+    "Takehiro Tomiyasu (defender)"
+  ],
+  "key_players_away": [
+    "Viktor Gyokeres (striker, Arsenal)",
+    "Alexander Isak (striker, Liverpool)",
+    "Anthony Elanga (winger, Newcastle United)",
+    "Lucas Bergvall (midfielder, Tottenham Hotspur)",
+    "Victor Lindelof (centre-back/captain, Manchester United)"
+  ],
+  "context": "Group F contains Netherlands, Japan, Sweden, and Tunisia \u2014 considered one of the most open and unpredictable groups of the tournament. With two places guaranteed for the Round of 32 and a potential third-place berth also available, the final matchday double-header (Japan vs Sweden and Tunisia vs Netherlands, both on June 25) could decide the group's fate entirely.",
+  "research_quality": "full"
+}

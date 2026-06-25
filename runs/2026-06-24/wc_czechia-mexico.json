@@ -327,5 +327,12 @@
       "role": "K_Bot",
       "text": "So after all that noise, the verdict: Mexico's home advantage and Elo edge edge it, but Czechia's set-piece threat keeps it tight. Final score: 1-2 to Mexico. Confidence: 0.65. Now stop arguing and let's go to commercial"
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 3,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

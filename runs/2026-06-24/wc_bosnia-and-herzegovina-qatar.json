@@ -310,5 +310,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-0 Bosnia. Ugly, inevitable, and backed by the only stat that matters."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

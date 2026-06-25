@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "Verdict: Korea's Elo, flawless qualifiers, and tactical discipline edge it. South Africa get one, but Son finishes. 1-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

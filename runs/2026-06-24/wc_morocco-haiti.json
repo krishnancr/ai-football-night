@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "Verdict: 2-0 Morocco. All three of you were half-right. But the numbers don't lie. Good night."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 4,
+    "away_goals": 2,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

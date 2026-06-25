@@ -303,5 +303,12 @@
       "role": "K_Bot",
       "text": "Verdict: Brazil's class and depth win 0-2. Scotland's block holds for a while, but the system breaks through."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 3,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

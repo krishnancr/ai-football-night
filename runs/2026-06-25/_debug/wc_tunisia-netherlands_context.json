@@ -1,0 +1,92 @@
+{
+  "home_team": "Tunisia",
+  "away_team": "Netherlands",
+  "match_date": "2026-06-25",
+  "group": "F",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": "The Netherlands are unbeaten in three all-time meetings, winning once (4-0 in 1978) and drawing twice, with Tunisia yet to defeat the Dutch.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 2,
+    "away_wins": 1,
+    "notable_results": [
+      "Netherlands 4-0 Tunisia - Friendly - 1978",
+      "Tunisia 2-2 Netherlands - Friendly - 1994",
+      "Netherlands 1-1 Tunisia - Friendly - 2009"
+    ]
+  },
+  "wc_history_home": "Tunisia have appeared in seven World Cups (1978\u20132026), famously becoming the first African team to win a World Cup match with a 3-1 defeat of Mexico in 1978, but have never advanced past the group stage.",
+  "wc_history_away": "The Netherlands have been World Cup runners-up three times (1974, 1978, 2010) and are one of the most storied nations in tournament history, despite never lifting the trophy.",
+  "group_context": "Group F consists of Netherlands, Japan, Sweden, and Tunisia, with the top two teams advancing to the round of 32; Netherlands are heavy favourites to top the group, making the second qualifying spot a fierce three-way contest that gives Tunisia's final match against the Dutch enormous significance.",
+  "strengths_home": [
+    "Elite defensive discipline \u2014 qualified for 2026 without conceding a single goal across 10 matches",
+    "High-energy pressing and structured low-block that frustrates opponents",
+    "Strong team spirit and tournament experience with seven World Cup appearances"
+  ],
+  "strengths_away": [
+    "World-class defensive core led by Virgil van Dijk, one of the best defenders in the world",
+    "Prolific attack with Memphis Depay (all-time Dutch top scorer) and Cody Gakpo providing cutting edge",
+    "Deep squad with Premier League and Champions League experience across multiple positions"
+  ],
+  "team_style_home": "Tunisia deploy a compact 4-2-3-1 built on defensive solidity and disciplined low/mid-block pressing, using direct vertical balls and aerial duels to transition quickly into attack on the counter.",
+  "team_style_away": "The Netherlands under Koeman play a possession-based 4-2-3-1 that morphs into a fluid 4-3-3 in attack, combining aggressive man-oriented pressing with quick vertical transitions and overlapping full-backs.",
+  "stats_home": {
+    "fifa_rank": 45,
+    "elo": 1476,
+    "qual": {
+      "P": 10,
+      "W": 9,
+      "D": 1,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": 8.0,
+    "away_win": -7.5
+  },
+  "recent_news": "Netherlands is favored with odds of -750 for the match, while a draw is at +800. The site predicts a 2-0 win for the Netherlands over Tunisia.",
+  "form_home": [
+    "L",
+    "L",
+    "D",
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "L"
+  ],
+  "key_players_home": [
+    "Ellyes Skhiri (midfield anchor / captain)",
+    "Hannibal Mejbri (creative midfielder)",
+    "Mohamed Ali Ben Romdhane (attacking midfielder)",
+    "Montassar Talbi (central defender)",
+    "Issam Jebali (striker)"
+  ],
+  "key_players_away": [
+    "Virgil van Dijk (central defender / captain)",
+    "Frenkie de Jong (central midfielder)",
+    "Cody Gakpo (forward)",
+    "Memphis Depay (striker / all-time top scorer)",
+    "Ryan Gravenberch (midfielder)"
+  ],
+  "context": "Group F consists of Netherlands, Japan, Sweden, and Tunisia, with the top two teams advancing to the round of 32; Netherlands are heavy favourites to top the group, making the second qualifying spot a fierce three-way contest that gives Tunisia's final match against the Dutch enormous significance.",
+  "research_quality": "full"
+}

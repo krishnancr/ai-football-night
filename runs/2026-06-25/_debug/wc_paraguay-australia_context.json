@@ -1,0 +1,91 @@
+{
+  "home_team": "Paraguay",
+  "away_team": "Australia",
+  "match_date": "2026-06-25",
+  "group": "D",
+  "venue": "Levi's Stadium, Santa Clara, USA",
+  "h2h_summary": "Australia have the marginal edge in the only two meetings between these sides \u2014 both friendlies \u2014 winning one and drawing one, with Paraguay yet to record a victory.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "Australia 1-1 Paraguay - Friendly - 2006",
+      "Australia 1-0 Paraguay - Friendly - 2010"
+    ]
+  },
+  "wc_history_home": "Paraguay have appeared at nine World Cups, reaching their best finish of the quarter-finals in 2010 before losing 1-0 to eventual champions Spain; this 2026 tournament marks their return after a 16-year absence.",
+  "wc_history_away": "Australia have appeared at six World Cups (1974, 2006\u20132026), with their best results being two Round of 16 appearances \u2014 losing narrowly to eventual champions Italy in 2006 and to eventual champions Argentina in 2022.",
+  "group_context": "Group D contains co-hosts USA (tournament favourites), T\u00fcrkiye, Paraguay, and Australia; the Paraguay vs Australia match on June 25 is the final group-stage fixture for both sides and could be decisive for second and third place, with the top two advancing automatically and the best third-placed teams also progressing.",
+  "strengths_home": [
+    "Exceptional defensive discipline \u2014 conceded only 10 goals in qualifying, fewest in CONMEBOL",
+    "Dangerous transition game through Miguel Almiron's pace and directness",
+    "Strong set-piece organisation and compact midfield press"
+  ],
+  "strengths_away": [
+    "Disciplined back-three defensive structure with Harry Souttar's aerial dominance",
+    "Explosive attacking pace through Nestory Irankunda and Martin Boyle on the flanks",
+    "High work rate, pressing intensity and set-piece threat throughout the squad"
+  ],
+  "team_style_home": "Paraguay under Gustavo Alfaro deploy a disciplined 4-4-2 or 4-2-3-1 built on defensive solidity and collective pressing intensity, relying on structured low blocks and rapid counter-attacks through Almiron's transition quality rather than sustained possession.",
+  "team_style_away": "Australia under Tony Popovic use a back-three system (3-4-2-1 / 3-4-3) with energetic wing-backs, compact defensive organisation, high pressing intensity, and quick direct counter-attacking football rather than dominant possession.",
+  "stats_home": {
+    "fifa_rank": 41,
+    "elo": 1505,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 14,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 2.0,
+    "draw": null,
+    "away_win": 2.3
+  },
+  "recent_news": null,
+  "form_home": [
+    "W",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L",
+    "D",
+    "L"
+  ],
+  "key_players_home": [
+    "Miguel Almiron (attacking midfielder / winger)",
+    "Julio Enciso (forward / second striker)",
+    "Antonio Sanabria (striker)",
+    "Gustavo Gomez (captain, centre-back)",
+    "Omar Alderete (centre-back)"
+  ],
+  "key_players_away": [
+    "Mathew Ryan (goalkeeper, captain)",
+    "Harry Souttar (centre-back)",
+    "Nestory Irankunda (forward / winger)",
+    "Martin Boyle (winger)",
+    "Jordy Bos (left wing-back)"
+  ],
+  "context": "Group D contains co-hosts USA (tournament favourites), T\u00fcrkiye, Paraguay, and Australia; the Paraguay vs Australia match on June 25 is the final group-stage fixture for both sides and could be decisive for second and third place, with the top two advancing automatically and the best third-placed teams also progressing.",
+  "research_quality": "full"
+}

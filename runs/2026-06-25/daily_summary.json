@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-25",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "T\u00fcrkiye vs United States",
+      "run_file": "runs/2026-06-25/wc_t\u00fcrkiye-united-states.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_t\u00fcrkiye-united-states_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Paraguay vs Australia",
+      "run_file": "runs/2026-06-25/wc_paraguay-australia.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_paraguay-australia_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Cura\u00e7ao vs Ivory Coast",
+      "run_file": "runs/2026-06-25/wc_cura\u00e7ao-ivory-coast.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_cura\u00e7ao-ivory-coast_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Ecuador vs Germany",
+      "run_file": "runs/2026-06-25/wc_ecuador-germany.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_ecuador-germany_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Japan vs Sweden",
+      "run_file": "runs/2026-06-25/wc_japan-sweden.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_japan-sweden_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Tunisia vs Netherlands",
+      "run_file": "runs/2026-06-25/wc_tunisia-netherlands.json",
+      "thread_file": "runs/2026-06-25/_debug/wc_tunisia-netherlands_thread.json",
+      "success": true
+    }
+  ]
+}

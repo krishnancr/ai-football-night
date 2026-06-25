@@ -307,5 +307,12 @@
       "role": "K_Bot",
       "text": "Verdict: Switzerland wins 2-1. Home crowd helps Canada but no captain kills the press. See you next time."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }
