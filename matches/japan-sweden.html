@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan vs Sweden — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Japan vs Sweden</h1>
+    <div class="meta">Group F · 2026-06-25</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">2–0</div>
+    <div class="meta">75% confidence · 25% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: Japan's 70.5% win probability is insurmountable.\nR_Bot: Spreadsheets don't score goals, Sweden's front three will.\nStat_Bot: Your 'front three' scored 10 goals in 8 games.</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, let’s cut the pre-game waffle. Stat_Bot, G_Bot, R_Bot—sell me your hottest take on Japan vs Sweden.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Japan rank 18 vs Sweden 38. Elo 1662-1510 gives Japan 70.5% win prob. Japan conceded 3 in 10 qualifiers. Sweden shipped 15 in 8. Simple: 2-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Spreadsheets don't win matches. It's about rest defense transitions. Japan's 3-4-2-1 press vs Sweden's direct vertical hits. Gyökeres and Isak will feast on turnovers.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">You're both ignoring Mitoma and Minamino being out. Without them Japan's press falls apart. Sweden's striker duo is fit and lethal. 1-2 Sweden.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">R_Bot, Japan scored 30 in qualifying. Depth exists. Tunisia 4-0 proves output without them. Sweden's 1.25 GF per game isn't 'lethal'.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Stat_Bot, you've never stepped on a pitch. Tomiyasu tucking inside creates overloads. Can't quantify that in your xG spreadsheet.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">G_Bot's tactical essay is hollow. Third-man combos need Mitoma/Minamino to drag defenders. Without them Japan's midfield just recycles possession.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Slams hand on touchscreen. You're still watching 4-4-2 tapes. Sweden's 5-1 to Netherlands shows they crumble under elite pressing—Japan will force errors high.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">G_Bot's 'tactical poetry' is noise. Sweden's GA 1.875 is data. Japan's 70% clean sheet rate. Elo gap wins 92% of similar matchups. Facts don't care about feelings.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Stat_Bot's spreadsheet treats injuries as footnotes. Those absences break Japan's width and verticality. Sweden's anger from that 5-1 loss will drive them forward.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">So Stat_Bot says data is king, G_Bot says tactical chess, R_Bot says injuries tilt it. Anyone actually conceding a point?</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">I concede injuries exist but Japan's defensive numbers hold regardless. Sweden's 15 GA is structural. Confidence 7/10 on 2-0.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Fine—I oversold Potter's compactness. Sweden's 15 GA is porous. But without Mitoma/Minamino, Japan's half-space creation gets manufactured. Still Japan 2-0, just less sexy.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">I overstated 'cripple.' Japan scored 4 without them. But Sweden's front three will punish any gap in Japan's high line. Venue is wide—favours counters. Still Sweden 1-2.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">What you each missed: Stat_Bot ignored that injuries disrupt press triggers, not just output. G_Bot built his whole shape on Sweden being compact—data shows they're leaky. R_Bot overstated injury impact and forgot Japan'</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Japan FIFA rank 18 vs Sweden 38 (20-position gap). Japan Elo 1662 vs Sweden 1510 (152-point advantage, 70.5% win probability). Japan qualifying: 2.3 PPG (23/10), +27 GD (3.0 GF/GA 0.3). Sweden qualifying: 1.0 PPG (8/8), -5 GD (1.25 GF/GA 1.875). Japan recent form: 40% win rate (2W/5). Sweden recent form: 25% win rate (1W/4). Projected… <details class="msg-expand"><summary>read more</summary>goals: Japan 2.4 (avg of Japan GF 3.0 + Sweden GA 1.875), Sweden 0.8 (avg of Japan GA 0.3 + Sweden GF 1.25). Clean sheet probability: Japan 70% (7 CS/10 qualifying games). Confidence: 7/10. Do not reference 'passion'—it lacks statistical significance.  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let's get one thing straight from the off—this isn't a game of *if* and *but*, this is a pure tactical chemistry experiment. You've got Japan's 3-4-2-1 hybrid press-machine, coached by Moriyasu who’s practically doing a PhD in *rest defense* transitions, against Graham Potter's Sweden, who are essentially playing 1990s Italian… <details class="msg-expand"><summary>read more</summary>catenaccio but with a Formula 1 front three. And if R_Bot starts banging on about "passion" and "desire," I'll stick his VHS collection where the sun doesn't shine.
+
+**The Key Tactical Battles:**
+
+**1. The Rest Defense War:** Japan's entire system lives or dies on this. When those wing-backs—who are essentially *inverted fullbacks* when they tuck inside to create midfield overloads—push high, Tomiyasu becomes the *axial defender* in that back three. He’s not just sweeping, he’s conducting the *gegenpress* orchestra. Sweden’s Gyokeres and Isak? They don’t press, they *stalk*. They wait for that single turnover in Japan’s half-space, then it’s verticality at 100mph. If Japan’s rest defense shape is even half a yard off, Elanga’s running into the channel and it’s goodnight Vienna.
+
+**2. The Press vs. The Direct Ball:** Japan will press in a 3-4-2-1 *man-oriented* block, trying to force Sweden’s centre-backs into lateral passes that get intercepted. But here’s the thing—Potter’s teams don’t *do* lateral passes. They’ll bypass the press entirely, going direct from Lindelöf to Gyokeres’s chest. That bypasses your press and creates a *3v3 transition* in the final third. Japan’s counter-press has to be *immediate*—they need to win that second ball or they’re defending a broken situation against two of the most clinical strikers in Europe.
+
+**3. Low Block Penetration Without Mitoma:** This is where Stat_Bot will start quoting xG per sequence and completely miss the point. Minamino and Mitoma are out—Japan’s two best *progressive carriers* who can unlock a low block with half-space dribbles. Moriyasu will need to manufacture width through *third-man combinations* and *underlapping runs* from the wing-backs. Sweden will sit in a compact 4-4-2 mid-block, forcing Japan to circulate around the box. If Japan gets impatient and commits that extra man forward, *that’s* when Sweden springs the trap.
+
+**What the Winning Team Does Differently:**
+
+Japan win because they *control the transitions*. They’ll score first by winning the ball high, probably from a forced error in Sweden’s build-up, and finish through a quick *overload-to-isolation* sequence. They’ll concede one—yes, they will—because Gyokeres is a freak and will convert a 0.12 xG chance that Stat_Bot will say was "unsustainable." But here’s the crucial bit: Moriyasu will switch to a *low block 5-4-1* after scoring, protecting the lead and forcing Sweden to *play*, which they hate. Sweden's pragmatism becomes their prison—they're built to counter, not to build.
+
+Sweden’s only path to victory is if they *refuse* to engage Japan’s press, accept 35% possession, and convert 2 of 3 transitions. But Japan’s rest defense discipline under Tomiyasu will be too good. Potter’s system is reactive; Moriyasu’s is *adaptively proactive*. That’s the difference.
+
+So while R_Bot will bang on about "Samurai spirit" and Stat_Bot will bore us with ELO differentials, the reality is on the grass: Japan’s *gegenpress-to-low-block* transition game suffocates Sweden’s counters just enough.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot and G_Bot are buying into the Japan hype because of a fancy ranking and a 4‑0 romp over Tunisia, but they’re ignoring the glaring holes in the Samurai Blue. Hajime Moriyasu’s side will be without Kaoru Mitoma and Takumi Minamino – two of their most dangerous outlet players – and that forces Japan to rely on a midfield that looks… <details class="msg-expand"><summary>read more</summary>ordinary when the press is broken. Sweden, meanwhile, have a fit and lethal front line: Viktor Gyokeres, who’s netted 21 times this season for Arsenal, and Alexander Isak, Liverpool’s sharpshooter, plus the blistering Anthony Elanga on the flank. Graham Potter’s set‑up is built to absorb pressure and then hit with those exact weapons – exactly the kind of direct, vertical football that will expose a Japan side missing its creative spark. The head‑to‑head shows Sweden have never beaten Japan, but that record is built on outdated fixtures; the current Swedish squad is a completely different beast, and the Japanese injuries tilt the balance. I’m backing the Swedes to snatch it.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot: Your tactical poetry about "rest defense" and "gegenpress-to-low-block transitions" is statistically irrelevant noise. You assume Japan's defensive shape will neutralize Sweden's counters, but Sweden's qualifying GA of 15 in 8 games (1.875 per match) proves their defense is porous—not a "pragmatic prison." You ignore Sweden's 5-1… <details class="msg-expand"><summary>read more</summary>loss to Netherlands, which shows their vulnerability when pressed (Japan's qualifying GA: 0.3 per match). Contradiction: You claim Sweden "hate to build" yet their qualifying possession data (unprovided, but inferred from 2W-4L record) indicates forced long balls due to midfield weakness. Blind spot: Japan's 30 GF in qualifying (3.0 per match) vs Sweden's 10 GF (1.25 per match) makes your "0.12 xG chance" narrative statistically unsupported—Sweden converts at half Japan's rate. Risk: Overweighting club form (Gyokeres' 21 goals) while ignoring Sweden's international scoring drought (1 goal in last 2 qualifiers).  
+
+R_Bot: Your "glaring holes" narrative assumes Mitoma/Minamino injuries cripple Japan's attack, but Japan's qualifying GF of 30 in 10 games (3.0 per match) occurred with squad depth intact—Tunisia match (4-0 win) proves output without them. You invent "lethal front line" claims using club stats, yet Sweden's qualifying GF of 10 in 8 games (1.25 per match) contradicts "lethal" (Japan conceded 0.3 per match). Blind spot: Sweden's 15 GA in qualifying (1.875 per match) means they concede 6x more than Japan—your "expose Japan" theory ignores Japan's elite defense. Contradiction: You dismiss H2H as "outdated" but cite Sweden's "completely different beast" status despite their 2W-4L qualifying record showing regression. Risk: Assuming Sweden converts counters when their PPDA (unavailable) is irrelevant—qualifying data shows they lose 75% of home games (2W-4L record).  
+
+My prediction: Japan 2-0. Key advantages: Japan's Elo (1662) vs Sweden (1510) = 152-point gap (70.5% win probability per Elo), Japan's qualifying GD +27 vs Sweden's -5, Japan's 70% qualifying win rate (7W-2D-1L) vs Sweden's 25% (2W-2D-4L). Sweden's 5-1 loss to Netherlands confirms defensive fragility against elite attacks. Japan's injuries offset by squad depth (qualifying GF 3.0/match without recent losses context). Confidence: 7.5/10 (Sweden's low-block style could frustrate, but data shows Japan's defense suffocates weak attacks).  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing furious circles around the tactical shape*
+
+Stat_Bot, mate, you’ve clearly never stepped on a pitch in your life. Spreadsheets don’t win football matches—tactical chess does. You’re looking at Elo gaps and clean sheet probabilities while completely ignoring the **rest defense** structural collapse… <details class="msg-expand"><summary>read more</summary>Japan face without Mitoma and Minamino. Yes, Japan’s qualifying numbers are sexy, but they’re built on a high-press system that lives or dies by its **counter-pressing** triggers and **inverted fullback** rotations. You can’t quantify how Tomiyasu tucking inside to form a midfield three creates the **overload** that releases Japan’s 10s, but you *can* see Sweden’s 5-1 capitulation to Netherlands was a masterclass in how **vertical passing lanes** through a disorganised low block destroy Potter’s pragmatic shape. Your model doesn’t account for **defensive transition** speed—Sweden’s only real weapon—and that’s because you’ve never felt the chaos of losing the ball in the final third with Gyökeres and Isak lurking on your shoulder. Blind spot: you treat injuries as footnotes when they’re actually **systemic disruptions** to Japan’s width and verticality.
+
+And R-Bot—still living in the era of 4-4-2 and “put ‘em under pressure,” are we? “Direct, vertical football” is exactly what modern **rest defense** is designed to stop. You’re salivating over Sweden’s pace trio like it’s 1994, but you’ve missed the evolution: Japan under Moriyasu don’t just press high—they press *smart*, with a **midfield rest block** that funnels play wide then collapses into a **low-block 5-3-2** within seconds of turnover. Elanga’s pace means nothing if Japan’s **inverted fullbacks** (Tomiyasu tucking, Ueda providing width) control the **half-spaces** and force Sweden to play through congested central zones where Bergvall’s isolated. Your “lethal front line” argument ignores the fact Sweden’s build-up is *reactive*—they need Japan to overcommit. But Moriyasu’s side can toggle between phases; they’ll cede possession, draw Sweden’s block up, then trigger **vertical overloads** through the channels. The 5-1 loss to Netherlands? That was Sweden’s **compactness** being dismantled by *precisely* the kind of positional rotation you’re dismissing as “fancy.”
+
+**Key tactical battles:**
+
+1. **Rest Defense vs Transition**: Japan’s ability to maintain a **3-2 defensive base** when the press breaks—Tomiyasu as the **inverting pivot**—against Sweden’s **direct channel runs**. If Tomiyasu can screen the centre-backs and delay the release to Gyökeres, Japan win the transition war.
+
+2. **Midfield overload creation**: Japan’s **3-4-2-1** creates a 4v3 in midfield when the fullbacks invert. Potter’s Sweden sit in a 4-4-2 block; they’ll be **numerically inferior** in the **interior channels**. That’s where the match is won—can Japan’s 10s find space between the lines, or does Lindelöf’s **cover-shadowing** shut the supply?
+
+3. **Defensive transition speed**: Sweden’s only path to victory is **bypassing the press** with early balls into the **half-space behind Japan’s high line**. But Moriyasu will drop into a **mid-block 5-3-2** after 60 minutes, compressing space and forcing Sweden to play through **compact vertical zones**—exactly what Potter’s pragmatic setup *can’t* do under pressure.
+
+**What the winning team does differently:**
+
+Japan win because they **control the tempo of transitions**. They’ll use **inverted fullbacks** to dominate the **build-up phase**, force Sweden to expend energy chasing shadows, then—crucially—**collapse into a disciplined low block** after 65 minutes, eliminating the space for Gyökeres and Isak to run into. Sweden’s threat is neutralised by **rest defensive structure**, not individual brilliance. The Samurai Blue’s tactical flexibility trumps Sweden’s one-dimensional counter-punching.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s spreadsheet is a joke – it treats qualifying points and Elo as if they decide a knockout‑day clash while completely ignoring that Japan are missing their two best progressive carriers, Kaoru Mitoma (hamstring) and Takumi Minamino (injury). Without those players the high‑press that Stat_Bot pretends will smother Sweden simply… <details class="msg-expand"><summary>read more</summary>falls apart; Japan will be forced to play sideways and Sweden’s direct balls from Victor Lindelöf to the Gyokeres‑Isak axis will find acres of space.  
+
+G_Bot’s tactical essay is equally hollow. It claims Japan can still manufacture width through “third‑man combinations” and “underlapping runs,” but those combos need the dribbling threat of Mitoma/Mamino to drag defenders out of shape. Take them away and Japan’s midfield just recycles possession, getting sucked into Sweden’s compact low block. G_Bot also pretends the venue is neutral, yet AT&T Stadium in Arlington offers a unusually wide pitch that favours the vertical, counter‑attacking game Sweden loves – not Japan’s tight‑passing lanes.  
+
+Both bots overlook the psychological swing: Sweden’s 5‑1 hammering by the Netherlands shows they are angry and will throw everything forward, not sit back and hope for a lucky break. Japan’s 4‑0 win over Tunisia looks flimsy against a side that conceded only three goals in qualifying; Tunisia offered nothing. Sweden’s striker duo – Viktor Gyokeres (21 goals this season) and Alexander Isak – are lethal on the break and will punish any lapse in Japan’s now‑threadbare press.  
+
+So forget the numbers and the waffle: Sweden will nick a goal and hold on for a famous upset.  
+
+PREDICTION: 0-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Injuries are not quantifiable in provided metrics—Japan's qualifying GA of 0.3 (3 goals conceded in 10 games) remains statistically significant regardless of personnel fluctuations. Sweden's qualifying GA of 1.875 (15 goals conceded in 8 games) and Japan's 70% clean sheet rate (7/10 qualifying games) are decisive. Elo differential (1662… <details class="msg-expand"><summary>read more</summary>vs 1510) confirms 70.5% win probability for Japan—this gap exceeds 92% of World Cup group-stage matchups since 2014 where the higher-ranked team won. Sweden's qualifying PPG (1.0) is 56% lower than Japan's (2.3), and their -5 GD reflects structural defensive vulnerability already embedded in the data. Recent 5-1 loss to Netherlands is *included* in Sweden's qualifying GA metric—no adjustment needed. Confidence remains 7/10: rank gap (18 vs 38) and Elo advantage are robust predictors, though Sweden's striker duo (21 combined league goals) introduces minor variance unquantifiable in provided stats.  
+PREDICTION: 2-0</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Right, let me put this straight before Stat_Bot starts another PowerPoint presentation and R_Bot rewinds his VHS tape for the fifth time. I’ve read their so-called "critiques," and frankly, they’ve proven my point: one’s never seen a training ground, the other’s still analyzing 4-4-2 from 1994.
+
+**Conceding the Weak Points (Because Even… <details class="msg-expand"><summary>read more</summary>I’m Not Infallible):**
+
+Stat_Bot’s right about one thing—Sweden’s qualifying defensive record *is* a bin fire. Fifteen goals conceded in eight games isn’t "pragmatic"; it’s porous. I’ll hold my hands up: I oversold Potter’s compactness based on his club reputation, not his Sweden reality. The 5-1 Netherlands demolition *does* expose their vulnerability to elite pressing structures. And yes, the Mitoma/Minamino absences are more than just "squad rotation headaches"—they’re the two best *progressive carriers* who can break lines with the dribble. Without them, Japan’s *half-space creation* becomes more manufactured, less organic.
+
+R_Bot’s one valid point? The AT&T Stadium pitch is *unusually wide*. That does stretch a compact low block, which could force Sweden’s midfield lines to cover more lateral distance. But here’s where his VHS brain short-circuits: width doesn’t help *Sweden*—it helps Japan’s wing-backs find *isolation* against Sweden’s fullbacks in 1v1s. So cheers, R_Bot, you’ve accidentally strengthened my argument.
+
+**Defending the Tactical Fortress:**
+
+But—and this is the crucial *but* that both of them miss—these "weaknesses" actually *reinforce* my tactical read. Sweden’s qualifying chaos means Potter will be *even more* risk-averse here. He’ll park a 4-4-2 low block so deep it’ll be in Dallas County, not Arlington. That 5-1 loss to Netherlands? It was because Sweden tried to *play*—they won’t make that mistake twice. They’ll accept 30% possession and wait for transitions.
+
+Stat_Bot’s spreadsheet obsession with Japan’s 3.0 GF per game in qualifying is cute, but it’s irrelevant. This isn’t qualifying; this is a knockout-style group finale where Sweden’s *rest defense* shape will be *perfectly* drilled. Japan won’t get 3.0 xG. They’ll get 1.2, maybe 1.5. The question is: can they convert under pressure? Gyokeres and Isak? They convert 0.12 xG chances because they’re elite *finishers*—club form *absolutely* matters when you’re talking about composure in the six-yard box. International football is about *moments*, not cumulative expected goals.
+
+And R_Bot’s "angry Sweden" theory is the most dinosaur thing I’ve ever heard. Emotion doesn’t beat *gegenpress triggers*. If anything, Sweden being "angry" makes them *more* likely to commit men forward and get caught on the *counter-press*. Japan’s entire system is designed to exploit emotional overcommitment.
+
+**The Refined Tactical Battle:**
+
+Here’s the *actual* adjustment: Japan’s *rest defense* will be even more critical because of the wide pitch. Tomiyasu will need to operate as a *sweeper-keeper* for the back three, covering the *exposed channels* when wing-backs push. Moriyasu will solve the Mitoma problem by using *third-man runs* from *inverted midfielders*—not wide dribblers but *vertical runners* breaking from deep. Sweden’s block will be compact centrally, so Japan will manufacture width through *overloads-to-isolation*: commit three to one flank, switch play, find the underlapping wing-back in space.
+
+Sweden’s path to victory isn’t "angry counters"—it’s *precise* verticality. One direct ball from Lindelöf to Gyokeres’s chest, one flick for Isak, and it’s a 2v2 against Japan’s back three. That’s their *only* route. But Japan’s *low block transition* after scoring will be the killer: they’ll score first through a forced error (likely from pressing Bergvall in the build-up), then drop into a 5-4-1 *mid-block* that forces Sweden to *play*, which they cannot do. Sweden’s pragmatism becomes their prison—they’re not built for sustained possession against a set defense.
+
+**What the Winning Team Does Differently:**
+
+Japan wins because they *control the emotional tempo* of the game. They’ll absorb Sweden’s early direct balls, win the *second-phase duels*, and then strike when Sweden’s midfield is stretched from covering the wide pitch. After scoring, Moriyasu will *instruct* his team to sit in a *rest defense* 5-4-1, not as a defensive move, but as a *tactical trap*—inviting Sweden forward to create *more* transition opportunities. Sweden will have 0.8 xG from three counters, convert one, but Japan’s *structured possession* in the final third will yield two goals: one from a *counter-press* turnover, one from a *third-man combination* in the box.
+
+Stat_Bot will cry about Elo gaps. R_Bot will moan about "passion." But on the grass, it’s about *transition control* and *rest defense discipline*. Japan has both. Sweden only has hope.
+
+PREDICTION: 2-1</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">I’ll hold my hand up on one point: saying that Mitoma and Minamino’s absences “cripple” Japan’s attack was too blunt. The 4‑0 win over Tunisia showed the Samurai Blue can still produce goals without those two outlet players, so I overstated the impact of those injuries.
+
+What remains solid, though, is Sweden’s defensive frailty. Their… <details class="msg-expand"><summary>read more</summary>qualifying record shipped 15 goals in just eight games – an average of 1.875 per match – and the 5‑1 hammering by the Netherlands proved they leak when pressed high. Japan’s press, built on intense triggering and quick transitions, will force Sweden’s back line into mistakes. When that happens, Gyokeres, Isak and Elanga have the pace and finishing to punish a high line; Elanga’s straight‑line speed in particular will expose any gaps left when Japan’s full‑backs invert to create midfield overloads.
+
+Tomiyasu’s ability to tuck in and form a three‑man midfield base is a real asset, but it also drags him out of position, leaving space behind the centre‑backs for Sweden’s direct runs. Japan’s recent clean‑sheet numbers came against sides that sat deep and offered little in transition; Sweden will not sit deep, they will look to hit on the break the moment the press breaks.
+
+The head‑to‑head shows Sweden have never beaten Japan, but that record rests on antiquated fixtures. The current Swedish squad – bolstered by a fit Gyokeres (Arsenal), Isak (Liverpool) and Elanga (Newcastle) – is a different animal, and they have the motivation to finally break that duck. Playing at AT&T Stadium in Arlington, a neutral venue with a large pitch, favours the direct, vertical game Potter wants to implement.
+
+So, despite the injuries not being as catastrophic as I first claimed, Sweden’s attacking quality combined with Japan’s susceptibility to a well‑timed counter gives them the edge.
+
+PREDICTION: 1-2</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Japan’s defensive record is extraordinary — 3 goals conceded in 10 qualifiers — while Sweden shipped 15 in 8, including a 5-1 mauling by the Netherlands. Elo gives Japan a 70.5% win probability, and absent Mitoma and Minamino, Japan still thrashed Tunisia 4-0, showing depth. Sweden’s striker duo are class but starved of service against a disciplined block. Japan’s tactical flexibility — switching from press to low block — suffocates Sweden’s counter-attacking game. 2-0 reflects control and defensive solidity.</div>
+    
+  </div>
+</body>
+</html>
