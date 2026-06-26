@@ -314,5 +314,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-1. Both sides cancel out: USA home edge vs injuries, T\u00fcrkiye form vs defensive frailty. Shared point."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 2,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

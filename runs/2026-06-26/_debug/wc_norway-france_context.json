@@ -1,0 +1,88 @@
+{
+  "home_team": "Norway",
+  "away_team": "France",
+  "match_date": "2026-06-26",
+  "group": "I",
+  "venue": "Gillette Stadium, Foxborough, USA",
+  "h2h_summary": "France hold a strong historical edge over Norway with 7 wins to Norway's 5 across 16 all-time meetings, though Norway pulled off notable upsets including a 7-0 win in 1922 and a 2-1 friendly victory in 2010.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 4,
+    "away_wins": 7,
+    "notable_results": [
+      "Norway 7-0 France - Friendly - 1922",
+      "France 4-0 Norway - Friendly - 2014",
+      "Norway 2-1 France - Friendly - 2010",
+      "France 3-3 Norway - Friendly - 1998"
+    ]
+  },
+  "wc_history_home": "Norway have appeared at four World Cups (1938, 1994, 1998, 2026), with their best run being the Round of 16 in 1998 \u2014 where they famously beat Brazil 2-1 in the group stage \u2014 before a 28-year absence ended with qualification for 2026.",
+  "wc_history_away": "France are two-time World Cup champions, winning on home soil in 1998 (3-0 vs Brazil) and again in Russia in 2018 (4-2 vs Croatia), and reaching the final in 2006 and 2022, making them one of the most decorated nations in tournament history.",
+  "group_context": "Group I features France, Norway, Senegal, and Iraq, with the top three advancing to the Round of 32; France are the overwhelming favourites to top the group, while Norway and Senegal are battling for the crucial second and third spots, making the final group match between Norway and France on June 26 potentially decisive for Norway's round-of-32 hopes.",
+  "strengths_home": [
+    "Erling Haaland's elite goal-scoring and physical dominance in the box",
+    "Flawless World Cup qualifying record \u2014 8 wins from 8, 37 goals scored",
+    "High-intensity pressing and explosive counter-attacking transitions"
+  ],
+  "strengths_away": [
+    "World No. 1 ranked team with elite quality across every position",
+    "Kylian Mbappe leading a devastating front three with Dembele and Olise",
+    "Defensively solid with Saliba and Upamecano providing a world-class centre-back partnership"
+  ],
+  "team_style_home": "Norway play a direct, high-pressing 4-3-3 (shifting to 4-2-2-2) built around Haaland as a physical focal point, with Odegaard providing creativity between the lines and rapid counter-attacking transitions from a compact defensive shape.",
+  "team_style_away": "France deploy a structured 4-2-3-1 under Deschamps with Tchouameni and Camavinga anchoring midfield, allowing Mbappe to free-roam from a central/left position while Dembele and Olise provide directness from wide areas.",
+  "stats_home": {
+    "fifa_rank": 31,
+    "elo": 1557,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 37,
+      "GA": 5
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Norway and France are level on six points in Group I, both already through to the knockouts, and will face off to determine the group's top spot. Key players Erling Haaland and Kylian Mbapp\u00e9 are expected to lead their respective teams.",
+  "form_home": [
+    "D",
+    "W",
+    "D",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Erling Haaland (forward)"
+  ],
+  "key_players_away": [
+    "Kylian Mbapp\u00e9 (forward)"
+  ],
+  "context": "Group I features France, Norway, Senegal, and Iraq, with the top three advancing to the Round of 32; France are the overwhelming favourites to top the group, while Norway and Senegal are battling for the crucial second and third spots, making the final group match between Norway and France on June 26 potentially decisive for Norway's round-of-32 hopes.",
+  "research_quality": "full"
+}

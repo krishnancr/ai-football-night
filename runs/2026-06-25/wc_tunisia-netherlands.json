@@ -307,5 +307,12 @@
       "role": "K_Bot",
       "text": "Verdict: Combining statistical edge with tactical realities points to controlled Dutch victory. Tunisia's block holds for a while, but quality tells. Scoreline: 0-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 3,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

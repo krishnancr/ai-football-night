@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-26",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Egypt vs Iran",
+      "run_file": "runs/2026-06-26/wc_egypt-iran.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_egypt-iran_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "New Zealand vs Belgium",
+      "run_file": "runs/2026-06-26/wc_new-zealand-belgium.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_new-zealand-belgium_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Cabo Verde vs Saudi Arabia",
+      "run_file": "runs/2026-06-26/wc_cabo-verde-saudi-arabia.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_cabo-verde-saudi-arabia_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Uruguay vs Spain",
+      "run_file": "runs/2026-06-26/wc_uruguay-spain.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_uruguay-spain_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Norway vs France",
+      "run_file": "runs/2026-06-26/wc_norway-france.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_norway-france_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Senegal vs Iraq",
+      "run_file": "runs/2026-06-26/wc_senegal-iraq.json",
+      "thread_file": "runs/2026-06-26/_debug/wc_senegal-iraq_thread.json",
+      "success": true
+    }
+  ]
+}

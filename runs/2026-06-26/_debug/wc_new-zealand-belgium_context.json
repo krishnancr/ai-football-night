@@ -1,0 +1,89 @@
+{
+  "home_team": "New Zealand",
+  "away_team": "Belgium",
+  "match_date": "2026-06-26",
+  "group": "G",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": "New Zealand and Belgium have no recorded competitive meetings prior to this 2026 World Cup match, making it effectively a first-ever major encounter between the two nations.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "New Zealand (the All Whites) have appeared at the World Cup in 1982 and 2010, most memorably going unbeaten in 2010 with draws against Slovakia, Italy, and Paraguay \u2014 the only unbeaten team at that tournament.",
+  "wc_history_away": "Belgium have participated in 15 World Cups and achieved their best-ever finish of third place at Russia 2018, where their Golden Generation featuring De Bruyne, Hazard, and Lukaku defeated England 2-0 in the third-place play-off.",
+  "group_context": "Group G consists of Belgium, Egypt, Iran, and New Zealand, with Belgium heavily favoured to top the group; New Zealand face an uphill task against stronger opposition but a positive result against Belgium could give them a fighting chance of advancing as a third-place team.",
+  "strengths_home": [
+    "Defensive organisation and resilience \u2014 capable of frustrating top-ranked opponents",
+    "Set-piece and aerial threat through Chris Wood, New Zealand's all-time leading scorer",
+    "Experience of World Cup pressure, with the 2010 squad's unbeaten run embedded in team culture"
+  ],
+  "strengths_away": [
+    "World-class attacking quality with De Bruyne, Doku, Lukaku, and Trossard",
+    "Excellent goalkeeper in Thibaut Courtois (two-time UEFA Champions League winner with Real Madrid)",
+    "Strong squad depth and form \u2014 on a 13-match unbeaten run heading into the tournament"
+  ],
+  "team_style_home": "New Zealand deploy a pragmatic 4-3-3 or 4-2-3-1 built on defensive solidity, aerial duels, and set-piece threat through Chris Wood, relying on organisation and resilience rather than possession-based attacking play.",
+  "team_style_away": "Belgium under Rudi Garcia use a 4-2-3-1 emphasising possession, quick transitions after winning the ball, with Kevin De Bruyne as the creative engine and pacey wide attackers like Jeremy Doku exploiting space on the flanks.",
+  "stats_home": {
+    "fifa_rank": 85,
+    "elo": 1276,
+    "qual": {
+      "P": 5,
+      "W": 5,
+      "D": 0,
+      "L": 0,
+      "GF": 29,
+      "GA": 1
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Romelu Lukaku (injury-plagued season)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Belgium have included striker Romelu Lukaku in their squad for the World Cup, despite his injury-plagued season. New Zealand and Belgium are set to clash in a crucial Group G match at the 2026 World Cup.",
+  "form_home": [
+    "L",
+    "W",
+    "L",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Chris Wood (striker / captain)",
+    "Liberato Cacace (left back)",
+    "Tyler Bindon (centre back)",
+    "Marko Stamenic (central midfielder)",
+    "Sarpreet Singh (attacking midfielder)"
+  ],
+  "key_players_away": [
+    "Jeremy Doku (returns to squad)"
+  ],
+  "context": "Group G consists of Belgium, Egypt, Iran, and New Zealand, with Belgium heavily favoured to top the group; New Zealand face an uphill task against stronger opposition but a positive result against Belgium could give them a fighting chance of advancing as a third-place team.",
+  "research_quality": "full"
+}

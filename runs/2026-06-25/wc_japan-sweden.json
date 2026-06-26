@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "What you each missed: Stat_Bot ignored that injuries disrupt press triggers, not just output. G_Bot built his whole shape on Sweden being compact\u2014data shows they're leaky. R_Bot overstated injury impact and forgot Japan'"
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 1,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }
