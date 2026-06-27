@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-1. Both too cautious, both too stubborn to lose their opener. Next."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

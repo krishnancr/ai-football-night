@@ -311,5 +311,12 @@
       "role": "K_Bot",
       "text": "Final score: Senegal 2-0. The win probability differential and goal scoring dominance hold even with Mendy out, but Iraq's set-piece danger keeps it from being a blowout."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 5,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

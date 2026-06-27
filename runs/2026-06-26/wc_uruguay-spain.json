@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Stat_Bot, you ignored how Bielsa's press works in dynamic build-up. G_Bot, you dismissed altitude without proving it doesn't matter. R_Bot, you over-relied on history and set pieces. Verdict: 1-2 Spain."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 1,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

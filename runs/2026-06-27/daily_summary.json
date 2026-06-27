@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-27",
+  "stage": "group",
+  "matches": [
+    {
+      "match_string": "Jordan vs Argentina",
+      "run_file": "runs/2026-06-27/wc_jordan-argentina.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_jordan-argentina_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Algeria vs Austria",
+      "run_file": "runs/2026-06-27/wc_algeria-austria.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_algeria-austria_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Colombia vs Portugal",
+      "run_file": "runs/2026-06-27/wc_colombia-portugal.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_colombia-portugal_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "DR Congo vs Uzbekistan",
+      "run_file": "runs/2026-06-27/wc_dr-congo-uzbekistan.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_dr-congo-uzbekistan_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Panama vs England",
+      "run_file": "runs/2026-06-27/wc_panama-england.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_panama-england_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Croatia vs Ghana",
+      "run_file": "runs/2026-06-27/wc_croatia-ghana.json",
+      "thread_file": "runs/2026-06-27/_debug/wc_croatia-ghana_thread.json",
+      "success": true
+    }
+  ]
+}

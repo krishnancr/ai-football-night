@@ -326,5 +326,12 @@
       "role": "K_Bot",
       "text": "Verdict: 0-2 to Belgium. Elo supports it, tactics support it. New Zealand's best hope is a set-piece, but Belgium's defensive structure is too sound. Final score: 0-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 5,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

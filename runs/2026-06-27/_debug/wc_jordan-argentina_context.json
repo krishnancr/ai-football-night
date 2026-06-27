@@ -1,0 +1,94 @@
+{
+  "home_team": "Jordan",
+  "away_team": "Argentina",
+  "match_date": "2026-06-27",
+  "group": "J",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "Jordan and Argentina have met only a handful of times in friendlies with no competitive meeting prior to this World Cup; the most recent encounter was a 1-1 draw in 1990.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "1-1 - Friendly - 1990"
+    ]
+  },
+  "wc_history_home": "Jordan are making their first-ever FIFA World Cup appearance in 2026, having qualified by defeating Oman 3-0 in June 2025 after reaching the 2023 AFC Asian Cup final and the 2025 Arab Cup final.",
+  "wc_history_away": "Argentina are three-time World Cup champions (1978, 1986, 2022), entering 2026 as defending champions with Messi making a record sixth World Cup appearance across 19 tournament appearances.",
+  "group_context": "Group J contains Argentina (defending champions, FIFA #2), Austria, Algeria, and debutants Jordan; Argentina are heavy favorites to top the group while Jordan, Algeria, and Austria compete fiercely for second place and potential third-place progression.",
+  "strengths_home": [
+    "Disciplined defensive organization \u2014 conceded only 4 goals across all AFC qualifying matches",
+    "Dangerous counter-attacking threat through Mousa Al-Tamari's pace and creativity",
+    "Tournament resilience \u2014 runners-up at 2023 AFC Asian Cup and 2025 Arab Cup"
+  ],
+  "strengths_away": [
+    "World-class individual quality throughout the squad \u2014 Messi, Alvarez, Lautaro, Romero, Mart\u00ednez",
+    "Exceptional defensive record \u2014 conceded just 10 goals across 18 CONMEBOL qualifying matches",
+    "Tactical flexibility under Scaloni with a fluid system adaptable to any opponent"
+  ],
+  "team_style_home": "Jordan play a compact, disciplined mid-block and rely on quick counter-attacks and transitions, using pace on the flanks \u2014 particularly via Mousa Al-Tamari \u2014 to threaten on the break.",
+  "team_style_away": "Argentina deploy a fluid 4-3-3 that morphs into a 3-2-5 in build-up, using patient possession through a high-quality midfield trio and Messi as a deep-lying 'Quarterback 10' to unlock defences.",
+  "stats_home": {
+    "fifa_rank": 63,
+    "elo": 1388,
+    "qual": {
+      "P": 10,
+      "W": 4,
+      "D": 4,
+      "L": 2,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Argentina have already won Group J and sewn up top spot, turning this into a free hit for the holders. Jordan will rely on their core dynamic attack and tactical discipline against elite opposition.",
+  "form_home": [
+    "W",
+    "L",
+    "D",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Mousa Al-Tamari (winger/captain, Rennes)",
+    "Ali Olwan (striker)",
+    "Noor Al-Rawabdeh (midfielder)",
+    "Yazan Al-Arab (defender)",
+    "Odeh Al-Fakhouri (forward)"
+  ],
+  "key_players_away": [
+    "Lionel Messi (attacking midfielder/forward)",
+    "Julian Alvarez (striker)",
+    "Lautaro Martinez (striker)",
+    "Alexis Mac Allister (midfielder)",
+    "Rodrigo De Paul (midfielder)",
+    "Emiliano Martinez (goalkeeper)"
+  ],
+  "context": "Group J contains Argentina (defending champions, FIFA #2), Austria, Algeria, and debutants Jordan; Argentina are heavy favorites to top the group while Jordan, Algeria, and Austria compete fiercely for second place and potential third-place progression.",
+  "research_quality": "full"
+}

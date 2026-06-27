@@ -1,0 +1,98 @@
+{
+  "home_team": "Algeria",
+  "away_team": "Austria",
+  "match_date": "2026-06-27",
+  "group": "J",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": "Algeria and Austria have met only once, a 2-0 Austria win in the 1982 World Cup group stage in Oviedo, Spain.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "0-2 (Austria win) - FIFA World Cup Group Stage - 1982"
+    ]
+  },
+  "wc_history_home": "Algeria have appeared at five World Cups (1982, 1986, 2010, 2014, 2026), with their best run being the Round of 16 in 2014, and their most famous moment being the stunning 2-1 upset of West Germany in 1982.",
+  "wc_history_away": "Austria's best World Cup finish was third place in 1954 (including a historic 7-5 win over Switzerland), and they return to the tournament in 2026 for the first time since 1998 after a 28-year absence.",
+  "group_context": "Group J features defending champions Argentina alongside Algeria, Austria, and debutants Jordan; Argentina are heavy favourites to top the group, while Algeria (57% probability) and Austria (67% probability) are in direct competition for second place, making their June 27 clash the likely group decider.",
+  "strengths_home": [
+    "Prolific attacking threat led by Mahrez and Amoura",
+    "Strong qualifying form \u2014 eight wins in CAF qualifying, best-ever campaign",
+    "Dangerous on the counter-attack with technically gifted wide players"
+  ],
+  "strengths_away": [
+    "Rangnick's organised gegenpressing system disrupts opponents' build-up effectively",
+    "Deep squad with Bundesliga quality throughout midfield",
+    "Excellent recent form \u2014 four wins from last five with only two goals conceded"
+  ],
+  "team_style_home": "Algeria under Petkovic deploy a 4-3-3 or 4-4-2 built on combination play, wide exploitation, and counter-attacking flair, with Mahrez and Amoura providing creative and goal-scoring threat.",
+  "team_style_away": "Austria under Rangnick use a high-intensity 4-2-3-1 centered on aggressive gegenpressing, rapid transitions, and relentless pressing to win the ball high up the pitch.",
+  "stats_home": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 24,
+    "elo": 1597,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 1,
+      "L": 1,
+      "GF": 22,
+      "GA": 4
+    }
+  },
+  "injuries_home": [
+    "Anthony Mandrea (shoulder surgery)",
+    "Melvin Mastil (groin hernia)",
+    "Yacine Titraoui (hamstring fatigue)",
+    "Amine Gouiri (muscle injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Algeria and Austria will face off in a decisive 2026 World Cup Group J finale in Kansas City. Both teams are on three points, with the winner likely securing the runner-up spot. Algeria is dealing with several injury concerns ahead of the match.",
+  "form_home": [
+    "W",
+    "D",
+    "W",
+    "L",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "W",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Riyad Mahrez (attacking midfielder/winger, captain)",
+    "Mohamed Amoura (striker, top scorer in qualifying with 10 goals)",
+    "Ibrahim Maza (attacking midfielder, Bayer Leverkusen)",
+    "Rayan Ait-Nouri (left back, Manchester City)",
+    "Aissa Mandi (central defender, most-capped player)"
+  ],
+  "key_players_away": [
+    "David Alaba (central defender, captain, Real Madrid)",
+    "Marcel Sabitzer (midfielder, Borussia Dortmund)",
+    "Marko Arnautovic (striker, record goalscorer with 47 goals in 132 caps)",
+    "Christoph Baumgartner (attacking midfielder, RB Leipzig)",
+    "Konrad Laimer (midfielder, Bayern Munich)"
+  ],
+  "context": "Group J features defending champions Argentina alongside Algeria, Austria, and debutants Jordan; Argentina are heavy favourites to top the group, while Algeria (57% probability) and Austria (67% probability) are in direct competition for second place, making their June 27 clash the likely group decider.",
+  "research_quality": "full"
+}

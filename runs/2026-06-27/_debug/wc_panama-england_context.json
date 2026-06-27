@@ -1,0 +1,85 @@
+{
+  "home_team": "Panama",
+  "away_team": "England",
+  "match_date": "2026-06-27",
+  "group": "L",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "England lead the only previous head-to-head meeting, a 6-1 demolition in the 2018 World Cup group stage, though Panama's Felipe Baloy did score his country's first-ever World Cup goal in that match.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "6-1 England win - FIFA World Cup Group Stage - 2018"
+    ]
+  },
+  "wc_history_home": "Panama made their World Cup debut at Russia 2018, losing all three group games to Belgium, England, and Tunisia but earning a place in history when Felipe Baloy scored the country's first-ever World Cup goal; 2026 is only their second appearance.",
+  "wc_history_away": "England won the 1966 World Cup on home soil \u2014 their only major international title \u2014 and have since reached the semi-finals in 1990 and 2018, arriving at 2026 ranked 4th in the world seeking a second world title.",
+  "group_context": "Group L features England, Croatia, Ghana, and Panama; England and Croatia are the heavy favourites to advance, making the Panama vs England match \u2014 the final group game \u2014 potentially decisive for England's qualification path and essentially Panama's last chance to avoid a group-stage exit.",
+  "strengths_home": [
+    "Disciplined defensive organisation capable of frustrating higher-ranked opponents",
+    "Dangerous set-piece threat and physical presence in both penalty areas",
+    "Counter-attacking pace and directness with Waterman and Diaz able to punish high defensive lines"
+  ],
+  "strengths_away": [
+    "World-class attacking trio in Kane, Bellingham, and Saka capable of dismantling organised defences",
+    "High-press system that suffocates teams with limited technical quality in build-up",
+    "Dominant possession game with structural flexibility under Tuchel that can adapt to any opponent"
+  ],
+  "team_style_home": "Panama set up in a compact 4-2-3-1 or 5-4-1 defensive shape out of possession, relying on collective organisation, hard running, and quick vertical counter-attacks when chances arise, with Carrasquilla as the creative link and set-pieces as a key weapon.",
+  "team_style_away": "Under Thomas Tuchel, England play a possession-dominant 4-2-3-1 that morphs into a 3-2-5 in build-up, with high-intensity pressing, inverted wingers, and over 70% average possession recorded throughout qualifying.",
+  "stats_home": {
+    "fifa_rank": 34,
+    "elo": 1539,
+    "qual": {
+      "P": 6,
+      "W": 3,
+      "D": 3,
+      "L": 0,
+      "GF": 9,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 4,
+    "elo": 1828,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Reece James (hamstring)",
+    "Elliot Anderson (muscle soreness)"
+  ],
+  "odds": {
+    "home_win": 14.0,
+    "draw": 7.5,
+    "away_win": 1.14
+  },
+  "recent_news": "England defender Reece James is ruled out of the Panama game due to a hamstring injury, while midfielder Declan Rice is expected to be fit. Panama lost 0-1 against Croatia in their last match, while England drew 0-0 against Ghana.",
+  "form_home": [
+    "L"
+  ],
+  "form_away": [
+    "D"
+  ],
+  "key_players_home": [
+    "Adalberto Carrasquilla (central midfielder / creative engine)",
+    "Anibal Godoy (defensive midfielder / captain)",
+    "Amir Murillo (right back)",
+    "Ismael Diaz (striker)",
+    "Cecilio Waterman (forward)"
+  ],
+  "key_players_away": [
+    "Harry Kane (forward)",
+    "Jude Bellingham (midfielder)"
+  ],
+  "context": "Group L features England, Croatia, Ghana, and Panama; England and Croatia are the heavy favourites to advance, making the Panama vs England match \u2014 the final group game \u2014 potentially decisive for England's qualification path and essentially Panama's last chance to avoid a group-stage exit.",
+  "research_quality": "full"
+}

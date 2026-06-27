@@ -311,5 +311,12 @@
       "role": "K_Bot",
       "text": "Verdict: France 1-2. Elo and depth tell, but Haaland bags one."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 4,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
