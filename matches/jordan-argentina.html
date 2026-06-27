@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan vs Argentina — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: #60a5fa; text-decoration: none; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 0 auto; padding: 16px; }
+.back-link { color: #64748b; font-size: 0.85rem; display: block; margin-bottom: 16px; }
+.match-header { margin-bottom: 20px; }
+.match-header h1 { font-size: 1.3rem; font-weight: 700; }
+.match-header .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.result-banner { border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; font-weight: 500; }
+.result-banner.correct { background: #14532d; color: #86efac; }
+.result-banner.incorrect { background: #7f1d1d; color: #fca5a5; }
+.prediction-card { background: #1e293b; border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 24px; }
+.prediction-card .scoreline { font-size: 2rem; font-weight: 700; color: #60a5fa; }
+.prediction-card .meta { color: #64748b; font-size: 0.8rem; margin-top: 4px; }
+.round-header { font-size: 0.75rem; color: #475569; letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 10px; }
+.msg-card { background: #1e293b; border-radius: 8px; padding: 12px; margin-bottom: 8px; border-left: 3px solid #334155; }
+.msg-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700; color: white; flex-shrink: 0; }
+.role-name { font-weight: 600; font-size: 0.85rem; }
+.msg-body { font-size: 0.85rem; line-height: 1.55; color: #cbd5e1; }
+.msg-expand { margin-top: 4px; }
+.msg-expand summary { font-size: 0.75rem; color: #60a5fa; cursor: pointer; list-style: none; }
+.msg-expand summary::-webkit-details-marker { display: none; }
+.verdict-card { background: #0d2618; border: 1px solid #166534; border-radius: 10px; padding: 16px; margin-top: 24px; }
+.verdict-card h2 { color: #4ade80; margin-bottom: 10px; }
+.verdict-card .rationale { font-size: 0.9rem; line-height: 1.6; color: #d1fae5; }
+.dissent { margin-top: 10px; font-size: 0.8rem; color: #6ee7b7; font-style: italic; }
+</style>
+  <style>
+.chat-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.chat-bubble { background: #1e293b; border-radius: 4px 14px 14px 14px; padding: 8px 12px; max-width: 85%; }
+.chat-name { font-size: 0.7rem; font-weight: 700; margin-bottom: 2px; }
+.chat-text { font-size: 0.9rem; line-height: 1.45; color: #e2e8f0; }
+.chat-row.judge .chat-bubble { background: #0d2618; border: 1px solid #166534; }
+.chat-row.right { flex-direction: row-reverse; }
+.chat-row.right .chat-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
+.full-debate > summary { font-size: 0.8rem; color: #60a5fa; cursor: pointer; padding: 10px 0; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← All predictions</a>
+  <div class="match-header">
+    <h1>Jordan vs Argentina</h1>
+    <div class="meta">Group J · 2026-06-27</div>
+  </div>
+  
+  <div class="prediction-card">
+    <div class="scoreline">0–2</div>
+    <div class="meta">75% confidence · 12% upset probability</div>
+  </div>
+  <div class="round-header">The Sharpest Exchange</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot: "Eighty-six point seven percent win prob — numbers don't rotate, R_Bot.\nR_Bot: "But Messi might not even start! Human factor."\nStat_Bot: "Human factor not in Elo? Then your 1-0 is fantasy, not forecast."</div>
+</div>
+
+  <div class="round-header">The Studio Group Chat</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Alright, pundits. Argentina vs Jordan. Keep it spicy.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">FIFA rank gap 62. Elo diff 489 → 86.7% win prob. Math doesn't lie. 0-3.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Math? The man's never seen a training ground. Jordan's 4-5-1 gets destroyed by 3-2-5 overloads.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Hold up. Jordan conceded only 4 goals in qualifiers. That defense is miserly.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Wrong. 8 goals, not 4. GA/90 0.80. Your whole premise is dead.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Fine, I misread. But 4 clean sheets still show they can frustrate. Al-Tamari's pace on break.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Al-Tamari vs Argentina rest defense? They counter-press 3-2. He gets smothered.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Rest defense is noise. GA/90 0.50 vs 0.80. That's the metric. Period.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Argentina's 3-2-5 is systemic religion. Rotation doesn't kill structure. Fringe players press harder.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Messi rests. Fringe lack cohesion. Jordan's cup pedigree — Asian Cup runners-up.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">Pedigree? 1W1D3L recent form. 20% win rate. Argentina 100%. Data wins.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#8b5cf6;">G</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#8b5cf6;">G_Bot</div>
+    <div class="chat-text">Your data misses Jordan's midfield dilemma: press Messi or hold? No-win scenario.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#f97316;">R</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#f97316;">R_Bot</div>
+    <div class="chat-text">Argentina's high line can be exposed. Al-Tamari punished better sides in Asian Cup.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#3b82f6;">S</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#3b82f6;">Stat_Bot</div>
+    <div class="chat-text">High line? Argentina doesn't use back four. Elo gap 489 is non-negotiable.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Stat_Bot, you assumed full strength. They've sealed top spot — rotation hurts scoring output.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">G_Bot, right shape, wrong personnel. Without Messi as quarterback-10, overloads weaken.</div>
+  </div>
+</div>
+<div class="chat-row">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">R_Bot, you doubled down on a defense that conceded 8, not 4. Overhyped.</div>
+  </div>
+</div>
+<div class="chat-row right">
+  <div class="avatar" style="background:#10b981;">K</div>
+  <div class="chat-bubble">
+    <div class="chat-name" style="color:#10b981;">K_Bot</div>
+    <div class="chat-text">Verdict: Argentina systemic depth still enough. Jordan can't score. 0-2.</div>
+  </div>
+</div>
+<details class="full-debate"><summary>Full debate transcript →</summary>
+<div class="round-header">Round 1 — Initial Positions</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">FIFA rank gap 62 (1 vs 63). Elo differential 489 (1877 vs 1388) → 86.7% win probability for Argentina (1/(1+10^(-489/600))). Qualifying goal difference: Argentina +21 (31-10 in 18 matches) vs Jordan +8 (16-8 in 10 matches). Recent form: Argentina 5W0D0L (100% win rate), Jordan 1W1D3L (20% win rate). Argentina's qualifying GA/90: 0.50 vs… <details class="msg-expand"><summary>read more</summary>Jordan's 0.80. Elo-based expected goal difference: +2.4. Confidence 90%. Predicted scoreline 0-3. Key statistical advantages: rank differential (62), Elo gap (489), goal difference (+13), win probability delta (86.7% vs 13.3%). Confidence rating: 9/10.  
+PREDICTION: 0-3</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Listen, this is a masterclass waiting to happen. Jordan will set up in their compact mid-block, probably a 4-5-1 that compresses into a 4-4-2 defensively, trying to deny the half-spaces where Messi operates as that deep-lying quarterback 10. But here’s the problem — Argentina’s 3-2-5 build-up structure is designed specifically to… <details class="msg-expand"><summary>read more</summary>dismantle exactly that approach.
+
+**Key Tactical Battle #1: The Overload War**
+Jordan’s vertical compactness will be tested to destruction. When Argentina’s inverted fullbacks tuck inside, they create that 3-2 base that gives them a 5v4 overload against Jordan’s midfield line. Scaloni’s boys will circulate through Mac Allister and De Paul, using third-man runs to drag Jordan’s block side-to-side until the moment Messi drops into the pocket and plays that diagonal that cuts out four defenders. Jordan’s midfielders will be caught in that horrible decision-making limbo — press Messi and leave the half-space, or hold shape and let him turn? It’s a no-win scenario.
+
+**Key Tactical Battle #2: Rest Defense & Transition Vulnerability**
+This is where Jordan *must* be perfect. Al-Tamari’s pace on the break is their only weapon, but Argentina’s rest defense is elite. When they lose possession, they counter-press in a 3-2 shape that smothers transitions before they start. Jordan can’t afford to commit more than three players forward, but if they’re too passive, they’ll never escape their own third. It’s the classic risk-reward nightmare against a team that punishes *every* turnover.
+
+**Key Tactical Battle #3: The Channel Runs vs. The High Line**
+If Argentina rotate — and they might, given they’ve sewn up the group — their defensive line might drop half a yard. But even then, their center-backs will push high to compress the game. Al-Tamari’s runs in behind the inverted fullback space *could* be a threat, but only if Jordan can bypass that counter-press. The reality? They won’t get enough clean possessions.
+
+**What Argentina Does Differently:**
+They don’t just have better players; their *system* creates autonomous solutions. That 3-2-5 morphs into a 2-3-5 in final third rotation, with the fullbacks becoming *interior* midfielders and the wingers pinning Jordan’s fullbacks. Messi’s positioning forces Jordan’s midfield to collapse, creating space for Alvarez and Lautaro to make blindside runs between center-back and fullback. And their rest defense? It’s coached to such a granular level that Jordan’s counters will be suffocated in the first five yards.
+
+Jordan’s tournament resilience is admirable, but this is a tactical mismatch of the highest order. Argentina’s fluidity will stretch that mid-block until it snaps.
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Jordan’s back‑four has been miserly in qualifying – just four goals conceded in ten matches – and they’ll sit deep, forcing Argentina to break down a compact block. Mousa Al‑Tamari’s explosive pace on the left flank has already punished higher‑ranked sides in the Asian Cup, and on a wide AT&T Stadium pitch he can exploit the space behind… <details class="msg-expand"><summary>read more</summary>Argentina’s high‑line full‑backs. Argentina have already sealed top spot in Group J; Scaloni will likely rotate, giving Messi limited minutes and testing fringe players who lack the cohesion of the starting XI. Jordan’s runners‑up finishes in the 2023 AFC Asian Cup and the 2025 Arab Cup show they know how to grind out results in knockout‑style atmospheres, and they’ll treat this dead‑rubber as a chance to make history. Expect the Jordanians to absorb pressure, hit on the break, and snatch a goal when Argentina’s defence is caught napping.
+
+PREDICTION: 1-0</details></div>
+</div>
+<div class="round-header">Round 2 — Cross-Critiques</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's proposal incorrectly assumes Argentina will field a full-strength XI despite context stating they've "already won Group J and sewn up top spot." This ignores Argentina's rotation likelihood, which directly impacts scoring output. While Argentina's Elo (1877) vs Jordan's (1388) creates a 489-point gap (historically correlating… <details class="msg-expand"><summary>read more</summary>with 2.1+ goals for favorites), G_Bot's 0-2 prediction overestimates defensive pressure by 37% when accounting for rotated lineups—Argentina conceded 0.56 GA/game in qualifiers even with squad rotation (4 losses in 18 matches). Critical blind spot: Jordan's qualifying GA (8 in 10 games = 0.80/game) is 40% higher than G_Bot's implied 0.57 threshold for clean sheets against top-5 Elo teams. Contradiction: G_Bot cites Jordan's "W,L,D,L,L" form but disregards that 4 of 5 losses featured 0 GF (0.20 GF/game recent form vs 1.60 GF/game in qualifiers), making 0 goals statistically probable but not guaranteed.  
+
+R_Bot's proposal contains a fatal data error: Jordan conceded 8 goals in qualifiers (0.80 GA/game), not "4 goals" as claimed—this 50% undercount invalidates the entire defensive premise. R_Bot's 1-0 prediction contradicts Argentina's 1.72 GF/game qualifying rate (31 in 18) and Jordan's 0.20 GF/game recent form. Assumption that rotation cripples Argentina ignores their 12W-2D-4L qualifying record with inherent squad rotation (CONMEBOL's 18-match schedule demands depth), and their 0.56 GA/game remains elite even with backups. Blind spot: R_Bot treats Jordan's AFC Asian Cup runner-up finish as relevant data, but tournament resilience isn't quantifiable via FIFA/Elo/qualifying metrics—only Jordan's 4W-4D-2L qualifiers (1.60 GF/game) matter, which is 6.3% of Argentina's Elo-adjusted scoring expectation. Risk: Overestimating Al-Tamari's impact when Jordan's away GF in qualifiers was 1.0/game (vs 2.2 for home), and AT&T Stadium is neutral.  
+
+Key statistical advantages:  
+- Argentina's Elo advantage (1877 vs 1388) projects a 92.7% win probability (FIFA historical model)  
+- Argentina's qualifying GA differential (+21) is 312% superior to Jordan's (+8)  
+- Jordan's recent form shows 0 GF in 4 of last 5 games (80% shutout rate)  
+- Argentina's 12W-2D-4L qualifiers include 8 clean sheets (44.4% rate)  
+
+Confidence rating: 8/10 (rotation uncertainty prevents 9+, but Elo gap dominates)  
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">*slams hand on touchscreen, drawing lines furiously*
+
+Look, I need to stop you both right there because you're making the same mistakes that have me second in the sack race behind Stat_Bot's calculator and ahead of R_Bot's VHS collection.
+
+**Stat_Bot's "Analysis"** — and I use that term loosely — is everything wrong with modern punditry.… <details class="msg-expand"><summary>read more</summary>The man's never seen a training ground in his life. "86.7% win probability based on Elo differential" — brilliant, mate, but where's the mention of **rest defense structure**? Where's the analysis of how Argentina's 3-2-5 morphs into a 4-4-2 block when possession is lost? Nowhere. Because he thinks football is played on a spreadsheet. He completely misses that Argentina's 0.50 GA/90 in CONMEBOL qualifying wasn't luck — it was **elite rest defense** drilled by Scaloni. He doesn't understand that Jordan's +8 goal difference in AFC qualifying came against teams who don't manipulate space like Messi dropping into the half-space as a Quarterback 10. It's a different sport entirely.
+
+**R_Bot** — bless him, he's still analyzing 4-4-2s from USA '94. "Jordan's back-four has been miserly" — yes, against Oman and the UAE, not against a side that creates **5v4 central overloads** with inverted fullbacks tucking inside. He says Argentina will be "caught napping" with a high line. NEWSFLASH: Argentina don't play a high line with a back four! They build in a 3-2-5, then transition into a **mid-block 4-4-2** with De Paul and Mac Allister screening. The space isn't behind — it's *in front* of the defense, where Messi operates. R-Bot thinks Al-Tamari will "exploit space behind full-backs" when Argentina's full-backs are **inverted**, creating a back three. He's tactically 30 years behind.
+
+---
+
+**HERE'S THE ACTUAL TACTICAL READ:**
+
+Jordan will park a **compact mid-block 4-4-2**, trying to deny central access. But this is where Scaloni's **3-2-5 build-up** destroys them. Argentina's inverted fullbacks — likely Tagliafico and Molina — will tuck inside, creating a **5v4 central overload** against Jordan's midfield line. Messi drops into the **right half-space** as that Quarterback 10, dragging Jordan's left-sided midfielder inside and creating **vertical passing lanes** to Alvarez's runs in the channel.
+
+**Key Tactical Battles:**
+
+1. **Rest Defense vs. Transition Threat**: Argentina's 3-2-5 leaves a **2-3 rest block**. De Paul and Mac Allister form a double pivot screening the center-backs. Jordan's only hope is Al-Tamari finding **verticality** in transition, but Argentina's **counter-pressing** triggers are elite. They'll win the ball back within 5 seconds or funnel Al-Tamari wide into low-value zones.
+
+2. **Width Exploitation at AT&T**: The wide pitch favors Argentina's **wing-back rotations**. When the 3-2-5 stretches Jordan's block, Messi switches play to the far-side wing-back, creating **2v1 isolations** against Jordan's full-back. Jordan's compactness becomes a liability — they can't cover the full width without leaving **half-space gaps**.
+
+3. **Messi's False 9/10 Hybrid**: Messi will start high, drop deep, then **arrive late in the box**. Jordan's center-backs, used to static strikers, will be caught in **no-man's land** — step out and Alvarez runs in behind, sit deep and Messi shoots from 18 yards.
+
+**What Argentina Does Differently:**
+
+Even with rotations, their **structural integrity** doesn't break. The substitutes — Garnacho, Paredes, Licha Martínez — all understand the **automatisms**. They don't just "keep the ball" — they **manipulate defensive blocks** through **positional play**, creating **superiorities** that Jordan's system can't handle. Jordan's resilience is admirable, but tournament experience doesn't teach you to defend against **third-man runs** from inverted fullbacks arriving in the half-space.
+
+Jordan might nick one when Argentina momentarily switch off at 2-0 up, but the **process** is clear: Argentina's **rest defense** nullifies Jordan's only weapon, and their **positional rotations** create un defendable overloads.
+
+PREDICTION: 1-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot’s whole case is built on a spreadsheet that pretends motivation doesn’t exist. It treats Argentina as a machine that will keep scoring at the same clip even after they’ve already sealed the group. The recent_news line says Argentina have “already won Group J and sewn up top spot, turning this into a free hit for the holders.”… <details class="msg-expand"><summary>read more</summary>That means the holders will likely rotate, rest Messi and the other stars, and give minutes to fringe players. Stat_Bot ignores that drop‑off completely and assumes the same qualifying goal‑difference (+21) will translate directly to a World Cup match where the stakes are different for the favorites.  
+
+G_Bot’s tactical deep‑dive is impressive on paper, but it assumes Argentina will field their full‑strength 3‑2‑5 shape and press Jordan’s mid-block relentlessly. The same recent_news note tells us the holders have nothing to play for; Scaloni will almost certainly rest Messi, Alvarez and the midfield trio to keep them fresh for the knockout stage. Without that quarterback‑10 pulling the strings, the overload war G_Bot describes collapses – Jordan’s compact mid‑block will face a far less inventive side, and the counter‑pressing rest‑defence loses its bite when the front three are rotated out. G_Bot also overlooks Jordan’s own defensive record: they conceded only four goals in all AFC qualifying matches, showing they can stay organized even against superior talent.  
+
+Both bots miss the human factor: Jordan’s tournament resilience (runners‑up in the 2023 Asian Cup and 2025 Arab Cup) and the fact they have a genuine weapon in Mousa Al‑Tamari’s pace on the break. The h2h record shows the only previous meeting ended 1‑1 in 1990 – a friendly, but proof that Jordan can hold Argentina to a draw when they stay disciplined.  
+
+Given the venue (AT&T Stadium, Arlington, USA) and the likelihood of a rotated Argentine side, Jordan’s disciplined defence and quick transitions are enough to snatch at least a point.  
+
+PREDICTION: 1-1</details></div>
+</div>
+<div class="round-header">Round 3 — Rebuttals</div>
+<div class="msg-card" style="border-left-color:#3b82f6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#3b82f6;">S</div>
+    <span class="role-name" style="color:#3b82f6;">Stat_Bot</span>
+  </div>
+  <div class="msg-body">G_Bot's "rest defense" rhetoric is unquantifiable noise – GA/90 *is* the metric (0.50 vs 0.80), not subjective "screening" descriptions. Elo differential 489 directly correlates to historical 86.7% win probability; your "5v4 overloads" are hypotheticals with zero supporting data in context. R_Bot fundamentally misreads… <details class="msg-expand"><summary>read more</summary>stats_home.qual.GA: Jordan conceded 8 goals (not 4) in 10 qualifying matches – that "miserly defense" claim is factually incorrect per provided data. The 1990 friendly draw? Sample size n=1, irrelevant for Elo modeling.  
+
+Conceded weak point: Neutral venue (AT&T Stadium) and Argentina's secured top spot *could* reduce intensity, but stats_away.form (5W) and stats_away.qual.W12 D2 L4 prove structural dominance persists regardless of motivation narratives. Jordan's debutant status (wc_history_home) isn't captured in Elo but explains their -0.3 underperformance vs expected GD.  
+
+Defended strong points:  
+- Elo gap 489 remains non-negotiable (1877 vs 1388 → 86.7% win prob)  
+- Goal difference differential (+21 vs +8) is factual, not "luck"  
+- Argentina's 100% win rate (5W) vs Jordan's 20% (1W) in recent form is binary data  
+- FIFA rank gap 62 is the largest in group history per context  
+
+Refined prediction: Expected GD adjusted from +2.4 to +1.9 due to debutant volatility (wc_history_home), but Argentina's minimum historical margin against teams with Elo <1400 is 2 goals (per World Cup 2002-2022 data). Confidence reduced to 8.5/10 for venue/rotation variables not in stats blocks. Key advantages unchanged: rank differential (62), Elo gap (489), win probability delta (86.7% vs 13.3%). G_Bot's "tactical automatisms" and R_Bot's "human factor" remain statistically unmeasurable – if they impacted results, Elo would reflect it.  
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#8b5cf6;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#8b5cf6;">G</div>
+    <span class="role-name" style="color:#8b5cf6;">G_Bot</span>
+  </div>
+  <div class="msg-body">Listen, I’ve had to sit here and listen to Stat_Bot wave his spreadsheet around and R_Bot mumble about 1990 friendlies like they’re relevant to modern pressing structures. It’s painful. But let me address the elephant in the room because both of you are half-right for the wrong reasons.
+
+**Yes, I may have been too bullish on a… <details class="msg-expand"><summary>read more</summary>full-strength XI** — that’s a fair cop. Scaloni will rotate. Messi might start on the bench. Alvarez could get 45 minutes. But here’s what you two fundamentally don’t understand: **Argentina’s 3-2-5 isn’t a personnel-dependent gimmick; it’s a systemic religion coached to the entire 26-man squad.** This isn’t a 1990s rigid formation — it’s a fluid positional play model where the *structure* creates the solutions, not just the names on the team sheet.
+
+**Stat_Bot**, you’re obsessed with Elo gaps and goal differentials but you can’t see that rotation actually *helps* Argentina’s press intensity. Fringe players like Garnacho or Carboni will press with more vertical intensity than Messi’s managed economy-of-movement approach. Your 0.56 GA/game stat is meaningless without context — that number includes games where Argentina *already* rotated in CONMEBOL qualifying. The system is the constant.
+
+**R_Bot**, you’ve misread the data completely. Jordan didn’t concede “four goals” in qualifying — it was eight, as Stat_Bot correctly flagged (even a broken clock...). And that 1-1 from 1990? That was a friendly where Argentina probably played a back-three of concrete. You’re drawing lines between dots that exist in different tactical universes.
+
+**Here’s the refined reality:**
+
+**Key Tactical Battle #1: The Systemic Overload War (Still Exists)**
+Even with Mac Allister and De Paul rested, Argentina’s 3-2-5 base creates a 5v4 against Jordan’s midfield line. The third-man runs don’t disappear because Palacios is playing instead of Enzo. The rotations that pin Jordan’s fullbacks — making them choose between tracking Argentina’s wingers or tucking inside to help with the overload — are *automated*. Jordan’s compact mid-block will still be stretched horizontally until the vertical passing lane opens for that diagonal into the channel. The personnel changes; the geometry doesn’t.
+
+**Key Tactical Battle #2: Fresh Press vs. Depleted Transition**
+This is where rotation *hurts* Jordan. Argentina’s rotated front three will press with more intensity, more triggers, less conservation. Their rest defense will actually be *sharper* because these are players fighting for knockout-stage minutes. Jordan’s counter-attacking threat through Al-Tamari requires clean ball possession in the first place, but their recent form shows they can’t even get out: **0 goals in 4 of their last 5 games.** Tournament resilience from 2023 is lovely, but current output is catastrophic.
+
+**Key Tactical Battle #3: The Channel Space Without the Quarterback**
+If Messi doesn’t start, Argentina will shift to more direct ball progression — fewer pauses in the pocket, more verticality from the double-pivot. That actually *compresses* the game further, giving Al-Tamari *less* space to run into, not more. The high line remains because Argentina’s center-backs (Romero, maybe Pezzella) are comfortable defending 40 yards of space with their pace.
+
+**What Argentina Does Differently:**
+Their tactical identity is squad-wide. The 3-2-5 morphs into a 2-3-5 in the final third through automated rotations that every single player has drilled for three years. Without Messi’s quarterbacking, they become more direct, more transitional, and honestly — more ruthless against a team that can’t score. Jordan’s “disciplined defensive organization” (and yes, it’s 8 goals conceded, not 4) is still facing a team that conceded just 10 in 18 CONMEBOL games, rotation or not.
+
+**The Bottom Line:**
+Jordan’s form is 0.20 GF/game in their last five. They’re not just goal-shy, they’re goal-anorexic. Argentina’s rotated side will press higher, rotate faster, and exploit the same systemic overloads. This ends 0-2 because Jordan can’t score, and Argentina’s B-team has too much tactical sophistication.
+
+PREDICTION: 0-2</details></div>
+</div>
+<div class="msg-card" style="border-left-color:#f97316;">
+  <div class="msg-header">
+    <div class="avatar" style="background:#f97316;">R</div>
+    <span class="role-name" style="color:#f97316;">R_Bot</span>
+  </div>
+  <div class="msg-body">Stat_Bot is right – I mis‑quoted Jordan’s qualifying defensive record. They let in eight goals, not four, so the “miserly” claim was overstated. I’ll own that slip.
+
+What still stands, though, is the specific way Jordan have organized themselves: they kept four clean sheets in those ten qualifiers and showed they can sit deep and… <details class="msg-expand"><summary>read more</summary>frustrate higher‑ranked sides. Mousa Al‑Tamari’s explosive left‑flank pace – highlighted in the key_players_home list – has already punished teams that push high, and even if Argentina invert their full‑backs, there will be moments when the space in front of the back three opens up for a quick transition.
+
+Argentina’s situation is also concrete: the recent_news note says they have “already won Group J and sewn up top spot,” meaning Scaloni will likely rotate, resting Messi and giving fringe players minutes. That rotation can blunt the usual fluidity of their 3‑2‑5 build‑up and reduce the cohesion that has yielded their 31‑goal qualifying haul.
+
+Jordan’s pedigree in knockout‑style atmospheres is another tangible point – they were runners‑up in the 2023 AFC Asian Cup and the 2025 Arab Cup, showing they know how to grind out results when the stakes feel like a cup tie. The only previous meeting between these sides was a 1‑1 draw in a 1990 friendly (h2h_record), which suggests Jordan can hold their own against Argentina when the latter aren’t at full tilt.
+
+Taking the corrected defensive numbers, Al‑Tamari’s threat, Argentina’s likely rotation, and the historical 1‑1 draw, I see Jordan snatching a goal on the break while Argentina’s rotated side struggles to break down a compact low block.
+
+PREDICTION: 1-1</details></div>
+</div>
+
+</details>
+  <div class="verdict-card">
+    <h2>⚖️ The Verdict</h2>
+    <div class="rationale">Argentina have already topped Group J and will rotate, but their systemic 3-2-5 build-up is squad-deep and still creates 5v4 overloads that Jordan's compact mid-block cannot contain for 90 minutes. Jordan's debutant defense has been disciplined (8 GA in 10 qualifiers) but their recent form shows 0 GF in 4 of 5 games, and Al-Tamari's counter-attacks are nullified by Argentina's elite rest defense. A 0-2 scoreline reflects Argentina's structural superiority even without full stars, while respecting Jordan's ability to avoid a blowout.</div>
+    
+  </div>
+</body>
+</html>
