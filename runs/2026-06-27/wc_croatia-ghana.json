@@ -287,5 +287,12 @@
       "role": "K_Bot",
       "text": "Verdict: Croatia 2-1. Superior midfield control and tournament experience edge out Ghana's compact defense and counter-attacking threat. Tight, but Croatia's discipline wins."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

@@ -315,5 +315,12 @@
       "role": "K_Bot",
       "text": "Verdict: England wins 0-2. Tuchel's system adapts, and Panama's fairy tale ends here."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 2,
+    "result": "away_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

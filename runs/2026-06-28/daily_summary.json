@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-28",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Runner-up Group A vs Runner-up Group B",
+      "run_file": "runs/2026-06-28/wc_runner-up-group-a-runner-up-group-b.json",
+      "thread_file": "runs/2026-06-28/_debug/wc_runner-up-group-a-runner-up-group-b_thread.json",
+      "success": true
+    }
+  ]
+}
