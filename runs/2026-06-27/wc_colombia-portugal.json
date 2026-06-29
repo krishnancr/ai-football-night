@@ -274,5 +274,12 @@
       "role": "K_Bot",
       "text": "Final: Portugal 2-1 Colombia. Quality beats grit when the whistle blows."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 0,
+    "result": "draw",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

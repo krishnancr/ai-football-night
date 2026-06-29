@@ -319,5 +319,12 @@
       "role": "K_Bot",
       "text": "Verdict: Argentina systemic depth still enough. Jordan can't score. 0-2."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 3,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

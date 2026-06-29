@@ -306,5 +306,12 @@
       "role": "K_Bot",
       "text": "Verdict: DR Congo 1-0. Superior form, counter-attacking quality, and Mbemba's organization edge it. But Uzbekistan's set-piece threat keeps the upset at 35%."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }
