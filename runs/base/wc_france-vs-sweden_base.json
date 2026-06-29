@@ -1,0 +1,82 @@
+{
+  "home_team": "France",
+  "away_team": "Sweden",
+  "group": "R32",
+  "match_date": "2026-06-30",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": "In the last 8 head-to-head matches between France and Sweden, France has won 5 times, drawn 1, and lost 2.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 1,
+    "away_wins": 2,
+    "notable_results": [
+      "2-2 (Draw) - UEFA European Championship - 1978",
+      "1-3 (France) - UEFA European Championship - 1979",
+      "1-1 (Draw) - UEFA European Championship - 1992",
+      "2-1 (France) - FIFA World Cup - 1993"
+    ]
+  },
+  "form_home": [
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "D"
+  ],
+  "key_players_home": [
+    "Kylian Mbappe (forward / captain)",
+    "Ousmane Dembele (winger)",
+    "Michael Olise (winger)",
+    "William Saliba (centre-back)",
+    "Aurelien Tchouameni (defensive midfielder)"
+  ],
+  "key_players_away": [
+    "Viktor Gyokeres (striker, Arsenal)",
+    "Alexander Isak (striker, Liverpool)",
+    "Anthony Elanga (winger, Newcastle United)",
+    "Lucas Bergvall (midfielder, Tottenham Hotspur)",
+    "Victor Lindelof (centre-back/captain, Manchester United)"
+  ],
+  "team_style_home": "France deploy a structured 4-2-3-1 under Deschamps with Tchouameni and Camavinga anchoring midfield, allowing Mbappe to free-roam from a central/left position while Dembele and Olise provide directness from wide areas.",
+  "team_style_away": "Sweden under Graham Potter favour compact, pragmatic defending with minimal possession, then unleash explosive direct counter-attacks exploiting the blistering pace and clinical finishing of Gyokeres, Isak, and Elanga.",
+  "wc_history_home": "France are two-time World Cup champions, winning on home soil in 1998 (3-0 vs Brazil) and again in Russia in 2018 (4-2 vs Croatia), and reaching the final in 2006 and 2022, making them one of the most decorated nations in tournament history.",
+  "wc_history_away": "Sweden's finest World Cup moment was finishing runners-up on home soil in 1958 (losing 5-2 to Brazil), and they reached the semi-finals again in 1994 and the quarter-finals in 2018 under Janne Andersson.",
+  "group_context": "Round of 32 knockout — no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World No. 1 ranked team with elite quality across every position",
+    "Kylian Mbappe leading a devastating front three with Dembele and Olise",
+    "Defensively solid with Saliba and Upamecano providing a world-class centre-back partnership"
+  ],
+  "strengths_away": [
+    "Elite striker duo in Gyokeres (21 goals in 2025-26) and Isak providing multi-threat attack",
+    "Devastating on the counter-attack with Elanga providing electrifying wide pace",
+    "Graham Potter's pragmatic setup maximises squad cohesion despite limited caps"
+  ],
+  "stats_home": {
+    "fifa_rank": 3,
+    "elo": 1871,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 16,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 38,
+    "elo": 1510,
+    "qual": {
+      "P": 8,
+      "W": 2,
+      "D": 2,
+      "L": 4,
+      "GF": 10,
+      "GA": 15
+    }
+  }
+}

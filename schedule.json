@@ -58,18 +58,18 @@
   {
     "date": "2026-06-13",
     "home": "Australia",
-    "away": "Türkiye",
+    "away": "T\u00fcrkiye",
     "group": "D",
     "venue": "BC Place, Vancouver, Canada",
-    "match_string": "Australia vs Türkiye"
+    "match_string": "Australia vs T\u00fcrkiye"
   },
   {
     "date": "2026-06-14",
     "home": "Germany",
-    "away": "Curaçao",
+    "away": "Cura\u00e7ao",
     "group": "E",
     "venue": "NRG Stadium, Houston, USA",
-    "match_string": "Germany vs Curaçao"
+    "match_string": "Germany vs Cura\u00e7ao"
   },
   {
     "date": "2026-06-14",
@@ -249,11 +249,11 @@
   },
   {
     "date": "2026-06-19",
-    "home": "Türkiye",
+    "home": "T\u00fcrkiye",
     "away": "Paraguay",
     "group": "D",
     "venue": "Levi's Stadium, Santa Clara, USA",
-    "match_string": "Türkiye vs Paraguay"
+    "match_string": "T\u00fcrkiye vs Paraguay"
   },
   {
     "date": "2026-06-20",
@@ -266,10 +266,10 @@
   {
     "date": "2026-06-20",
     "home": "Ecuador",
-    "away": "Curaçao",
+    "away": "Cura\u00e7ao",
     "group": "E",
     "venue": "Arrowhead Stadium, Kansas City, USA",
-    "match_string": "Ecuador vs Curaçao"
+    "match_string": "Ecuador vs Cura\u00e7ao"
   },
   {
     "date": "2026-06-20",
@@ -433,11 +433,11 @@
   },
   {
     "date": "2026-06-25",
-    "home": "Türkiye",
+    "home": "T\u00fcrkiye",
     "away": "United States",
     "group": "D",
     "venue": "SoFi Stadium, Inglewood, USA",
-    "match_string": "Türkiye vs United States"
+    "match_string": "T\u00fcrkiye vs United States"
   },
   {
     "date": "2026-06-25",
@@ -449,11 +449,11 @@
   },
   {
     "date": "2026-06-25",
-    "home": "Curaçao",
+    "home": "Cura\u00e7ao",
     "away": "Ivory Coast",
     "group": "E",
     "venue": "Lincoln Financial Field, Philadelphia, USA",
-    "match_string": "Curaçao vs Ivory Coast"
+    "match_string": "Cura\u00e7ao vs Ivory Coast"
   },
   {
     "date": "2026-06-25",
@@ -577,131 +577,131 @@
   },
   {
     "date": "2026-06-28",
-    "home": "Runner-up Group A",
-    "away": "Runner-up Group B",
+    "home": "South Africa",
+    "away": "Canada",
     "group": "R32",
     "venue": "SoFi Stadium, Inglewood, USA",
-    "match_string": "Runner-up Group A vs Runner-up Group B"
+    "match_string": "South Africa vs Canada"
   },
   {
     "date": "2026-06-29",
-    "home": "Winner Group C",
-    "away": "Runner-up Group F",
+    "home": "Brazil",
+    "away": "Japan",
     "group": "R32",
     "venue": "NRG Stadium, Houston, USA",
-    "match_string": "Winner Group C vs Runner-up Group F"
+    "match_string": "Brazil vs Japan"
   },
   {
     "date": "2026-06-29",
-    "home": "Winner Group E",
-    "away": "Best 3rd Group A/B/C/D/F",
+    "home": "Germany",
+    "away": "Paraguay",
     "group": "R32",
     "venue": "Gillette Stadium, Foxborough, USA",
-    "match_string": "Winner Group E vs Best 3rd Group A/B/C/D/F"
+    "match_string": "Germany vs Paraguay"
   },
   {
     "date": "2026-06-29",
-    "home": "Winner Group F",
-    "away": "Runner-up Group C",
+    "home": "Netherlands",
+    "away": "Morocco",
     "group": "R32",
     "venue": "Estadio Akron, Guadalajara, Mexico",
-    "match_string": "Winner Group F vs Runner-up Group C"
+    "match_string": "Netherlands vs Morocco"
   },
   {
     "date": "2026-06-30",
-    "home": "Runner-up Group E",
-    "away": "Runner-up Group I",
+    "home": "C\u00f4te d'Ivoire",
+    "away": "Norway",
     "group": "R32",
     "venue": "AT&T Stadium, Arlington, USA",
-    "match_string": "Runner-up Group E vs Runner-up Group I"
+    "match_string": "C\u00f4te d'Ivoire vs Norway"
   },
   {
     "date": "2026-06-30",
-    "home": "Winner Group I",
-    "away": "Best 3rd Group C/D/F/G/H",
+    "home": "France",
+    "away": "Sweden",
     "group": "R32",
     "venue": "MetLife Stadium, East Rutherford, USA",
-    "match_string": "Winner Group I vs Best 3rd Group C/D/F/G/H"
+    "match_string": "France vs Sweden"
   },
   {
     "date": "2026-06-30",
-    "home": "Winner Group A",
-    "away": "Best 3rd Group C/E/F/H/I",
+    "home": "Mexico",
+    "away": "Ecuador",
     "group": "R32",
     "venue": "Estadio Azteca, Mexico City, Mexico",
-    "match_string": "Winner Group A vs Best 3rd Group C/E/F/H/I"
+    "match_string": "Mexico vs Ecuador"
   },
   {
     "date": "2026-07-01",
-    "home": "Winner Group L",
-    "away": "Best 3rd Group E/H/I/J/K",
+    "home": "England",
+    "away": "DR Congo",
     "group": "R32",
     "venue": "Mercedes-Benz Stadium, Atlanta, USA",
-    "match_string": "Winner Group L vs Best 3rd Group E/H/I/J/K"
+    "match_string": "England vs DR Congo"
   },
   {
     "date": "2026-07-01",
-    "home": "Winner Group G",
-    "away": "Best 3rd Group A/E/H/I/J",
+    "home": "Belgium",
+    "away": "Senegal",
     "group": "R32",
     "venue": "Lumen Field, Seattle, USA",
-    "match_string": "Winner Group G vs Best 3rd Group A/E/H/I/J"
+    "match_string": "Belgium vs Senegal"
   },
   {
     "date": "2026-07-01",
-    "home": "Winner Group D",
-    "away": "Best 3rd Group B/E/F/I/J",
+    "home": "United States",
+    "away": "Bosnia and Herzegovina",
     "group": "R32",
     "venue": "Levi's Stadium, Santa Clara, USA",
-    "match_string": "Winner Group D vs Best 3rd Group B/E/F/I/J"
+    "match_string": "United States vs Bosnia and Herzegovina"
   },
   {
     "date": "2026-07-02",
-    "home": "Winner Group H",
-    "away": "Runner-up Group J",
+    "home": "Spain",
+    "away": "Austria",
     "group": "R32",
     "venue": "SoFi Stadium, Inglewood, USA",
-    "match_string": "Winner Group H vs Runner-up Group J"
+    "match_string": "Spain vs Austria"
   },
   {
     "date": "2026-07-02",
-    "home": "Runner-up Group K",
-    "away": "Runner-up Group L",
+    "home": "Portugal",
+    "away": "Croatia",
     "group": "R32",
     "venue": "BMO Field, Toronto, Canada",
-    "match_string": "Runner-up Group K vs Runner-up Group L"
+    "match_string": "Portugal vs Croatia"
   },
   {
     "date": "2026-07-02",
-    "home": "Winner Group B",
-    "away": "Best 3rd Group E/F/G/I/J",
+    "home": "Switzerland",
+    "away": "Algeria",
     "group": "R32",
     "venue": "BC Place, Vancouver, Canada",
-    "match_string": "Winner Group B vs Best 3rd Group E/F/G/I/J"
+    "match_string": "Switzerland vs Algeria"
   },
   {
     "date": "2026-07-03",
-    "home": "Runner-up Group D",
-    "away": "Runner-up Group G",
+    "home": "Australia",
+    "away": "Egypt",
     "group": "R32",
     "venue": "AT&T Stadium, Arlington, USA",
-    "match_string": "Runner-up Group D vs Runner-up Group G"
+    "match_string": "Australia vs Egypt"
   },
   {
     "date": "2026-07-03",
-    "home": "Winner Group J",
-    "away": "Runner-up Group H",
+    "home": "Argentina",
+    "away": "Cabo Verde",
     "group": "R32",
     "venue": "Hard Rock Stadium, Miami Gardens, USA",
-    "match_string": "Winner Group J vs Runner-up Group H"
+    "match_string": "Argentina vs Cabo Verde"
   },
   {
     "date": "2026-07-03",
-    "home": "Winner Group K",
-    "away": "Best 3rd Group D/E/I/J/L",
+    "home": "Colombia",
+    "away": "Ghana",
     "group": "R32",
     "venue": "Arrowhead Stadium, Kansas City, USA",
-    "match_string": "Winner Group K vs Best 3rd Group D/E/I/J/L"
+    "match_string": "Colombia vs Ghana"
   },
   {
     "date": "2026-07-04",

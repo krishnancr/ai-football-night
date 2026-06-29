@@ -1,0 +1,79 @@
+{
+  "home_team": "Brazil",
+  "away_team": "Japan",
+  "group": "R32",
+  "match_date": "2026-06-29",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": "Brazil dominate the all-time head-to-head record against Japan, with sources indicating 11 wins in 14 total matches, while Japan secured their first-ever victory against them with a 3-2 win. Across these meetings, Brazil have scored 29 goals to Japan's 9 in at least 10 of those matchups.",
+  "h2h_record": {
+    "home_wins": 11,
+    "draws": 2,
+    "away_wins": 1,
+    "notable_results": [
+      "3-2 (Japan) - unknown - unknown"
+    ]
+  },
+  "form_home": [
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "D"
+  ],
+  "key_players_home": [
+    "Vinicius Junior (left winger / striker)",
+    "Raphinha (right winger)",
+    "Bruno Guimaraes (defensive midfielder)",
+    "Endrick (forward)",
+    "Neymar (attacking midfielder / forward)"
+  ],
+  "key_players_away": [
+    "Takefusa Kubo (winger, Real Sociedad)",
+    "Wataru Endo (defensive midfielder, Liverpool)",
+    "Daichi Kamada (attacking midfielder, Crystal Palace)",
+    "Daizen Maeda (forward/winger, Celtic)",
+    "Hiroki Ito (centre-back, Bayern Munich)"
+  ],
+  "team_style_home": "Carlo Ancelotti's Brazil combine Brazilian attacking flair with Italian defensive structure in a 4-2-3-1 / 4-3-3 hybrid, using wide forwards Vinicius and Raphinha to exploit space on the break while Guimaraes anchors midfield.",
+  "team_style_away": "Japan under Hajime Moriyasu deploy a flexible 3-4-2-1 built on high-intensity pressing, rapid transitions, and a short-passing game, capable of switching to a disciplined low-block counter-attack against stronger opponents.",
+  "wc_history_home": "Brazil are the most successful nation in World Cup history with five titles (1958, 1962, 1970, 1994, 2002) and are the only team to have participated in every tournament.",
+  "wc_history_away": "Japan have reached the Round of 16 on four occasions (2002, 2010, 2018, 2022), most recently stunning Germany and Spain in Qatar 2022 to top their group before exiting on penalties to Croatia.",
+  "group_context": "Round of 32 knockout — no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World-class attacking duo in Vinicius Junior and Raphinha",
+    "Tactical adaptability and man-management under Carlo Ancelotti",
+    "Depth across all positions with Brazil's strongest squad in years"
+  ],
+  "strengths_away": [
+    "High-press and quick transitions that unsettle organised defences",
+    "Deep squad of European-based players with top-club experience",
+    "Tactical versatility and ability to adapt mid-game under Moriyasu"
+  ],
+  "stats_home": {
+    "fifa_rank": 6,
+    "elo": 1766,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 4,
+      "L": 6,
+      "GF": 24,
+      "GA": 17
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 18,
+    "elo": 1662,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 30,
+      "GA": 3
+    }
+  }
+}

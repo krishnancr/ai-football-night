@@ -1,0 +1,77 @@
+{
+  "home_team": "Switzerland",
+  "away_team": "Algeria",
+  "group": "R32",
+  "match_date": "2026-07-02",
+  "venue": "BC Place, Vancouver, Canada",
+  "h2h_summary": null,
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "form_home": [
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "D"
+  ],
+  "key_players_home": [
+    "Granit Xhaka (captain, central midfielder)",
+    "Breel Embolo (striker)",
+    "Gregor Kobel (goalkeeper)",
+    "Dan Ndoye (winger)",
+    "Manuel Akanji (centre-back)"
+  ],
+  "key_players_away": [
+    "Riyad Mahrez (attacking midfielder/winger, captain)",
+    "Mohamed Amoura (striker, top scorer in qualifying with 10 goals)",
+    "Ibrahim Maza (attacking midfielder, Bayer Leverkusen)",
+    "Rayan Ait-Nouri (left back, Manchester City)",
+    "Aissa Mandi (central defender, most-capped player)"
+  ],
+  "team_style_home": "Switzerland under Murat Yakin play a disciplined 4-2-3-1 built around Granit Xhaka as the deep-lying playmaker, using a high man-to-man press to win the ball high up the pitch and launching quick transitions on the flanks through pace of Dan Ndoye and Ruben Vargas.",
+  "team_style_away": "Algeria under Petkovic deploy a 4-3-3 or 4-4-2 built on combination play, wide exploitation, and counter-attacking flair, with Mahrez and Amoura providing creative and goal-scoring threat.",
+  "wc_history_home": "Switzerland have appeared at 13 World Cups, reaching the quarter-finals in 1934, 1938, and 1954, and have been a consistent presence in the round of 16 in the modern era (2014, 2018) with a last-16 exit to Portugal in 2022.",
+  "wc_history_away": "Algeria have appeared at five World Cups (1982, 1986, 2010, 2014, 2026), with their best run being the Round of 16 in 2014, and their most famous moment being the stunning 2-1 upset of West Germany in 1982.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Experienced, defensively disciplined squad with quality throughout",
+    "High-press system generates turnovers and transition goals",
+    "Granit Xhaka's leadership and control of midfield tempo"
+  ],
+  "strengths_away": [
+    "Prolific attacking threat led by Mahrez and Amoura",
+    "Strong qualifying form \u2014 eight wins in CAF qualifying, best-ever campaign",
+    "Dangerous on the counter-attack with technically gifted wide players"
+  ],
+  "stats_home": {
+    "fifa_rank": 19,
+    "elo": 1650,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 2,
+      "L": 0,
+      "GF": 14,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 28,
+    "elo": 1571,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 24,
+      "GA": 8
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "home_team": "Portugal",
+  "away_team": "Croatia",
+  "group": "R32",
+  "match_date": "2026-07-02",
+  "venue": "BMO Field, Toronto, Canada",
+  "h2h_summary": "In the 6 recorded head-to-head matches between Portugal and Croatia, Portugal has won 4 times, Croatia has won 1 time, and they have drawn 1 time.",
+  "h2h_record": {
+    "home_wins": 4,
+    "draws": 1,
+    "away_wins": 1,
+    "notable_results": [
+      "0-3 (Portugal) - UEFA European Championship - 1996",
+      "2-0 (Portugal) - International Friendly - 2005",
+      "0-1 (Portugal) - International Friendly - 2013",
+      "0-1 (Portugal) - UEFA European Championship - 2016",
+      "1-1 (Draw) - International Friendly - 2018"
+    ]
+  },
+  "form_home": [
+    "D",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "L",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Cristiano Ronaldo (centre forward / captain)",
+    "Bruno Fernandes (attacking midfielder)",
+    "Bernardo Silva (midfield playmaker)",
+    "Rafael Leao (left winger, AC Milan)",
+    "Nuno Mendes (left back, PSG)"
+  ],
+  "key_players_away": [
+    "Luka Modric (central midfielder / captain)",
+    "Mateo Kovacic (central midfielder)",
+    "Josko Gvardiol (left-back / defender)",
+    "Dominik Livakovic (goalkeeper)",
+    "Andrej Kramaric (forward)"
+  ],
+  "team_style_home": "Portugal under Roberto Martinez favour a possession-based 4-3-3 that transitions into a 3-4-2-1, using technical midfield triangles and wide attackers to create chances while Ronaldo operates as the primary penalty-box finisher.",
+  "team_style_away": "Croatia play a possession-based, midfield-controlled style under Zlatko Dalic, typically in a 4-3-3 or 3-4-2-1, relying on technical quality through the middle, a double pivot for defensive cover, and quick transitions from defense to attack.",
+  "wc_history_home": "Portugal have appeared at nine World Cups, winning third place in 1966 led by Eusebio (Golden Boot), finishing fourth in 2006, and reaching the quarter-finals in 2022; they have never won the tournament.",
+  "wc_history_away": "Croatia have been one of the most consistent World Cup performers since their debut, finishing third in 1998 and reaching the final in 2018 where they lost 4-2 to France, with Luka Modric winning the Golden Ball.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Elite technical midfield depth with Bruno Fernandes, Bernardo Silva, Vitinha, and Jo\u00e3o Neves all world-class",
+    "Tactical flexibility under Martinez \u2014 can shift between 4-3-3 and 3-4-2-1 to adapt in-game",
+    "Proven winning mentality reinforced by 2025 UEFA Nations League title and Cristiano Ronaldo's leadership"
+  ],
+  "strengths_away": [
+    "Elite midfield depth anchored by Modric and Kovacic",
+    "Proven big-tournament mentality and knockout experience",
+    "Disciplined defensive organization and tactical flexibility"
+  ],
+  "stats_home": {
+    "fifa_rank": 5,
+    "elo": 1768,
+    "qual": {
+      "P": 6,
+      "W": 4,
+      "D": 1,
+      "L": 1,
+      "GF": 20,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 11,
+    "elo": 1715,
+    "qual": {
+      "P": 8,
+      "W": 7,
+      "D": 1,
+      "L": 0,
+      "GF": 26,
+      "GA": 4
+    }
+  }
+}

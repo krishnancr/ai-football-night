@@ -1,0 +1,72 @@
+{
+  "home_team": "South Africa",
+  "away_team": "Canada",
+  "group": "R32",
+  "match_date": "2026-06-28",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "South Africa and Canada have met only once in their all-time head-to-head history, with South Africa winning the match 2-0 in 2007.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "2-0 (South Africa) - 2007"
+    ]
+  },
+  "form_home": [
+    "L",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "L"
+  ],
+  "key_players_home": [
+    "Ronwen Williams (goalkeeper, captain)",
+    "Lyle Foster (striker, Burnley)",
+    "Teboho Mokoena (central midfielder, 50+ caps)",
+    "Oswin Appollis (winger)",
+    "Relebohile Mofokeng (attacking midfielder, Orlando Pirates)"
+  ],
+  "key_players_away": [
+    "Alphonso Davies (left winger / left-back)",
+    "Jonathan David (striker)",
+    "Stephen Eustaquio (central midfielder)",
+    "Ismael Kone (midfielder)",
+    "Tajon Buchanan (winger)"
+  ],
+  "team_style_home": "South Africa under Hugo Broos play with a fluid 3-4-3 or 4-3-3, emphasising direct, fearless attacking football with energetic wingers and a high-pressing mentality instilled over his tenure.",
+  "team_style_away": "Canada under Jesse Marsch employ an intense high-press system nicknamed 'Maplepressing', operating in a 4-4-2 shape that aggressively forces turnovers in dangerous areas and converts them into rapid vertical attacks led by the pace of Alphonso Davies and finishing quality of Jonathan David.",
+  "wc_history_home": "South Africa appeared at three World Cups (1998, 2002, 2010) but never advanced past the group stage, most memorably hosting 2010 where they beat France yet were eliminated on goal difference as the first host nation to exit at the group stage.",
+  "wc_history_away": "Canada have qualified for just two World Cups — 1986 (first round, no goals scored) and 2022 (first round, eliminated from Group F) — making 2026 as co-hosts a historic opportunity to advance past the group stage for the first time.",
+  "group_context": "Round of 32 knockout — no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Experienced goalkeeper in Ronwen Williams, a penalty shootout hero",
+    "Dangerous wide attackers (Appollis, Mofokeng) capable of causing upsets",
+    "Well-organised defensive shape under Broos with a compact back three"
+  ],
+  "strengths_away": [
+    "Playing at home in front of a passionate Canadian crowd at BC Place",
+    "Jonathan David's prolific finishing — Canada's all-time leading scorer",
+    "Alphonso Davies' explosive pace and direct threat on the left flank"
+  ],
+  "stats_home": {
+    "fifa_rank": 60,
+    "elo": 1428,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 3,
+      "L": 2,
+      "GF": 15,
+      "GA": 9
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 30,
+    "elo": 1559,
+    "qual": null
+  }
+}

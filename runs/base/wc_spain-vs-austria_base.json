@@ -1,0 +1,86 @@
+{
+  "home_team": "Spain",
+  "away_team": "Austria",
+  "group": "R32",
+  "match_date": "2026-07-02",
+  "venue": "SoFi Stadium, Inglewood, USA",
+  "h2h_summary": "The snippets reveal at least 8 historical meetings between Spain and Austria, including competitive fixtures in the FIFA World Cup and UEFA European Championship, but the complete all-time win-draw-loss totals are truncated and therefore unknown.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "2-1 (Spain) - Friendly International - 1924",
+      "0-1 (Spain) - International Friendly - 1925",
+      "3-0 (Austria) - International Friendly - 1960",
+      "2-1 (Austria) - FIFA World Cup - 1978",
+      "0-0 (Draw) - International Friendly - 1985",
+      "2-0 (Spain) - UEFA European Championship - 1987",
+      "2-3 (Austria) - International Friendly - 1990",
+      "1-3 (Spain) - UEFA European Championship - 1999"
+    ]
+  },
+  "form_home": [
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "L",
+    "D"
+  ],
+  "key_players_home": [
+    "Lamine Yamal (right winger)",
+    "Rodri (defensive midfielder)",
+    "Pedri (central midfielder)",
+    "Nico Williams (left winger)",
+    "Fabian Ruiz (central midfielder)"
+  ],
+  "key_players_away": [
+    "David Alaba (central defender, captain, Real Madrid)",
+    "Marcel Sabitzer (midfielder, Borussia Dortmund)",
+    "Marko Arnautovic (striker, record goalscorer with 47 goals in 132 caps)",
+    "Christoph Baumgartner (attacking midfielder, RB Leipzig)",
+    "Konrad Laimer (midfielder, Bayern Munich)"
+  ],
+  "team_style_home": "Spain play a fluid 4-3-3 under Luis de la Fuente featuring elite ball circulation through Rodri and Pedri in midfield, dangerous wide isolation via Yamal and Williams, and high-pressing coordination that has kept them unbeaten in 28 normal-time games since March 2024.",
+  "team_style_away": "Austria under Rangnick use a high-intensity 4-2-3-1 centered on aggressive gegenpressing, rapid transitions, and relentless pressing to win the ball high up the pitch.",
+  "wc_history_home": "Spain won their first and only World Cup title in 2010 in South Africa, defeating the Netherlands 1-0 in extra time, becoming the first European team to win the tournament outside of Europe.",
+  "wc_history_away": "Austria's best World Cup finish was third place in 1954 (including a historic 7-5 win over Switzerland), and they return to the tournament in 2026 for the first time since 1998 after a 28-year absence.",
+  "group_context": "Round of 32 knockout — no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Lamine Yamal's exceptional 1v1 dribbling and creativity on the right flank",
+    "Dominant midfield control and ball circulation through Rodri and Pedri",
+    "28-game unbeaten run in normal time reflecting squad depth and tactical cohesion"
+  ],
+  "strengths_away": [
+    "Rangnick's organised gegenpressing system disrupts opponents' build-up effectively",
+    "Deep squad with Bundesliga quality throughout midfield",
+    "Excellent recent form — four wins from last five with only two goals conceded"
+  ],
+  "stats_home": {
+    "fifa_rank": 2,
+    "elo": 1875,
+    "qual": {
+      "P": 6,
+      "W": 5,
+      "D": 1,
+      "L": 0,
+      "GF": 21,
+      "GA": 2
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 24,
+    "elo": 1597,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 1,
+      "L": 1,
+      "GF": 22,
+      "GA": 4
+    }
+  }
+}

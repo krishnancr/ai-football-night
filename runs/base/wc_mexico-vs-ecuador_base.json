@@ -1,0 +1,77 @@
+{
+  "home_team": "Mexico",
+  "away_team": "Ecuador",
+  "group": "R32",
+  "match_date": "2026-06-30",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": "Mexico has historically dominated Ecuador in the available recorded matchups, winning 5 times and drawing 1, with no wins for Ecuador in the visible records.",
+  "h2h_record": {
+    "home_wins": 5,
+    "draws": 1,
+    "away_wins": 0,
+    "notable_results": [
+      "3-2 (Mexico) - Colombus Cup - 1984",
+      "0-2 (Mexico) - Copa America - 1993",
+      "0-0 (Draw) - International Friendly - 1999",
+      "2-1 (Mexico) - FIFA World Cup - 2002",
+      "2-1 (Mexico) - Copa America - 2004",
+      "2-1 (Mexico) - International Friendly - 2004"
+    ]
+  },
+  "form_home": [
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "D",
+    "W"
+  ],
+  "key_players_home": [
+    "Raul Jimenez (striker, Fulham)",
+    "Edson Alvarez (defensive midfielder, West Ham)",
+    "Alvaro Fidalgo (attacking midfielder, Real Betis)",
+    "Julian Quinones (winger)",
+    "Guillermo Ochoa (goalkeeper, 6th World Cup)"
+  ],
+  "key_players_away": [
+    "Moises Caicedo (central midfielder / defensive shield)",
+    "Willian Pacho (centre-back, UCL winner with PSG)",
+    "Piero Hincapie (left-back / centre-back)",
+    "Kendry Paez (attacking midfielder / winger)",
+    "Enner Valencia (striker, all-time leading scorer)"
+  ],
+  "team_style_home": "Mexico under Javier Aguirre deploy a 4-3-3 emphasizing defensive discipline, rapid counter-attacks, a quick passing game through midfield, and dangerous set pieces with strong aerial threats.",
+  "team_style_away": "Ecuador under Beccacece deploy a compact 4-4-2 / 4-2-3-1 built on elite defensive organisation — conceding only 5 goals across 18 qualifying matches — and rely on rapid, disciplined counter-attacks rather than sustained possession.",
+  "wc_history_home": "Mexico has appeared in 18 World Cups and reached the quarter-finals in 1970 and 1986 (both as host), but have been eliminated in the Round of 16 in seven consecutive tournaments from 1994 to 2022, a streak locals call 'El Quinto Partido' curse.",
+  "wc_history_away": "Ecuador have qualified for four World Cups (2002, 2006, 2014, 2022), with their best finish being the Round of 16 in 2006, and memorably opened the 2022 tournament with a 2-0 win over hosts Qatar.",
+  "group_context": "Round of 32 knockout — no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Home advantage at altitude in Estadio Azteca with massive crowd support",
+    "Experienced squad led by Raul Jimenez and veteran goalkeeper Ochoa, with seven World Cup appearances between key players",
+    "Rapid counter-attacking and set-piece danger with aerial threats from Cesar Montes and Johan Vasquez"
+  ],
+  "strengths_away": [
+    "Elite defensive solidity — only 5 goals conceded in 18 qualifying matches",
+    "World-class midfield pivot in Moises Caicedo providing interceptions, press resistance and ball-carrying",
+    "Dangerous and well-drilled counter-attacking with pace on the wings"
+  ],
+  "stats_home": {
+    "fifa_rank": 14,
+    "elo": 1687,
+    "qual": null
+  },
+  "stats_away": {
+    "fifa_rank": 23,
+    "elo": 1599,
+    "qual": {
+      "P": 18,
+      "W": 8,
+      "D": 8,
+      "L": 2,
+      "GF": 14,
+      "GA": 5
+    }
+  }
+}
