@@ -27,12 +27,12 @@ def day(tmp_path):
         "germany-curaçao", "Germany vs Curaçao", 3, 0, 0.82,
         {"Stat_Bot": {"home_goals": 3, "away_goals": 0},
          "G_Bot": {"home_goals": 3, "away_goals": 0},
-         "R_Bot": {"home_goals": 1, "away_goals": 1}})))
+         "U_Bot": {"home_goals": 1, "away_goals": 1}})))
     (d / "wc_netherlands-japan.json").write_text(json.dumps(_run(
         "netherlands-japan", "Netherlands vs Japan", 2, 1, 0.65,
         {"Stat_Bot": {"home_goals": 2, "away_goals": 1},
          "G_Bot": {"home_goals": 2, "away_goals": 1},
-         "R_Bot": {"home_goals": 0, "away_goals": 1}})))
+         "U_Bot": {"home_goals": 0, "away_goals": 1}})))
     # sidecars that must be ignored by the day loader
     (d / "wc_germany-curaçao_thread.json").write_text("[]")
     (d / "wc_germany-curaçao_context.json").write_text("{}")
@@ -62,7 +62,7 @@ def test_highest_confidence_leads(day):
 
 def test_outlier_called_out(day):
     md = tb.build_thread_md("2026-06-14", runs_root=day)
-    assert "R_Bot is the outlier." in md
+    assert "U_Bot is the outlier." in md
 
 
 def test_sidecars_excluded(day):

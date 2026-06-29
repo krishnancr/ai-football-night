@@ -78,9 +78,9 @@ def test_format_twitter_thread_tweet2_lists_the_divergence(run_data, context_dat
     from format_content import format_twitter_thread
     thread = format_twitter_thread(run_data, context_data)
     tweet2 = thread[1]
-    for role in ("Stat_Bot", "G_Bot", "R_Bot"):
+    for role in ("Stat_Bot", "G_Bot", "U_Bot"):
         assert role in tweet2, f"divergence tweet missing {role}"
-    assert "R_Bot is the outlier" in tweet2  # R_Bot picked away alone in the fixture
+    assert "U_Bot is the outlier" in tweet2  # U_Bot picked away alone in the fixture
 
 
 def test_format_twitter_thread_tweet3_is_outrageous_take(run_data, context_data):
@@ -139,7 +139,7 @@ def test_format_twitter_thread_divergence_from_parsed_predictions(context_data):
     }
     thread = format_twitter_thread(run, context_data)
     tweet2 = thread[1]
-    for role in ("Stat_Bot", "G_Bot", "R_Bot"):
+    for role in ("Stat_Bot", "G_Bot", "U_Bot"):
         assert role in tweet2, f"divergence tweet missing {role}"
 
 

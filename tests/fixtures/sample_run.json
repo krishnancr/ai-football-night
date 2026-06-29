@@ -23,10 +23,10 @@
     "tweet_hook": "Croatia beat Brazil on penalties in 2022 — Modric is still in the squad",
     "studio_banter_quote": {
       "role": "Statman",
-      "exchange": "Stat_Bot: xG doesn't lie — Brazil 2.1 per game.\nR_Bot: Modric ran that midfield in 2022, nothing's changed.\nStat_Bot: He's 38. That's not a variable, that's a liability."
+      "exchange": "Stat_Bot: xG doesn't lie — Brazil 2.1 per game.\nU_Bot: Modric ran that midfield in 2022, nothing's changed.\nStat_Bot: He's 38. That's not a variable, that's a liability."
     },
     "most_outrageous_take": "Croatia have won a World Cup knockout against Brazil before. Stat_Bot is living in a spreadsheet.",
-    "host_intro": "Stat_Bot has the numbers, R_Bot has the trauma, and G_Bot has a touchscreen — here is the final verdict.",
+    "host_intro": "Stat_Bot has the numbers, U_Bot has the trauma, and G_Bot has a touchscreen — here is the final verdict.",
     "stat_bot_highlight": "Brazil 2.1 xG per game. Croatia concede 1.3. The spreadsheet doesn't lie.",
     "rationale": "Brazil's quality and depth should prevail, but Croatia's tournament experience and Modric's ability to control tempo make a comfortable win unlikely. A narrow Brazil win is the most probable outcome."
   },
@@ -56,7 +56,7 @@
       "home_goals": 2,
       "away_goals": 1
     },
-    "R_Bot": {
+    "U_Bot": {
       "home_goals": 1,
       "away_goals": 2
     }

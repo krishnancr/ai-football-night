@@ -18,8 +18,8 @@ _PUNDITS = [
      "bio": "The numbers guy. xG, progressive passes, expected threat. Football is maths. Full stop."},
     {"name": "G_Bot", "model": "Kimi K2.6", "color": "#8b5cf6",
      "bio": "The tactician. Reads formations like sheet music. Usually right. Never lets you forget it."},
-    {"name": "R_Bot", "model": "LLaMA 4 Maverick", "color": "#f97316",
-     "bio": "The contrarian. xG is a con. Momentum is real. Character wins trophies."},
+    {"name": "U_Bot", "model": "Nemotron 3 Super", "color": "#ef4444",
+     "bio": "The giant-killer. Cup-upset specialist. Backs the one underdog angle the data misses — fatigue, a venue, a keeper in form."},
     {"name": "K_Bot", "model": "DeepSeek V3", "color": "#10b981",
      "bio": "The judge. Hears everyone out. Delivers the final scoreline. No appeals."},
 ]
@@ -48,27 +48,46 @@ _LANDING_CSS = """
 .banter-row.right .banter-bubble { margin-left: auto; border-radius: 14px 4px 14px 14px; }
 """
 
+_ARTICLE_CSS = """
+.article { max-width: 720px; margin: 0 auto; }
+.article .back-link { display: inline-block; color: #60a5fa; text-decoration: none; font-size: 0.82rem; margin-bottom: 24px; }
+.article .back-link:hover { text-decoration: underline; }
+.article h1 { font-size: 1.7rem; font-weight: 800; line-height: 1.25; margin-bottom: 16px; color: #f1f5f9; }
+.article h2 { font-size: 1.15rem; font-weight: 700; color: #60a5fa; letter-spacing: 0; text-transform: none; margin: 36px 0 12px; }
+.article p { font-size: 0.98rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 18px; }
+.article ul { margin: 0 0 18px 22px; }
+.article li { font-size: 0.98rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 8px; }
+.article strong { color: #f1f5f9; font-weight: 700; }
+.article em { color: #94a3b8; }
+.article hr { border: none; border-top: 1px solid #1e293b; margin: 28px 0; }
+.article code { background: #1e293b; padding: 1px 6px; border-radius: 4px; font-size: 0.85em; }
+.article-byline { color: #64748b; font-size: 0.85rem; margin: -6px 0 26px; }
+.read-article { display: inline-block; background: #1e293b; color: #cbd5e1; text-decoration: none; border-radius: 6px; padding: 8px 14px; font-size: 0.8rem; margin-bottom: 24px; border: 1px solid #334155; }
+.read-article:hover { background: #273549; color: #f1f5f9; }
+"""
+
 _SAMPLE_BANTER = [
     {"role": "Stat_Bot",
      "text": "UCL Final. Arsenal's xG this campaign: 2.6 per game. PSG's: 2.2. Havertz has scored in four consecutive European knockout games. The data says Arsenal end their 36-year wait tonight. This is not sentiment. This is arithmetic."},
-    {"role": "R_Bot",
+    {"role": "U_Bot",
      "text": "I have heard 'this is Arsenal's year' every year since 2006. Dembélé is unplayable in a final, PSG held the cup last year, and Havertz will spend the second half explaining a yellow card to a referee who does not care."},
     {"role": "G_Bot",
      "text": "Both of you are missing the tactical key. Arsenal press in a 4-3-3 but PSG's double pivot sits deep and funnels everything wide. This is entirely about whether Saka can beat their left back one-on-one for ninety minutes. If yes, Arsenal. If PSG adjust at half-time, we go to extra time."},
     {"role": "Stat_Bot",
      "text": "G_Bot said 'if yes' as his entire analysis. That is not a number. That is a coin flip with a blazer on."},
-    {"role": "R_Bot",
+    {"role": "U_Bot",
      "text": "PSG 2-0. Dembélé first half, something scrambled late. Arsenal will hit the post at least once and somebody will write a very long article about it."},
     {"role": "K_Bot",
-     "text": "Arsenal score early, PSG equalise from a penalty, it goes to extra time. Someone misses in the shootout and PSG retain. Stat_Bot's model will be technically correct and completely useless. R_Bot will insist he was basically right. Prediction locked. — Actual result: PSG 1–1 Arsenal AET, PSG win 4–3 on pens. Gabriel Magalhães misses the fifth. Called it."},
+     "text": "Arsenal score early, PSG equalise from a penalty, it goes to extra time. Someone misses in the shootout and PSG retain. Stat_Bot's model will be technically correct and completely useless. U_Bot will insist he was basically right. Prediction locked. — Actual result: PSG 1–1 Arsenal AET, PSG win 4–3 on pens. Gabriel Magalhães misses the fifth. Called it."},
 ]
 
 ROLE_COLORS = {
     "Stat_Bot": "#3b82f6",
     "G_Bot": "#8b5cf6",
-    "R_Bot": "#f97316",
+    "U_Bot": "#ef4444",
     "K_Bot": "#10b981",
     # Legacy key names (old run files degrade gracefully — get default colour)
+    "R_Bot": "#f97316",   # sacked after the group stage; kept so epitaph pages still colour
     "Statman": "#3b82f6",
     "TacticalAnalyst": "#8b5cf6",
     "Contrarian": "#f97316",
@@ -195,6 +214,11 @@ def load_run_pairs(runs_dir: Path = RUNS_DIR) -> list:
         if not context_file.exists():
             context_file = run_file.parent / ctx_name
         run = json.loads(run_file.read_text())
+        # Skip dev artifacts that share the wc_*.json glob (reel scripts, show-render
+        # specs, golden/mock fixtures, reel-derived runs): a real prediction run
+        # always carries both a "decision" and a "match_string".
+        if not isinstance(run, dict) or "decision" not in run or "match_string" not in run:
+            continue
         context = json.loads(context_file.read_text()) if context_file.exists() else {}
         date_str = run_file.parent.name.replace("-", "")  # YYYY-MM-DD → YYYYMMDD
         pairs.append({"run": run, "context": context, "date_str": date_str})
@@ -332,7 +356,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
             '<div class="hero">'
             '<div class="hero-title">Predictions for every World Cup 2026 match.</div>'
             '<div class="hero-sub">Four AI pundits debate every fixture — Stat_Bot runs the numbers, '
-            'G_Bot reads the tactics, R_Bot goes against the grain, K_Bot delivers the final word. '
+            'G_Bot reads the tactics, U_Bot hunts the giant-killing upset, K_Bot delivers the final word. '
             'Predictions drop before each kickoff.</div>'
             '</div>'
         )
@@ -350,6 +374,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     <p>Four AI pundits. One studio. Every World Cup 2026 match.</p>
   </header>
   <img class="studio-img" src="assets/studio.png" alt="AI Football Night studio">
+  <a class="read-article" href="retrospective.html">📝 Read the group-stage retrospective — what a month of AI arguing actually proved</a>
   {hero}
   {banter_section}
   {pundits_section}
@@ -437,6 +462,7 @@ def generate_index_html(run_pairs: list, today_str: str, schedule: list = None) 
     <p>Four AI pundits. One studio. Every World Cup 2026 match.</p>
   </header>
   <img class="studio-img" src="assets/studio.png" alt="AI Football Night studio">
+  <a class="read-article" href="retrospective.html">📝 Read the group-stage retrospective — what a month of AI arguing actually proved</a>
   <div class="accuracy-pill">📊 {accuracy_text}</div>
   {_leaderboard_html(run_pairs)}
   {today_section}
@@ -726,6 +752,79 @@ def generate_match_html(run: dict, context: dict) -> str:
     return _generate_group_page(run, context)
 
 
+def _md_inline(text: str) -> str:
+    """Inline markdown → HTML: escape, then bold, italic, code. Bold before italic."""
+    import html
+    import re
+    text = html.escape(text, quote=False)
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", text)
+    text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
+    return text
+
+
+def md_to_html(md_text: str) -> str:
+    """Minimal, dependency-free Markdown → HTML for our article subset:
+    h1/h2, bullet lists, --- rules, **bold**/*italic*/`code`, paragraphs."""
+    lines = md_text.replace("\r\n", "\n").split("\n")
+    out, para, in_list = [], [], False
+
+    def flush_para():
+        if para:
+            out.append(f"<p>{_md_inline(' '.join(para))}</p>")
+            para.clear()
+
+    def close_list():
+        nonlocal in_list
+        if in_list:
+            out.append("</ul>")
+            in_list = False
+
+    for raw in lines:
+        line = raw.rstrip()
+        stripped = line.strip()
+        if not stripped:
+            flush_para(); close_list(); continue
+        if stripped == "---":
+            flush_para(); close_list(); out.append("<hr>"); continue
+        if stripped.startswith("## "):
+            flush_para(); close_list(); out.append(f"<h2>{_md_inline(stripped[3:])}</h2>"); continue
+        if stripped.startswith("# "):
+            flush_para(); close_list(); out.append(f"<h1>{_md_inline(stripped[2:])}</h1>"); continue
+        if stripped.startswith("- "):
+            flush_para()
+            if not in_list:
+                out.append("<ul>"); in_list = True
+            out.append(f"<li>{_md_inline(stripped[2:])}</li>"); continue
+        if in_list:
+            # continuation of the previous list item (wrapped line)
+            out[-1] = out[-1][:-5] + " " + _md_inline(stripped) + "</li>"
+            continue
+        para.append(stripped)
+    flush_para(); close_list()
+    return "\n".join(out)
+
+
+def render_article_html(md_path: Path) -> str:
+    """Full standalone HTML page for a Markdown article (the retrospective)."""
+    body = md_to_html(Path(md_path).read_text(encoding="utf-8"))
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Retrospective — AI Football Night</title>
+  <style>{_INDEX_CSS}{_ARTICLE_CSS}</style>
+</head>
+<body>
+  <article class="article">
+    <a class="back-link" href="index.html">← AI Football Night</a>
+    {body}
+  </article>
+</body>
+</html>"""
+
+
 def build_site(output_dir: Path, runs_dir: Path = RUNS_DIR) -> None:
     from datetime import datetime, timezone
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -749,6 +848,16 @@ def build_site(output_dir: Path, runs_dir: Path = RUNS_DIR) -> None:
 
     index_html = generate_index_html(run_pairs, today_str, schedule=schedule)
     (output_dir / "index.html").write_text(index_html, encoding="utf-8")
+
+    # Publish committed long-form articles (content/*.md) as standalone pages.
+    for article_src, out_name in [
+        (runs_dir.parent / "content" / "group-stage-retrospective.md", "retrospective.html"),
+        (Path("content") / "group-stage-retrospective.md", "retrospective.html"),
+    ]:
+        if article_src.exists():
+            (output_dir / out_name).write_text(render_article_html(article_src), encoding="utf-8")
+            print(f"Article published: {output_dir / out_name}")
+            break
 
     pages_written = 0
     for pair in run_pairs:

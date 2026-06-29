@@ -24,6 +24,21 @@ def test_correct_scoreline(tmp_run):
     assert actual["away_goals"] == 1
 
 
+def test_knockout_records_advanced_team(tmp_run):
+    from update_result import update_result
+    # A level knockout tie: the recorded result carries who actually went through.
+    actual = update_result(tmp_run, home_goals=1, away_goals=1, advanced="Croatia")
+    assert actual["advanced"] == "Croatia"
+    saved = json.loads(tmp_run.read_text())
+    assert saved["actual"]["advanced"] == "Croatia"
+
+
+def test_group_result_has_no_advanced_key(tmp_run):
+    from update_result import update_result
+    actual = update_result(tmp_run, home_goals=2, away_goals=1)
+    assert "advanced" not in actual
+
+
 def test_wrong_scoreline_correct_result(tmp_run):
     from update_result import update_result
     # Predicted 2-1 (home_win), actual 3-0 (still home_win)
@@ -74,7 +89,7 @@ def test_update_result_emits_receipts_file(tmp_path):
         "decision": {"home_goals": 2, "away_goals": 1, "result": "home_win"},
         "pundit_predictions": {
             "Stat_Bot": {"home_goals": 2, "away_goals": 1},
-            "R_Bot": {"home_goals": 0, "away_goals": 2},
+            "U_Bot": {"home_goals": 0, "away_goals": 2},
         },
     }
     run_path = tmp_path / "wc_brazil-croatia_20260613.json"
@@ -87,7 +102,7 @@ def test_update_result_emits_receipts_file(tmp_path):
     text = receipts_path.read_text()
     assert "FULL TIME: Brazil 2–1 Croatia" in text
     assert "✅ Stat_Bot" in text
-    assert "❌ R_Bot" in text
+    assert "❌ U_Bot" in text
 
 
 def test_update_result_records_result_even_if_receipts_fail(tmp_path, capsys):

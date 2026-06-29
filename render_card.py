@@ -29,13 +29,16 @@ from pathlib import Path
 
 import teams
 
-ROLES = ("Stat_Bot", "G_Bot", "R_Bot", "K_Bot")
+ROLES = ("Stat_Bot", "G_Bot", "U_Bot", "K_Bot")
 
 CHARS = {
-    "Stat_Bot": {"name": "STAT_BOT", "tag": "THE DATA",      "color": "#3b82f6", "mono": "S", "shape": "shield"},
-    "G_Bot":    {"name": "G_BOT",    "tag": "THE TACTICIAN",  "color": "#10b981", "mono": "G", "shape": "hex"},
-    "R_Bot":    {"name": "R_BOT",    "tag": "THE CONTRARIAN", "color": "#f59e0b", "mono": "R", "shape": "roundel"},
-    "K_Bot":    {"name": "K_BOT",    "tag": "THE VERDICT",    "color": "#a855f7", "mono": "K", "shape": "diamond"},
+    "Stat_Bot": {"name": "STAT_BOT", "tag": "THE DATA",       "color": "#3b82f6", "mono": "S", "shape": "shield"},
+    "G_Bot":    {"name": "G_BOT",    "tag": "THE TACTICIAN",   "color": "#10b981", "mono": "G", "shape": "hex"},
+    "U_Bot":    {"name": "U_BOT",    "tag": "THE GIANT-KILLER", "color": "#ef4444", "mono": "U", "shape": "roundel"},
+    "K_Bot":    {"name": "K_BOT",    "tag": "THE VERDICT",     "color": "#a855f7", "mono": "K", "shape": "diamond"},
+    # Legacy: R_Bot was sacked after the group stage. Kept so the group-stage
+    # epitaph (old run files / re-rendered cards) still shows his identity.
+    "R_Bot":    {"name": "R_BOT",    "tag": "THE CONTRARIAN",  "color": "#f59e0b", "mono": "R", "shape": "roundel"},
 }
 
 # FIFA canonical name -> flagcdn ISO code (home nations use gb-* subdivisions).
@@ -125,7 +128,7 @@ def first_take(text, n=150):
         first = re.sub(r"[^a-z]", "", s.split()[0].lower()) if s.split() else ""
         if first in _THROAT:
             return False
-        if re.match(r"^(Stat_Bot|G_Bot|R_Bot|K_Bot)[,\s]", s):
+        if re.match(r"^(Stat_Bot|G_Bot|U_Bot|R_Bot|K_Bot)[,\s]", s):
             return False
         if s.endswith(":") or re.search(r"(BATTLE|DILEMMA|#\d)\s*$", s):
             return False
@@ -195,9 +198,9 @@ def build_pick_cards(run: dict) -> tuple:
     cnt = Counter(pl.values())
     minority = [r for r, v in pl.items() if cnt[v] == 1] if len(cnt) > 1 else []
 
-    chip_fb = {"Stat_Bot": "hard numbers", "G_Bot": "tactical edge", "R_Bot": "the eye test"}
+    chip_fb = {"Stat_Bot": "hard numbers", "G_Bot": "tactical edge", "U_Bot": "the upset angle"}
     cards = ""
-    for role in ("Stat_Bot", "G_Bot", "R_Bot"):
+    for role in ("Stat_Bot", "G_Bot", "U_Bot"):
         p = preds.get(role)
         if not p:
             continue

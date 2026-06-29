@@ -10,7 +10,7 @@ import json
 import os
 import re
 
-VALID_ROLES = {"Stat_Bot", "G_Bot", "R_Bot", "K_Bot"}
+VALID_ROLES = {"Stat_Bot", "G_Bot", "U_Bot", "K_Bot"}
 MAX_MESSAGE_LEN = 220
 MIN_MESSAGES = 6
 DEFAULT_MODEL = "deepseek/deepseek-chat-v3-0324"
@@ -28,7 +28,7 @@ STEP 1: Before writing anything, scan the debate and identify the 4-5 sharpest o
 STEP 2: Build a group chat of 14-20 short messages structured around those specific lines. Characters:
 - Stat_Bot: data-obsessed, quotes xG at people
 - G_Bot: touchscreen tactics nerd, condescending
-- R_Bot: old-school contrarian who grounds his argument in something specific he's actually seen — not just vibes
+- U_Bot: the giant-killer / cup-upset specialist who backs a calibrated underdog angle grounded in a specific detail — fatigue, a keeper in form, a venue factor — not just vibes
 - K_Bot: witty host, sarcastic about the others' egos
 
 Rules:
@@ -38,8 +38,8 @@ Rules:
 - K_Bot's penultimate message names what each pundit actually missed in their specific argument about THIS match — not their general archetype, their actual mistake. Good: "Stat_Bot built the whole model around a striker who's suspended. G_Bot had the right shape but the wrong personnel." Bad: "Three egos, zero self-awareness."
 - K_Bot's final message delivers the verdict with the scoreline {home_goals}-{away_goals}.
 - Return ONLY a JSON array, no prose, no markdown fences:
-[{{"role": "Stat_Bot", "text": "..."}}, {{"role": "R_Bot", "text": "..."}}]
-- role must be exactly one of: Stat_Bot, G_Bot, R_Bot, K_Bot."""
+[{{"role": "Stat_Bot", "text": "..."}}, {{"role": "U_Bot", "text": "..."}}]
+- role must be exactly one of: Stat_Bot, G_Bot, U_Bot, K_Bot."""
 
 
 def _truncate(text, limit: int) -> str:

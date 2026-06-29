@@ -7,7 +7,7 @@ from group_chat import build_group_chat_prompt, parse_group_chat, generate_group
 SAMPLE_RUN = {
     "decision": {"home_goals": 2, "away_goals": 1, "confidence": 0.7, "rationale": "Midfield control."},
     "full_debate": {
-        "proposals": {"Stat_Bot": "xG says 2-1. " * 200, "R_Bot": "Vibes say upset."},
+        "proposals": {"Stat_Bot": "xG says 2-1. " * 200, "U_Bot": "Vibes say upset."},
         "cross_critiques": {"Stat_Bot": "G_Bot ignores the data."},
         "rebuttals": {"Stat_Bot": "I stand by 2-1."},
     },
@@ -15,7 +15,7 @@ SAMPLE_RUN = {
 }
 
 VALID_CHAT = [{"role": "Stat_Bot", "text": f"message {i}"} for i in range(4)] + [
-    {"role": "R_Bot", "text": "vibes"},
+    {"role": "U_Bot", "text": "vibes"},
     {"role": "K_Bot", "text": "verdict: 2-1"},
 ]
 

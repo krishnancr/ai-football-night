@@ -23,9 +23,19 @@ load_dotenv()
 def load_base_context(home: str, away: str) -> dict:
     """Load pre-scraped base context if it exists. Keyed via teams.py so the
     '-vs-' filename convention and name aliases can't break the join."""
-    base_path = Path("runs/base") / teams.base_filename(home, away)
+    base_dir = Path("runs/base")
+    # Fast path: the canonical filename.
+    base_path = base_dir / teams.base_filename(home, away)
     if base_path.exists():
         return json.loads(base_path.read_text())
+    # Fallback: tolerate slug drift (e.g. base files slugged with the English
+    # exonym 'ivory-coast' instead of the canonical 'cote-divoire'). Try every
+    # combination of candidate slugs for each side before giving up.
+    for h_slug in teams.candidate_slugs(home):
+        for a_slug in teams.candidate_slugs(away):
+            candidate = base_dir / f"wc_{h_slug}-vs-{a_slug}_base.json"
+            if candidate.exists():
+                return json.loads(candidate.read_text())
     return {}
 
 
@@ -257,9 +267,20 @@ Rules:
 
     extracted = _parse_synthesis(raw, home, away, search_results)
 
-    # If extraction itself failed completely, return the degraded context directly
+    # Extraction failed both attempts. Don't throw away a base file that loaded
+    # successfully from disk — run the deterministic merge with empty extraction
+    # so all Tier-1 history/stats/h2h survive, and let validate_context re-rate
+    # it (base form/key_players fallbacks may legitimately lift it above
+    # 'degraded'). Only when base is genuinely empty is bare degraded correct.
     if extracted.get("research_quality") == "degraded":
-        return extracted
+        if not base:
+            return extracted
+        ctx = merge_context(base, {}, home, away)
+        # Keep the "synthesis unavailable" news signal scraped from result titles.
+        ctx["recent_news"] = extracted.get("recent_news")
+        ctx, quality = validate_context(ctx, base)
+        print(f"  Extraction failed — rebuilt from base. Research quality: {quality}")
+        return ctx
 
     # Deterministic three-tier merge
     ctx = merge_context(base, extracted, home, away)

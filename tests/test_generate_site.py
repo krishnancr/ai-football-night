@@ -17,11 +17,11 @@ def _write_pair(tmp_path, slug, date_str, run_extra=None, context_extra=None):
         "decision": {
             "home_goals": 2, "away_goals": 1, "confidence": 0.67,
             "upset_probability": 0.23, "key_factors": ["factor1"],
-            "studio_banter_quote": {"role": "R_Bot", "exchange": "Test exchange."},
+            "studio_banter_quote": {"role": "U_Bot", "exchange": "Test exchange."},
             "rationale": "Test rationale.", "dissenting_views": []
         },
         "full_debate": {
-            "proposals": {"Stat_Bot": "stat text", "R_Bot": "contra text"},
+            "proposals": {"Stat_Bot": "stat text", "U_Bot": "contra text"},
             "cross_critiques": {"Stat_Bot": "critique"},
             "rebuttals": {"Stat_Bot": "rebuttal"}
         }
@@ -133,7 +133,7 @@ def test_group_match_page_contains_role_cards(tmp_path):
     pairs = load_run_pairs(tmp_path / "runs")
     html = generate_match_html(pairs[0]["run"], pairs[0]["context"])
     assert "Stat_Bot" in html
-    assert "R_Bot" in html
+    assert "U_Bot" in html
     assert "stat text" in html
 
 
@@ -178,7 +178,7 @@ def test_knockout_match_page_contains_pull_quote(tmp_path):
     pairs = load_run_pairs(tmp_path / "runs")
     html = generate_match_html(pairs[0]["run"], pairs[0]["context"])
     assert "Test exchange" in html
-    assert "R_Bot" in html
+    assert "U_Bot" in html
 
 
 def test_knockout_match_page_collapsible_debate(tmp_path):
@@ -259,7 +259,7 @@ def test_index_shows_pundit_leaderboard_when_scored(tmp_path):
     _write_pair(tmp_path, "brazil-croatia", "20260611", run_extra={
         "pundit_predictions": {
             "Stat_Bot": {"home_goals": 2, "away_goals": 1},
-            "R_Bot": {"home_goals": 1, "away_goals": 1},
+            "U_Bot": {"home_goals": 1, "away_goals": 1},
         },
         "actual": {"home_goals": 1, "away_goals": 1, "result": "draw",
                    "correct_result": False, "correct_scoreline": False},
@@ -267,7 +267,7 @@ def test_index_shows_pundit_leaderboard_when_scored(tmp_path):
     pairs = load_run_pairs(tmp_path / "runs")
     html = generate_index_html(pairs, "20260614")
     assert "Pundit table" in html
-    assert "R_Bot" in html
+    assert "U_Bot" in html
     assert "1/1" in html  # Contrarian called the draw
 
 
@@ -283,7 +283,7 @@ def test_landing_page_when_no_runs_shows_hero_and_pundits():
     assert "The Panel" in html
     assert "Stat_Bot" in html
     assert "G_Bot" in html
-    assert "R_Bot" in html
+    assert "U_Bot" in html
     assert "K_Bot" in html
     assert "Predictions for every World Cup 2026 match" in html
 
@@ -400,3 +400,54 @@ def test_sample_banter_bubbles_alternate(tmp_path):
     assert len(rows) >= 2
     assert "right" not in rows[0]
     assert "right" in rows[1]
+
+
+from generate_site import md_to_html, render_article_html, build_site as _build_site
+
+
+def test_md_to_html_renders_article_subset():
+    md = (
+        "# Big Title\n\n"
+        "*A subtitle line.*\n\n"
+        "---\n\n"
+        "## A Section\n\n"
+        "A paragraph with **bold** and *italic* and `code`.\n\n"
+        "- first bullet\n"
+        "- second **strong** bullet\n"
+    )
+    html = md_to_html(md)
+    assert "<h1>Big Title</h1>" in html
+    assert "<h2>A Section</h2>" in html
+    assert "<hr>" in html
+    assert "<strong>bold</strong>" in html
+    assert "<em>italic</em>" in html
+    assert "<code>code</code>" in html
+    assert html.count("<li>") == 2
+    assert "<ul>" in html and "</ul>" in html
+    # no stray markdown tokens leak through
+    assert "**" not in html
+
+
+def test_md_to_html_escapes_html():
+    assert "&lt;script&gt;" in md_to_html("a <script> tag")
+
+
+def test_render_article_html_full_page(tmp_path):
+    p = tmp_path / "a.md"
+    p.write_text("# Hi\n\nbody text here\n", encoding="utf-8")
+    page = render_article_html(p)
+    assert page.startswith("<!DOCTYPE html>")
+    assert "<h1>Hi</h1>" in page
+    assert 'href="index.html"' in page
+
+
+def test_build_site_publishes_retrospective(tmp_path):
+    # content/group-stage-retrospective.md is committed in the repo root
+    out = tmp_path / "_site"
+    _build_site(out, runs_dir=Path("runs"))
+    retro = out / "retrospective.html"
+    assert retro.exists(), "retrospective.html should be published when content/ article exists"
+    text = retro.read_text(encoding="utf-8")
+    assert "<h1>" in text
+    # index links to it
+    assert 'href="retrospective.html"' in (out / "index.html").read_text(encoding="utf-8")

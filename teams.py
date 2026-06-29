@@ -82,6 +82,27 @@ def resolve(name: str) -> dict:
     return {"canonical": c, "search": search(c), "slug": slug(c)}
 
 
+def candidate_slugs(name: str) -> list:
+    """Every plausible on-disk slug for a team, to survive alias/exonym drift.
+
+    A base file may have been generated with the canonical slug (e.g.
+    'cote-divoire') OR an English exonym slug (e.g. 'ivory-coast'). Returns the
+    canonical slug first, then the raw-name slug and any known-alias slugs that
+    resolve to the same canonical, de-duplicated and order-preserving."""
+    canon = canonical(name)
+    cands = [slugify(canon), slugify(name)]
+    # Any alias that maps to this canonical (e.g. 'Ivory Coast' -> Côte d'Ivoire).
+    for alias, target in _ALIAS_TO_CANONICAL.items():
+        if target == canon:
+            cands.append(slugify(alias))
+    seen, ordered = set(), []
+    for c in cands:
+        if c not in seen:
+            seen.add(c)
+            ordered.append(c)
+    return ordered
+
+
 def base_filename(home: str, away: str) -> str:
     """The on-disk base-context filename for a fixture (the '-vs-' convention)."""
     return f"wc_{slug(home)}-vs-{slug(away)}_base.json"

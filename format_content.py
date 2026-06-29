@@ -131,7 +131,7 @@ def format_substack(run: dict, context: dict) -> str:
 
 
 # Legacy role keys (older runs) -> current display names.
-_LEGACY_ROLES = {"Statman": "Stat_Bot", "TacticalAnalyst": "G_Bot", "Contrarian": "R_Bot", "Judge": "K_Bot"}
+_LEGACY_ROLES = {"Statman": "Stat_Bot", "TacticalAnalyst": "G_Bot", "Contrarian": "U_Bot", "Judge": "K_Bot"}
 
 
 def _lean(home_goals: int, away_goals: int) -> str:
@@ -179,7 +179,7 @@ def format_twitter_thread(run: dict, context: dict) -> list:
     tweet1 = truncate(tweet1)
 
     # 2/4 — the divergence shown on the card
-    order = ["Stat_Bot", "G_Bot", "R_Bot"]
+    order = ["Stat_Bot", "G_Bot", "U_Bot"]
     pick_lines = [f"{r} {preds[r]['home_goals']}-{preds[r]['away_goals']}" for r in order if r in preds]
     leans = {r: _lean(preds[r]["home_goals"], preds[r]["away_goals"]) for r in order if r in preds}
     counts = Counter(leans.values())

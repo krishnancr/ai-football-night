@@ -19,6 +19,28 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# Mirrors daily_runner.KNOCKOUT_GROUPS — schedule 'group' codes that mean knockout.
+_KNOCKOUT_GROUPS = {"R32", "R16", "QF", "SF", "FINAL", "3RD"}
+
+
+def current_stage(match_string: str, match_date: str):
+    """'group' | 'knockout' for this fixture, or None if unknown.
+    Drives the stage-scoped leaderboard so the knockouts start everyone fresh.
+
+    A match day is uniformly one stage, so we detect at the date level (like
+    daily_runner.detect_stage) — robust even after the knockout draw renames the
+    placeholder match strings. Falls back to the exact fixture if the date misses."""
+    try:
+        schedule = json.loads(Path("schedule.json").read_text())
+    except Exception:
+        return None
+    day = [m for m in schedule if m.get("date") == match_date]
+    if day:
+        return "knockout" if any(m.get("group") in _KNOCKOUT_GROUPS for m in day) else "group"
+    for m in schedule:
+        if m.get("match_string") == match_string:
+            return "knockout" if m.get("group") in _KNOCKOUT_GROUPS else "group"
+    return None
 
 from dotenv import load_dotenv
 
@@ -152,14 +174,17 @@ def main():
     print(f"\n[2/4] Debate council...")
     import council_cli
     from council_cli import load_personas, run_council
-    from track_record import build_track_records, extract_pundit_predictions, extract_pre_debate_predictions, inject_track_records
+    from track_record import (build_track_records, extract_pundit_predictions, extract_pundit_advances,
+                              extract_pre_debate_predictions, inject_track_records)
     personas = load_personas()
 
     if args.persona not in personas:
         print(f"Error: '{args.persona}' persona set not found in personas.json")
         sys.exit(1)
 
-    records = build_track_records(runs_dir)
+    # Stage-scoped: knockouts reset the leaderboard (group record stays the epitaph).
+    stage = current_stage(args.match, match_date_dashed)
+    records = build_track_records(runs_dir, stage=stage)
     if records:
         print(f"  Injecting track records for: {', '.join(records)}")
     persona_set = inject_track_records(personas[args.persona], records)
@@ -170,6 +195,8 @@ def main():
     result["match_slug"] = slug
     result["match_string"] = args.match
     result["pundit_predictions"] = extract_pundit_predictions(result.get("full_debate", {}))
+    # Knockout-only: per-pundit 'who advances' pick (empty in the group stage).
+    result["pundit_advances"] = extract_pundit_advances(result.get("full_debate", {}))
     # Pre-debate (proposal-round) calls, kept separate as the control for measuring debate lift.
     result["pre_debate_predictions"] = extract_pre_debate_predictions(result.get("full_debate", {}))
     result["cost"] = {

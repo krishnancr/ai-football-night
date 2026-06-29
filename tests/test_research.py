@@ -246,6 +246,95 @@ def test_validate_context_logs_loudly_when_degraded(capsys):
     assert "DEGRADED" in captured.out  # visible, not silent
 
 
+def test_load_base_context_resolves_ivory_coast_exonym(tmp_path, monkeypatch):
+    """Base files on disk use the exonym slug 'ivory-coast', but teams.slug()
+    canonicalises to 'cote-divoire'. The loader must still find them (Bug 1)."""
+    base_dir = tmp_path / "runs" / "base"
+    base_dir.mkdir(parents=True)
+    (base_dir / "wc_germany-vs-ivory-coast_base.json").write_text(
+        json.dumps({"h2h_summary": "GER leads", "form_home": ["W", "W"]})
+    )
+    (base_dir / "wc_curacao-vs-ivory-coast_base.json").write_text(
+        json.dumps({"h2h_summary": "tight", "stats_away": {"elo": 1500}})
+    )
+    monkeypatch.chdir(tmp_path)
+    from research import load_base_context
+    base = load_base_context("Germany", "Ivory Coast")
+    assert base["h2h_summary"] == "GER leads"
+    assert base["form_home"] == ["W", "W"]
+    base2 = load_base_context("Curaçao", "Ivory Coast")
+    assert base2["stats_away"]["elo"] == 1500
+
+
+class _FakeLLMClient:
+    """Drop-in for research.OpenAI whose extraction always returns junk JSON."""
+    def __init__(self, content="I cannot help with that.", **_kw):
+        self._content = content
+        completions = type("C", (), {"create": lambda _self, **_k: self._resp()})()
+        self.chat = type("Chat", (), {"completions": completions})()
+
+    def _resp(self):
+        msg = type("M", (), {"content": self._content})()
+        choice = type("Ch", (), {"message": msg})()
+        return type("R", (), {"choices": [choice]})()
+
+
+def test_research_match_keeps_base_when_extraction_fails(monkeypatch):
+    """Extraction failing both attempts must NOT discard a base file that loaded
+    from disk — Tier-1 history/stats/h2h and Tier-3 fallbacks survive (Bug 2)."""
+    import research
+    base = {
+        "h2h_summary": "Ghana and Panama have history",
+        "wc_history_home": "Ghana reached the 2010 quarters",
+        "stats_home": {"elo": 1600},
+        "form_home": ["W", "D", "W", "L", "W"],
+        "form_away": ["L", "L", "D", "W", "D"],
+        "key_players_home": ["Kudus (winger)"],
+        "key_players_away": ["Carrasquilla (midfielder)"],
+    }
+    monkeypatch.setattr(research, "load_base_context", lambda h, a: dict(base))
+    monkeypatch.setattr(research, "research_daily", lambda m: {
+        "search_results": [{"query": "q", "results": [
+            {"title": "Ghana name squad", "content": "x", "url": "u"}]}],
+        "home": "Ghana", "away": "Panama",
+    })
+    monkeypatch.setattr(research, "OpenAI", _FakeLLMClient)
+
+    ctx = research.research_match("Ghana vs Panama")
+    # Tier-1 base fields survived despite extraction dying
+    assert ctx["h2h_summary"] == "Ghana and Panama have history"
+    assert ctx["wc_history_home"] == "Ghana reached the 2010 quarters"
+    assert ctx["stats_home"]["elo"] == 1600
+    # Tier-3 base fallbacks fill all four critical fields → not blind
+    assert ctx["form_home"] == ["W", "D", "W", "L", "W"]
+    assert ctx["key_players_home"] == ["Kudus (winger)"]
+    # Re-rated by validate_context; base fallbacks lift it out of 'degraded'
+    assert ctx["research_quality"] == "full"
+    # The "synthesis unavailable" news signal is preserved
+    assert "Ghana name squad" in (ctx.get("recent_news") or "")
+
+
+def test_research_match_degraded_when_no_base_and_extraction_fails(monkeypatch):
+    """When base is genuinely empty AND extraction fails, degraded is correct."""
+    import research
+    monkeypatch.setattr(research, "load_base_context", lambda h, a: {})
+    monkeypatch.setattr(research, "research_daily", lambda m: {
+        "search_results": [{"query": "q", "results": [
+            {"title": "Some news", "content": "x", "url": "u"}]}],
+        "home": "Foo", "away": "Bar",
+    })
+    monkeypatch.setattr(research, "OpenAI", _FakeLLMClient)
+    # No base → research_match runs the historical Tavily fallback; stub it out.
+    class _FakeTavily:
+        def __init__(self, **_kw): pass
+        def search(self, *_a, **_k): return {"results": []}
+    monkeypatch.setattr(research, "TavilyClient", _FakeTavily)
+    monkeypatch.setenv("TAVILY_API_KEY", "x")
+
+    ctx = research.research_match("Foo vs Bar")
+    assert ctx["research_quality"] == "degraded"
+
+
 def test_merge_context_passes_stats_blocks_from_base():
     from research import merge_context
     base = {

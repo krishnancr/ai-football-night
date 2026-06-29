@@ -13,7 +13,7 @@ def scored_run():
     run["pundit_predictions"] = {
         "Stat_Bot": {"home_goals": 2, "away_goals": 1},
         "G_Bot": {"home_goals": 1, "away_goals": 0},
-        "R_Bot": {"home_goals": 1, "away_goals": 1},
+        "U_Bot": {"home_goals": 1, "away_goals": 1},
     }
     run["actual"] = {
         "home_goals": 2, "away_goals": 1, "result": "home_win",
@@ -34,7 +34,7 @@ def test_receipts_marks_each_pundit(scored_run):
     text = format_receipts(scored_run)
     assert "✅ Stat_Bot" in text     # exact scoreline
     assert "🟡 G_Bot" in text        # right result (home win), wrong score
-    assert "❌ R_Bot" in text        # wrong result (predicted draw)
+    assert "❌ U_Bot" in text        # wrong result (predicted draw)
 
 
 def test_receipts_fits_one_tweet(scored_run):

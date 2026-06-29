@@ -9,10 +9,14 @@ import traceback
 from pathlib import Path
 
 
-def update_result(run_path: Path, home_goals: int, away_goals: int) -> dict:
+def update_result(run_path: Path, home_goals: int, away_goals: int, advanced: str = None) -> dict:
     """
     Add actual result to run JSON. Returns the actual result dict.
     Mutates the file at run_path in place.
+
+    `advanced` (knockouts only): the team that actually went through after ET/pens.
+    When provided it is stored as actual['advanced'], which the track-record builder
+    uses to score each pundit's ADVANCES pick. Omit it for group-stage matches.
     """
     run_path = Path(run_path)
     with open(run_path) as f:
@@ -40,6 +44,8 @@ def update_result(run_path: Path, home_goals: int, away_goals: int) -> dict:
         "correct_scoreline": correct_scoreline,
         "correct_result": correct_result,
     }
+    if advanced:
+        actual["advanced"] = advanced
     run["actual"] = actual
 
     with open(run_path, "w") as f:
@@ -84,20 +90,22 @@ def compute_tournament_accuracy(runs_dir: Path = Path("runs")) -> dict:
 
 
 def main():
-    if len(sys.argv) != 4:
-        print("Usage: python update_result.py <run_file> <home_goals> <away_goals>")
+    if len(sys.argv) not in (4, 5):
+        print("Usage: python update_result.py <run_file> <home_goals> <away_goals> [advancing_team]")
         print("Example: python update_result.py runs/wc_brazil-croatia_20260611.json 2 1")
+        print("Knockout: python update_result.py runs/.../wc_brazil-croatia.json 1 1 Brazil")
         sys.exit(1)
 
     run_path = Path(sys.argv[1])
     home_goals = int(sys.argv[2])
     away_goals = int(sys.argv[3])
+    advanced = sys.argv[4] if len(sys.argv) == 5 else None
 
     if not run_path.exists():
         print(f"Error: {run_path} not found")
         sys.exit(1)
 
-    update_result(run_path, home_goals, away_goals)
+    update_result(run_path, home_goals, away_goals, advanced)
 
     # Print tournament totals
     stats = compute_tournament_accuracy(run_path.parent)

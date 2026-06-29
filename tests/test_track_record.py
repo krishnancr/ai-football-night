@@ -3,7 +3,9 @@ from pathlib import Path
 
 from track_record import (
     parse_pundit_prediction,
+    parse_pundit_advances,
     extract_pundit_predictions,
+    extract_pundit_advances,
     build_track_records,
     build_track_records_from_runs,
     format_track_record_block,
@@ -39,10 +41,10 @@ def test_extract_prefers_rebuttal_over_proposal():
 
 def test_extract_falls_back_to_proposal():
     debate = {
-        "proposals": {"R_Bot": "vibes say PREDICTION: 0-2"},
-        "rebuttals": {"R_Bot": "I stand by everything I said."},
+        "proposals": {"U_Bot": "vibes say PREDICTION: 0-2"},
+        "rebuttals": {"U_Bot": "I stand by everything I said."},
     }
-    assert extract_pundit_predictions(debate) == {"R_Bot": {"home_goals": 0, "away_goals": 2}}
+    assert extract_pundit_predictions(debate) == {"U_Bot": {"home_goals": 0, "away_goals": 2}}
 
 
 def _write_run(runs_dir, slug, preds, actual):
@@ -61,14 +63,14 @@ def _write_run(runs_dir, slug, preds, actual):
 def test_build_track_records_scores_pundits(tmp_path):
     runs = tmp_path / "runs"
     _write_run(runs, "mexico-southafrica",
-               {"Stat_Bot": {"home_goals": 2, "away_goals": 1}, "R_Bot": {"home_goals": 1, "away_goals": 1}},
+               {"Stat_Bot": {"home_goals": 2, "away_goals": 1}, "U_Bot": {"home_goals": 1, "away_goals": 1}},
                {"home_goals": 1, "away_goals": 1, "result": "draw"})
     records = build_track_records(runs)
     assert records["Stat_Bot"]["matches"] == 1
     assert records["Stat_Bot"]["correct_result"] == 0
-    assert records["R_Bot"]["correct_result"] == 1
-    assert records["R_Bot"]["correct_scoreline"] == 1
-    assert records["R_Bot"]["last"]["predicted"] == "1-1"
+    assert records["U_Bot"]["correct_result"] == 1
+    assert records["U_Bot"]["correct_scoreline"] == 1
+    assert records["U_Bot"]["last"]["predicted"] == "1-1"
 
 
 def test_build_track_records_skips_unscored_runs(tmp_path):
@@ -85,12 +87,12 @@ def test_format_block_mentions_record_and_standings():
     records = {
         "Stat_Bot": {"matches": 2, "correct_result": 1, "correct_scoreline": 0,
                      "last": {"match": "Brazil vs Morocco", "predicted": "2-0", "actual": "1-1", "correct_result": False}},
-        "R_Bot": {"matches": 2, "correct_result": 2, "correct_scoreline": 1, "last": None},
+        "U_Bot": {"matches": 2, "correct_result": 2, "correct_scoreline": 1, "last": None},
     }
     block = format_track_record_block("Stat_Bot", records)
     assert "1/2" in block
     assert "2-0" in block and "1-1" in block
-    assert "R_Bot 2/2" in block
+    assert "U_Bot 2/2" in block
 
 
 def test_inject_appends_to_debaters_not_judge():
@@ -116,7 +118,7 @@ def _records_two_pundits():
     return {
         "Stat_Bot": {"matches": 3, "correct_result": 3, "correct_scoreline": 1,
                      "last": {"match": "A vs B", "predicted": "2-1", "actual": "2-1", "correct_result": True}},
-        "R_Bot": {"matches": 3, "correct_result": 0, "correct_scoreline": 0,
+        "U_Bot": {"matches": 3, "correct_result": 0, "correct_scoreline": 0,
                   "last": {"match": "A vs B", "predicted": "0-2", "actual": "2-1", "correct_result": False}},
     }
 
@@ -130,7 +132,7 @@ def test_track_record_block_includes_sack_race_stakes():
 
 def test_bottom_pundit_gets_sack_zone_warning():
     from track_record import format_track_record_block
-    block = format_track_record_block("R_Bot", _records_two_pundits())
+    block = format_track_record_block("U_Bot", _records_two_pundits())
     assert "SACK ZONE" in block
     assert "currently 2 of 2" in block
 
@@ -158,3 +160,134 @@ def test_build_track_records_ignores_reasoning_sidecar(tmp_path):
     }))
     records = build_track_records(runs_dir=tmp_path)
     assert records["Stat_Bot"]["correct_result"] == 1
+
+
+# ===== CHANGE 2: knockout ADVANCES parsing =====
+
+def test_parse_advances_basic():
+    assert parse_pundit_advances("PREDICTION: 2-1\nADVANCES: Brazil") == "Brazil"
+
+
+def test_parse_advances_team_name_with_spaces():
+    assert parse_pundit_advances("ADVANCES: South Africa") == "South Africa"
+    assert parse_pundit_advances("ADVANCES: Côte d'Ivoire") == "Côte d'Ivoire"
+
+
+def test_parse_advances_strips_trailing_punctuation_and_markdown():
+    assert parse_pundit_advances("**ADVANCES: Brazil.**") == "Brazil"
+
+
+def test_parse_advances_takes_last_occurrence():
+    text = "Early I leant ADVANCES: Japan\nBut finally ADVANCES: Netherlands"
+    assert parse_pundit_advances(text) == "Netherlands"
+
+
+def test_parse_advances_none_when_missing():
+    assert parse_pundit_advances("PREDICTION: 1-0, no advance line") is None
+    assert parse_pundit_advances(None) is None
+
+
+def test_extract_advances_prefers_rebuttal_over_proposal():
+    debate = {
+        "proposals": {"U_Bot": "PREDICTION: 1-1\nADVANCES: Japan"},
+        "rebuttals": {"U_Bot": "On reflection. PREDICTION: 1-1\nADVANCES: Croatia"},
+    }
+    assert extract_pundit_advances(debate) == {"U_Bot": "Croatia"}
+
+
+def test_extract_advances_empty_for_group_stage_debate():
+    # group-stage debates carry no ADVANCES line -> nothing extracted
+    debate = {"proposals": {"Stat_Bot": "PREDICTION: 2-0"}, "rebuttals": {}}
+    assert extract_pundit_advances(debate) == {}
+
+
+# ===== advance scoring against actual.advanced =====
+
+def test_advance_scoring_when_actual_advanced_present():
+    runs = [{
+        "match_string": "Brazil vs Croatia",
+        "pundit_predictions": {"Stat_Bot": {"home_goals": 1, "away_goals": 1},
+                               "U_Bot": {"home_goals": 1, "away_goals": 1}},
+        "pundit_advances": {"Stat_Bot": "Brazil", "U_Bot": "Croatia"},
+        "actual": {"home_goals": 1, "away_goals": 1, "result": "draw", "advanced": "Croatia"},
+    }]
+    records = build_track_records_from_runs(runs)
+    assert records["U_Bot"]["advance_matches"] == 1
+    assert records["U_Bot"]["advance_correct"] == 1
+    assert records["Stat_Bot"]["advance_matches"] == 1
+    assert records["Stat_Bot"]["advance_correct"] == 0
+
+
+def test_advance_not_scored_when_actual_advanced_absent():
+    runs = [{
+        "match_string": "Brazil vs Croatia",
+        "pundit_predictions": {"U_Bot": {"home_goals": 1, "away_goals": 1}},
+        "pundit_advances": {"U_Bot": "Croatia"},
+        "actual": {"home_goals": 1, "away_goals": 1, "result": "draw"},  # no 'advanced'
+    }]
+    records = build_track_records_from_runs(runs)
+    # scoreline/result still scored, advance track simply stays at zero (no crash)
+    assert records["U_Bot"]["matches"] == 1
+    assert records["U_Bot"]["advance_matches"] == 0
+
+
+def test_advance_match_is_case_and_punctuation_insensitive():
+    runs = [{
+        "match_string": "South Africa vs Mexico",
+        "pundit_predictions": {"U_Bot": {"home_goals": 2, "away_goals": 1}},
+        "pundit_advances": {"U_Bot": "south africa"},
+        "actual": {"home_goals": 2, "away_goals": 1, "result": "home_win", "advanced": "South Africa"},
+    }]
+    records = build_track_records_from_runs(runs)
+    assert records["U_Bot"]["advance_correct"] == 1
+
+
+# ===== stage-scoped record building =====
+
+def _write_staged_run(runs_dir, date, stage, role, preds, actual):
+    day = runs_dir / date
+    day.mkdir(parents=True, exist_ok=True)
+    (day / "daily_summary.json").write_text(json.dumps({"date": date, "stage": stage, "matches": []}))
+    slug = f"{role.lower()}-day"
+    (day / f"wc_{slug}.json").write_text(json.dumps({
+        "match_string": "A vs B",
+        "pundit_predictions": {role: preds},
+        "actual": actual,
+    }))
+
+
+def test_stage_filter_excludes_group_runs_from_knockout_query(tmp_path):
+    runs = tmp_path / "runs"
+    # group-stage day: R_Bot's epitaph record
+    _write_staged_run(runs, "2026-06-20", "group", "R_Bot",
+                      {"home_goals": 2, "away_goals": 0},
+                      {"home_goals": 2, "away_goals": 0, "result": "home_win"})
+    # knockout day: U_Bot's fresh record
+    _write_staged_run(runs, "2026-07-01", "knockout", "U_Bot",
+                      {"home_goals": 1, "away_goals": 0},
+                      {"home_goals": 1, "away_goals": 0, "result": "home_win"})
+
+    knockout = build_track_records(runs, stage="knockout")
+    assert "U_Bot" in knockout
+    assert "R_Bot" not in knockout  # group record stays frozen as the epitaph
+
+    group = build_track_records(runs, stage="group")
+    assert "R_Bot" in group
+    assert "U_Bot" not in group
+
+    alltime = build_track_records(runs)  # stage=None -> everything
+    assert "R_Bot" in alltime and "U_Bot" in alltime
+
+
+def test_stage_filter_defaults_unknown_day_to_group(tmp_path):
+    """A day with no daily_summary defaults to 'group' so it never leaks into knockout."""
+    runs = tmp_path / "runs"
+    day = runs / "2026-06-21"
+    day.mkdir(parents=True)
+    (day / "wc_x.json").write_text(json.dumps({
+        "match_string": "A vs B",
+        "pundit_predictions": {"Stat_Bot": {"home_goals": 1, "away_goals": 0}},
+        "actual": {"home_goals": 1, "away_goals": 0, "result": "home_win"},
+    }))
+    assert build_track_records(runs, stage="knockout") == {}
+    assert "Stat_Bot" in build_track_records(runs, stage="group")

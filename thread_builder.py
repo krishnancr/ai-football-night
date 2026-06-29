@@ -16,7 +16,7 @@ import teams
 from render_card import flag_code
 from track_record import build_track_records
 
-ROLE_ORDER = ["Stat_Bot", "G_Bot", "R_Bot"]
+ROLE_ORDER = ["Stat_Bot", "G_Bot", "U_Bot"]
 EVERGREEN_TAGS = "#FIFAWorldCup #WeAre26"
 FINALE_TAGS = "#FIFAWorldCup"
 
@@ -64,7 +64,7 @@ def _lean(home_goals: int, away_goals: int) -> str:
 
 
 def _outlier_note(preds: dict) -> str:
-    """' R_Bot is the outlier.' when exactly one pundit leans against the others."""
+    """' U_Bot is the outlier.' when exactly one pundit leans against the others."""
     from collections import Counter
     leans = {r: _lean(p["home_goals"], p["away_goals"]) for r, p in preds.items()}
     if len(set(leans.values())) <= 1:
