@@ -312,5 +312,12 @@
       "role": "K_Bot",
       "text": "Verdict: Canada's quality wins out, but SA scores. Final score: 1-2. Now stop spamming my group chat."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 0,
+    "away_goals": 1,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

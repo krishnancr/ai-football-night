@@ -1,0 +1,92 @@
+{
+  "home_team": "Netherlands",
+  "away_team": "Morocco",
+  "match_date": "2026-06-29",
+  "group": "R32",
+  "venue": "Estadio Akron, Guadalajara, Mexico",
+  "h2h_summary": "The Netherlands and Morocco have faced each other three times in all-time head-to-head matches, with the Netherlands winning twice and Morocco winning once. All three historical encounters ended with a 1-2 scoreline.",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 0,
+    "away_wins": 1,
+    "notable_results": [
+      "1-2 (Netherlands) - FIFA World Cup - 1994",
+      "1-2 (Morocco) - International Friendly - 1999",
+      "1-2 (Netherlands) - International Friendly - 2017"
+    ]
+  },
+  "wc_history_home": "The Netherlands have been World Cup runners-up three times (1974, 1978, 2010) and are one of the most storied nations in tournament history, despite never lifting the trophy.",
+  "wc_history_away": "Morocco made history at the 2022 World Cup in Qatar by becoming the first African and Arab nation to reach the semi-finals, finishing fourth after stunning wins over Spain and Portugal.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World-class defensive core led by Virgil van Dijk, one of the best defenders in the world",
+    "Prolific attack with Memphis Depay (all-time Dutch top scorer) and Cody Gakpo providing cutting edge",
+    "Deep squad with Premier League and Champions League experience across multiple positions"
+  ],
+  "strengths_away": [
+    "World-class individual talent led by Achraf Hakimi and Brahim Diaz",
+    "Elite defensive organisation and transition play built over years under Regragui and now Ouahbi",
+    "Strong tournament pedigree and mental resilience from their 2022 semi-final run"
+  ],
+  "team_style_home": "The Netherlands under Koeman play a possession-based 4-2-3-1 that morphs into a fluid 4-3-3 in attack, combining aggressive man-oriented pressing with quick vertical transitions and overlapping full-backs.",
+  "team_style_away": "Morocco deploy a compact 4-1-4-1 or 4-3-3, excelling in disciplined defensive organisation and rapid transitions, with Achraf Hakimi driving forward on the right and Brahim Diaz creating between the lines.",
+  "stats_home": {
+    "fifa_rank": 8,
+    "elo": 1754,
+    "qual": {
+      "P": 8,
+      "W": 6,
+      "D": 2,
+      "L": 0,
+      "GF": 27,
+      "GA": 4
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 7,
+    "elo": 1755,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 2
+    }
+  },
+  "injuries_home": [
+    "Timber (out)"
+  ],
+  "injuries_away": [
+    "Abde Ezzalzouli (knee)",
+    "Nayef Aguerd (groin)"
+  ],
+  "odds": {
+    "home_win": -163,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Morocco's World Cup preparations hit by injuries to Abde Ezzalzouli and Nayef Aguerd ahead of their opener. Netherlands favored at -163 odds to advance in Round of 32 clash.",
+  "form_home": [
+    "D",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "W"
+  ],
+  "key_players_home": [
+    "Brian Brobbey (forward)"
+  ],
+  "key_players_away": [
+    "Achraf Hakimi (right back / captain)",
+    "Brahim Diaz (attacking midfielder)",
+    "Yassine Bounou (goalkeeper)",
+    "Sofyan Amrabat (defensive midfielder)",
+    "Bilal El Khannouss (attacking midfielder)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}

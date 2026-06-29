@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-29",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Brazil vs Japan",
+      "run_file": "runs/2026-06-29/wc_brazil-japan.json",
+      "thread_file": "runs/2026-06-29/_debug/wc_brazil-japan_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Germany vs Paraguay",
+      "run_file": "runs/2026-06-29/wc_germany-paraguay.json",
+      "thread_file": "runs/2026-06-29/_debug/wc_germany-paraguay_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Netherlands vs Morocco",
+      "run_file": "runs/2026-06-29/wc_netherlands-morocco.json",
+      "thread_file": "runs/2026-06-29/_debug/wc_netherlands-morocco_thread.json",
+      "success": true
+    }
+  ]
+}
