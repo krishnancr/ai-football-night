@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-28",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "South Africa vs Canada",
+      "run_file": "runs/2026-06-28/wc_south-africa-canada.json",
+      "thread_file": "runs/2026-06-28/_debug/wc_south-africa-canada_thread.json",
+      "success": true
+    }
+  ]
+}
