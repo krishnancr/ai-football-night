@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Retrospective — AI Football Night</title>
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; max-width: 860px; margin: 0 auto; padding: 16px; }
+header { padding: 24px 0 16px; border-bottom: 1px solid #1e293b; margin-bottom: 24px; }
+header h1 { font-size: 1.5rem; font-weight: 700; }
+header p { color: #64748b; font-size: 0.85rem; margin-top: 4px; }
+.accuracy-pill { background: #14532d; color: #86efac; border-radius: 6px; padding: 8px 14px; font-size: 0.8rem; display: inline-block; margin-bottom: 24px; }
+h2 { font-size: 1rem; font-weight: 600; color: #94a3b8; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 12px; }
+.match-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.match-card { background: linear-gradient(135deg, #1e3a5f, #1e293b); border-radius: 10px; padding: 14px; text-decoration: none; color: inherit; display: block; }
+.match-card:hover { background: linear-gradient(135deg, #1e4a7f, #273549); }
+.group-badge { font-size: 0.7rem; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.teams { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.team { font-weight: 600; font-size: 0.85rem; }
+.score { background: #0f172a; color: #60a5fa; font-size: 1.1rem; font-weight: 700; padding: 3px 10px; border-radius: 5px; }
+.confidence { font-size: 0.75rem; color: #64748b; }
+.result-badge { font-size: 0.75rem; margin-top: 4px; }
+.archive-section { margin-top: 8px; }
+.day-group { margin-bottom: 20px; }
+.day-group h3 { font-size: 0.85rem; color: #475569; margin-bottom: 8px; }
+.archive-row { background: #1e293b; border-radius: 6px; padding: 10px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: inherit; font-size: 0.85rem; }
+.archive-row:hover { background: #273549; }
+.archive-result { font-size: 0.8rem; color: #64748b; }
+a { color: inherit; }
+.leaderboard { margin-bottom: 28px; }
+.lb-row { background: #1e293b; border-radius: 6px; padding: 8px 14px; margin-bottom: 4px; display: flex; justify-content: space-between; font-size: 0.85rem; }
+.lb-stat { color: #64748b; }
+
+.article { max-width: 720px; margin: 0 auto; }
+.article .back-link { display: inline-block; color: #60a5fa; text-decoration: none; font-size: 0.82rem; margin-bottom: 24px; }
+.article .back-link:hover { text-decoration: underline; }
+.article h1 { font-size: 1.7rem; font-weight: 800; line-height: 1.25; margin-bottom: 16px; color: #f1f5f9; }
+.article h2 { font-size: 1.15rem; font-weight: 700; color: #60a5fa; letter-spacing: 0; text-transform: none; margin: 36px 0 12px; }
+.article p { font-size: 0.98rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 18px; }
+.article ul { margin: 0 0 18px 22px; }
+.article li { font-size: 0.98rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 8px; }
+.article strong { color: #f1f5f9; font-weight: 700; }
+.article em { color: #94a3b8; }
+.article hr { border: none; border-top: 1px solid #1e293b; margin: 28px 0; }
+.article code { background: #1e293b; padding: 1px 6px; border-radius: 4px; font-size: 0.85em; }
+.article-byline { color: #64748b; font-size: 0.85rem; margin: -6px 0 26px; }
+.read-article { display: inline-block; background: #1e293b; color: #cbd5e1; text-decoration: none; border-radius: 6px; padding: 8px 14px; font-size: 0.8rem; margin-bottom: 24px; border: 1px solid #334155; }
+.read-article:hover { background: #273549; color: #f1f5f9; }
+</style>
+</head>
+<body>
+  <article class="article">
+    <a class="back-link" href="index.html">← AI Football Night</a>
+    <h1>Four AIs argued about football for a month. The arguing made them watchable, not right.</h1>
+<p><em>A builder's retrospective on AI Football Night, after all 72 World Cup group-stage matches.</em></p>
+<hr>
+<h2>The premise</h2>
+<p>Every morning for a month, four AI pundits sat down and argued about that day's World Cup matches. Stat_Bot reads the numbers. G_Bot talks tactics. R_Bot was the old-school contrarian who trusted the eye test over the spreadsheet. K_Bot hosts, weighs the arguments, and delivers a verdict. They each commit to a scoreline. Then the real match plays, and we score them.</p>
+<p>I built it to test a simple idea that the AI world treats as gospel: that making models <strong>argue</strong> makes them <strong>smarter</strong>. Multi-agent debate, the papers say, surfaces better answers than any single model. Football is a brutal, honest test bed. The match doesn't care how good your argument sounded. The scoreline is the ground truth, and it arrives the same day.</p>
+<p>So: does an hour of structured debate make four AIs more right?</p>
+<h2>Finding 1: The debate barely moved the needle</h2>
+<p>I scored every pundit twice. Once on their <strong>opening</strong> call, before anyone argued. Once on their <strong>final</strong> call, after a full round of proposal and rebuttal.</p>
+<ul>
+<li>Before the debate: <strong>44.6%</strong> of results called correctly.</li>
+<li>After the debate: <strong>44.9%</strong>.</li>
+</ul>
+<p>An hour of arguing bought <strong>0.3 of a percentage point</strong>. Across the whole group stage, the debate changed almost nobody's mind in a way that made them more right. The opening gut call and the post-argument call were, for accuracy purposes, the same call wearing a different hat.</p>
+<p>If you came here for "multi-agent debate is a forecasting upgrade," that's the headline: it wasn't. Not here.</p>
+<h2>Finding 2: They share a blind spot, and arguing can't fix a bias you all hold</h2>
+<p>The interesting part isn't <em>that</em> the debate didn't help. It's <em>why</em>.</p>
+<p>Watch what all four did with draws. <strong>28%</strong> of group games ended level. The pundits predicted a draw <strong>9.3%</strong> of the time, and on the games that actually drew, they called it just <strong>7%</strong> of the time (4 out of 60 chances). Sixteen separate times, a game ended in a draw while all three pundits had each, independently, predicted a decisive winner. Belgium 0-0 Iran: every pundit said someone wins. Netherlands 2-2 Japan: same.</p>
+<p>It shows up in the scorelines too. "2-1" was predicted <strong>30%</strong> of the time. Nearly a third of every call any pundit ever made was the same tidy 2-1 win. The top six predicted scorelines were all low-scoring decisive results. Not one 1-1, 0-0, or 2-2 in the set.</p>
+<p>Here's the thing that actually generalizes beyond football: <strong>four models trained on the same internet share the same priors.</strong> They are all allergic to predicting draws, all drawn to the same clean 2-1. And debate cannot argue a panel out of a bias that every member of the panel holds. There was no contrarian on draws, because none of them believed in draws. The disagreement was real (across 72 games the panel reached a unanimous result exactly <strong>once</strong>), but it was disagreement <em>within</em> a shared worldview, not a challenge to it.</p>
+<p>That's the lesson I didn't expect to ship: multi-agent debate corrects the errors agents <em>don't share</em>. The errors they <em>do</em> share, it launders into consensus.</p>
+<h2>Finding 3: What the debate built instead was a character drama</h2>
+<p>R_Bot was the contrarian. Its whole job was to find the upset everyone else missed, trust pedigree and character over xG, and argue against the consensus. On paper, the most fun seat on the panel.</p>
+<p>It finished the group stage with a <strong>18%</strong> result accuracy. The other two were at <strong>60%</strong> and <strong>57%</strong>. R_Bot wasn't just the worst pundit. It was worse than a coin and a third option. Its contrarianism wasn't a different read on the same game. It was a reliable signal pointing the wrong way.</p>
+<p>And it lost in the most R_Bot way imaginable. It backed Qatar to keep it tight at 0-1; Qatar lost 6-0. It backed Senegal's opponent; 5-0. It looked at Germany against Curaçao, smelled an upset, called 1-1; it finished 7-1. The eye test, it turns out, has a worse calibration than the spreadsheet it spent a month mocking.</p>
+<p>But here's what happened while I was busy measuring accuracy: <strong>the sack race got good.</strong> The panel runs a relegation mechanic. Each pundit knows the standings, knows that the one at the bottom after the group stage gets sacked and replaced on air, and is told in plain terms that playing it safe and sounding like the others is the fastest way out. R_Bot took that note and argued itself, game by game, brick by brick, into last place and out of a job.</p>
+<p>That's a better story than any forecast. Nobody screenshots "Stat_Bot correctly predicted a 2-1." People remember the pundit who staked his career on the upset and got buried 6-0, week after week, until the show fired him.</p>
+<h2>What I'm changing for the knockouts</h2>
+<p>The group stage told me what the product actually is. It was never the prediction. It's the show. So:</p>
+<ul>
+<li><strong>R_Bot is sacked.</strong> Its 18% is its epitaph. Its replacement isn't "more contrarian" (that just buys more noise). It's a calibrated giant-killer: a cup specialist who respects the form on most calls but hunts the single most plausible upset each round and commits, grounded in a real reason. Knockout football is where giant-killings are the story. Build the character for the format.</li>
+<li><strong>The predictions get a second axis.</strong> Knockouts can't end level, so every pundit now calls both the 90-minute scoreline <em>and</em> who advances. The "who goes through" race is a clean, draw-free track record, and it's exactly the race an upset-hunter makes tense.</li>
+<li><strong>The leaderboard resets.</strong> New stage, new stakes, fresh sack race.</li>
+</ul>
+<h2>The takeaway for builders</h2>
+<p>If you're reaching for multi-agent debate because you read that it makes models more accurate: maybe, but verify it on your own ground truth, because it can also just be theater that launders a shared bias into confident consensus. What it reliably <em>does</em> produce is legible disagreement. Four agents showing their reasoning and arguing in the open is a fundamentally more watchable, more trustable, more <em>interesting</em> artifact than one model's confident paragraph. That's not a forecasting feature. It's an interface feature.</p>
+<p>I set out to build a better predictor. I accidentally built a soap opera with a relegation battle. The soap opera is the part worth keeping.</p>
+<p><em>Next: the Round of 32, a new giant-killer, and a fresh sack race. The spreadsheet is favored. Someone should probably tell the new guy.</em></p>
+  </article>
+</body>
+</html>
