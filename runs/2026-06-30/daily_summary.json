@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-30",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "C\u00f4te d'Ivoire vs Norway",
+      "run_file": "runs/2026-06-30/wc_c\u00f4te-divoire-norway.json",
+      "thread_file": "runs/2026-06-30/_debug/wc_c\u00f4te-divoire-norway_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "France vs Sweden",
+      "run_file": "runs/2026-06-30/wc_france-sweden.json",
+      "thread_file": "runs/2026-06-30/_debug/wc_france-sweden_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Mexico vs Ecuador",
+      "run_file": "runs/2026-06-30/wc_mexico-ecuador.json",
+      "thread_file": "runs/2026-06-30/_debug/wc_mexico-ecuador_thread.json",
+      "success": true
+    }
+  ]
+}

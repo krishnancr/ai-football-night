@@ -1,0 +1,88 @@
+{
+  "home_team": "C\u00f4te d'Ivoire",
+  "away_team": "Norway",
+  "match_date": "2026-06-30",
+  "group": "R32",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "Based on available data, C\u00f4te d'Ivoire and Norway have no recorded head-to-head meetings.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Ivory Coast are appearing at their fourth World Cup (2006, 2010, 2014, 2026), returning after a 12-year absence but have never advanced beyond the group stage.",
+  "wc_history_away": "Norway have appeared at four World Cups (1938, 1994, 1998, 2026), with their best run being the Round of 16 in 1998 \u2014 where they famously beat Brazil 2-1 in the group stage \u2014 before a 28-year absence ended with qualification for 2026.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "High-scoring attack \u2014 most goals in CAF qualifying with 25 in 10 games",
+    "Pace and creativity across wide positions with Amad Diallo and Yan Diomande",
+    "Excellent recent form including a 2-1 win over France in their final World Cup warm-up"
+  ],
+  "strengths_away": [
+    "Erling Haaland's elite goal-scoring and physical dominance in the box",
+    "Flawless World Cup qualifying record \u2014 8 wins from 8, 37 goals scored",
+    "High-intensity pressing and explosive counter-attacking transitions"
+  ],
+  "team_style_home": "Ivory Coast under Emerse Fae play a dynamic 4-3-3 with a compact midfield block, quick transitions, and pace-driven wide attackers who are most dangerous immediately after winning the ball.",
+  "team_style_away": "Norway play a direct, high-pressing 4-3-3 (shifting to 4-2-2-2) built around Haaland as a physical focal point, with Odegaard providing creativity between the lines and rapid counter-attacking transitions from a compact defensive shape.",
+  "stats_home": {
+    "fifa_rank": 33,
+    "elo": 1541,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 25,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 31,
+    "elo": 1557,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 37,
+      "GA": 5
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Ryerson (out)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Norway's Ryerson is out of the clash with Ivory Coast, as confirmed by Solbakken. Ivory Coast relies on organization and tactical flexibility, while Norway leans on star power like Erling Haaland and Martin Odegaard.",
+  "form_home": [
+    "W",
+    "L",
+    "W",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "W",
+    "W",
+    "L"
+  ],
+  "key_players_home": [
+    "Franck Kessie (captain, central midfielder)",
+    "Amad Diallo (right winger)",
+    "Ousmane Diomande (centre-back)",
+    "Evan Ndicka (centre-back)",
+    "Yan Diomande (attacking midfielder)"
+  ],
+  "key_players_away": [
+    "Erling Haaland (forward)",
+    "Martin Odegaard (midfielder)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}

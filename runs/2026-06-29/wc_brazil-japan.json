@@ -321,5 +321,12 @@
       "role": "K_Bot",
       "text": "Final verdict: 2-1 Brazil. Ancelotti's overloads win, but Japan's transition threat nets one. Structure beats spirit, but not by much."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }
