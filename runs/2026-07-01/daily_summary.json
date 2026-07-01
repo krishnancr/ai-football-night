@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-01",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "England vs DR Congo",
+      "run_file": "runs/2026-07-01/wc_england-dr-congo.json",
+      "thread_file": "runs/2026-07-01/_debug/wc_england-dr-congo_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Belgium vs Senegal",
+      "run_file": "runs/2026-07-01/wc_belgium-senegal.json",
+      "thread_file": "runs/2026-07-01/_debug/wc_belgium-senegal_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "United States vs Bosnia and Herzegovina",
+      "run_file": "runs/2026-07-01/wc_united-states-bosnia-and-herzegovina.json",
+      "thread_file": "runs/2026-07-01/_debug/wc_united-states-bosnia-and-herzegovina_thread.json",
+      "success": true
+    }
+  ]
+}

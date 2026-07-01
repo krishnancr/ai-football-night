@@ -1,0 +1,87 @@
+{
+  "home_team": "Belgium",
+  "away_team": "Senegal",
+  "match_date": "2026-07-01",
+  "group": "R32",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": "Belgium and Senegal have never played against each other, resulting in zero wins, draws, or goals between the two teams.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Belgium have participated in 15 World Cups and achieved their best-ever finish of third place at Russia 2018, where their Golden Generation featuring De Bruyne, Hazard, and Lukaku defeated England 2-0 in the third-place play-off.",
+  "wc_history_away": "Senegal have appeared at three World Cups (2002, 2018, 2022), with their finest hour a stunning 2002 debut that knocked out defending champions France and reached the quarter-finals \u2014 their best-ever finish.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World-class attacking quality with De Bruyne, Doku, Lukaku, and Trossard",
+    "Excellent goalkeeper in Thibaut Courtois (two-time UEFA Champions League winner with Real Madrid)",
+    "Strong squad depth and form \u2014 on a 13-match unbeaten run heading into the tournament"
+  ],
+  "strengths_away": [
+    "Star-studded attack with pace and physicality across the front three",
+    "Solid defensive record \u2014 conceded only three goals in African qualifying",
+    "AFCON 2021 and 2026 champions with tournament winning experience"
+  ],
+  "team_style_home": "Belgium under Rudi Garcia use a 4-2-3-1 emphasising possession, quick transitions after winning the ball, with Kevin De Bruyne as the creative engine and pacey wide attackers like Jeremy Doku exploiting space on the flanks.",
+  "team_style_away": "Senegal play an energetic 4-3-3 built on high pressing, rapid wing transitions, and Sadio Mane's ability to drop deep and link play, combining physical intensity with technical flair from their European-based attackers.",
+  "stats_home": {
+    "fifa_rank": 9,
+    "elo": 1742,
+    "qual": {
+      "P": 8,
+      "W": 5,
+      "D": 3,
+      "L": 0,
+      "GF": 29,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 15,
+    "elo": 1684,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 3,
+      "L": 0,
+      "GF": 22,
+      "GA": 3
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 2.2,
+    "draw": 3.2,
+    "away_win": 3.4
+  },
+  "recent_news": "Belgium topped Group G with five points, while Senegal enters the knockout stage with momentum. The match is set to take place at Lumen Field in Seattle on July 1, 2026.",
+  "form_home": [
+    "D",
+    "D",
+    "W"
+  ],
+  "form_away": [
+    "L",
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Kevin De Bruyne (attacking midfielder / playmaker)",
+    "Romelu Lukaku (striker)",
+    "Thibaut Courtois (goalkeeper)",
+    "Jeremy Doku (winger)",
+    "Youri Tielemans (central midfielder / captain)"
+  ],
+  "key_players_away": [
+    "Sadio Mane (captain / forward, Al-Nassr)",
+    "Nicolas Jackson (striker, Bayern Munich loan from Chelsea)",
+    "Ismaila Sarr (winger, Crystal Palace)",
+    "Iliman Ndiaye (winger / attacking mid, Everton)",
+    "Kalidou Koulibaly (centre-back, Al Hilal)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}

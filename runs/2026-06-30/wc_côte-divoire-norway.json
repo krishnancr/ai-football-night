@@ -320,5 +320,12 @@
       "role": "K_Bot",
       "text": "Verdict: 2-1 C\u00f4te d'Ivoire advance. Ryerson's absence tilts it. Next!"
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 2,
+    "result": "away_win",
+    "correct_scoreline": false,
+    "correct_result": false
+  }
 }

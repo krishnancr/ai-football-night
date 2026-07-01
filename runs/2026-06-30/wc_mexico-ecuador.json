@@ -308,5 +308,12 @@
       "role": "K_Bot",
       "text": "Verdict: 1-0. Mexico advances. Set-piece goal. Tight game. Next round."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

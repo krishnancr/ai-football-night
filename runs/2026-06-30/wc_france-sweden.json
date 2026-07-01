@@ -320,5 +320,12 @@
       "role": "K_Bot",
       "text": "Verdict: France 2-1 Sweden. Mbappe and Olise score, Isak grabs a consolation."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

@@ -1,0 +1,86 @@
+{
+  "home_team": "England",
+  "away_team": "DR Congo",
+  "match_date": "2026-07-01",
+  "group": "R32",
+  "venue": "Mercedes-Benz Stadium, Atlanta, USA",
+  "h2h_summary": "England and DR Congo have no recorded head-to-head history, with 0 all-time matches played between them.",
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "England won the 1966 World Cup on home soil \u2014 their only major international title \u2014 and have since reached the semi-finals in 1990 and 2018, arriving at 2026 ranked 4th in the world seeking a second world title.",
+  "wc_history_away": "DR Congo (then Zaire) made their sole World Cup appearance in 1974, becoming the first Sub-Saharan African side at the tournament but losing all three group games and conceding 14 goals; 2026 marks their dramatic return after 52 years.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World-class attacking trio in Kane, Bellingham, and Saka capable of dismantling organised defences",
+    "High-press system that suffocates teams with limited technical quality in build-up",
+    "Dominant possession game with structural flexibility under Tuchel that can adapt to any opponent"
+  ],
+  "strengths_away": [
+    "Explosive counter-attacking pace through Wissa and Mbuku on the wings",
+    "Defensive leadership and experience through captain Mbemba (107 caps)",
+    "Strong physical presence and aggressive pressing in midfield"
+  ],
+  "team_style_home": "Under Thomas Tuchel, England play a possession-dominant 4-2-3-1 that morphs into a 3-2-5 in build-up, with high-intensity pressing, inverted wingers, and over 70% average possession recorded throughout qualifying.",
+  "team_style_away": "DR Congo deploy a compact 4-3-3 or 4-2-3-1, emphasising defensive organisation and explosive counter-attacks through wide forwards with exceptional pace.",
+  "stats_home": {
+    "fifa_rank": 4,
+    "elo": 1828,
+    "qual": {
+      "P": 8,
+      "W": 8,
+      "D": 0,
+      "L": 0,
+      "GF": 22,
+      "GA": 0
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 46,
+    "elo": 1474,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 1,
+      "L": 2,
+      "GF": 15,
+      "GA": 6
+    }
+  },
+  "injuries_home": [
+    "Reece James (injury)",
+    "Jarell Quansah (injury)"
+  ],
+  "injuries_away": [],
+  "odds": {
+    "home_win": 1.25,
+    "draw": null,
+    "away_win": 14.0
+  },
+  "recent_news": "England right-backs Reece James and Jarell Quansah will miss the World Cup last-32 game against DR Congo with injury. England look to continue their dominant form when they battle Congo DR in a 2026 World Cup Round of 32 match.",
+  "form_home": [
+    "W",
+    "L",
+    "L"
+  ],
+  "form_away": [
+    "D",
+    "L",
+    "W"
+  ],
+  "key_players_home": [
+    "Djed Spence (right-back)"
+  ],
+  "key_players_away": [
+    "Chancel Mbemba (captain, centre-back, Lille)",
+    "Yoane Wissa (forward/winger, Newcastle United)",
+    "Cedric Bakambu (striker, Real Betis)",
+    "Noah Sadiki (box-to-box midfielder)",
+    "Nathanael Mbuku (winger)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}
