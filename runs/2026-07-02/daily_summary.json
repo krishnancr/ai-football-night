@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-02",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Spain vs Austria",
+      "run_file": "runs/2026-07-02/wc_spain-austria.json",
+      "thread_file": "runs/2026-07-02/_debug/wc_spain-austria_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Portugal vs Croatia",
+      "run_file": "runs/2026-07-02/wc_portugal-croatia.json",
+      "thread_file": "runs/2026-07-02/_debug/wc_portugal-croatia_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Switzerland vs Algeria",
+      "run_file": "runs/2026-07-02/wc_switzerland-algeria.json",
+      "thread_file": "runs/2026-07-02/_debug/wc_switzerland-algeria_thread.json",
+      "success": true
+    }
+  ]
+}

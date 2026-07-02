@@ -312,5 +312,12 @@
       "role": "K_Bot",
       "text": "England advances. Now stop arguing and let's get to the next tie."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

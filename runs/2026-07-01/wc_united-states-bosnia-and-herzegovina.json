@@ -316,5 +316,12 @@
       "role": "K_Bot",
       "text": "Verdict: USA 2-0. Comfortable. Pulisic and Balogun find space. Bosnia's set-piece threat is real but insufficient."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }
