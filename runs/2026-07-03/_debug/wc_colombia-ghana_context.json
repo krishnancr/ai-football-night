@@ -1,0 +1,89 @@
+{
+  "home_team": "Colombia",
+  "away_team": "Ghana",
+  "match_date": "2026-07-03",
+  "group": "R32",
+  "venue": "Arrowhead Stadium, Kansas City, USA",
+  "h2h_summary": null,
+  "h2h_record": {
+    "home_wins": 0,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": []
+  },
+  "wc_history_home": "Colombia have appeared at seven World Cups, with their best performance coming in 2014 when they reached the quarter-finals, won their group, and James Rodriguez claimed the Golden Boot with six goals.",
+  "wc_history_away": "Ghana qualified for four World Cups (2006, 2010, 2014, 2022), with their best run in 2010 when the Black Stars reached the quarterfinals in South Africa before losing to Uruguay on penalties, becoming only the third African nation to reach that stage.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Explosive wide attacking threat through Luis Diaz and pace on the counter-attack",
+    "Disciplined defensive mid-block that frustrates possession-heavy opponents",
+    "Creative set-piece and chance creation from James Rodriguez as a free-roaming number ten"
+  ],
+  "strengths_away": [
+    "Explosive pace and direct running from Williams and Semenyo in attack",
+    "Compact defensive structure that is hard to break down",
+    "Strong qualifying campaign with 8 wins from 10 matches building cohesion"
+  ],
+  "team_style_home": "Colombia under Nestor Lorenzo operate in a compact 4-2-3-1/4-3-3 mid-block system, defending deep and attacking through rapid vertical transitions and wide pace, particularly via Luis Diaz on the left flank.",
+  "team_style_away": "Under Carlos Queiroz, Ghana set up in a compact 4-2-3-1 or 3-4-2-1 that shifts into a defensive mid-block out of possession, with Thomas Partey anchoring midfield and Semenyo and Inaki Williams exploiting space on the counter-attack.",
+  "stats_home": {
+    "fifa_rank": 13,
+    "elo": 1698,
+    "qual": {
+      "P": 18,
+      "W": 7,
+      "D": 7,
+      "L": 4,
+      "GF": 28,
+      "GA": 18
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 73,
+    "elo": 1347,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 1,
+      "L": 1,
+      "GF": 23,
+      "GA": 6
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Kojo Oppong Peprah (undisclosed injury)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Ghana will be without Kojo Oppong Peprah due to an injury picked up in training. Colombia remains undefeated in the World Cup, having conceded just two goals in their last six games.",
+  "form_home": [
+    "W",
+    "W",
+    "D"
+  ],
+  "form_away": [
+    "W",
+    "D",
+    "L"
+  ],
+  "key_players_home": [
+    "Luis Diaz (left winger, Bayern Munich)",
+    "James Rodriguez (attacking midfielder / captain)",
+    "Richard Rios (central midfielder, Benfica)",
+    "Daniel Munoz (right back, Crystal Palace)",
+    "Jhon Arias (attacking midfielder/winger)"
+  ],
+  "key_players_away": [
+    "Jordan Ayew (forward / captain)",
+    "Inaki Williams (striker / wide forward)",
+    "Antoine Semenyo (winger)",
+    "Thomas Partey (defensive midfielder)",
+    "Mohammed Salisu (centre-back)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}

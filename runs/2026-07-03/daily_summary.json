@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-03",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Australia vs Egypt",
+      "run_file": "runs/2026-07-03/wc_australia-egypt.json",
+      "thread_file": "runs/2026-07-03/_debug/wc_australia-egypt_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Argentina vs Cabo Verde",
+      "run_file": "runs/2026-07-03/wc_argentina-cabo-verde.json",
+      "thread_file": "runs/2026-07-03/_debug/wc_argentina-cabo-verde_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Colombia vs Ghana",
+      "run_file": "runs/2026-07-03/wc_colombia-ghana.json",
+      "thread_file": "runs/2026-07-03/_debug/wc_colombia-ghana_thread.json",
+      "success": true
+    }
+  ]
+}

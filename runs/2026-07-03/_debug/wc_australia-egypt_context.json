@@ -1,0 +1,92 @@
+{
+  "home_team": "Australia",
+  "away_team": "Egypt",
+  "match_date": "2026-07-03",
+  "group": "R32",
+  "venue": "AT&T Stadium, Arlington, USA",
+  "h2h_summary": "In their last 5 recorded meetings, Egypt won 2, drew 2, and lost 1 against Australia. Documented matches include a 0-0 result where Egypt lost the tie in the 1987 President's Cup, and a 3-0 victory for Egypt in a 2010 friendly.",
+  "h2h_record": {
+    "home_wins": 1,
+    "draws": 2,
+    "away_wins": 2,
+    "notable_results": [
+      "0-0 (Australia) - President's Cup - 1987",
+      "3-0 (Egypt) - International Friendly - 2010"
+    ]
+  },
+  "wc_history_home": "Australia have appeared at six World Cups (1974, 2006\u20132026), with their best results being two Round of 16 appearances \u2014 losing narrowly to eventual champions Italy in 2006 and to eventual champions Argentina in 2022.",
+  "wc_history_away": "Egypt have appeared at only three previous World Cups (1934, 1990, 2018) and have never won a match or advanced beyond the group stage in any of those tournaments.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "Disciplined back-three defensive structure with Harry Souttar's aerial dominance",
+    "Explosive attacking pace through Nestory Irankunda and Martin Boyle on the flanks",
+    "High work rate, pressing intensity and set-piece threat throughout the squad"
+  ],
+  "strengths_away": [
+    "Mohamed Salah and Omar Marmoush provide a world-class attacking partnership capable of deciding games individually",
+    "Exceptional defensive record in CAF qualifying \u2014 seven clean sheets and only two goals conceded across ten unbeaten matches",
+    "Tactical flexibility under Hossam Hassan, shifting between 4-2-3-1 and 3-4-1-2 to control games and frustrate opponents"
+  ],
+  "team_style_home": "Australia under Tony Popovic use a back-three system (3-4-2-1 / 3-4-3) with energetic wing-backs, compact defensive organisation, high pressing intensity, and quick direct counter-attacking football rather than dominant possession.",
+  "team_style_away": "Egypt deploy a compact, disciplined 4-2-3-1 with defensive organization as the priority, using an asymmetric double-pivot in build-up and releasing Mohamed Salah and Omar Marmoush on fast transitions to exploit space behind opposition lines.",
+  "stats_home": {
+    "fifa_rank": 27,
+    "elo": 1579,
+    "qual": {
+      "P": 10,
+      "W": 5,
+      "D": 4,
+      "L": 1,
+      "GF": 16,
+      "GA": 7
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 29,
+    "elo": 1562,
+    "qual": {
+      "P": 10,
+      "W": 8,
+      "D": 2,
+      "L": 0,
+      "GF": 20,
+      "GA": 2
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [
+    "Mohamed Salah (hamstring)"
+  ],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Egypt have several fitness concerns for Friday\u2019s World Cup last-32 clash with Australia, including Mohamed Salah. Pharaohs captain Salah is among a number of players being assessed after sustaining a hamstring injury during the draw with Iran.",
+  "form_home": [
+    "W",
+    "L",
+    "D"
+  ],
+  "form_away": [
+    "D",
+    "W",
+    "D"
+  ],
+  "key_players_home": [
+    "Mathew Ryan (goalkeeper, captain)",
+    "Harry Souttar (centre-back)",
+    "Nestory Irankunda (forward / winger)",
+    "Martin Boyle (winger)",
+    "Jordy Bos (left wing-back)"
+  ],
+  "key_players_away": [
+    "Mohamed Salah (forward/winger, captain)",
+    "Omar Marmoush (forward, Manchester City)",
+    "Mahmoud Hassan Trezeguet (winger)",
+    "Mohamed Abdelmonem (centre-back, OGC Nice)",
+    "Mohamed El Shenawy (goalkeeper)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}

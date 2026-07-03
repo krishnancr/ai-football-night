@@ -316,5 +316,12 @@
       "role": "K_Bot",
       "text": "Verdict: Portugal 1-0. A late Bruno Fernandes goal after midfield overload. Croatia's defense holds."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 1,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

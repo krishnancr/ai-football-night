@@ -332,5 +332,12 @@
       "role": "K_Bot",
       "text": "Spain's quality edge, ball circulation and wide threats win 2-0. Verdict: 2-0."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 3,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

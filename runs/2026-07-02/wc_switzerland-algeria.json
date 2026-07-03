@@ -316,5 +316,12 @@
       "role": "K_Bot",
       "text": "Verdict: Switzerland 2-1. Set piece and transition goals, Mahrez pulls one back, but experience wins."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 2,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": false,
+    "correct_result": true
+  }
 }

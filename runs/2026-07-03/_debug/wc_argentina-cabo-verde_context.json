@@ -1,0 +1,91 @@
+{
+  "home_team": "Argentina",
+  "away_team": "Cabo Verde",
+  "match_date": "2026-07-03",
+  "group": "R32",
+  "venue": "Hard Rock Stadium, Miami Gardens, USA",
+  "h2h_summary": "Argentina and Cape Verde have met only twice, in friendlies in 2007 and 2009, with Argentina winning both matches (1-0 and 2-0).",
+  "h2h_record": {
+    "home_wins": 2,
+    "draws": 0,
+    "away_wins": 0,
+    "notable_results": [
+      "1-0 (Argentina) - Friendly - 2007",
+      "2-0 (Argentina) - Friendly - 2009"
+    ]
+  },
+  "wc_history_home": "Argentina are three-time World Cup champions (1978, 1986, 2022), entering 2026 as defending champions with Messi making a record sixth World Cup appearance across 19 tournament appearances.",
+  "wc_history_away": "Cabo Verde are making their historic first-ever FIFA World Cup appearance in 2026, having qualified by topping CAF Group D with eight wins from ten games, beating out Cameroon and Angola.",
+  "group_context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "strengths_home": [
+    "World-class individual quality throughout the squad \u2014 Messi, Alvarez, Lautaro, Romero, Mart\u00ednez",
+    "Exceptional defensive record \u2014 conceded just 10 goals across 18 CONMEBOL qualifying matches",
+    "Tactical flexibility under Scaloni with a fluid system adaptable to any opponent"
+  ],
+  "strengths_away": [
+    "Exceptional team cohesion and tactical discipline built over a strong qualifying campaign",
+    "Pace and directness on the wings through Livramento and Jovane Cabral",
+    "Set-piece threat via Ryan Mendes combined with mental resilience as underdog debutants"
+  ],
+  "team_style_home": "Argentina deploy a fluid 4-3-3 that morphs into a 3-2-5 in build-up, using patient possession through a high-quality midfield trio and Messi as a deep-lying 'Quarterback 10' to unlock defences.",
+  "team_style_away": "Cabo Verde play a disciplined 4-2-3-1 with a compact defensive block, high-intensity pressing in key moments, and quick wide transitions on the counter-attack rather than prolonged possession.",
+  "stats_home": {
+    "fifa_rank": 1,
+    "elo": 1877,
+    "qual": {
+      "P": 18,
+      "W": 12,
+      "D": 2,
+      "L": 4,
+      "GF": 31,
+      "GA": 10
+    }
+  },
+  "stats_away": {
+    "fifa_rank": 67,
+    "elo": 1371,
+    "qual": {
+      "P": 10,
+      "W": 7,
+      "D": 2,
+      "L": 1,
+      "GF": 16,
+      "GA": 8
+    }
+  },
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Argentina are heavy favorites to book their place in the Round of 16 when they face tournament surprise Cape Verde. Lionel Messi trained with the squad as defender Cristian Romero returned to full training after recovering from a knee injury.",
+  "form_home": [
+    "W",
+    "W",
+    "W"
+  ],
+  "form_away": [
+    "D",
+    "D",
+    "D"
+  ],
+  "key_players_home": [
+    "Lionel Messi (attacking midfielder/forward)",
+    "Julian Alvarez (striker)",
+    "Lautaro Martinez (striker)",
+    "Alexis Mac Allister (midfielder)",
+    "Rodrigo De Paul (midfielder)",
+    "Emiliano Martinez (goalkeeper)"
+  ],
+  "key_players_away": [
+    "Dailon Livramento (forward/striker)",
+    "Ryan Mendes (captain, winger)",
+    "Logan Costa (centre-back)",
+    "Jovane Cabral (attacking winger)",
+    "Vozinha (goalkeeper)"
+  ],
+  "context": "Round of 32 knockout \u2014 no draws; level after 90 goes to extra time and penalties. Winner advances to the Round of 16.",
+  "research_quality": "full"
+}
