@@ -328,5 +328,12 @@
       "role": "K_Bot",
       "text": "Verdict: Colombia 1-0. Elo, form and Diaz's width tip it. Ghana's block bends but James finds the half-space pocket in the 70th. Stat_Bot's numbers barely win this one."
     }
-  ]
+  ],
+  "actual": {
+    "home_goals": 1,
+    "away_goals": 0,
+    "result": "home_win",
+    "correct_scoreline": true,
+    "correct_result": true
+  }
 }

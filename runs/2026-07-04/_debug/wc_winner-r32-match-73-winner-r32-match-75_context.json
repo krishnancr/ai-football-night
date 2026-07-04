@@ -1,0 +1,32 @@
+{
+  "home_team": "Winner R32 Match 73",
+  "away_team": "Winner R32 Match 75",
+  "match_date": "2026-07-04",
+  "group": "R16",
+  "venue": "NRG Stadium, Houston, USA",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "stats_home": null,
+  "stats_away": null,
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "The winner of Match 73 and the winner of Match 75 have both navigated the group stage successfully, and now the reward is a place in the quarter-finals of the biggest sporting event on the planet. With the teams for this fixture yet to be confirmed following the conclusion of the group stage, check back for updates.",
+  "form_home": [],
+  "form_away": [],
+  "key_players_home": [],
+  "key_players_away": [],
+  "context": null,
+  "research_quality": "degraded"
+}
