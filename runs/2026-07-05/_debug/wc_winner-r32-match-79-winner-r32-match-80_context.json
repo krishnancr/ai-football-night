@@ -1,0 +1,32 @@
+{
+  "home_team": "Winner R32 Match 79",
+  "away_team": "Winner R32 Match 80",
+  "match_date": "2026-07-05",
+  "group": "R16",
+  "venue": "Estadio Azteca, Mexico City, Mexico",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "stats_home": null,
+  "stats_away": null,
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": null,
+  "form_home": [],
+  "form_away": [],
+  "key_players_home": [],
+  "key_players_away": [],
+  "context": null,
+  "research_quality": "degraded"
+}
