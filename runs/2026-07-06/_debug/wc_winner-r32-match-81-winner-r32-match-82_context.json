@@ -1,0 +1,32 @@
+{
+  "home_team": "Winner R32 Match 81",
+  "away_team": "Winner R32 Match 82",
+  "match_date": "2026-07-06",
+  "group": "R16",
+  "venue": "Lumen Field, Seattle, USA",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "stats_home": null,
+  "stats_away": null,
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "The July 6 match at Seattle Stadium (Winner Match 81 vs. Winner Match 82) has a 6% chance of heat that can impair player performance.",
+  "form_home": [],
+  "form_away": [],
+  "key_players_home": [],
+  "key_players_away": [],
+  "context": null,
+  "research_quality": "degraded"
+}
