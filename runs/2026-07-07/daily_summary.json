@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-07",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Winner R32 Match 86 vs Winner R32 Match 88",
+      "run_file": "runs/2026-07-07/wc_winner-r32-match-86-winner-r32-match-88.json",
+      "thread_file": "runs/2026-07-07/_debug/wc_winner-r32-match-86-winner-r32-match-88_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Winner R32 Match 85 vs Winner R32 Match 87",
+      "run_file": "runs/2026-07-07/wc_winner-r32-match-85-winner-r32-match-87.json",
+      "thread_file": "runs/2026-07-07/_debug/wc_winner-r32-match-85-winner-r32-match-87_thread.json",
+      "success": true
+    }
+  ]
+}
