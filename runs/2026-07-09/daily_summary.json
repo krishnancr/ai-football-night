@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-09",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Winner R16 Match 89 vs Winner R16 Match 90",
+      "run_file": "runs/2026-07-09/wc_winner-r16-match-89-winner-r16-match-90.json",
+      "thread_file": "runs/2026-07-09/_debug/wc_winner-r16-match-89-winner-r16-match-90_thread.json",
+      "success": true
+    }
+  ]
+}
