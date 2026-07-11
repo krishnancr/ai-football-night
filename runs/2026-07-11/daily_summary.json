@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-11",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Winner R16 Match 91 vs Winner R16 Match 92",
+      "run_file": "runs/2026-07-11/wc_winner-r16-match-91-winner-r16-match-92.json",
+      "thread_file": "runs/2026-07-11/_debug/wc_winner-r16-match-91-winner-r16-match-92_thread.json",
+      "success": true
+    },
+    {
+      "match_string": "Winner R16 Match 95 vs Winner R16 Match 96",
+      "run_file": "runs/2026-07-11/wc_winner-r16-match-95-winner-r16-match-96.json",
+      "thread_file": "runs/2026-07-11/_debug/wc_winner-r16-match-95-winner-r16-match-96_thread.json",
+      "success": true
+    }
+  ]
+}
