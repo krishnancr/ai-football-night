@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-15",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Winner QF 99 vs Winner QF 100",
+      "run_file": "runs/2026-07-15/wc_winner-qf-99-winner-qf-100.json",
+      "thread_file": "runs/2026-07-15/_debug/wc_winner-qf-99-winner-qf-100_thread.json",
+      "success": true
+    }
+  ]
+}
