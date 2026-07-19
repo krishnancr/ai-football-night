@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-19",
+  "stage": "knockout",
+  "matches": [
+    {
+      "match_string": "Winner SF 101 vs Winner SF 102",
+      "run_file": "runs/2026-07-19/wc_winner-sf-101-winner-sf-102.json",
+      "thread_file": "runs/2026-07-19/_debug/wc_winner-sf-101-winner-sf-102_thread.json",
+      "success": true
+    }
+  ]
+}

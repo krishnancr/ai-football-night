@@ -1,0 +1,32 @@
+{
+  "home_team": "Winner SF 101",
+  "away_team": "Winner SF 102",
+  "match_date": "2026-07-19",
+  "group": "FINAL",
+  "venue": "MetLife Stadium, East Rutherford, USA",
+  "h2h_summary": null,
+  "h2h_record": null,
+  "wc_history_home": null,
+  "wc_history_away": null,
+  "group_context": null,
+  "strengths_home": null,
+  "strengths_away": null,
+  "team_style_home": null,
+  "team_style_away": null,
+  "stats_home": null,
+  "stats_away": null,
+  "injuries_home": [],
+  "injuries_away": [],
+  "odds": {
+    "home_win": null,
+    "draw": null,
+    "away_win": null
+  },
+  "recent_news": "Spain is the favorite to win the 2026 World Cup, with odds of +125 to beat Argentina in the final. The tournament has seen notable performances, with Spain and Argentina advancing to the final.",
+  "form_home": [],
+  "form_away": [],
+  "key_players_home": [],
+  "key_players_away": [],
+  "context": null,
+  "research_quality": "degraded"
+}
